@@ -1,4 +1,3 @@
-
 {
     "indefinite": [
         {
@@ -203,6 +202,14 @@
             "slack": "https://slack.com/archives/C082G4HLZDK",
             "slackChannel": "#lab-in-a-box",
             "status": "upcoming"
+        },
+        {
+            "name": "Visioneer",
+            "description": "Create a Computer Vision project, get a microcontroller and camera to run it.",
+            "website": null,
+            "slack": "https://hackclub.slack.com/archives/C082PCKJYMN",
+            "slackChannel": "#visioneer",
+            "status": "upcoming"
         }
     ],
     "noYouShip": [
@@ -221,8 +228,7 @@
             "description": "The summer is yours for the making",
             "website": "https://hackclub.com/arcade",
             "slack": "https://hackclub.slack.com/archives/C06SBHMQU8G",
-            "slackChannel": "#hack-hour"
-            "status": "completed"
+            "slackChannel": "#hack-hour""status": "completed"
         },
         {
             "name": "Blot",
