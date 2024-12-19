@@ -179,6 +179,12 @@ drafts:
   slack: https://hackclub.slack.com/archives/C082G4HLZDK
   slackChannel: "#lab-in-a-box"
   status: draft
+- name: Printboard
+  description: Design a 3D model that goes with the Ikea Skadis pegboard, and we will send you one!
+  website:
+  slack: https://hackclub.slack.com/archives/C0853M4PCUA
+  slackChannel: "#printboard-ysws"
+  status: draft
 noYouShip:
 - name: Community Newsletter
   description: Receive a fully handwritten monthly newsletter.
