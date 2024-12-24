@@ -117,7 +117,7 @@ limitedTime:
   slackChannel: "#riceathon"
   status: active
   deadline: '2025-01-10T23:59:59'
-  participants: 39
+  participants: 43
 - name: Hacky Holidays
   description: Design a PCB holiday decoration this winter, get one shipped.
   website: https://hacky-holidays.hackclub.com/
