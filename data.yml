@@ -42,15 +42,13 @@ indefinite:
   slackChannel: "#cider"
   status: active
   participants: 34
-- name: Anchor
-  description: Design a VTuber-style logo for your High Seas project and receive custom
-    stickers.
-  website: https://anchor.hackclub.com/
-  slack: https://hackclub.slack.com/archives/C07V5401VMY
-  slackChannel: "#anchor"
-  status: active
-  participants: 26
 limitedTime:
+- name: Hackapet
+  description: Make a pet game, get a hackable tamagotchi clone!
+  website: https://hackapet.hackclub.dev
+  slack: https://hackclub.slack.com/archives/C0809PN4TPE
+  slackChannel: "#hackapet"
+  status: active
 - name: Dessert
   description: Make an Android app and earn a paid Google Developer account.
   website: 
@@ -110,7 +108,6 @@ limitedTime:
   status: active
   deadline: '2024-12-14T23:59:59'
   participants: 55
-
 - name: Hacky Holidays
   description: Design a PCB holiday decoration this winter, get one shipped.
   website: https://hacky-holidays.hackclub.com/
@@ -118,7 +115,31 @@ limitedTime:
   slackChannel: "#hacky-holidays"
   status: active
   deadline: '2025-01-15T23:59:59'
+- name: Say Cheese!
+  description: Fit a program in a QR code, get a portable printer and maybe a Blåhaj.
+  detailedDescription: Fit a program inside a QR code, and get a potentially cat-themed
+    portable printer! The best project gets a Blåhaj.
+  website: https://saycheese.hackclub.com/
+  slack: https://hackclub.slack.com/archives/C07QKKZPVD0
+  slackChannel: "#saycheese"
+  status: active
+  deadline: '2025-01-26T23:59:59'
+- name: RaspAPI YSWS
+  description: Make an API get a Raspberry Pi
+  detailedDescription: Create an original API using any programming language or framework that you prefer and get a Raspberry Pi Zero 2 W to host it on! 
+    The API can be anything you want. The possibilities are endless!
+  website: https://raspapi.hackclub.com/
+  slack: https://hackclub.slack.com/archives/C07UZSKJQRX
+  slackChannel: "#raspapi-ysws"
+  status: active
+  deadline: '2025-03-10T23:59:59'
 drafts:
+- name: Minus Twelve
+  description: Create some kind of useful tool and receive a shiny new microcontroller!
+  website: https://sporeball.dev/minus-twelve
+  slack: https://hackclub.slack.com/archives/C087S82MNFR
+  slackChannel: "#minus-twelve"
+  status: draft
 - name: Forge
   description: Design a 3D model that solves a problem and receive a custom 3D printer.
   website: https://forge.hackclub.com/
@@ -182,6 +203,12 @@ drafts:
   website: 
   slack: https://hackclub.slack.com/archives/C082G4HLZDK
   slackChannel: "#lab-in-a-box"
+  status: draft
+- name: Printboard
+  description: Design a 3D model that goes with the Ikea Skadis pegboard, and we will send you one!
+  website:
+  slack: https://hackclub.slack.com/archives/C0853M4PCUA
+  slackChannel: "#printboard-ysws"
   status: draft
 noYouShip:
 - name: Community Newsletter
@@ -275,3 +302,10 @@ completed:
   ended: Ended Jan 10th
   deadline: '2025-01-10T23:59:59'
   participants: 79
+- name: Anchor
+  description: Design a VTuber-style logo for your High Seas project and receive custom stickers.
+  website: https://anchor.hackclub.com/
+  slack: https://hackclub.slack.com/archives/C07V5401VMY
+  slackChannel: "#anchor"
+  status: completed
+  participants: 40

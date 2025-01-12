@@ -72,33 +72,28 @@ Each program object can include:
 
 ### Real Example From This Repository
 
-Below is an example from the `limitedTime` category in `programs.json`:
+Below is an example from the `limitedTime` category in `data.yml`:
 
-```js
-{
-    "name": "HackCraft",
-    "description": "Create a Minecraft mod, and Hack Club sends you Minecraft Java!",
-    "website": "https://hackcraft.hackclub.com/",
-    "slack": "https://slack.com/archives/C07NQ5QAYNQ",
-    "slackChannel": "#mc-modding",
-    "status": "active",
-    "deadline": "2025-01-31T23:59:59",
-    "detailedDescription": "Join HackCraft to build and ship your own Minecraft mod. Access exclusive resources and a supportive community.",
-    "steps": [
-        "Make a mod.",
-        "Publish it on Modrinth or Hangar.",
-        "Submit your mod to Hack Club.",
-        "Receive Minecraft Java Edition and enjoy!"
-    ],
-    "requirements": [
-        "Basic knowledge of Java programming.",
-        "A passion for Minecraft modding."
-    ],
-    "details": [
-        "Participants will receive a Minecraft Java Edition account upon successful submission.",
-        "Support is available through our Slack community."
-    ]
-}
+```yml
+name: HackCraft
+description: Create a Minecraft mod, and Hack Club sends you Minecraft Java!
+website: https://hackcraft.hackclub.com/
+slack: https://slack.com/archives/C07NQ5QAYNQ
+slackChannel: "#mc-modding"
+status: active
+deadline: 2025-01-31T23:59:59
+detailedDescription: Join HackCraft to build and ship your own Minecraft mod. Access exclusive resources and a supportive community.
+steps:
+   - Make a mod.
+   - Publish it on Modrinth or Hangar.
+   - Submit your mod to Hack Club.
+   - Receive Minecraft Java Edition and enjoy!
+requirements:
+   - Basic knowledge of Java programming.
+   - A passion for Minecraft modding.
+details:
+   - Participants will receive a Minecraft Java Edition account upon successful submission.
+   - Support is available through our Slack community.
 ```
 
 ## Contributing
