@@ -78,7 +78,7 @@ limitedTime:
   slack: https://hackclub.slack.com/archives/C0853M4PCUA
   slackChannel: "#printboard"
   status: active
-  deadline: '2025-02-14T23:59:59'
+  deadline: '2025-02-16T23:59:59'
   participants: 94
 - name: Minus Twelve
   description: Create a useful tool and receive a shiny new microcontroller!
@@ -114,7 +114,7 @@ limitedTime:
   slack: https://hackclub.slack.com/archives/C07MQBTNVRU
   slackChannel: "#browser-buddy"
   status: active
-  deadline: '2024-12-31T23:59:59'
+  deadline: '2025-3-19T23:59:59'
   participants: 22
 - name: HackCraft
   description: Create a Minecraft mod, and Hack Club sends you Minecraft Java!
@@ -157,7 +157,7 @@ limitedTime:
   website: https://hacky-holidays.hackclub.com/
   slack: https://hackclub.slack.com/archives/C083SK3G5D3
   slackChannel: "#hacky-holidays"
-  status: active
+  status: completed
   deadline: '2025-01-30T23:59:59'
 - name: RaspAPI YSWS
   description: Make an API get a Raspberry Pi
@@ -173,7 +173,7 @@ limitedTime:
   website: https://bakebuild.hackclub.com/
   slack: https://hackclub.slack.com/archives/C0844MV2JM9
   slackChannel: "#bakebuild"
-  status: active
+  status: completed
   deadline: "2025-02-11T23:59:59"
 - name: Retrospect (J2ME edition)
   description: Create a J2ME game (Java MIDlet) and have it delivered on a J2ME-capable phone.
