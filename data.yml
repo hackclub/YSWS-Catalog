@@ -21,7 +21,7 @@ limitedTime:
   slack: https://hackclub.slack.com/archives/C07LESGH0B0
   slackChannel: "#hackpad"
   status: active
-  deadline: '2025-03-16T23:59:59'
+  deadline: '2025-02-16T23:59:59'
   participants: 719
 - name: BrowserBuddy
   description: Build a Chrome extension, and Hack Club provides $30 to launch it on Chrome Web Store.
