@@ -1,13 +1,5 @@
 ---
 limitedTime:
-- name: Pixeldust
-  description: Make a neopixel based PCB, get the parts to make one!
-  detailedDescription: Create a PCB using KiCad / other EDA. It should use neopixels and a Xiao RP2040, and act as a decoration. Once submitted you can get the parts to make one yourself!
-  website: https://pixeldust.vercel.app
-  slack: https://hackclub.slack.com/archives/C0895PXH53M
-  slackChannel: "#pixeldust"
-  status: active
-  deadline: '2025-03-31T23:59:59'
 - name: Cafe
   description: Collect cups, progress the graph, earn bonuses!
   detailedDescription: Work on a personal project in a huddle, get a cup every hour. Getting certain amounts of cups can get you special prizes! See the cafe-bulletin channel for more information!
@@ -47,6 +39,14 @@ limitedTime:
   status: active
   deadline: '2025-03-19T23:59:59'
   participants: 22
+- name: Pixeldust
+  description: Make a neopixel based PCB, get the parts to make one!
+  detailedDescription: Create a PCB using KiCad / other EDA. It should use neopixels and a Xiao RP2040, and act as a decoration. Once submitted you can get the parts to make one yourself!
+  website: https://pixeldust.vercel.app #should be changed to a HackClub domain
+  slack: https://hackclub.slack.com/archives/C0895PXH53M
+  slackChannel: "#pixeldust"
+  status: active
+  deadline: '2025-03-31T23:59:59'
 - name: Juice
   description: Spend 100 hours over the course of 2 months building a game, and we will pay for you to get the game on steam, and provide money for a flight out to China, where we will run a popup shop
   website: https://juice.hackclub.com
