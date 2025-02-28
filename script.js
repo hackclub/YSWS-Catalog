@@ -10,7 +10,7 @@ async function startRender() {
             initialParticipants.set(program.name, program.participants);
         }
     });
-    
+
     renderPrograms();
     await loadParticipants();
     updateParticipantCounts();
@@ -45,36 +45,36 @@ function animateNumber(element, start, end, duration = 1000) {
     const startNum = parseInt(start) || 0;
     const endNum = parseInt(end) || 0;
     const numberSpan = element.querySelector('span');
-    
+
     function update(currentTime) {
         const elapsed = currentTime - startTime;
         const progress = Math.min(elapsed / duration, 1);
-        
+
         const easeOutQuad = 1 - Math.pow(1 - progress, 2);
         const current = Math.round(startNum + (endNum - startNum) * easeOutQuad);
-        
+
         numberSpan.textContent = current;
         element.textContent = `${current} participant${current !== 1 ? 's' : ''}`;
-        
+
         if (progress < 1) {
             requestAnimationFrame(update);
         } else {
             element.classList.remove('updating');
         }
     }
-    
+
     element.classList.add('updating');
     requestAnimationFrame(update);
 }
 
 function updateParticipantCounts() {
     const participantElements = document.querySelectorAll('.program-participants');
-    
+
     participantElements.forEach(element => {
         const programCard = element.closest('.program-card');
         const programData = JSON.parse(decodeURIComponent(programCard.dataset.program));
         const programName = programData.name;
-        
+
         const overrideId = unifiedDbOverrides[programName];
         const apiData = overrideId
             ? participants.find(p => p.id === overrideId)
@@ -93,7 +93,7 @@ function getParticipantsByName(programName) {
     }
 
     const program = participants.find(item => item.name.toLowerCase() === programName.toLowerCase());
-    
+
     if (program) {
         console.log(`Program: ${program.name}, Participants: ${program.total}`);
         return program.total;
@@ -112,29 +112,38 @@ function isEventEnded(deadline) {
 
 async function loadPrograms() {
     try {
-        const response = await fetch('data.yml').then(res => res.text());
+        const response = await (await fetch('data.yml')).text();
         const rawPrograms = jsyaml.load(response);
-        
         const completed = [];
         programs = Object.fromEntries(
-            Object.entries(rawPrograms).map(([category, programsList]) => [
-            category,
-            (programsList && Array.isArray(programsList)) ? 
-                programsList.filter(program => {
-                if (program.status === 'completed' || isEventEnded(program.deadline)) {
-                    completed.push({ ...program, status: 'completed' });
-                    return false;
+            Object.entries(rawPrograms).map(([category, programsList]) => {
+                if (!category || !programsList) {
+                    return ["empty", []]
                 }
-                return true;
-                }) : []
-            ])
+                return [
+                    category,
+                    programsList.filter(program => {
+                        if (program.status === 'completed' || isEventEnded(program.deadline)) {
+                            completed.push({...program, status: 'completed'});
+                            return false;
+                        }
+                        return true;
+                    })
+                ]
+            }).filter((program)=> {
+                console.log(program)
+                if (!(program[1].length > 0) ){
+                    return false
+                }
+                return true
+            })
         );
-
+        console.log(programs)
         delete programs['Completed'];
         if (completed.length > 0) {
             programs['Completed'] = completed;
         }
-        
+
         programs = Object.fromEntries(
             Object.entries(programs).filter(([_, programsList]) => programsList.length > 0)
         );
@@ -148,21 +157,21 @@ function formatDeadline(deadlineStr, opensStr) {
         const opensDate = new Date(opensStr);
         const now = new Date();
         if (now < opensDate) {
-            return `Opens ${opensDate.toLocaleDateString('en-US', { 
-                month: 'long', 
+            return `Opens ${opensDate.toLocaleDateString('en-US', {
+                month: 'long',
                 day: 'numeric',
                 year: opensDate.getFullYear() !== new Date().getFullYear() ? 'numeric' : undefined
             })}`;
         }
     }
-    
+
     if (!deadlineStr) return '';
-    
+
     const deadline = new Date(deadlineStr);
     const now = new Date();
     const diffTime = deadline - now;
     const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
-    
+
     if (diffDays < 0) return 'Ended';
     if (diffDays === 0) return 'Ends today';
     if (diffDays === 1) return 'Ends tomorrow';
@@ -171,9 +180,9 @@ function formatDeadline(deadlineStr, opensStr) {
         const weeks = Math.floor(diffDays / 7);
         return `${weeks} week${weeks > 1 ? 's' : ''} left`;
     }
-    
-    return `Ends ${deadline.toLocaleDateString('en-US', { 
-        month: 'long', 
+
+    return `Ends ${deadline.toLocaleDateString('en-US', {
+        month: 'long',
         day: 'numeric',
         year: deadline.getFullYear() !== new Date().getFullYear() ? 'numeric' : undefined
     })}`;
@@ -181,12 +190,12 @@ function formatDeadline(deadlineStr, opensStr) {
 
 function getDeadlineClass(deadlineStr) {
     if (!deadlineStr) return '';
-    
+
     const deadline = new Date(deadlineStr);
     const now = new Date();
     const diffTime = deadline - now;
     const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
-    
+
     if (diffDays < 0) return 'ended';
     if (diffDays <= 7) return 'very-urgent';
     if (diffDays <= 14) return 'urgent';
@@ -202,14 +211,14 @@ function formatParticipants(name) {
 function createProgramCard(program) {
     const deadlineText = formatDeadline(program.deadline, program.opens);
     const deadlineClass = getDeadlineClass(program.deadline);
-    
+
     const opensClass = program.opens && new Date() < new Date(program.opens) ? 'opens-soon' : '';
-    
+
     const encodedProgram = encodeURIComponent(JSON.stringify(program));
-    
-    const participantsText = program.participants !== undefined ? 
+
+    const participantsText = program.participants !== undefined ?
         `<div class="program-participants">${formatParticipants(program.name)}</div>` : '';
-    
+
     return `
         <div class="card program-card ${opensClass}" data-program="${encodedProgram}">
             <div class="program-header">
@@ -232,8 +241,8 @@ let visiblePrograms = [];
 
 function updateVisiblePrograms() {
     visiblePrograms = Array.from(document.querySelectorAll('.program-card'))
-        .filter(card => !card.classList.contains('hidden-by-filter') && 
-                       !card.classList.contains('hidden-by-search'))
+        .filter(card => !card.classList.contains('hidden-by-filter') &&
+            !card.classList.contains('hidden-by-search'))
         .map(card => JSON.parse(decodeURIComponent(card.dataset.program)));
 }
 
@@ -248,9 +257,9 @@ function updatePositionIndicator() {
 
 function navigateModal(direction) {
     updateVisiblePrograms();
-    
+
     if (visiblePrograms.length === 0) return;
-    
+
     currentProgramIndex = (currentProgramIndex + direction + visiblePrograms.length) % visiblePrograms.length;
     openModal(visiblePrograms[currentProgramIndex]);
     updatePositionIndicator();
@@ -259,17 +268,17 @@ function navigateModal(direction) {
 function openModal(program) {
     updateVisiblePrograms();
     currentProgramIndex = visiblePrograms.findIndex(p => p.name === program.name);
-    
+
     const modal = document.getElementById('program-modal');
     const body = document.body;
-    
+
     modal.querySelector('.title').textContent = program.name;
     modal.querySelector('.program-status').className = `program-status status-${program.status}`;
     modal.querySelector('.program-status').textContent = program.status;
-    
-    modal.querySelector('.program-description').textContent = 
+
+    modal.querySelector('.program-description').textContent =
         program.detailedDescription || program.description;
-    
+
     const deadlineElement = modal.querySelector('.program-deadline');
     const deadlineText = formatDeadline(program.deadline, program.opens);
     const deadlineClass = getDeadlineClass(program.deadline);
@@ -282,21 +291,21 @@ function openModal(program) {
     ].filter(Boolean);
 
     const steps = program.steps || defaultSteps;
-    
+
     modal.querySelector('.participation-steps').innerHTML = steps
         .map((step, index) => `${index + 1}. ${step}`)
         .join('<br>');
-    
+
     const moreDetailsElement = modal.querySelector('.more-details');
     let detailsHTML = '';
-    
+
     if (program.participants !== undefined) {
         detailsHTML += `
             <h3>Participation</h3>
             <p>${formatParticipants(program.name)}</p>
         `;
     }
-    
+
     if (program.requirements?.length) {
         detailsHTML += `
             <h3>Requirements</h3>
@@ -305,7 +314,7 @@ function openModal(program) {
             </ul>
         `;
     }
-    
+
     if (program.details?.length) {
         detailsHTML += `
             <h3>Additional Details</h3>
@@ -314,9 +323,9 @@ function openModal(program) {
             </ul>
         `;
     }
-    
+
     moreDetailsElement.innerHTML = detailsHTML;
-    
+
     const links = [];
     if (program.website) links.push(`<a href="${program.website}" target="_blank">Website</a>`);
     if (program.slack) links.push(`<a href="${program.slack}" target="_blank">${program.slackChannel}</a>`);
@@ -330,7 +339,7 @@ function openModal(program) {
 function closeModal() {
     const modal = document.getElementById('program-modal');
     const body = document.body;
-    
+
     modal.classList.remove('active');
     body.classList.remove('modal-open');
 }
@@ -346,11 +355,11 @@ function countActivePrograms() {
 let currentSort = 'default';
 
 function sortPrograms(programs, sortType) {
-    const flattened = Object.entries(programs).flatMap(([category, progs]) => 
+    const flattened = Object.entries(programs).flatMap(([category, progs]) =>
         progs.map(p => ({...p, category}))
     );
 
-    switch(sortType) {
+    switch (sortType) {
         case 'alphabetical':
             return flattened.sort((a, b) => a.name.localeCompare(b.name));
         case 'deadline':
@@ -360,7 +369,7 @@ function sortPrograms(programs, sortType) {
                 return new Date(a.deadline) - new Date(b.deadline);
             });
         case 'status':
-            const statusOrder = { active: 0, draft: 1, completed: 2 };
+            const statusOrder = {active: 0, draft: 1, completed: 2};
             return flattened.sort((a, b) => statusOrder[a.status] - statusOrder[b.status]);
         default:
             return flattened;
@@ -372,7 +381,7 @@ function renderPrograms() {
     container.innerHTML = '';
     const activeCount = countActivePrograms();
     document.getElementById('active-count').textContent = activeCount;
-    
+
     if (currentSort === 'default') {
         for (const [category, programsList] of Object.entries(programs)) {
             const section = document.createElement('section');
@@ -405,7 +414,7 @@ function updateSort(sortType) {
         btn.classList.toggle('active', btn.dataset.sort === sortType);
     });
     renderPrograms();
-    
+
     const activeFilter = document.querySelector('.filter-btn.active');
     if (activeFilter) {
         filterPrograms(activeFilter.dataset.category);
@@ -426,17 +435,17 @@ function filterPrograms(category) {
 
     sections.forEach(section => {
         const programCards = section.querySelectorAll('.program-card');
-        
+
         programCards.forEach(card => {
             const statusElement = card.querySelector('.program-status');
             const deadlineElement = card.querySelector('.program-deadline');
             const status = statusElement.textContent;
-            
+
             if (category === 'all') {
                 card.classList.remove('hidden-by-filter');
             } else if (category === 'ending-soon') {
-                const isEndingSoon = deadlineElement && 
-                    ['urgent', 'very-urgent'].some(cls => 
+                const isEndingSoon = deadlineElement &&
+                    ['urgent', 'very-urgent'].some(cls =>
                         deadlineElement.classList.contains(cls));
                 card.classList.toggle('hidden-by-filter', !isEndingSoon);
             } else {
@@ -445,8 +454,8 @@ function filterPrograms(category) {
         });
 
         const hasVisibleCards = Array.from(programCards)
-            .some(card => !card.classList.contains('hidden-by-filter') && 
-                         !card.classList.contains('hidden-by-search'));
+            .some(card => !card.classList.contains('hidden-by-filter') &&
+                !card.classList.contains('hidden-by-search'));
         section.classList.toggle('hidden', !hasVisibleCards);
     });
 }
@@ -459,19 +468,19 @@ function searchPrograms(searchTerm) {
         const name = card.querySelector('h3').textContent.toLowerCase();
         const description = card.querySelector('p').textContent.toLowerCase();
         const slackChannel = card.querySelector('.program-links')?.textContent.toLowerCase() || '';
-        
-        const matches = name.includes(searchTerm) || 
-                       description.includes(searchTerm) || 
-                       slackChannel.includes(searchTerm);
-        
+
+        const matches = name.includes(searchTerm) ||
+            description.includes(searchTerm) ||
+            slackChannel.includes(searchTerm);
+
         card.classList.toggle('hidden-by-search', !matches);
     });
 
     const sections = document.querySelectorAll('.category-section');
     sections.forEach(section => {
         const hasVisibleCards = Array.from(section.querySelectorAll('.program-card'))
-            .some(card => !card.classList.contains('hidden-by-filter') && 
-                         !card.classList.contains('hidden-by-search'));
+            .some(card => !card.classList.contains('hidden-by-filter') &&
+                !card.classList.contains('hidden-by-search'));
         section.classList.toggle('hidden', !hasVisibleCards);
     });
 }
@@ -480,9 +489,9 @@ function toggleTheme() {
     const body = document.body;
     const toggleBtn = document.getElementById('theme-toggle');
     const isDark = body.classList.toggle('dark-theme');
-    
+
     toggleBtn.textContent = isDark ? '☀️' : '🌙';
-    
+
     localStorage.setItem('theme', isDark ? 'dark' : 'light');
 }
 
@@ -490,7 +499,7 @@ function initializeTheme() {
     const savedTheme = localStorage.getItem('theme');
     const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
     const toggleBtn = document.getElementById('theme-toggle');
-    
+
     if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
         document.body.classList.add('dark-theme');
         toggleBtn.textContent = '☀️';
@@ -500,20 +509,20 @@ function initializeTheme() {
 function updateDeadlines() {
     const deadlineElements = document.querySelectorAll('.program-deadline');
     let needsReload = false;
-    
+
     deadlineElements.forEach(element => {
         const card = element.closest('.program-card');
         const programData = JSON.parse(decodeURIComponent(card.dataset.program));
-        
+
         if (programData?.deadline) {
             if (isEventEnded(programData.deadline) && programData.status !== 'completed') {
                 needsReload = true;
                 return;
             }
-            
+
             const deadlineText = formatDeadline(programData.deadline, programData.opens);
             const deadlineClass = getDeadlineClass(programData.deadline);
-            
+
             element.textContent = deadlineText;
             element.className = `program-deadline ${deadlineClass}`;
         }
@@ -528,17 +537,17 @@ document.addEventListener('DOMContentLoaded', () => {
     startRender();
     const searchInput = document.getElementById('program-search');
     searchInput.addEventListener('input', (e) => searchPrograms(e.target.value));
-    
+
     document.querySelectorAll('.filter-btn').forEach(button => {
         button.addEventListener('click', () => {
             filterPrograms(button.dataset.category);
             searchPrograms(searchInput.value);
         });
     });
-    
+
     initializeTheme();
     document.getElementById('theme-toggle').addEventListener('click', toggleTheme);
-    
+
     setInterval(updateDeadlines, 60000);
 
     document.querySelectorAll('.sort-btn').forEach(button => {
@@ -551,14 +560,14 @@ document.addEventListener('DOMContentLoaded', () => {
         if (e.target.closest('.program-card') && e.target.closest('a')) {
             return;
         }
-        
+
         if (e.target.closest('.program-card')) {
             const encodedProgram = e.target.closest('.program-card').dataset.program;
             const program = JSON.parse(decodeURIComponent(encodedProgram));
             openModal(program);
         }
-        
-        if (e.target.closest('.modal-close') || 
+
+        if (e.target.closest('.modal-close') ||
             (e.target.classList.contains('modal') && !e.target.closest('.modal-content'))) {
             closeModal();
         }
@@ -566,8 +575,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     document.addEventListener('keydown', (e) => {
         if (!document.getElementById('program-modal').classList.contains('active')) return;
-        
-        switch(e.key) {
+
+        switch (e.key) {
             case 'Escape':
                 closeModal();
                 break;
