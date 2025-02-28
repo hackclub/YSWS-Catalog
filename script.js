@@ -138,7 +138,6 @@ async function loadPrograms() {
                 return true
             })
         );
-        console.log(programs)
         delete programs['Completed'];
         if (completed.length > 0) {
             programs['Completed'] = completed;
