@@ -64,7 +64,7 @@ limitedTime:
   deadline: '2025-04-01T23:59:59'
 - name: Jungle
   description: Spend time working on your game, get money to help publish it! Prizes include steam license, itch.io asset store credits, and much much more!
-  website: https://juice.hackclub.com
+  website: https://juice.hackclub.com/jungle 
   slack: https://hackclub.slack.com/archives/C086MACKK43
   slackChannel: "#jungle"
   status: active
