@@ -132,7 +132,7 @@ limitedTime:
   website: https://hackcraft.hackclub.com/
   slack: https://hackclub.slack.com/archives/C07NQ5QAYNQ
   slackChannel: "#mc-modding"
-  status: active
+  status: ended
   deadline: '2025-01-31T23:59:59'
   detailedDescription: Join HackCraft to build and ship your own Minecraft mod. Access exclusive resources and a supportive community.
   steps:
@@ -147,6 +147,26 @@ limitedTime:
   - Participants will receive a Minecraft Java Edition account upon successful submission.
   - Support is available through our Slack community.
   participants: 4
+- name: HackCraft V2
+  description: HackCraft is back with version 2! Join HackCraft again to build and ship your very own Minecraft mod and earn rewards like server hosting credits for Minecraft and a license for Minecraft!
+  website: https://hackcraft.hackclub.com/
+  slack: https://hackclub.slack.com/archives/C07NQ5QAYNQ
+  slackChannel: "#mc-modding"
+  status: active
+  deadline: '2025-06-1-31T23:59:59'
+  detailedDescription: HackCraft is back again with version 2! Join HackCraft again to build and ship your Minecraft mod. You can earn rewards from free stickers to server hosting credits! V2 ends on June 1st, so start modding! More detailed instructions will be over on the HackCraft V2 website.
+  steps:
+  - Make a mod.
+  - Publish it on Modrinth or Hangar.
+  - Submit your mod to Hack Club.
+  - Receive Minecraft Java Edition or server hosting credits!
+  requirements:
+  - Basic knowledge of Java programming.
+  - A passion for Minecraft modding.
+  details:
+  - Participants will receive a Minecraft Java Edition account or server hosting credits upon successful submission.
+  - Support is available through our Slack community.
+  participants: 49
 - name: Cascade
   description: Create animations with CSS and receive art supplies.
   website: https://cascade.hackclub.com/
