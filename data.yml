@@ -355,6 +355,12 @@ drafts:
   slackChannel: "#jetsu"
   status: draft
   deadline: '2025-07-31T23:59:59'
+- name: Hackclub market
+  description: You can buy/sell pcb's online
+  website: 
+  slack: https://app.slack.com/client/T0266FRGM/C089VQAULJ0
+  slackChannel: "#hack-club-market"
+  status: draft
 - name: Lightsaber
   description: You ship a beat saber map, we ship a(n) <undecided>.
   website:
