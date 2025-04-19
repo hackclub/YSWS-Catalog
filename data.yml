@@ -84,6 +84,13 @@ limitedTime:
   slackChannel: "#visioneer"
   status: active
   deadline: '2025-04-20T23:59:59'
+- name: Hacklet
+  description: Spend two hours building a creative javascript bookmarklet, get $10 to buy a domain! 
+  website: http://hackclub.github.io/hacklet
+  slack: https://hackclub.slack.com/archives/C08PJMATU8Y
+  slackChannel: "#hacklet"
+  status: active
+  deadline: '2025-05-10T23:59:59'
 - name: Asylum
   description: Fast-paced hardware YSWS challenges.
   website:
