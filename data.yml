@@ -8,13 +8,6 @@ limitedTime:
   slackChannel: "#cafe"
   status: ended
   deadline: '2025-02-17T23:59:59'
-- name: Swirl
-  description: Create a quality website with Scoops, get ice cream!
-  detailedDescription: Ship a static website (html + css) that has a Scoop, and get a grant for ice cream to enjoy! Scoops are made up of groups of three html / css features that add something of value to the website.
-  website: https://swirl.hackclub.com
-  slack: https://hackclub.slack.com/archives/C08FR0LMVHD
-  slackChannel: "#swirl"
-  status: active
 - name: RaspAPI
   description: Make an API get a Raspberry Pi
   detailedDescription: Create an original API using any programming language or framework that you prefer and get a Raspberry Pi Zero 2 W to host it on! The API can be anything you want. The possibilities are endless!
@@ -77,13 +70,13 @@ limitedTime:
   status: active
   deadline: '2025-04-01T23:59:59'
 - name: Infill
-  description: Design your own 3D printer, get the parts shipped to you. Get it printing, get flown to a 3D printing festival in Colorado!
+  description: Design your own 3D printer mod, get $20 to build it!
   website: https://github.com/hackclub/infill
   slack: https://hackclub.slack.com/archives/C08B7LF58TX
   slackChannel: "#infill"
   status: active
   deadline: '2025-05-04T23:59:59'
-  participants: 161
+  participants: 380
 - name: Visioneer
   description: Give your computer the gift of vision, get an esp32-s3-eye to see it through!
   website: https://visioneer.hackclub.com
@@ -91,6 +84,13 @@ limitedTime:
   slackChannel: "#visioneer"
   status: active
   deadline: '2025-04-20T23:59:59'
+- name: Hacklet
+  description: Spend two hours building a creative javascript bookmarklet, get $10 to buy a domain! 
+  website: http://hackclub.github.io/hacklet
+  slack: https://hackclub.slack.com/archives/C08PJMATU8Y
+  slackChannel: "#hacklet"
+  status: active
+  deadline: '2025-05-10T23:59:59'
 - name: Asylum
   description: Fast-paced hardware YSWS challenges.
   website:
@@ -127,13 +127,20 @@ limitedTime:
   slackChannel: "#dessert"
   status: ended
   deadline: '2025-01-10T23:59:59'
+- name: Solder
+  description: Design and solder your own custom PCB with a free electronics kit!
+  website: https://solder.hackclub.com/
+  slack: https://slack.com/archives/C08L288G22Y
+  slackChannel: "#solder"
+  status: active
+  deadline: '2025-05-30T23:59:59'
 - name: HackCraft
   description: Create a Minecraft mod, and Hack Club sends you Minecraft Java!
   website: https://hackcraft.hackclub.com/
   slack: https://hackclub.slack.com/archives/C07NQ5QAYNQ
   slackChannel: "#mc-modding"
   status: active
-  deadline: '2025-01-31T23:59:59'
+  deadline: '2025-06-01T23:59:59'
   detailedDescription: Join HackCraft to build and ship your own Minecraft mod. Access exclusive resources and a supportive community.
   steps:
   - Make a mod.
@@ -208,6 +215,13 @@ limitedTime:
   slackChannel: "#10-days-of-tarot"
   status: active
   deadline: '2025-04-13T23:59:59'
+- name: Tonic
+  description: Make a Jekyll theme, show it to the world, and we'll send you a Hack Club hat!
+  website: https://tonic.hackclub.com/
+  slack: https://slack.com/archives/C08K7ARJ58U
+  slackChannel: "#tonic"
+  status: active
+  deadline: 
 indefinite:
 - name: Sprig
   description: Build a JS game and play it on your own console.
@@ -221,14 +235,8 @@ indefinite:
   website: https://hackclub.com/onboard
   slack: https://hackclub.slack.com/archives/C056AMWSFKJ
   slackChannel: "#electronics"
-  status: active
-  participants: 604
-- name: OnBoard Live
-  description: Design a PCB live on YouTube for $5/hour PCB credit.
-  website:
-  slack: https://hackclub.slack.com/archives/C07F3EA2L8G
-  slackChannel: "#onboard-live"
-  status: active
+  status: ended
+  participants: 1000
 - name: Boba Drops
   description: Build a website and get boba!
   website: https://boba.hackclub.com/
@@ -236,20 +244,51 @@ indefinite:
   slackChannel: "#boba"
   status: active
   participants: 1253
+- name: Swirl
+  description: Create a quality website with Scoops, get ice cream!
+  detailedDescription: Ship a static website (html + css) that has a Scoop, and get a grant for ice cream to enjoy! Scoops are made up of groups of three html / css features that add something of value to the website.
+  website: https://swirl.hackclub.com
+  slack: https://hackclub.slack.com/archives/C08FR0LMVHD
+  slackChannel: "#swirl"
+  status: active
+  participants: 40
+- name: OnBoard Live
+  description: Design a PCB live on YouTube for $5/hour PCB credit.
+  website:
+  slack: https://hackclub.slack.com/archives/C07F3EA2L8G
+  slackChannel: "#onboard-live"
+  status: active
 drafts:
+- name: Hack A Home
+  description: You Ship a Home Assistant with Software,PCB and Case, We Ship a grant ($150 Max)to make it. 
+  detailedDescription: |
+    Build a home assistant with Software,PCB and Case . We will send u a grant ($150 Max)to make it.
+  website:
+  slack: https://hackclub.slack.com/archives/C08N4UN6AUS
+  slackChannel: "#hack-a-home"
+  status: draft
+- name: Burger
+  description: You Ship a full stack website with front end and backend, We Ship a grant to buy burgers
+  detailedDescription: |
+    Build a full stack website. Prizes are awarded based on 'patties' earned ($5, $8, $11). Top 3 participants receive a Raspberry Pi 4 cluster kit. 4th and 5th place receive a HAT and Raspberry Pi Zeros.
+  website:
+  slack: https://slack.com/archives/C08NFMLBGPJ
+  slackChannel: "#burger"
+  status: draft
+- name: Hackumentary
+  description: You Ship a project with dev vlogs, We Ship points through which you can buy goodies 
+  detailedDescription: |
+    Build a project with daily dev vlogs, we ship you points for every dev vlog you create, which you can use to purchase exciting goodies after shipping your project
+  website:
+  slack: https://hackclub.slack.com/archives/C08NH401M2S
+  slackChannel: "#hackumentary"
+  status: draft
 - name: Reef
   description: Ship a deep learning project (AI/ML/LLM/NN), get a custom coral based accelerator.
   website:
   slack: https://hackclub.slack.com/archives/C08K33ZUUR5
   slackChannel: "#reef"
   status: draft
-- name: Solder
-  description: Design and solder your own custom PCB with a free electronics kit!
-  website: https://solder.hackclub.com/
-  slack: https://slack.com/archives/C08L288G22Y
-  slackChannel: "#solder"
-  status: draft
-  deadline: '2025-05-30T23:59:59'
 - name: Hackducky
   description: Create A DuckyScript get a Rubber Ducky ! ( hackducky )
   website:
@@ -375,7 +414,7 @@ drafts:
   status: draft
 - name: Wetube
   description: You ship a YouTube channel, we ship points for every video to spend on video equipment!
-  website:
+  website: https://wetubeysws.vercel.app/
   slack: https://slack.com/archives/C07U8QM9MEF
   slackChannel: "#wetube"
   status: draft
@@ -397,9 +436,9 @@ drafts:
   slack: https://slack.com/archives/C08BL0ELHLJ
   slackChannel: "#pridehaj"
   status: draft
-- name: Hackdrive
-  description: You ship a cool filesystem/something using FUSE, we ship a Hack Club branded flash drive
-  website:
+- name: Hack Drive
+  description: You Ship a cool filesystem/something using FUSE, We Ship a Hack Club branded flash drive
+  website: https://hackdrive.radi8.dev/
   slack: https://slack.com/archives/C08EDPJ544E
   slackChannel: "#hackdrive-ysws"
   status: draft
@@ -408,6 +447,39 @@ drafts:
   website:
   slack: https://slack.com/archives/C08JYC7RQT1
   slackChannel: "#hackmouse"
+  status: draft
+- name: The Ride
+  description: You ship a PCB to go on an adventure, we give you the opportunity to build an (offroad) bike at HQ and go on that adventure.
+  website:
+  slack: https://slack.com/archives/C08L5UZTH0X
+  slackChannel: "#the-ride"
+  status: draft
+- name: Trainix
+  description: Build an RL model for math problems and win an ESP32-S3 + OLED Module. Top 3 get an NVIDIA Jetson Orin Nano Developer Kit.
+  website:
+  slack: https://hackclub.slack.com/archives/C08M1F3DYSE
+  slackChannel: "#trainix"
+  status: draft
+- name: Sidequests
+  description: A short-run low-volume low-effort ysws series from nora & co.
+  detailedDescription: |
+    #1: SkinAmp (ft. phoebe!) - Ship a WinAmp skin, we'll send you the WinAmp source code on CD-R (ended 2025-04-13).
+    #2: gemerald - Write something useful in Ruby, i'll send you a sticker (best few get a book!) (started 2025-04-10, ending soon).
+  website: https://sidequests.hackclub.com/
+  slack: https://slack.com/archives/C08KCUK3NF5
+  slackChannel: "#sidequests"
+  status: draft
+- name: RPG
+  description: Work together with other hack clubbers to fight bosses and earn awesome loot and an exclusive trading card for those who help defeat each boss!
+  website: https://rpg.hackclub.com/
+  slack: https://slack.com/archives/C08JCNN7C59
+  slackChannel: "#rpg"
+  status: draft
+- name: Lockin
+  description: Work on anything Wakatime-able on call with another Hack Clubber, spin for stickers at the end of the session.
+  website: https://lockin.hackclub.com/
+  slack: https://slack.com/archives/C08JV3ZV1DY
+  slackChannel: "#lock-in"
   status: draft
 - name: Pyramid Scheme
   description: Put up Hack Club posters to earn prizes.
@@ -544,3 +616,4 @@ drafts:
   slackChannel: "#boba"
   status: ended
   ended: '2024-12-31T23:59:59'
+
