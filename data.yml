@@ -415,6 +415,12 @@ drafts:
   slack: https://app.slack.com/client/T0266FRGM/C089VQAULJ0
   slackChannel: "#hack-club-market"
   status: draft
+  - name: FortKnox
+  description: You build home security hardware and software, we ship the parts to build it
+  website: https://fort-knox.verrcel.app
+  slack: https://app.slack.com/client/T0266FRGM/C08KU0VKZSB
+  slackChannel: "#fortknox"
+  status: draft
 - name: Lightsaber
   description: You ship a beat saber map, we ship a(n) <undecided>.
   website:
