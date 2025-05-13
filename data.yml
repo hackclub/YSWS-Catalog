@@ -213,7 +213,7 @@ limitedTime:
   slack: https://hackclub.slack.com/archives/C078DFVL5LZ
   slackChannel: "#fraps"
   status: active
-  deadline:
+  deadline: '2025-06-30T23:59:59'
   participants: 362
 - name: Cider
   description: Create an iOS app and receive a $100 Apple Developer account to publish it.
