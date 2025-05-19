@@ -14,21 +14,21 @@ limitedTime:
   website: https://raspapi.hackclub.com/
   slack: https://hackclub.slack.com/archives/C07UZSKJQRX
   slackChannel: "#raspapi-ysws"
-  status: active
+  status: ended
   deadline: '2025-03-10T23:59:59'
 - name: Black Box
   description: Create a constrained, interactive C program and get a portable device to run it on!
   website: https://blackbox.hackclub.com
   slack: https://hackclub.slack.com/archives/C08APN1CKEJ
   slackChannel: "#black-box"
-  status: active
+  status: ended
   deadline: '2025-03-29T23:59:59'
 - name: Hackpad
   description: Design a keyboard get the parts! Please note this is only open to those who have build a Macropad previously.
   website: https://github.com/hackclub/hackpad
   slack: https://hackclub.slack.com/archives/C07LESGH0B0
   slackChannel: "#hackpad"
-  status: active
+  status: ended
   deadline: '2025-03-16T23:59:59'
   participants: 719
 - name: Sidequests
@@ -51,7 +51,7 @@ limitedTime:
   website: https://browserbuddy.hackclub.com/
   slack: https://hackclub.slack.com/archives/C07MQBTNVRU
   slackChannel: "#browser-buddy"
-  status: active
+  status: ended
   deadline: '2025-03-19T23:59:59'
   participants: 22
 - name: TerminalCraft
@@ -60,7 +60,7 @@ limitedTime:
   website: https://terminalcraft.hackclub.com/
   slack: https://hackclub.slack.com/archives/C08F58MT3GV
   slackChannel: "#terminal-craft"
-  status: active
+  status: ended
   deadline: '2025-03-19T23:59:59'
 - name: Pixeldust
   description: Make a neopixel based PCB, get the parts to make one!
@@ -68,28 +68,28 @@ limitedTime:
   website: https://pixeldust.hackclub.com/
   slack: https://hackclub.slack.com/archives/C0895PXH53M
   slackChannel: "#pixeldust"
-  status: active
+  status: ended
   deadline: '2025-04-13T23:59:59'
 - name: Juice
   description: Spend 100 hours in 2 months building a game, and we'll cover your Steam release and fund a flight to China for a pop-up shop.
   website: https://juice.hackclub.com
   slack: https://hackclub.slack.com/archives/C088UF12N1Z
   slackChannel: "#juice"
-  status: active
+  status: ended
   deadline: '2025-04-01T23:59:59'
 - name: Jungle
   description: Spend time working on your game, get money to help publish it! Prizes include steam license, itch.io asset store credits, and much much more!
   website: https://juice.hackclub.com/jungle 
   slack: https://hackclub.slack.com/archives/C086MACKK43
   slackChannel: "#jungle"
-  status: active
+  status: ended
   deadline: '2025-04-01T23:59:59'
 - name: Infill
   description: Design your own 3D printer mod, get $20 to build it!
   website: https://github.com/hackclub/infill
   slack: https://hackclub.slack.com/archives/C08B7LF58TX
   slackChannel: "#infill"
-  status: active
+  status: ended
   deadline: '2025-05-04T23:59:59'
   participants: 380
 - name: Visioneer
@@ -97,14 +97,14 @@ limitedTime:
   website: https://visioneer.hackclub.com
   slack: https://hackclub.slack.com/archives/C082PCKJYMN
   slackChannel: "#visioneer"
-  status: active
+  status: ended
   deadline: '2025-04-20T23:59:59'
 - name: Hacklet
   description: Spend two hours building a creative javascript bookmarklet, get $10 to buy a domain! 
   website: http://hackclub.github.io/hacklet
   slack: https://hackclub.slack.com/archives/C08PJMATU8Y
   slackChannel: "#hacklet"
-  status: active
+  status: ended
   deadline: '2025-05-10T23:59:59'
 - name: Asylum
   description: Fast-paced hardware YSWS challenges.
@@ -174,7 +174,7 @@ limitedTime:
   website: https://cascade.hackclub.com/
   slack: https://hackclub.slack.com/archives/C07QA8HD48N
   slackChannel: "#cascade-ysws"
-  status: active
+  status: ended
   deadline: '2024-12-14T23:59:59'
   participants: 55
 - name: Riceathon
@@ -182,7 +182,7 @@ limitedTime:
   website: https://github.com/HackClub/riceathon
   slack: https://hackclub.slack.com/archives/C07MLF9A8H5
   slackChannel: "#riceathon"
-  status: active
+  status: ended
   deadline: '2025-01-10T23:59:59'
   participants: 64
 - name: Hacky Holidays
@@ -198,14 +198,14 @@ limitedTime:
   website: https://bakebuild.hackclub.com/
   slack: https://hackclub.slack.com/archives/C0844MV2JM9
   slackChannel: "#bakebuild"
-  status: active
+  status: ended
   deadline:
 - name: Retrospect (J2ME edition)
   description: Create a J2ME game (Java MIDlet) and have it delivered on a J2ME-capable phone.
   website: https://retrospect.hackclub.com/j2me
   slack: https://hackclub.slack.com/archives/C07MUFXNG82
   slackChannel: "#retrospect"
-  status: active
+  status: ended
   deadline: '2025-04-07T23:59:59'
 - name: Hackaccino
   description: Build a 3D website and get a free frappuccino.
@@ -228,7 +228,7 @@ limitedTime:
   website: https://tarot.hackclub.com/
   slack: https://slack.com/archives/C08L60RUQ92
   slackChannel: "#10-days-of-tarot"
-  status: active
+  status: ended
   deadline: '2025-04-13T23:59:59'
 - name: Tonic
   description: Make a Jekyll theme, show it to the world, and we'll send you a Hack Club hat!
@@ -236,7 +236,6 @@ limitedTime:
   slack: https://slack.com/archives/C08K7ARJ58U
   slackChannel: "#tonic"
   status: active
-  deadline: 
 indefinite:
 - name: Sprig
   description: Build a JS game and play it on your own console.
