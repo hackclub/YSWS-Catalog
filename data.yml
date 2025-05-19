@@ -266,6 +266,18 @@ indefinite:
   slackChannel: "#swirl"
   status: active
   participants: 40
+- name: Toppings
+  description: Your CSS Sidequest!
+  website: https://toppings.hackclub.com
+  slack: https://hackclub.slack.com/archives/C08R8V2E3LY
+  slackChannel: "#toppings"
+  status: active
+- name: Grub
+  description: Build a website using Tailwind CSS, get Junk Food!
+  website: https://grub.hackclub.com
+  slack: https://hackclub.slack.com/archives/C08R8V2E3LY
+  slackChannel: "#Grub"
+  status: active
 - name: OnBoard Live
   description: Design a PCB live on YouTube for $5/hour PCB credit.
   website:
