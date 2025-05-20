@@ -1,5 +1,89 @@
 ---
 limitedTime:
+- name: Thunder
+  description: You ship Slack bot, we will ship you a orpheus bucket hat!
+  slack: https://hackclub.slack.com/archives/C06V2GEV3MY
+  slackChannel: "#thunder"
+  status: active
+  deadline: '2025-06-3T23:59:59'
+- name: Jouney
+  description: THE JOURNEY, A 3 week journey into making!
+  slack: https://hackclub.slack.com/archives/C08MYN7HVN2
+  slackChannel: "#journey"
+  status: active
+  deadline: '2025-06-3T23:59:59'
+- name: Solder
+  description: Design and solder your own custom PCB with a free electronics kit!
+  website: https://solder.hackclub.com/
+  slack: https://slack.com/archives/C08L288G22Y
+  slackChannel: "#solder"
+  status: active
+  deadline: '2025-05-30T23:59:59'
+- name: Tonic
+  description: Make a Jekyll theme, show it to the world, and we'll send you a Hack Club hat!
+  website: https://tonic.hackclub.com/
+  slack: https://slack.com/archives/C08K7ARJ58U
+  slackChannel: "#tonic"
+  status: active
+- name: HackCraft
+  description: Create a Minecraft mod, and Hack Club sends you Minecraft Java!
+  website: https://hackcraft.hackclub.com/
+  slack: https://hackclub.slack.com/archives/C07NQ5QAYNQ
+  slackChannel: "#mc-modding"
+  status: active
+  deadline: '2025-06-01T23:59:59'
+  detailedDescription: Join HackCraft to build and ship your own Minecraft mod. Access exclusive resources and a supportive community.
+  steps:
+  - Make a mod.
+  - Publish it on Modrinth or Hangar.
+  - Submit your mod to Hack Club.
+  - Receive Minecraft Java Edition and enjoy!
+  requirements:
+  - Basic knowledge of Java programming.
+  - A passion for Minecraft modding.
+  details:
+  - Participants will receive a Minecraft Java Edition account upon successful submission.
+  - Support is available through our Slack community.
+  participants: 4
+- name: Lockin
+  description: Work on anything Wakatime-able on call with another Hack Clubber, spin for stickers at the end of the session.
+  website: https://lockin.hackclub.com/
+  slack: https://slack.com/archives/C08JV3ZV1DY
+  slackChannel: "#lock-in"
+  status: active
+- name: Sidequests
+  description: A short-run low-volume low-effort ysws series from nora & co.
+  detailedDescription: |
+    #1: SkinAmp (ft. phoebe!) - Ship a WinAmp skin, we'll send you the WinAmp source code on CD-R (ended 2025-04-13).
+    #2: gemerald - Write something useful in Ruby, i'll send you a sticker (best few get a book!) (started 2025-04-10, ending soon).
+  website: https://sidequests.hackclub.com/
+  slack: https://slack.com/archives/C08KCUK3NF5
+  slackChannel: "#sidequests"
+  status: active
+- name: Hackaccino
+  description: Build a 3D website and get a free frappuccino.
+  website: https://fraps.hackclub.com/
+  slack: https://hackclub.slack.com/archives/C078DFVL5LZ
+  slackChannel: "#fraps"
+  status: active
+  deadline:
+  participants: 362
+- name: Cider
+  description: Create an iOS app and receive a $100 Apple Developer account to publish it.
+  website: https://cider.hackclub.com/
+  slack: https://hackclub.slack.com/archives/C073DTGENJ2
+  slackChannel: "#cider"
+  status: active
+  deadline:
+  participants: 34
+- name: Cascade
+  description: Create animations with CSS and receive art supplies.
+  website: https://cascade.hackclub.com/
+  slack: https://hackclub.slack.com/archives/C07QA8HD48N
+  slackChannel: "#cascade-ysws"
+  status: ended
+  deadline: '2024-12-14T23:59:59'
+  participants: 55
 - name: Cafe
   description: Collect cups, progress the graph, earn bonuses!
   detailedDescription: Work on a personal project in a huddle, get a cup every hour. Getting certain amounts of cups can get you special prizes! See the cafe-bulletin channel for more information!
@@ -31,21 +115,6 @@ limitedTime:
   status: ended
   deadline: '2025-03-16T23:59:59'
   participants: 719
-- name: Sidequests
-  description: A short-run low-volume low-effort ysws series from nora & co.
-  detailedDescription: |
-    #1: SkinAmp (ft. phoebe!) - Ship a WinAmp skin, we'll send you the WinAmp source code on CD-R (ended 2025-04-13).
-    #2: gemerald - Write something useful in Ruby, i'll send you a sticker (best few get a book!) (started 2025-04-10, ending soon).
-  website: https://sidequests.hackclub.com/
-  slack: https://slack.com/archives/C08KCUK3NF5
-  slackChannel: "#sidequests"
-  status: active
-- name: Lockin
-  description: Work on anything Wakatime-able on call with another Hack Clubber, spin for stickers at the end of the session.
-  website: https://lockin.hackclub.com/
-  slack: https://slack.com/archives/C08JV3ZV1DY
-  slackChannel: "#lock-in"
-  status: active
 - name: BrowserBuddy
   description: Build a Chrome extension, and Hack Club provides $30 to launch it on Chrome Web Store.
   website: https://browserbuddy.hackclub.com/
@@ -142,41 +211,6 @@ limitedTime:
   slackChannel: "#dessert"
   status: ended
   deadline: '2025-01-10T23:59:59'
-- name: Solder
-  description: Design and solder your own custom PCB with a free electronics kit!
-  website: https://solder.hackclub.com/
-  slack: https://slack.com/archives/C08L288G22Y
-  slackChannel: "#solder"
-  status: active
-  deadline: '2025-05-30T23:59:59'
-- name: HackCraft
-  description: Create a Minecraft mod, and Hack Club sends you Minecraft Java!
-  website: https://hackcraft.hackclub.com/
-  slack: https://hackclub.slack.com/archives/C07NQ5QAYNQ
-  slackChannel: "#mc-modding"
-  status: active
-  deadline: '2025-06-01T23:59:59'
-  detailedDescription: Join HackCraft to build and ship your own Minecraft mod. Access exclusive resources and a supportive community.
-  steps:
-  - Make a mod.
-  - Publish it on Modrinth or Hangar.
-  - Submit your mod to Hack Club.
-  - Receive Minecraft Java Edition and enjoy!
-  requirements:
-  - Basic knowledge of Java programming.
-  - A passion for Minecraft modding.
-  details:
-  - Participants will receive a Minecraft Java Edition account upon successful submission.
-  - Support is available through our Slack community.
-  participants: 4
-- name: Cascade
-  description: Create animations with CSS and receive art supplies.
-  website: https://cascade.hackclub.com/
-  slack: https://hackclub.slack.com/archives/C07QA8HD48N
-  slackChannel: "#cascade-ysws"
-  status: ended
-  deadline: '2024-12-14T23:59:59'
-  participants: 55
 - name: Riceathon
   description: Customize your Linux install, and get programmer socks or a Blåhaj.
   website: https://github.com/HackClub/riceathon
@@ -207,22 +241,6 @@ limitedTime:
   slackChannel: "#retrospect"
   status: ended
   deadline: '2025-04-07T23:59:59'
-- name: Hackaccino
-  description: Build a 3D website and get a free frappuccino.
-  website: https://fraps.hackclub.com/
-  slack: https://hackclub.slack.com/archives/C078DFVL5LZ
-  slackChannel: "#fraps"
-  status: active
-  deadline:
-  participants: 362
-- name: Cider
-  description: Create an iOS app and receive a $100 Apple Developer account to publish it.
-  website: https://cider.hackclub.com/
-  slack: https://hackclub.slack.com/archives/C073DTGENJ2
-  slackChannel: "#cider"
-  status: active
-  deadline:
-  participants: 34
 - name: 10 Days of Tarot
   description: Build a project or feature and get exclusive prizes for each card requirement you hit.
   website: https://tarot.hackclub.com/
@@ -230,13 +248,40 @@ limitedTime:
   slackChannel: "#10-days-of-tarot"
   status: ended
   deadline: '2025-04-13T23:59:59'
-- name: Tonic
-  description: Make a Jekyll theme, show it to the world, and we'll send you a Hack Club hat!
-  website: https://tonic.hackclub.com/
-  slack: https://slack.com/archives/C08K7ARJ58U
-  slackChannel: "#tonic"
-  status: active
 indefinite:
+- name: Grub
+  description: Build a website using Tailwind CSS, get Junk Food!
+  website: https://grub.hackclub.com
+  slack: https://hackclub.slack.com/archives/C08R8V2E3LY
+  slackChannel: "#Grub"
+  status: active
+- name: Toppings
+  description: Your CSS Sidequest!
+  website: https://toppings.hackclub.com
+  slack: https://hackclub.slack.com/archives/C08R8V2E3LY
+  slackChannel: "#toppings"
+  status: active
+- name: Swirl
+  description: Create a quality website with Scoops, get ice cream!
+  detailedDescription: Ship a static website (html + css) that has a Scoop, and get a grant for ice cream to enjoy! Scoops are made up of groups of three html / css features that add something of value to the website.
+  website: https://swirl.hackclub.com
+  slack: https://hackclub.slack.com/archives/C08FR0LMVHD
+  slackChannel: "#swirl"
+  status: active
+  participants: 40
+- name: Boba Drops
+  description: Build a website and get boba!
+  website: https://boba.hackclub.com/
+  slack: https://hackclub.slack.com/archives/C06UJR8QW0M
+  slackChannel: "#boba"
+  status: active
+  participants: 1253
+- name: OnBoard Live
+  description: Design a PCB live on YouTube for $5/hour PCB credit.
+  website:
+  slack: https://hackclub.slack.com/archives/C07F3EA2L8G
+  slackChannel: "#onboard-live"
+  status: active
 - name: Sprig
   description: Build a JS game and play it on your own console.
   website: https://sprig.hackclub.com/
@@ -251,39 +296,6 @@ indefinite:
   slackChannel: "#electronics"
   status: ended
   participants: 1000
-- name: Boba Drops
-  description: Build a website and get boba!
-  website: https://boba.hackclub.com/
-  slack: https://hackclub.slack.com/archives/C06UJR8QW0M
-  slackChannel: "#boba"
-  status: active
-  participants: 1253
-- name: Swirl
-  description: Create a quality website with Scoops, get ice cream!
-  detailedDescription: Ship a static website (html + css) that has a Scoop, and get a grant for ice cream to enjoy! Scoops are made up of groups of three html / css features that add something of value to the website.
-  website: https://swirl.hackclub.com
-  slack: https://hackclub.slack.com/archives/C08FR0LMVHD
-  slackChannel: "#swirl"
-  status: active
-  participants: 40
-- name: Toppings
-  description: Your CSS Sidequest!
-  website: https://toppings.hackclub.com
-  slack: https://hackclub.slack.com/archives/C08R8V2E3LY
-  slackChannel: "#toppings"
-  status: active
-- name: Grub
-  description: Build a website using Tailwind CSS, get Junk Food!
-  website: https://grub.hackclub.com
-  slack: https://hackclub.slack.com/archives/C08R8V2E3LY
-  slackChannel: "#Grub"
-  status: active
-- name: OnBoard Live
-  description: Design a PCB live on YouTube for $5/hour PCB credit.
-  website:
-  slack: https://hackclub.slack.com/archives/C07F3EA2L8G
-  slackChannel: "#onboard-live"
-  status: active
 drafts:
 - name: Hack A Home
   description: You Ship a Home Assistant with Software,PCB and Case, We Ship a grant ($150 Max)to make it. 
