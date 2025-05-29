@@ -1,0 +1,36 @@
+name: Generate JSON file
+on:
+  push:
+    paths:
+      - 'data.yml'
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  generate-json:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+      
+      - name: Install dependencies
+        run: npm install js-yaml
+      
+      - name: Generate JSON file
+        run: node generate-json.js
+      
+      - name: Commit and push if changed
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add feed.xml
+          git diff --quiet && git diff --staged --quiet || git commit -m "Update JSON Data File"
+          git push

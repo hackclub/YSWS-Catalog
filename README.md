@@ -13,6 +13,7 @@
 - **Real-time Deadline Updates:** Deadlines are updated in real-time to reflect the current status, ensuring information is always up-to-date.
 - **Responsive Design:** Optimized for various screen sizes and devices, providing a seamless experience on desktops, tablets, and mobile devices.
 - **RSS Feed:** Subscribe to get notifications about active YSWS programs in your favorite RSS reader.
+- **JSON API:** Get full data as a json object
 
 ## Getting Started
 
@@ -55,6 +56,8 @@ This feed is automatically updated whenever new programs are added or existing p
   - Handling theme toggling
   - Managing program detail modals
   - Updating deadlines in real-time
+- **generate-json.js:** Generates a JSON file equivalent of the data.yml (for API use)
+- **generate-rss.js:** Generates an RSS feed.xml file
 
 ## Data Source & Example
 
