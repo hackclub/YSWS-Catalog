@@ -358,6 +358,15 @@
   ],
   "drafts": [
     {
+      "name": "Reactive",
+      "description": "You Ship: A React Website, We Ship: $15 to buy a domain!",
+      "detailedDescription": "Build and publish a React website that matches certain submission criteria and we'll send you a $15 grant to buy a domain.",
+      "website": null,
+      "slack": "https://hackclub.slack.com/archives/C090S7Q2HT4",
+      "slackChannel": "#reactive",
+      "status": "draft"
+    },
+    {
       "name": "Hack A Home",
       "description": "You Ship a Home Assistant with Software,PCB and Case, We Ship a grant ($150 Max)to make it.",
       "detailedDescription": "Build a home assistant with Software,PCB and Case . We will send u a grant ($150 Max)to make it.\n",
