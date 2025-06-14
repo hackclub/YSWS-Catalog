@@ -163,13 +163,13 @@ limitedTime:
   slack: https://slack.com/archives/C08L288G22Y
   slackChannel: "#solder"
   status: active
-  deadline: '2025-05-30T23:59:59'
+  deadline: '2025-06-30T23:59:59'
 - name: HackCraft
   description: Create a Minecraft mod, and Hack Club sends you Minecraft Java!
   website: https://hackcraft.hackclub.com/
   slack: https://hackclub.slack.com/archives/C07NQ5QAYNQ
   slackChannel: "#mc-modding"
-  status: active
+  status: ended
   deadline: '2025-06-07T23:59:59'
   detailedDescription: Join HackCraft to build and ship your own Minecraft mod. Access exclusive resources and a supportive community.
   steps:
