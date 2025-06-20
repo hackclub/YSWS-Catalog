@@ -17,7 +17,11 @@
       "slack": "https://hackclub.slack.com/archives/C090S7Q2HT4",
       "slackChannel": "#reactive",
       "status": "active",
-      "deadline": "2025-07-02T23:59:59"
+      "deadline": "2025-07-04T23:59:59",
+      "requirements": [
+        "Basic knowledge of HTML and CSS",
+        "A little knowledge of JavaScript"
+      ]
     },
     {
       "name": "Waveband",
