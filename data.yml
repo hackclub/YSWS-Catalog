@@ -8,6 +8,13 @@ limitedTime:
   status: active
   deadline: '2025-08-31T23:59:59'
   participants: 10985
+- name: Converge
+  description: Build Discord/Slack bots, we ship domain names, server hosting, Blahajs, and more
+  website: https://converge.hackclub.com/?utm_source=ysws-site
+  slack: https://hackclub.slack.com/archives/C091UF79VDM
+  slackChannel: "#converge"
+  status: active
+  deadline: '2025-07-15T23:59:59'
 - name: Reactive
   description: Ship a website built with React, get $15 to buy a domain.
   website: http://reactive.hackclub.dev
