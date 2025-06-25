@@ -15,6 +15,13 @@ limitedTime:
   slackChannel: "#reactive"
   status: active
   deadline: '2025-07-02T23:59:59'
+- name: Gamefolio
+  description: Make a interactive portfolio website, get $20 for hosting or domains
+  website: http://gamefolio.hackclub.dev
+  slack: https://hackclub.slack.com/archives/C08RT4C2485
+  slackChannel: "#gamefolio"
+  status: active
+  deadline: '2025-07-02T23:59:59'
 - name: Waveband
   description: Create a desktop app using RTL-SDR, and Hack Club sends you a dongle.
   website: https://waveband.hackclub.com/
