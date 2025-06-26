@@ -16,7 +16,7 @@ limitedTime:
   status: active
   deadline: '2025-07-02T23:59:59'
 - name: Waveband
-  description: Create a desktop app using RTL-SDR, and Hack Club sends you a dongle.
+  description: Create a program that uses RTL-SDR, and Hack Club sends you a dongle and antenna kit.
   website: https://waveband.hackclub.com/
   slack: https://hackclub.slack.com/archives/C082S5V95G8
   slackChannel: "#waveband"
