@@ -8,6 +8,13 @@ limitedTime:
   status: active
   deadline: '2025-08-31T23:59:59'
   participants: 10985
+- name: Hackmate
+  description: Build a collaborative app, get upto $50 for cloud credits or a raspberry pi
+  website: https://hackmate.hackclub.dev
+  slack: https://hackclub.slack.com/archives/C092HR1LG20
+  slackChannel: "#hackmate"
+  status: active
+  deadline: '2025-07-15T23:59:59'
 - name: Reactive
   description: Ship a website built with React, get $15 to buy a domain.
   website: http://reactive.hackclub.dev
