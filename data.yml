@@ -330,8 +330,8 @@ limitedTime:
   website: https://neighborhood.hackclub.com
   slack: https://hackclub.slack.com/archives/C073L9LB4K1
   slackChannel: "#neighborhood"
-  status: active
-  deadline: '2025-08-31T23:59:59'
+  status: ended
+  # deadline: '2025-08-31T23:59:59' # Neighborhood was ended early
 indefinite:
 - name: Sprig
   description: Build a JS game and play it on your own console.
