@@ -8,11 +8,190 @@ limitedTime:
   status: active
   deadline: '2025-08-31T23:59:59'
   participants: 10985
+- name: Gemini
+  description: Ship An Android App and get a FREE Android Phone + Dev License!
+  website: https://gemini.hackclub.com/
+  slack: https://hackclub.slack.com/archives/C094VQKH1FV
+  slackChannel: "#gemini"
+  status: active
+  deadline: '2025-08-11T23:59:59'
+
+- name: Timeless
+  description: You have 10 days. Make a video game that could last someone 10 years.
+  website: https://timeless.hackclub.com/
+  slack: https://hackclub.slack.com/archives/C0956A8CL86
+  slackChannel: "#timeless"
+  status: active
+  deadline: '2025-07-24T23:59:59'
+
+- name: Twist
+  description: Make an esolang, get stickers and a $40 electronics grant.
+  website: https://twist.hackclub.dev/
+  slack: https://hackclub.slack.com/archives/C092A93FA4X
+  slackChannel: "#twist-ysws"
+  status: ended
+  deadline: '2025-07-16T23:59:59'
+
+- name: Terminal Craft v3
+  description: Build and publish your own terminal program and earn a $60 grant
+  website: https://terminalcraft.hackclub.com
+  slack: https://hackclub.slack.com/archives/C08F58MT3GV
+  slackChannel: "#terminal-craft"
+  status: active
+  deadline: '2025-08-10T23:59:59'
+
+- name: Minigame
+  description: A YSWS where you build "mini" 5 hour games and earn a $20 grant for each one! At the end everyone's games will be combined together to make a big Minigame collection!
+  website: https://minigame.hackclub.dev
+  slack: https://hackclub.slack.com/archives/C093SSC3Z16
+  slackChannel: "#minigame"
+  status: active
+  deadline: '2025-07-18T23:59:59'
+
+- name: Squeak
+  description: Design a mouse case and receive the case and parts!
+  website: https://squeak.hackclub.com
+  slack: https://hackclub.slack.com/archives/C094458MVMX
+  slackChannel: "#squeak"
+  status: active
+  deadline: '2025-07-13T23:59:59'
+
+- name: Pathfinder
+  description: Make a custom PCB controller board and efidget
+  website: https://pathfinder.hackclub.com
+  slack: https://hackclub.slack.com/archives/C0943DE80E4
+  slackChannel: "#pathfinder"
+  status: active
+  deadline: '2025-07-05T23:59:59'
+
+- name: Hackfinger
+  description: You design a custom appendage (finger, tail, leg, anything you want!) and get your design printed along with a custom control board.
+  website: https://hackfinger.hackclub.com
+  slack: https://hackclub.slack.com/archives/C095T0TQ5A8
+  slackChannel: "#hackfinger"
+  status: active
+  deadline: '2025-07-20T23:59:59'
+
+- name: Silicon
+  description: Design your own custom devboard and we'll fund it
+  website: https://silicon.hackclub.dev
+  slack: https://hackclub.slack.com/archives/C090WQ9JBTM
+  slackChannel: "#silicon"
+  status: active
+  deadline: '2025-08-06T23:59:59'
+
+- name: Grounded
+  description: Onboard + Bin v2
+  website: https://grounded.hackclub.com
+  slack: https://hackclub.slack.com/archives/C0948RT0C1M
+  slackChannel: "#grounded"
+  status: active
+  deadline: null
+
+- name: Jumpstart
+  description: Game-dev YSWS running July 9th to Aug 9th ✨
+  website: https://jumpstart.hackclub.com
+  slack: https://hackclub.slack.com/archives/C0931T5SEH4
+  slackChannel: "#jumpstart"
+  status: active
+  deadline: '2025-08-09T23:59:59'
+
+- name: Reinforced
+  description: Build a game, build a bot to beat it, get compute to do more AI stuff.
+  website: https://reinforced.hackclub.dev
+  slack: https://hackclub.slack.com/archives/C092JUZ7V7Y
+  slackChannel: "#reinforced"
+  status: active
+  deadline: '2025-07-18T23:59:59'
+
+- name: Decode
+  description: Learn how a tech product works (hardware + software) and we ship you a grant to make it yourself
+  website: https://decode.hackclub.dev
+  slack: https://hackclub.slack.com/archives/C091GPYCAFL
+  slackChannel: "#decode"
+  status: active
+  deadline: '2025-07-10T23:59:59'
+
+- name: Storyboard
+  description: Make a visual novel, get $$ for merch/plushie
+  website: https://storyboard.hackclub.com
+  slack: https://hackclub.slack.com/archives/C095E84SE1X
+  slackChannel: "#storyboard"
+  status: active
+  deadline: '2025-07-13T23:59:59'
+
+- name: Pulse
+  description: Build a project using the Spotify API with 6 hours on Hackatime, get 3 months of Spotify Premium
+  website: https://pulse.hackclub.dev
+  slack: https://hackclub.slack.com/archives/C090E7XUEA3
+  slackChannel: "#pulse"
+  status: active
+  deadline: '2025-07-11T23:59:59'
+
+- name: Journey
+  description: The smash-hit Hack Club event where you share insider details of whatever you're building.
+  website: https://journey.hackclub.com
+  slack: https://hackclub.slack.com/archives/example
+  slackChannel: "#journey"
+  status: ended
+  deadline: '2025-06-10T23:59:59'
+
+- name: Railway
+  description: Build a site with Ruby on Rails, receive stickers!
+  website: https://railway.hackclub.com
+  slack: https://hackclub.slack.com/archives/C094T1FL2KG
+  slackChannel: "#railway"
+  status: active
+  deadline: '2025-07-22T23:59:59'
+
+- name: Cinema
+  description: You ship a short story JavaScript animation using canvas. In return, we ship HQ-made caramel popcorn
+  website: https://cinema.hackclub.com
+  slack: https://hackclub.slack.com/archives/C0936AVS683
+  slackChannel: "#cinema"
+  status: ended
+  deadline: '2025-07-06T23:59:59'
+
+- name: Spatula
+  description: You ship an app or script that sends push notifications, we'll give you a $5 grant card so you can start sending SMS messages with your code!
+  website: https://spatula.hackclub.com
+  slack: https://hackclub.slack.com/archives/C093Q40FU3C
+  slackChannel: "#spatula"
+  status: ended
+  deadline: '2025-07-03T23:59:59'
+
+- name: Rewind
+  description: Make an app that runs on Windows XP, get stickers + super cool headphones from KOSS (the KTX Pro 1 or Porta Pros).
+  website: https://rewind.hackclub.com
+  slack: https://hackclub.slack.com/archives/C093ALFAW8K
+  slackChannel: "#rewind"
+  status: active
+  deadline: '2025-08-13T23:59:59'
+
+- name: Illumination
+  description: You build something with ESP32-S3 emulator, and we give you a super cool ESP32-S3 devboard, custom parts, and cloud credits!
+  website: https://illumination.hackclub.com
+  slack: https://hackclub.slack.com/archives/C091MS57D37
+  slackChannel: "#illumination"
+  status: active
+  deadline: '2025-07-16T23:59:59'
+
+- name: Overflow-hidden
+  description: ysws where you can't use a scrollbar
+  website: https://overflow-hidden.hackclub.com
+  slack: https://hackclub.slack.com/archives/C095HDJK3TQ
+  slackChannel: "#overflow-hidden"
+  status: active
+  deadline: '2025-07-21T23:59:59'
+
+
 - name: Hackmate
   description: Build a collaborative app, get upto $50 for cloud credits or a raspberry pi
   website: https://hackmate.hackclub.dev
   slack: https://hackclub.slack.com/archives/C092HR1LG20
   slackChannel: "#hackmate"
+  status: active
+  deadline: '2025-07-17T23:59:59'
 - name: Converge
   description: Build Discord/Slack bots, we ship domain names, server hosting, Blahajs, and more
   website: https://converge.hackclub.com/?utm_source=ysws-site
