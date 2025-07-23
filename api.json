@@ -803,10 +803,10 @@
     {
       "name": "Hackducky",
       "description": "Create A DuckyScript get a Rubber Ducky ! ( hackducky )",
-      "website": null,
+      "website": "hackducky.hackclub.com",
       "slack": "https://hackclub.slack.com/archives/C08B8HZBC85",
       "slackChannel": "#hackducky",
-      "status": "draft"
+      "status": "active"
     },
     {
       "name": "HackABand",
