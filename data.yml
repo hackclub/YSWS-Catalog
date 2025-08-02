@@ -585,6 +585,13 @@ limitedTime:
   slackChannel: "#neighborhood"
   status: ended
   # deadline: '2025-08-31T23:59:59' # Neighborhood was ended early
+  - name: Toppings
+  description: You ship an interactive website using framework-less JavaScript, we ship you a grant to an ice cream parlor.
+  website: https://toppings.hackclub.com/
+  slack: https://hackclub.slack.com/archives/C08R8V2E3LY
+  slackChannel: "#toppings"
+  status: active
+  deadline: '2025-08-04T04:59:59'
 indefinite:
 - name: Sprig
   description: Build a JS game and play it on your own console.
@@ -627,12 +634,6 @@ indefinite:
   website: https://grub.hackclub.com/
   slack:
   slackChannel: "#grub"
-  status: active
-- name: Toppings
-  description: You ship an interactive website using framework-less JavaScript, we ship you a grant to an ice cream parlor.
-  website: https://toppings.hackclub.com/
-  slack: https://hackclub.slack.com/archives/C08R8V2E3LY
-  slackChannel: "#toppings"
   status: active
 - name: Waffles
   description: You ship a website using HTML CSS and JavaScript, and get Waffles!!!
