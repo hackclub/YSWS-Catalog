@@ -117,6 +117,14 @@ limitedTime:
   status: active
   deadline: '2025-08-10T23:59:59'
 
+- name: iFrame
+  description: Draw or edit images using any programming language and we will hang your custom image on HQ wall and send a copy to you
+  website: https://iframe.hackclub.com/
+  slack: https://hackclub.slack.com/archives/C098LMVKPCM
+  slackChannel: "#iframe"
+  status: active
+  deadline:
+
 - name: Slushies
   description: Build a flask app, get $5 or $10 for slushies!
   website: https://slushies.hackclub.com
