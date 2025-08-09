@@ -71,7 +71,7 @@ limitedTime:
   slack: https://hackclub.slack.com/archives/C096CPJ1HCN
   slackChannel: "#portal-vr"
   status: active
-  deadline: '2025-08-16T23:59:59'
+  deadline: '2025-08-23T23:59:59'
 - name: Timeless
   description: You have 10 days. Make a video game that could last someone 10 years.
   website: https://timeless.hackclub.com/
