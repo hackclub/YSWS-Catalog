@@ -220,25 +220,6 @@
       "deadline": "2025-07-05T23:59:59"
     },
     {
-      "name": "Dummies",
-      "description": "learn a new language, recieve a guide book!",
-      "website": "https://dummies.hackclub.com/",
-      "deadline": "2025-08-14T23:59:59.000Z",
-      "detailedDescription": "Join Dummies to take on projects in new languages and earn grant cards for books!",
-      "steps": [
-        "Develop and publish a project",
-        "Submit it to Hack Club",
-        "Receive a grant for books!"
-      ],
-      "requirements": [
-        "taking on a NEW skill",
-        "resulting project can be seen from a weblink"
-      ],
-      "slack": "https://app.slack.com/client/T0266FRGM/C096M3EV67M",
-      "slackChannel": "#Dummies",
-      "status": "active"
-    },
-    {
       "name": "Hackfinger",
       "description": "You design a custom appendage (finger, tail, leg, anything you want!) and get your design printed along with a custom control board.",
       "website": "https://hackfinger.hackclub.com",
@@ -477,7 +458,7 @@
       "slack": "https://hackclub.slack.com/archives/C0981BXG124",
       "slackChannel": "#cmd-k",
       "status": "active",
-      "deadmine": "2025-08-17T23:59:59"
+      "deadline": "2025-08-17T23:59:59"
     },
     {
       "name": "Toolsmith",
@@ -495,7 +476,7 @@
       "slack": "https://hackclub.slack.com/archives/C09535Y8E83",
       "slackChannel": "#smelt",
       "status": "active",
-      "deadmine": "2025-07-31T23:59:59"
+      "deadline": "2025-07-31T23:59:59"
     },
     {
       "name": "Highway",
