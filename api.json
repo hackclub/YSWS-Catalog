@@ -1,6 +1,16 @@
 {
   "limitedTime": [
     {
+      "name": "The Zoo",
+      "description": "Make an animal themed Svelte site, earn Ikea Animal Plushies",
+      "website": "https://zoo.hackclub.com",
+      "slack": "https://hackclub.slack.com/archives/C08K37F66AK",
+      "slackChannel": "#the-zoo",
+      "status": "active",
+      "deadline": "2025-08-23T03:50:00",
+      "detailedDescription": "The Zoo is a Svelte YSWS where participants build an animal themed Svelte site and earn Mynts (currency) which can be turned into an HCB grant at the end to buy Ikea plushies. Get one giant Djungleskog, or multiple mini Blahaj, it's all up to you. Here's the best part: the better your submission is, the more Mynts you earn!\n"
+    },
+    {
       "name": "HackCraft",
       "description": "Create a Minecraft mod, get Stickers, Minecraft or a server and terraria!",
       "website": "https://hackcraft.hackclub.com/",
@@ -379,7 +389,7 @@
       "description": "You Ship A responsive website using only HTML and Tailwind CSS. We Ship A grant for junk food.",
       "detailedDescription": "The grant amount is based on the number of unique features implemented:\\n$6 (Basic Meal): For 2 unique features.\\n$8 (Refreshment Combo): For 4 unique features.\\n$10 (Full Combo Meal): For 6 or more unique features.",
       "website": "https://grub.hackclub.com/",
-      "slack": null,
+      "slack": "https://hackclub.slack.com/archives/C08S9NCEULB",
       "slackChannel": "#grub",
       "status": "active",
       "deadline": "2025-08-03T23:59:59"

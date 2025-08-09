@@ -68,7 +68,7 @@ Each program object can include:
 - **Required Fields:**
   - `name`: Program name
   - `description`: Short description of the program
-  - `status`: `active`, `upcoming`, or `completed`
+  - `status`: `active`, `draft`, or `ended`
 
 - **Optional Fields:**
   - `website`: URL or `null`
