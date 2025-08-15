@@ -1,5 +1,12 @@
 ---
 limitedTime:
+- name: Optimize
+  description: Build a desktop app, optimize, get RAM, get Storage
+  website: https://optimize.hackclub.com
+  slack: https://hackclub.slack.com/archives/C096NH7FW4T
+  slackChannel: '#optimize'
+  status: active
+  deadline: '2025-08-22T23:59:59'
 - name: The Zoo
   description: Make an animal themed Svelte site, earn Ikea Animal Plushies
   website: https://zoo.hackclub.com
