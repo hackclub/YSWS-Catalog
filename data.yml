@@ -1,5 +1,12 @@
 ---
 limitedTime:
+- name: Armed
+  description: Develop an arm assembly program, get lego.
+  website: https://armed.hackclub.com
+  slack: https://hackclub.slack.com/archives/C098S1A5ZAT
+  slackChannel: '#armed'
+  status: active
+  deadline: '2025-09-01T23:59:59'
 - name: Optimize
   description: Build a desktop app, optimize, get RAM, get Storage
   website: https://optimize.hackclub.com
