@@ -1083,3 +1083,13 @@ drafts:
   slack: https://hackclub.slack.com/archives/C096NH7FW4T
   status: active
   deadline: '2025-08-08T23:59:59'
+- name: birthday-cards
+  description: You ship a birthday themed project we ship a birthday card!
+  website: https://birthday-cards.hackclub.com/
+  slack: https://hackclub.slack.com/archives/C099VPF7V3P
+  slackChannel: "#birthday-cards-ysws"
+status: active
+deadline: 2026-08-12T23:59:59"
+detailedDescription: Join birthday-cards to create a birthday-themed project and receive a birthday card!
+details:
+   - you can get a gift from hq if you have 3 hours of work logged   
