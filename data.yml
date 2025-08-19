@@ -47,7 +47,7 @@ limitedTime:
   slack: https://hackclub.slack.com/archives/C015M4L9AHW
   slackChannel: "#summer-of-making"
   status: active
-  deadline: '2025-08-31T23:59:59'
+  deadline: '2025-09-31T23:59:59'
   participants: 10985
 - name: Hivemind
   description: Create a roguelike in 7 days, get itch.io credit.
