@@ -1,5 +1,14 @@
 ---
 limitedTime:
+- name: Shiba Arcade
+  description: Make a game with Godot, earn SSS, and get invited to build an arcade in Tokyo (flight stipends available!)
+  website: https://shiba.hackclub.com
+  slack: https://hackclub.slack.com/archives/C09AG5L0L03
+  slackChannel: '#shiba'
+  status: active
+  deadline: '2025-10-20T23:59:59'
+  detailedDescription: |
+    Shiba is a two-part adventure about game development. Create a game with Godot (an open-source game engine), earn SSS, use that for shop items, but most importantly, an invitation (and flight stipends) to Tokyo, Japan with 29 other Hack Clubbers to build a pop-up arcade!
 - name: Armed
   description: Develop an arm assembly program, get lego.
   website: https://armed.hackclub.com
