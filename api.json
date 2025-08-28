@@ -815,6 +815,15 @@
       "slack": "https://hackclub.slack.com/archives/C073L9LB4K1",
       "slackChannel": "#neighborhood",
       "status": "ended"
+    },
+    {
+      "name": "Fusering",
+      "description": "Design a keyring, get your keyring and a carabiner to hang it from!",
+      "website": "https://fusering.hackclub.com",
+      "slackChannel": "#fusering",
+      "slack": "https://hackclub.slack.com/archives/C098U42PD2A",
+      "status": "active",
+      "deadline": "2025-09-30T23:59:59"
     }
   ],
   "indefinite": [

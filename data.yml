@@ -674,6 +674,13 @@ limitedTime:
   slackChannel: "#neighborhood"
   status: ended
   # deadline: '2025-08-31T23:59:59' # Neighborhood was ended early
+- name: Fusering
+  description: "Design a keyring, get your keyring and a carabiner to hang it from!"
+  website: https://fusering.hackclub.com
+  slackChannel: "#fusering"
+  slack: https://hackclub.slack.com/archives/C098U42PD2A
+  status: active
+  deadline: '2025-09-30T23:59:59'
 indefinite:
 - name: Sprig
   description: Build a JS game and play it on your own console.
@@ -1099,6 +1106,7 @@ drafts:
   slack: https://hackclub.slack.com/archives/C096NH7FW4T
   status: active
   deadline: '2025-08-08T23:59:59'
+
 - name: birthday-cards
   description: You ship a birthday themed project we ship a birthday card!
   website: https://birthday-cards.hackclub.com/
