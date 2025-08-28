@@ -703,6 +703,13 @@ indefinite:
   slackChannel: "#onboard-live"
   status: active
 drafts:
+- name: issued
+  description: code to design hack-themed apparel
+  detailedDescription: you code to design hack-themed apparel, we ship popular designs as real clothes!
+  website: https://issued-ysws.vercel.app
+  slack: https://hackclub.slack.com/archives/C09C9M0N2UC
+  slackChannel: "#issued"
+  status: draft
 - name: Swatchbox
   description: You ship a modular art component, we ship the swatchbox to go with it!
   website:
