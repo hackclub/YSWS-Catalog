@@ -9,6 +9,13 @@ limitedTime:
   deadline: '2025-10-20T23:59:59'
   detailedDescription: |
     Shiba is a two-part adventure about game development. Create a game with Godot (an open-source game engine), earn SSS, use that for shop items, but most importantly, an invitation (and flight stipends) to Tokyo, Japan with 29 other Hack Clubbers to build a pop-up arcade!
+- name: birthday-cards
+  description: You ship a birthday themed project we ship a birthday card!
+  website: https://birthday-cards.hackclub.com/
+  slack: https://hackclub.slack.com/archives/C099VPF7V3P
+  slackChannel: "#birthday-cards-ysws"
+  status: active
+  deadline: 2026-08-12
 - name: Armed
   description: Develop an arm assembly program, get lego.
   website: https://armed.hackclub.com
