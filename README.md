@@ -15,6 +15,8 @@
 - **RSS Feed:** Subscribe to get notifications about active YSWS programs in your favorite RSS reader.
 - **JSON API:** Get full data as a json object
 
+## TO ADD A YSWS - PLEASE MAKE A PR TO API.JSON and DATA.YML 
+
 ## Getting Started
 
 1. **Clone the repository:**
