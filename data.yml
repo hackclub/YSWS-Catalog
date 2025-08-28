@@ -69,13 +69,6 @@ limitedTime:
   - Create a traditional roguelike in 7 days.
   - Chronicle its development across 7 devlogs.
   - Get $2.50 in itch.io credit for each approved hour you spend.
-- name: Reality
-  description: Build a tool that helps you or others break free from a digital bad habit! We ship you a personalized prize!
-  website: https://reality.hackclub.com
-  slack: https://hackclub.slack.com/archives/C09668Y9H1R
-  slackChannel: "#reality"
-  status: active
-  deadline: '2025-08-15T23:59:59'
 - name: Authly
   description: Build the weirdest and never-before-seen authentication system, get yubikeys, programmable nfc tags, antivirus giftcards and more!
   website: https://authly.hackclub.com
