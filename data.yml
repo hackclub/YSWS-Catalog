@@ -630,6 +630,13 @@ limitedTime:
   status: active
   deadline:
   participants: 34
+- name: Clutter
+  description: You ship something to organize your digital life. We ship you a grant to buy something to organize your physical life.
+  website: https://clutter.hackclub.com/
+  slack: https://hackclub.slack.com/archives/C0997C887M3
+  slackChannel: "#clutter"
+  status: active
+  deadline: '2025-09-17T23:59:59'
 - name: 10 Days of Tarot
   description: Build a project or feature and get exclusive prizes for each card requirement you hit.
   website: https://tarot.hackclub.com/
