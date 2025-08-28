@@ -637,13 +637,6 @@ limitedTime:
   slackChannel: "#10-days-of-tarot"
   status: active
   deadline: '2025-04-13T23:59:59'
-- name: Tonic
-  description: Make a Jekyll theme, show it to the world, and we'll send you a Hack Club hat!
-  website: https://tonic.hackclub.com/
-  slack: https://slack.com/archives/C08K7ARJ58U
-  slackChannel: "#tonic"
-  status: active
-  deadline:
 - name: Thunder
   description: 'You Ship A Slack bot. We Ship A limited edition Orpheus bucket hat.'
   website:
