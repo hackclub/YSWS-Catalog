@@ -21,7 +21,7 @@ limitedTime:
   website: https://birthday-cards.hackclub.com/
   slack: https://hackclub.slack.com/archives/C099VPF7V3P
   slackChannel: "#birthday-cards-ysws"
-  status: active
+  status: ended
   deadline: 2026-08-12
 - name: Armed
   description: Develop an arm assembly program, get lego.
@@ -102,7 +102,7 @@ limitedTime:
   website: https://endpointer.hackclub.com
   slack: https://hackclub.slack.com/archives/C097M5JRT7F
   slackChannel: "#endpointer"
-  status: active
+  status: ended
   deadline: '2025-08-12T23:59:59'
 - name: Portal-VR
   description: Build an AR/VR application, get a VR headset!
