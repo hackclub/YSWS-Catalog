@@ -16,6 +16,13 @@ limitedTime:
   slackChannel: "#siege"
   status: active
   deadline: 2025-11-30
+- name: Waveform
+  description: Make your own waveform visualizer, get a grant to buy music
+  website: https://waveform.hackclub.com/
+  slack: https://hackclub.slack.com/archives/C09AX5PLLUS
+  slackChannel: "#waveform"
+  status: active
+  deadline: 2025-09-26
 - name: birthday-cards
   description: You ship a birthday themed project we ship a birthday card!
   website: https://birthday-cards.hackclub.com/
