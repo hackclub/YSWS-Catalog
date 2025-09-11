@@ -83,6 +83,14 @@ limitedTime:
   - Create a traditional roguelike in 7 days.
   - Chronicle its development across 7 devlogs.
   - Get $2.50 in itch.io credit for each approved hour you spend.
+- name: Penumbra
+  description: Make shaders, and we'll ship you GPUs and posters!
+  website: https://penumbra.hackclub.com/
+  slack: https://hackclub.slack.com/archives/C09EC7ZS05S
+  slackChannel: "#penumbra"
+  status: active
+  deadline: '2025-09-24T23:59:59'
+  detailedDescription: Penumbra is a YSWS, where you create shaders on ShaderToy, and get posters of your shaders shipped right to your doorstep! If you spend up to 45 hours across multiple ships, you'll be able to get a GPU like an RTX 3050! 
 - name: Authly
   description: Build the weirdest and never-before-seen authentication system, get yubikeys, programmable nfc tags, antivirus giftcards and more!
   website: https://authly.hackclub.com
