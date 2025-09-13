@@ -1,0 +1,463 @@
+{
+  "limitedTime": [
+    {
+      "name": "Shiba Arcade",
+      "description": "Make a game with Godot, earn SSS, and get invited to build an arcade in Tokyo (flight stipends available!)",
+      "website": "https://shiba.hackclub.com",
+      "slack": "https://hackclub.slack.com/archives/C09AG5L0L03",
+      "slackChannel": "#shiba",
+      "status": "active",
+      "deadline": "2025-10-20T23:59:59",
+      "detailedDescription": "Shiba is a two-part adventure about game development. Create a game with Godot (an open-source game engine), earn SSS, use that for shop items, but most importantly, an invitation (and flight stipends) to Tokyo, Japan with 29 other Hack Clubbers to build a pop-up arcade!"
+    },
+    {
+      "name": "Siege",
+      "description": "Code every week, get prizes. Make it to the end, get a framework!",
+      "website": "https://siege.hackclub.com/",
+      "slack": "https://hackclub.slack.com/archives/C08SKC6P85V",
+      "slackChannel": "#siege",
+      "status": "active",
+      "deadline": "2025-11-30T23:59:59"
+    },
+    {
+      "name": "Waveform",
+      "description": "Make your own waveform visualizer, get a grant to buy music",
+      "website": "https://waveform.hackclub.com/",
+      "slack": "https://hackclub.slack.com/archives/C09AX5PLLUS",
+      "slackChannel": "#waveform",
+      "status": "active",
+      "deadline": "2025-09-26T23:59:59"
+    },
+    {
+      "name": "birthday-cards",
+      "description": "You ship a birthday themed project we ship a birthday card!",
+      "website": "https://birthday-cards.hackclub.com/",
+      "slack": "https://hackclub.slack.com/archives/C099VPF7V3P",
+      "slackChannel": "#birthday-cards-ysws",
+      "status": "active",
+      "deadline": "2026-08-12T23:59:59"
+    },
+    {
+      "name": "HackCraft",
+      "description": "Create a Minecraft mod, get Stickers, Minecraft or a server and terraria!",
+      "website": "https://hackcraft.hackclub.com/",
+      "slack": "https://hackclub.slack.com/archives/C07NQ5QAYNQ",
+      "slackChannel": "#mc-modding",
+      "status": "active",
+      "detailedDescription": "Join HackCraft to build and ship your own Minecraft mod. Access exclusive resources and a supportive community.",
+      "steps": [
+        "Make a mod.",
+        "Publish it on Modrinth.",
+        "Submit your mod to Hack Club.",
+        "Receive prizes and enjoy!"
+      ],
+      "requirements": [
+        "Basic knowledge of Java programming."
+      ],
+      "details": [
+        "Participants will receive a Minecraft Java Edition account or server upon successful submission.",
+        "Support is available through our Slack community."
+      ]
+    },
+    {
+      "name": "Summer of Making",
+      "description": "Build stuff. Get stuff. Repeat.",
+      "website": "https://summer.hackclub.com/",
+      "slack": "https://hackclub.slack.com/archives/C015M4L9AHW",
+      "slackChannel": "#summer-of-making",
+      "status": "active",
+      "deadline": "2025-09-30T23:59:59",
+      "participants": 10985
+    },
+    {
+      "name": "Penumbra",
+      "description": "Make shaders, and we'll ship you GPUs and posters!",
+      "website": "https://penumbra.hackclub.com/",
+      "slack": "https://hackclub.slack.com/archives/C09EC7ZS05S",
+      "slackChannel": "#penumbra",
+      "status": "active",
+      "deadline": "2025-09-24T23:59:59",
+      "detailedDescription": "Penumbra is a YSWS, where you create shaders on ShaderToy, and get posters of your shaders shipped right to your doorstep! If you spend up to 45 hours across multiple ships, you'll be able to get a GPU like an RTX 3050!"
+    },
+    {
+      "name": "Clutter",
+      "description": "You ship something to organize your digital life. We ship you a grant to buy something to organize your physical life.",
+      "website": "https://clutter.hackclub.com/",
+      "slack": "https://hackclub.slack.com/archives/C0997C887M3",
+      "slackChannel": "#clutter",
+      "status": "active",
+      "deadline": "2025-09-17T23:59:59"
+    },
+    {
+      "name": "Fusering",
+      "description": "Design a keyring, get your keyring and a carabiner to hang it from!",
+      "website": "https://fusering.hackclub.com",
+      "slack": "https://hackclub.slack.com/archives/C098U42PD2A",
+      "slackChannel": "#fusering",
+      "status": "active",
+      "deadline": "2025-09-30T23:59:59"
+    },
+    {
+      "name": "iFrame",
+      "description": "Draw or edit images using any programming language and we will hang your custom image on HQ wall and send a copy to you",
+      "website": "https://iframe.hackclub.com/",
+      "slack": "https://hackclub.slack.com/archives/C098LMVKPCM",
+      "slackChannel": "#iframe",
+      "status": "active"
+    },
+    {
+      "name": "Silicon",
+      "description": "Design your own custom devboard and we'll fund it",
+      "website": "https://silicon.hackclub.dev",
+      "slack": "https://hackclub.slack.com/archives/C090WQ9JBTM",
+      "slackChannel": "#silicon",
+      "status": "ended",
+      "deadline": "2025-08-06T23:59:59"
+    },
+    {
+      "name": "Grounded",
+      "description": "Onboard + Bin v2",
+      "website": "https://grounded.hackclub.com",
+      "slack": "https://hackclub.slack.com/archives/C0948RT0C1M",
+      "slackChannel": "#grounded",
+      "status": "active"
+    },
+    {
+      "name": "BakeBuild",
+      "description": "Design a cookie cutter, get it shipped!",
+      "detailedDescription": "You ship : A CAD model of a cookie cutter, we ship : A 3D printed model of your custom cookie cutter & cookies!",
+      "website": "https://bakebuild.hackclub.com/",
+      "slack": "https://hackclub.slack.com/archives/C0844MV2JM9",
+      "slackChannel": "#bakebuild",
+      "status": "active"
+    },
+    {
+      "name": "Solder",
+      "description": "Design and solder your own custom PCB with a free electronics kit!",
+      "website": "https://solder.hackclub.com/",
+      "slack": "https://slack.com/archives/C08L288G22Y",
+      "slackChannel": "#solder",
+      "status": "ended",
+      "deadline": "2025-06-30T23:59:59"
+    },
+    {
+      "name": "cmd + k",
+      "description": "Build a Raycast extension, get Raycast Pro & stickers",
+      "website": "https://cmd-k.hackclub.com/",
+      "slack": "https://hackclub.slack.com/archives/C0981BXG124",
+      "slackChannel": "#cmd-k",
+      "status": "ended",
+      "deadline": "2025-08-17T23:59:59"
+    }
+  ],
+  "indefinite": [
+    {
+      "name": "Sprig",
+      "description": "Build a JS game and play it on your own console.",
+      "website": "https://sprig.hackclub.com/",
+      "slack": "https://hackclub.slack.com/archives/C02UN35M7LG",
+      "slackChannel": "#sprig",
+      "status": "active",
+      "participants": 657
+    },
+    {
+      "name": "OnBoard",
+      "description": "Design a PCB and we'll fabricate it for you.",
+      "website": "https://hackclub.com/onboard",
+      "slack": "https://hackclub.slack.com/archives/C056AMWSFKJ",
+      "slackChannel": "#electronics",
+      "status": "ended",
+      "participants": 1000
+    },
+    {
+      "name": "Boba Drops",
+      "description": "Build a website and get boba!",
+      "website": "https://boba.hackclub.com/",
+      "slack": "https://hackclub.slack.com/archives/C06UJR8QW0M",
+      "slackChannel": "#boba",
+      "status": "active",
+      "participants": 1253
+    },
+    {
+      "name": "OnBoard Live",
+      "description": "Design a PCB live on YouTube for $5/hour PCB credit.",
+      "website": null,
+      "slack": "https://hackclub.slack.com/archives/C07F3EA2L8G",
+      "slackChannel": "#onboard-live",
+      "status": "ended"
+    }
+  ],
+  "ended": [
+    {
+      "name": "Armed",
+      "description": "Develop an arm assembly program, get lego.",
+      "website": "https://armed.hackclub.com",
+      "slack": "https://hackclub.slack.com/archives/C098S1A5ZAT",
+      "slackChannel": "#armed",
+      "status": "ended",
+      "deadline": "2025-09-01T23:59:59"
+    },
+    {
+      "name": "The Zoo",
+      "description": "Make an animal themed Svelte site, earn Ikea Animal Plushies",
+      "website": "https://zoo.hackclub.com",
+      "slack": "https://hackclub.slack.com/archives/C08K37F66AK",
+      "slackChannel": "#the-zoo",
+      "status": "ended",
+      "deadline": "2025-08-23T03:50:00",
+      "detailedDescription": "The Zoo is a Svelte YSWS where participants build an animal themed Svelte site and earn Mynts (currency) which can be turned into an HCB grant at the end to buy Ikea plushies. Get one giant Djungleskog, or multiple mini Blahaj, it's all up to you. Here's the best part: the better your submission is, the more Mynts you earn!"
+    },
+    {
+      "name": "Hivemind",
+      "description": "Create a roguelike in 7 days, get itch.io credit.",
+      "website": "https://hivemind.hackclub.com/",
+      "slack": "https://hackclub.slack.com/archives/C096T7JRQRG",
+      "slackChannel": "#hivemind-",
+      "status": "ended",
+      "deadline": "2025-08-07T23:59:59",
+      "steps": [
+        "Create a traditional roguelike in 7 days.",
+        "Chronicle its development across 7 devlogs.",
+        "Get $2.50 in itch.io credit for each approved hour you spend."
+      ]
+    },
+    {
+      "name": "Authly",
+      "description": "Build the weirdest and never-before-seen authentication system, get yubikeys, programmable nfc tags, antivirus giftcards and more!",
+      "website": "https://authly.hackclub.com",
+      "slack": "https://hackclub.slack.com/archives/C0963JU3CSD",
+      "slackChannel": "#authly",
+      "status": "ended",
+      "deadline": "2025-08-31T23:59:59"
+    },
+    {
+      "name": "Gemini",
+      "description": "Ship An Android App and get a FREE Android Phone + Dev License!",
+      "website": "https://gemini.hackclub.com/",
+      "slack": "https://hackclub.slack.com/archives/C094VQKH1FV",
+      "slackChannel": "#gemini",
+      "status": "ended",
+      "deadline": "2025-08-11T23:59:59"
+    },
+    {
+      "name": "Endpointer",
+      "description": "Build a REST API, get a grant for Raspberry Pi or Cloud Credits",
+      "website": "https://endpointer.hackclub.com",
+      "slack": "https://hackclub.slack.com/archives/C097M5JRT7F",
+      "slackChannel": "#endpointer",
+      "status": "ended",
+      "deadline": "2025-08-12T23:59:59"
+    },
+    {
+      "name": "Portal-VR",
+      "description": "Build an AR/VR application, get a VR headset!",
+      "website": "https://portalvr.hackclub.com/",
+      "slack": "https://hackclub.slack.com/archives/C096CPJ1HCN",
+      "slackChannel": "#portal-vr",
+      "status": "ended",
+      "deadline": "2025-08-23T23:59:59"
+    },
+    {
+      "name": "Timeless",
+      "description": "You have 10 days. Make a video game that could last someone 10 years.",
+      "website": "https://timeless.hackclub.com/",
+      "slack": "https://hackclub.slack.com/archives/C0956A8CL86",
+      "slackChannel": "#timeless",
+      "status": "ended",
+      "deadline": "2025-07-24T23:59:59"
+    },
+    {
+      "name": "Toybox",
+      "description": "You ship a daily game, we ship stickers + keycap keychain + steam gift card. Make the next Wordle.",
+      "website": "https://toybox.hackclub.com/",
+      "slack": "https://hackclub.slack.com/archives/C096HCT11G9",
+      "slackChannel": "#toybox",
+      "status": "ended",
+      "deadline": "2025-07-22T23:59:59"
+    },
+    {
+      "name": "Dummies",
+      "description": "learn a new language, recieve a guide book!",
+      "website": "https://dummies.hackclub.com/",
+      "deadline": "2025-08-21T23:59:59",
+      "detailedDescription": "Join Dummies to take on projects in new languages and earn grant cards for books!",
+      "steps": [
+        "Develop and publish a project",
+        "Submit it to Hack Club",
+        "Receive a grant for books!"
+      ],
+      "requirements": [
+        "taking on a NEW skill",
+        "resulting project can be seen from a weblink"
+      ],
+      "slack": "https://app.slack.com/client/T0266FRGM/C096M3EV67M",
+      "slackChannel": "#Dummies",
+      "status": "ended"
+    },
+    {
+      "name": "Twist",
+      "description": "Make an esolang, get stickers and a $40 electronics grant.",
+      "website": "https://twist.hackclub.dev/",
+      "slack": "https://hackclub.slack.com/archives/C092A93FA4X",
+      "slackChannel": "#twist-ysws",
+      "status": "ended",
+      "deadline": "2025-07-16T23:59:59"
+    },
+    {
+      "name": "Terminal Craft v3",
+      "description": "Build and publish your own terminal program and earn a $60 grant",
+      "website": "https://terminalcraft.hackclub.com",
+      "slack": "https://hackclub.slack.com/archives/C08F58MT3GV",
+      "slackChannel": "#terminal-craft",
+      "status": "ended",
+      "deadline": "2025-08-10T23:59:59"
+    },
+    {
+      "name": "Slushies",
+      "description": "Build a flask app, get $5 or $10 for slushies!",
+      "website": "https://slushies.hackclub.com",
+      "slack": "https://hackclub.slack.com/archives/C097GP305G8",
+      "slackChannel": "#slushies",
+      "status": "ended",
+      "deadline": "2025-08-23T23:59:59"
+    },
+    {
+      "name": "Infinity",
+      "description": "Build a website with an infinite realtime canvas, get awesome prizes!",
+      "website": "https://infinity.hackclub.com",
+      "slack": "https://hackclub.slack.com/archives/C098ARHLXFW",
+      "slackChannel": "#infinity",
+      "status": "ended",
+      "deadline": "2025-08-22T23:59:59"
+    },
+    {
+      "name": "Tile",
+      "description": "Build a tile, get a tile, tile the tiles!",
+      "website": "https://tile.hackclub.com",
+      "slack": "https://hackclub.slack.com/archives/C097E6ZAF99",
+      "slackChannel": "#tile",
+      "status": "ended",
+      "deadline": "2025-08-18T23:59:59"
+    },
+    {
+      "name": "Minigame",
+      "description": "A YSWS where you build \"mini\" 5 hour games and earn a $20 grant for each one! At the end everyone's games will be combined together to make a big Minigame collection!",
+      "website": "https://minigame.hackclub.dev",
+      "slack": "https://hackclub.slack.com/archives/C093SSC3Z16",
+      "slackChannel": "#minigame",
+      "status": "ended",
+      "deadline": "2025-07-18T23:59:59"
+    },
+    {
+      "name": "Squeak",
+      "description": "Design a mouse case and receive the case and parts!",
+      "website": "https://squeak.hackclub.com",
+      "slack": "https://hackclub.slack.com/archives/C094458MVMX",
+      "slackChannel": "#squeak",
+      "status": "ended",
+      "deadline": "2025-07-13T23:59:59"
+    },
+    {
+      "name": "Pathfinder",
+      "description": "Make a custom PCB controller board and efidget",
+      "website": "https://pathfinder.hackclub.com",
+      "slack": "https://hackclub.slack.com/archives/C0943DE80E4",
+      "slackChannel": "#pathfinder",
+      "status": "ended",
+      "deadline": "2025-07-05T23:59:59"
+    },
+    {
+      "name": "Hackfinger",
+      "description": "You design a custom appendage (finger, tail, leg, anything you want!) and get your design printed along with a custom control board.",
+      "website": "https://hackfinger.hackclub.com",
+      "slack": "https://hackclub.slack.com/archives/C095T0TQ5A8",
+      "slackChannel": "#hackfinger",
+      "status": "ended",
+      "deadline": "2025-07-20T23:59:59"
+    },
+    {
+      "name": "Jumpstart",
+      "description": "Game-dev YSWS running July 9th to Aug 9th ✨",
+      "website": "https://jumpstart.hackclub.com",
+      "slack": "https://hackclub.slack.com/archives/C0931T5SEH4",
+      "slackChannel": "#jumpstart",
+      "status": "ended",
+      "deadline": "2025-08-09T23:59:59"
+    }
+  ],
+  "drafts": [
+    {
+      "name": "issued",
+      "description": "code to design hack-themed apparel",
+      "detailedDescription": "you code to design hack-themed apparel, we ship popular designs as real clothes!",
+      "website": "https://issued-ysws.vercel.app",
+      "slack": "https://hackclub.slack.com/archives/C09C9M0N2UC",
+      "slackChannel": "#issued",
+      "status": "draft"
+    },
+    {
+      "name": "Swatchbox",
+      "description": "You ship a modular art component, we ship the swatchbox to go with it!",
+      "website": null,
+      "slack": "https://hackclub.slack.com/archives/C094R49MS9Y",
+      "slackChannel": "#swatchbox",
+      "status": "draft"
+    },
+    {
+      "name": "Rube Goldburg YSWS",
+      "description": null,
+      "website": null,
+      "slack": "https://hackclub.slack.com/archives/C094U05FAE6",
+      "slackChannel": "#rube-goldberg-ysws",
+      "status": "draft"
+    },
+    {
+      "name": "Poetry",
+      "description": "You ship: poetry (details to be decided soon) We ship: Maybe a poster or smth?",
+      "website": null,
+      "slack": "#poetry-ysws",
+      "slackChannel": "https://hackclub.slack.com/archives/C095DDUVCJX",
+      "status": "draft"
+    },
+    {
+      "name": "Plunge",
+      "description": "DESIGN A PLUNGER-STYLE COOKIE CUTTER, GET IT SHIPPED!",
+      "website": "http://plunge.hackclub.com/",
+      "slack": "https://hackclub.slack.com/archives/C0955KVD1SA",
+      "slackChannel": "#plunge",
+      "status": "draft"
+    },
+    {
+      "name": "Aquarium",
+      "description": null,
+      "website": null,
+      "slack": "https://hackclub.slack.com/archives/C095PTABEJK",
+      "slackChannel": "#aquarium",
+      "status": "draft"
+    },
+    {
+      "name": "Apogee",
+      "description": "a rocketry ysws - still workshopping the idea!",
+      "website": null,
+      "slack": "https://hackclub.slack.com/archives/C095RKGV5J4",
+      "slackChannel": "#apogee",
+      "status": "draft"
+    },
+    {
+      "name": "Glossarium",
+      "description": "You ship anything that can provide knowledge (a comic, a tutorial, a how-to...) We ship a zine from Julia Evans",
+      "website": "https://mathiasdpx.github.io/glossarium/",
+      "slack": "https://hackclub.slack.com/archives/C096L6J19PY",
+      "slackChannel": "#glossarium",
+      "status": "draft"
+    },
+    {
+      "name": "Hacksaber",
+      "description": "An (not official) YSWS that you make an beat saber mod or custom map and we give beat saber copy",
+      "website": null,
+      "slack": "https://hackclub.slack.com/archives/C096K1ZEXDL",
+      "slackChannel": "#hacksaber",
+      "status": "draft"
+    }
+  ]
+}

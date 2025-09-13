@@ -35,35 +35,60 @@
       "slack": "https://hackclub.slack.com/archives/C099VPF7V3P",
       "slackChannel": "#birthday-cards-ysws",
       "status": "active",
-      "deadline": "2026-08-12T00:00:00.000Z"
+      "deadline": "2026-08-12T23:59:59"
     },
     {
-      "name": "Armed",
-      "description": "Develop an arm assembly program, get lego.",
-      "website": "https://armed.hackclub.com",
-      "slack": "https://hackclub.slack.com/archives/C098S1A5ZAT",
-      "slackChannel": "#armed",
+      "name": "Penumbra",
+      "description": "Make shaders, and we'll ship you GPUs and posters!",
+      "website": "https://penumbra.hackclub.com/",
+      "slack": "https://hackclub.slack.com/archives/C09EC7ZS05S",
+      "slackChannel": "#penumbra",
       "status": "active",
-      "deadline": "2025-09-01T23:59:59"
+      "deadline": "2025-09-24T23:59:59",
+      "detailedDescription": "Penumbra is a YSWS, where you create shaders on ShaderToy, and get posters of your shaders shipped right to your doorstep! If you spend up to 45 hours across multiple ships, you'll be able to get a GPU like an RTX 3050!"
     },
     {
-      "name": "Optimize",
-      "description": "Build a desktop app, optimize, get RAM, get Storage",
-      "website": "https://optimize.hackclub.com",
-      "slack": "https://hackclub.slack.com/archives/C096NH7FW4T",
-      "slackChannel": "#optimize",
+      "name": "Clutter",
+      "description": "You ship something to organize your digital life. We ship you a grant to buy something to organize your physical life.",
+      "website": "https://clutter.hackclub.com/",
+      "slack": "https://hackclub.slack.com/archives/C0997C887M3",
+      "slackChannel": "#clutter",
       "status": "active",
-      "deadline": "2025-08-22T23:59:59"
+      "deadline": "2025-09-17T23:59:59"
     },
     {
-      "name": "The Zoo",
-      "description": "Make an animal themed Svelte site, earn Ikea Animal Plushies",
-      "website": "https://zoo.hackclub.com",
-      "slack": "https://hackclub.slack.com/archives/C08K37F66AK",
-      "slackChannel": "#the-zoo",
+      "name": "Fusering",
+      "description": "Design a keyring, get your keyring and a carabiner to hang it from!",
+      "website": "https://fusering.hackclub.com",
+      "slackChannel": "#fusering",
+      "slack": "https://hackclub.slack.com/archives/C098U42PD2A",
       "status": "active",
-      "deadline": "2025-08-23T03:50:00",
-      "detailedDescription": "The Zoo is a Svelte YSWS where participants build an animal themed Svelte site and earn Mynts (currency) which can be turned into an HCB grant at the end to buy Ikea plushies. Get one giant Djungleskog, or multiple mini Blahaj, it's all up to you. Here's the best part: the better your submission is, the more Mynts you earn!\n"
+      "deadline": "2025-09-30T23:59:59"
+    },
+    {
+      "name": "iFrame",
+      "description": "Draw or edit images using any programming language and we will hang your custom image on HQ wall and send a copy to you",
+      "website": "https://iframe.hackclub.com/",
+      "slack": "https://hackclub.slack.com/archives/C098LMVKPCM",
+      "slackChannel": "#iframe",
+      "status": "active"
+    },
+    {
+      "name": "Grounded",
+      "description": "Onboard + Bin v2",
+      "website": "https://grounded.hackclub.com",
+      "slack": "https://hackclub.slack.com/archives/C0948RT0C1M",
+      "slackChannel": "#grounded",
+      "status": "active"
+    },
+    {
+      "name": "BakeBuild",
+      "description": "Design a cookie cutter, get it shipped!",
+      "detailedDescription": "You ship : A CAD model of a cookie cutter, we ship : A 3D printed model of your custom cookie cutter & cookies!",
+      "website": "https://bakebuild.hackclub.com/",
+      "slack": "https://hackclub.slack.com/archives/C0844MV2JM9",
+      "slackChannel": "#bakebuild",
+      "status": "active"
     },
     {
       "name": "HackCraft",
@@ -94,7 +119,7 @@
       "slack": "https://hackclub.slack.com/archives/C015M4L9AHW",
       "slackChannel": "#summer-of-making",
       "status": "active",
-      "deadline": "2025-09-31T23:59:59",
+      "deadline": "2025-09-30T23:59:59",
       "participants": 10985
     },
     {
@@ -103,7 +128,7 @@
       "website": "https://hivemind.hackclub.com/",
       "slack": "https://hackclub.slack.com/archives/C096T7JRQRG",
       "slackChannel": "#hivemind-",
-      "status": "active",
+      "status": "ended",
       "deadline": "2025-08-07T23:59:59",
       "steps": [
         "Create a traditional roguelike in 7 days.",
@@ -112,31 +137,12 @@
       ]
     },
     {
-      "name": "Penumbra",
-      "description": "Make shaders, and we'll ship you GPUs and posters!",
-      "website": "https://penumbra.hackclub.com/",
-      "slack": "https://hackclub.slack.com/archives/C09EC7ZS05S",
-      "slackChannel": "#penumbra",
-      "status": "active",
-      "deadline": "2025-09-24T23:59:59",
-      "detailedDescription": "Penumbra is a YSWS, where you create shaders on ShaderToy, and get posters of your shaders shipped right to your doorstep! If you spend up to 45 hours across multiple ships, you'll be able to get a GPU like an RTX 3050!"
-    },
-    {
-      "name": "Authly",
-      "description": "Build the weirdest and never-before-seen authentication system, get yubikeys, programmable nfc tags, antivirus giftcards and more!",
-      "website": "https://authly.hackclub.com",
-      "slack": "https://hackclub.slack.com/archives/C0963JU3CSD",
-      "slackChannel": "#authly",
-      "status": "active",
-      "deadline": "2025-08-31T23:59:59"
-    },
-    {
       "name": "Gemini",
       "description": "Ship An Android App and get a FREE Android Phone + Dev License!",
       "website": "https://gemini.hackclub.com/",
       "slack": "https://hackclub.slack.com/archives/C094VQKH1FV",
       "slackChannel": "#gemini",
-      "status": "active",
+      "status": "ended",
       "deadline": "2025-08-11T23:59:59"
     },
     {
@@ -154,7 +160,7 @@
       "website": "https://portalvr.hackclub.com/",
       "slack": "https://hackclub.slack.com/archives/C096CPJ1HCN",
       "slackChannel": "#portal-vr",
-      "status": "active",
+      "status": "ended",
       "deadline": "2025-08-23T23:59:59"
     },
     {
@@ -163,7 +169,7 @@
       "website": "https://timeless.hackclub.com/",
       "slack": "https://hackclub.slack.com/archives/C0956A8CL86",
       "slackChannel": "#timeless",
-      "status": "active",
+      "status": "ended",
       "deadline": "2025-07-24T23:59:59"
     },
     {
@@ -172,7 +178,7 @@
       "website": "https://toybox.hackclub.com/",
       "slack": "https://hackclub.slack.com/archives/C096HCT11G9",
       "slackChannel": "#toybox",
-      "status": "active",
+      "status": "ended",
       "deadline": "2025-07-22T23:59:59"
     },
     {
@@ -192,7 +198,7 @@
       ],
       "slack": "https://app.slack.com/client/T0266FRGM/C096M3EV67M",
       "slackChannel": "#Dummies",
-      "status": "active"
+      "status": "ended"
     },
     {
       "name": "Twist",
@@ -209,7 +215,7 @@
       "website": "https://terminalcraft.hackclub.com",
       "slack": "https://hackclub.slack.com/archives/C08F58MT3GV",
       "slackChannel": "#terminal-craft",
-      "status": "active",
+      "status": "ended",
       "deadline": "2025-08-10T23:59:59"
     },
     {
@@ -227,7 +233,7 @@
       "website": "https://slushies.hackclub.com",
       "slack": "https://hackclub.slack.com/archives/C097GP305G8",
       "slackChannel": "#slushies",
-      "status": "active",
+      "status": "ended",
       "deadline": "2025-08-23T23:59:59"
     },
     {
@@ -236,7 +242,7 @@
       "website": "https://infinity.hackclub.com",
       "slack": "https://hackclub.slack.com/archives/C098ARHLXFW",
       "slackChannel": "#infinity",
-      "status": "active",
+      "status": "ended",
       "deadline": "2025-08-22T23:59:59"
     },
     {
@@ -245,7 +251,7 @@
       "website": "https://tile.hackclub.com",
       "slack": "https://hackclub.slack.com/archives/C097E6ZAF99",
       "slackChannel": "#tile",
-      "status": "active",
+      "status": "ended",
       "deadline": "2025-08-18T23:59:59"
     },
     {
@@ -254,7 +260,7 @@
       "website": "https://minigame.hackclub.dev",
       "slack": "https://hackclub.slack.com/archives/C093SSC3Z16",
       "slackChannel": "#minigame",
-      "status": "active",
+      "status": "ended",
       "deadline": "2025-07-18T23:59:59"
     },
     {
@@ -263,7 +269,7 @@
       "website": "https://squeak.hackclub.com",
       "slack": "https://hackclub.slack.com/archives/C094458MVMX",
       "slackChannel": "#squeak",
-      "status": "active",
+      "status": "ended",
       "deadline": "2025-07-13T23:59:59"
     },
     {
@@ -272,7 +278,7 @@
       "website": "https://pathfinder.hackclub.com",
       "slack": "https://hackclub.slack.com/archives/C0943DE80E4",
       "slackChannel": "#pathfinder",
-      "status": "active",
+      "status": "ended",
       "deadline": "2025-07-05T23:59:59"
     },
     {
@@ -281,17 +287,8 @@
       "website": "https://hackfinger.hackclub.com",
       "slack": "https://hackclub.slack.com/archives/C095T0TQ5A8",
       "slackChannel": "#hackfinger",
-      "status": "active",
+      "status": "ended",
       "deadline": "2025-07-20T23:59:59"
-    },
-    {
-      "name": "Silicon",
-      "description": "Design your own custom devboard and we'll fund it",
-      "website": "https://silicon.hackclub.dev",
-      "slack": "https://hackclub.slack.com/archives/C090WQ9JBTM",
-      "slackChannel": "#silicon",
-      "status": "active",
-      "deadline": "2025-08-06T23:59:59"
     },
     {
       "name": "Grounded",
@@ -308,7 +305,7 @@
       "website": "https://jumpstart.hackclub.com",
       "slack": "https://hackclub.slack.com/archives/C0931T5SEH4",
       "slackChannel": "#jumpstart",
-      "status": "active",
+      "status": "ended",
       "deadline": "2025-08-09T23:59:59"
     },
     {
@@ -317,7 +314,7 @@
       "website": "https://reinforced.hackclub.dev",
       "slack": "https://hackclub.slack.com/archives/C092JUZ7V7Y",
       "slackChannel": "#reinforced",
-      "status": "active",
+      "status": "ended",
       "deadline": "2025-07-18T23:59:59"
     },
     {
@@ -326,7 +323,7 @@
       "website": "https://decode.hackclub.dev",
       "slack": "https://hackclub.slack.com/archives/C091GPYCAFL",
       "slackChannel": "#decode",
-      "status": "active",
+      "status": "ended",
       "deadline": "2025-07-10T23:59:59"
     },
     {
@@ -335,7 +332,7 @@
       "website": "https://storyboard.hackclub.com",
       "slack": "https://hackclub.slack.com/archives/C095E84SE1X",
       "slackChannel": "#storyboard",
-      "status": "active",
+      "status": "ended",
       "deadline": "2025-07-13T23:59:59"
     },
     {
@@ -344,7 +341,7 @@
       "website": "https://pulse.hackclub.dev",
       "slack": "https://hackclub.slack.com/archives/C090E7XUEA3",
       "slackChannel": "#pulse",
-      "status": "active",
+      "status": "ended",
       "deadline": "2025-07-11T23:59:59"
     },
     {
@@ -362,7 +359,7 @@
       "website": "https://railway.hackclub.com",
       "slack": "https://hackclub.slack.com/archives/C094T1FL2KG",
       "slackChannel": "#railway",
-      "status": "active",
+      "status": "ended",
       "deadline": "2025-07-22T23:59:59"
     },
     {
@@ -389,7 +386,7 @@
       "website": "https://rewind.hackclub.com",
       "slack": "https://hackclub.slack.com/archives/C093ALFAW8K",
       "slackChannel": "#rewind",
-      "status": "active",
+      "status": "ended",
       "deadline": "2025-08-13T23:59:59"
     },
     {
@@ -398,7 +395,7 @@
       "website": "https://illumination.hackclub.com",
       "slack": "https://hackclub.slack.com/archives/C091MS57D37",
       "slackChannel": "#illumination",
-      "status": "active",
+      "status": "ended",
       "deadline": "2025-07-16T23:59:59"
     },
     {
@@ -407,7 +404,7 @@
       "website": "https://overflow-hidden.hackclub.com",
       "slack": "https://hackclub.slack.com/archives/C095HDJK3TQ",
       "slackChannel": "#overflow-hidden",
-      "status": "active",
+      "status": "ended",
       "deadline": "2025-07-21T23:59:59"
     },
     {
@@ -417,7 +414,7 @@
       "website": "https://swirl.hackclub.com",
       "slack": "https://hackclub.slack.com/archives/C08FR0LMVHD",
       "slackChannel": "#swirl",
-      "status": "active",
+      "status": "ended",
       "deadline": "2025-08-03T23:59:59",
       "participants": 40
     },
@@ -428,7 +425,7 @@
       "website": "https://grub.hackclub.com/",
       "slack": "https://hackclub.slack.com/archives/C08S9NCEULB",
       "slackChannel": "#grub",
-      "status": "active",
+      "status": "ended",
       "deadline": "2025-08-03T23:59:59"
     },
     {
@@ -437,7 +434,7 @@
       "website": "https://toppings.hackclub.com/",
       "slack": "https://hackclub.slack.com/archives/C08R8V2E3LY",
       "slackChannel": "#toppings",
-      "status": "active",
+      "status": "ended",
       "deadline": "2025-08-03T23:59:59"
     },
     {
@@ -446,7 +443,7 @@
       "website": "https://waffles.hackclub.com/",
       "slack": "https://hackclub.slack.com/archives/C08QBKX5WCD",
       "slackChannel": "#waffles",
-      "status": "active",
+      "status": "ended",
       "deadline": "2025-08-03T23:59:59"
     },
     {
@@ -455,7 +452,7 @@
       "website": "https://hackmate.hackclub.dev",
       "slack": "https://hackclub.slack.com/archives/C092HR1LG20",
       "slackChannel": "#hackmate",
-      "status": "active",
+      "status": "ended",
       "deadline": "2025-07-17T23:59:59"
     },
     {
@@ -464,7 +461,7 @@
       "website": "https://converge.hackclub.com/?utm_source=ysws-site",
       "slack": "https://hackclub.slack.com/archives/C091UF79VDM",
       "slackChannel": "#converge",
-      "status": "active",
+      "status": "ended",
       "deadline": "2025-07-15T23:59:59"
     },
     {
@@ -473,7 +470,7 @@
       "website": "http://reactive.hackclub.dev",
       "slack": "https://hackclub.slack.com/archives/C090S7Q2HT4",
       "slackChannel": "#reactive",
-      "status": "active",
+      "status": "ended",
       "deadline": "2025-07-04T23:59:59",
       "requirements": [
         "Basic knowledge of HTML and CSS",
@@ -486,7 +483,7 @@
       "website": "http://gamefolio.hackclub.dev",
       "slack": "https://hackclub.slack.com/archives/C08RT4C2485",
       "slackChannel": "#gamefolio",
-      "status": "active",
+      "status": "ended",
       "deadline": "2025-07-02T23:59:59"
     },
     {
@@ -495,7 +492,7 @@
       "website": "https://extensify.hackclub.com/",
       "slack": "https://hackclub.slack.com/archives/C094H3V1Y81",
       "slackChannel": "#extensify",
-      "status": "active",
+      "status": "ended",
       "deadline": "2025-07-07T23:59:59"
     },
     {
@@ -504,17 +501,8 @@
       "website": "https://waveband.hackclub.com/",
       "slack": "https://hackclub.slack.com/archives/C082S5V95G8",
       "slackChannel": "#waveband",
-      "status": "active",
+      "status": "ended",
       "deadline": "2025-07-11T23:59:59"
-    },
-    {
-      "name": "cmd + k",
-      "description": "Build a Raycast extension, get Raycast Pro & stickers",
-      "website": "https://cmd-k.hackclub.com/",
-      "slack": "https://hackclub.slack.com/archives/C0981BXG124",
-      "slackChannel": "#cmd-k",
-      "status": "active",
-      "deadline": "2025-08-17T23:59:59"
     },
     {
       "name": "Toolsmith",
@@ -522,7 +510,7 @@
       "website": "https://toolsmith.hackclub.com/",
       "slack": "https://hackclub.slack.com/archives/C094X38BFT5",
       "slackChannel": "#toolsmith",
-      "status": "active",
+      "status": "ended",
       "deadline": "2025-07-11T23:59:59"
     },
     {
@@ -531,7 +519,7 @@
       "website": "https://smelt.hackclub.com/",
       "slack": "https://hackclub.slack.com/archives/C09535Y8E83",
       "slackChannel": "#smelt",
-      "status": "active",
+      "status": "ended",
       "deadline": "2025-07-31T23:59:59"
     },
     {
@@ -541,7 +529,7 @@
       "website": "https://highway.hackclub.com",
       "slack": "https://hackclub.slack.com/archives/C08Q1H6D79B",
       "slackChannel": "#highway",
-      "status": "active",
+      "status": "ended",
       "deadline": "2025-07-31T23:59:59"
     },
     {
@@ -561,7 +549,7 @@
       "website": "https://raspapi.hackclub.com/",
       "slack": "https://hackclub.slack.com/archives/C07UZSKJQRX",
       "slackChannel": "#raspapi-ysws",
-      "status": "active",
+      "status": "ended",
       "deadline": "2025-03-10T23:59:59"
     },
     {
@@ -570,7 +558,7 @@
       "website": "https://blackbox.hackclub.com",
       "slack": "https://hackclub.slack.com/archives/C08APN1CKEJ",
       "slackChannel": "#black-box",
-      "status": "active",
+      "status": "ended",
       "deadline": "2025-03-29T23:59:59"
     },
     {
@@ -579,7 +567,7 @@
       "website": "https://github.com/hackclub/hackpad",
       "slack": "https://hackclub.slack.com/archives/C07LESGH0B0",
       "slackChannel": "#hackpad",
-      "status": "active",
+      "status": "ended",
       "deadline": "2025-03-16T23:59:59",
       "participants": 719
     },
@@ -598,7 +586,7 @@
       "website": "https://lockin.hackclub.com/",
       "slack": "https://slack.com/archives/C08JV3ZV1DY",
       "slackChannel": "#lock-in",
-      "status": "active"
+      "status": "ended"
     },
     {
       "name": "BrowserBuddy",
@@ -606,7 +594,7 @@
       "website": "https://browserbuddy.hackclub.com/",
       "slack": "https://hackclub.slack.com/archives/C07MQBTNVRU",
       "slackChannel": "#browser-buddy",
-      "status": "active",
+      "status": "ended",
       "deadline": "2025-03-19T23:59:59",
       "participants": 22
     },
@@ -617,7 +605,7 @@
       "website": "https://terminalcraft.hackclub.com/",
       "slack": "https://hackclub.slack.com/archives/C08F58MT3GV",
       "slackChannel": "#terminal-craft",
-      "status": "active",
+      "status": "ended",
       "deadline": "2025-06-21T23:59:59"
     },
     {
@@ -627,7 +615,7 @@
       "website": "https://pixeldust.hackclub.com/",
       "slack": "https://hackclub.slack.com/archives/C0895PXH53M",
       "slackChannel": "#pixeldust",
-      "status": "active",
+      "status": "ended",
       "deadline": "2025-04-13T23:59:59"
     },
     {
@@ -636,7 +624,7 @@
       "website": "https://juice.hackclub.com",
       "slack": "https://hackclub.slack.com/archives/C088UF12N1Z",
       "slackChannel": "#juice",
-      "status": "active",
+      "status": "ended",
       "deadline": "2025-04-01T23:59:59"
     },
     {
@@ -645,7 +633,7 @@
       "website": "https://juice.hackclub.com/jungle",
       "slack": "https://hackclub.slack.com/archives/C086MACKK43",
       "slackChannel": "#jungle",
-      "status": "active",
+      "status": "ended",
       "deadline": "2025-04-01T23:59:59"
     },
     {
@@ -654,7 +642,7 @@
       "website": "https://github.com/hackclub/infill",
       "slack": "https://hackclub.slack.com/archives/C08B7LF58TX",
       "slackChannel": "#infill",
-      "status": "active",
+      "status": "ended",
       "deadline": "2025-05-04T23:59:59",
       "participants": 380
     },
@@ -664,7 +652,7 @@
       "website": "https://visioneer.hackclub.com",
       "slack": "https://hackclub.slack.com/archives/C082PCKJYMN",
       "slackChannel": "#visioneer",
-      "status": "active",
+      "status": "ended",
       "deadline": "2025-04-20T23:59:59"
     },
     {
@@ -673,7 +661,7 @@
       "website": "http://hackclub.github.io/hacklet",
       "slack": "https://hackclub.slack.com/archives/C08PJMATU8Y",
       "slackChannel": "#hacklet",
-      "status": "active",
+      "status": "ended",
       "deadline": "2025-05-10T23:59:59"
     },
     {
@@ -723,21 +711,12 @@
       "deadline": "2025-01-10T23:59:59"
     },
     {
-      "name": "Solder",
-      "description": "Design and solder your own custom PCB with a free electronics kit!",
-      "website": "https://solder.hackclub.com/",
-      "slack": "https://slack.com/archives/C08L288G22Y",
-      "slackChannel": "#solder",
-      "status": "active",
-      "deadline": "2025-06-30T23:59:59"
-    },
-    {
       "name": "Cascade",
       "description": "Create animations with CSS and receive art supplies.",
       "website": "https://cascade.hackclub.com/",
       "slack": "https://hackclub.slack.com/archives/C07QA8HD48N",
       "slackChannel": "#cascade-ysws",
-      "status": "active",
+      "status": "ended",
       "deadline": "2024-12-14T23:59:59",
       "participants": 55
     },
@@ -747,7 +726,7 @@
       "website": "https://github.com/HackClub/riceathon",
       "slack": "https://hackclub.slack.com/archives/C07MLF9A8H5",
       "slackChannel": "#riceathon",
-      "status": "active",
+      "status": "ended",
       "deadline": "2025-01-10T23:59:59",
       "participants": 64
     },
@@ -775,7 +754,7 @@
       "website": "https://retrospect.hackclub.com/j2me",
       "slack": "https://hackclub.slack.com/archives/C07MUFXNG82",
       "slackChannel": "#retrospect",
-      "status": "active",
+      "status": "ended",
       "deadline": "2025-04-07T23:59:59"
     },
     {
@@ -784,7 +763,7 @@
       "website": "https://fraps.hackclub.com/",
       "slack": "https://hackclub.slack.com/archives/C078DFVL5LZ",
       "slackChannel": "#fraps",
-      "status": "active",
+      "status": "ended",
       "deadline": "2025-06-30T23:59:59",
       "participants": 362
     },
@@ -794,7 +773,7 @@
       "website": "https://cider.hackclub.com/",
       "slack": "https://hackclub.slack.com/archives/C073DTGENJ2",
       "slackChannel": "#cider",
-      "status": "active",
+      "status": "ended",
       "deadline": null,
       "participants": 34
     },
@@ -813,7 +792,7 @@
       "website": "https://tarot.hackclub.com/",
       "slack": "https://slack.com/archives/C08L60RUQ92",
       "slackChannel": "#10-days-of-tarot",
-      "status": "active",
+      "status": "ended",
       "deadline": "2025-04-13T23:59:59"
     },
     {
@@ -822,7 +801,7 @@
       "website": null,
       "slack": "https://hackclub.slack.com/archives/C06V2GEV3MY",
       "slackChannel": "#thunder",
-      "status": "active",
+      "status": "ended",
       "deadline": "2025-07-15T23:59:59"
     },
     {
@@ -832,7 +811,7 @@
       "website": "https://shipwrecked.hackclub.com",
       "slack": "https://hackclub.slack.com/archives/C073L9LB4K1",
       "slackChannel": "#shipwrecked",
-      "status": "active",
+      "status": "ended",
       "deadline": "2025-08-08T15:00:00"
     },
     {
@@ -852,6 +831,63 @@
       "slack": "https://hackclub.slack.com/archives/C098U42PD2A",
       "status": "active",
       "deadline": "2025-09-30T23:59:59"
+    }
+  ],
+  "recentlyEnded": [
+    {
+      "name": "Armed",
+      "description": "Develop an arm assembly program, get lego.",
+      "website": "https://armed.hackclub.com",
+      "slack": "https://hackclub.slack.com/archives/C098S1A5ZAT",
+      "slackChannel": "#armed",
+      "status": "ended",
+      "deadline": "2025-09-01T23:59:59"
+    },
+    {
+      "name": "The Zoo",
+      "description": "Make an animal themed Svelte site, earn Ikea Animal Plushies",
+      "website": "https://zoo.hackclub.com",
+      "slack": "https://hackclub.slack.com/archives/C08K37F66AK",
+      "slackChannel": "#the-zoo",
+      "status": "ended",
+      "deadline": "2025-08-23T03:50:00",
+      "detailedDescription": "The Zoo is a Svelte YSWS where participants build an animal themed Svelte site and earn Mynts (currency) which can be turned into an HCB grant at the end to buy Ikea plushies. Get one giant Djungleskog, or multiple mini Blahaj, it's all up to you. Here's the best part: the better your submission is, the more Mynts you earn!\n"
+    },
+    {
+      "name": "Authly",
+      "description": "Build the weirdest and never-before-seen authentication system, get yubikeys, programmable nfc tags, antivirus giftcards and more!",
+      "website": "https://authly.hackclub.com",
+      "slack": "https://hackclub.slack.com/archives/C0963JU3CSD",
+      "slackChannel": "#authly",
+      "status": "ended",
+      "deadline": "2025-08-31T23:59:59"
+    },
+    {
+      "name": "Silicon",
+      "description": "Design your own custom devboard and we'll fund it",
+      "website": "https://silicon.hackclub.dev",
+      "slack": "https://hackclub.slack.com/archives/C090WQ9JBTM",
+      "slackChannel": "#silicon",
+      "status": "ended",
+      "deadline": "2025-08-06T23:59:59"
+    },
+    {
+      "name": "cmd + k",
+      "description": "Build a Raycast extension, get Raycast Pro & stickers",
+      "website": "https://cmd-k.hackclub.com/",
+      "slack": "https://hackclub.slack.com/archives/C0981BXG124",
+      "slackChannel": "#cmd-k",
+      "status": "ended",
+      "deadline": "2025-08-17T23:59:59"
+    },
+    {
+      "name": "Solder",
+      "description": "Design and solder your own custom PCB with a free electronics kit!",
+      "website": "https://solder.hackclub.com/",
+      "slack": "https://slack.com/archives/C08L288G22Y",
+      "slackChannel": "#solder",
+      "status": "ended",
+      "deadline": "2025-06-30T23:59:59"
     }
   ],
   "indefinite": [
@@ -888,7 +924,7 @@
       "website": null,
       "slack": "https://hackclub.slack.com/archives/C07F3EA2L8G",
       "slackChannel": "#onboard-live",
-      "status": "active"
+      "status": "ended"
     }
   ],
   "drafts": [
@@ -1381,28 +1417,6 @@
       "slackChannel": "#boba",
       "status": "ended",
       "ended": "2024-12-31T23:59:59"
-    },
-    {
-      "name": "Optimize",
-      "description": "Create a memory efficient desktop app, get RAM!",
-      "website": "https://optimize.hackclub.com",
-      "slackChannel": "#optimize",
-      "slack": "https://hackclub.slack.com/archives/C096NH7FW4T",
-      "status": "active",
-      "deadline": "2025-08-08T23:59:59"
-    },
-    {
-      "name": "birthday-cards",
-      "description": "You ship a birthday themed project we ship a birthday card!",
-      "website": "https://birthday-cards.hackclub.com/",
-      "slack": "https://hackclub.slack.com/archives/C099VPF7V3P",
-      "slackChannel": "#birthday-cards-ysws"
     }
-  ],
-  "status": "active",
-  "deadline": "2026-08-12T23:59:59\"",
-  "detailedDescription": "Join birthday-cards to create a birthday-themed project and receive a birthday card!",
-  "details": [
-    "you can get a gift from hq if you have 3 hours of work logged"
   ]
 }
