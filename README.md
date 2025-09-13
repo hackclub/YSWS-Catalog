@@ -23,7 +23,7 @@ The `api.json` and `feed.xml` files are automatically generated from `data.yml` 
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/MntRushmore/YSWS-Catalog.git
+   git clone https://github.com/hackclub/YSWS-Catalog.git
    cd YSWS-Catalog
    ```
 
