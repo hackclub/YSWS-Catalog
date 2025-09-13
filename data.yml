@@ -174,22 +174,6 @@ limitedTime:
   status: ended
   deadline: '2025-08-10T23:59:59'
 
-- name: iFrame
-  description: Draw or edit images using any programming language and we will hang your custom image on HQ wall and send a copy to you
-  website: https://iframe.hackclub.com/
-  slack: https://hackclub.slack.com/archives/C098LMVKPCM
-  slackChannel: "#iframe"
-  status: active
-  deadline:
-
-- name: Slushies
-  description: Build a flask app, get $5 or $10 for slushies!
-  website: https://slushies.hackclub.com
-  slack: https://hackclub.slack.com/archives/C097GP305G8
-  slackChannel: "#slushies"
-  status: ended
-  deadline: '2025-08-23T23:59:59'
-
 - name: Infinity
   description: Build a website with an infinite realtime canvas, get awesome prizes!
   website: https://infinity.hackclub.com
@@ -237,14 +221,6 @@ limitedTime:
   slackChannel: "#hackfinger"
   status: ended
   deadline: '2025-07-20T23:59:59'
-
-- name: Grounded
-  description: Onboard + Bin v2
-  website: https://grounded.hackclub.com
-  slack: https://hackclub.slack.com/archives/C0948RT0C1M
-  slackChannel: "#grounded"
-  status: active
-  deadline: null
 
 - name: Jumpstart
   description: Game-dev YSWS running July 9th to Aug 9th ✨
@@ -607,13 +583,6 @@ limitedTime:
   slackChannel: "#hacky-holidays"
   status: ended
   deadline: '2025-01-31T23:59:59'
-- name: BakeBuild
-  description: Design a cookie cutter, get it shipped!
-  detailedDescription: "You ship : A CAD model of a cookie cutter, we ship : A 3D printed model of your custom cookie cutter & cookies!"
-  website: https://bakebuild.hackclub.com/
-  slack: https://hackclub.slack.com/archives/C0844MV2JM9
-  slackChannel: "#bakebuild"
-  status: active
 - name: Retrospect (J2ME edition)
   description: Create a J2ME game (Java MIDlet) and have it delivered on a J2ME-capable phone.
   website: https://retrospect.hackclub.com/j2me
@@ -637,13 +606,6 @@ limitedTime:
   status: ended
   deadline:
   participants: 34
-- name: Clutter
-  description: You ship something to organize your digital life. We ship you a grant to buy something to organize your physical life.
-  website: https://clutter.hackclub.com/
-  slack: https://hackclub.slack.com/archives/C0997C887M3
-  slackChannel: "#clutter"
-  status: active
-  deadline: '2025-09-17T23:59:59'
 - name: 10 Days of Tarot
   description: Build a project or feature and get exclusive prizes for each card requirement you hit.
   website: https://tarot.hackclub.com/
@@ -674,13 +636,6 @@ limitedTime:
   slackChannel: "#neighborhood"
   status: ended
   # deadline: '2025-08-31T23:59:59' # Neighborhood was ended early
-- name: Fusering
-  description: "Design a keyring, get your keyring and a carabiner to hang it from!"
-  website: https://fusering.hackclub.com
-  slackChannel: "#fusering"
-  slack: https://hackclub.slack.com/archives/C098U42PD2A
-  status: active
-  deadline: '2025-09-30T23:59:59'
 
 recentlyEnded:
 - name: Armed
@@ -771,7 +726,7 @@ drafts:
   slackChannel: "#swatchbox"
   status: draft
 - name: Rube Goldburg YSWS
-  description: 
+  description: Create complex chain reaction machines and contraptions
   website:
   slack: https://hackclub.slack.com/archives/C094U05FAE6
   slackChannel: "#rube-goldberg-ysws"
@@ -789,7 +744,7 @@ drafts:
   slackChannel: "#plunge"
   status: draft
 - name: Aquarium
-  description:
+  description: Build aquatic-themed projects and digital ecosystems
   website:
   slack: https://hackclub.slack.com/archives/C095PTABEJK
   slackChannel: "#aquarium"
@@ -914,12 +869,6 @@ drafts:
   slack: https://slack.com/archives/C07TQPAGAMA
   slackChannel: "#constellation"
   status: ended
-- name: The Zoo
-  description: You ship an interactive animal themed website, we ship themed stickers and posters for top submissions
-  website:
-  slack: https://slack.com/archives/C08K37F66AK
-  slackChannel: "#the-zoo"
-  status: draft
 - name: Jetsu
   description: You ship a ML Robot, We ship a Jetson Nano / Jetson Orin Nano
   detailedDescription: |

@@ -1,7 +1,14 @@
 {
-  "name": "gowno",
+  "name": "ysws-catalog",
   "version": "1.0.0",
+  "description": "A catalog of Hack Club's You Ship, We Ship programs",
+  "scripts": {
+    "generate": "node generate-json.js && node generate-rss.js",
+    "validate": "node validateDates.js"
+  },
   "dependencies": {
     "js-yaml": "^4.1.0"
-  }
+  },
+  "author": "Hack Club",
+  "license": "MIT"
 }
