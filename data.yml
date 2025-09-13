@@ -28,7 +28,7 @@ limitedTime:
   website: https://birthday-cards.hackclub.com/
   slack: https://hackclub.slack.com/archives/C099VPF7V3P
   slackChannel: "#birthday-cards-ysws"
-  status: ended
+  status: active
   deadline: 2026-08-12
 - name: Armed
   description: Develop an arm assembly program, get lego.
