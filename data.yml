@@ -36,7 +36,7 @@ limitedTime:
   slack: https://hackclub.slack.com/archives/C09EC7ZS05S
   slackChannel: "#penumbra"
   status: active
-  deadline: '2025-09-24T23:59:59'
+  deadline: '2025-10-08T23:59:59'
   detailedDescription: Penumbra is a YSWS, where you create shaders on ShaderToy, and get posters of your shaders shipped right to your doorstep! If you spend up to 45 hours across multiple ships, you'll be able to get a GPU like an RTX 3050! 
 - name: Clutter
   description: You ship something to organize your digital life. We ship you a grant to buy something to organize your physical life.
