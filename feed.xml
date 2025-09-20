@@ -5,14 +5,14 @@
   <link>https://ysws.hackclub.com</link>
   <description>Active "You Ship, We Ship" programs from Hack Club</description>
   <language>en-us</language>
-  <lastBuildDate>Tue, 16 Sep 2025 14:52:22 GMT</lastBuildDate>
+  <lastBuildDate>Sat, 20 Sep 2025 16:24:16 GMT</lastBuildDate>
   <atom:link href="https://ysws.hackclub.com/feed.xml" rel="self" type="application/rss+xml" />
 
   <item>
     <title>Clutter</title>
     <link>https://clutter.hackclub.com/</link>
-    <guid isPermaLink="false">Clutter-1758034342443</guid>
-    <pubDate>Tue, 16 Sep 2025 14:52:22 GMT</pubDate>
+    <guid isPermaLink="false">Clutter-1758385457283</guid>
+    <pubDate>Sat, 20 Sep 2025 16:24:16 GMT</pubDate>
     <description><![CDATA[
       <p>You ship something to organize your digital life. We ship you a grant to buy something to organize your physical life.</p>
       <p><strong>Deadline:</strong> September 17, 2025</p>
@@ -23,8 +23,8 @@
   <item>
     <title>Waveform</title>
     <link>https://waveform.hackclub.com/</link>
-    <guid isPermaLink="false">Waveform-1758034342443</guid>
-    <pubDate>Tue, 16 Sep 2025 14:52:22 GMT</pubDate>
+    <guid isPermaLink="false">Waveform-1758385457284</guid>
+    <pubDate>Sat, 20 Sep 2025 16:24:16 GMT</pubDate>
     <description><![CDATA[
       <p>Make your own waveform visualizer, get a grant to buy music</p>
       <p><strong>Deadline:</strong> September 26, 2025</p>
@@ -33,10 +33,22 @@
     ]]></description>
   </item>
   <item>
+    <title>Miniverge</title>
+    <link>https://converge.hackclub.com/</link>
+    <guid isPermaLink="false">Miniverge-1758385457284</guid>
+    <pubDate>Sat, 20 Sep 2025 16:24:16 GMT</pubDate>
+    <description><![CDATA[
+      <p>Spend an hour on a bot, get stickers and a chance for a Blåhaj or Minecraft!</p>
+      <p><strong>Deadline:</strong> September 28, 2025</p>
+      
+      <p>Join the discussion in <a href="https://hackclub.slack.com/archives/C091UF79VDM">#miniverge</a></p>
+    ]]></description>
+  </item>
+  <item>
     <title>Fusering</title>
     <link>https://fusering.hackclub.com</link>
-    <guid isPermaLink="false">Fusering-1758034342443</guid>
-    <pubDate>Tue, 16 Sep 2025 14:52:22 GMT</pubDate>
+    <guid isPermaLink="false">Fusering-1758385457284</guid>
+    <pubDate>Sat, 20 Sep 2025 16:24:16 GMT</pubDate>
     <description><![CDATA[
       <p>Design a keyring, get your keyring and a carabiner to hang it from!</p>
       <p><strong>Deadline:</strong> September 30, 2025</p>
@@ -47,8 +59,8 @@
   <item>
     <title>Summer of Making</title>
     <link>https://summer.hackclub.com/</link>
-    <guid isPermaLink="false">Summer of Making-1758034342443</guid>
-    <pubDate>Tue, 16 Sep 2025 14:52:22 GMT</pubDate>
+    <guid isPermaLink="false">Summer of Making-1758385457284</guid>
+    <pubDate>Sat, 20 Sep 2025 16:24:16 GMT</pubDate>
     <description><![CDATA[
       <p>Build stuff. Get stuff. Repeat.</p>
       <p><strong>Deadline:</strong> September 30, 2025</p>
@@ -59,8 +71,8 @@
   <item>
     <title>Penumbra</title>
     <link>https://penumbra.hackclub.com/</link>
-    <guid isPermaLink="false">Penumbra-1758034342443</guid>
-    <pubDate>Tue, 16 Sep 2025 14:52:22 GMT</pubDate>
+    <guid isPermaLink="false">Penumbra-1758385457284</guid>
+    <pubDate>Sat, 20 Sep 2025 16:24:16 GMT</pubDate>
     <description><![CDATA[
       <p>Make shaders, and we&apos;ll ship you GPUs and posters!</p>
       <p><strong>Deadline:</strong> October 8, 2025</p>
@@ -71,8 +83,8 @@
   <item>
     <title>Shiba Arcade</title>
     <link>https://shiba.hackclub.com</link>
-    <guid isPermaLink="false">Shiba Arcade-1758034342443</guid>
-    <pubDate>Tue, 16 Sep 2025 14:52:22 GMT</pubDate>
+    <guid isPermaLink="false">Shiba Arcade-1758385457284</guid>
+    <pubDate>Sat, 20 Sep 2025 16:24:16 GMT</pubDate>
     <description><![CDATA[
       <p>Make a game with Godot, earn SSS, and get invited to build an arcade in Tokyo (flight stipends available!)</p>
       <p><strong>Deadline:</strong> October 20, 2025</p>
@@ -84,8 +96,8 @@
   <item>
     <title>Siege</title>
     <link>https://siege.hackclub.com/</link>
-    <guid isPermaLink="false">Siege-1758034342444</guid>
-    <pubDate>Tue, 16 Sep 2025 14:52:22 GMT</pubDate>
+    <guid isPermaLink="false">Siege-1758385457284</guid>
+    <pubDate>Sat, 20 Sep 2025 16:24:16 GMT</pubDate>
     <description><![CDATA[
       <p>Code every week, get prizes. Make it to the end, get a framework!</p>
       <p><strong>Deadline:</strong> November 30, 2025</p>
@@ -96,8 +108,8 @@
   <item>
     <title>birthday-cards</title>
     <link>https://birthday-cards.hackclub.com/</link>
-    <guid isPermaLink="false">birthday-cards-1758034342444</guid>
-    <pubDate>Tue, 16 Sep 2025 14:52:22 GMT</pubDate>
+    <guid isPermaLink="false">birthday-cards-1758385457284</guid>
+    <pubDate>Sat, 20 Sep 2025 16:24:16 GMT</pubDate>
     <description><![CDATA[
       <p>You ship a birthday themed project we ship a birthday card!</p>
       <p><strong>Deadline:</strong> August 12, 2026</p>
@@ -108,8 +120,8 @@
   <item>
     <title>iFrame</title>
     <link>https://iframe.hackclub.com/</link>
-    <guid isPermaLink="false">iFrame-1758034342444</guid>
-    <pubDate>Tue, 16 Sep 2025 14:52:22 GMT</pubDate>
+    <guid isPermaLink="false">iFrame-1758385457284</guid>
+    <pubDate>Sat, 20 Sep 2025 16:24:16 GMT</pubDate>
     <description><![CDATA[
       <p>Draw or edit images using any programming language and we will hang your custom image on HQ wall and send a copy to you</p>
       
@@ -120,8 +132,8 @@
   <item>
     <title>Grounded</title>
     <link>https://grounded.hackclub.com</link>
-    <guid isPermaLink="false">Grounded-1758034342444</guid>
-    <pubDate>Tue, 16 Sep 2025 14:52:22 GMT</pubDate>
+    <guid isPermaLink="false">Grounded-1758385457284</guid>
+    <pubDate>Sat, 20 Sep 2025 16:24:16 GMT</pubDate>
     <description><![CDATA[
       <p>Onboard + Bin v2</p>
       
@@ -132,8 +144,8 @@
   <item>
     <title>BakeBuild</title>
     <link>https://bakebuild.hackclub.com/</link>
-    <guid isPermaLink="false">BakeBuild-1758034342444</guid>
-    <pubDate>Tue, 16 Sep 2025 14:52:22 GMT</pubDate>
+    <guid isPermaLink="false">BakeBuild-1758385457284</guid>
+    <pubDate>Sat, 20 Sep 2025 16:24:16 GMT</pubDate>
     <description><![CDATA[
       <p>Design a cookie cutter, get it shipped!</p>
       
@@ -144,8 +156,8 @@
   <item>
     <title>HackCraft</title>
     <link>https://hackcraft.hackclub.com/</link>
-    <guid isPermaLink="false">HackCraft-1758034342444</guid>
-    <pubDate>Tue, 16 Sep 2025 14:52:22 GMT</pubDate>
+    <guid isPermaLink="false">HackCraft-1758385457284</guid>
+    <pubDate>Sat, 20 Sep 2025 16:24:16 GMT</pubDate>
     <description><![CDATA[
       <p>Create a Minecraft mod, get Stickers, Minecraft or a server and terraria!</p>
       
@@ -156,8 +168,8 @@
   <item>
     <title>Sprig</title>
     <link>https://sprig.hackclub.com/</link>
-    <guid isPermaLink="false">Sprig-1758034342444</guid>
-    <pubDate>Tue, 16 Sep 2025 14:52:22 GMT</pubDate>
+    <guid isPermaLink="false">Sprig-1758385457284</guid>
+    <pubDate>Sat, 20 Sep 2025 16:24:16 GMT</pubDate>
     <description><![CDATA[
       <p>Build a JS game and play it on your own console.</p>
       
@@ -168,8 +180,8 @@
   <item>
     <title>Boba Drops</title>
     <link>https://boba.hackclub.com/</link>
-    <guid isPermaLink="false">Boba Drops-1758034342444</guid>
-    <pubDate>Tue, 16 Sep 2025 14:52:22 GMT</pubDate>
+    <guid isPermaLink="false">Boba Drops-1758385457284</guid>
+    <pubDate>Sat, 20 Sep 2025 16:24:16 GMT</pubDate>
     <description><![CDATA[
       <p>Build a website and get boba!</p>
       

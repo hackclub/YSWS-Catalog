@@ -30,6 +30,13 @@ limitedTime:
   slackChannel: "#birthday-cards-ysws"
   status: active
   deadline: '2026-08-12T23:59:59'
+- name: Miniverge
+  description: Spend an hour on a bot, get stickers and a chance for a Blåhaj or Minecraft!
+  website: https://converge.hackclub.com/
+  slack: https://hackclub.slack.com/archives/C091UF79VDM
+  slackChannel: "#miniverge"
+  status: active
+  deadline: 2025-09-28
 - name: Penumbra
   description: Make shaders, and we'll ship you GPUs and posters!
   website: https://penumbra.hackclub.com/
