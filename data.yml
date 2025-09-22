@@ -719,6 +719,13 @@ indefinite:
   slackChannel: "#onboard-live"
   status: ended
 drafts:
+- name: foodie
+  description: code and eat!
+  detailedDescription: you ship a food related project, we ship food credits!
+  website: https://foodie-henna-ten.vercel.app/
+  slack: https://hackclub.slack.com/archives/C09DLGM81E1
+  slackChannel: "#foodie"
+  status: draft
 - name: issued
   description: code to design hack-themed apparel
   detailedDescription: you code to design hack-themed apparel, we ship popular designs as real clothes!
