@@ -45,6 +45,14 @@ limitedTime:
   status: active
   deadline: '2025-10-08T23:59:59'
   detailedDescription: Penumbra is a YSWS, where you create shaders on ShaderToy, and get posters of your shaders shipped right to your doorstep! If you spend up to 45 hours across multiple ships, you'll be able to get a GPU like an RTX 3050! 
+- name: Playphone
+  description: Work together to built a godot game, get a custom hackclub badge
+  website: https://playphone.hackclub.com
+  slack: https://hackclub.slack.com/archives/C09GJS3PH47
+  slackChannel: "#playphone"
+  status: active
+  deadline: '2025-12-01T23:59:59'
+  detailedDescription: Playphonee is an event where people take turns working on one godot game, and try to build an amazing game together. Everyone who participates will get a cool hackclub badge
 - name: Clutter
   description: You ship something to organize your digital life. We ship you a grant to buy something to organize your physical life.
   website: https://clutter.hackclub.com/
