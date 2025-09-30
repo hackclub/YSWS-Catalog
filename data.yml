@@ -78,7 +78,7 @@ limitedTime:
   website: https://grounded.hackclub.com
   slack: https://hackclub.slack.com/archives/C0948RT0C1M
   slackChannel: "#grounded"
-  status: active
+  status: ended
 - name: BakeBuild
   description: Design a cookie cutter, get it shipped!
   detailedDescription: "You ship : A CAD model of a cookie cutter, we ship : A 3D printed model of your custom cookie cutter & cookies!"
