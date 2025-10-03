@@ -16,6 +16,27 @@ limitedTime:
   slackChannel: "#siege"
   status: active
   deadline: 2025-11-30
+- name: Blueprint
+  description: Design a hardware project, get funding to build it!
+  website: https://blueprint.hackclub.com/
+  slack: https://hackclub.slack.com/archives/C083S537USC
+  slackChannel: "#blueprint"
+  status: active
+  deadline: 2025-12-1
+- name: Fanpage
+  description: Ship a project that celebrates a fandom, and we ship you something related to it!
+  website: https://fanpage.hackclub.com/
+  slack: https://hackclub.slack.com/archives/C09A37XECJV
+  slackChannel: "#fanpage"
+  status: active
+  deadline: 2025-10-17
+- name: Hackberry
+  description: Built a machine learning project in python, get a personalized raspberry pi kit!
+  website: https://hackberry.hackclub.com/
+  slack: https://hackclub.slack.com/archives/C09A37XECJV
+  slackChannel: "#hackberry-hub"
+  status: active
+  deadline: 2025-10-13
 - name: Waveform
   description: Make your own waveform visualizer, get a grant to buy music
   website: https://waveform.hackclub.com/
