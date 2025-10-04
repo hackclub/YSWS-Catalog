@@ -7,7 +7,7 @@
       "slack": "https://hackclub.slack.com/archives/C083S537USC",
       "slackChannel": "#blueprint",
       "status": "active",
-      "deadline": "2025-12-1"
+      "deadline": "2025-12-01T00:00:00.000Z"
     },
     {
       "name": "Shiba Arcade",

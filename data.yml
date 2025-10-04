@@ -6,7 +6,7 @@ limitedTime:
   slack: https://hackclub.slack.com/archives/C083S537USC
   slackChannel: "#blueprint"
   status: active
-  deadline: 2025-12-1
+  deadline: 2025-12-01
 - name: Shiba Arcade
   description: Make a game with Godot, earn SSS, and get invited to build an arcade in Tokyo (flight stipends available!)
   website: https://shiba.hackclub.com
