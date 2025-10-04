@@ -204,13 +204,13 @@ limitedTime:
   status: ended
   deadline: '2025-07-16T23:59:59'
 
-- name: Terminal Craft v3
-  description: Build and publish your own terminal program and earn a $60 grant
+- name: Terminal Craft v5
+  description: Build and publish your own terminal program to earn $5/hr
   website: https://terminalcraft.hackclub.com
   slack: https://hackclub.slack.com/archives/C08F58MT3GV
   slackChannel: "#terminal-craft"
   status: ended
-  deadline: '2025-08-10T23:59:59'
+  deadline: '2025-10-20T23:59:59'
 
 - name: Infinity
   description: Build a website with an infinite realtime canvas, get awesome prizes!
