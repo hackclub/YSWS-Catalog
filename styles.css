@@ -2730,3 +2730,43 @@ html {
     animation: none;
   }
 }
+
+/* Blueprint-specific card styling */
+.program-card.blueprint-card {  
+  --color-bp-lighter: #344b6a;
+  --color-bp-dark: #0e305b;
+  --color-bp-darker: #081c35;
+  --color-bp-light: #dbe4ee;
+  --color-bp-danger: #fe8e86;
+  --color-bp-danger-darker: #bd4c44;
+  --color-bp-warning: #ffc857;
+  --color-bp-success: #a8f0ae;
+  background: var(--color-bp-dark) !important;
+  background-color: var(--color-bp-dark) !important;
+  background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px) !important;
+  background-size: 50px 50px !important;
+  background-position: 0 0, 0 0 !important;
+  backdrop-filter: none !important;
+  position: relative;
+  color: white !important;
+}
+
+.program-card.blueprint-card h3,
+.program-card.blueprint-card p,
+.program-card.blueprint-card .program-deadline {
+  color: white !important;
+}
+
+.program-card.blueprint-card a {
+  color: var(--color-bp-light) !important;
+}
+
+.program-card.blueprint-card .program-status {
+  color: var(--color-bp-light) !important;
+}
+
+.program-card.blueprint-card:hover {
+  border-color: white !important;
+}

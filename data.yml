@@ -1,5 +1,12 @@
 ---
 limitedTime:
+- name: Blueprint
+  description: Design a hardware project, up to $400 to build it!
+  website: https://blueprint.hackclub.com/?utm_source=ysws
+  slack: https://hackclub.slack.com/archives/C083S537USC
+  slackChannel: "#blueprint"
+  status: active
+  deadline: 2025-12-1
 - name: Shiba Arcade
   description: Make a game with Godot, earn SSS, and get invited to build an arcade in Tokyo (flight stipends available!)
   website: https://shiba.hackclub.com
@@ -16,13 +23,6 @@ limitedTime:
   slackChannel: "#siege"
   status: active
   deadline: 2025-11-30
-- name: Blueprint
-  description: Design a hardware project, get funding to build it!
-  website: https://blueprint.hackclub.com/
-  slack: https://hackclub.slack.com/archives/C083S537USC
-  slackChannel: "#blueprint"
-  status: active
-  deadline: 2025-12-1
 - name: Fanpage
   description: Ship a project that celebrates a fandom, and we ship you something related to it!
   website: https://fanpage.hackclub.com/
@@ -94,12 +94,6 @@ limitedTime:
   slack: https://hackclub.slack.com/archives/C098LMVKPCM
   slackChannel: "#iframe"
   status: active
-- name: Grounded
-  description: Onboard + Bin v2
-  website: https://grounded.hackclub.com
-  slack: https://hackclub.slack.com/archives/C0948RT0C1M
-  slackChannel: "#grounded"
-  status: ended
 - name: BakeBuild
   description: Design a cookie cutter, get it shipped!
   detailedDescription: "You ship : A CAD model of a cookie cutter, we ship : A 3D printed model of your custom cookie cutter & cookies!"
