@@ -23,6 +23,13 @@ limitedTime:
   slackChannel: "#siege"
   status: active
   deadline: 2025-11-30
+- name: Emerge
+  description: create an emergent behaviour, place pixels on the group canvas, get the canvas shipped to you!
+  website: https://emerge.hackclub.com/?utm_source=ysws
+  slack: https://hackclub.slack.com/archives/C09900Q6873/p1759787865899939
+  slackChannel: "#emerge"
+  status: active
+  deadline: 2025-11-1
 - name: Reactive
   description: Ship a website built with React, get $15 to buy a domain.
   website: http://reactive.hackclub.com
