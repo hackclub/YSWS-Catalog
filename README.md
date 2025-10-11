@@ -1,3 +1,5 @@
+Maintained by @mntrushmore
+
 # YSWS-Catalog
 
 **YSWS-Catalog** is a web-based directory showcasing Hack Club’s "You Ship, We Ship" (YSWS) programs. Each YSWS program rewards participants for building and shipping projects—hardware, software, art, and more—by sending them physical or digital goodies. This repository hosts the source code for the catalog, allowing anyone to explore, filter, and learn about these initiatives. If you want to add or update a program, feel free to submit a pull request!
