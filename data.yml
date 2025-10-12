@@ -22,7 +22,7 @@ limitedTime:
   slack: https://hackclub.slack.com/archives/C08SKC6P85V
   slackChannel: "#siege"
   status: active
-  deadline: 2025-11-30
+  deadline: 2025-11-08
 - name: Emerge
   description: create an emergent behaviour, place pixels on the group canvas, get the canvas shipped to you!
   website: https://emerge.hackclub.com/?utm_source=ysws
