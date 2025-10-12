@@ -865,6 +865,14 @@
       "participants": 1253
     },
     {
+      "name": "Boba Olympics",
+      "description": "Hack Clubbers team up to build websites in wild weekly categories",
+      "website": "https://olympics.hackclub.com/",
+      "slack": "https://hackclub.slack.com/archives/C06UJR8QW0M",
+      "slackChannel": "#boba",
+      "status": "active",
+    },
+    {
       "name": "OnBoard Live",
       "description": "Design a PCB live on YouTube for $5/hour PCB credit.",
       "website": null,
