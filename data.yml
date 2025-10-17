@@ -23,6 +23,13 @@ limitedTime:
   deadline: '2025-10-20T23:59:59'
   detailedDescription: |
     Shiba is a two-part adventure about game development. Create a game with Godot (an open-source game engine), earn SSS, use that for shop items, but most importantly, an invitation (and flight stipends) to Tokyo, Japan with 29 other Hack Clubbers to build a pop-up arcade!
+- name: Milkyway
+  description: Make games, build houses, and get awesome prizes like a flight to a hyper-immersive game jam in Singapore!
+  website: https://milkyway.hackclub.com/
+  slack: https://hackclub.slack.com/archives/C09EZSEMB16
+  slackChannel: '#milkyway'
+  status: active
+  deadline: 2026-01-31T23:59:59
 - name: Siege
   description: Code every week, get prizes. Make it to the end, get a framework!
   website: https://siege.hackclub.com/
