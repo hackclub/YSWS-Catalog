@@ -29,7 +29,7 @@ limitedTime:
   slack: https://hackclub.slack.com/archives/C08SKC6P85V
   slackChannel: "#siege"
   status: active
-  deadline: 2025-11-30
+  deadline: 2025-12-08
 - name: Emerge
   description: create an emergent behaviour, place pixels on the group canvas, get the canvas shipped to you!
   website: https://emerge.hackclub.com/?utm_source=ysws
@@ -747,6 +747,12 @@ indefinite:
   slackChannel: "#boba"
   status: active
   participants: 1253
+- name: Boba Olympics
+  description: Hack Clubbers team up to build websites in wild weekly categories
+  website: https://olympics.hackclub.com/
+  slack: https://hackclub.slack.com/archives/C06UJR8QW0M
+  slackChannel: "#boba"
+  status: active
 - name: OnBoard Live
   description: Design a PCB live on YouTube for $5/hour PCB credit.
   website:
