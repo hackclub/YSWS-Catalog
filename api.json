@@ -58,12 +58,12 @@
     },
     {
       "name": "Fusering",
-      "description": "Design a keyring, get your keyring and a carabiner to hang it from!",
+      "description": "Design a keyring in CAD, we'll ship it to you + stickers! Limited time only: Design a halloween keyring, get halloween stickers!",
       "website": "https://fusering.hackclub.com",
       "slackChannel": "#fusering",
       "slack": "https://hackclub.slack.com/archives/C098U42PD2A",
       "status": "active",
-      "deadline": "2025-09-30T23:59:59"
+      "deadline": "2025-10-31T23:59:59"
     },
     {
       "name": "iFrame",
