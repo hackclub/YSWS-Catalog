@@ -145,6 +145,12 @@ limitedTime:
   status: active
   deadline: '2025-09-30T23:59:59'
   participants: 10985
+- name: RSS
+  description: Build something cool with RSS feeds, get a domain grant.
+  website: https://rss.hackclub.com/
+  slackChannel: "#rss"
+  status: active
+  deadline: 2025-11-07
 - name: Hivemind
   description: Create a roguelike in 7 days, get itch.io credit.
   website: https://hivemind.hackclub.com/
