@@ -36,7 +36,7 @@ limitedTime:
   slack: https://hackclub.slack.com/archives/C096M3EV67M
   slackChannel: '#dummies'
   status: active
-  deadline: 2025-12-5T23:59:59
+  deadline: 2025-12-23
 - name: Siege
   description: Code every week, get prizes. Make it to the end, get a framework!
   website: https://siege.hackclub.com/
