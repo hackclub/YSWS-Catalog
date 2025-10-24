@@ -38,6 +38,15 @@
       "deadline": "2026-01-31T23:59:59.000Z"
     },
     {
+      "name": "Dummies V2",
+      "description": "Learn A new Proggraming language and make a project with that, And We will send you school supplies, books, and study materials",
+      "website": "https://dummies.hackclub.com/",
+      "slack": "https://hackclub.slack.com/archives/C096M3EV67M",
+      "slackChannel": "#dummies",
+      "status": "active",
+      "deadline": "2025-12-23T00:00:00.000Z"
+    },
+    {
       "name": "Siege",
       "description": "Code every week, get prizes. Make it to the end, get a framework!",
       "website": "https://siege.hackclub.com/",
