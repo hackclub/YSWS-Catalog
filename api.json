@@ -38,6 +38,15 @@
       "deadline": "2026-01-31T23:59:59.000Z"
     },
     {
+      "name": "Haunted Halloween",
+      "description": "Make a halloween theme for a website or app, get a custom halloween themed sticker and candy!",
+      "website": "https://halloween.hackclub.com/",
+      "slack": "https://hackclub.slack.com/archives/C09P5HGE40G",
+      "slackChannel": "#haunted-halloween",
+      "status": "active",
+      "deadline": "2025-11-03T00:00:00.000Z"
+    },
+    {
       "name": "Dummies V2",
       "description": "Learn A new Proggraming language and make a project with that, And We will send you school supplies, books, and study materials",
       "website": "https://dummies.hackclub.com/",
