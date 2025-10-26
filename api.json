@@ -510,11 +510,11 @@
     {
       "name": "Converge",
       "description": "Build Discord/Slack bots, we ship domain names, server hosting, Blahajs, and more",
-      "website": "https://converge.hackclub.com/?utm_source=ysws-site",
+      "website": "https://submit.hackclub.com/converge-rsvp",
       "slack": "https://hackclub.slack.com/archives/C091UF79VDM",
       "slackChannel": "#converge",
-      "status": "ended",
-      "deadline": "2025-07-15T23:59:59"
+      "status": "active",
+      "deadline": "2025-11-10T23:59:59"
     },
     {
       "name": "Gamefolio",
