@@ -51,7 +51,7 @@ limitedTime:
   slackChannel: "#siege"
   status: active
   deadline: 2025-12-08
-- name: <iplace>
+- name: iplace
   description: A collaborative canvas of websites, made by Hack Clubbers! Get hosting and domain credits!
   website: https://iplace.hackclub.com/
   slack: https://hackclub.slack.com/archives/C09NB7UDSDD
