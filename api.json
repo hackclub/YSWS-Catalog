@@ -1,6 +1,15 @@
 {
   "limitedTime": [
     {
+      "name": "Accelerate",
+      "description": "Build Physics Simulations, get Prizes!",
+      "website": "https://accelerate.hackclub.com",
+      "slack": "https://hackclub.slack.com/archives/C09DPBK2K4K",
+      "slackChannel": "#accelerate",
+      "status": "active",
+      "deadline": "2026-01-10T00:00:00.000Z"
+    },
+    {
       "name": "Blueprint",
       "description": "Design a hardware project, up to $400 to build it!",
       "website": "https://blueprint.hackclub.com/?utm_source=ysws",
