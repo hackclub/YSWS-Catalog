@@ -297,6 +297,7 @@ function createProgramCard(program) {
     
     const opensClass = program.opens && new Date() < new Date(program.opens) ? 'opens-soon' : '';
     const blueprintClass = program.name === 'Blueprint' ? 'blueprint-card' : '';
+    const accelerateClass = program.name === 'Accelerate' ? 'accelerate-card' : '';
     
     const encodedProgram = encodeURIComponent(JSON.stringify(program));
     
@@ -310,7 +311,7 @@ function createProgramCard(program) {
         `<div class="program-participants">${formatParticipants(program.name)}</div>` : '';
     
     return `
-        <div class="card program-card ${opensClass} ${blueprintClass}" data-program="${encodedProgram}" data-name="${program.name}">
+        <div class="card program-card ${opensClass} ${blueprintClass} ${accelerateClass}" data-program="${encodedProgram}" data-name="${program.name}">
             <div class="program-header">
                 <h3>${program.name}</h3>
                 <div class="status-container">
