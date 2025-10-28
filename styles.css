@@ -2770,3 +2770,65 @@ html {
 .program-card.blueprint-card:hover {
   border-color: white !important;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+/* ts is for the Accelerate Card - whiteboard theme */
+.program-card.accelerate-card {
+  font-family: "Permanent Marker", cursive !important;
+  --color-acc-bg: #f8f9fa;
+  --color-acc-border: #979798;
+  --color-acc-text: #1a1a1a;
+  --color-acc-accent: blue;
+  background: var(--color-acc-bg) !important;
+  background-color: var(--color-acc-bg) !important;
+  border: 2px solid var(--color-acc-border) !important;
+  box-shadow: 
+    inset 0 0 0 8px #979798,
+    inset 0 2px 8px 8px rgba(0, 0, 0, 0.15),
+    0 2px 4px rgba(0, 0, 0, 0.08),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.9) !important;
+  position: relative;
+  color: var(--color-acc-text) !important;
+}
+
+.program-card.accelerate-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.4), transparent 70%);
+  pointer-events: none;
+  border-radius: inherit;
+}
+
+.program-card.accelerate-card h3,
+.program-card.accelerate-card p,
+.program-card.accelerate-card .program-deadline {
+  color: var(--color-acc-text) !important;
+  position: relative;
+  z-index: 1;
+}
+
+.program-card.accelerate-card a {
+  color: var(--color-acc-accent) !important;
+  position: relative;
+  z-index: 1;
+}
+
+.program-card.accelerate-card .program-status {
+  color: white !important;
+  position: relative;
+  z-index: 1;
+}
+
+.program-card.accelerate-card:hover {
+  border-color: var(--color-acc-accent) !important;
+  box-shadow: 
+    inset 0 0 0 8px #979798,
+    inset 0 2px 8px 8px rgba(0, 0, 0, 0.15),
+    0 4px 12px rgba(65, 105, 225, 0.15),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.9) !important;
+}
