@@ -783,6 +783,12 @@ indefinite:
   slackChannel: "#onboard-live"
   status: ended
 drafts:
+- name: Merch
+  description: You ship a project, we ship you awesome Hack Club merch!
+  website: https://merch-ysws.hexaa.sh/
+  slack: https://hackclub.slack.com/archives/C09JQFECCBG
+  slackChannel: "#merch"
+  status: draft
 - name: Axiom
   description: YSWS for math/science projects!
   website: https://axiom.hackclub.com/
