@@ -1,5 +1,18 @@
 ---
 limitedTime:
+- name: Carnival
+  description: Build an extension, plugin, or widget get prizes
+  website: https://carnival.hackclub.com/
+  slack: https://hackclub.slack.com/archives/C091ZRTMF16
+  slackChannel: "#carnival"
+  status: active
+- name: Remix
+  description: Remix an existing song's beats in Strudel and get 1 month of Spotify, Apple Music, or SoundCloud Pro
+  website: https://remix.hackclub.com/
+  slack: https://hackclub.slack.com/archives/C095614E9B3
+  slackChannel: "#remixchallenge"
+  status: active  
+  deadline: 2025-11-30
 - name: Moonshot
   description: Spend 75 hours building personal projects, fly to a hackathon in Orlando, FL Dec 12–15
   website: https://moonshot.hackclub.com/
