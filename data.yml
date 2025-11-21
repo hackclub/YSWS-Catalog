@@ -6,7 +6,7 @@ limitedTime:
   slack: https://hackclub.slack.com/archives/C09LHV7CABU
   slackChannel: "#construct"
   status: active
-  deadline: '2026-2-1T23:59:59'
+  deadline: 2026-2-1
 - name: Carnival
   description: Build an extension, plugin, or widget get prizes
   website: https://carnival.hackclub.com/
