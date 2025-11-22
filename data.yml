@@ -190,7 +190,7 @@ limitedTime:
   website: https://iframe.hackclub.com/
   slack: https://hackclub.slack.com/archives/C098LMVKPCM
   slackChannel: "#iframe"
-  status: active
+  status: ended
 - name: BakeBuild
   description: Design a cookie cutter, get it shipped!
   detailedDescription: "You ship : A CAD model of a cookie cutter, we ship : A 3D printed model of your custom cookie cutter & cookies!"
