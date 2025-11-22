@@ -1,5 +1,12 @@
 ---
 limitedTime:
+- name: Construct
+  description: 'Design projects using CAD, Get a 3d printer to print them!'
+  website: https://construct.hackclub.com
+  slack: https://hackclub.slack.com/archives/C09LHV7CABU
+  slackChannel: "#construct"
+  status: active
+  deadline: 2026-2-1
 - name: Carnival
   description: Build an extension, plugin, or widget get prizes
   website: https://carnival.hackclub.com/
