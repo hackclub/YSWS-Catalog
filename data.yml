@@ -802,6 +802,13 @@ indefinite:
   status: ended
 drafts:
 
+- name: Rooted
+  description: Spend time coding, Come to bornhack 🏕️
+  website: https://rooted.hackclub.com/
+  slack: https://hackclub.enterprise.slack.com/archives/C09LYU1S23Y
+  slackChannel: "#rooted"
+  status: draft
+  detailedDescription: Code with other teens in a forest in Denmark for a week all for free, WIP
 - name: foodie
   description: code and eat!
   detailedDescription: you ship a food related project, we ship food credits!
