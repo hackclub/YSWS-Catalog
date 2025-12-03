@@ -1,5 +1,25 @@
 ---
 limitedTime:
+- name: Construct
+  description: 'Design projects using CAD, Get a 3d printer to print them!'
+  website: https://construct.hackclub.com
+  slack: https://hackclub.enterprise.slack.com/archives/C09TM7XKSSY
+  slackChannel: "#construct"
+  status: active
+  deadline: 2026-2-1
+- name: Carnival
+  description: Build an extension, plugin, or widget get prizes
+  website: https://carnival.hackclub.com/
+  slack: https://hackclub.slack.com/archives/C091ZRTMF16
+  slackChannel: "#carnival"
+  status: active
+- name: Remix
+  description: Remix an existing song's beats in Strudel and get 1 month of Spotify, Apple Music, or SoundCloud Pro
+  website: https://remix.hackclub.com/
+  slack: https://hackclub.slack.com/archives/C095614E9B3
+  slackChannel: "#remixchallenge"
+  status: active  
+  deadline: 2025-11-30
 - name: Moonshot
   description: Spend 75 hours building personal projects, fly to a hackathon in Orlando, FL Dec 12–15
   website: https://moonshot.hackclub.com/
@@ -39,12 +59,21 @@ limitedTime:
   slackChannel: '#aces'
   status: active
   deadline: '2026-03-13T23:59:59'
+- name: The Zoo
+  description: Make an animal themed Svelte site, earn Ikea Animal Plushies
+  website: https://zoo.hackclub.com
+  slack: https://hackclub.slack.com/archives/C08K37F66AK
+  slackChannel: "#the-zoo"
+  status: active
+  deadline: '2025-11-30T23:59:00'
+  detailedDescription: |
+    The Zoo is a Svelte YSWS where participants build an animal themed Svelte site and earn Mynts (currency) which can be turned into an HCB grant at the end to buy Ikea plushies. Get one giant Djungleskog, or multiple mini Blahaj, it's all up to you. Here's the best part: the better your submission is, the more Mynts you earn!
 - name: Shiba Arcade
   description: Make a game with Godot, earn SSS, and get invited to build an arcade in Tokyo (flight stipends available!)
   website: https://shiba.hackclub.com
   slack: https://hackclub.slack.com/archives/C09AG5L0L03
   slackChannel: '#shiba'
-  status: active
+  status: ended
   deadline: '2025-10-20T23:59:59'
   detailedDescription: |
     Shiba is a two-part adventure about game development. Create a game with Godot (an open-source game engine), earn SSS, use that for shop items, but most importantly, an invitation (and flight stipends) to Tokyo, Japan with 29 other Hack Clubbers to build a pop-up arcade!
@@ -175,7 +204,7 @@ limitedTime:
   website: https://iframe.hackclub.com/
   slack: https://hackclub.slack.com/archives/C098LMVKPCM
   slackChannel: "#iframe"
-  status: active
+  status: ended
 - name: BakeBuild
   description: Design a cookie cutter, get it shipped!
   detailedDescription: "You ship : A CAD model of a cookie cutter, we ship : A 3D printed model of your custom cookie cutter & cookies!"
@@ -563,13 +592,13 @@ limitedTime:
   deadline: '2025-03-19T23:59:59'
   participants: 22
 - name: TerminalCraft
-  description: Build a terminal program and earn a Raspberry Pi 4
-  detailedDescription: Build & publish a cross-platform terminal app. Get 10 users, open-source it, and snag your Pi 4
+  description: Build a terminal program and earn 5$ per hour for building your program to get hackable hardware.
+  detailedDescription: Build & publish a cross-platform terminal app. Be creative, open-source it, and snag your grant !
   website: https://terminalcraft.hackclub.com/
   slack: https://hackclub.slack.com/archives/C08F58MT3GV
   slackChannel: "#terminal-craft"
-  status: ended
-  deadline: '2025-06-21T23:59:59'
+  status: active
+  deadline: '2025-12-31T23:59:59'
 - name: Pixeldust
   description: Make a neopixel based PCB, get the parts to make one!
   detailedDescription: Create a PCB using KiCad / other EDA. It should use neopixels and a Xiao RP2040, and act as a decoration. Once submitted you can get the parts to make one yourself!
@@ -735,15 +764,6 @@ recentlyEnded:
   slackChannel: '#armed'
   status: ended
   deadline: '2025-09-01T23:59:59'
-- name: The Zoo
-  description: Make an animal themed Svelte site, earn Ikea Animal Plushies
-  website: https://zoo.hackclub.com
-  slack: https://hackclub.slack.com/archives/C08K37F66AK
-  slackChannel: "#the-zoo"
-  status: ended
-  deadline: '2025-08-23T03:50:00'
-  detailedDescription: |
-    The Zoo is a Svelte YSWS where participants build an animal themed Svelte site and earn Mynts (currency) which can be turned into an HCB grant at the end to buy Ikea plushies. Get one giant Djungleskog, or multiple mini Blahaj, it's all up to you. Here's the best part: the better your submission is, the more Mynts you earn!
 - name: Authly
   description: Build the weirdest and never-before-seen authentication system, get yubikeys, programmable nfc tags, antivirus giftcards and more!
   website: https://authly.hackclub.com
@@ -811,10 +831,11 @@ drafts:
 - name: foodie
   description: code and eat!
   detailedDescription: you ship a food related project, we ship food credits!
-  website: https://foodie-henna-ten.vercel.app/
+  website: https://foodie.hackclub.com
   slack: https://hackclub.slack.com/archives/C09DLGM81E1
   slackChannel: "#foodie"
-  status: draft
+  status: ended
+drafts:
 - name: issued
   description: code to design hack-themed apparel
   detailedDescription: you code to design hack-themed apparel, we ship popular designs as real clothes!
