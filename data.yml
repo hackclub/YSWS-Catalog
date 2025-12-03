@@ -585,13 +585,13 @@ limitedTime:
   deadline: '2025-03-19T23:59:59'
   participants: 22
 - name: TerminalCraft
-  description: Build a terminal program and earn a Raspberry Pi 4
-  detailedDescription: Build & publish a cross-platform terminal app. Get 10 users, open-source it, and snag your Pi 4
+  description: Build a terminal program and earn 5$ per hour for building your program to get hackable hardware.
+  detailedDescription: Build & publish a cross-platform terminal app. Be creative, open-source it, and snag your grant !
   website: https://terminalcraft.hackclub.com/
   slack: https://hackclub.slack.com/archives/C08F58MT3GV
   slackChannel: "#terminal-craft"
-  status: ended
-  deadline: '2025-06-21T23:59:59'
+  status: active
+  deadline: '2025-12-31T23:59:59'
 - name: Pixeldust
   description: Make a neopixel based PCB, get the parts to make one!
   detailedDescription: Create a PCB using KiCad / other EDA. It should use neopixels and a Xiao RP2040, and act as a decoration. Once submitted you can get the parts to make one yourself!
