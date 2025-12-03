@@ -591,7 +591,7 @@ limitedTime:
   slack: https://hackclub.slack.com/archives/C08F58MT3GV
   slackChannel: "#terminal-craft"
   status: active
-  deadline: '2025-06-31T23:59:59'
+  deadline: '2025-12-31T23:59:59'
 - name: Pixeldust
   description: Make a neopixel based PCB, get the parts to make one!
   detailedDescription: Create a PCB using KiCad / other EDA. It should use neopixels and a Xiao RP2040, and act as a decoration. Once submitted you can get the parts to make one yourself!
