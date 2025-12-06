@@ -2,7 +2,7 @@
 limitedTime:
 - name: Fudge
   description: Make any project you want, get fudge right from the Shelburne County Store next to HQ!
-  website: https://5.hackclub.com
+  website: https://fudge.hackclub.com
   slack: https://hackclub.enterprise.slack.com/archives/C09UZPNGMMM
   slackChannel: "#fudge-fudge-fudge"
   status: active
