@@ -1,6 +1,30 @@
 {
   "limitedTime": [
     {
+      "name": "Fudge",
+      "description": "Make any project you want, get fudge right from the Shelburne County Store next to HQ!",
+      "website": "https://fudge.hackclub.com",
+      "slack": "https://hackclub.enterprise.slack.com/archives/C09UZPNGMMM",
+      "slackChannel": "#fudge-fudge-fudge",
+      "status": "active",
+      "deadline": "2025-12-31T00:00:00.000Z",
+      "detailedDescription": "Ship any project you want (tracked with Hackatime), get fudge from the Shelburne County Store right next to Hack Club HQ.\nWork for three hours and get half a pound of fudge, six hours for a full pound.\n",
+      "steps": [
+        "Make a project",
+        "Track your time with Hackatime",
+        "Work on it for 3+ hours",
+        "Get fudge!"
+      ],
+      "details": [
+        "Fudge is shipped from the Shelburne County Store in Shelburne, VT, USA",
+        "3 hours for half a pound, 6 hours for a full pound",
+        "Hackatime is required",
+        "Not limited to the US, but shipping may be expensive and we can't guarantee fudge quality",
+        "HCB grant cards are available as an alternative to fudge ($10 for half pound, $20 for full pound)",
+        "Fudge is stackable (1 lb for every 6 hours), but be reasonable (higher shipping costs)"
+      ]
+    },
+    {
       "name": "Construct",
       "description": "Design projects using CAD, Get a 3d printer to print them!",
       "website": "https://construct.hackclub.com",
