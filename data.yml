@@ -156,6 +156,12 @@ limitedTime:
   slackChannel: "#rooted"
   status: active
   detailedDescription: Code with other teens in a forest in Denmark for a week, all for free, RSVP on website!
+- name: Hacksaber
+  description: Ship a Beat Saber Modchart, and we'll ship custom T-Shirt designed by a HC member, or a copy of the game! Live YSWS!
+  website: https://hacksaber.vercel.app/
+  slack: https://hackclub.slack.com/archives/C096K1ZEXDL
+  slackChannel: "#hacksaber"
+  status: active
 - name: Fanpage
   description: Ship a project that celebrates a fandom, and we ship you something related to it!
   website: https://fanpage.hackclub.com/
@@ -911,12 +917,6 @@ drafts:
   website: https://mathiasdpx.github.io/glossarium/
   slack: https://hackclub.slack.com/archives/C096L6J19PY
   slackChannel: "#glossarium"
-  status: draft
-- name: Hacksaber
-  description: An (not official) YSWS that you make an beat saber mod or custom map and we give beat saber copy
-  website:
-  slack: https://hackclub.slack.com/archives/C096K1ZEXDL
-  slackChannel: "#hacksaber"
   status: draft
 - name: Hack A Home
   description: You Ship a Home Assistant with Software,PCB and Case, We Ship a grant ($150 Max)to make it. 
