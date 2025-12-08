@@ -93,7 +93,7 @@ limitedTime:
   slack: https://hackclub.slack.com/archives/C083S537USC
   slackChannel: "#blueprint"
   status: active
-  deadline: 2025-12-01
+  deadline: 2026-01-01
 - name: Aces
   description: Create your own digital board game, get a grant to make it a real physical game, and then get a trip to Washington DC to show off your game to the public at AwesomeCon!
   website: https://aces.hackclub.com
