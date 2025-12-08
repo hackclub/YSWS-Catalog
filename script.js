@@ -298,6 +298,7 @@ function createProgramCard(program) {
     const opensClass = program.opens && new Date() < new Date(program.opens) ? 'opens-soon' : '';
     const blueprintClass = program.name === 'Blueprint' ? 'blueprint-card' : '';
     const accelerateClass = program.name === 'Accelerate' ? 'accelerate-card' : '';
+    const baubleClass = program.name === 'Bauble' ? 'bauble-card' : '';
     
     const encodedProgram = encodeURIComponent(JSON.stringify(program));
     
@@ -310,8 +311,29 @@ function createProgramCard(program) {
     const participantsText = program.participants !== undefined ? 
         `<div class="program-participants">${formatParticipants(program.name)}</div>` : '';
     
+    const baubleSnowflakes = program.name === 'Bauble' ? `
+        <div class="bauble-scene">
+            <div class="bauble-flake large f-1"></div>
+            <div class="bauble-flake large f-2"></div>
+            <div class="bauble-flake large f-3"></div>
+            <div class="bauble-flake large f-4"></div>
+            <div class="bauble-flake large f-5"></div>
+            <div class="bauble-flake large f-6"></div>
+            <div class="bauble-flake large f-7"></div>
+            <div class="bauble-flake large f-8"></div>
+            <div class="bauble-flake f-9"></div>
+            <div class="bauble-flake f-10"></div>
+            <div class="bauble-flake f-11"></div>
+            <div class="bauble-flake f-12"></div>
+            <div class="bauble-tree left"><div class="bauble-snow"></div></div>
+            <div class="bauble-tree right"><div class="bauble-snow"></div></div>
+            <div class="bauble-ground"></div>
+        </div>
+    ` : '';
+    
     return `
-        <div class="card program-card ${opensClass} ${blueprintClass} ${accelerateClass}" data-program="${encodedProgram}" data-name="${program.name}">
+        <div class="card program-card ${opensClass} ${blueprintClass} ${accelerateClass} ${baubleClass}" data-program="${encodedProgram}" data-name="${program.name}">
+            ${baubleSnowflakes}
             <div class="program-header">
                 <h3>${program.name}</h3>
                 <div class="status-container">
