@@ -1,6 +1,29 @@
 {
   "limitedTime": [
     {
+      "name": "Bauble",
+      "description": "3D model an ornament, get it printed and put on the HQ tree! Ends December 25th.",
+      "website": "https://bauble.hackclub.com",
+      "slack": "https://hackclub.enterprise.slack.com/archives/C0A1SH6PF89",
+      "slackChannel": "#bauble",
+      "status": "active",
+      "deadline": "2025-12-25T00:00:00.000Z",
+      "detailedDescription": "Bauble is a Hack Club YSWS program where you 3D model an ornament, and you get it printed out put on Oscar, the tree at Hack Club’s HQ in Vermont! After the tree gets taken down, you'll receive your ornament in the mail!\n",
+      "steps": [
+        "3D model an ornament in the CAD software of your choosing",
+        "Export it as an STL",
+        "Fill out the submit form"
+      ],
+      "details": [
+        "Your ornament must be modeled by you, models downloaded off the internet do not count",
+        "Your ornament must be exported in STL format",
+        "Your ornament must have a hole of a minimum 5mm diameter or some other way a hook or string could be attached",
+        "Your ornament must be no larger than 100 x 100 x 100 mm in all directions",
+        "Your ornament must be appropriate",
+        "Your ornament must be able to print without supports"
+      ]
+    },
+    {
       "name": "Fudge",
       "description": "Make any project you want, get fudge right from the Shelburne County Store next to HQ!",
       "website": "https://fudge.hackclub.com",
