@@ -2832,3 +2832,196 @@ html {
     0 4px 12px rgba(65, 105, 225, 0.15),
     inset 0 0 0 1px rgba(255, 255, 255, 0.9) !important;
 }
+
+/* Bauble-specific card styling - Winter Wonderland theme */
+.program-card.bauble-card {
+  background: linear-gradient(#0c1d38, #1a3158) !important;
+  position: relative;
+  overflow: hidden;
+  color: white !important;
+}
+
+.program-card.bauble-card h3,
+.program-card.bauble-card p,
+.program-card.bauble-card .program-deadline {
+  color: white !important;
+  position: relative;
+  z-index: 2;
+}
+
+.program-card.bauble-card a {
+  color: #a8d5ff !important;
+  position: relative;
+  z-index: 2;
+}
+
+.program-card.bauble-card .program-status {
+  color: white !important;
+  position: relative;
+  z-index: 2;
+}
+
+.program-card.bauble-card .program-header,
+.program-card.bauble-card .program-footer {
+  position: relative;
+  z-index: 2;
+}
+
+.program-card.bauble-card:hover {
+  border-color: white !important;
+}
+
+.bauble-scene {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.bauble-ground {
+  border-top-right-radius: 130px 40px;
+  position: absolute;
+  width: 60%;
+  height: 35px;
+  left: 0;
+  bottom: 0;
+  background: white;
+}
+
+.bauble-ground::before {
+  border-radius: 50%;
+  content: " ";
+  position: absolute;
+  width: 80px;
+  height: 60px;
+  top: 5px;
+  right: -35px;
+  background: white;
+}
+
+.bauble-ground::after {
+  border-radius: 50%;
+  content: " ";
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  top: 3px;
+  right: -50px;
+  background: white;
+}
+
+.bauble-tree {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-color: transparent transparent #23915b transparent;
+}
+
+.bauble-tree::before {
+  content: " ";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-color: transparent transparent #23915b transparent;
+}
+
+.bauble-tree::after {
+  content: " ";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-color: transparent transparent #23915b transparent;
+}
+
+.bauble-tree.left {
+  left: 15px;
+  bottom: 45px;
+  border-width: 0 12px 16px 12px;
+}
+
+.bauble-tree.left::before {
+  top: 6px;
+  left: -14px;
+  border-width: 0 14px 18px 14px;
+}
+
+.bauble-tree.left::after {
+  top: 14px;
+  left: -16px;
+  border-width: 0 16px 20px 16px;
+}
+
+.bauble-tree.right {
+  left: 35px;
+  bottom: 26px;
+  border-width: 0 10px 14px 10px;
+}
+
+.bauble-tree.right::before,
+.bauble-tree.right::after {
+  display: none;
+}
+
+.bauble-snow {
+  border-radius: 50%;
+  box-shadow:
+    -1px 1px 0 0 white,
+    1px 1px 0 0 white,
+    -2px 2px 0 0 white,
+    2px 2px 0 0 white,
+    -6px 8px 0 0 white,
+    -4px 9px 0 1px white,
+    4px 9px 0 1px white,
+    6px 8px 0 0 white;
+  position: absolute;
+  top: 1px;
+  left: -2px;
+  width: 4px;
+  height: 4px;
+  background: white;
+  z-index: 1;
+}
+
+.bauble-flake {
+  animation: bauble-snow infinite linear 30s;
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background: white;
+  border-radius: 50%;
+  opacity: 0.8;
+}
+
+.bauble-flake.large {
+  width: 4px;
+  height: 4px;
+}
+
+.bauble-flake.f-1 { animation-duration: 18s; right: 10%; top: -10px; }
+.bauble-flake.f-2 { animation-duration: 22s; right: 20%; top: -15px; }
+.bauble-flake.f-3 { animation-duration: 26s; right: 30%; top: -5px; }
+.bauble-flake.f-4 { animation-duration: 20s; right: 40%; top: -20px; }
+.bauble-flake.f-5 { animation-duration: 24s; right: 50%; top: -8px; }
+.bauble-flake.f-6 { animation-duration: 19s; right: 60%; top: -12px; }
+.bauble-flake.f-7 { animation-duration: 28s; right: 70%; top: -18px; }
+.bauble-flake.f-8 { animation-duration: 21s; right: 80%; top: -6px; }
+.bauble-flake.f-9 { animation-duration: 25s; right: 15%; top: -14px; }
+.bauble-flake.f-10 { animation-duration: 23s; right: 35%; top: -10px; }
+.bauble-flake.f-11 { animation-duration: 27s; right: 55%; top: -16px; }
+.bauble-flake.f-12 { animation-duration: 17s; right: 75%; top: -8px; }
+
+@keyframes bauble-snow {
+  0% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(250px);
+  }
+}
