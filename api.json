@@ -4,7 +4,7 @@
       "name": "Meow",
       "description": "Spend 5 hours building something to do with cats, get a cat plushie! Ends Christmas Day!",
       "website": "https://meow.hackclub.com",
-      "slack": "https://hackclub.slack.com/archives/C0MEOW",
+      "slack": "https://hackclub.enterprise.slack.com/archives/C026LDN0ADB",
       "slackChannel": "#meow",
       "status": "active",
       "deadline": "2025-12-25T00:00:00.000Z",
@@ -16,9 +16,9 @@
         "Receive your cat plushie!"
       ],
       "details": [
-        "You can make anything, as long as it's to do with cats - a website, an app, or even a hardware project",
+        "You can make anything, as long as it's to do with cats, you could make a website, an app, or even a hardware project",
         "Must be shipped (accessible via a URL or as an executable, or fully built for hardware)",
-        "US participants receive physical plushie, international participants receive $25 digital credit"
+        "US participants receive physical plushie, international participants receive $25 in HCB grant cards to buy their plushie."
       ]
     },
     {
