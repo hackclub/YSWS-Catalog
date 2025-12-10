@@ -1,5 +1,23 @@
 ---
 limitedTime:
+- name: Meow
+  description: Spend 5 hours building something to do with cats, get a cat plushie! Ends Christmas Day!
+  website: https://meow.hackclub.com
+  slack: https://hackclub.slack.com/archives/C0MEOW
+  slackChannel: "#meow"
+  status: active
+  deadline: 2025-12-25
+  detailedDescription: |
+    Meow is a Hack Club YSWS where we'll send you a cat plushie if you ship a project to do with cats!
+  steps:
+    - Join the Slack channel
+    - Spend over 5 hours (tracked with Hackatime) building a project to do with cats
+    - Fill out the submission form
+    - Receive your cat plushie!
+  details:
+    - You can make anything, as long as it's to do with cats - a website, an app, or even a hardware project
+    - Must be shipped (accessible via a URL or as an executable, or fully built for hardware)
+    - US participants receive physical plushie, international participants receive $25 digital credit
 - name: Bauble
   description: 3D model an ornament, get it printed and put on the HQ tree! Ends December 25th.
   website: https://bauble.hackclub.com
