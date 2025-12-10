@@ -3025,3 +3025,40 @@ html {
     transform: translateY(250px);
   }
 }
+
+/* Meow-specific card styling - Cat paw print theme */
+.program-card.meow-card {
+  --color-meow-bg: #f8d4d1;
+  --color-meow-dot: #e8c4c1;
+  --color-meow-text: #c94a6d;
+  --color-meow-accent: #e85a7e;
+  background-color: var(--color-meow-bg) !important;
+  background-image: radial-gradient(circle, var(--color-meow-dot) 10px, transparent 15px) !important;
+  background-size: 20px 20px !important;
+  position: relative;
+  color: var(--color-meow-text) !important;
+}
+
+.program-card.meow-card h3,
+.program-card.meow-card p,
+.program-card.meow-card .program-deadline {
+  color: var(--color-meow-text) !important;
+  position: relative;
+  z-index: 1;
+}
+
+.program-card.meow-card a {
+  color: var(--color-meow-accent) !important;
+  position: relative;
+  z-index: 1;
+}
+
+.program-card.meow-card .program-status {
+  color: white !important;
+  position: relative;
+  z-index: 1;
+}
+
+.program-card.meow-card:hover {
+  border-color: var(--color-meow-accent) !important;
+}

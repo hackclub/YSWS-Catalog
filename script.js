@@ -299,6 +299,7 @@ function createProgramCard(program) {
     const blueprintClass = program.name === 'Blueprint' ? 'blueprint-card' : '';
     const accelerateClass = program.name === 'Accelerate' ? 'accelerate-card' : '';
     const baubleClass = program.name === 'Bauble' ? 'bauble-card' : '';
+    const meowClass = program.name === 'Meow' ? 'meow-card' : '';
     
     const encodedProgram = encodeURIComponent(JSON.stringify(program));
     
@@ -332,7 +333,7 @@ function createProgramCard(program) {
     ` : '';
     
     return `
-        <div class="card program-card ${opensClass} ${blueprintClass} ${accelerateClass} ${baubleClass}" data-program="${encodedProgram}" data-name="${program.name}">
+        <div class="card program-card ${opensClass} ${blueprintClass} ${accelerateClass} ${baubleClass} ${meowClass}" data-program="${encodedProgram}" data-name="${program.name}">
             ${baubleSnowflakes}
             <div class="program-header">
                 <h3>${program.name}</h3>
