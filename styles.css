@@ -3033,7 +3033,7 @@ html {
   --color-meow-text: #c94a6d;
   --color-meow-accent: #e85a7e;
   background-color: var(--color-meow-bg) !important;
-  background-image: radial-gradient(circle, var(--color-meow-dot) 10px, transparent 10px) !important;
+  background-image: radial-gradient(circle, var(--color-meow-dot) 10px, transparent 15px) !important;
   background-size: 20px 20px !important;
   position: relative;
   color: var(--color-meow-text) !important;
