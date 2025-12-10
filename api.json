@@ -152,7 +152,7 @@
       "slack": "https://hackclub.slack.com/archives/C08K37F66AK",
       "slackChannel": "#the-zoo",
       "status": "active",
-      "deadline": "2025-11-30T23:59:00",
+      "deadline": "2025-12-31T23:59:00",
       "detailedDescription": "The Zoo is a Svelte YSWS where participants build an animal themed Svelte site and earn Mynts (currency) which can be turned into an HCB grant at the end to buy Ikea plushies. Get one giant Djungleskog, or multiple mini Blahaj, it's all up to you. Here's the best part: the better your submission is, the more Mynts you earn!\n"
     },
     {
