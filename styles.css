@@ -2731,8 +2731,14 @@ html {
   }
 }
 
+#timeline-container{
+  margin-left: -3rem;
+  margin-right: -3rem;
+  background-color: white;
+}
+
 /* Blueprint-specific card styling */
-.program-card.blueprint-card {  
+.program-card.blueprint-card {
   --color-bp-lighter: #344b6a;
   --color-bp-dark: #0e305b;
   --color-bp-darker: #081c35;
@@ -2743,7 +2749,7 @@ html {
   --color-bp-success: #a8f0ae;
   background: var(--color-bp-dark) !important;
   background-color: var(--color-bp-dark) !important;
-  background-image: 
+  background-image:
     linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
     linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px) !important;
   background-size: 50px 50px !important;
