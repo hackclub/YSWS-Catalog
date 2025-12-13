@@ -685,23 +685,17 @@ function getEndDate(program){
     return null;
 }
 
-function getEventStatus(program){
-    if(program.status === "ended" || (program.deadline && isEventEnded(program.deadline))){
-        return "ended";
-    }
 
-    return "active";
-}
 
 function getTimelineEvents(){
     const now = new Date();
 
     return Object.values(programs).flat().map(program => ({
         name: program.name,
-        status: getEventStatus(program),
+        status: program.status,
         endDate: getEndDate(program),
         deadline: program.deadline ? new Date(program.deadline) : null
-    })).filter(e => (e.deadline || e.endDate)).sort(
+    })).sort(
         (a, b) => {
             const timeA = new Date(a.deadline)-now;
             const timeB = new Date(b.deadline)-now;
@@ -713,8 +707,10 @@ function getTimelineEvents(){
 function loadTimelineBlocks(){
     const events = getTimelineEvents();
     for(i=0; i<events.length; i++){
-        console.log(events[i]);
-        document.getElementById("timeline").innerHTML += `<div id="timeline-block-${i}">${events[i]["name"]}</div>`;
+        if(events[i].status !=="ended" && events[i].status !=="draft"){
+            console.log(events[i]);
+            document.getElementById("timeline").innerHTML += `<div id="timeline-block-${i}">${events[i]["name"]}</div>`;
+        }
     }
 }
 
