@@ -1,6 +1,16 @@
 {
   "limitedTime": [
     {
+      "name": "Haxmas",
+      "description": "Do workshops, get prizes! Repeat til Christmas!",
+      "website": "https://haxmas.hackclub.com",
+      "slack": "https://hackclub.enterprise.slack.com/archives/C0A277A4FP0",
+      "slackChannel": "#haxmas",
+      "status": "active",
+      "deadline": "2025-12-25T00:00:00.000Z",
+      "detailedDescription": "Welcome to Haxmas; 12 days of hands-on hacking! From December 13-25, a new workshop drops each day, created by a different member of the Hack Club community. Each workshop is only available on its specific day (day 1's workshop on December 13, day 2's workshop on December 14, and so on), so make sure to participate daily! Each workshop comes with its own special prize, and you'll earn snowflakes that you can redeem for stickers, swag, and more!"
+    },
+    {
       "name": "Meow",
       "description": "Spend 5 hours building something to do with cats, get a cat plushie! Ends Christmas Day!",
       "website": "https://meow.hackclub.com",
