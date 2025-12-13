@@ -84,7 +84,8 @@ async function startRender() {
     renderPrograms();
     await loadParticipants();
     updateParticipantCounts();
-    console.table(getTimelineEvents());
+    //console.table(getTimelineEvents()); //DEBUG - PLEASE REMOVE LATER
+    loadTimelineBlocks();
 }
 
 function loadParticipants() {
@@ -707,6 +708,14 @@ function getTimelineEvents(){
             return timeA - timeB;
         }
     );
+}
+
+function loadTimelineBlocks(){
+    const events = getTimelineEvents();
+    for(i=0; i<events.length; i++){
+        console.log(events[i]);
+        document.getElementById("timeline").innerHTML += `<div id="timeline-block-${i}">${events[i]["name"]}</div>`;
+    }
 }
 
 // ----
