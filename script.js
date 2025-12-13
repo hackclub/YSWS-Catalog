@@ -84,6 +84,7 @@ async function startRender() {
     renderPrograms();
     await loadParticipants();
     updateParticipantCounts();
+    console.table(getTimelineEvents());
 }
 
 function loadParticipants() {
@@ -669,6 +670,47 @@ function initializeTheme() {
     }
 }
 
+// For timeline
+function getEndDate(program){
+    if(program.ended){
+        const date = new Date(program.ended);
+        if (!isNaN(date)) return date;
+    }
+
+    if (program.deadline && isEventEnded(program.deadline)) {
+        return new Date(program.deadline);
+    }
+
+    return null;
+}
+
+function getEventStatus(program){
+    if(program.status === "ended" || (program.deadline && isEventEnded(program.deadline))){
+        return "ended";
+    }
+
+    return "active";
+}
+
+function getTimelineEvents(){
+    const now = new Date();
+
+    return Object.values(programs).flat().map(program => ({
+        name: program.name,
+        status: getEventStatus(program),
+        endDate: getEndDate(program),
+        deadline: program.deadline ? new Date(program.deadline) : null
+    })).filter(e => (e.deadline || e.endDate)).sort(
+        (a, b) => {
+            const timeA = new Date(a.deadline)-now;
+            const timeB = new Date(b.deadline)-now;
+            return timeA - timeB;
+        }
+    );
+}
+
+// ----
+
 function updateDeadlines() {
     const deadlineElements = document.querySelectorAll('.program-deadline');
     let needsReload = false;
@@ -698,6 +740,7 @@ function updateDeadlines() {
 
 document.addEventListener('DOMContentLoaded', () => {
     startRender();
+
     const searchInput = document.getElementById('program-search');
     searchInput.addEventListener('input', (e) => searchPrograms(e.target.value));
     
