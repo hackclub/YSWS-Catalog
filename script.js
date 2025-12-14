@@ -697,9 +697,11 @@ function getTimelineEvents(){
         deadline: program.deadline ? new Date(program.deadline) : null
     })).sort(
         (a, b) => {
-            const timeA = new Date(a.deadline)-now;
-            const timeB = new Date(b.deadline)-now;
-            return timeA - timeB;
+            if(!a.deadline && !b.deadline) return 0;
+            if(!a.deadline) return 1;
+            if(!b.deadline) return -1;
+
+            return a.deadline.getTime() - b.deadline.getTime();
         }
     );
 }
@@ -709,7 +711,7 @@ function loadTimelineBlocks(){
     for(i=0; i<events.length; i++){
         if(events[i].status !=="ended" && events[i].status !=="draft"){
             console.log(events[i]);
-            document.getElementById("timeline").innerHTML += `<div id="timeline-block-${i}">${events[i]["name"]}</div>`;
+            document.getElementById("timeline").innerHTML += `<div id="timeline-block-${i}">${events[i]["name"]} - ${events[i].deadline}</div>`;
         }
     }
 }
