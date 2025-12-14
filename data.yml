@@ -107,7 +107,7 @@ limitedTime:
   slackChannel: "#axiom"
   status: active
 - name: Accelerate
-  description: Build Physics Simulations, get Prizes!
+  description: Build physics simulations, get prizes!
   website: https://accelerate.hackclub.com
   slack: https://hackclub.slack.com/archives/C09DPBK2K4K
   slackChannel: "#accelerate"
@@ -160,7 +160,7 @@ limitedTime:
   status: active
   deadline: 2025-11-03
 - name: Dummies V2
-  description: Learn A new Proggraming language and make a project with that, And We will send you school supplies, books, and study materials
+  description: Learn A new programming language and make a project with that, And We will send you school supplies, books, and study materials
   website: https://dummies.hackclub.com/
   slack: https://hackclub.slack.com/archives/C096M3EV67M
   slackChannel: '#dummies'
@@ -171,7 +171,7 @@ limitedTime:
   website: https://siege.hackclub.com/
   slack: https://hackclub.slack.com/archives/C08SKC6P85V
   slackChannel: "#siege"
-  status: active
+  status: ended
   deadline: 2025-12-08
 - name: iplace
   description: A collaborative canvas of websites, made by Hack Clubbers! Get hosting and domain credits!
