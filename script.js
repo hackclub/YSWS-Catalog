@@ -708,11 +708,30 @@ function getTimelineEvents(){
 
 function loadTimelineBlocks(){
     const events = getTimelineEvents();
-    for(i=0; i<events.length; i++){
-        if(events[i].status !=="ended" && events[i].status !=="draft"){
-            console.log(events[i]);
-            document.getElementById("timeline").innerHTML += `<div id="timeline-block-${i}">${events[i]["name"]} - ${events[i].deadline}</div>`;
-        }
+    const now = new Date();
+    const timeline = document.getElementById("timeline");
+    timeline.innerHTML = '';
+
+
+    //TODO: FIX LATER, THE deadline === "null" ONES AREN'T SHOWING !!!
+
+    for(let i=0; i<events.length; i++){
+        const event = events[i];
+
+        if (event.status !== "ended" && event.status !== "draft"){
+            if(event.deadline){
+                const days = Math.ceil((event.deadline.getTime()-now)/1000/60/60/24)
+                timeline.innerHTML += `
+                <div id="timeline-block-${i}" style="background-color: red; width: ${days}rem">
+                ${event.name} - ${days}
+                </div>`
+            }else{
+                timeline.innerHTML += `
+                <div id="timeline-block-${i}" style="background-color: red">
+                ${event.name}
+                </div>`
+            }
+        };
     }
 }
 
