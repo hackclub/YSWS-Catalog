@@ -74,7 +74,12 @@ limitedTime:
   slack: https://hackclub.enterprise.slack.com/archives/C09TM7XKSSY
   slackChannel: "#construct"
   status: active
-  deadline: 2026-2-1
+  deadline: 2026-2-15
+  steps:
+    - Log into construct.hackclub.com
+    - Make projects!
+    - Submit!
+    - Get a cool new 3d printer!
 - name: Carnival
   description: Build an extension, plugin, or widget get prizes
   website: https://carnival.hackclub.com/
