@@ -1,6 +1,16 @@
 {
   "limitedTime": [
     {
+      "name": "HomeLab",
+      "description": "You ship projects related to having a self hosted server at home, and we ship things to help you create your own setup",
+      "website": "https://homelab.hackclub.com",
+      "slack": "https://hackclub.enterprise.slack.com/archives/C09U5BFU3GA",
+      "slackChannel": "#home-lab",
+      "status": "active",
+      "deadline": "2026-1-31",
+      "detailedDescription": "A YSWS where you ship projects related to having a self hosted server at home (tracked with hackatime), and we ship things to help you create your own setup (or update a setup you already have!)\\"
+    },
+    {
       "name": "Haxmas",
       "description": "Do workshops, get prizes! Repeat til Christmas!",
       "website": "https://haxmas.hackclub.com",
