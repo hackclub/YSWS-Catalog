@@ -922,6 +922,12 @@ indefinite:
   slackChannel: "#foodie"
   status: ended
 drafts:
+- name: Woof
+  description: Spend 5 or more hours making a dog-themed project and get a dog plushie and other cool stuff!
+  website: https://woof-mu.vercel.app/
+  slack: https://hackclub.enterprise.slack.com/archives/C08LCGSECQP
+  slackChannel: "#woof"
+  status: draft
 - name: issued
   description: code to design hack-themed apparel
   detailedDescription: you code to design hack-themed apparel, we ship popular designs as real clothes!
