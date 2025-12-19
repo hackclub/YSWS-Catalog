@@ -3065,10 +3065,10 @@ html {
 
 /* Woof-specific card styling - borrowed from Meow ^ */
 .program-card.woof-card {
-  --color-woof-bg: #E5CD6C;
-  --color-woof-dot: #F9F3B9;
+  --color-woof-bg: #e5cd6c;
+  --color-woof-dot: #f9f3b9;
   --color-woof-text: #010101;
-  --color-woof-accent: #2F1213;
+  --color-woof-accent: #2f1213;
   background-color: var(--color-woof-bg) !important;
   background-image: radial-gradient(circle, var(--color-woof-dot) 10px, transparent 15px) !important;
   background-size: 20px 20px !important;
