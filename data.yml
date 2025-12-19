@@ -924,6 +924,7 @@ indefinite:
 drafts:
 - name: Woof
   description: Spend 5 or more hours making a dog themed project and get a dog plushie and other cool stuff!
+  website: https://woof-mu.vercel.app/
   slack: https://hackclub.enterprise.slack.com/archives/C08LCGSECQP
   slackChannel: "#woof"
   status: draft

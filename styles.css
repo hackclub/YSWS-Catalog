@@ -3026,7 +3026,7 @@ html {
   }
 }
 
-/* Meow-specific card styling - Cat paw print theme */
+/* Woof-specific card styling - Cat paw print theme */
 .program-card.meow-card {
   --color-meow-bg: #f8d4d1;
   --color-meow-dot: #e8c4c1;
@@ -3063,8 +3063,45 @@ html {
   border-color: var(--color-meow-accent) !important;
 }
 
-/* Woof-specific card styling */
-.program-card.woof {
+/* Woof-specific card styling - borrowed from Meow ^ */
+.program-card.woof-card {
+  --color-woof-bg: #E5CD6C;
+  --color-woof-dot: #F9F3B9;
+  --color-woof-text: #010101;
+  --color-woof-accent: #2F1213;
+  background-color: var(--color-woof-bg) !important;
+  background-image: radial-gradient(circle, var(--color-woof-dot) 10px, transparent 15px) !important;
+  background-size: 20px 20px !important;
+  position: relative;
+  color: var(--color-woof-text) !important;
+}
+
+.program-card.woof-card h3,
+.program-card.woof-card p,
+.program-card.woof-card .program-deadline {
+  color: var(--color-woof-text) !important;
+  position: relative;
+  z-index: 1;
+}
+
+.program-card.woof-card a {
+  color: var(--color-woof-accent) !important;
+  position: relative;
+  z-index: 1;
+}
+
+.program-card.woof-card .program-status {
+  color: white !important;
+  position: relative;
+  z-index: 1;
+}
+
+.program-card.woof-card:hover {
+  border-color: var(--color-woof-accent) !important;
+}
+
+/* Woof-specific card styling 
+.program-card.woof-card {
   --color-woof-bg: #e5cd6c;
   --color-woof-text: #2f1313;
   --color-woof-accent: #87803b;
@@ -3093,3 +3130,4 @@ html {
 .program-card.woof:hover {
   border-color: var(--color-woof-accent) !important;
 }
+*/
