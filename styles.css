@@ -3062,3 +3062,34 @@ html {
 .program-card.meow-card:hover {
   border-color: var(--color-meow-accent) !important;
 }
+
+/* Woof-specific card styling */
+.program-card.woof {
+  --color-woof-bg: #e5cd6c;
+  --color-woof-text: #2f1313;
+  --color-woof-accent: #87803b;
+
+  background-color: var(--color-woof-bg) !important;
+  background-image: none !important;
+
+  position: relative;
+  color: var(--color-woof-text) !important;
+}
+
+.program-card.woof h3,
+.program-card.woof p,
+.program-card.woof .program-deadline {
+  color: var(--color-woof-text) !important;
+}
+
+.program-card.woof a {
+  color: var(--color-woof-accent) !important;
+}
+
+.program-card.woof .program-status {
+  color: white !important;
+}
+
+.program-card.woof:hover {
+  border-color: var(--color-woof-accent) !important;
+}
