@@ -3063,7 +3063,7 @@ html {
   border-color: var(--color-meow-accent) !important;
 }
 
-/* Woof-specific card styling - borrowed from Meow ^ */
+/* Woof-specific card styling - borrowed from Meow (above) */
 .program-card.woof-card {
   --color-woof-bg: #e5cd6c;
   --color-woof-dot: #f9f3b9;
