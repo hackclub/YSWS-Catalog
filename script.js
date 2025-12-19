@@ -301,8 +301,6 @@ function createProgramCard(program) {
     const baubleClass = program.name === 'Bauble' ? 'bauble-card' : '';
     const meowClass = program.name === 'Meow' ? 'meow-card' : '';
     const woofClass = program.name === 'Woof' ? 'woof-card' : '';
-
-    
     const encodedProgram = encodeURIComponent(JSON.stringify(program));
     
     const isCompletedByUser = completedPrograms.has(program.name);
