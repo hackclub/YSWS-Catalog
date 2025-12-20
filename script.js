@@ -713,8 +713,6 @@ function loadTimelineBlocks(){
     timeline.innerHTML = '';
 
 
-    //TODO: FIX LATER, THE deadline === "null" ONES AREN'T SHOWING !!!
-
     for(let i=0; i<events.length; i++){
         const event = events[i];
 
@@ -722,16 +720,16 @@ function loadTimelineBlocks(){
             if(event.deadline){
                 const days = Math.ceil((event.deadline.getTime()-now)/1000/60/60/24)
                 timeline.innerHTML += `
-                <div id="timeline-block-${i}" style="background-color: red; width: ${days}rem">
+                <div class="timeline-block" id="timeline-block-${i}" style="background-color: red; width: ${days}rem">
                 ${event.name} - ${days}
                 </div>`
             }else{
                 timeline.innerHTML += `
-                <div id="timeline-block-${i}" style="background-color: red">
+                <div class="timeline-block" id="timeline-block-${i}" style="background-color: red">
                 ${event.name}
                 </div>`
             }
-        };
+        }
     }
 }
 

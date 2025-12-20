@@ -2739,6 +2739,15 @@ html {
   overflow-x: scroll;
 }
 
+.timeline-block{
+  margin-top: 0.3rem;
+  border-radius: 0 0.4rem 0.4rem 0;
+  height: 2rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: clip;
+}
+
 #date-container{
   background-color: gray;
   width:100%;
