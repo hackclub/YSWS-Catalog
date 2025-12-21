@@ -2791,18 +2791,19 @@ html {
 
 .timeline-label.inside{
   white-space: nowrap;
-  color: white;
+  color: var(--black);
   pointer-events: none;
+  font-weight: bold;
 }
 
 .timeline-label.outside{
   white-space: nowrap;
-  color: black;
+  color: white;
 }
 
 .no-deadline-timeline{
   flex:1;
-  background: linear-gradient(90deg,rgba(255, 0, 0, 0) 50%, var(--timeline-background) 95%);
+  /*background: linear-gradient(90deg,rgba(255, 0, 0, 0) 50%, var(--timeline-background) 95%);*/
 }
 
 .hidden{
