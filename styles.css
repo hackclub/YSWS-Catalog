@@ -2738,10 +2738,10 @@ html {
   margin-left: -3rem;
   margin-right: -3rem;
   background-color: var(--background);
-  overflow-x: hidden;
+  overflow-x: auto;
   overflow-y: hidden;
   position: relative;
-  max-height: 30rem;
+  max-height: 25rem;
 
   transition: background-color 0.5s ease, color 0.5s ease;
 }
@@ -2845,6 +2845,16 @@ html {
   min-height: 10rem;
 
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0), var(--background));
+}
+
+#timeline-expand-btn-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#timeline-expand-btn{
+  cursor: pointer;
 }
 
 .hidden{
