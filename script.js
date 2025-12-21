@@ -747,9 +747,12 @@ function loadTimelineBlocks(){
 
         const daysInMonth = Math.ceil((end-start)/1000/60/60/24+1);
 
-        const label = monthStart.toLocaleDateString('default', {month: "short"});
+        const jan = month === 0;
+        const yearShort = String(year).slice(-2);
 
-        monthContainer.innerHTML += `<div class="timeline-month" style="width:${daysInMonth}rem">${label}</div>`;
+        const label = jan ? `${monthStart.toLocaleString("default", {month: "short"})} '${yearShort}` : monthStart.toLocaleString("default", {month: "short"});
+
+        monthContainer.innerHTML += `<div class="timeline-month" style="width:${daysInMonth}rem"><span class="month-label">${label}</span></div>`;
         cursor = new Date(year, month +1, 1);
     }
 
