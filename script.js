@@ -729,8 +729,29 @@ function loadTimelineBlocks(){
     const brandingColors = ["#ec3750","#ff8c37","#f1c40f","#33d6a6", "#5bc0de", "#338eda", "#a633d6", "#8492a6"];
     const furthestEvent = events.map(e => e.deadline).filter(Boolean).reduce((max,d) => d > max ? d : max, now);
     const dayContainer = document.getElementById("day-container");
+    const monthContainer = document.getElementById("month-container");
 
     timeline.innerHTML = '';
+
+    let cursor = new Date(now);
+    cursor.setHours(0,0,0,0);
+
+    while(cursor <= furthestEvent){
+        const monthStart = new Date(cursor);
+        const month = monthStart.getMonth();
+        const year = monthStart.getFullYear();
+        const monthEnd = new Date(year, month + 1,0);
+
+        const start = new Date(Math.max(monthStart.getTime(), now.getTime()));
+        const end = new Date(Math.min(monthEnd.getTime(), furthestEvent.getTime()));
+
+        const daysInMonth = Math.ceil((end-start)/1000/60/60/24+1);
+
+        const label = monthStart.toLocaleDateString('default', {month: "short"});
+
+        monthContainer.innerHTML += `<div class="timeline-month" style="width:${daysInMonth}rem">${label}</div>`;
+        cursor = new Date(year, month +1, 1);
+    }
 
     for(let i=0; i < Math.ceil((furthestEvent.getTime() - now.getTime())/1000/60/60/24); i++){
         dayContainer.innerHTML += `<div id="timeline-day-${i}" class="timeline-day"></div>`
@@ -795,7 +816,11 @@ function updateDeadlines() {
 
 document.addEventListener('DOMContentLoaded', () => {
     startRender();
-    window.addEventListener('resize', resolveTimelineLabels);
+    let timelineResize = null;
+    window.addEventListener('resize', () => {
+        cancelAnimationFrame(timelineResize);
+        timelineResize = requestAnimationFrame(resolveTimelineLabels);
+    });
 
     const searchInput = document.getElementById('program-search');
     searchInput.addEventListener('input', (e) => searchPrograms(e.target.value));

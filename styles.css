@@ -2739,6 +2739,8 @@ html {
   margin-right: -3rem;
   background-color: var(--background);
   overflow-x: scroll;
+
+  transition: background-color 0.5s ease, color 0.5s ease;
 }
 
 @media (max-width: 768px) and (orientation: portrait) {
@@ -2785,6 +2787,22 @@ html {
   height: 1.5rem;
   border-left: 2px solid var(--border);
   flex-shrink: 0;
+}
+
+#month-container{
+  display: flex;
+  height: 2rem;
+  font-weight: bold;
+}
+
+.timeline-month{
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  padding: 0.25rem;
+  border-left: 2px solid var(--border);
+  color: var(--text);
+  white-space: nowrap;
 }
 
 .timeline-label.inside{
