@@ -2739,6 +2739,12 @@ html {
   overflow-x: scroll;
 }
 
+@media (max-width: 768px) and (orientation: portrait) {
+  #timeline-container{
+    margin: -1rem -1rem;
+  }
+}
+
 .timeline-block{
   margin-top: 0.3rem;
   border-radius: 0 0.4rem 0.4rem 0;
