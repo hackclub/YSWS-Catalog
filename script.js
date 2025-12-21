@@ -725,7 +725,7 @@ function loadTimelineBlocks(){
                 </div>`
             }else{
                 timeline.innerHTML += `
-                <div class="timeline-block" id="timeline-block-${i}" style="background-color: red">
+                <div class="timeline-block no-deadline-timeline" id="timeline-block-${i}" style="">
                 ${event.name}
                 </div>`
             }

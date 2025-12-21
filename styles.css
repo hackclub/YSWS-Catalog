@@ -2737,6 +2737,7 @@ html {
   margin-right: -3rem;
   background-color: white;
   overflow-x: scroll;
+  --timeline-background: white;
 }
 
 @media (max-width: 768px) and (orientation: portrait) {
@@ -2758,6 +2759,10 @@ html {
   background-color: gray;
   width:100%;
   height:2rem;
+}
+
+.no-deadline-timeline{
+  background: linear-gradient(90deg,rgba(255, 0, 0, 1) 50%, var(--timeline-background) 95%);
 }
 
 /* Blueprint-specific card styling */
