@@ -688,8 +688,6 @@ function getEndDate(program){
 
 
 function getTimelineEvents(){
-    const now = new Date();
-
     return Object.values(programs).flat().map(program => ({
         name: program.name,
         status: program.status,
@@ -729,8 +727,14 @@ function loadTimelineBlocks(){
     const now = new Date();
     const timeline = document.getElementById("timeline");
     const brandingColors = ["#ec3750","#ff8c37","#f1c40f","#33d6a6", "#5bc0de", "#338eda", "#a633d6", "#8492a6"];
+    const furthestEvent = events.map(e => e.deadline).filter(Boolean).reduce((max,d) => d > max ? d : max, now);
+    const dayContainer = document.getElementById("day-container");
+
     timeline.innerHTML = '';
 
+    for(let i=0; i < Math.ceil((furthestEvent.getTime() - now.getTime())/1000/60/60/24); i++){
+        dayContainer.innerHTML += `<div id="timeline-day-${i}" class="timeline-day"></div>`
+    }
 
     for(let i=0; i<events.length; i++){
         const event = events[i];
@@ -746,7 +750,6 @@ function loadTimelineBlocks(){
                 labelText += ` - ${days} days left`;
             }
 
-            console.log(days);
             timeline.innerHTML += `
             <div class="timeline-row">
                 <div class="timeline-block ${event.deadline ? '' : "no-deadline-timeline"}" style="width:${width}rem; background-color: ${brandingColors[(i%8)]}">
