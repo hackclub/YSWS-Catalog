@@ -816,11 +816,7 @@ function updateDeadlines() {
 
 document.addEventListener('DOMContentLoaded', () => {
     startRender();
-    let timelineResize = null;
-    window.addEventListener('resize', () => {
-        cancelAnimationFrame(timelineResize);
-        timelineResize = requestAnimationFrame(resolveTimelineLabels);
-    });
+    window.addEventListener('resize', resolveTimelineLabels);
 
     const searchInput = document.getElementById('program-search');
     searchInput.addEventListener('input', (e) => searchPrograms(e.target.value));
