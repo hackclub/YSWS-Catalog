@@ -728,6 +728,7 @@ function loadTimelineBlocks(){
     const events = getTimelineEvents();
     const now = new Date();
     const timeline = document.getElementById("timeline");
+    const brandingColors = ["#ec3750","#ff8c37","#f1c40f","#33d6a6", "#5bc0de", "#338eda", "#a633d6", "#8492a6"];
     timeline.innerHTML = '';
 
 
@@ -748,7 +749,7 @@ function loadTimelineBlocks(){
             console.log(days);
             timeline.innerHTML += `
             <div class="timeline-row">
-                <div class="timeline-block ${event.deadline ? '' : "no-deadline-timeline"}" style="width:${width}rem">
+                <div class="timeline-block ${event.deadline ? '' : "no-deadline-timeline"}" style="width:${width}rem; background-color: ${brandingColors[(i%8)]}">
                     <span class="timeline-label inside">${labelText}</span>
                 </div>
                 <span class="timeline-label outside hidden">${labelText}</span>

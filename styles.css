@@ -2735,9 +2735,9 @@ html {
   color: black;
   margin-left: -3rem;
   margin-right: -3rem;
-  background-color: white;
+  background-color: var(--timeline-background);
   overflow-x: scroll;
-  --timeline-background: white;
+  --timeline-background: rgba(18, 18, 23, 1);
 }
 
 @media (max-width: 768px) and (orientation: portrait) {
@@ -2750,6 +2750,7 @@ html {
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  margin: 0.5rem 5rem 0 0;
 }
 
 .timeline-block{
@@ -2787,7 +2788,7 @@ html {
 
 .no-deadline-timeline{
   flex:1;
-  background: linear-gradient(90deg,rgba(255, 0, 0, 1) 50%, var(--timeline-background) 95%);
+  background: linear-gradient(90deg,rgba(255, 0, 0, 0) 50%, var(--timeline-background) 95%);
 }
 
 .hidden{
