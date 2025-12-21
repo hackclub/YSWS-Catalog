@@ -2746,13 +2746,26 @@ html {
   }
 }
 
+.timeline-row{
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
 .timeline-block{
-  margin-top: 0.3rem;
-  border-radius: 0 0.4rem 0.4rem 0;
+  position: relative;
   height: 2rem;
-  white-space: nowrap;
+  padding-left: 0.5rem;
+  border-radius: 0 0.4rem 0.4rem 0;
+  background: red;
+  flex-shrink: 0;
   overflow: hidden;
-  text-overflow: clip;
+}
+
+.timeline-label{
+  white-space: nowrap;
+  color: white;
+  pointer-events: none;
 }
 
 #date-container{
@@ -2761,8 +2774,24 @@ html {
   height:2rem;
 }
 
+.timeline-label.inside{
+  white-space: nowrap;
+  color: white;
+  pointer-events: none;
+}
+
+.timeline-label.outside{
+  white-space: nowrap;
+  color: black;
+}
+
 .no-deadline-timeline{
+  flex:1;
   background: linear-gradient(90deg,rgba(255, 0, 0, 1) 50%, var(--timeline-background) 95%);
+}
+
+.hidden{
+  display: none;
 }
 
 /* Blueprint-specific card styling */

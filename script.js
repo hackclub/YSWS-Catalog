@@ -706,6 +706,24 @@ function getTimelineEvents(){
     );
 }
 
+function resolveTimelineLabels(){
+    document.querySelectorAll(".timeline-row").forEach(row => {
+        const block = row.querySelector('.timeline-block');
+        const inside = row.querySelector('.timeline-label.inside');
+        const outside = row.querySelector(".timeline-label.outside");
+
+        if(!block||!inside||!outside) return;
+
+        if(inside.scrollWidth > block.clientWidth){
+            inside.classList.add("hidden");
+            outside.classList.remove("hidden");
+        }else{
+            inside.classList.remove("hidden");
+            outside.classList.add("hidden");
+        }
+    })
+}
+
 function loadTimelineBlocks(){
     const events = getTimelineEvents();
     const now = new Date();
@@ -717,20 +735,29 @@ function loadTimelineBlocks(){
         const event = events[i];
 
         if (event.status !== "ended" && event.status !== "draft"){
+            let labelText = event.name;
+            let days;
+            let width;
+
             if(event.deadline){
-                const days = Math.ceil((event.deadline.getTime()-now)/1000/60/60/24)
-                timeline.innerHTML += `
-                <div class="timeline-block" id="timeline-block-${i}" style="background-color: red; width: ${days}rem">
-                ${event.name} - ${days}
-                </div>`
-            }else{
-                timeline.innerHTML += `
-                <div class="timeline-block no-deadline-timeline" id="timeline-block-${i}" style="">
-                ${event.name}
-                </div>`
+                days = Math.ceil((event.deadline - now)/1000/60/60/24);
+                width = Math.max(days, 1);
+                labelText += ` - ${days} days left`;
             }
+
+            console.log(days);
+            timeline.innerHTML += `
+            <div class="timeline-row">
+                <div class="timeline-block ${event.deadline ? '' : "no-deadline-timeline"}" style="width:${width}rem">
+                    <span class="timeline-label inside">${labelText}</span>
+                </div>
+                <span class="timeline-label outside hidden">${labelText}</span>
+            </div>
+            `;
         }
     }
+
+    requestAnimationFrame(resolveTimelineLabels);
 }
 
 // ----
@@ -764,6 +791,7 @@ function updateDeadlines() {
 
 document.addEventListener('DOMContentLoaded', () => {
     startRender();
+    window.addEventListener('resize', resolveTimelineLabels);
 
     const searchInput = document.getElementById('program-search');
     searchInput.addEventListener('input', (e) => searchPrograms(e.target.value));
