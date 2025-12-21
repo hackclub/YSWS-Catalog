@@ -2737,9 +2737,8 @@ html {
   color: black;
   margin-left: -3rem;
   margin-right: -3rem;
-  background-color: var(--timeline-background);
+  background-color: var(--background);
   overflow-x: scroll;
-  --timeline-background: rgba(18, 18, 23, 1);
 }
 
 @media (max-width: 768px) and (orientation: portrait) {
@@ -2767,7 +2766,6 @@ html {
 
 .timeline-label{
   white-space: nowrap;
-  color: white;
   pointer-events: none;
 }
 
@@ -2791,19 +2789,18 @@ html {
 
 .timeline-label.inside{
   white-space: nowrap;
-  color: var(--black);
   pointer-events: none;
   font-weight: bold;
+  color: var(--black);
 }
 
 .timeline-label.outside{
   white-space: nowrap;
-  color: white;
+  color: var(--text);
 }
 
 .no-deadline-timeline{
   flex:1;
-  /*background: linear-gradient(90deg,rgba(255, 0, 0, 0) 50%, var(--timeline-background) 95%);*/
 }
 
 .hidden{
