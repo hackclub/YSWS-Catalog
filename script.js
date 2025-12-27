@@ -706,11 +706,9 @@ function expandTimeline(){
 
 function getTimelineEvents(){
     return Object.values(programs).flat().map(program => ({
-        id: program.id,
-        name: program.name,
-        status: program.status,
+        ...program,
         endDate: getEndDate(program),
-        deadline: program.deadline ? new Date(program.deadline) : null
+        deadline: program.deadline?new Date(program.deadline):null,
     })).sort(
         (a, b) => {
             if(!a.deadline && !b.deadline) return 0;
