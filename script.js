@@ -795,8 +795,8 @@ function loadTimelineBlocks(){
             }
 
             timeline.innerHTML += `
-            <div class="timeline-row">
-                <div class="timeline-block  ${event.deadline ? '' : "no-deadline-timeline"}" data-index="${i}" style="width:${width}rem; ${event.deadline ? `background-color: ${brandingColors[(i%8)]}` : `background: linear-gradient(90deg, ${brandingColors[(i%8)]} 40%, var(--background) 95%);`}">
+            <div class="timeline-row" data-index="${i}">
+                <div class="timeline-block  ${event.deadline ? '' : "no-deadline-timeline"}" style="width:${width}rem; ${event.deadline ? `background-color: ${brandingColors[(i%8)]}` : `background: linear-gradient(90deg, ${brandingColors[(i%8)]} 40%, var(--background) 95%);`}">
                     <span class="timeline-label inside">${labelText}</span>
                 </div>
                 <span class="timeline-label outside hidden">${labelText}</span>
