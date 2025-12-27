@@ -706,6 +706,7 @@ function expandTimeline(){
 
 function getTimelineEvents(){
     return Object.values(programs).flat().map(program => ({
+        id: program.id,
         name: program.name,
         status: program.status,
         endDate: getEndDate(program),
@@ -795,7 +796,7 @@ function loadTimelineBlocks(){
 
             timeline.innerHTML += `
             <div class="timeline-row">
-                <div class="timeline-block ${event.deadline ? '' : "no-deadline-timeline"}" style="width:${width}rem; ${event.deadline ? `background-color: ${brandingColors[(i%8)]}` : `background: linear-gradient(90deg, ${brandingColors[(i%8)]} 40%, var(--background) 95%);`}">
+                <div class="timeline-block  ${event.deadline ? '' : "no-deadline-timeline"}" data-index="${i}" style="width:${width}rem; ${event.deadline ? `background-color: ${brandingColors[(i%8)]}` : `background: linear-gradient(90deg, ${brandingColors[(i%8)]} 40%, var(--background) 95%);`}">
                     <span class="timeline-label inside">${labelText}</span>
                 </div>
                 <span class="timeline-label outside hidden">${labelText}</span>
@@ -803,6 +804,15 @@ function loadTimelineBlocks(){
             `;
         }
     }
+
+    document.querySelectorAll('.timeline-row').forEach(row => {
+        row.addEventListener('click', () => {
+            const i = Number(row.dataset.index);
+            const event = events[i];
+
+            openModal(event);
+        })
+    })
 
     requestAnimationFrame(resolveTimelineLabels);
 }

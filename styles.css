@@ -2756,7 +2756,12 @@ html {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  margin: 0.5rem 5rem 0 0;
+  margin: 0.5rem 10rem 0 0;
+
+  transition:
+    translate 0.25s ease,
+    box-shadow 0.25s ease,
+    transform 0.25s ease
 }
 
 .timeline-block{
@@ -2767,6 +2772,14 @@ html {
   background: red;
   flex-shrink: 0;
   overflow: hidden;
+}
+
+.timeline-row:hover,
+.timeline-row:focus{
+  box-shadow: var(--text);
+  transform: scale(1.3);
+  translate: 9.75rem;
+  cursor: pointer;
 }
 
 .timeline-label{
