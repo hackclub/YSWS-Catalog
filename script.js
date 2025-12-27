@@ -789,9 +789,25 @@ function loadTimelineBlocks(){
             let width;
 
             if(event.deadline){
-                days = Math.ceil((event.deadline - now)/1000/60/60/24);
-                width = Math.max(days, 1);
-                labelText += ` - ${days} days left`;
+                days = Math.max(Math.ceil((event.deadline-now)/1000/60/60/24),1);
+
+                let remainingDays = days;
+                const years = Math.floor(remainingDays/365);
+
+                remainingDays -= years*365;
+
+                const months = Math.floor(remainingDays/30);
+                remainingDays -= months*30;
+
+                width = days;
+
+                const parts = [];
+
+                if(years>0) parts.push(`${years} year${years!== 1?"s":""}`);
+                if(months>0) parts.push(`${months} month${months!== 1?"s":""}`);
+                parts.push(`${days} day${days!==1?"s":""}`)
+
+                labelText += ` - ${parts.join(' ')}`;
             }
 
             timeline.innerHTML += `
