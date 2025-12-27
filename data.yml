@@ -42,6 +42,25 @@ limitedTime:
     - You can make anything, as long as it's to do with cats, you could make a website, an app, or even a hardware project
     - Must be shipped (accessible via a URL or as an executable, or fully built for hardware)
     - US participants receive physical plushie, international participants receive $25 in HCB grant cards to buy their plushie.
+- name: Woof
+  description: Spend 5 or more hours making a dog-themed project and get a dog plushie!
+  website: woof.hackclub.com
+  slack: https://hackclub.enterprise.slack.com/archives/C08LCGSECQP
+  slackChannel: '#woof'
+  status: active
+  deadline: 2026-01-14
+  detailedDescription: Spend 5 hours on a dog related project (with hackatime) and get a dog plushie either shipped from HQ (US only) or through a $25 HCB Grant card.
+  steps:
+   - Join the Slack Channel
+   - Spend 5 or more hours coding (tracked with hackatime)
+   - Ship - Fill out the submission form
+   - Get a dog plushie!
+  details:
+   - Your project has to be related to dogs
+   - You must track code time with Hackatime and push to GitHub
+   - Your project has to be made by you 🫵
+   - You need a demo link for your project (URL, downloadbale executable or fully built for hardware)
+   - US participants receive physical plushie (shipped to address), international participants receive $25 in HCB grant cards to buy their plushie.
 - name: Bauble
   description: 3D model an ornament, get it printed and put on the HQ tree! Ends December 25th.
   website: https://bauble.hackclub.com
@@ -930,12 +949,6 @@ indefinite:
   slackChannel: "#foodie"
   status: ended
 drafts:
-- name: Woof
-  description: Spend 5 or more hours making a dog-themed project and get a dog plushie and other cool stuff!
-  website: https://woof-mu.vercel.app/
-  slack: https://hackclub.enterprise.slack.com/archives/C08LCGSECQP
-  slackChannel: "#woof"
-  status: draft
 - name: issued
   description: code to design hack-themed apparel
   detailedDescription: you code to design hack-themed apparel, we ship popular designs as real clothes!
