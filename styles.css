@@ -2731,8 +2731,151 @@ html {
   }
 }
 
+#timeline-container{
+  display: flex;
+  flex-direction: column;
+  color: black;
+  margin-left: -3rem;
+  margin-right: -3rem;
+  background-color: var(--background);
+  overflow-x: auto;
+  overflow-y: hidden;
+  position: relative;
+  max-height: 25rem;
+
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+@media (max-width: 768px) and (orientation: portrait) {
+  #timeline-container{
+    margin: -1rem -1rem;
+  }
+}
+
+.timeline-row{
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0.5rem 10rem 0 0;
+
+  transition:
+    translate 0.25s ease,
+    box-shadow 0.25s ease,
+    transform 0.25s ease
+}
+
+.timeline-block{
+  position: relative;
+  height: 2rem;
+  padding-left: 0.5rem;
+  border-radius: 0 0.4rem 0.4rem 0;
+  background: red;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.timeline-row:hover,
+.timeline-row:focus{
+  box-shadow: var(--text);
+  transform: scale(1.3);
+  translate: 9.75rem;
+  cursor: pointer;
+}
+
+.timeline-label{
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+#date-container{
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+#day-container{
+  display: flex;
+}
+
+.timeline-day{
+  width: 1rem;
+  height: 1.5rem;
+  border-left: 2px solid var(--border);
+  flex-shrink: 0;
+}
+
+#month-container{
+  display: flex;
+  position:relative;
+  height: 2rem;
+  font-weight: bold;
+}
+
+.timeline-month{
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  border-left: 2px solid var(--border);
+  color: var(--text);
+  white-space: nowrap;
+  left: 0;
+  z-index: 3;
+}
+
+.month-label{
+  position: sticky;
+  left: 1rem;
+
+  padding-right: 0.5rem;
+  z-index: 5;
+}
+
+.timeline-label.inside{
+  white-space: nowrap;
+  pointer-events: none;
+  font-weight: bold;
+  color: var(--black);
+}
+
+.timeline-label.outside{
+  white-space: nowrap;
+  color: var(--text);
+}
+
+.no-deadline-timeline{
+  flex:1;
+}
+
+#timeline-overlay{
+  z-index: 10;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4rem;
+  pointer-events: none;
+  min-height: 10rem;
+
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), var(--background));
+}
+
+#timeline-expand-btn-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#timeline-expand-btn{
+  cursor: pointer;
+}
+
+.hidden{
+  display: none;
+}
+
 /* Blueprint-specific card styling */
-.program-card.blueprint-card {  
+.program-card.blueprint-card {
   --color-bp-lighter: #344b6a;
   --color-bp-dark: #0e305b;
   --color-bp-darker: #081c35;
@@ -2743,7 +2886,7 @@ html {
   --color-bp-success: #a8f0ae;
   background: var(--color-bp-dark) !important;
   background-color: var(--color-bp-dark) !important;
-  background-image: 
+  background-image:
     linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
     linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px) !important;
   background-size: 50px 50px !important;
