@@ -61,6 +61,19 @@ limitedTime:
    - Your project has to be made by you 🫵
    - You need a demo link for your project (URL, downloadable executable or fully built for hardware)
    - US participants receive physical plushie (shipped to address), international participants receive $25 in HCB grant cards to buy their plushie.
+- name: Mosaic
+  description: Build a website every month with a different theme. Get stuff. Repeat.
+  website: https://mosaic.hackclub.com
+  slack: https://hackclub.enterprise.slack.com/archives/C09Q9CD9ZS8
+  slackChannel: "#mosaic"
+  status: active
+  deadline: 31-12-2026
+  detailedDescription: For 12 months, every month you get a random theme to build a full-stack web application! Earn cool prizes like a 3D Printer Grant and even a 1 year Render Hosting Plan!!
+  steps:
+   - Join the Slack Channel
+   - Spend 30 or more hours (tracked with hackatime)
+   - Submit it to review!
+   - Get your rewards!!
 - name: Bauble
   description: 3D model an ornament, get it printed and put on the HQ tree! Ends December 25th.
   website: https://bauble.hackclub.com
