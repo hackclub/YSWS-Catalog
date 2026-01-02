@@ -235,12 +235,6 @@ limitedTime:
   status: active
   deadline: '2025-10-16'
   requirements: Basic knowledge of HTML and CSS, A little knowledge of JavaScript.
-- name: Rooted
-  description: Spend time coding, come to BornHack 🏕️
-  website: https://rooted.hackclub.com/
-  slack: https://hackclub.enterprise.slack.com/archives/C09LYU1S23Y
-  slackChannel: "#rooted"
-  status: active
   detailedDescription: Code with other teens in a forest in Denmark for a week, all for free, RSVP on website!
 - name: Hacksaber
   description: Ship a Beat Saber Modchart, and we'll ship custom T-Shirt designed by a HC member, or a copy of the game! Live YSWS!
@@ -949,6 +943,13 @@ indefinite:
   slackChannel: "#foodie"
   status: ended
 drafts:
+- name: Rooted
+  description: Spend time coding, come to BornHack 🏕️
+  detailedDescription: Spend [?] hours on projects and get a ticket to come to Hack Clubs site at BornHack
+  website: https://rooted.hackclub.com/
+  slack: https://hackclub.enterprise.slack.com/archives/C09LYU1S23Y
+  slackChannel: "#rooted"
+  status: draft
 - name: issued
   description: code to design hack-themed apparel
   detailedDescription: you code to design hack-themed apparel, we ship popular designs as real clothes!
