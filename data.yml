@@ -235,7 +235,6 @@ limitedTime:
   status: active
   deadline: '2025-10-16'
   requirements: Basic knowledge of HTML and CSS, A little knowledge of JavaScript.
-  detailedDescription: Code with other teens in a forest in Denmark for a week, all for free, RSVP on website!
 - name: Hacksaber
   description: Ship a Beat Saber Modchart, and we'll ship custom T-Shirt designed by a HC member, or a copy of the game! Live YSWS!
   website: https://hacksaber.vercel.app/
