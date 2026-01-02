@@ -943,8 +943,8 @@ indefinite:
   status: ended
 drafts:
 - name: Rooted
-  description: Spend time coding, come to BornHack 🏕️
-  detailedDescription: Spend [?] hours on projects and get a ticket to come to Hack Clubs site at BornHack
+  description: Spend time coding, come to BornHack 🏕️ ∣ RSVP
+  detailedDescription: Spend time on projects and get a ticket to come to Hack Clubs site at BornHack! STILL A WIP, RSVP NOW!
   website: https://rooted.hackclub.com/
   slack: https://hackclub.enterprise.slack.com/archives/C09LYU1S23Y
   slackChannel: "#rooted"
