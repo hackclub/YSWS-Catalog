@@ -1,5 +1,18 @@
 ---
 limitedTime:
+- name: Pxl
+  description: Code any project, place pixels on a r/place-like canvas!
+  website: https://pxl.hackclub.com
+  slack: https://hackclub.enterprise.slack.com/archives/C09CKP56TK2
+  slackChannel: "#pxl"
+  status: active
+  deadline: 2026-1-31
+  detailedDescription: Pxl is a YSWS where you can either code for pixels (you can double dip this, no need to submit!), or make projects for merch with the final canvas!
+  steps:
+    - Join the Slack Channel
+    - Spend time coding anything
+    - Place pixels
+    - Optionally- ship a project for merch!
 - name: Hackvault
   description: You make a password manager and we'll ship you a Yubikey!
   website: https://hackvault.hackclub.com
