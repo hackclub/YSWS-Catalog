@@ -75,6 +75,22 @@
       ]
     },
     {
+      "name": "Mosaic",
+      "description": "Build a website every month with a different theme. Get stuff. Repeat.",
+      "website": "https://mosaic.hackclub.com",
+      "slack": "https://hackclub.enterprise.slack.com/archives/C09Q9CD9ZS8",
+      "slackChannel": "#mosaic",
+      "status": "active",
+      "deadline": "2026-12-31T00:00:00.000Z",
+      "detailedDescription": "For 12 months, every month you get a random theme to build a full-stack web application! Earn cool prizes like a 3D Printer Grant and even a 1 year Render Hosting Plan!!",
+      "steps": [
+        "Join the Slack Channel",
+        "Spend 30 or more hours (tracked with hackatime)",
+        "Submit it to review!",
+        "Get your rewards!!"
+      ]
+    },
+    {
       "name": "Bauble",
       "description": "3D model an ornament, get it printed and put on the HQ tree! Ends December 25th.",
       "website": "https://bauble.hackclub.com",
