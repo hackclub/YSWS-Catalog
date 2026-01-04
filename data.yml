@@ -1,5 +1,20 @@
 ---
 limitedTime:
+- name: Flavortown
+  description: Build stuff. Get stuff. Repeat.
+  website: https://flavortown.hackclub.com
+  slack: https://hackclub.enterprise.slack.com/archives/C09MPB8NE8H
+  slackChannel: "#flavortown"
+  status: active
+  deadline: 2026-3-31
+  detailedDescription: |
+    Flavortown is a Hack Club YSWS where we'll send you stuff for working on projects
+  steps:
+    - Join of flavortown.hackclub.com
+    - Build cool stuff
+    - Ship your builds
+    - Get cool stuff
+    - Repeat
 - name: Hackvault
   description: You make a password manager and we'll ship you a Yubikey!
   website: https://hackvault.hackclub.com
