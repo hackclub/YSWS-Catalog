@@ -42,6 +42,38 @@ limitedTime:
     - You can make anything, as long as it's to do with cats, you could make a website, an app, or even a hardware project
     - Must be shipped (accessible via a URL or as an executable, or fully built for hardware)
     - US participants receive physical plushie, international participants receive $25 in HCB grant cards to buy their plushie.
+- name: Woof
+  description: Spend 5 or more hours making a dog-themed project and get a dog plushie!
+  website: https://woof.hackclub.com
+  slack: https://hackclub.enterprise.slack.com/archives/C08LCGSECQP
+  slackChannel: '#woof'
+  status: active
+  deadline: 2026-01-14
+  detailedDescription: Spend 5 hours on a dog related project (with hackatime) and get a dog plushie either shipped from HQ (US only) or through a $25 HCB Grant card.
+  steps:
+   - Join the Slack Channel
+   - Spend 5 or more hours coding (tracked with hackatime)
+   - Ship - Fill out the submission form
+   - Get a dog plushie!
+  details:
+   - Your project has to be related to dogs
+   - You must track code time with Hackatime and push to GitHub
+   - Your project has to be made by you 🫵
+   - You need a demo link for your project (URL, downloadable executable or fully built for hardware)
+   - US participants receive physical plushie (shipped to address), international participants receive $25 in HCB grant cards to buy their plushie.
+- name: Mosaic
+  description: Build a website every month with a different theme. Get stuff. Repeat.
+  website: https://mosaic.hackclub.com
+  slack: https://hackclub.enterprise.slack.com/archives/C09Q9CD9ZS8
+  slackChannel: "#mosaic"
+  status: active
+  deadline: 2026-12-31
+  detailedDescription: For 12 months, every month you get a random theme to build a full-stack web application! Earn cool prizes like a 3D Printer Grant and even a 1 year Render Hosting Plan!!
+  steps:
+   - Join the Slack Channel
+   - Spend 30 or more hours (tracked with hackatime)
+   - Submit it to review!
+   - Get your rewards!!
 - name: Bauble
   description: 3D model an ornament, get it printed and put on the HQ tree! Ends December 25th.
   website: https://bauble.hackclub.com
@@ -126,7 +158,7 @@ limitedTime:
   website: https://axiom.hackclub.com/
   slack: https://hackclub.slack.com/archives/C09K4HZJ2DP
   slackChannel: "#axiom"
-  status: active
+  status: ended
 - name: Accelerate
   description: Build physics simulations, get prizes!
   website: https://accelerate.hackclub.com
@@ -140,7 +172,7 @@ limitedTime:
   slack: https://hackclub.slack.com/archives/C083S537USC
   slackChannel: "#blueprint"
   status: active
-  deadline: 2026-01-01
+  deadline: 2026-01-31
 - name: Aces
   description: Create your own digital board game, get a grant to make it a real physical game, and then get a trip to Washington DC to show off your game to the public at AwesomeCon!
   website: https://aces.hackclub.com
@@ -216,13 +248,6 @@ limitedTime:
   status: active
   deadline: '2025-10-16'
   requirements: Basic knowledge of HTML and CSS, A little knowledge of JavaScript.
-- name: Rooted
-  description: Spend time coding, come to BornHack 🏕️
-  website: https://rooted.hackclub.com/
-  slack: https://hackclub.enterprise.slack.com/archives/C09LYU1S23Y
-  slackChannel: "#rooted"
-  status: active
-  detailedDescription: Code with other teens in a forest in Denmark for a week, all for free, RSVP on website!
 - name: Hacksaber
   description: Ship a Beat Saber Modchart, and we'll ship custom T-Shirt designed by a HC member, or a copy of the game! Live YSWS!
   website: https://hacksaber.vercel.app/
@@ -930,11 +955,12 @@ indefinite:
   slackChannel: "#foodie"
   status: ended
 drafts:
-- name: Woof
-  description: Spend 5 or more hours making a dog-themed project and get a dog plushie and other cool stuff!
-  website: https://woof-mu.vercel.app/
-  slack: https://hackclub.enterprise.slack.com/archives/C08LCGSECQP
-  slackChannel: "#woof"
+- name: Rooted
+  description: Spend time coding, come to BornHack 🏕️ ∣ RSVP
+  detailedDescription: Spend time on projects and get a ticket to come to Hack Clubs site at BornHack! STILL A WIP, RSVP NOW!
+  website: https://rooted.hackclub.com/
+  slack: https://hackclub.enterprise.slack.com/archives/C09LYU1S23Y
+  slackChannel: "#rooted"
   status: draft
 - name: issued
   description: code to design hack-themed apparel

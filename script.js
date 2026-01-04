@@ -84,6 +84,8 @@ async function startRender() {
     renderPrograms();
     await loadParticipants();
     updateParticipantCounts();
+    //console.table(getTimelineEvents()); //DEBUG - PLEASE REMOVE LATER
+    loadTimelineBlocks();
 }
 
 function loadParticipants() {
@@ -669,6 +671,168 @@ function initializeTheme() {
     }
 }
 
+// For timeline
+function getEndDate(program){
+    if(program.ended){
+        const date = new Date(program.ended);
+        if (!isNaN(date)) return date;
+    }
+
+    if (program.deadline && isEventEnded(program.deadline)) {
+        return new Date(program.deadline);
+    }
+
+    return null;
+}
+
+let timelineExpanded = false;
+function expandTimeline(){
+    const overlay = document.getElementById('timeline-overlay');
+    const container = document.getElementById('timeline-container');
+    const timelineBtn = document.getElementById('timeline-expand-btn');
+    if (!timelineExpanded){
+        overlay.style.display = "none";
+        container.style.maxHeight = "none";
+        container.style.overflowY = "auto";
+        timelineBtn.innerHTML = "<svg fill-rule=\"evenodd\" clip-rule=\"evenodd\" stroke-linejoin=\"round\" stroke-miterlimit=\"1.414\" xmlns=\"http://www.w3.org/2000/svg\" aria-label=\"up-caret\" viewBox=\"0 0 32 32\" preserveAspectRatio=\"xMidYMid meet\" fill=\"currentColor\" width=\"48\" height=\"48\" title=\"up-caret\"><g><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M7.4849 20.3931C7.90917 20.7467 8.53973 20.6894 8.8933 20.2651C10.2702 18.62 13.6548 14.7995 15.3751 13.4905C17.1243 14.8215 20.46 18.5905 21.8569 20.2651C22.2104 20.6894 22.841 20.7467 23.2653 20.3931C23.6895 20.0396 23.7465 19.4086 23.393 18.9843C21.8613 17.1447 18.4 13.1847 16.4286 11.7835C16.1173 11.5653 15.7652 11.3749 15.3751 11.3749C14.9849 11.3749 14.6328 11.5653 14.3216 11.7835C12.3899 13.1564 8.8602 17.1828 7.35791 18.9835L7.35686 18.9847C7.0033 19.409 7.06062 20.0396 7.4849 20.3931Z\"></path></g></svg>";
+    }else{
+        overlay.style.display = "block";
+        container.style.maxHeight = "25rem";
+        container.style.overflowY = "hidden";
+        timelineBtn.innerHTML = "<svg fill-rule=\"evenodd\" clip-rule=\"evenodd\" stroke-linejoin=\"round\" stroke-miterlimit=\"1.414\" xmlns=\"http://www.w3.org/2000/svg\" aria-label=\"down-caret\" viewBox=\"0 0 32 32\" preserveAspectRatio=\"xMidYMid meet\" fill=\"currentColor\" width=\"48\" height=\"48\" title=\"down-caret\"><g><path d=\"M 0.359841 9.01822C 0.784113 9.37178 1.41467 9.31446 1.76823 8.8902C 3.14518 7.2451 6.52975 3.42464 8.25002 2.11557C 9.99919 3.44663 13.335 7.21555 14.7318 8.8902C 15.0854 9.31446 15.7159 9.37178 16.1402 9.01822C 16.5645 8.66466 16.6215 8.03371 16.2679 7.60943C 14.7363 5.76983 11.2749 1.80977 9.30351 0.408618C 8.99227 0.190441 8.64018 0 8.25002 0C 7.85987 0 7.50778 0.190441 7.19654 0.408618C 5.26486 1.78153 1.73514 5.80788 0.232849 7.60856L 0.231804 7.60982C -0.12176 8.03409 -0.0644362 8.66466 0.359841 9.01822Z\" transform=\"translate(7.12506 20.6251) scale(1 -1)\"></path></g></svg>";
+    }
+    timelineExpanded = !timelineExpanded;
+}
+
+function getTimelineEvents(){
+    return Object.values(programs).flat().map(program => ({
+        ...program,
+        endDate: getEndDate(program),
+        deadline: program.deadline?new Date(program.deadline):null,
+    })).sort(
+        (a, b) => {
+            if(!a.deadline && !b.deadline) return 0;
+            if(!a.deadline) return 1;
+            if(!b.deadline) return -1;
+
+            return a.deadline.getTime() - b.deadline.getTime();
+        }
+    );
+}
+
+function resolveTimelineLabels(){
+    document.querySelectorAll(".timeline-row").forEach(row => {
+        const block = row.querySelector('.timeline-block');
+        const inside = row.querySelector('.timeline-label.inside');
+        const outside = row.querySelector(".timeline-label.outside");
+
+        if(!block||!inside||!outside) return;
+
+        if(inside.scrollWidth > block.clientWidth){
+            inside.classList.add("hidden");
+            outside.classList.remove("hidden");
+        }else{
+            inside.classList.remove("hidden");
+            outside.classList.add("hidden");
+        }
+    })
+}
+
+function loadTimelineBlocks(){
+    const events = getTimelineEvents();
+    const now = new Date();
+    const timeline = document.getElementById("timeline");
+    const brandingColors = ["#ec3750","#ff8c37","#f1c40f","#33d6a6", "#5bc0de", "#338eda", "#a633d6", "#8492a6"];
+    const furthestEvent = events.map(e => e.deadline).filter(Boolean).reduce((max,d) => d > max ? d : max, now);
+    const dayContainer = document.getElementById("day-container");
+    const monthContainer = document.getElementById("month-container");
+
+    timeline.innerHTML = '';
+
+    let cursor = new Date(now);
+    cursor.setHours(0,0,0,0);
+
+    while(cursor <= furthestEvent){
+        const monthStart = new Date(cursor);
+        const month = monthStart.getMonth();
+        const year = monthStart.getFullYear();
+        const monthEnd = new Date(year, month + 1,0);
+
+        const start = new Date(Math.max(monthStart.getTime(), now.getTime()));
+        const end = new Date(Math.min(monthEnd.getTime(), furthestEvent.getTime()));
+
+        const daysInMonth = Math.ceil((end-start)/1000/60/60/24+1);
+
+        const jan = month === 0;
+        const yearShort = String(year).slice(-2);
+
+        const label = jan ? `${monthStart.toLocaleString("default", {month: "short"})} '${yearShort}` : monthStart.toLocaleString("default", {month: "short"});
+
+        monthContainer.innerHTML += `<div class="timeline-month" style="width:${daysInMonth}rem"><span class="month-label">${label}</span></div>`;
+        cursor = new Date(year, month +1, 1);
+    }
+
+    for(let i=0; i < Math.ceil((furthestEvent.getTime() - now.getTime())/1000/60/60/24); i++){
+        dayContainer.innerHTML += `<div id="timeline-day-${i}" class="timeline-day"></div>`
+    }
+
+    document.getElementById("timeline-overlay").style.width = `${Math.ceil((furthestEvent.getTime() - now.getTime())/1000/60/60/24)}rem`;
+
+    for(let i=0; i<events.length; i++){
+        const event = events[i];
+
+        if (event.status !== "ended" && event.status !== "draft"){
+            let labelText = event.name;
+            let days;
+            let width;
+
+            if(event.deadline){
+                days = Math.max(Math.ceil((event.deadline-now)/1000/60/60/24),1);
+
+                let remainingDays = days;
+                const years = Math.floor(remainingDays/365);
+
+                remainingDays -= years*365;
+
+                const months = Math.floor(remainingDays/30);
+                remainingDays -= months*30;
+
+                width = days;
+
+                const parts = [];
+
+                if(years>0) parts.push(`${years} year${years!== 1?"s":""}`);
+                if(months>0) parts.push(`${months} month${months!== 1?"s":""}`);
+                parts.push(`${remainingDays} day${remainingDays!==1?"s":""}`)
+
+                labelText += ` - ${parts.join(' ')}`;
+            }
+
+            timeline.innerHTML += `
+            <div class="timeline-row" data-index="${i}">
+                <div class="timeline-block  ${event.deadline ? '' : "no-deadline-timeline"}" style="width:${width}rem; ${event.deadline ? `background-color: ${brandingColors[(i%8)]}` : `background: linear-gradient(90deg, ${brandingColors[(i%8)]} 40%, var(--background) 95%);`}">
+                    <span class="timeline-label inside">${labelText}</span>
+                </div>
+                <span class="timeline-label outside hidden">${labelText}</span>
+            </div>
+            `;
+        }
+    }
+
+    document.querySelectorAll('.timeline-row').forEach(row => {
+        row.addEventListener('click', () => {
+            const i = Number(row.dataset.index);
+            const event = events[i];
+
+            openModal(event);
+        })
+    })
+
+    requestAnimationFrame(resolveTimelineLabels);
+}
+
+// ----
+
 function updateDeadlines() {
     const deadlineElements = document.querySelectorAll('.program-deadline');
     let needsReload = false;
@@ -698,6 +862,8 @@ function updateDeadlines() {
 
 document.addEventListener('DOMContentLoaded', () => {
     startRender();
+    window.addEventListener('resize', resolveTimelineLabels);
+
     const searchInput = document.getElementById('program-search');
     searchInput.addEventListener('input', (e) => searchPrograms(e.target.value));
     
