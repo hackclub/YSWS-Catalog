@@ -2746,6 +2746,34 @@ html {
   transition: background-color 0.5s ease, color 0.5s ease;
 }
 
+#timeline-container::-webkit-scrollbar {
+  height: 12px;
+}
+
+#timeline-container::-webkit-scrollbar-track {
+  background: var(--sunken);
+}
+
+#timeline-container::-webkit-scrollbar-thumb {
+  background-color: var(--primary);
+  border-radius: var(--radii-default);
+  border: 3px solid var(--sunken);
+}
+
+.dark-theme #timeline-container::-webkit-scrollbar {
+  height: 12px;
+}
+
+.dark-theme #timeline-container::-webkit-scrollbar-track {
+  background: var(--darkless);
+}
+
+.dark-theme #timeline-container::-webkit-scrollbar-thumb {
+  background-color: var(--primary);
+  border-radius: var(--radii-default);
+  border: 3px solid var(--darkless);
+}
+
 @media (max-width: 768px) and (orientation: portrait) {
   #timeline-container{
     margin: -1rem -1rem;
