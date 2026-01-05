@@ -392,8 +392,7 @@
       "website": "https://fusering.hackclub.com",
       "slackChannel": "#fusering",
       "slack": "https://hackclub.slack.com/archives/C098U42PD2A",
-      "status": "active",
-      "deadline": "2025-09-30T23:59:59"
+      "status": "active"
     },
     {
       "name": "iFrame",
