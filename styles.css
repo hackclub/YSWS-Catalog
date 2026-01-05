@@ -2760,10 +2760,6 @@ html {
   border: 3px solid var(--sunken);
 }
 
-.dark-theme #timeline-container::-webkit-scrollbar {
-  height: 12px;
-}
-
 .dark-theme #timeline-container::-webkit-scrollbar-track {
   background: var(--darkless);
 }
