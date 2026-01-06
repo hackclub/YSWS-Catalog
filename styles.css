@@ -3242,3 +3242,63 @@ html {
 .program-card.woof-card:hover {
   border-color: var(--color-woof-accent) !important;
 }
+
+/* Pxl-specific card styling - Pixel grid theme */
+.program-card.pxl-card {
+  --color-pxl-bg: #1a1a1a;
+  --color-pxl-text: #ffffff;
+  --color-pxl-accent: #00FF00;
+  background-color: var(--color-pxl-bg) !important;
+  background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px) !important;
+  background-size: 20px 20px !important;
+  position: relative;
+  color: var(--color-pxl-text) !important;
+  overflow: hidden;
+}
+
+.program-card.pxl-card h3,
+.program-card.pxl-card p,
+.program-card.pxl-card .program-deadline {
+  color: var(--color-pxl-text) !important;
+  position: relative;
+  z-index: 2;
+}
+
+.program-card.pxl-card a {
+  color: var(--color-pxl-accent) !important;
+  position: relative;
+  z-index: 2;
+}
+
+.program-card.pxl-card .program-status {
+  color: white !important;
+  position: relative;
+  z-index: 2;
+}
+
+.program-card.pxl-card .program-header,
+.program-card.pxl-card .program-footer {
+  position: relative;
+  z-index: 2;
+}
+
+.program-card.pxl-card:hover {
+  border-color: var(--color-pxl-accent) !important;
+}
+
+.pxl-logo {
+  position: absolute;
+  bottom: 20px;
+  right: 50px;
+  width: 80px;
+  height: 100px;
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4 5"><rect x="0" y="0" width="1" height="1" fill="%23FFC83D"/><rect x="1" y="0" width="1" height="1" fill="%23FF8C37"/><rect x="2" y="0" width="1" height="1" fill="%23E33B3B"/><rect x="0" y="1" width="1" height="1" fill="%2334C759"/><rect x="3" y="1" width="1" height="1" fill="%237B4FBF"/><rect x="0" y="2" width="1" height="1" fill="%23FFC83D"/><rect x="1" y="2" width="1" height="1" fill="%2334C759"/><rect x="2" y="2" width="1" height="1" fill="%2300C7FF"/><rect x="0" y="3" width="1" height="1" fill="%23FF8C37"/><rect x="0" y="4" width="1" height="1" fill="%23E33B3B"/></svg>');
+  background-size: 80px 100px;
+  background-repeat: no-repeat;
+  image-rendering: pixelated;
+  opacity: 0.5;
+  z-index: 1;
+  pointer-events: none;
+}
