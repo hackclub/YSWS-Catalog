@@ -303,6 +303,7 @@ function createProgramCard(program) {
     const baubleClass = program.name === 'Bauble' ? 'bauble-card' : '';
     const meowClass = program.name === 'Meow' ? 'meow-card' : '';
     const woofClass = program.name === 'Woof' ? 'woof-card' : '';
+    const pxlClass = program.name === 'Pxl' ? 'pxl-card' : '';
     const encodedProgram = encodeURIComponent(JSON.stringify(program));
     
     const isCompletedByUser = completedPrograms.has(program.name);
@@ -333,10 +334,15 @@ function createProgramCard(program) {
             <div class="bauble-ground"></div>
         </div>
     ` : '';
+
+    const pxlLogo = program.name === 'Pxl' ? `
+        <div class="pxl-logo"></div>
+    ` : '';
     
     return `
-        <div class="card program-card ${opensClass} ${blueprintClass} ${accelerateClass} ${baubleClass} ${meowClass} ${woofClass}" data-program="${encodedProgram}" data-name="${program.name}">
+        <div class="card program-card ${opensClass} ${blueprintClass} ${accelerateClass} ${baubleClass} ${meowClass} ${woofClass} ${pxlClass}" data-program="${encodedProgram}" data-name="${program.name}">
             ${baubleSnowflakes}
+            ${pxlLogo}
             <div class="program-header">
                 <h3>${program.name}</h3>
                 <div class="status-container">
