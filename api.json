@@ -1,6 +1,135 @@
 {
   "limitedTime": [
     {
+      "name": "Pxl",
+      "description": "Code any project, place pixels on a r/place-like canvas!",
+      "website": "https://pxl.hackclub.com",
+      "slack": "https://hackclub.enterprise.slack.com/archives/C09CKP56TK2",
+      "slackChannel": "#pxl",
+      "status": "active",
+      "deadline": "2026-1-31",
+      "detailedDescription": "Pxl is a YSWS where you can either code for pixels (you can double dip this, no need to submit!), or make projects for merch with the final canvas!",
+      "steps": [
+        "Join the Slack Channel",
+        "Spend time coding anything",
+        "Place pixels",
+        "Optionally- ship a project for merch!"
+      ]
+    },
+    {
+      "name": "Hackvault",
+      "description": "You make a password manager and we'll ship you a Yubikey!",
+      "website": "https://hackvault.hackclub.com",
+      "slack": "https://hackclub.enterprise.slack.com/archives/C09KQ58CMHD",
+      "slackChannel": "#hackvault",
+      "status": "active",
+      "deadline": "2026-1-24",
+      "detailedDescription": "Hackvault is the epic YSWS where you can earn either a Yubikey 5C for 5 hours of work making a password manager or for 10 hours a Yubikey Bio! Make anything from a server os for passwords to a mobile app!"
+    },
+    {
+      "name": "HomeLab",
+      "description": "You ship projects related to having a self hosted server at home, and we ship things to help you create your own setup",
+      "website": "https://homelab.hackclub.com",
+      "slack": "https://hackclub.enterprise.slack.com/archives/C09U5BFU3GA",
+      "slackChannel": "#home-lab",
+      "status": "active",
+      "deadline": "2026-1-31",
+      "detailedDescription": "A YSWS where you ship projects related to having a self hosted server at home (tracked with hackatime), and we ship things to help you create your own setup (or update a setup you already have!)\\"
+    },
+    {
+      "name": "Haxmas",
+      "description": "Do workshops, get prizes! Repeat til Christmas!",
+      "website": "https://haxmas.hackclub.com",
+      "slack": "https://hackclub.enterprise.slack.com/archives/C0A277A4FP0",
+      "slackChannel": "#haxmas",
+      "status": "active",
+      "deadline": "2025-12-25T00:00:00.000Z",
+      "detailedDescription": "Welcome to Haxmas; 12 days of hands-on hacking! From December 13-25, a new workshop drops each day, created by a different member of the Hack Club community. Each workshop is only available on its specific day (day 1's workshop on December 13, day 2's workshop on December 14, and so on), so make sure to participate daily! Each workshop comes with its own special prize, and you'll earn snowflakes that you can redeem for stickers, swag, and more!"
+    },
+    {
+      "name": "Meow",
+      "description": "Spend 5 hours building something to do with cats, get a cat plushie! Ends Christmas Day!",
+      "website": "https://meow.hackclub.com",
+      "slack": "https://hackclub.enterprise.slack.com/archives/C026LDN0ADB",
+      "slackChannel": "#meow",
+      "status": "active",
+      "deadline": "2025-12-25T00:00:00.000Z",
+      "detailedDescription": "Meow is a Hack Club YSWS where we'll send you a cat plushie if you ship a project to do with cats!\n",
+      "steps": [
+        "Join the Slack channel",
+        "Spend over 5 hours (tracked with Hackatime) building a project to do with cats",
+        "Fill out the submission form",
+        "Receive your cat plushie!"
+      ],
+      "details": [
+        "You can make anything, as long as it's to do with cats, you could make a website, an app, or even a hardware project",
+        "Must be shipped (accessible via a URL or as an executable, or fully built for hardware)",
+        "US participants receive physical plushie, international participants receive $25 in HCB grant cards to buy their plushie."
+      ]
+    },
+    {
+      "name": "Woof",
+      "description": "Spend 5 or more hours making a dog-themed project and get a dog plushie!",
+      "website": "https://woof.hackclub.com",
+      "slack": "https://hackclub.enterprise.slack.com/archives/C08LCGSECQP",
+      "slackChannel": "#woof",
+      "status": "active",
+      "deadline": "2026-01-14T00:00:00.000Z",
+      "detailedDescription": "Spend 5 hours on a dog related project (with hackatime) and get a dog plushie either shipped from HQ (US only) or through a $25 HCB Grant card.",
+      "steps": [
+        "Join the Slack Channel",
+        "Spend 5 or more hours coding (tracked with hackatime)",
+        "Ship - Fill out the submission form",
+        "Get a dog plushie!"
+      ],
+      "details": [
+        "Your project has to be related to dogs",
+        "You must track code time with Hackatime and push to GitHub",
+        "Your project has to be made by you 🫵",
+        "You need a demo link for your project (URL, downloadable executable or fully built for hardware)",
+        "US participants receive physical plushie (shipped to address), international participants receive $25 in HCB grant cards to buy their plushie."
+      ]
+    },
+    {
+      "name": "Mosaic",
+      "description": "Build a website every month with a different theme. Get stuff. Repeat.",
+      "website": "https://mosaic.hackclub.com",
+      "slack": "https://hackclub.enterprise.slack.com/archives/C09Q9CD9ZS8",
+      "slackChannel": "#mosaic",
+      "status": "active",
+      "deadline": "2026-12-31T00:00:00.000Z",
+      "detailedDescription": "For 12 months, every month you get a random theme to build a full-stack web application! Earn cool prizes like a 3D Printer Grant and even a 1 year Render Hosting Plan!!",
+      "steps": [
+        "Join the Slack Channel",
+        "Spend 30 or more hours (tracked with hackatime)",
+        "Submit it to review!",
+        "Get your rewards!!"
+      ]
+    },
+    {
+      "name": "Bauble",
+      "description": "3D model an ornament, get it printed and put on the HQ tree! Ends December 25th.",
+      "website": "https://bauble.hackclub.com",
+      "slack": "https://hackclub.enterprise.slack.com/archives/C0A1SH6PF89",
+      "slackChannel": "#bauble",
+      "status": "active",
+      "deadline": "2025-12-25T00:00:00.000Z",
+      "detailedDescription": "Bauble is a Hack Club YSWS program where you 3D model an ornament, and you get it printed out put on Oscar, the tree at Hack Club’s HQ in Vermont! After the tree gets taken down, you'll receive your ornament in the mail!\n",
+      "steps": [
+        "3D model an ornament in the CAD software of your choosing",
+        "Export it as an STL",
+        "Fill out the submit form"
+      ],
+      "details": [
+        "Your ornament must be modeled by you, models downloaded off the internet do not count",
+        "Your ornament must be exported in STL format",
+        "Your ornament must have a hole of a minimum 5mm diameter or some other way a hook or string could be attached",
+        "Your ornament must be no larger than 100 x 100 x 100 mm in all directions",
+        "Your ornament must be appropriate",
+        "Your ornament must be able to print without supports"
+      ]
+    },
+    {
       "name": "Fudge",
       "description": "Make any project you want, get fudge right from the Shelburne County Store next to HQ!",
       "website": "https://fudge.hackclub.com",
@@ -31,7 +160,13 @@
       "slack": "https://hackclub.enterprise.slack.com/archives/C09TM7XKSSY",
       "slackChannel": "#construct",
       "status": "active",
-      "deadline": "2026-2-1"
+      "deadline": "2026-2-15",
+      "steps": [
+        "Log into construct.hackclub.com",
+        "Make projects!",
+        "Submit!",
+        "Get a cool new 3d printer!"
+      ]
     },
     {
       "name": "Carnival",
@@ -51,14 +186,6 @@
       "deadline": "2025-11-30T00:00:00.000Z"
     },
     {
-      "name": "Moonshot",
-      "description": "Spend 75 hours building personal projects, fly to a hackathon in Orlando, FL Dec 12–15",
-      "website": "https://moonshot.hackclub.com/",
-      "slack": "https://hackclub.slack.com/archives/C09J2HHRQ95",
-      "slackChannel": "#moonshot",
-      "status": "active"
-    },
-    {
       "name": "Midnight",
       "description": "Spend 70 hours building personal projects, fly to a murder mystery hackathon in Vienna, Austria - Jan 2026",
       "website": "https://midnight.hackclub.com/",
@@ -72,11 +199,11 @@
       "website": "https://axiom.hackclub.com/",
       "slack": "https://hackclub.slack.com/archives/C09K4HZJ2DP",
       "slackChannel": "#axiom",
-      "status": "active"
+      "status": "ended"
     },
     {
       "name": "Accelerate",
-      "description": "Build Physics Simulations, get Prizes!",
+      "description": "Build physics simulations, get prizes!",
       "website": "https://accelerate.hackclub.com",
       "slack": "https://hackclub.slack.com/archives/C09DPBK2K4K",
       "slackChannel": "#accelerate",
@@ -90,7 +217,7 @@
       "slack": "https://hackclub.slack.com/archives/C083S537USC",
       "slackChannel": "#blueprint",
       "status": "active",
-      "deadline": "2025-12-01T00:00:00.000Z"
+      "deadline": "2026-01-31T00:00:00.000Z"
     },
     {
       "name": "Aces",
@@ -108,7 +235,7 @@
       "slack": "https://hackclub.slack.com/archives/C08K37F66AK",
       "slackChannel": "#the-zoo",
       "status": "active",
-      "deadline": "2025-11-30T23:59:00",
+      "deadline": "2025-12-31T23:59:00",
       "detailedDescription": "The Zoo is a Svelte YSWS where participants build an animal themed Svelte site and earn Mynts (currency) which can be turned into an HCB grant at the end to buy Ikea plushies. Get one giant Djungleskog, or multiple mini Blahaj, it's all up to you. Here's the best part: the better your submission is, the more Mynts you earn!\n"
     },
     {
@@ -141,7 +268,7 @@
     },
     {
       "name": "Dummies V2",
-      "description": "Learn A new Proggraming language and make a project with that, And We will send you school supplies, books, and study materials",
+      "description": "Learn A new programming language and make a project with that, And We will send you school supplies, books, and study materials",
       "website": "https://dummies.hackclub.com/",
       "slack": "https://hackclub.slack.com/archives/C096M3EV67M",
       "slackChannel": "#dummies",
@@ -154,7 +281,7 @@
       "website": "https://siege.hackclub.com/",
       "slack": "https://hackclub.slack.com/archives/C08SKC6P85V",
       "slackChannel": "#siege",
-      "status": "active",
+      "status": "ended",
       "deadline": "2025-12-08T00:00:00.000Z"
     },
     {
@@ -184,15 +311,6 @@
       "status": "active",
       "deadline": "2025-10-16",
       "requirements": "Basic knowledge of HTML and CSS, A little knowledge of JavaScript."
-    },
-    {
-      "name": "Rooted",
-      "description": "Spend time coding, come to BornHack 🏕️",
-      "website": "https://rooted.hackclub.com/",
-      "slack": "https://hackclub.enterprise.slack.com/archives/C09LYU1S23Y",
-      "slackChannel": "#rooted",
-      "status": "active",
-      "detailedDescription": "Code with other teens in a forest in Denmark for a week, all for free, RSVP on website!"
     },
     {
       "name": "Hacksaber",
@@ -282,8 +400,7 @@
       "website": "https://fusering.hackclub.com",
       "slackChannel": "#fusering",
       "slack": "https://hackclub.slack.com/archives/C098U42PD2A",
-      "status": "active",
-      "deadline": "2025-09-30T23:59:59"
+      "status": "active"
     },
     {
       "name": "iFrame",
@@ -319,6 +436,14 @@
       "slackChannel": "#rss",
       "status": "active",
       "deadline": "2025-11-07T00:00:00.000Z"
+    },
+    {
+      "name": "Moonshot",
+      "description": "Spend 75 hours building personal projects, fly to a hackathon in Orlando, FL Dec 12–15",
+      "website": "https://moonshot.hackclub.com/",
+      "slack": "https://hackclub.slack.com/archives/C09J2HHRQ95",
+      "slackChannel": "#moonshot",
+      "status": "ended"
     },
     {
       "name": "Hivemind",
@@ -1066,6 +1191,15 @@
     }
   ],
   "drafts": [
+    {
+      "name": "Rooted",
+      "description": "Spend time coding, come to BornHack 🏕️ ∣ RSVP",
+      "detailedDescription": "Spend time on projects and get a ticket to come to Hack Clubs site at BornHack! STILL A WIP, RSVP NOW!",
+      "website": "https://rooted.hackclub.com/",
+      "slack": "https://hackclub.enterprise.slack.com/archives/C09LYU1S23Y",
+      "slackChannel": "#rooted",
+      "status": "draft"
+    },
     {
       "name": "issued",
       "description": "code to design hack-themed apparel",
