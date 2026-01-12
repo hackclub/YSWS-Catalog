@@ -107,6 +107,15 @@
       ]
     },
     {
+      "name": "Flavortown",
+      "deadline": "2026-03-31T00:00:00.000Z",
+      "description": "Cook personal projects. Win free prizes.",
+      "website": "https://flavortown.hackclub.com/?ref=ysws-catalog",
+      "slack": "https://hackclub.enterprise.slack.com/archives/C09MPB8NE8H",
+      "slackChannel": "#flavortown",
+      "status": "active"
+    },
+    {
       "name": "Bauble",
       "description": "3D model an ornament, get it printed and put on the HQ tree! Ends December 25th.",
       "website": "https://bauble.hackclub.com",

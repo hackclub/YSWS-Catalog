@@ -87,6 +87,14 @@ limitedTime:
    - Spend 30 or more hours (tracked with hackatime)
    - Submit it to review!
    - Get your rewards!!
+- name: Flavortown
+  deadline: 2026-03-31
+  description: Cook personal projects. Win free prizes.
+  website: https://flavortown.hackclub.com/?ref=ysws-catalog
+  slack: https://hackclub.enterprise.slack.com/archives/C09MPB8NE8H
+  slackChannel: "#flavortown"
+  status: active
+
 - name: Bauble
   description: 3D model an ornament, get it printed and put on the HQ tree! Ends December 25th.
   website: https://bauble.hackclub.com
