@@ -95,8 +95,10 @@ limitedTime:
   slackChannel: "#flavortown"
   status: active
 - name: Wacky Files
+  website: https://wacky.hackclub.com/
+  deadline: 2026-03-1
   description: Find the wackiest ways to store files for free and earn $3/hour with multipliers!
-  slack: https://hackclub.slack.com/archives/C08XXXWACKY
+  slack: https://hackclub.enterprise.slack.com/archives/C09M0TRLRV0
   slackChannel: "#wacky-files"
   status: active
   detailedDescription: |
