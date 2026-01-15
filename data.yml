@@ -219,7 +219,7 @@ limitedTime:
   slack: https://hackclub.slack.com/archives/C09EZSEMB16
   slackChannel: '#milkyway'
   status: active
-  deadline: 2026-01-31T23:59:59
+  deadline: 2026-02-27T23:59:59
 - name: Haunted Halloween
   description: Make a halloween theme for a website or app, get a custom halloween themed sticker and candy!
   website: https://halloween.hackclub.com/
