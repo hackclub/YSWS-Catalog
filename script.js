@@ -304,6 +304,7 @@ function createProgramCard(program) {
     const meowClass = program.name === 'Meow' ? 'meow-card' : '';
     const woofClass = program.name === 'Woof' ? 'woof-card' : '';
     const pxlClass = program.name === 'Pxl' ? 'pxl-card' : '';
+    const wackyFilesClass = program.name === 'Wacky Files' ? 'wacky-files-card' : '';
     const encodedProgram = encodeURIComponent(JSON.stringify(program));
     
     const isCompletedByUser = completedPrograms.has(program.name);
@@ -340,7 +341,7 @@ function createProgramCard(program) {
     ` : '';
     
     return `
-        <div class="card program-card ${opensClass} ${blueprintClass} ${accelerateClass} ${baubleClass} ${meowClass} ${woofClass} ${pxlClass}" data-program="${encodedProgram}" data-name="${program.name}">
+        <div class="card program-card ${opensClass} ${blueprintClass} ${accelerateClass} ${baubleClass} ${meowClass} ${woofClass} ${pxlClass} ${wackyFilesClass}" data-program="${encodedProgram}" data-name="${program.name}">
             ${baubleSnowflakes}
             ${pxlLogo}
             <div class="program-header">

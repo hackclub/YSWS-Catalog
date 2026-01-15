@@ -3337,3 +3337,59 @@ html {
   z-index: 1;
   pointer-events: none;
 }
+
+/* Wacky Files card styling - Banana binary theme */
+.program-card.wacky-files-card {
+  --color-wacky-bg: #2a1a4e;
+  --color-wacky-text: #ffffff;
+  --color-wacky-accent: #ffe700;
+  background-color: var(--color-wacky-bg) !important;
+  background-image: url('https://hc-cdn.hel1.your-objectstorage.com/s/v3/4e7edf44ddc8f3b1_image.png') !important;
+  background-size: cover !important;
+  background-position: center !important;
+  position: relative;
+  color: var(--color-wacky-text) !important;
+  overflow: hidden;
+}
+
+.program-card.wacky-files-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(42, 26, 78, 0.85) 0%, rgba(42, 26, 78, 0.7) 100%);
+  z-index: 1;
+}
+
+.program-card.wacky-files-card h3,
+.program-card.wacky-files-card p,
+.program-card.wacky-files-card .program-deadline {
+  color: var(--color-wacky-text) !important;
+  position: relative;
+  z-index: 2;
+}
+
+.program-card.wacky-files-card a {
+  color: var(--color-wacky-accent) !important;
+  position: relative;
+  z-index: 2;
+}
+
+.program-card.wacky-files-card .program-status {
+  color: white !important;
+  position: relative;
+  z-index: 2;
+}
+
+.program-card.wacky-files-card .program-header,
+.program-card.wacky-files-card .program-footer {
+  position: relative;
+  z-index: 2;
+}
+
+.program-card.wacky-files-card:hover {
+  border-color: var(--color-wacky-accent) !important;
+  box-shadow: 0 0 20px rgba(255, 231, 0, 0.3);
+}
