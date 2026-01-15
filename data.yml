@@ -94,6 +94,32 @@ limitedTime:
   slack: https://hackclub.enterprise.slack.com/archives/C09MPB8NE8H
   slackChannel: "#flavortown"
   status: active
+- name: Wacky Files
+  description: Find the wackiest ways to store files for free and earn $3/hour with multipliers!
+  slack: https://hackclub.slack.com/archives/C08XXXWACKY
+  slackChannel: "#wacky-files"
+  status: active
+  detailedDescription: |
+    Sick of cloud-based storage? Own your files the weird way! Find the wackiest and most creative ways to host files for free. Convert binary to static and upload to YouTube, 3D print notches to encode data, or invent something completely absurd - just keep it wacky!
+    
+    Requirements:
+    - Must be able to store the test banana image in all its yellow glory
+    - Solution must be reproducible and documented
+    - A representation is okay (storing binary without rendering is fine)
+    - Must be able to upload AND download the file
+    - Track time with Hackatime (use Lapse for hardware projects)
+    
+    Earn $3/hour baseline, with voting multipliers: ⭐ = 1x, ⭐⭐ = 2x, ⭐⭐⭐ = 3x
+  steps:
+    - Join the Slack channel
+    - Dream up the wackiest file storage method
+    - Build it and document everything
+    - Track your time with Hackatime
+    - Submit for voting!
+  details:
+    - No CDN or existing solutions used in their intended way
+    - Must be your own creative implementation
+    - The wackier the better!
 
 - name: Bauble
   description: 3D model an ornament, get it printed and put on the HQ tree! Ends December 25th.
