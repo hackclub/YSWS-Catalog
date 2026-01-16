@@ -96,7 +96,7 @@ limitedTime:
     status: active
   - name: Hack Club The Game
     website: https://game.hackclub.com/?ref=ysws-catalog
-    deadline: 2026-04-01
+    deadline: 2026-04-10
     slack: https://hackclub.enterprise.slack.com/archives/C088DT8P7B8
     slackChannel: "#hack-club-the-game"
     status: active
