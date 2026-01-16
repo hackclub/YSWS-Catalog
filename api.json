@@ -107,6 +107,15 @@
       ]
     },
     {
+      "name": "Hack Club The Game",
+      "deadline": "2026-04-10T00:00:00.000Z",
+      "description": "Code for 40 hours & fly out to Manhattan to compete in a IRL adventure game\"",
+      "website": "https://game.hackclub.com/?ref=ysws-catalog",
+      "slack": "https://hackclub.enterprise.slack.com/archives/C088DT8P7B8",
+      "slackChannel": "#hack-club-the-game",
+      "status": "active"
+    },
+    {
       "name": "Flavortown",
       "deadline": "2026-03-31T00:00:00.000Z",
       "description": "Cook personal projects. Win free prizes.",
@@ -117,8 +126,10 @@
     },
     {
       "name": "Wacky Files",
+      "website": "https://wacky.hackclub.com/",
+      "deadline": "2026-03-1",
       "description": "Find the wackiest ways to store files for free and earn $3/hour with multipliers!",
-      "slack": "https://hackclub.slack.com/archives/C08XXXWACKY",
+      "slack": "https://hackclub.enterprise.slack.com/archives/C09M0TRLRV0",
       "slackChannel": "#wacky-files",
       "status": "active",
       "detailedDescription": "Sick of cloud-based storage? Own your files the weird way! Find the wackiest and most creative ways to host files for free. Convert binary to static and upload to YouTube, 3D print notches to encode data, or invent something completely absurd - just keep it wacky!\n\nRequirements:\n- Must be able to store the test banana image in all its yellow glory\n- Solution must be reproducible and documented\n- A representation is okay (storing binary without rendering is fine)\n- Must be able to upload AND download the file\n- Track time with Hackatime (use Lapse for hardware projects)\n\nEarn $3/hour baseline, with voting multipliers: ⭐ = 1x, ⭐⭐ = 2x, ⭐⭐⭐ = 3x\n",
@@ -284,7 +295,7 @@
       "slack": "https://hackclub.slack.com/archives/C09EZSEMB16",
       "slackChannel": "#milkyway",
       "status": "active",
-      "deadline": "2026-01-31T23:59:59.000Z"
+      "deadline": "2026-02-27T23:59:59.000Z"
     },
     {
       "name": "Haunted Halloween",
