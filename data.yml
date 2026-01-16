@@ -1,1390 +1,1395 @@
 ---
 limitedTime:
-- name: Pxl
-  description: Code any project, place pixels on a r/place-like canvas!
-  website: https://pxl.hackclub.com
-  slack: https://hackclub.enterprise.slack.com/archives/C09CKP56TK2
-  slackChannel: "#pxl"
-  status: active
-  deadline: 2026-1-31
-  detailedDescription: Pxl is a YSWS where you can either code for pixels (you can double dip this, no need to submit!), or make projects for merch with the final canvas!
-  steps:
-    - Join the Slack Channel
-    - Spend time coding anything
-    - Place pixels
-    - Optionally- ship a project for merch!
-- name: Hackvault
-  description: You make a password manager and we'll ship you a Yubikey!
-  website: https://hackvault.hackclub.com
-  slack: https://hackclub.enterprise.slack.com/archives/C09KQ58CMHD
-  slackChannel: "#hackvault"
-  status: active
-  deadline: 2026-1-24
-  detailedDescription: Hackvault is the epic YSWS where you can earn either a Yubikey 5C for 5 hours of work making a password manager or for 10 hours a Yubikey Bio! Make anything from a server os for passwords to a mobile app!
-- name: HomeLab
-  description: You ship projects related to having a self hosted server at home, and we ship things to help you create your own setup
-  website: https://homelab.hackclub.com
-  slack: https://hackclub.enterprise.slack.com/archives/C09U5BFU3GA
-  slackChannel: "#home-lab"
-  status: active
-  deadline: 2026-1-31
-  detailedDescription: A YSWS where you ship projects related to having a self hosted server at home (tracked with hackatime), and we ship things to help you create your own setup (or update a setup you already have!)\
-- name: Haxmas
-  description: Do workshops, get prizes! Repeat til Christmas!
-  website: https://haxmas.hackclub.com
-  slack: https://hackclub.enterprise.slack.com/archives/C0A277A4FP0
-  slackChannel: "#haxmas"
-  status: active
-  deadline: 2025-12-25
-  detailedDescription: Welcome to Haxmas; 12 days of hands-on hacking! From December 13-25, a new workshop drops each day, created by a different member of the Hack Club community. Each workshop is only available on its specific day (day 1's workshop on December 13, day 2's workshop on December 14, and so on), so make sure to participate daily! Each workshop comes with its own special prize, and you'll earn snowflakes that you can redeem for stickers, swag, and more!
-- name: Meow
-  description: Spend 5 hours building something to do with cats, get a cat plushie! Ends Christmas Day!
-  website: https://meow.hackclub.com
-  slack: https://hackclub.enterprise.slack.com/archives/C026LDN0ADB
-  slackChannel: "#meow"
-  status: active
-  deadline: 2025-12-25
-  detailedDescription: |
-    Meow is a Hack Club YSWS where we'll send you a cat plushie if you ship a project to do with cats!
-  steps:
-    - Join the Slack channel
-    - Spend over 5 hours (tracked with Hackatime) building a project to do with cats
-    - Fill out the submission form
-    - Receive your cat plushie!
-  details:
-    - You can make anything, as long as it's to do with cats, you could make a website, an app, or even a hardware project
-    - Must be shipped (accessible via a URL or as an executable, or fully built for hardware)
-    - US participants receive physical plushie, international participants receive $25 in HCB grant cards to buy their plushie.
-- name: Woof
-  description: Spend 5 or more hours making a dog-themed project and get a dog plushie!
-  website: https://woof.hackclub.com
-  slack: https://hackclub.enterprise.slack.com/archives/C08LCGSECQP
-  slackChannel: '#woof'
-  status: active
-  deadline: 2026-01-14
-  detailedDescription: Spend 5 hours on a dog related project (with hackatime) and get a dog plushie either shipped from HQ (US only) or through a $25 HCB Grant card.
-  steps:
-   - Join the Slack Channel
-   - Spend 5 or more hours coding (tracked with hackatime)
-   - Ship - Fill out the submission form
-   - Get a dog plushie!
-  details:
-   - Your project has to be related to dogs
-   - You must track code time with Hackatime and push to GitHub
-   - Your project has to be made by you 🫵
-   - You need a demo link for your project (URL, downloadable executable or fully built for hardware)
-   - US participants receive physical plushie (shipped to address), international participants receive $25 in HCB grant cards to buy their plushie.
-- name: Mosaic
-  description: Build a website every month with a different theme. Get stuff. Repeat.
-  website: https://mosaic.hackclub.com
-  slack: https://hackclub.enterprise.slack.com/archives/C09Q9CD9ZS8
-  slackChannel: "#mosaic"
-  status: active
-  deadline: 2026-12-31
-  detailedDescription: For 12 months, every month you get a random theme to build a full-stack web application! Earn cool prizes like a 3D Printer Grant and even a 1 year Render Hosting Plan!!
-  steps:
-   - Join the Slack Channel
-   - Spend 30 or more hours (tracked with hackatime)
-   - Submit it to review!
-   - Get your rewards!!
-- name: Flavortown
-  deadline: 2026-03-31
-  description: Cook personal projects. Win free prizes.
-  website: https://flavortown.hackclub.com/?ref=ysws-catalog
-  slack: https://hackclub.enterprise.slack.com/archives/C09MPB8NE8H
-  slackChannel: "#flavortown"
-  status: active
-- name: Wacky Files
-  website: https://wacky.hackclub.com/
-  deadline: 2026-03-1
-  description: Find the wackiest ways to store files for free and earn $3/hour with multipliers!
-  slack: https://hackclub.enterprise.slack.com/archives/C09M0TRLRV0
-  slackChannel: "#wacky-files"
-  status: active
-  detailedDescription: |
-    Sick of cloud-based storage? Own your files the weird way! Find the wackiest and most creative ways to host files for free. Convert binary to static and upload to YouTube, 3D print notches to encode data, or invent something completely absurd - just keep it wacky!
-    
-    Requirements:
-    - Must be able to store the test banana image in all its yellow glory
-    - Solution must be reproducible and documented
-    - A representation is okay (storing binary without rendering is fine)
-    - Must be able to upload AND download the file
-    - Track time with Hackatime (use Lapse for hardware projects)
-    
-    Earn $3/hour baseline, with voting multipliers: ⭐ = 1x, ⭐⭐ = 2x, ⭐⭐⭐ = 3x
-  steps:
-    - Join the Slack channel
-    - Dream up the wackiest file storage method
-    - Build it and document everything
-    - Track your time with Hackatime
-    - Submit for voting!
-  details:
-    - No CDN or existing solutions used in their intended way
-    - Must be your own creative implementation
-    - The wackier the better!
+  - name: Pxl
+    description: Code any project, place pixels on a r/place-like canvas!
+    website: https://pxl.hackclub.com
+    slack: https://hackclub.enterprise.slack.com/archives/C09CKP56TK2
+    slackChannel: "#pxl"
+    status: active
+    deadline: 2026-1-31
+    detailedDescription: Pxl is a YSWS where you can either code for pixels (you can double dip this, no need to submit!), or make projects for merch with the final canvas!
+    steps:
+      - Join the Slack Channel
+      - Spend time coding anything
+      - Place pixels
+      - Optionally- ship a project for merch!
+  - name: Hackvault
+    description: You make a password manager and we'll ship you a Yubikey!
+    website: https://hackvault.hackclub.com
+    slack: https://hackclub.enterprise.slack.com/archives/C09KQ58CMHD
+    slackChannel: "#hackvault"
+    status: active
+    deadline: 2026-1-24
+    detailedDescription: Hackvault is the epic YSWS where you can earn either a Yubikey 5C for 5 hours of work making a password manager or for 10 hours a Yubikey Bio! Make anything from a server os for passwords to a mobile app!
+  - name: HomeLab
+    description: You ship projects related to having a self hosted server at home, and we ship things to help you create your own setup
+    website: https://homelab.hackclub.com
+    slack: https://hackclub.enterprise.slack.com/archives/C09U5BFU3GA
+    slackChannel: "#home-lab"
+    status: active
+    deadline: 2026-1-31
+    detailedDescription: A YSWS where you ship projects related to having a self hosted server at home (tracked with hackatime), and we ship things to help you create your own setup (or update a setup you already have!)\
+  - name: Haxmas
+    description: Do workshops, get prizes! Repeat til Christmas!
+    website: https://haxmas.hackclub.com
+    slack: https://hackclub.enterprise.slack.com/archives/C0A277A4FP0
+    slackChannel: "#haxmas"
+    status: active
+    deadline: 2025-12-25
+    detailedDescription: Welcome to Haxmas; 12 days of hands-on hacking! From December 13-25, a new workshop drops each day, created by a different member of the Hack Club community. Each workshop is only available on its specific day (day 1's workshop on December 13, day 2's workshop on December 14, and so on), so make sure to participate daily! Each workshop comes with its own special prize, and you'll earn snowflakes that you can redeem for stickers, swag, and more!
+  - name: Meow
+    description: Spend 5 hours building something to do with cats, get a cat plushie! Ends Christmas Day!
+    website: https://meow.hackclub.com
+    slack: https://hackclub.enterprise.slack.com/archives/C026LDN0ADB
+    slackChannel: "#meow"
+    status: active
+    deadline: 2025-12-25
+    detailedDescription: |
+      Meow is a Hack Club YSWS where we'll send you a cat plushie if you ship a project to do with cats!
+    steps:
+      - Join the Slack channel
+      - Spend over 5 hours (tracked with Hackatime) building a project to do with cats
+      - Fill out the submission form
+      - Receive your cat plushie!
+    details:
+      - You can make anything, as long as it's to do with cats, you could make a website, an app, or even a hardware project
+      - Must be shipped (accessible via a URL or as an executable, or fully built for hardware)
+      - US participants receive physical plushie, international participants receive $25 in HCB grant cards to buy their plushie.
+  - name: Woof
+    description: Spend 5 or more hours making a dog-themed project and get a dog plushie!
+    website: https://woof.hackclub.com
+    slack: https://hackclub.enterprise.slack.com/archives/C08LCGSECQP
+    slackChannel: "#woof"
+    status: active
+    deadline: 2026-01-14
+    detailedDescription: Spend 5 hours on a dog related project (with hackatime) and get a dog plushie either shipped from HQ (US only) or through a $25 HCB Grant card.
+    steps:
+      - Join the Slack Channel
+      - Spend 5 or more hours coding (tracked with hackatime)
+      - Ship - Fill out the submission form
+      - Get a dog plushie!
+    details:
+      - Your project has to be related to dogs
+      - You must track code time with Hackatime and push to GitHub
+      - Your project has to be made by you 🫵
+      - You need a demo link for your project (URL, downloadable executable or fully built for hardware)
+      - US participants receive physical plushie (shipped to address), international participants receive $25 in HCB grant cards to buy their plushie.
+  - name: Mosaic
+    description: Build a website every month with a different theme. Get stuff. Repeat.
+    website: https://mosaic.hackclub.com
+    slack: https://hackclub.enterprise.slack.com/archives/C09Q9CD9ZS8
+    slackChannel: "#mosaic"
+    status: active
+    deadline: 2026-12-31
+    detailedDescription: For 12 months, every month you get a random theme to build a full-stack web application! Earn cool prizes like a 3D Printer Grant and even a 1 year Render Hosting Plan!!
+    steps:
+      - Join the Slack Channel
+      - Spend 30 or more hours (tracked with hackatime)
+      - Submit it to review!
+      - Get your rewards!!
+  - name: Hack Club The Game
+    deadline: 2026-04-10
+    description: Code for 40 hours & fly out to Manhattan to compete in a IRL adventure game"
+    website: https://game.hackclub.com/?ref=ysws-catalog
+    slack: https://hackclub.enterprise.slack.com/archives/C088DT8P7B8
+    slackChannel: "#hack-club-the-game"
+    status: active
+  - name: Flavortown
+    deadline: 2026-03-31
+    description: Cook personal projects. Win free prizes.
+    website: https://flavortown.hackclub.com/?ref=ysws-catalog
+    slack: https://hackclub.enterprise.slack.com/archives/C09MPB8NE8H
+    slackChannel: "#flavortown"
+    status: active
+  - name: Wacky Files
+    website: https://wacky.hackclub.com/
+    deadline: 2026-03-1
+    description: Find the wackiest ways to store files for free and earn $3/hour with multipliers!
+    slack: https://hackclub.enterprise.slack.com/archives/C09M0TRLRV0
+    slackChannel: "#wacky-files"
+    status: active
+    detailedDescription: |
+      Sick of cloud-based storage? Own your files the weird way! Find the wackiest and most creative ways to host files for free. Convert binary to static and upload to YouTube, 3D print notches to encode data, or invent something completely absurd - just keep it wacky!
 
-- name: Bauble
-  description: 3D model an ornament, get it printed and put on the HQ tree! Ends December 25th.
-  website: https://bauble.hackclub.com
-  slack: https://hackclub.enterprise.slack.com/archives/C0A1SH6PF89
-  slackChannel: "#bauble"
-  status: active
-  deadline: 2025-12-25
-  detailedDescription: |
-    Bauble is a Hack Club YSWS program where you 3D model an ornament, and you get it printed out put on Oscar, the tree at Hack Club’s HQ in Vermont! After the tree gets taken down, you'll receive your ornament in the mail!
-  steps:
-    - 3D model an ornament in the CAD software of your choosing
-    - Export it as an STL
-    - Fill out the submit form
-  details:
-    - Your ornament must be modeled by you, models downloaded off the internet do not count
-    - Your ornament must be exported in STL format
-    - Your ornament must have a hole of a minimum 5mm diameter or some other way a hook or string could be attached
-    - Your ornament must be no larger than 100 x 100 x 100 mm in all directions
-    - Your ornament must be appropriate
-    - Your ornament must be able to print without supports
-- name: Fudge
-  description: Make any project you want, get fudge right from the Shelburne County Store next to HQ!
-  website: https://fudge.hackclub.com
-  slack: https://hackclub.enterprise.slack.com/archives/C09UZPNGMMM
-  slackChannel: "#fudge-fudge-fudge"
-  status: active
-  deadline: 2025-12-31 # https://hackclub.slack.com/archives/C09UZPNGMMM/p1764641061741069?thread_ts=1764641052.918569&cid=C09UZPNGMMM
-  detailedDescription: |
-    Ship any project you want (tracked with Hackatime), get fudge from the Shelburne County Store right next to Hack Club HQ.
-    Work for three hours and get half a pound of fudge, six hours for a full pound.
-  steps:
-    - Make a project
-    - Track your time with Hackatime
-    - Work on it for 3+ hours
-    - Get fudge!
-  details:
-    - Fudge is shipped from the Shelburne County Store in Shelburne, VT, USA
-    - 3 hours for half a pound, 6 hours for a full pound
-    - Hackatime is required
-    - Not limited to the US, but shipping may be expensive and we can't guarantee fudge quality
-    - HCB grant cards are available as an alternative to fudge ($10 for half pound, $20 for full pound)
-    - Fudge is stackable (1 lb for every 6 hours), but be reasonable (higher shipping costs)
-- name: Construct
-  description: 'Design projects using CAD, Get a 3d printer to print them!'
-  website: https://construct.hackclub.com
-  slack: https://hackclub.enterprise.slack.com/archives/C09TM7XKSSY
-  slackChannel: "#construct"
-  status: active
-  deadline: 2026-2-15
-  steps:
-    - Log into construct.hackclub.com
-    - Make projects!
-    - Submit!
-    - Get a cool new 3d printer!
-- name: Carnival
-  description: Build an extension, plugin, or widget get prizes
-  website: https://carnival.hackclub.com/
-  slack: https://hackclub.slack.com/archives/C091ZRTMF16
-  slackChannel: "#carnival"
-  status: active
-- name: Remix
-  description: Remix an existing song's beats in Strudel and get 1 month of Spotify, Apple Music, or SoundCloud Pro
-  website: https://remix.hackclub.com/
-  slack: https://hackclub.slack.com/archives/C095614E9B3
-  slackChannel: "#remixchallenge"
-  status: active  
-  deadline: 2025-11-30
-- name: Midnight
-  description: Spend 70 hours building personal projects, fly to a murder mystery hackathon in Vienna, Austria - Jan 2026
-  website: https://midnight.hackclub.com/
-  slack: https://hackclub.slack.com/archives/C09L1BDSC68
-  slackChannel: "#midnight"
-  status: active
-- name: Axiom
-  description: YSWS for math/science projects!
-  website: https://axiom.hackclub.com/
-  slack: https://hackclub.slack.com/archives/C09K4HZJ2DP
-  slackChannel: "#axiom"
-  status: ended
-- name: Accelerate
-  description: Build physics simulations, get prizes!
-  website: https://accelerate.hackclub.com
-  slack: https://hackclub.slack.com/archives/C09DPBK2K4K
-  slackChannel: "#accelerate"
-  status: active
-  deadline: 2026-01-10
-- name: Blueprint
-  description: Design a hardware project, up to $400 to build it!
-  website: https://blueprint.hackclub.com/?utm_source=ysws
-  slack: https://hackclub.slack.com/archives/C083S537USC
-  slackChannel: "#blueprint"
-  status: active
-  deadline: 2026-01-31
-- name: Aces
-  description: Create your own digital board game, get a grant to make it a real physical game, and then get a trip to Washington DC to show off your game to the public at AwesomeCon!
-  website: https://aces.hackclub.com
-  slack: https://hackclub.slack.com/archives/C09L87DU3T5
-  slackChannel: '#aces'
-  status: active
-  deadline: '2026-03-13T23:59:59'
-- name: The Zoo
-  description: Make an animal themed Svelte site, earn Ikea Animal Plushies
-  website: https://zoo.hackclub.com
-  slack: https://hackclub.slack.com/archives/C08K37F66AK
-  slackChannel: "#the-zoo"
-  status: active
-  deadline: '2025-12-31T23:59:00'
-  detailedDescription: |
-    The Zoo is a Svelte YSWS where participants build an animal themed Svelte site and earn Mynts (currency) which can be turned into an HCB grant at the end to buy Ikea plushies. Get one giant Djungleskog, or multiple mini Blahaj, it's all up to you. Here's the best part: the better your submission is, the more Mynts you earn!
-- name: Shiba Arcade
-  description: Make a game with Godot, earn SSS, and get invited to build an arcade in Tokyo (flight stipends available!)
-  website: https://shiba.hackclub.com
-  slack: https://hackclub.slack.com/archives/C09AG5L0L03
-  slackChannel: '#shiba'
-  status: ended
-  deadline: '2025-10-20T23:59:59'
-  detailedDescription: |
-    Shiba is a two-part adventure about game development. Create a game with Godot (an open-source game engine), earn SSS, use that for shop items, but most importantly, an invitation (and flight stipends) to Tokyo, Japan with 29 other Hack Clubbers to build a pop-up arcade!
-- name: Milkyway
-  description: Make games, build houses, and get awesome prizes like a flight to a hyper-immersive game jam in Singapore!
-  website: https://milkyway.hackclub.com/
-  slack: https://hackclub.slack.com/archives/C09EZSEMB16
-  slackChannel: '#milkyway'
-  status: active
-  deadline: 2026-02-27T23:59:59
-- name: Haunted Halloween
-  description: Make a halloween theme for a website or app, get a custom halloween themed sticker and candy!
-  website: https://halloween.hackclub.com/
-  slack: https://hackclub.slack.com/archives/C09P5HGE40G
-  slackChannel: '#haunted-halloween'
-  status: active
-  deadline: 2025-11-03
-- name: Dummies V2
-  description: Learn A new programming language and make a project with that, And We will send you school supplies, books, and study materials
-  website: https://dummies.hackclub.com/
-  slack: https://hackclub.slack.com/archives/C096M3EV67M
-  slackChannel: '#dummies'
-  status: active
-  deadline: 2025-12-23
-- name: Siege
-  description: Code every week, get prizes. Make it to the end, get a framework!
-  website: https://siege.hackclub.com/
-  slack: https://hackclub.slack.com/archives/C08SKC6P85V
-  slackChannel: "#siege"
-  status: ended
-  deadline: 2025-12-08
-- name: iplace
-  description: A collaborative canvas of websites, made by Hack Clubbers! Get hosting and domain credits!
-  website: https://iplace.hackclub.com/
-  slack: https://hackclub.slack.com/archives/C09NB7UDSDD
-  slackChannel: "#iplace"
-  status: active
-  deadline: 2025-11-10
-- name: Emerge
-  description: create an emergent behaviour, place pixels on the group canvas, get the canvas shipped to you!
-  website: https://emerge.hackclub.com/?utm_source=ysws
-  slack: https://hackclub.slack.com/archives/C09900Q6873/p1759787865899939
-  slackChannel: "#emerge"
-  status: active
-  deadline: 2025-11-1
-- name: Reactive
-  description: Ship a website built with React, get $15 to buy a domain.
-  website: http://reactive.hackclub.com
-  slack: https://hackclub.slack.com/archives/C090S7Q2HT4
-  slackChannel: "#reactive"
-  status: active
-  deadline: '2025-10-16'
-  requirements: Basic knowledge of HTML and CSS, A little knowledge of JavaScript.
-- name: Hacksaber
-  description: Ship a Beat Saber Modchart, and we'll ship custom T-Shirt designed by a HC member, or a copy of the game! Live YSWS!
-  website: https://hacksaber.vercel.app/
-  slack: https://hackclub.slack.com/archives/C096K1ZEXDL
-  slackChannel: "#hacksaber"
-  status: active
-- name: Fanpage
-  description: Ship a project that celebrates a fandom, and we ship you something related to it!
-  website: https://fanpage.hackclub.com/
-  slack: https://hackclub.slack.com/archives/C09A37XECJV
-  slackChannel: "#fanpage"
-  status: active
-  deadline: 2025-10-17
-- name: Hackberry
-  description: Built a machine learning project in python, get a personalized raspberry pi kit!
-  website: https://hackberry.hackclub.com/
-  slack: https://hackclub.slack.com/archives/C09A37XECJV
-  slackChannel: "#hackberry-hub"
-  status: active
-  deadline: 2025-10-13
-- name: Waveform
-  description: Make your own waveform visualizer, get a grant to buy music
-  website: https://waveform.hackclub.com/
-  slack: https://hackclub.slack.com/archives/C09AX5PLLUS
-  slackChannel: "#waveform"
-  status: active
-  deadline: 2025-09-26
-- name: birthday-cards
-  description: You ship a birthday themed project we ship a birthday card!
-  website: https://birthday-cards.hackclub.com/
-  slack: https://hackclub.slack.com/archives/C099VPF7V3P
-  slackChannel: "#birthday-cards-ysws"
-  status: active
-  deadline: '2026-08-12T23:59:59'
-- name: Miniverge
-  description: Spend 2 hours on a bot, get stickers and a chance for a Blåhaj or Minecraft!
-  website: https://converge.hackclub.com/
-  slack: https://hackclub.slack.com/archives/C091UF79VDM
-  slackChannel: "#miniverge"
-  status: active
-  deadline: 2025-09-28
-- name: Penumbra
-  description: Make shaders, and we'll ship you GPUs and posters!
-  website: https://penumbra.hackclub.com/
-  slack: https://hackclub.slack.com/archives/C09EC7ZS05S
-  slackChannel: "#penumbra"
-  status: active
-  deadline: '2025-10-08T23:59:59'
-  detailedDescription: Penumbra is a YSWS, where you create shaders on ShaderToy, and get posters of your shaders shipped right to your doorstep! If you spend up to 45 hours across multiple ships, you'll be able to get a GPU like an RTX 3050! 
-- name: Playphone
-  description: Work together to built a godot game, get a custom hackclub badge
-  website: https://playphone.hackclub.com
-  slack: https://hackclub.slack.com/archives/C09GJS3PH47
-  slackChannel: "#playphone"
-  status: active
-  deadline: '2025-12-01T23:59:59'
-  detailedDescription: Playphonee is an event where people take turns working on one godot game, and try to build an amazing game together. Everyone who participates will get a cool hackclub badge
-- name: Clutter
-  description: You ship something to organize your digital life. We ship you a grant to buy something to organize your physical life.
-  website: https://clutter.hackclub.com/
-  slack: https://hackclub.slack.com/archives/C0997C887M3
-  slackChannel: "#clutter"
-  status: active
-  deadline: '2025-09-17T23:59:59'
-- name: Fusering
-  description: "Design a keyring, get your keyring and a carabiner to hang it from!"
-  website: https://fusering.hackclub.com
-  slackChannel: "#fusering"
-  slack: https://hackclub.slack.com/archives/C098U42PD2A
-  status: active
-- name: iFrame
-  description: Draw or edit images using any programming language and we will hang your custom image on HQ wall and send a copy to you
-  website: https://iframe.hackclub.com/
-  slack: https://hackclub.slack.com/archives/C098LMVKPCM
-  slackChannel: "#iframe"
-  status: ended
-- name: BakeBuild
-  description: Design a cookie cutter, get it shipped!
-  detailedDescription: "You ship : A CAD model of a cookie cutter, we ship : A 3D printed model of your custom cookie cutter & cookies!"
-  website: https://bakebuild.hackclub.com/
-  slack: https://hackclub.slack.com/archives/C0844MV2JM9
-  slackChannel: "#bakebuild"
-  status: active
-- name: Summer of Making
-  description: Build stuff. Get stuff. Repeat.
-  website: https://summer.hackclub.com/
-  slack: https://hackclub.slack.com/archives/C015M4L9AHW
-  slackChannel: "#summer-of-making"
-  status: active
-  deadline: '2025-09-30T23:59:59'
-  participants: 10985
-- name: RSS
-  description: Build something cool with RSS feeds, get a domain grant.
-  website: https://rss.hackclub.com/
-  slackChannel: "#rss"
-  status: active
-  deadline: 2025-11-07
-- name: Moonshot
-  description: Spend 75 hours building personal projects, fly to a hackathon in Orlando, FL Dec 12–15
-  website: https://moonshot.hackclub.com/
-  slack: https://hackclub.slack.com/archives/C09J2HHRQ95
-  slackChannel: "#moonshot"
-  status: ended
-- name: Hivemind
-  description: Create a roguelike in 7 days, get itch.io credit.
-  website: https://hivemind.hackclub.com/
-  slack: https://hackclub.slack.com/archives/C096T7JRQRG
-  slackChannel: "#hivemind-"
-  status: ended
-  deadline: '2025-08-07T23:59:59'
-  steps:
-  - Create a traditional roguelike in 7 days.
-  - Chronicle its development across 7 devlogs.
-  - Get $2.50 in itch.io credit for each approved hour you spend.
-- name: Gemini
-  description: Ship An Android App and get a FREE Android Phone + Dev License!
-  website: https://gemini.hackclub.com/
-  slack: https://hackclub.slack.com/archives/C094VQKH1FV
-  slackChannel: "#gemini"
-  status: ended
-  deadline: '2025-08-11T23:59:59'
-- name: Endpointer
-  description: Build a REST API, get a grant for Raspberry Pi or Cloud Credits
-  website: https://endpointer.hackclub.com
-  slack: https://hackclub.slack.com/archives/C097M5JRT7F
-  slackChannel: "#endpointer"
-  status: ended
-  deadline: '2025-08-12T23:59:59'
-- name: Portal-VR
-  description: Build an AR/VR application, get a VR headset!
-  website: https://portalvr.hackclub.com/
-  slack: https://hackclub.slack.com/archives/C096CPJ1HCN
-  slackChannel: "#portal-vr"
-  status: ended
-  deadline: '2025-08-23T23:59:59'
-- name: Timeless
-  description: You have 10 days. Make a video game that could last someone 10 years.
-  website: https://timeless.hackclub.com/
-  slack: https://hackclub.slack.com/archives/C0956A8CL86
-  slackChannel: "#timeless"
-  status: ended
-  deadline: '2025-07-24T23:59:59'
-- name: Toybox
-  description: You ship a daily game, we ship stickers + keycap keychain + steam gift card. Make the next Wordle.
-  website: https://toybox.hackclub.com/
-  slack: https://hackclub.slack.com/archives/C096HCT11G9
-  slackChannel: "#toybox"
-  status: ended
-  deadline: '2025-07-22T23:59:59'
-- name: Dummies
-  description: learn a new language, recieve a guide book!
-  website: https://dummies.hackclub.com/
-  deadline: 2025-08-21T23:59:59
-  detailedDescription: Join Dummies to take on projects in new languages and earn grant cards for books!
-  steps:
-  - Develop and publish a project
-  - Submit it to Hack Club
-  - Receive a grant for books!
-  requirements:
-  - taking on a NEW skill
-  - resulting project can be seen from a weblink
-  slack: https://app.slack.com/client/T0266FRGM/C096M3EV67M
-  slackChannel: "#Dummies"
-  status: ended
-- name: Twist
-  description: Make an esolang, get stickers and a $40 electronics grant.
-  website: https://twist.hackclub.dev/
-  slack: https://hackclub.slack.com/archives/C092A93FA4X
-  slackChannel: "#twist-ysws"
-  status: ended
-  deadline: '2025-07-16T23:59:59'
+      Requirements:
+      - Must be able to store the test banana image in all its yellow glory
+      - Solution must be reproducible and documented
+      - A representation is okay (storing binary without rendering is fine)
+      - Must be able to upload AND download the file
+      - Track time with Hackatime (use Lapse for hardware projects)
 
-- name: Terminal Craft v5
-  description: Build and publish your own terminal program to earn $5/hr
-  website: https://terminalcraft.hackclub.com
-  slack: https://hackclub.slack.com/archives/C08F58MT3GV
-  slackChannel: "#terminal-craft"
-  status: ended
-  deadline: '2025-10-20T23:59:59'
+      Earn $3/hour baseline, with voting multipliers: ⭐ = 1x, ⭐⭐ = 2x, ⭐⭐⭐ = 3x
+    steps:
+      - Join the Slack channel
+      - Dream up the wackiest file storage method
+      - Build it and document everything
+      - Track your time with Hackatime
+      - Submit for voting!
+    details:
+      - No CDN or existing solutions used in their intended way
+      - Must be your own creative implementation
+      - The wackier the better!
 
-- name: Infinity
-  description: Build a website with an infinite realtime canvas, get awesome prizes!
-  website: https://infinity.hackclub.com
-  slack: https://hackclub.slack.com/archives/C098ARHLXFW
-  slackChannel: "#infinity"
-  status: ended
-  deadline: '2025-08-22T23:59:59'
+  - name: Bauble
+    description: 3D model an ornament, get it printed and put on the HQ tree! Ends December 25th.
+    website: https://bauble.hackclub.com
+    slack: https://hackclub.enterprise.slack.com/archives/C0A1SH6PF89
+    slackChannel: "#bauble"
+    status: active
+    deadline: 2025-12-25
+    detailedDescription: |
+      Bauble is a Hack Club YSWS program where you 3D model an ornament, and you get it printed out put on Oscar, the tree at Hack Club’s HQ in Vermont! After the tree gets taken down, you'll receive your ornament in the mail!
+    steps:
+      - 3D model an ornament in the CAD software of your choosing
+      - Export it as an STL
+      - Fill out the submit form
+    details:
+      - Your ornament must be modeled by you, models downloaded off the internet do not count
+      - Your ornament must be exported in STL format
+      - Your ornament must have a hole of a minimum 5mm diameter or some other way a hook or string could be attached
+      - Your ornament must be no larger than 100 x 100 x 100 mm in all directions
+      - Your ornament must be appropriate
+      - Your ornament must be able to print without supports
+  - name: Fudge
+    description: Make any project you want, get fudge right from the Shelburne County Store next to HQ!
+    website: https://fudge.hackclub.com
+    slack: https://hackclub.enterprise.slack.com/archives/C09UZPNGMMM
+    slackChannel: "#fudge-fudge-fudge"
+    status: active
+    deadline: 2025-12-31 # https://hackclub.slack.com/archives/C09UZPNGMMM/p1764641061741069?thread_ts=1764641052.918569&cid=C09UZPNGMMM
+    detailedDescription: |
+      Ship any project you want (tracked with Hackatime), get fudge from the Shelburne County Store right next to Hack Club HQ.
+      Work for three hours and get half a pound of fudge, six hours for a full pound.
+    steps:
+      - Make a project
+      - Track your time with Hackatime
+      - Work on it for 3+ hours
+      - Get fudge!
+    details:
+      - Fudge is shipped from the Shelburne County Store in Shelburne, VT, USA
+      - 3 hours for half a pound, 6 hours for a full pound
+      - Hackatime is required
+      - Not limited to the US, but shipping may be expensive and we can't guarantee fudge quality
+      - HCB grant cards are available as an alternative to fudge ($10 for half pound, $20 for full pound)
+      - Fudge is stackable (1 lb for every 6 hours), but be reasonable (higher shipping costs)
+  - name: Construct
+    description: "Design projects using CAD, Get a 3d printer to print them!"
+    website: https://construct.hackclub.com
+    slack: https://hackclub.enterprise.slack.com/archives/C09TM7XKSSY
+    slackChannel: "#construct"
+    status: active
+    deadline: 2026-2-15
+    steps:
+      - Log into construct.hackclub.com
+      - Make projects!
+      - Submit!
+      - Get a cool new 3d printer!
+  - name: Carnival
+    description: Build an extension, plugin, or widget get prizes
+    website: https://carnival.hackclub.com/
+    slack: https://hackclub.slack.com/archives/C091ZRTMF16
+    slackChannel: "#carnival"
+    status: active
+  - name: Remix
+    description: Remix an existing song's beats in Strudel and get 1 month of Spotify, Apple Music, or SoundCloud Pro
+    website: https://remix.hackclub.com/
+    slack: https://hackclub.slack.com/archives/C095614E9B3
+    slackChannel: "#remixchallenge"
+    status: active
+    deadline: 2025-11-30
+  - name: Midnight
+    description: Spend 70 hours building personal projects, fly to a murder mystery hackathon in Vienna, Austria - Jan 2026
+    website: https://midnight.hackclub.com/
+    slack: https://hackclub.slack.com/archives/C09L1BDSC68
+    slackChannel: "#midnight"
+    status: active
+  - name: Axiom
+    description: YSWS for math/science projects!
+    website: https://axiom.hackclub.com/
+    slack: https://hackclub.slack.com/archives/C09K4HZJ2DP
+    slackChannel: "#axiom"
+    status: ended
+  - name: Accelerate
+    description: Build physics simulations, get prizes!
+    website: https://accelerate.hackclub.com
+    slack: https://hackclub.slack.com/archives/C09DPBK2K4K
+    slackChannel: "#accelerate"
+    status: active
+    deadline: 2026-01-10
+  - name: Blueprint
+    description: Design a hardware project, up to $400 to build it!
+    website: https://blueprint.hackclub.com/?utm_source=ysws
+    slack: https://hackclub.slack.com/archives/C083S537USC
+    slackChannel: "#blueprint"
+    status: active
+    deadline: 2026-01-31
+  - name: Aces
+    description: Create your own digital board game, get a grant to make it a real physical game, and then get a trip to Washington DC to show off your game to the public at AwesomeCon!
+    website: https://aces.hackclub.com
+    slack: https://hackclub.slack.com/archives/C09L87DU3T5
+    slackChannel: "#aces"
+    status: active
+    deadline: "2026-03-13T23:59:59"
+  - name: The Zoo
+    description: Make an animal themed Svelte site, earn Ikea Animal Plushies
+    website: https://zoo.hackclub.com
+    slack: https://hackclub.slack.com/archives/C08K37F66AK
+    slackChannel: "#the-zoo"
+    status: active
+    deadline: "2025-12-31T23:59:00"
+    detailedDescription: |
+      The Zoo is a Svelte YSWS where participants build an animal themed Svelte site and earn Mynts (currency) which can be turned into an HCB grant at the end to buy Ikea plushies. Get one giant Djungleskog, or multiple mini Blahaj, it's all up to you. Here's the best part: the better your submission is, the more Mynts you earn!
+  - name: Shiba Arcade
+    description: Make a game with Godot, earn SSS, and get invited to build an arcade in Tokyo (flight stipends available!)
+    website: https://shiba.hackclub.com
+    slack: https://hackclub.slack.com/archives/C09AG5L0L03
+    slackChannel: "#shiba"
+    status: ended
+    deadline: "2025-10-20T23:59:59"
+    detailedDescription: |
+      Shiba is a two-part adventure about game development. Create a game with Godot (an open-source game engine), earn SSS, use that for shop items, but most importantly, an invitation (and flight stipends) to Tokyo, Japan with 29 other Hack Clubbers to build a pop-up arcade!
+  - name: Milkyway
+    description: Make games, build houses, and get awesome prizes like a flight to a hyper-immersive game jam in Singapore!
+    website: https://milkyway.hackclub.com/
+    slack: https://hackclub.slack.com/archives/C09EZSEMB16
+    slackChannel: "#milkyway"
+    status: active
+    deadline: 2026-02-27T23:59:59
+  - name: Haunted Halloween
+    description: Make a halloween theme for a website or app, get a custom halloween themed sticker and candy!
+    website: https://halloween.hackclub.com/
+    slack: https://hackclub.slack.com/archives/C09P5HGE40G
+    slackChannel: "#haunted-halloween"
+    status: active
+    deadline: 2025-11-03
+  - name: Dummies V2
+    description: Learn A new programming language and make a project with that, And We will send you school supplies, books, and study materials
+    website: https://dummies.hackclub.com/
+    slack: https://hackclub.slack.com/archives/C096M3EV67M
+    slackChannel: "#dummies"
+    status: active
+    deadline: 2025-12-23
+  - name: Siege
+    description: Code every week, get prizes. Make it to the end, get a framework!
+    website: https://siege.hackclub.com/
+    slack: https://hackclub.slack.com/archives/C08SKC6P85V
+    slackChannel: "#siege"
+    status: ended
+    deadline: 2025-12-08
+  - name: iplace
+    description: A collaborative canvas of websites, made by Hack Clubbers! Get hosting and domain credits!
+    website: https://iplace.hackclub.com/
+    slack: https://hackclub.slack.com/archives/C09NB7UDSDD
+    slackChannel: "#iplace"
+    status: active
+    deadline: 2025-11-10
+  - name: Emerge
+    description: create an emergent behaviour, place pixels on the group canvas, get the canvas shipped to you!
+    website: https://emerge.hackclub.com/?utm_source=ysws
+    slack: https://hackclub.slack.com/archives/C09900Q6873/p1759787865899939
+    slackChannel: "#emerge"
+    status: active
+    deadline: 2025-11-1
+  - name: Reactive
+    description: Ship a website built with React, get $15 to buy a domain.
+    website: http://reactive.hackclub.com
+    slack: https://hackclub.slack.com/archives/C090S7Q2HT4
+    slackChannel: "#reactive"
+    status: active
+    deadline: "2025-10-16"
+    requirements: Basic knowledge of HTML and CSS, A little knowledge of JavaScript.
+  - name: Hacksaber
+    description: Ship a Beat Saber Modchart, and we'll ship custom T-Shirt designed by a HC member, or a copy of the game! Live YSWS!
+    website: https://hacksaber.vercel.app/
+    slack: https://hackclub.slack.com/archives/C096K1ZEXDL
+    slackChannel: "#hacksaber"
+    status: active
+  - name: Fanpage
+    description: Ship a project that celebrates a fandom, and we ship you something related to it!
+    website: https://fanpage.hackclub.com/
+    slack: https://hackclub.slack.com/archives/C09A37XECJV
+    slackChannel: "#fanpage"
+    status: active
+    deadline: 2025-10-17
+  - name: Hackberry
+    description: Built a machine learning project in python, get a personalized raspberry pi kit!
+    website: https://hackberry.hackclub.com/
+    slack: https://hackclub.slack.com/archives/C09A37XECJV
+    slackChannel: "#hackberry-hub"
+    status: active
+    deadline: 2025-10-13
+  - name: Waveform
+    description: Make your own waveform visualizer, get a grant to buy music
+    website: https://waveform.hackclub.com/
+    slack: https://hackclub.slack.com/archives/C09AX5PLLUS
+    slackChannel: "#waveform"
+    status: active
+    deadline: 2025-09-26
+  - name: birthday-cards
+    description: You ship a birthday themed project we ship a birthday card!
+    website: https://birthday-cards.hackclub.com/
+    slack: https://hackclub.slack.com/archives/C099VPF7V3P
+    slackChannel: "#birthday-cards-ysws"
+    status: active
+    deadline: "2026-08-12T23:59:59"
+  - name: Miniverge
+    description: Spend 2 hours on a bot, get stickers and a chance for a Blåhaj or Minecraft!
+    website: https://converge.hackclub.com/
+    slack: https://hackclub.slack.com/archives/C091UF79VDM
+    slackChannel: "#miniverge"
+    status: active
+    deadline: 2025-09-28
+  - name: Penumbra
+    description: Make shaders, and we'll ship you GPUs and posters!
+    website: https://penumbra.hackclub.com/
+    slack: https://hackclub.slack.com/archives/C09EC7ZS05S
+    slackChannel: "#penumbra"
+    status: active
+    deadline: "2025-10-08T23:59:59"
+    detailedDescription: Penumbra is a YSWS, where you create shaders on ShaderToy, and get posters of your shaders shipped right to your doorstep! If you spend up to 45 hours across multiple ships, you'll be able to get a GPU like an RTX 3050!
+  - name: Playphone
+    description: Work together to built a godot game, get a custom hackclub badge
+    website: https://playphone.hackclub.com
+    slack: https://hackclub.slack.com/archives/C09GJS3PH47
+    slackChannel: "#playphone"
+    status: active
+    deadline: "2025-12-01T23:59:59"
+    detailedDescription: Playphonee is an event where people take turns working on one godot game, and try to build an amazing game together. Everyone who participates will get a cool hackclub badge
+  - name: Clutter
+    description: You ship something to organize your digital life. We ship you a grant to buy something to organize your physical life.
+    website: https://clutter.hackclub.com/
+    slack: https://hackclub.slack.com/archives/C0997C887M3
+    slackChannel: "#clutter"
+    status: active
+    deadline: "2025-09-17T23:59:59"
+  - name: Fusering
+    description: "Design a keyring, get your keyring and a carabiner to hang it from!"
+    website: https://fusering.hackclub.com
+    slackChannel: "#fusering"
+    slack: https://hackclub.slack.com/archives/C098U42PD2A
+    status: active
+  - name: iFrame
+    description: Draw or edit images using any programming language and we will hang your custom image on HQ wall and send a copy to you
+    website: https://iframe.hackclub.com/
+    slack: https://hackclub.slack.com/archives/C098LMVKPCM
+    slackChannel: "#iframe"
+    status: ended
+  - name: BakeBuild
+    description: Design a cookie cutter, get it shipped!
+    detailedDescription: "You ship : A CAD model of a cookie cutter, we ship : A 3D printed model of your custom cookie cutter & cookies!"
+    website: https://bakebuild.hackclub.com/
+    slack: https://hackclub.slack.com/archives/C0844MV2JM9
+    slackChannel: "#bakebuild"
+    status: active
+  - name: Summer of Making
+    description: Build stuff. Get stuff. Repeat.
+    website: https://summer.hackclub.com/
+    slack: https://hackclub.slack.com/archives/C015M4L9AHW
+    slackChannel: "#summer-of-making"
+    status: active
+    deadline: "2025-09-30T23:59:59"
+    participants: 10985
+  - name: RSS
+    description: Build something cool with RSS feeds, get a domain grant.
+    website: https://rss.hackclub.com/
+    slackChannel: "#rss"
+    status: active
+    deadline: 2025-11-07
+  - name: Moonshot
+    description: Spend 75 hours building personal projects, fly to a hackathon in Orlando, FL Dec 12–15
+    website: https://moonshot.hackclub.com/
+    slack: https://hackclub.slack.com/archives/C09J2HHRQ95
+    slackChannel: "#moonshot"
+    status: ended
+  - name: Hivemind
+    description: Create a roguelike in 7 days, get itch.io credit.
+    website: https://hivemind.hackclub.com/
+    slack: https://hackclub.slack.com/archives/C096T7JRQRG
+    slackChannel: "#hivemind-"
+    status: ended
+    deadline: "2025-08-07T23:59:59"
+    steps:
+      - Create a traditional roguelike in 7 days.
+      - Chronicle its development across 7 devlogs.
+      - Get $2.50 in itch.io credit for each approved hour you spend.
+  - name: Gemini
+    description: Ship An Android App and get a FREE Android Phone + Dev License!
+    website: https://gemini.hackclub.com/
+    slack: https://hackclub.slack.com/archives/C094VQKH1FV
+    slackChannel: "#gemini"
+    status: ended
+    deadline: "2025-08-11T23:59:59"
+  - name: Endpointer
+    description: Build a REST API, get a grant for Raspberry Pi or Cloud Credits
+    website: https://endpointer.hackclub.com
+    slack: https://hackclub.slack.com/archives/C097M5JRT7F
+    slackChannel: "#endpointer"
+    status: ended
+    deadline: "2025-08-12T23:59:59"
+  - name: Portal-VR
+    description: Build an AR/VR application, get a VR headset!
+    website: https://portalvr.hackclub.com/
+    slack: https://hackclub.slack.com/archives/C096CPJ1HCN
+    slackChannel: "#portal-vr"
+    status: ended
+    deadline: "2025-08-23T23:59:59"
+  - name: Timeless
+    description: You have 10 days. Make a video game that could last someone 10 years.
+    website: https://timeless.hackclub.com/
+    slack: https://hackclub.slack.com/archives/C0956A8CL86
+    slackChannel: "#timeless"
+    status: ended
+    deadline: "2025-07-24T23:59:59"
+  - name: Toybox
+    description: You ship a daily game, we ship stickers + keycap keychain + steam gift card. Make the next Wordle.
+    website: https://toybox.hackclub.com/
+    slack: https://hackclub.slack.com/archives/C096HCT11G9
+    slackChannel: "#toybox"
+    status: ended
+    deadline: "2025-07-22T23:59:59"
+  - name: Dummies
+    description: learn a new language, recieve a guide book!
+    website: https://dummies.hackclub.com/
+    deadline: 2025-08-21T23:59:59
+    detailedDescription: Join Dummies to take on projects in new languages and earn grant cards for books!
+    steps:
+      - Develop and publish a project
+      - Submit it to Hack Club
+      - Receive a grant for books!
+    requirements:
+      - taking on a NEW skill
+      - resulting project can be seen from a weblink
+    slack: https://app.slack.com/client/T0266FRGM/C096M3EV67M
+    slackChannel: "#Dummies"
+    status: ended
+  - name: Twist
+    description: Make an esolang, get stickers and a $40 electronics grant.
+    website: https://twist.hackclub.dev/
+    slack: https://hackclub.slack.com/archives/C092A93FA4X
+    slackChannel: "#twist-ysws"
+    status: ended
+    deadline: "2025-07-16T23:59:59"
 
-- name: Tile
-  description: Build a tile, get a tile, tile the tiles!
-  website: https://tile.hackclub.com
-  slack: https://hackclub.slack.com/archives/C097E6ZAF99
-  slackChannel: "#tile"
-  status: ended
-  deadline: '2025-08-18T23:59:59'
+  - name: Terminal Craft v5
+    description: Build and publish your own terminal program to earn $5/hr
+    website: https://terminalcraft.hackclub.com
+    slack: https://hackclub.slack.com/archives/C08F58MT3GV
+    slackChannel: "#terminal-craft"
+    status: ended
+    deadline: "2025-10-20T23:59:59"
 
-- name: Minigame
-  description: A YSWS where you build "mini" 5 hour games and earn a $20 grant for each one! At the end everyone's games will be combined together to make a big Minigame collection!
-  website: https://minigame.hackclub.dev
-  slack: https://hackclub.slack.com/archives/C093SSC3Z16
-  slackChannel: "#minigame"
-  status: ended
-  deadline: '2025-07-18T23:59:59'
+  - name: Infinity
+    description: Build a website with an infinite realtime canvas, get awesome prizes!
+    website: https://infinity.hackclub.com
+    slack: https://hackclub.slack.com/archives/C098ARHLXFW
+    slackChannel: "#infinity"
+    status: ended
+    deadline: "2025-08-22T23:59:59"
 
-- name: Squeak
-  description: Design a mouse case and receive the case and parts!
-  website: https://squeak.hackclub.com
-  slack: https://hackclub.slack.com/archives/C094458MVMX
-  slackChannel: "#squeak"
-  status: ended
-  deadline: '2025-07-13T23:59:59'
+  - name: Tile
+    description: Build a tile, get a tile, tile the tiles!
+    website: https://tile.hackclub.com
+    slack: https://hackclub.slack.com/archives/C097E6ZAF99
+    slackChannel: "#tile"
+    status: ended
+    deadline: "2025-08-18T23:59:59"
 
-- name: Pathfinder
-  description: Make a custom PCB controller board and efidget
-  website: https://pathfinder.hackclub.com
-  slack: https://hackclub.slack.com/archives/C0943DE80E4
-  slackChannel: "#pathfinder"
-  status: ended
-  deadline: '2025-07-05T23:59:59'
-  
-- name: Hackfinger
-  description: You design a custom appendage (finger, tail, leg, anything you want!) and get your design printed along with a custom control board.
-  website: https://hackfinger.hackclub.com
-  slack: https://hackclub.slack.com/archives/C095T0TQ5A8
-  slackChannel: "#hackfinger"
-  status: ended
-  deadline: '2025-07-20T23:59:59'
+  - name: Minigame
+    description: A YSWS where you build "mini" 5 hour games and earn a $20 grant for each one! At the end everyone's games will be combined together to make a big Minigame collection!
+    website: https://minigame.hackclub.dev
+    slack: https://hackclub.slack.com/archives/C093SSC3Z16
+    slackChannel: "#minigame"
+    status: ended
+    deadline: "2025-07-18T23:59:59"
 
-- name: Jumpstart
-  description: Game-dev YSWS running July 9th to Aug 9th ✨
-  website: https://jumpstart.hackclub.com
-  slack: https://hackclub.slack.com/archives/C0931T5SEH4
-  slackChannel: "#jumpstart"
-  status: ended
-  deadline: '2025-08-09T23:59:59'
+  - name: Squeak
+    description: Design a mouse case and receive the case and parts!
+    website: https://squeak.hackclub.com
+    slack: https://hackclub.slack.com/archives/C094458MVMX
+    slackChannel: "#squeak"
+    status: ended
+    deadline: "2025-07-13T23:59:59"
 
-- name: Reinforced
-  description: Build a game, build a bot to beat it, get compute to do more AI stuff.
-  website: https://reinforced.hackclub.dev
-  slack: https://hackclub.slack.com/archives/C092JUZ7V7Y
-  slackChannel: "#reinforced"
-  status: ended
-  deadline: '2025-07-18T23:59:59'
+  - name: Pathfinder
+    description: Make a custom PCB controller board and efidget
+    website: https://pathfinder.hackclub.com
+    slack: https://hackclub.slack.com/archives/C0943DE80E4
+    slackChannel: "#pathfinder"
+    status: ended
+    deadline: "2025-07-05T23:59:59"
 
-- name: Decode
-  description: Learn how a tech product works (hardware + software) and we ship you a grant to make it yourself
-  website: https://decode.hackclub.dev
-  slack: https://hackclub.slack.com/archives/C091GPYCAFL
-  slackChannel: "#decode"
-  status: ended
-  deadline: '2025-07-10T23:59:59'
+  - name: Hackfinger
+    description: You design a custom appendage (finger, tail, leg, anything you want!) and get your design printed along with a custom control board.
+    website: https://hackfinger.hackclub.com
+    slack: https://hackclub.slack.com/archives/C095T0TQ5A8
+    slackChannel: "#hackfinger"
+    status: ended
+    deadline: "2025-07-20T23:59:59"
 
-- name: Storyboard
-  description: Make a visual novel, get $$ for merch/plushie
-  website: https://storyboard.hackclub.com
-  slack: https://hackclub.slack.com/archives/C095E84SE1X
-  slackChannel: "#storyboard"
-  status: ended
-  deadline: '2025-07-13T23:59:59'
+  - name: Jumpstart
+    description: Game-dev YSWS running July 9th to Aug 9th ✨
+    website: https://jumpstart.hackclub.com
+    slack: https://hackclub.slack.com/archives/C0931T5SEH4
+    slackChannel: "#jumpstart"
+    status: ended
+    deadline: "2025-08-09T23:59:59"
 
-- name: Pulse
-  description: Build a project using the Spotify API with 6 hours on Hackatime, get 3 months of Spotify Premium
-  website: https://pulse.hackclub.dev
-  slack: https://hackclub.slack.com/archives/C090E7XUEA3
-  slackChannel: "#pulse"
-  status: ended
-  deadline: '2025-07-11T23:59:59'
+  - name: Reinforced
+    description: Build a game, build a bot to beat it, get compute to do more AI stuff.
+    website: https://reinforced.hackclub.dev
+    slack: https://hackclub.slack.com/archives/C092JUZ7V7Y
+    slackChannel: "#reinforced"
+    status: ended
+    deadline: "2025-07-18T23:59:59"
 
-- name: Journey
-  description: The smash-hit Hack Club event where you share insider details of whatever you're building.
-  website: https://journey.hackclub.com
-  slack: https://hackclub.slack.com/archives/example
-  slackChannel: "#journey"
-  status: ended
-  deadline: '2025-06-10T23:59:59'
+  - name: Decode
+    description: Learn how a tech product works (hardware + software) and we ship you a grant to make it yourself
+    website: https://decode.hackclub.dev
+    slack: https://hackclub.slack.com/archives/C091GPYCAFL
+    slackChannel: "#decode"
+    status: ended
+    deadline: "2025-07-10T23:59:59"
 
-- name: Railway
-  description: Build a site with Ruby on Rails, receive stickers!
-  website: https://railway.hackclub.com
-  slack: https://hackclub.slack.com/archives/C094T1FL2KG
-  slackChannel: "#railway"
-  status: ended
-  deadline: '2025-07-22T23:59:59'
+  - name: Storyboard
+    description: Make a visual novel, get $$ for merch/plushie
+    website: https://storyboard.hackclub.com
+    slack: https://hackclub.slack.com/archives/C095E84SE1X
+    slackChannel: "#storyboard"
+    status: ended
+    deadline: "2025-07-13T23:59:59"
 
-- name: Cinema
-  description: You ship a short story JavaScript animation using canvas. In return, we ship HQ-made caramel popcorn
-  website: https://cinema.hackclub.com
-  slack: https://hackclub.slack.com/archives/C0936AVS683
-  slackChannel: "#cinema"
-  status: ended
-  deadline: '2025-07-06T23:59:59'
+  - name: Pulse
+    description: Build a project using the Spotify API with 6 hours on Hackatime, get 3 months of Spotify Premium
+    website: https://pulse.hackclub.dev
+    slack: https://hackclub.slack.com/archives/C090E7XUEA3
+    slackChannel: "#pulse"
+    status: ended
+    deadline: "2025-07-11T23:59:59"
 
-- name: Spatula
-  description: You ship an app or script that sends push notifications, we'll give you a $5 grant card so you can start sending SMS messages with your code!
-  website: https://spatula.hackclub.com
-  slack: https://hackclub.slack.com/archives/C093Q40FU3C
-  slackChannel: "#spatula"
-  status: ended
-  deadline: '2025-07-03T23:59:59'
+  - name: Journey
+    description: The smash-hit Hack Club event where you share insider details of whatever you're building.
+    website: https://journey.hackclub.com
+    slack: https://hackclub.slack.com/archives/example
+    slackChannel: "#journey"
+    status: ended
+    deadline: "2025-06-10T23:59:59"
 
-- name: Rewind
-  description: Make an app that runs on Windows XP, get stickers + super cool headphones from KOSS (the KTX Pro 1 or Porta Pros).
-  website: https://rewind.hackclub.com
-  slack: https://hackclub.slack.com/archives/C093ALFAW8K
-  slackChannel: "#rewind"
-  status: ended
-  deadline: '2025-08-13T23:59:59'
+  - name: Railway
+    description: Build a site with Ruby on Rails, receive stickers!
+    website: https://railway.hackclub.com
+    slack: https://hackclub.slack.com/archives/C094T1FL2KG
+    slackChannel: "#railway"
+    status: ended
+    deadline: "2025-07-22T23:59:59"
 
-- name: Illumination
-  description: You build something with ESP32-S3 emulator, and we give you a super cool ESP32-S3 devboard, custom parts, and cloud credits!
-  website: https://illumination.hackclub.com
-  slack: https://hackclub.slack.com/archives/C091MS57D37
-  slackChannel: "#illumination"
-  status: ended
-  deadline: '2025-07-16T23:59:59'
+  - name: Cinema
+    description: You ship a short story JavaScript animation using canvas. In return, we ship HQ-made caramel popcorn
+    website: https://cinema.hackclub.com
+    slack: https://hackclub.slack.com/archives/C0936AVS683
+    slackChannel: "#cinema"
+    status: ended
+    deadline: "2025-07-06T23:59:59"
 
-- name: Overflow-hidden
-  description: ysws where you can't use a scrollbar
-  website: https://overflow-hidden.hackclub.com
-  slack: https://hackclub.slack.com/archives/C095HDJK3TQ
-  slackChannel: "#overflow-hidden"
-  status: ended
-  deadline: '2025-07-21T23:59:59'
+  - name: Spatula
+    description: You ship an app or script that sends push notifications, we'll give you a $5 grant card so you can start sending SMS messages with your code!
+    website: https://spatula.hackclub.com
+    slack: https://hackclub.slack.com/archives/C093Q40FU3C
+    slackChannel: "#spatula"
+    status: ended
+    deadline: "2025-07-03T23:59:59"
 
-- name: Swirl
-  description: Create a quality website with Scoops, get ice cream!
-  detailedDescription: Ship a static website (html + css) that has a Scoop, and get a grant for ice cream to enjoy! Scoops are made up of groups of three html / css features that add something of value to the website.
-  website: https://swirl.hackclub.com
-  slack: https://hackclub.slack.com/archives/C08FR0LMVHD
-  slackChannel: "#swirl"
-  status: ended
-  deadline: '2025-08-03T23:59:59'
-  participants: 40
-- name: Grub
-  description: 'You Ship A responsive website using only HTML and Tailwind CSS. We Ship A grant for junk food.'
-  detailedDescription: "The grant amount is based on the number of unique features implemented:\\n$6 (Basic Meal): For 2 unique features.\\n$8 (Refreshment Combo): For 4 unique features.\\n$10 (Full Combo Meal): For 6 or more unique features."
-  website: https://grub.hackclub.com/
-  slack: https://hackclub.slack.com/archives/C08S9NCEULB
-  slackChannel: "#grub"
-  status: ended
-  deadline: '2025-08-03T23:59:59'
-- name: Toppings
-  description: You ship an interactive website using framework-less JavaScript, we ship you a grant to an ice cream parlor.
-  website: https://toppings.hackclub.com/
-  slack: https://hackclub.slack.com/archives/C08R8V2E3LY
-  slackChannel: "#toppings"
-  status: ended
-  deadline: '2025-08-03T23:59:59'
-- name: Waffles
-  description: You ship a website using HTML CSS and JavaScript, and get Waffles!!!
-  website: https://waffles.hackclub.com/
-  slack: https://hackclub.slack.com/archives/C08QBKX5WCD
-  slackChannel: "#waffles"
-  status: ended
-  deadline: '2025-08-03T23:59:59'
+  - name: Rewind
+    description: Make an app that runs on Windows XP, get stickers + super cool headphones from KOSS (the KTX Pro 1 or Porta Pros).
+    website: https://rewind.hackclub.com
+    slack: https://hackclub.slack.com/archives/C093ALFAW8K
+    slackChannel: "#rewind"
+    status: ended
+    deadline: "2025-08-13T23:59:59"
 
+  - name: Illumination
+    description: You build something with ESP32-S3 emulator, and we give you a super cool ESP32-S3 devboard, custom parts, and cloud credits!
+    website: https://illumination.hackclub.com
+    slack: https://hackclub.slack.com/archives/C091MS57D37
+    slackChannel: "#illumination"
+    status: ended
+    deadline: "2025-07-16T23:59:59"
 
-- name: Hackmate
-  description: Build a collaborative app, get upto $50 for cloud credits or a raspberry pi
-  website: https://hackmate.hackclub.dev
-  slack: https://hackclub.slack.com/archives/C092HR1LG20
-  slackChannel: "#hackmate"
-  status: ended
-  deadline: '2025-07-17T23:59:59'
-- name: Converge
-  description: Build Discord/Slack bots, we ship domain names, server hosting, Blahajs, and more
-  website: https://submit.hackclub.com/converge-rsvp
-  slack: https://hackclub.slack.com/archives/C091UF79VDM
-  slackChannel: "#converge"
-  status: active
-  deadline: '2025-11-10T23:59:59'
-- name: Gamefolio
-  description: Make a interactive portfolio website, get $20 for hosting or domains
-  website: http://gamefolio.hackclub.dev
-  slack: https://hackclub.slack.com/archives/C08RT4C2485
-  slackChannel: "#gamefolio"
-  status: ended
-  deadline: '2025-07-02T23:59:59'
-- name: Extensify
-  description: Build an IDE extension, get a keychain or a premium theme for VS Code or Sublime Text!
-  website: https://extensify.hackclub.com/
-  slack: https://hackclub.slack.com/archives/C094H3V1Y81
-  slackChannel: "#extensify"
-  status: ended
-  deadline: '2025-07-07T23:59:59'
-- name: Waveband
-  description: Create a program that uses RTL-SDR, and Hack Club sends you a dongle and antenna kit.
-  website: https://waveband.hackclub.com/
-  slack: https://hackclub.slack.com/archives/C082S5V95G8
-  slackChannel: "#waveband"
-  status: ended
-  deadline: '2025-07-11T23:59:59'
-- name: Toolsmith
-  description: Build a AI extension (MCP tool), get $10 of AI credits.
-  website: https://toolsmith.hackclub.com/
-  slack: https://hackclub.slack.com/archives/C094X38BFT5
-  slackChannel: "#toolsmith"
-  status: ended
-  deadline: '2025-07-11T23:59:59'
-- name: Smelt
-  description: Ship a Svelte/SvelteKit site, get awesome collectable swag!
-  website: https://smelt.hackclub.com/
-  slack: https://hackclub.slack.com/archives/C09535Y8E83
-  slackChannel: "#smelt"
-  status: ended
-  deadline: '2025-07-31T23:59:59'
-- name: Highway
-  description: Make any hardware project, get up to 350 USD to build it! Keyboard, game console, rocket, robot, 3d printer, etc... Then, go to a 4-day hardware hackathon @ Github HQ this summer!
-  detailedDescription:
-  website: https://highway.hackclub.com
-  slack: https://hackclub.slack.com/archives/C08Q1H6D79B
-  slackChannel: "#highway"
-  status: ended
-  deadline: '2025-07-31T23:59:59'
-- name: Cafe
-  description: Collect cups, progress the graph, earn bonuses!
-  detailedDescription: Work on a personal project in a huddle, get a cup every hour. Getting certain amounts of cups can get you special prizes! See the cafe-bulletin channel for more information!
-  website:
-  slack: https://hackclub.slack.com/archives/C02A74Z7G7L
-  slackChannel: "#cafe"
-  status: ended
-  deadline: '2025-02-17T23:59:59'
-- name: RaspAPI
-  description: Make an API get a Raspberry Pi
-  detailedDescription: Create an original API using any programming language or framework that you prefer and get a Raspberry Pi Zero 2 W to host it on! The API can be anything you want. The possibilities are endless!
-  website: https://raspapi.hackclub.com/
-  slack: https://hackclub.slack.com/archives/C07UZSKJQRX
-  slackChannel: "#raspapi-ysws"
-  status: ended
-  deadline: '2025-03-10T23:59:59'
-- name: Black Box
-  description: Create a constrained, interactive C program and get a portable device to run it on!
-  website: https://blackbox.hackclub.com
-  slack: https://hackclub.slack.com/archives/C08APN1CKEJ
-  slackChannel: "#black-box"
-  status: ended
-  deadline: '2025-03-29T23:59:59'
-- name: Hackpad
-  description: Design a keyboard get the parts! Please note this is only open to those who have build a Macropad previously.
-  website: https://github.com/hackclub/hackpad
-  slack: https://hackclub.slack.com/archives/C07LESGH0B0
-  slackChannel: "#hackpad"
-  status: ended
-  deadline: '2025-03-16T23:59:59'
-  participants: 719
-- name: Sidequests
-  description: A short-run low-volume low-effort ysws series from nora & co.
-  detailedDescription: |
-    #1: SkinAmp (ft. phoebe!) - Ship a WinAmp skin, we'll send you the WinAmp source code on CD-R (started 2025-03-26, ended 2025-04-13).
-    #2: gemerald - Write something useful in Ruby, i'll send you a sticker (best few get a book!) (started 2025-04-10, ended 2025-04-25).
-  website: https://sidequests.hackclub.com/
-  slack: https://slack.com/archives/C08KCUK3NF5
-  slackChannel: "#sidequests"
-  status: ended
-- name: Lockin
-  description: Work on anything Wakatime-able on call with another Hack Clubber, spin for stickers at the end of the session.
-  website: https://lockin.hackclub.com/
-  slack: https://slack.com/archives/C08JV3ZV1DY
-  slackChannel: "#lock-in"
-  status: ended
-- name: BrowserBuddy
-  description: Build a Chrome extension, and Hack Club provides $30 to launch it on Chrome Web Store.
-  website: https://browserbuddy.hackclub.com/
-  slack: https://hackclub.slack.com/archives/C07MQBTNVRU
-  slackChannel: "#browser-buddy"
-  status: ended
-  deadline: '2025-03-19T23:59:59'
-  participants: 22
-- name: TerminalCraft
-  description: Build a terminal program and earn 5$ per hour for building your program to get hackable hardware.
-  detailedDescription: Build & publish a cross-platform terminal app. Be creative, open-source it, and snag your grant !
-  website: https://terminalcraft.hackclub.com/
-  slack: https://hackclub.slack.com/archives/C08F58MT3GV
-  slackChannel: "#terminal-craft"
-  status: active
-  deadline: '2025-12-31T23:59:59'
-- name: Pixeldust
-  description: Make a neopixel based PCB, get the parts to make one!
-  detailedDescription: Create a PCB using KiCad / other EDA. It should use neopixels and a Xiao RP2040, and act as a decoration. Once submitted you can get the parts to make one yourself!
-  website: https://pixeldust.hackclub.com/
-  slack: https://hackclub.slack.com/archives/C0895PXH53M
-  slackChannel: "#pixeldust"
-  status: ended
-  deadline: '2025-04-13T23:59:59'
-- name: Juice
-  description: Spend 100 hours in 2 months building a game, and we'll cover your Steam release and fund a flight to China for a pop-up shop.
-  website: https://juice.hackclub.com
-  slack: https://hackclub.slack.com/archives/C088UF12N1Z
-  slackChannel: "#juice"
-  status: ended
-  deadline: '2025-04-01T23:59:59'
-- name: Jungle
-  description: Spend time working on your game, get money to help publish it! Prizes include steam license, itch.io asset store credits, and much much more!
-  website: https://juice.hackclub.com/jungle 
-  slack: https://hackclub.slack.com/archives/C086MACKK43
-  slackChannel: "#jungle"
-  status: ended
-  deadline: '2025-04-01T23:59:59'
-- name: Infill
-  description: Design your own 3D printer mod, get $20 to build it!
-  website: https://github.com/hackclub/infill
-  slack: https://hackclub.slack.com/archives/C08B7LF58TX
-  slackChannel: "#infill"
-  status: ended
-  deadline: '2025-05-04T23:59:59'
-  participants: 380
-- name: Visioneer
-  description: Give your computer the gift of vision, get an esp32-s3-eye to see it through!
-  website: https://visioneer.hackclub.com
-  slack: https://hackclub.slack.com/archives/C082PCKJYMN
-  slackChannel: "#visioneer"
-  status: ended
-  deadline: '2025-04-20T23:59:59'
-- name: Hacklet
-  description: Spend two hours building a creative javascript bookmarklet, get $10 to buy a domain! 
-  website: http://hackclub.github.io/hacklet
-  slack: https://hackclub.slack.com/archives/C08PJMATU8Y
-  slackChannel: "#hacklet"
-  status: ended
-  deadline: '2025-05-10T23:59:59'
-- name: Asylum
-  description: Fast-paced hardware YSWS challenges.
-  website:
-  slack: https://hackclub.slack.com/archives/C083CCAAHM1
-  slackChannel: "#asylum"
-  status: ended
-  deadline: '2024-12-31T23:59:59'
-- name: Printboard
-  description: Design a 3D model that goes with the Ikea Skadis pegboard, and we will send you one!
-  website: https://printboard.hackclub.com/
-  slack: https://hackclub.slack.com/archives/C0853M4PCUA
-  slackChannel: "#printboard"
-  status: ended
-  deadline: '2025-02-16T23:59:59'
-  participants: 94
-- name: Minus Twelve
-  description: Create a useful tool and receive a shiny new microcontroller!
-  website: https://minustwelve.hackclub.com
-  slack: https://hackclub.slack.com/archives/C087S82MNFR
-  slackChannel: "#minus-twelve"
-  status: ended
-  deadline: '2025-01-27T23:59:59'
-- name: Hackapet
-  description: Make a pet game, get a hackable tamagotchi clone!
-  website: https://hackapet.hackclub.dev
-  slack: https://hackclub.slack.com/archives/C0809PN4TPE
-  slackChannel: "#hackapet"
-  status: ended
-  deadline: '2025-02-03T23:59:59'
-- name: Dessert
-  description: Make an Android app and earn a paid Google Developer account.
-  website:
-  slack: https://hackclub.slack.com/archives/C07N06B1FDY
-  slackChannel: "#dessert"
-  status: ended
-  deadline: '2025-01-10T23:59:59'
-- name: Cascade
-  description: Create animations with CSS and receive art supplies.
-  website: https://cascade.hackclub.com/
-  slack: https://hackclub.slack.com/archives/C07QA8HD48N
-  slackChannel: "#cascade-ysws"
-  status: ended
-  deadline: '2024-12-14T23:59:59'
-  participants: 55
-- name: Riceathon
-  description: Customize your Linux install, and get programmer socks or a Blåhaj.
-  website: https://github.com/HackClub/riceathon
-  slack: https://hackclub.slack.com/archives/C07MLF9A8H5
-  slackChannel: "#riceathon"
-  status: ended
-  deadline: '2025-01-10T23:59:59'
-  participants: 64
-- name: Hacky Holidays
-  description: Design a PCB holiday decoration this winter, get one shipped.
-  website: https://hacky-holidays.hackclub.com/
-  slack: https://hackclub.slack.com/archives/C083SK3G5D3
-  slackChannel: "#hacky-holidays"
-  status: ended
-  deadline: '2025-01-31T23:59:59'
-- name: Retrospect (J2ME edition)
-  description: Create a J2ME game (Java MIDlet) and have it delivered on a J2ME-capable phone.
-  website: https://retrospect.hackclub.com/j2me
-  slack: https://hackclub.slack.com/archives/C07MUFXNG82
-  slackChannel: "#retrospect"
-  status: ended
-  deadline: '2025-04-07T23:59:59'
-- name: Hackaccino
-  description: Build a 3D website and get a free frappuccino.
-  website: https://fraps.hackclub.com/
-  slack: https://hackclub.slack.com/archives/C078DFVL5LZ
-  slackChannel: "#fraps"
-  status: ended
-  deadline: '2025-06-30T23:59:59'
-  participants: 362
-- name: Cider
-  description: Create an iOS app and receive a $100 Apple Developer account to publish it.
-  website: https://cider.hackclub.com/
-  slack: https://hackclub.slack.com/archives/C073DTGENJ2
-  slackChannel: "#cider"
-  status: ended
-  deadline:
-  participants: 34
-- name: 10 Days of Tarot
-  description: Build a project or feature and get exclusive prizes for each card requirement you hit.
-  website: https://tarot.hackclub.com/
-  slack: https://slack.com/archives/C08L60RUQ92
-  slackChannel: "#10-days-of-tarot"
-  status: ended
-  deadline: '2025-04-13T23:59:59'
-- name: Thunder
-  description: 'You Ship A Slack bot. We Ship A limited edition Orpheus bucket hat.'
-  website:
-  slack: https://hackclub.slack.com/archives/C06V2GEV3MY
-  slackChannel: "#thunder"
-  status: ended
-  deadline: '2025-07-15T23:59:59'
-- name: Shipwrecked
-  description: 'You Ship 60 hours of work, 4 projects, and go viral. We Ship A ticket to an island hackathon in Boston.'
-  detailedDescription: 'You ship 60 hours of coding work, four shipped projects, and make one of them go viral. We ship you a ticket to Shipwrecked, a four-day, in-person hackathon on Cathleen Stone Island in the Boston Harbor, with travel stipends available.'
-  website: https://shipwrecked.hackclub.com
-  slack: https://hackclub.slack.com/archives/C073L9LB4K1
-  slackChannel: "#shipwrecked"
-  status: ended
-  deadline: '2025-08-08T15:00:00'
-- name: Neighborhood
-  description: 'You Ship 100 hours of coding on one project. We Ship A free summer of coding in San Francisco.'
-  detailedDescription: 'You ship 100 hours of coding work on a single, new, open-source project. We ship you a flight to San Francisco and cover your housing, food, and transit for up to three months while you code with other teenagers.'
-  website: https://neighborhood.hackclub.com
-  slack: https://hackclub.slack.com/archives/C073L9LB4K1
-  slackChannel: "#neighborhood"
-  status: ended
-  # deadline: '2025-08-31T23:59:59' # Neighborhood was ended early
+  - name: Overflow-hidden
+    description: ysws where you can't use a scrollbar
+    website: https://overflow-hidden.hackclub.com
+    slack: https://hackclub.slack.com/archives/C095HDJK3TQ
+    slackChannel: "#overflow-hidden"
+    status: ended
+    deadline: "2025-07-21T23:59:59"
+
+  - name: Swirl
+    description: Create a quality website with Scoops, get ice cream!
+    detailedDescription: Ship a static website (html + css) that has a Scoop, and get a grant for ice cream to enjoy! Scoops are made up of groups of three html / css features that add something of value to the website.
+    website: https://swirl.hackclub.com
+    slack: https://hackclub.slack.com/archives/C08FR0LMVHD
+    slackChannel: "#swirl"
+    status: ended
+    deadline: "2025-08-03T23:59:59"
+    participants: 40
+  - name: Grub
+    description: "You Ship A responsive website using only HTML and Tailwind CSS. We Ship A grant for junk food."
+    detailedDescription: "The grant amount is based on the number of unique features implemented:\\n$6 (Basic Meal): For 2 unique features.\\n$8 (Refreshment Combo): For 4 unique features.\\n$10 (Full Combo Meal): For 6 or more unique features."
+    website: https://grub.hackclub.com/
+    slack: https://hackclub.slack.com/archives/C08S9NCEULB
+    slackChannel: "#grub"
+    status: ended
+    deadline: "2025-08-03T23:59:59"
+  - name: Toppings
+    description: You ship an interactive website using framework-less JavaScript, we ship you a grant to an ice cream parlor.
+    website: https://toppings.hackclub.com/
+    slack: https://hackclub.slack.com/archives/C08R8V2E3LY
+    slackChannel: "#toppings"
+    status: ended
+    deadline: "2025-08-03T23:59:59"
+  - name: Waffles
+    description: You ship a website using HTML CSS and JavaScript, and get Waffles!!!
+    website: https://waffles.hackclub.com/
+    slack: https://hackclub.slack.com/archives/C08QBKX5WCD
+    slackChannel: "#waffles"
+    status: ended
+    deadline: "2025-08-03T23:59:59"
+
+  - name: Hackmate
+    description: Build a collaborative app, get upto $50 for cloud credits or a raspberry pi
+    website: https://hackmate.hackclub.dev
+    slack: https://hackclub.slack.com/archives/C092HR1LG20
+    slackChannel: "#hackmate"
+    status: ended
+    deadline: "2025-07-17T23:59:59"
+  - name: Converge
+    description: Build Discord/Slack bots, we ship domain names, server hosting, Blahajs, and more
+    website: https://submit.hackclub.com/converge-rsvp
+    slack: https://hackclub.slack.com/archives/C091UF79VDM
+    slackChannel: "#converge"
+    status: active
+    deadline: "2025-11-10T23:59:59"
+  - name: Gamefolio
+    description: Make a interactive portfolio website, get $20 for hosting or domains
+    website: http://gamefolio.hackclub.dev
+    slack: https://hackclub.slack.com/archives/C08RT4C2485
+    slackChannel: "#gamefolio"
+    status: ended
+    deadline: "2025-07-02T23:59:59"
+  - name: Extensify
+    description: Build an IDE extension, get a keychain or a premium theme for VS Code or Sublime Text!
+    website: https://extensify.hackclub.com/
+    slack: https://hackclub.slack.com/archives/C094H3V1Y81
+    slackChannel: "#extensify"
+    status: ended
+    deadline: "2025-07-07T23:59:59"
+  - name: Waveband
+    description: Create a program that uses RTL-SDR, and Hack Club sends you a dongle and antenna kit.
+    website: https://waveband.hackclub.com/
+    slack: https://hackclub.slack.com/archives/C082S5V95G8
+    slackChannel: "#waveband"
+    status: ended
+    deadline: "2025-07-11T23:59:59"
+  - name: Toolsmith
+    description: Build a AI extension (MCP tool), get $10 of AI credits.
+    website: https://toolsmith.hackclub.com/
+    slack: https://hackclub.slack.com/archives/C094X38BFT5
+    slackChannel: "#toolsmith"
+    status: ended
+    deadline: "2025-07-11T23:59:59"
+  - name: Smelt
+    description: Ship a Svelte/SvelteKit site, get awesome collectable swag!
+    website: https://smelt.hackclub.com/
+    slack: https://hackclub.slack.com/archives/C09535Y8E83
+    slackChannel: "#smelt"
+    status: ended
+    deadline: "2025-07-31T23:59:59"
+  - name: Highway
+    description: Make any hardware project, get up to 350 USD to build it! Keyboard, game console, rocket, robot, 3d printer, etc... Then, go to a 4-day hardware hackathon @ Github HQ this summer!
+    detailedDescription:
+    website: https://highway.hackclub.com
+    slack: https://hackclub.slack.com/archives/C08Q1H6D79B
+    slackChannel: "#highway"
+    status: ended
+    deadline: "2025-07-31T23:59:59"
+  - name: Cafe
+    description: Collect cups, progress the graph, earn bonuses!
+    detailedDescription: Work on a personal project in a huddle, get a cup every hour. Getting certain amounts of cups can get you special prizes! See the cafe-bulletin channel for more information!
+    website:
+    slack: https://hackclub.slack.com/archives/C02A74Z7G7L
+    slackChannel: "#cafe"
+    status: ended
+    deadline: "2025-02-17T23:59:59"
+  - name: RaspAPI
+    description: Make an API get a Raspberry Pi
+    detailedDescription: Create an original API using any programming language or framework that you prefer and get a Raspberry Pi Zero 2 W to host it on! The API can be anything you want. The possibilities are endless!
+    website: https://raspapi.hackclub.com/
+    slack: https://hackclub.slack.com/archives/C07UZSKJQRX
+    slackChannel: "#raspapi-ysws"
+    status: ended
+    deadline: "2025-03-10T23:59:59"
+  - name: Black Box
+    description: Create a constrained, interactive C program and get a portable device to run it on!
+    website: https://blackbox.hackclub.com
+    slack: https://hackclub.slack.com/archives/C08APN1CKEJ
+    slackChannel: "#black-box"
+    status: ended
+    deadline: "2025-03-29T23:59:59"
+  - name: Hackpad
+    description: Design a keyboard get the parts! Please note this is only open to those who have build a Macropad previously.
+    website: https://github.com/hackclub/hackpad
+    slack: https://hackclub.slack.com/archives/C07LESGH0B0
+    slackChannel: "#hackpad"
+    status: ended
+    deadline: "2025-03-16T23:59:59"
+    participants: 719
+  - name: Sidequests
+    description: A short-run low-volume low-effort ysws series from nora & co.
+    detailedDescription: |
+      #1: SkinAmp (ft. phoebe!) - Ship a WinAmp skin, we'll send you the WinAmp source code on CD-R (started 2025-03-26, ended 2025-04-13).
+      #2: gemerald - Write something useful in Ruby, i'll send you a sticker (best few get a book!) (started 2025-04-10, ended 2025-04-25).
+    website: https://sidequests.hackclub.com/
+    slack: https://slack.com/archives/C08KCUK3NF5
+    slackChannel: "#sidequests"
+    status: ended
+  - name: Lockin
+    description: Work on anything Wakatime-able on call with another Hack Clubber, spin for stickers at the end of the session.
+    website: https://lockin.hackclub.com/
+    slack: https://slack.com/archives/C08JV3ZV1DY
+    slackChannel: "#lock-in"
+    status: ended
+  - name: BrowserBuddy
+    description: Build a Chrome extension, and Hack Club provides $30 to launch it on Chrome Web Store.
+    website: https://browserbuddy.hackclub.com/
+    slack: https://hackclub.slack.com/archives/C07MQBTNVRU
+    slackChannel: "#browser-buddy"
+    status: ended
+    deadline: "2025-03-19T23:59:59"
+    participants: 22
+  - name: TerminalCraft
+    description: Build a terminal program and earn 5$ per hour for building your program to get hackable hardware.
+    detailedDescription: Build & publish a cross-platform terminal app. Be creative, open-source it, and snag your grant !
+    website: https://terminalcraft.hackclub.com/
+    slack: https://hackclub.slack.com/archives/C08F58MT3GV
+    slackChannel: "#terminal-craft"
+    status: active
+    deadline: "2025-12-31T23:59:59"
+  - name: Pixeldust
+    description: Make a neopixel based PCB, get the parts to make one!
+    detailedDescription: Create a PCB using KiCad / other EDA. It should use neopixels and a Xiao RP2040, and act as a decoration. Once submitted you can get the parts to make one yourself!
+    website: https://pixeldust.hackclub.com/
+    slack: https://hackclub.slack.com/archives/C0895PXH53M
+    slackChannel: "#pixeldust"
+    status: ended
+    deadline: "2025-04-13T23:59:59"
+  - name: Juice
+    description: Spend 100 hours in 2 months building a game, and we'll cover your Steam release and fund a flight to China for a pop-up shop.
+    website: https://juice.hackclub.com
+    slack: https://hackclub.slack.com/archives/C088UF12N1Z
+    slackChannel: "#juice"
+    status: ended
+    deadline: "2025-04-01T23:59:59"
+  - name: Jungle
+    description: Spend time working on your game, get money to help publish it! Prizes include steam license, itch.io asset store credits, and much much more!
+    website: https://juice.hackclub.com/jungle
+    slack: https://hackclub.slack.com/archives/C086MACKK43
+    slackChannel: "#jungle"
+    status: ended
+    deadline: "2025-04-01T23:59:59"
+  - name: Infill
+    description: Design your own 3D printer mod, get $20 to build it!
+    website: https://github.com/hackclub/infill
+    slack: https://hackclub.slack.com/archives/C08B7LF58TX
+    slackChannel: "#infill"
+    status: ended
+    deadline: "2025-05-04T23:59:59"
+    participants: 380
+  - name: Visioneer
+    description: Give your computer the gift of vision, get an esp32-s3-eye to see it through!
+    website: https://visioneer.hackclub.com
+    slack: https://hackclub.slack.com/archives/C082PCKJYMN
+    slackChannel: "#visioneer"
+    status: ended
+    deadline: "2025-04-20T23:59:59"
+  - name: Hacklet
+    description: Spend two hours building a creative javascript bookmarklet, get $10 to buy a domain!
+    website: http://hackclub.github.io/hacklet
+    slack: https://hackclub.slack.com/archives/C08PJMATU8Y
+    slackChannel: "#hacklet"
+    status: ended
+    deadline: "2025-05-10T23:59:59"
+  - name: Asylum
+    description: Fast-paced hardware YSWS challenges.
+    website:
+    slack: https://hackclub.slack.com/archives/C083CCAAHM1
+    slackChannel: "#asylum"
+    status: ended
+    deadline: "2024-12-31T23:59:59"
+  - name: Printboard
+    description: Design a 3D model that goes with the Ikea Skadis pegboard, and we will send you one!
+    website: https://printboard.hackclub.com/
+    slack: https://hackclub.slack.com/archives/C0853M4PCUA
+    slackChannel: "#printboard"
+    status: ended
+    deadline: "2025-02-16T23:59:59"
+    participants: 94
+  - name: Minus Twelve
+    description: Create a useful tool and receive a shiny new microcontroller!
+    website: https://minustwelve.hackclub.com
+    slack: https://hackclub.slack.com/archives/C087S82MNFR
+    slackChannel: "#minus-twelve"
+    status: ended
+    deadline: "2025-01-27T23:59:59"
+  - name: Hackapet
+    description: Make a pet game, get a hackable tamagotchi clone!
+    website: https://hackapet.hackclub.dev
+    slack: https://hackclub.slack.com/archives/C0809PN4TPE
+    slackChannel: "#hackapet"
+    status: ended
+    deadline: "2025-02-03T23:59:59"
+  - name: Dessert
+    description: Make an Android app and earn a paid Google Developer account.
+    website:
+    slack: https://hackclub.slack.com/archives/C07N06B1FDY
+    slackChannel: "#dessert"
+    status: ended
+    deadline: "2025-01-10T23:59:59"
+  - name: Cascade
+    description: Create animations with CSS and receive art supplies.
+    website: https://cascade.hackclub.com/
+    slack: https://hackclub.slack.com/archives/C07QA8HD48N
+    slackChannel: "#cascade-ysws"
+    status: ended
+    deadline: "2024-12-14T23:59:59"
+    participants: 55
+  - name: Riceathon
+    description: Customize your Linux install, and get programmer socks or a Blåhaj.
+    website: https://github.com/HackClub/riceathon
+    slack: https://hackclub.slack.com/archives/C07MLF9A8H5
+    slackChannel: "#riceathon"
+    status: ended
+    deadline: "2025-01-10T23:59:59"
+    participants: 64
+  - name: Hacky Holidays
+    description: Design a PCB holiday decoration this winter, get one shipped.
+    website: https://hacky-holidays.hackclub.com/
+    slack: https://hackclub.slack.com/archives/C083SK3G5D3
+    slackChannel: "#hacky-holidays"
+    status: ended
+    deadline: "2025-01-31T23:59:59"
+  - name: Retrospect (J2ME edition)
+    description: Create a J2ME game (Java MIDlet) and have it delivered on a J2ME-capable phone.
+    website: https://retrospect.hackclub.com/j2me
+    slack: https://hackclub.slack.com/archives/C07MUFXNG82
+    slackChannel: "#retrospect"
+    status: ended
+    deadline: "2025-04-07T23:59:59"
+  - name: Hackaccino
+    description: Build a 3D website and get a free frappuccino.
+    website: https://fraps.hackclub.com/
+    slack: https://hackclub.slack.com/archives/C078DFVL5LZ
+    slackChannel: "#fraps"
+    status: ended
+    deadline: "2025-06-30T23:59:59"
+    participants: 362
+  - name: Cider
+    description: Create an iOS app and receive a $100 Apple Developer account to publish it.
+    website: https://cider.hackclub.com/
+    slack: https://hackclub.slack.com/archives/C073DTGENJ2
+    slackChannel: "#cider"
+    status: ended
+    deadline:
+    participants: 34
+  - name: 10 Days of Tarot
+    description: Build a project or feature and get exclusive prizes for each card requirement you hit.
+    website: https://tarot.hackclub.com/
+    slack: https://slack.com/archives/C08L60RUQ92
+    slackChannel: "#10-days-of-tarot"
+    status: ended
+    deadline: "2025-04-13T23:59:59"
+  - name: Thunder
+    description: "You Ship A Slack bot. We Ship A limited edition Orpheus bucket hat."
+    website:
+    slack: https://hackclub.slack.com/archives/C06V2GEV3MY
+    slackChannel: "#thunder"
+    status: ended
+    deadline: "2025-07-15T23:59:59"
+  - name: Shipwrecked
+    description: "You Ship 60 hours of work, 4 projects, and go viral. We Ship A ticket to an island hackathon in Boston."
+    detailedDescription: "You ship 60 hours of coding work, four shipped projects, and make one of them go viral. We ship you a ticket to Shipwrecked, a four-day, in-person hackathon on Cathleen Stone Island in the Boston Harbor, with travel stipends available."
+    website: https://shipwrecked.hackclub.com
+    slack: https://hackclub.slack.com/archives/C073L9LB4K1
+    slackChannel: "#shipwrecked"
+    status: ended
+    deadline: "2025-08-08T15:00:00"
+  - name: Neighborhood
+    description: "You Ship 100 hours of coding on one project. We Ship A free summer of coding in San Francisco."
+    detailedDescription: "You ship 100 hours of coding work on a single, new, open-source project. We ship you a flight to San Francisco and cover your housing, food, and transit for up to three months while you code with other teenagers."
+    website: https://neighborhood.hackclub.com
+    slack: https://hackclub.slack.com/archives/C073L9LB4K1
+    slackChannel: "#neighborhood"
+    status: ended
+    # deadline: '2025-08-31T23:59:59' # Neighborhood was ended early
 
 recentlyEnded:
-- name: Armed
-  description: Develop an arm assembly program, get lego.
-  website: https://armed.hackclub.com
-  slack: https://hackclub.slack.com/archives/C098S1A5ZAT
-  slackChannel: '#armed'
-  status: ended
-  deadline: '2025-09-01T23:59:59'
-- name: Authly
-  description: Build the weirdest and never-before-seen authentication system, get yubikeys, programmable nfc tags, antivirus giftcards and more!
-  website: https://authly.hackclub.com
-  slack: https://hackclub.slack.com/archives/C0963JU3CSD
-  slackChannel: "#authly"
-  status: ended
-  deadline: '2025-08-31T23:59:59'
-- name: Silicon
-  description: Design your own custom devboard and we'll fund it
-  website: https://silicon.hackclub.dev
-  slack: https://hackclub.slack.com/archives/C090WQ9JBTM
-  slackChannel: "#silicon"
-  status: ended
-  deadline: '2025-08-06T23:59:59'
-- name: cmd + k
-  description: Build a Raycast extension, get Raycast Pro & stickers 
-  website: https://cmd-k.hackclub.com/
-  slack: https://hackclub.slack.com/archives/C0981BXG124
-  slackChannel: "#cmd-k"
-  status: ended
-  deadline: '2025-08-17T23:59:59'
-- name: Solder
-  description: Design and solder your own custom PCB with a free electronics kit!
-  website: https://solder.hackclub.com/
-  slack: https://slack.com/archives/C08L288G22Y
-  slackChannel: "#solder"
-  status: ended
-  deadline: '2025-06-30T23:59:59'
+  - name: Armed
+    description: Develop an arm assembly program, get lego.
+    website: https://armed.hackclub.com
+    slack: https://hackclub.slack.com/archives/C098S1A5ZAT
+    slackChannel: "#armed"
+    status: ended
+    deadline: "2025-09-01T23:59:59"
+  - name: Authly
+    description: Build the weirdest and never-before-seen authentication system, get yubikeys, programmable nfc tags, antivirus giftcards and more!
+    website: https://authly.hackclub.com
+    slack: https://hackclub.slack.com/archives/C0963JU3CSD
+    slackChannel: "#authly"
+    status: ended
+    deadline: "2025-08-31T23:59:59"
+  - name: Silicon
+    description: Design your own custom devboard and we'll fund it
+    website: https://silicon.hackclub.dev
+    slack: https://hackclub.slack.com/archives/C090WQ9JBTM
+    slackChannel: "#silicon"
+    status: ended
+    deadline: "2025-08-06T23:59:59"
+  - name: cmd + k
+    description: Build a Raycast extension, get Raycast Pro & stickers
+    website: https://cmd-k.hackclub.com/
+    slack: https://hackclub.slack.com/archives/C0981BXG124
+    slackChannel: "#cmd-k"
+    status: ended
+    deadline: "2025-08-17T23:59:59"
+  - name: Solder
+    description: Design and solder your own custom PCB with a free electronics kit!
+    website: https://solder.hackclub.com/
+    slack: https://slack.com/archives/C08L288G22Y
+    slackChannel: "#solder"
+    status: ended
+    deadline: "2025-06-30T23:59:59"
 
 indefinite:
-- name: Sprig
-  description: Build a JS game and play it on your own console.
-  website: https://sprig.hackclub.com/
-  slack: https://hackclub.slack.com/archives/C02UN35M7LG
-  slackChannel: "#sprig"
-  status: active
-  participants: 657
-- name: OnBoard
-  description: Design a PCB and we'll fabricate it for you.
-  website: https://hackclub.com/onboard
-  slack: https://hackclub.slack.com/archives/C056AMWSFKJ
-  slackChannel: "#electronics"
-  status: ended
-  participants: 1000
-- name: Boba Drops
-  description: Build a website and get boba!
-  website: https://boba.hackclub.com/
-  slack: https://hackclub.slack.com/archives/C06UJR8QW0M
-  slackChannel: "#boba"
-  status: active
-  participants: 1253
-- name: Boba Olympics
-  description: Hack Clubbers team up to build websites in wild weekly categories
-  website: https://olympics.hackclub.com/
-  slack: https://hackclub.slack.com/archives/C06UJR8QW0M
-  slackChannel: "#boba"
-  status: active
-- name: OnBoard Live
-  description: Design a PCB live on YouTube for $5/hour PCB credit.
-  website:
-  slack: https://hackclub.slack.com/archives/C07F3EA2L8G
-  slackChannel: "#onboard-live"
-  status: ended
-- name: foodie
-  description: code and eat!
-  detailedDescription: you ship a food related project, we ship food credits!
-  website: https://foodie.hackclub.com
-  slack: https://hackclub.slack.com/archives/C09DLGM81E1
-  slackChannel: "#foodie"
-  status: ended
+  - name: Sprig
+    description: Build a JS game and play it on your own console.
+    website: https://sprig.hackclub.com/
+    slack: https://hackclub.slack.com/archives/C02UN35M7LG
+    slackChannel: "#sprig"
+    status: active
+    participants: 657
+  - name: OnBoard
+    description: Design a PCB and we'll fabricate it for you.
+    website: https://hackclub.com/onboard
+    slack: https://hackclub.slack.com/archives/C056AMWSFKJ
+    slackChannel: "#electronics"
+    status: ended
+    participants: 1000
+  - name: Boba Drops
+    description: Build a website and get boba!
+    website: https://boba.hackclub.com/
+    slack: https://hackclub.slack.com/archives/C06UJR8QW0M
+    slackChannel: "#boba"
+    status: active
+    participants: 1253
+  - name: Boba Olympics
+    description: Hack Clubbers team up to build websites in wild weekly categories
+    website: https://olympics.hackclub.com/
+    slack: https://hackclub.slack.com/archives/C06UJR8QW0M
+    slackChannel: "#boba"
+    status: active
+  - name: OnBoard Live
+    description: Design a PCB live on YouTube for $5/hour PCB credit.
+    website:
+    slack: https://hackclub.slack.com/archives/C07F3EA2L8G
+    slackChannel: "#onboard-live"
+    status: ended
+  - name: foodie
+    description: code and eat!
+    detailedDescription: you ship a food related project, we ship food credits!
+    website: https://foodie.hackclub.com
+    slack: https://hackclub.slack.com/archives/C09DLGM81E1
+    slackChannel: "#foodie"
+    status: ended
 drafts:
-- name: Rooted
-  description: Spend time coding, come to BornHack 🏕️ ∣ RSVP
-  detailedDescription: Spend time on projects and get a ticket to come to Hack Clubs site at BornHack! STILL A WIP, RSVP NOW!
-  website: https://rooted.hackclub.com/
-  slack: https://hackclub.enterprise.slack.com/archives/C09LYU1S23Y
-  slackChannel: "#rooted"
-  status: draft
-- name: issued
-  description: code to design hack-themed apparel
-  detailedDescription: you code to design hack-themed apparel, we ship popular designs as real clothes!
-  website: https://issued-ysws.vercel.app
-  slack: https://hackclub.slack.com/archives/C09C9M0N2UC
-  slackChannel: "#issued"
-  status: draft
-- name: Swatchbox
-  description: You ship a modular art component, we ship the swatchbox to go with it!
-  website:
-  slack: https://hackclub.slack.com/archives/C094R49MS9Y
-  slackChannel: "#swatchbox"
-  status: draft
-- name: Rube Goldburg YSWS
-  description: Create complex chain reaction machines and contraptions
-  website:
-  slack: https://hackclub.slack.com/archives/C094U05FAE6
-  slackChannel: "#rube-goldberg-ysws"
-  status: draft
-- name: Poetry
-  description: "You ship: poetry (details to be decided soon) We ship: Maybe a poster or smth?"
-  website:
-  slack: "#poetry-ysws"
-  slackChannel: https://hackclub.slack.com/archives/C095DDUVCJX
-  status: draft
-- name: Plunge
-  description: DESIGN A PLUNGER-STYLE COOKIE CUTTER, GET IT SHIPPED!
-  website: http://plunge.hackclub.com/
-  slack: https://hackclub.slack.com/archives/C0955KVD1SA
-  slackChannel: "#plunge"
-  status: draft
-- name: Aquarium
-  description: Build aquatic-themed projects and digital ecosystems
-  website:
-  slack: https://hackclub.slack.com/archives/C095PTABEJK
-  slackChannel: "#aquarium"
-  status: draft
-- name: Apogee
-  description: a rocketry ysws - still workshopping the idea!
-  website: 
-  slack: https://hackclub.slack.com/archives/C095RKGV5J4
-  slackChannel: "#apogee"
-  status: draft
-- name: Slushies
-  description: Earn $5 for deploying your Flask app (WIP)
-  website: https://slushies.vercel.app/
-  slack: https://hackclub.slack.com/archives/C097GP305G8
-  slackChannel: "#slushies"
-  status: draft
-- name: Glossarium
-  description: You ship anything that can provide knowledge (a comic, a tutorial, a how-to...) We ship a zine from Julia Evans
-  website: https://mathiasdpx.github.io/glossarium/
-  slack: https://hackclub.slack.com/archives/C096L6J19PY
-  slackChannel: "#glossarium"
-  status: draft
-- name: Hack A Home
-  description: You Ship a Home Assistant with Software,PCB and Case, We Ship a grant ($150 Max)to make it. 
-  detailedDescription: |
-    Build a home assistant with Software,PCB and Case . We will send u a grant ($150 Max)to make it.
-  website:
-  slack: https://hackclub.slack.com/archives/C08N4UN6AUS
-  slackChannel: "#hack-a-home"
-  status: draft
-- name: Hackumentary
-  description: You Ship a project with dev vlogs, We Ship points through which you can buy goodies 
-  detailedDescription: |
-    Build a project with daily dev vlogs, we ship you points for every dev vlog you create, which you can use to purchase exciting goodies after shipping your project
-  website:
-  slack: https://hackclub.slack.com/archives/C08NH401M2S
-  slackChannel: "#hackumentary"
-  status: draft
-- name: Reef
-  description: Ship a deep learning project (AI/ML/LLM/NN), get a custom coral based accelerator.
-  website:
-  slack: https://hackclub.slack.com/archives/C08K33ZUUR5
-  slackChannel: "#reef"
-  status: draft
-- name: Hackducky
-  description: Create A DuckyScript get a Rubber Ducky ! ( hackducky )
-  website:
-  slack: https://hackclub.slack.com/archives/C08B8HZBC85
-  slackChannel: "#hackducky"
-  status: draft
-- name: HackABand
-  description: ship a wristband design and we ship you fabric woven wristband with NFC chip
-  website: https://hackaband.vercel.app/
-  slack: https://hackclub.slack.com/archives/C089WSLC59V
-  slackChannel: "#hack-a-band"
-  status: draft
-- name: Forge
-  description: Design a 3D model that solves a problem and receive a custom 3D printer.
-  website: https://forge.hackclub.com/
-  slack: https://hackclub.slack.com/archives/C078GBDKC03
-  slackChannel: "#forge-updates"
-  status: draft
-- name: Vine
-  description: Create a song using open-source music software and receive a vinyl with your song.
-  website: https://vineysws.vercel.app/
-  slack: https://hackclub.slack.com/archives/C07N0VA3YGJ
-  slackChannel: "#vine-ysws"
-  status: draft
-- name: Hack Store
-  description: Use a free alternative app store and get a Google Developer account.
-  website: https://www.hackstore.dev/
-  slack: https://hackclub.slack.com/archives/C07BGFG6CDQ
-  slackChannel: "#hack-store"
-  status: draft
-- name: Light Up
-  description: Design an electronic circuit with lights, and Hack Club sends you the components and gifts.
-  website:
-  slack: https://hackclub.slack.com/archives/C07RNEJ13LJ
-  slackChannel: "#lightup-ysws"
-  status: draft
-- name: Aether
-  description: Build a Windows app, and Hack Club provides a Microsoft Store developer account.
-  website:
-  slack: https://hackclub.slack.com/archives/C07V78URSGL
-  slackChannel: "#aether-ysws"
-  status: draft
-- name: Onward
-  description: Build a robot using Arduino and receive one.
-  website:
-  slack: https://hackclub.slack.com/archives/C079G5MKC93
-  slackChannel: "#onward"
-  status: draft
-- name: Fishin Chips
-  description: Build TTL logic circuits without microcontrollers, get components to make them real!
-  detailedDescription: This is a TTL (transistor-transistor logic) YSWS, which means no microcontrollers will be given! Build fundamental digital electronics like adders, clocks, or even a 4-bit computer. Dream big, but focus on the electronic fundamentals.
-  website:
-  slack: https://hackclub.slack.com/archives/C089UMGEL82
-  slackChannel: "#fishin-chips"
-  status: draft
-- name: PicoJam
-  description: Create a PICO-8 game, get a PICO-8 license for free!
-  detailedDescription: Use PICO-8 Education Edition to build a game with your own assets (art, sound effects, etc). Your game should have a basic goal and at least 2 minutes of gameplay. The top winner will receive a Physical PICO-8 Emulator Device!
-  website:
-  slack: https://hackclub.slack.com/archives/C08CLJ29RA9
-  slackChannel: "#picojam"
-  status: draft
-- name: Hack the Line
-  description: Get an Asterisk server running, and we'll send you a VoIP phone.
-  website:
-  slack: https://hackclub.slack.com/archives/C08B6PHLADU
-  slackChannel: "#hacktheline"
-  status: draft
-- name: Constellation
-  description: You ship a self host, full stack website, we ship a Raspberry Pi Zero 2 W to host it on
-  website:
-  slack: https://slack.com/archives/C07TQPAGAMA
-  slackChannel: "#constellation"
-  status: ended
-- name: Jetsu
-  description: You ship a ML Robot, We ship a Jetson Nano / Jetson Orin Nano
-  detailedDescription: |
-    Event Dates: 1st June to 31st July
-    Participants will receive the necessary funding to build their robots.
-    Before funding, participants must:
-      - Submit a Bill of Materials (BOM) listing the expected components.
-      - Submit their initial machine learning project on GitHub with a well-documented README.
-    Machine learning models will be developed on laptops to control the robots.
-    Coding activity will be tracked using WakaTime.
-    Participants must log their work hours in a detailed project journal.
-    Rewards & Incentives:
-      - All participants who successfully complete the project will receive a Jetson Nano Developer Kit (4GB).
-      - Those who invest 100+ hours will be rewarded with a NVIDIA Jetson Orin (8GB).
-  website: https://jetsu.vercel.app
-  slack: https://slack.com/archives/C08GPNV0P0W
-  slackChannel: "#jetsu"
-  status: draft
-  deadline: '2025-07-31T23:59:59'
-- name: Hackclub market
-  description: You can buy/sell pcb's online
-  website: https://market.hackclub.com
-  slack: https://app.slack.com/client/T0266FRGM/C089VQAULJ0
-  slackChannel: "#hack-club-market"
-  status: draft
-- name: Lightsaber
-  description: You ship a beat saber map, we ship a(n) <undecided>.
-  website:
-  slack: https://slack.com/archives/C08C8PC40BA
-  slackChannel: "#lightsaber"
-  status: draft
-- name: Turquoise
-  description: You ship a linux distro, we ship a custom Hack Club skirt
-  website:
-  slack: https://slack.com/archives/C08BAEP4SCX
-  slackChannel: "#turquoise"
-  status: draft
-- name: Wetube
-  description: You ship a YouTube channel, we ship points for every video to spend on video equipment!
-  website: https://wetubeysws.vercel.app/
-  slack: https://slack.com/archives/C07U8QM9MEF
-  slackChannel: "#wetube"
-  status: draft
-- name: Mini MIDI Magic
-  description: You ship a custom MIDI Synth/Controller with the firmware, we make it and send it to you!
-  website:
-  slack: https://slack.com/archives/C081ZV47Z8D
-  slackChannel: "#mini-midi-magic"
-  status: draft
-- name: Glyphic
-  description: You Ship a cool and advanced Manim animation visualizing something, We Ship a Lamy Safari Fountain Pen
-  website:
-  slack: https://slack.com/archives/C087E2VDBL3
-  slackChannel: "#glyphic"
-  status: draft
-- name: Pridehaj
-  description: You ship a pride themed website, we ship a blahaj
-  website:
-  slack: https://slack.com/archives/C08BL0ELHLJ
-  slackChannel: "#pridehaj"
-  status: draft
-- name: Hack Drive
-  description: You Ship a cool filesystem/something using FUSE, We Ship a Hack Club branded flash drive
-  website: https://hackdrive.radi8.dev/
-  slack: https://slack.com/archives/C08EDPJ544E
-  slackChannel: "#hackdrive-ysws"
-  status: draft
-- name: Hackmouse
-  description: Design a PCB & case for a mouse and get the parts shipped to you.
-  website:
-  slack: https://slack.com/archives/C08JYC7RQT1
-  slackChannel: "#hackmouse"
-  status: draft
-- name: The Ride
-  description: You ship a PCB to go on an adventure, we give you the opportunity to build an (offroad) bike at HQ and go on that adventure.
-  website:
-  slack: https://slack.com/archives/C08L5UZTH0X
-  slackChannel: "#the-ride"
-  status: draft
-- name: Trainix
-  description: Build an RL model for math problems and win an ESP32-S3 + OLED Module. Top 3 get an NVIDIA Jetson Orin Nano Developer Kit.
-  website:
-  slack: https://hackclub.slack.com/archives/C08M1F3DYSE
-  slackChannel: "#trainix"
-  status: draft
-- name: RPG
-  description: Work together with other hack clubbers to fight bosses and earn awesome loot and an exclusive trading card for those who help defeat each boss!
-  website: https://rpg.hackclub.com/
-  slack: https://slack.com/archives/C08JCNN7C59
-  slackChannel: "#rpg"
-  status: draft
-- name: Pyramid Scheme
-  description: Put up Hack Club posters to earn prizes.
-  website:
-  slack: https://hackclub.slack.com/archives/C07N1TCHY3T
-  slackChannel: "#pyramid-scheme"
-  status: ended
-  ended: Ended December 10th
-- name: 15 Days in Public
-  description: Learn, build, or do something everyday for 15 days and post progress reports.
-  website:
-  slack: https://hackclub.slack.com/archives/C045S4393CY
-  slackChannel: "#15-days-in-public"
-  status: ended
-  ended: '2025-03-09T23:59:59'
-- name: Sock
-  description: Collaborate on a project for 10 days, get Hack Club socks!
-  website:
-  slack: https://hackclub.slack.com/archives/C08DPRYMWF8
-  slackChannel: "#sock"
-  status: ended
-  ended: '2025-03-01T23:59:59'
-- name: Easel
-  description: Build a programming language, get fudge.
-  website: https://easel.hackclub.com/orpheus-finds-easel
-  slack: https://hackclub.slack.com/archives/C06T22ZFQGP
-  slackChannel: "#easel"
-  status: ended
-  ended: '2024-06-30T23:59:59'
-- name: Blot
-  description: Write code, make art, and get a drawing machine.
-  website: https://blot.hackclub.com/
-  slack: https://hackclub.slack.com/archives/C04GCH8A91D
-  slackChannel: "#blot"
-  status: ended
-  ended: '2024-11-23T23:59:59'
-  participants: 192
-- name: Boba Manor
-  description: Website building with rewards.
-  website: https://manor.hackclub.com/
-  slack: https://hackclub.slack.com/archives/C06UJR8QW0M
-  slackChannel: "#boba"
-  status: ended
-  ended: Ended October 31st
-- name: Retrospect
-  description: Create a DOS game and have it delivered on a floppy disk.
-  website: https://retrospect.hackclub.com/
-  slack: https://hackclub.slack.com/archives/C07MUFXNG82
-  slackChannel: "#retrospect"
-  status: ended
-  ended: Ended October 8th
-- name: LLM YSWS
-  description: Projects using language models.
-  website:
-  slack: https://hackclub.slack.com/archives/C07KYNWR10W
-  slackChannel: "#llm / #zrl-land"
-  status: ended
-  ended: Ended October 1st
-  participants: 20
-- name: Arcade
-  description: The summer is yours for the making
-  website: https://hackclub.com/arcade
-  slack: https://hackclub.slack.com/archives/C06SBHMQU8G
-  slackChannel: "#hack-hour"
-  status: ended
-  ended: Ended September 1st
-  participants: 1229
-- name: The Bin
-  description: Hardware-related projects.
-  website: https://bin.hackclub.com/
-  slack: https://hackclub.slack.com/archives/C01FXNNF6F2
-  slackChannel: "#electronics"
-  status: ended
-  ended: Ended September 30th
-  participants: 277
-- name: HAM Radio YSWS
-  description: Related to HAM radio projects.
-  website:
-  slack: https://hackclub.slack.com/archives/C01G6UJT2RM
-  slackChannel: "#hamradio"
-  status: ended
-  ended: '2024-05-31T23:59:59'
-  participants: 14
-- name: Trick or Trace
-  description: Design a PCB this October, vote on the best designs, get a second grant.
-  website: https://trickortrace.hackclub.com/
-  slack: https://hackclub.slack.com/archives/C07QMQ26X4G
-  slackChannel: "#trick-or-trace"
-  status: ended
-  ended: Ended October 21st
-- name: Anchor
-  description: Design a VTuber-style logo for your High Seas project and receive custom stickers.
-  website: https://anchor.hackclub.com/
-  slack: https://hackclub.slack.com/archives/C07V5401VMY
-  slackChannel: "#anchor"
-  status: ended
-  ended: '2025-01-27T23:59:59'
-  participants: 40
-- name: High Seas
-  description: Work on projects, earn doubloons, and compete in the Wonderdome.
-  website: https://highseas.hackclub.com/
-  slack: https://hackclub.slack.com/archives/C07PZMBUNDS
-  slackChannel: "#high-seas"
-  status: ended
-  deadline: '2025-01-31T23:59:59'
-  participants: 1119
-- name: Neon
-  description: Build code, get a 64x32 LED matrix.
-  website: https://neon.hackclub.com/
-  slack: https://hackclub.slack.com/archives/C080GFRKXJ5
-  slackChannel: "#neon"
-  status: ended
-  deadline: '2025-01-31T23:59:59'
-  participants: 195
-- name: Say Cheese!
-  description: Fit a program in a QR code, get a portable printer and maybe a Blåhaj.
-  detailedDescription: Fit a program inside a QR code, and get a potentially cat-themed portable printer! The best project gets a Blåhaj.
-  website: https://saycheese.hackclub.com/
-  slack: https://hackclub.slack.com/archives/C07QKKZPVD0
-  slackChannel: "#saycheese"
-  status: ended
-  deadline: '2025-01-26T23:59:59'
-  participants: 370
-- name: Cargo Cult
-  description: Build a Rust CLI and get a Rust book.
-  website:
-  slack: https://slack.com/archives/C0121LVV79P
-  slackChannel: "#rust"
-  status: ended
-  ended: '2024-12-31T23:59:59'
-- name: Winter Boba Drops
-  description: Create a winter-themed static website, get a boba plushie!
-  slack: https://hackclub.slack.com/archives/C06UJR8QW0M
-  slackChannel: "#boba"
-  status: ended
-  ended: '2024-12-31T23:59:59'
-
+  - name: Rooted
+    description: Spend time coding, come to BornHack 🏕️ ∣ RSVP
+    detailedDescription: Spend time on projects and get a ticket to come to Hack Clubs site at BornHack! STILL A WIP, RSVP NOW!
+    website: https://rooted.hackclub.com/
+    slack: https://hackclub.enterprise.slack.com/archives/C09LYU1S23Y
+    slackChannel: "#rooted"
+    status: draft
+  - name: issued
+    description: code to design hack-themed apparel
+    detailedDescription: you code to design hack-themed apparel, we ship popular designs as real clothes!
+    website: https://issued-ysws.vercel.app
+    slack: https://hackclub.slack.com/archives/C09C9M0N2UC
+    slackChannel: "#issued"
+    status: draft
+  - name: Swatchbox
+    description: You ship a modular art component, we ship the swatchbox to go with it!
+    website:
+    slack: https://hackclub.slack.com/archives/C094R49MS9Y
+    slackChannel: "#swatchbox"
+    status: draft
+  - name: Rube Goldburg YSWS
+    description: Create complex chain reaction machines and contraptions
+    website:
+    slack: https://hackclub.slack.com/archives/C094U05FAE6
+    slackChannel: "#rube-goldberg-ysws"
+    status: draft
+  - name: Poetry
+    description: "You ship: poetry (details to be decided soon) We ship: Maybe a poster or smth?"
+    website:
+    slack: "#poetry-ysws"
+    slackChannel: https://hackclub.slack.com/archives/C095DDUVCJX
+    status: draft
+  - name: Plunge
+    description: DESIGN A PLUNGER-STYLE COOKIE CUTTER, GET IT SHIPPED!
+    website: http://plunge.hackclub.com/
+    slack: https://hackclub.slack.com/archives/C0955KVD1SA
+    slackChannel: "#plunge"
+    status: draft
+  - name: Aquarium
+    description: Build aquatic-themed projects and digital ecosystems
+    website:
+    slack: https://hackclub.slack.com/archives/C095PTABEJK
+    slackChannel: "#aquarium"
+    status: draft
+  - name: Apogee
+    description: a rocketry ysws - still workshopping the idea!
+    website:
+    slack: https://hackclub.slack.com/archives/C095RKGV5J4
+    slackChannel: "#apogee"
+    status: draft
+  - name: Slushies
+    description: Earn $5 for deploying your Flask app (WIP)
+    website: https://slushies.vercel.app/
+    slack: https://hackclub.slack.com/archives/C097GP305G8
+    slackChannel: "#slushies"
+    status: draft
+  - name: Glossarium
+    description: You ship anything that can provide knowledge (a comic, a tutorial, a how-to...) We ship a zine from Julia Evans
+    website: https://mathiasdpx.github.io/glossarium/
+    slack: https://hackclub.slack.com/archives/C096L6J19PY
+    slackChannel: "#glossarium"
+    status: draft
+  - name: Hack A Home
+    description: You Ship a Home Assistant with Software,PCB and Case, We Ship a grant ($150 Max)to make it.
+    detailedDescription: |
+      Build a home assistant with Software,PCB and Case . We will send u a grant ($150 Max)to make it.
+    website:
+    slack: https://hackclub.slack.com/archives/C08N4UN6AUS
+    slackChannel: "#hack-a-home"
+    status: draft
+  - name: Hackumentary
+    description: You Ship a project with dev vlogs, We Ship points through which you can buy goodies
+    detailedDescription: |
+      Build a project with daily dev vlogs, we ship you points for every dev vlog you create, which you can use to purchase exciting goodies after shipping your project
+    website:
+    slack: https://hackclub.slack.com/archives/C08NH401M2S
+    slackChannel: "#hackumentary"
+    status: draft
+  - name: Reef
+    description: Ship a deep learning project (AI/ML/LLM/NN), get a custom coral based accelerator.
+    website:
+    slack: https://hackclub.slack.com/archives/C08K33ZUUR5
+    slackChannel: "#reef"
+    status: draft
+  - name: Hackducky
+    description: Create A DuckyScript get a Rubber Ducky ! ( hackducky )
+    website:
+    slack: https://hackclub.slack.com/archives/C08B8HZBC85
+    slackChannel: "#hackducky"
+    status: draft
+  - name: HackABand
+    description: ship a wristband design and we ship you fabric woven wristband with NFC chip
+    website: https://hackaband.vercel.app/
+    slack: https://hackclub.slack.com/archives/C089WSLC59V
+    slackChannel: "#hack-a-band"
+    status: draft
+  - name: Forge
+    description: Design a 3D model that solves a problem and receive a custom 3D printer.
+    website: https://forge.hackclub.com/
+    slack: https://hackclub.slack.com/archives/C078GBDKC03
+    slackChannel: "#forge-updates"
+    status: draft
+  - name: Vine
+    description: Create a song using open-source music software and receive a vinyl with your song.
+    website: https://vineysws.vercel.app/
+    slack: https://hackclub.slack.com/archives/C07N0VA3YGJ
+    slackChannel: "#vine-ysws"
+    status: draft
+  - name: Hack Store
+    description: Use a free alternative app store and get a Google Developer account.
+    website: https://www.hackstore.dev/
+    slack: https://hackclub.slack.com/archives/C07BGFG6CDQ
+    slackChannel: "#hack-store"
+    status: draft
+  - name: Light Up
+    description: Design an electronic circuit with lights, and Hack Club sends you the components and gifts.
+    website:
+    slack: https://hackclub.slack.com/archives/C07RNEJ13LJ
+    slackChannel: "#lightup-ysws"
+    status: draft
+  - name: Aether
+    description: Build a Windows app, and Hack Club provides a Microsoft Store developer account.
+    website:
+    slack: https://hackclub.slack.com/archives/C07V78URSGL
+    slackChannel: "#aether-ysws"
+    status: draft
+  - name: Onward
+    description: Build a robot using Arduino and receive one.
+    website:
+    slack: https://hackclub.slack.com/archives/C079G5MKC93
+    slackChannel: "#onward"
+    status: draft
+  - name: Fishin Chips
+    description: Build TTL logic circuits without microcontrollers, get components to make them real!
+    detailedDescription: This is a TTL (transistor-transistor logic) YSWS, which means no microcontrollers will be given! Build fundamental digital electronics like adders, clocks, or even a 4-bit computer. Dream big, but focus on the electronic fundamentals.
+    website:
+    slack: https://hackclub.slack.com/archives/C089UMGEL82
+    slackChannel: "#fishin-chips"
+    status: draft
+  - name: PicoJam
+    description: Create a PICO-8 game, get a PICO-8 license for free!
+    detailedDescription: Use PICO-8 Education Edition to build a game with your own assets (art, sound effects, etc). Your game should have a basic goal and at least 2 minutes of gameplay. The top winner will receive a Physical PICO-8 Emulator Device!
+    website:
+    slack: https://hackclub.slack.com/archives/C08CLJ29RA9
+    slackChannel: "#picojam"
+    status: draft
+  - name: Hack the Line
+    description: Get an Asterisk server running, and we'll send you a VoIP phone.
+    website:
+    slack: https://hackclub.slack.com/archives/C08B6PHLADU
+    slackChannel: "#hacktheline"
+    status: draft
+  - name: Constellation
+    description: You ship a self host, full stack website, we ship a Raspberry Pi Zero 2 W to host it on
+    website:
+    slack: https://slack.com/archives/C07TQPAGAMA
+    slackChannel: "#constellation"
+    status: ended
+  - name: Jetsu
+    description: You ship a ML Robot, We ship a Jetson Nano / Jetson Orin Nano
+    detailedDescription: |
+      Event Dates: 1st June to 31st July
+      Participants will receive the necessary funding to build their robots.
+      Before funding, participants must:
+        - Submit a Bill of Materials (BOM) listing the expected components.
+        - Submit their initial machine learning project on GitHub with a well-documented README.
+      Machine learning models will be developed on laptops to control the robots.
+      Coding activity will be tracked using WakaTime.
+      Participants must log their work hours in a detailed project journal.
+      Rewards & Incentives:
+        - All participants who successfully complete the project will receive a Jetson Nano Developer Kit (4GB).
+        - Those who invest 100+ hours will be rewarded with a NVIDIA Jetson Orin (8GB).
+    website: https://jetsu.vercel.app
+    slack: https://slack.com/archives/C08GPNV0P0W
+    slackChannel: "#jetsu"
+    status: draft
+    deadline: "2025-07-31T23:59:59"
+  - name: Hackclub market
+    description: You can buy/sell pcb's online
+    website: https://market.hackclub.com
+    slack: https://app.slack.com/client/T0266FRGM/C089VQAULJ0
+    slackChannel: "#hack-club-market"
+    status: draft
+  - name: Lightsaber
+    description: You ship a beat saber map, we ship a(n) <undecided>.
+    website:
+    slack: https://slack.com/archives/C08C8PC40BA
+    slackChannel: "#lightsaber"
+    status: draft
+  - name: Turquoise
+    description: You ship a linux distro, we ship a custom Hack Club skirt
+    website:
+    slack: https://slack.com/archives/C08BAEP4SCX
+    slackChannel: "#turquoise"
+    status: draft
+  - name: Wetube
+    description: You ship a YouTube channel, we ship points for every video to spend on video equipment!
+    website: https://wetubeysws.vercel.app/
+    slack: https://slack.com/archives/C07U8QM9MEF
+    slackChannel: "#wetube"
+    status: draft
+  - name: Mini MIDI Magic
+    description: You ship a custom MIDI Synth/Controller with the firmware, we make it and send it to you!
+    website:
+    slack: https://slack.com/archives/C081ZV47Z8D
+    slackChannel: "#mini-midi-magic"
+    status: draft
+  - name: Glyphic
+    description: You Ship a cool and advanced Manim animation visualizing something, We Ship a Lamy Safari Fountain Pen
+    website:
+    slack: https://slack.com/archives/C087E2VDBL3
+    slackChannel: "#glyphic"
+    status: draft
+  - name: Pridehaj
+    description: You ship a pride themed website, we ship a blahaj
+    website:
+    slack: https://slack.com/archives/C08BL0ELHLJ
+    slackChannel: "#pridehaj"
+    status: draft
+  - name: Hack Drive
+    description: You Ship a cool filesystem/something using FUSE, We Ship a Hack Club branded flash drive
+    website: https://hackdrive.radi8.dev/
+    slack: https://slack.com/archives/C08EDPJ544E
+    slackChannel: "#hackdrive-ysws"
+    status: draft
+  - name: Hackmouse
+    description: Design a PCB & case for a mouse and get the parts shipped to you.
+    website:
+    slack: https://slack.com/archives/C08JYC7RQT1
+    slackChannel: "#hackmouse"
+    status: draft
+  - name: The Ride
+    description: You ship a PCB to go on an adventure, we give you the opportunity to build an (offroad) bike at HQ and go on that adventure.
+    website:
+    slack: https://slack.com/archives/C08L5UZTH0X
+    slackChannel: "#the-ride"
+    status: draft
+  - name: Trainix
+    description: Build an RL model for math problems and win an ESP32-S3 + OLED Module. Top 3 get an NVIDIA Jetson Orin Nano Developer Kit.
+    website:
+    slack: https://hackclub.slack.com/archives/C08M1F3DYSE
+    slackChannel: "#trainix"
+    status: draft
+  - name: RPG
+    description: Work together with other hack clubbers to fight bosses and earn awesome loot and an exclusive trading card for those who help defeat each boss!
+    website: https://rpg.hackclub.com/
+    slack: https://slack.com/archives/C08JCNN7C59
+    slackChannel: "#rpg"
+    status: draft
+  - name: Pyramid Scheme
+    description: Put up Hack Club posters to earn prizes.
+    website:
+    slack: https://hackclub.slack.com/archives/C07N1TCHY3T
+    slackChannel: "#pyramid-scheme"
+    status: ended
+    ended: Ended December 10th
+  - name: 15 Days in Public
+    description: Learn, build, or do something everyday for 15 days and post progress reports.
+    website:
+    slack: https://hackclub.slack.com/archives/C045S4393CY
+    slackChannel: "#15-days-in-public"
+    status: ended
+    ended: "2025-03-09T23:59:59"
+  - name: Sock
+    description: Collaborate on a project for 10 days, get Hack Club socks!
+    website:
+    slack: https://hackclub.slack.com/archives/C08DPRYMWF8
+    slackChannel: "#sock"
+    status: ended
+    ended: "2025-03-01T23:59:59"
+  - name: Easel
+    description: Build a programming language, get fudge.
+    website: https://easel.hackclub.com/orpheus-finds-easel
+    slack: https://hackclub.slack.com/archives/C06T22ZFQGP
+    slackChannel: "#easel"
+    status: ended
+    ended: "2024-06-30T23:59:59"
+  - name: Blot
+    description: Write code, make art, and get a drawing machine.
+    website: https://blot.hackclub.com/
+    slack: https://hackclub.slack.com/archives/C04GCH8A91D
+    slackChannel: "#blot"
+    status: ended
+    ended: "2024-11-23T23:59:59"
+    participants: 192
+  - name: Boba Manor
+    description: Website building with rewards.
+    website: https://manor.hackclub.com/
+    slack: https://hackclub.slack.com/archives/C06UJR8QW0M
+    slackChannel: "#boba"
+    status: ended
+    ended: Ended October 31st
+  - name: Retrospect
+    description: Create a DOS game and have it delivered on a floppy disk.
+    website: https://retrospect.hackclub.com/
+    slack: https://hackclub.slack.com/archives/C07MUFXNG82
+    slackChannel: "#retrospect"
+    status: ended
+    ended: Ended October 8th
+  - name: LLM YSWS
+    description: Projects using language models.
+    website:
+    slack: https://hackclub.slack.com/archives/C07KYNWR10W
+    slackChannel: "#llm / #zrl-land"
+    status: ended
+    ended: Ended October 1st
+    participants: 20
+  - name: Arcade
+    description: The summer is yours for the making
+    website: https://hackclub.com/arcade
+    slack: https://hackclub.slack.com/archives/C06SBHMQU8G
+    slackChannel: "#hack-hour"
+    status: ended
+    ended: Ended September 1st
+    participants: 1229
+  - name: The Bin
+    description: Hardware-related projects.
+    website: https://bin.hackclub.com/
+    slack: https://hackclub.slack.com/archives/C01FXNNF6F2
+    slackChannel: "#electronics"
+    status: ended
+    ended: Ended September 30th
+    participants: 277
+  - name: HAM Radio YSWS
+    description: Related to HAM radio projects.
+    website:
+    slack: https://hackclub.slack.com/archives/C01G6UJT2RM
+    slackChannel: "#hamradio"
+    status: ended
+    ended: "2024-05-31T23:59:59"
+    participants: 14
+  - name: Trick or Trace
+    description: Design a PCB this October, vote on the best designs, get a second grant.
+    website: https://trickortrace.hackclub.com/
+    slack: https://hackclub.slack.com/archives/C07QMQ26X4G
+    slackChannel: "#trick-or-trace"
+    status: ended
+    ended: Ended October 21st
+  - name: Anchor
+    description: Design a VTuber-style logo for your High Seas project and receive custom stickers.
+    website: https://anchor.hackclub.com/
+    slack: https://hackclub.slack.com/archives/C07V5401VMY
+    slackChannel: "#anchor"
+    status: ended
+    ended: "2025-01-27T23:59:59"
+    participants: 40
+  - name: High Seas
+    description: Work on projects, earn doubloons, and compete in the Wonderdome.
+    website: https://highseas.hackclub.com/
+    slack: https://hackclub.slack.com/archives/C07PZMBUNDS
+    slackChannel: "#high-seas"
+    status: ended
+    deadline: "2025-01-31T23:59:59"
+    participants: 1119
+  - name: Neon
+    description: Build code, get a 64x32 LED matrix.
+    website: https://neon.hackclub.com/
+    slack: https://hackclub.slack.com/archives/C080GFRKXJ5
+    slackChannel: "#neon"
+    status: ended
+    deadline: "2025-01-31T23:59:59"
+    participants: 195
+  - name: Say Cheese!
+    description: Fit a program in a QR code, get a portable printer and maybe a Blåhaj.
+    detailedDescription: Fit a program inside a QR code, and get a potentially cat-themed portable printer! The best project gets a Blåhaj.
+    website: https://saycheese.hackclub.com/
+    slack: https://hackclub.slack.com/archives/C07QKKZPVD0
+    slackChannel: "#saycheese"
+    status: ended
+    deadline: "2025-01-26T23:59:59"
+    participants: 370
+  - name: Cargo Cult
+    description: Build a Rust CLI and get a Rust book.
+    website:
+    slack: https://slack.com/archives/C0121LVV79P
+    slackChannel: "#rust"
+    status: ended
+    ended: "2024-12-31T23:59:59"
+  - name: Winter Boba Drops
+    description: Create a winter-themed static website, get a boba plushie!
+    slack: https://hackclub.slack.com/archives/C06UJR8QW0M
+    slackChannel: "#boba"
+    status: ended
+    ended: "2024-12-31T23:59:59"
