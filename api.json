@@ -116,15 +116,6 @@
       "status": "active"
     },
     {
-      "name": "Hack Club The Game",
-      "website": "https://game.hackclub.com/?ref=ysws-catalog",
-      "deadline": "2026-04-01T00:00:00.000Z",
-      "slack": "https://hackclub.enterprise.slack.com/archives/C088DT8P7B8",
-      "slackChannel": "#hack-club-the-game",
-      "status": "active",
-      "detailedDescription": "Code for 40 hours & fly to Manhattan to compete in an IRL adventure game across Manhattan\""
-    },
-    {
       "name": "Wacky Files",
       "website": "https://wacky.hackclub.com/",
       "deadline": "2026-03-1",
