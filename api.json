@@ -1241,6 +1241,15 @@
       "status": "draft"
     },
     {
+      "name": "Shrine",
+      "description": "Make and code a project about your favorite fictional character, get a grant to buy merch of your character!",
+      "detailedDescription": "Shrine is a YSWS where you build a project (Must be tracked with Hackatime) about your favorite fictional character! It could be anything! Like, a website about your character, a Visual Novel with RenPy, anything related to that character! After you submit and we check your project, you'll receive a grant to go buy merch of your favorite character!",
+      "website": "https://shrine-site-swart.vercel.app/",
+      "slack": "https://hackclub.enterprise.slack.com/archives/C09A37XECJV",
+      "slackChannel": "#shrine",
+      "status": "draft"
+    },
+    {
       "name": "issued",
       "description": "code to design hack-themed apparel",
       "detailedDescription": "you code to design hack-themed apparel, we ship popular designs as real clothes!",
