@@ -1,5 +1,22 @@
 ---
 limitedTime:
+  - name: HackCraft
+    description: Create a Minecraft mod, get Stickers, Minecraft, another game or a server and terraria!
+    website: https://hackcraft.hackclub.com/
+    slack: https://hackclub.slack.com/archives/C07NQ5QAYNQ
+    slackChannel: "#mc-modding"
+    status: active
+    detailedDescription: Join HackCraft to build and ship your own Minecraft mod. Access exclusive resources and a supportive community.
+    steps:
+    - Make a mod.
+    - Publish it on Modrinth.
+    - Submit your mod to Hack Club.
+    - Receive prizes and enjoy!
+    requirements:
+    - Basic knowledge of Java programming.
+    details:
+    - Participants will receive a Minecraft Java Edition account, other game like hytale or server upon successful submission.
+    - Support is available through our Slack community.
   - name: Pxl
     description: Code any project, place pixels on a r/place-like canvas!
     website: https://pxl.hackclub.com
