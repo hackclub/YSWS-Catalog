@@ -3419,9 +3419,9 @@ html {
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url("https://hc-cdn.hel1.your-objectstorage.com/s/v3/c80667d6f86ce4aa_campfire-flagship.png");
+  background-image: url("https://hc-cdn.hel1.your-objectstorage.com/s/v3/a8a42a1647d352fa_card-bg.png");
   background-size: cover;
-  background-position: center;
+  background-position: bottom center;
   transition: filter 0.4s ease, transform 0.4s ease;
   z-index: 0;
   opacity: 1 !important;
@@ -3470,6 +3470,14 @@ html {
 .program-card--flagship-campfire:hover {
   border-color: rgba(255, 140, 55, 0.7) !important;
   box-shadow: 0 20px 40px rgba(255, 140, 55, 0.2);
+}
+
+.flagship-logo {
+  position: relative;
+  z-index: 2;
+  max-width: 200px;
+  height: auto;
+  margin-bottom: 1rem;
 }
 
 @media (max-width: 64em) {
