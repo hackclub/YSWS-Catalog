@@ -3393,3 +3393,30 @@ html {
   border-color: var(--color-wacky-accent) !important;
   box-shadow: 0 0 20px rgba(255, 231, 0, 0.3);
 }
+
+/* Flavortown-specific card styling */
+.program-card.flavortown-card {
+  background: #E7D5B3 !important;
+  color: #4D2B32 !important;
+}
+
+.program-card.flavortown-card h3,
+.program-card.flavortown-card p,
+.program-card.flavortown-card .program-deadline {
+  color: #4D2B32 !important;
+}
+
+.program-card.flavortown-card .program-completion-toggle {
+  transform: translateY(-50px);
+}
+
+.flavortown-footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  pointer-events: none;
+  border-radius: 0 0 12px 12px;
+  transform: translateY(20%) translateX(9px) scaleX(-1) scale(1.15);
+  z-index: 0;
+}
