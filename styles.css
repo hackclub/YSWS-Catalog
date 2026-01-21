@@ -3490,6 +3490,8 @@ html {
   .flagship-section .programs-grid {
     grid-template-columns: 1fr;
   }
+}
+
 /* Flavortown-specific card styling */
 .program-card.flavortown-card {
   background: #E7D5B3 !important;
