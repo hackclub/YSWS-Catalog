@@ -1,5 +1,12 @@
 ---
 limitedTime:
+  - name: Flavortown
+    deadline: 2026-03-31
+    description: Cook personal projects. Win free prizes.
+    website: https://flavortown.hackclub.com/?ref=ysws-catalog
+    slack: https://hackclub.enterprise.slack.com/archives/C09MPB8NE8H
+    slackChannel: "#flavortown"
+    status: active
   - name: HackCraft
     description: Create a Minecraft mod, get Stickers, Minecraft, another game or a server and terraria!
     website: https://hackcraft.hackclub.com/
@@ -110,13 +117,6 @@ limitedTime:
     website: https://game.hackclub.com/?ref=ysws-catalog
     slack: https://hackclub.enterprise.slack.com/archives/C088DT8P7B8
     slackChannel: "#hack-club-the-game"
-    status: active
-  - name: Flavortown
-    deadline: 2026-03-31
-    description: Cook personal projects. Win free prizes.
-    website: https://flavortown.hackclub.com/?ref=ysws-catalog
-    slack: https://hackclub.enterprise.slack.com/archives/C09MPB8NE8H
-    slackChannel: "#flavortown"
     status: active
   - name: Wacky Files
     website: https://wacky.hackclub.com/
