@@ -3394,6 +3394,102 @@ html {
   box-shadow: 0 0 20px rgba(255, 231, 0, 0.3);
 }
 
+/* Campfire Flagship Banner - spans 3 cards wide */
+.flagship-section {
+  margin-bottom: 2rem;
+}
+
+.flagship-section .programs-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.program-card--flagship-campfire {
+  grid-column: 1 / -1;
+  position: relative;
+  overflow: hidden;
+  min-height: 280px;
+  border: 2px solid rgba(255, 140, 55, 0.4) !important;
+  background: transparent !important;
+}
+
+/* Background image layer */
+.program-card--flagship-campfire::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("https://hc-cdn.hel1.your-objectstorage.com/s/v3/a8a42a1647d352fa_card-bg.png");
+  background-size: cover;
+  background-position: bottom center;
+  transition: filter 0.4s ease, transform 0.4s ease;
+  z-index: 0;
+  opacity: 1 !important;
+}
+
+/* Dark overlay */
+.program-card--flagship-campfire::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Hover: blur background */
+.program-card--flagship-campfire:hover::before {
+  filter: blur(4px);
+  transform: scale(1.05);
+}
+
+/* All content above the overlay */
+.program-card--flagship-campfire .program-header,
+.program-card--flagship-campfire p,
+.program-card--flagship-campfire .program-deadline,
+.program-card--flagship-campfire .program-footer {
+  position: relative;
+  z-index: 2;
+}
+
+/* Text colors for dark background */
+.program-card--flagship-campfire h3,
+.program-card--flagship-campfire p,
+.program-card--flagship-campfire .program-deadline {
+  color: white !important;
+}
+
+.program-card--flagship-campfire a {
+  color: var(--cyan) !important;
+}
+
+.program-card--flagship-campfire .program-status {
+  color: white !important;
+}
+
+.program-card--flagship-campfire:hover {
+  border-color: rgba(255, 140, 55, 0.7) !important;
+  box-shadow: 0 20px 40px rgba(255, 140, 55, 0.2);
+}
+
+.flagship-logo {
+  position: relative;
+  z-index: 2;
+  max-width: 200px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 64em) {
+  .flagship-section .programs-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 48em) {
+  .flagship-section .programs-grid {
+    grid-template-columns: 1fr;
+  }
 /* Flavortown-specific card styling */
 .program-card.flavortown-card {
   background: #E7D5B3 !important;
