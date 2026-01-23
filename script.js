@@ -306,6 +306,7 @@ function createProgramCard(program) {
     const pxlClass = program.name === 'Pxl' ? 'pxl-card' : '';
     const wackyFilesClass = program.name === 'Wacky Files' ? 'wacky-files-card' : '';
     const flavortownClass = program.name === 'Flavortown' ? 'flavortown-card' : '';
+    const jusstudyClass = program.name === "Jus'STUDY" ? 'jusstudy-card' : '';
     const encodedProgram = encodeURIComponent(JSON.stringify(program));
     
     const isCompletedByUser = completedPrograms.has(program.name);
@@ -344,9 +345,13 @@ function createProgramCard(program) {
     const flavortownFooter = program.name === 'Flavortown' ? `
         <img src="logos/flavorfooter.avif" alt="" class="flavortown-footer">
     ` : '';
+
+    const jusstudyAssets = program.name === "Jus'STUDY" ? `
+        <img src="logos/jusstudy-emi.png" alt="" class="jusstudy-mascot">
+    ` : '';
     
     return `
-        <div class="card program-card ${opensClass} ${blueprintClass} ${accelerateClass} ${baubleClass} ${meowClass} ${woofClass} ${pxlClass} ${wackyFilesClass} ${flavortownClass}" data-program="${encodedProgram}" data-name="${program.name}">
+        <div class="card program-card ${opensClass} ${blueprintClass} ${accelerateClass} ${baubleClass} ${meowClass} ${woofClass} ${pxlClass} ${wackyFilesClass} ${flavortownClass} ${jusstudyClass}" data-program="${encodedProgram}" data-name="${program.name}">
             ${baubleSnowflakes}
             ${pxlLogo}
             <div class="program-header">
@@ -372,6 +377,7 @@ function createProgramCard(program) {
                 </button>
             </div>
             ${flavortownFooter}
+            ${jusstudyAssets}
         </div>
     `;
 }
