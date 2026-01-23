@@ -3521,7 +3521,8 @@ html {
 
 /* Jusstudy-specific card styling */
 .program-card.jusstudy-card {
-  background-image: url('logos/jusstudy-background.jpg') !important;
+  background-color: #D6CBC0 !important;
+  background-image: url('logos/jusstudy-background.avif') !important;
   background-size: cover !important;
   background-position: center !important;
   position: relative;
