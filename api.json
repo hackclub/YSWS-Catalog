@@ -1254,6 +1254,16 @@
   ],
   "drafts": [
     {
+      "name": "Jus'STUDY",
+      "description": "Get study stuff by shipping projects that help you and others study!",
+      "website": null,
+      "slack": "https://hackclub.enterprise.slack.com/archives/C0A79Q9F5NZ",
+      "slackChannel": "#jus-study",
+      "status": "draft",
+      "deadline": null,
+      "detailedDescription": "Jus'STUDY is a YSWS, where you build Study Related Things and get Cool Study Materials in return!"
+    },
+    {
       "name": "Rooted",
       "description": "Spend time coding, come to BornHack 🏕️ ∣ RSVP",
       "detailedDescription": "Spend time on projects and get a ticket to come to Hack Clubs site at BornHack! STILL A WIP, RSVP NOW!",
