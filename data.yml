@@ -1026,6 +1026,11 @@ indefinite:
     slackChannel: "#foodie"
     status: ended
 drafts:
+  - name: Block to Circuit
+    description: Build logical systems in minecraft and ship it to build it in real life and get prizes
+    slack: https://slack.com/archives/C08JCNN7C59
+    slackChannel: "#block-to-circuit"
+    status: draft
   - name: Jus'STUDY
     description: Get study stuff by shipping projects that help you and others study!
     website: 
