@@ -1,5 +1,6 @@
-let programs = {};
 const apiUrl = "https://api2.hackclub.com/v0.1/Unified%20YSWS%20Projects%20DB/YSWS%20Programs?cache=true";
+
+let programs = {};
 let participants = [];
 let initialParticipants = new Map();
 let completedPrograms = new Set();
@@ -745,13 +746,14 @@ function resolveTimelineLabels(){
         const inside = row.querySelector('.timeline-label.inside');
         const outside = row.querySelector(".timeline-label.outside");
 
-        if(!block||!inside||!outside) return;
+        if(!block || !inside || !outside) return;
 
-        if(inside.scrollWidth > block.clientWidth){
+        // for measure width (width is 0 when display:none)
+        outside.classList.remove("hidden");
+        inside.classList.remove("hidden");
+        if (inside.scrollWidth > block.clientWidth) {
             inside.classList.add("hidden");
-            outside.classList.remove("hidden");
-        }else{
-            inside.classList.remove("hidden");
+        } else {
             outside.classList.add("hidden");
         }
     })
