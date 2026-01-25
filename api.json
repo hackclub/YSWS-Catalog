@@ -1,6 +1,37 @@
 {
   "limitedTime": [
     {
+      "name": "Flavortown",
+      "deadline": "2026-03-31T00:00:00.000Z",
+      "description": "Cook personal projects. Win free prizes.",
+      "website": "https://flavortown.hackclub.com/?ref=ysws-catalog",
+      "slack": "https://hackclub.enterprise.slack.com/archives/C09MPB8NE8H",
+      "slackChannel": "#flavortown",
+      "status": "active"
+    },
+    {
+      "name": "HackCraft",
+      "description": "Create a Minecraft mod, get Stickers, Minecraft, another game or a server and terraria!",
+      "website": "https://hackcraft.hackclub.com/",
+      "slack": "https://hackclub.slack.com/archives/C07NQ5QAYNQ",
+      "slackChannel": "#mc-modding",
+      "status": "active",
+      "detailedDescription": "Join HackCraft to build and ship your own Minecraft mod. Access exclusive resources and a supportive community.",
+      "steps": [
+        "Make a mod.",
+        "Publish it on Modrinth.",
+        "Submit your mod to Hack Club.",
+        "Receive prizes and enjoy!"
+      ],
+      "requirements": [
+        "Basic knowledge of Java programming."
+      ],
+      "details": [
+        "Participants will receive a Minecraft Java Edition account, other game like hytale or server upon successful submission.",
+        "Support is available through our Slack community."
+      ]
+    },
+    {
       "name": "Pxl",
       "description": "Code any project, place pixels on a r/place-like canvas!",
       "website": "https://pxl.hackclub.com",
@@ -23,7 +54,7 @@
       "slack": "https://hackclub.enterprise.slack.com/archives/C09KQ58CMHD",
       "slackChannel": "#hackvault",
       "status": "active",
-      "deadline": "2026-1-24",
+      "deadline": "2026-2-22",
       "detailedDescription": "Hackvault is the epic YSWS where you can earn either a Yubikey 5C for 5 hours of work making a password manager or for 10 hours a Yubikey Bio! Make anything from a server os for passwords to a mobile app!"
     },
     {
@@ -97,7 +128,7 @@
       "slack": "https://hackclub.enterprise.slack.com/archives/C09Q9CD9ZS8",
       "slackChannel": "#mosaic",
       "status": "active",
-      "deadline": "2026-12-31T00:00:00.000Z",
+      "deadline": "2026-03-14T00:00:00.000Z",
       "detailedDescription": "For 12 months, every month you get a random theme to build a full-stack web application! Earn cool prizes like a 3D Printer Grant and even a 1 year Render Hosting Plan!!",
       "steps": [
         "Join the Slack Channel",
@@ -109,19 +140,10 @@
     {
       "name": "Hack Club The Game",
       "deadline": "2026-04-10T00:00:00.000Z",
-      "description": "Code for 40 hours & fly out to Manhattan to compete in a IRL adventure game\"",
+      "description": "Code for 40 hours & fly out to Manhattan to compete in a IRL adventure game!",
       "website": "https://game.hackclub.com/?ref=ysws-catalog",
       "slack": "https://hackclub.enterprise.slack.com/archives/C088DT8P7B8",
       "slackChannel": "#hack-club-the-game",
-      "status": "active"
-    },
-    {
-      "name": "Flavortown",
-      "deadline": "2026-03-31T00:00:00.000Z",
-      "description": "Cook personal projects. Win free prizes.",
-      "website": "https://flavortown.hackclub.com/?ref=ysws-catalog",
-      "slack": "https://hackclub.enterprise.slack.com/archives/C09MPB8NE8H",
-      "slackChannel": "#flavortown",
       "status": "active"
     },
     {
@@ -214,6 +236,7 @@
       "website": "https://carnival.hackclub.com/",
       "slack": "https://hackclub.slack.com/archives/C091ZRTMF16",
       "slackChannel": "#carnival",
+      "deadline": "2026-02-26T23:59:59",
       "status": "active"
     },
     {
@@ -231,7 +254,8 @@
       "website": "https://midnight.hackclub.com/",
       "slack": "https://hackclub.slack.com/archives/C09L1BDSC68",
       "slackChannel": "#midnight",
-      "status": "active"
+      "status": "ended",
+      "deadline": "2025-12-28T00:00:00.000Z"
     },
     {
       "name": "Axiom",
@@ -257,7 +281,7 @@
       "slack": "https://hackclub.slack.com/archives/C083S537USC",
       "slackChannel": "#blueprint",
       "status": "active",
-      "deadline": "2026-01-31T00:00:00.000Z"
+      "deadline": "2026-03-31T00:00:00.000Z"
     },
     {
       "name": "Aces",
@@ -394,7 +418,7 @@
       "slack": "https://hackclub.slack.com/archives/C099VPF7V3P",
       "slackChannel": "#birthday-cards-ysws",
       "status": "active",
-      "deadline": "2026-08-12T23:59:59"
+      "deadline": "2026-08-08T23:59:59"
     },
     {
       "name": "Miniverge",
@@ -1232,12 +1256,38 @@
   ],
   "drafts": [
     {
+      "name": "Block to Circuit",
+      "description": "Build logical systems in minecraft and ship it to build it in real life and get prizes",
+      "slack": "https://hackclub.enterprise.slack.com/archives/C0AAM3UH8KC",
+      "slackChannel": "#block-to-circuit",
+      "status": "draft"
+    },
+    {
+      "name": "Jus'STUDY",
+      "description": "Get study stuff by shipping projects that help you and others study!",
+      "website": null,
+      "slack": "https://hackclub.enterprise.slack.com/archives/C0A79Q9F5NZ",
+      "slackChannel": "#jus-study",
+      "status": "draft",
+      "deadline": null,
+      "detailedDescription": "Jus'STUDY is a YSWS, where you build Study Related Things and get Cool Study Materials in return!"
+    },
+    {
       "name": "Rooted",
       "description": "Spend time coding, come to BornHack 🏕️ ∣ RSVP",
       "detailedDescription": "Spend time on projects and get a ticket to come to Hack Clubs site at BornHack! STILL A WIP, RSVP NOW!",
       "website": "https://rooted.hackclub.com/",
       "slack": "https://hackclub.enterprise.slack.com/archives/C09LYU1S23Y",
       "slackChannel": "#rooted",
+      "status": "draft"
+    },
+    {
+      "name": "Shrine",
+      "description": "Make and code a project about your favorite fictional character, get a grant to buy merch of your character!",
+      "detailedDescription": "Shrine is a YSWS where you build a project (Must be tracked with Hackatime) about your favorite fictional character! It could be anything! Like, a website about your character, a Visual Novel with RenPy, anything related to that character! After you submit and we check your project, you'll receive a grant to go buy merch of your favorite character!",
+      "website": "https://shrine-site-swart.vercel.app/",
+      "slack": "https://hackclub.enterprise.slack.com/archives/C09A37XECJV",
+      "slackChannel": "#shrine",
       "status": "draft"
     },
     {
