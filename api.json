@@ -54,7 +54,7 @@
       "slack": "https://hackclub.enterprise.slack.com/archives/C09KQ58CMHD",
       "slackChannel": "#hackvault",
       "status": "active",
-      "deadline": "2026-1-24",
+      "deadline": "2026-2-22",
       "detailedDescription": "Hackvault is the epic YSWS where you can earn either a Yubikey 5C for 5 hours of work making a password manager or for 10 hours a Yubikey Bio! Make anything from a server os for passwords to a mobile app!"
     },
     {
@@ -236,6 +236,7 @@
       "website": "https://carnival.hackclub.com/",
       "slack": "https://hackclub.slack.com/archives/C091ZRTMF16",
       "slackChannel": "#carnival",
+      "deadline": "2026-02-26T23:59:59",
       "status": "active"
     },
     {
@@ -253,7 +254,8 @@
       "website": "https://midnight.hackclub.com/",
       "slack": "https://hackclub.slack.com/archives/C09L1BDSC68",
       "slackChannel": "#midnight",
-      "status": "active"
+      "status": "ended",
+      "deadline": "2025-12-28T00:00:00.000Z"
     },
     {
       "name": "Axiom",
@@ -416,7 +418,7 @@
       "slack": "https://hackclub.slack.com/archives/C099VPF7V3P",
       "slackChannel": "#birthday-cards-ysws",
       "status": "active",
-      "deadline": "2026-08-12T23:59:59"
+      "deadline": "2026-08-08T23:59:59"
     },
     {
       "name": "Miniverge",
