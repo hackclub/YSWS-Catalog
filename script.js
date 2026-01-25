@@ -649,7 +649,7 @@ function searchPrograms(searchTerm) {
     searchTerm = searchTerm.toLowerCase().trim();
 
     programCards.forEach(card => {
-        const name = card.querySelector('h3').textContent.toLowerCase();
+        const name = card.dataset.name.toLowerCase();
         const description = card.querySelector('p').textContent.toLowerCase();
         const slackChannel = card.querySelector('.program-links')?.textContent.toLowerCase() || '';
         
