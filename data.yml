@@ -1028,10 +1028,10 @@ indefinite:
     slackChannel: "#foodie"
     status: ended
 drafts:
-  - name: Block to Circuit
-    description: Build logical systems in minecraft and ship it to build it in real life and get prizes
+  - name: Kit Lab
+    description: Build software according to themes and gets kits to build projects and ship projects made using only the kit electronics and get prizes!
     slack: https://hackclub.enterprise.slack.com/archives/C0AAM3UH8KC
-    slackChannel: "#block-to-circuit"
+    slackChannel: "#kit-lab"
     status: draft
   - name: Jus'STUDY
     description: Get study stuff by shipping projects that help you and others study!
