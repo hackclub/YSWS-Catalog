@@ -308,6 +308,7 @@ function createProgramCard(program) {
     const wackyFilesClass = program.name === 'Wacky Files' ? 'wacky-files-card' : '';
     const flavortownClass = program.name === 'Flavortown' ? 'flavortown-card' : '';
     const jusstudyClass = program.name === "Jus'STUDY" ? 'jusstudy-card' : '';
+    const rebootClass = program.name === 'Reboot' ? 'reboot-card' : '';
     const encodedProgram = encodeURIComponent(JSON.stringify(program));
     
     const isCompletedByUser = completedPrograms.has(program.name);
@@ -350,9 +351,13 @@ function createProgramCard(program) {
     const jusstudyAssets = program.name === "Jus'STUDY" ? `
         <img src="logos/jusstudy-emi.avif" alt="" class="jusstudy-mascot">
     ` : '';
+
+    const rebootLogo = program.name === 'Reboot' ? `
+        <img src="logos/img_2185-3.png" alt="" class="reboot-logo">
+    ` : '';
     
     return `
-        <div class="card program-card ${opensClass} ${blueprintClass} ${accelerateClass} ${baubleClass} ${meowClass} ${woofClass} ${pxlClass} ${wackyFilesClass} ${flavortownClass} ${jusstudyClass}" data-program="${encodedProgram}" data-name="${program.name}">
+        <div class="card program-card ${opensClass} ${blueprintClass} ${accelerateClass} ${baubleClass} ${meowClass} ${woofClass} ${pxlClass} ${wackyFilesClass} ${flavortownClass} ${jusstudyClass} ${rebootClass}" data-program="${encodedProgram}" data-name="${program.name}">
             ${baubleSnowflakes}
             ${pxlLogo}
             <div class="program-header">
@@ -379,6 +384,7 @@ function createProgramCard(program) {
             </div>
             ${flavortownFooter}
             ${jusstudyAssets}
+            ${rebootLogo}
         </div>
     `;
 }

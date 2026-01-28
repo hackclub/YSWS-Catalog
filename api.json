@@ -1,6 +1,15 @@
 {
   "limitedTime": [
     {
+      "name": "Reboot",
+      "deadline": "2026-02-11T23:59:59",
+      "description": "Restore old projects, upgrade your desktop setup!",
+      "website": "https://reboot.hackclub.com/",
+      "slack": "https://hackclub.enterprise.slack.com/archives/C0404BSAS0J",
+      "slackChannel": "#reboot",
+      "status": "active"
+    },
+    {
       "name": "Flavortown",
       "deadline": "2026-03-31T00:00:00.000Z",
       "description": "Cook personal projects. Win free prizes.",
