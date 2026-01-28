@@ -3547,3 +3547,37 @@ html {
   z-index: 3;
   pointer-events: none;
 }
+
+.program-card.reboot-card {
+  background-image: url('logos/background.PNG') !important;
+  background-size: cover !important;
+  background-position: center !important;
+  position: relative;
+  overflow: hidden;
+  color: white !important;
+}
+
+.program-card.reboot-card h3,
+.program-card.reboot-card p,
+.program-card.reboot-card .program-deadline,
+.program-card.reboot-card .program-footer a {
+  color: white !important;
+  position: relative;
+  z-index: 2;
+}
+
+.program-card.reboot-card .program-completion-toggle {
+  transform: translateY(-50px);
+  position: relative;
+  z-index: 4;
+}
+
+.reboot-logo {
+  position: absolute;
+  bottom: -10px;
+  right: 10px;
+  width: 150px;
+  height: auto;
+  z-index: 1;
+  pointer-events: none;
+}
