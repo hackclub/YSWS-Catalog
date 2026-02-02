@@ -231,7 +231,7 @@
       "slack": "https://hackclub.enterprise.slack.com/archives/C09TM7XKSSY",
       "slackChannel": "#construct",
       "status": "active",
-      "deadline": "2026-2-15",
+      "deadline": "2026-03-09T00:00:00.000Z",
       "steps": [
         "Log into construct.hackclub.com",
         "Make projects!",
@@ -1243,6 +1243,14 @@
       "website": "https://olympics.hackclub.com/",
       "slack": "https://hackclub.slack.com/archives/C06UJR8QW0M",
       "slackChannel": "#boba",
+      "status": "active"
+    },
+    {
+      "name": "Storyboard",
+      "description": "Make a themed visual novel, earn prizes!",
+      "website": "https://storyboard.hackclub.com/",
+      "slack": "https://hackclub.enterprise.slack.com/archives/C095E84SE1X",
+      "slackChannel": "#storyboard",
       "status": "active"
     },
     {
