@@ -1021,6 +1021,12 @@ indefinite:
     slack: https://hackclub.slack.com/archives/C06UJR8QW0M
     slackChannel: "#boba"
     status: active
+  - name: Storyboard
+    description: Make a themed visual novel, earn prizes! 
+    website: https://storyboard.hackclub.com/
+    slack: https://hackclub.enterprise.slack.com/archives/C095E84SE1X
+    slackChannel: "#storyboard"
+    status: active
   - name: OnBoard Live
     description: Design a PCB live on YouTube for $5/hour PCB credit.
     website:
@@ -1034,6 +1040,7 @@ indefinite:
     slack: https://hackclub.slack.com/archives/C09DLGM81E1
     slackChannel: "#foodie"
     status: ended
+  
 drafts:
   - name: Kit Lab
     description: Build software according to themes and gets kits to build projects and ship projects made using only the kit electronics and get prizes!
