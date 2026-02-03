@@ -1246,6 +1246,14 @@
       "status": "active"
     },
     {
+      "name": "Storyboard",
+      "description": "Make a themed visual novel, earn prizes!",
+      "website": "https://storyboard.hackclub.com/",
+      "slack": "https://hackclub.enterprise.slack.com/archives/C095E84SE1X",
+      "slackChannel": "#storyboard",
+      "status": "active"
+    },
+    {
       "name": "OnBoard Live",
       "description": "Design a PCB live on YouTube for $5/hour PCB credit.",
       "website": null,
