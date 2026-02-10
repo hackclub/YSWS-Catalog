@@ -1049,6 +1049,11 @@ indefinite:
     status: ended
   
 drafts:
+ - name: Track it
+    description: Build a map app, GeoGuessr-style game, or GPS tracker. Explore the world. Win prizes.
+    slack: https://hackclub.enterprise.slack.com/archives/C0ADWJB6QT0
+    slackChannel: "trackit"
+    status: draft
   - name: Kit Lab
     description: Build software according to themes and gets kits to build projects and ship projects made using only the kit electronics and get prizes!
     slack: https://hackclub.enterprise.slack.com/archives/C0AAM3UH8KC
