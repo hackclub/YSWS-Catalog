@@ -1286,6 +1286,7 @@
       "description": "Build a map app, GeoGuessr-style game, or GPS tracker. Explore the world. Win prizes.",
       "slack": "https://hackclub.enterprise.slack.com/archives/C0ADWJB6QT0",
       "slackChannel": "#track-it",
+      "website": "https://trackit-ysws.vercel.app/",
       "status": "draft"
     },
     {
