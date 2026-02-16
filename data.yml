@@ -1459,3 +1459,9 @@ drafts:
     slackChannel: "#boba"
     status: ended
     ended: "2024-12-31T23:59:59"
+  - name: The hackbook
+    description: Write segments on almost anything, get the hackbook shipped to you and win prizes!
+    slack: https://hackclub.enterprise.slack.com/archives/C0AF24QR8KY
+    slackchannel: #the-hackbook
+    status: draft
+    website: https://hackbook.fillout.com/rsvp
