@@ -309,6 +309,7 @@ function createProgramCard(program) {
     const flavortownClass = program.name === 'Flavortown' ? 'flavortown-card' : '';
     const jusstudyClass = program.name === "Jus'STUDY" ? 'jusstudy-card' : '';
     const rebootClass = program.name === 'Reboot' ? 'reboot-card' : '';
+    const kitlabClass = program.name === 'Kit Lab' ? 'kitlab-card' : '';
     const encodedProgram = encodeURIComponent(JSON.stringify(program));
     
     const isCompletedByUser = completedPrograms.has(program.name);
@@ -355,9 +356,23 @@ function createProgramCard(program) {
     const rebootLogo = program.name === 'Reboot' ? `
         <img src="logos/img_2185-3.png" alt="" class="reboot-logo">
     ` : '';
+    const kitlabLogo = program.name === 'Kit Lab' ? `
+        <img src="https://user-cdn.hackclub-assets.com/019c6d52-9b38-7999-bc31-5af022597486/logo.png"
+         alt="Kit Lab Logo"
+         class="kitlab-logo">
+    ` : '';
+
+    const kitlabGif = program.name === 'Kit Lab' ? `
+        <img src="https://user-cdn.hackclub-assets.com/019c6d52-b2a7-748c-a911-13ceb7095aaf/bg.gif"
+         alt=""
+         class="kitlab-gif">
+    ` : '';
+
     
     return `
-        <div class="card program-card ${opensClass} ${blueprintClass} ${accelerateClass} ${baubleClass} ${meowClass} ${woofClass} ${pxlClass} ${wackyFilesClass} ${flavortownClass} ${jusstudyClass} ${rebootClass}" data-program="${encodedProgram}" data-name="${program.name}">
+        <div class="card program-card ${opensClass} ${blueprintClass} ${accelerateClass} ${baubleClass} ${meowClass} ${woofClass} ${pxlClass} ${wackyFilesClass} ${flavortownClass} ${jusstudyClass} ${rebootClass} ${kitlabClass}" data-program="${encodedProgram}" data-name="${program.name}">
+            ${kitlabLogo}
+            ${kitlabGif}
             ${baubleSnowflakes}
             ${pxlLogo}
             <div class="program-header">
