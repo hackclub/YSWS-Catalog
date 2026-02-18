@@ -3581,3 +3581,84 @@ html {
   z-index: 1;
   pointer-events: none;
 }
+
+.program-card.kitlab-card {
+  position: relative;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0); /* transparent but readable over GIF */
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  border-radius: 16px; /* matches Hack Club standard */
+  color: white;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.kitlab-gif {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  transition: transform 0.5s ease;
+}
+
+.kitlab-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.25); /* slight overlay for readability */
+  z-index: 1;
+  pointer-events: none;
+  border-radius: inherit;
+  transition: background 0.3s ease;
+}
+
+.kitlab-logo {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 80px;
+  z-index: 2;
+}
+
+.program-card.kitlab-card .program-header,
+.program-card.kitlab-card .program-footer,
+.program-card.kitlab-card .program-deadline,
+.program-card.kitlab-card .program-participants,
+.program-card.kitlab-card p {
+  position: relative;
+  z-index: 2;
+  color: white; /* inherit readability */
+}
+
+.program-card.kitlab-card:hover {
+  border-color: #FF6F61;
+  box-shadow: 0 0 20px rgba(255, 111, 97, 0.4);
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.program-card.kitlab-card:hover .kitlab-gif {
+  transform: scale(1.1);
+}
+
+.program-card.kitlab-card h3,
+.program-card.kitlab-card p,
+.program-card.kitlab-card .program-deadline {
+  position: relative;
+  z-index: 2;
+}
+
+.program-card.kitlab-card a {
+  color: #FF6F61;
+  position: relative;
+  z-index: 2;
+}
+
+@media (max-width: 480px) {
+  .kitlab-logo {
+    width: 50px;
+    top: 8px;
+    right: 8px;
+  }
+}
