@@ -1465,3 +1465,9 @@ drafts:
     slackchannel: #the-hackbook
     status: draft
     website: https://hackbook.fillout.com/rsvp
+  - name: Rework
+    description: CAD a 3d printer mod, get $75 and 1kg of Hack Club filament to build it! 
+    slack: https://hackclub.enterprise.slack.com/archives/C0A5Q3L91U3
+    slackchannel: #rework
+    status: active
+    website: https://rework.hackclub.com
