@@ -299,6 +299,7 @@ function createProgramCard(program) {
     const deadlineClass = getDeadlineClass(program.deadline);
     
     const opensClass = program.opens && new Date() < new Date(program.opens) ? 'opens-soon' : '';
+    const slushiesClass = program.name === 'Slushies' ? 'slushies-card' : '';
     const blueprintClass = program.name === 'Blueprint' ? 'blueprint-card' : '';
     const accelerateClass = program.name === 'Accelerate' ? 'accelerate-card' : '';
     const baubleClass = program.name === 'Bauble' ? 'bauble-card' : '';
@@ -370,7 +371,7 @@ function createProgramCard(program) {
 
     
     return `
-        <div class="card program-card ${opensClass} ${blueprintClass} ${accelerateClass} ${baubleClass} ${meowClass} ${woofClass} ${pxlClass} ${wackyFilesClass} ${flavortownClass} ${jusstudyClass} ${rebootClass} ${kitlabClass}" data-program="${encodedProgram}" data-name="${program.name}">
+        <div class="card program-card ${opensClass} ${slushiesClass} ${blueprintClass} ${accelerateClass} ${baubleClass} ${meowClass} ${woofClass} ${pxlClass} ${wackyFilesClass} ${flavortownClass} ${jusstudyClass} ${rebootClass} ${kitlabClass}" data-program="${encodedProgram}" data-name="${program.name}">
             ${kitlabLogo}
             ${kitlabGif}
             ${baubleSnowflakes}

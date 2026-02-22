@@ -1,5 +1,12 @@
 ---
 limitedTime:
+  - name: Slushies
+    deadline: "2026-04-07T23:59:59"
+    description: Earn $5 for deploying your Flask app
+    website: https://slushies.hackclub.com/
+    slack: https://hackclub.slack.com/archives/C097GP305G8
+    slackChannel: "#slushies"
+    status: active
   - name: Scraps
     deadline: "2026-03-04T23:59:59"
     description: Create projects, earn scraps, try your luck, get prizes, repeat
@@ -1124,12 +1131,6 @@ drafts:
     website:
     slack: https://hackclub.slack.com/archives/C095RKGV5J4
     slackChannel: "#apogee"
-    status: draft
-  - name: Slushies
-    description: Earn $5 for deploying your Flask app (WIP)
-    website: https://slushies.vercel.app/
-    slack: https://hackclub.slack.com/archives/C097GP305G8
-    slackChannel: "#slushies"
     status: draft
   - name: Glossarium
     description: You ship anything that can provide knowledge (a comic, a tutorial, a how-to...) We ship a zine from Julia Evans
