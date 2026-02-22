@@ -3655,6 +3655,18 @@ html {
   z-index: 2;
 }
 
+.program-card.slushies-card {
+  background-color: #4e9cdb;
+}
+
+.program-card.slushies-card .program-deadline {
+  color: white;
+}
+
+.program-card.slushies-card a {
+  color: #000000;
+}
+
 @media (max-width: 480px) {
   .kitlab-logo {
     width: 50px;

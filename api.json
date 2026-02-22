@@ -1366,11 +1366,11 @@
     },
     {
       "name": "Slushies",
-      "description": "Earn $5 for deploying your Flask app (WIP)",
-      "website": "https://slushies.vercel.app/",
+      "description": "Earn $5 for deploying your Flask app",
+      "website": "https://slushies.hackclub.com/",
       "slack": "https://hackclub.slack.com/archives/C097GP305G8",
       "slackChannel": "#slushies",
-      "status": "draft"
+      "status": "active"
     },
     {
       "name": "Glossarium",
