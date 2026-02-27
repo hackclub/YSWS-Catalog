@@ -279,6 +279,15 @@ limitedTime:
     deadline: "2025-12-31T23:59:00"
     detailedDescription: |
       The Zoo is a Svelte YSWS where participants build an animal themed Svelte site and earn Mynts (currency) which can be turned into an HCB grant at the end to buy Ikea plushies. Get one giant Djungleskog, or multiple mini Blahaj, it's all up to you. Here's the best part: the better your submission is, the more Mynts you earn!
+  - name: Cœur
+    description: Make an e-card, earn heart themed prizes (including a sweatshirt!!!)
+    website: https://coeur.hackclub.com
+    slack: https://hackclub.slack.com/archives/C0A6MCHFFEU
+    slackChannel: "#coeur"
+    status: active
+    deadline: "2026-03-15T23:59:59"
+    detailedDescription: |
+      E-cards are a really cool and engaging way to send someone a card, and there's so many different things you can do with them! Cœur is a new YSWS where participants build e-cards about something or someone that they like and earn Hearts (currency) which can used to buy different heart themed prizes (including special stickers and a sweatshirt)! Participants can make multiple submissions and save up for bigger prizes!
   - name: Shiba Arcade
     description: Make a game with Godot, earn SSS, and get invited to build an arcade in Tokyo (flight stipends available!)
     website: https://shiba.hackclub.com
