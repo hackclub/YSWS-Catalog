@@ -311,6 +311,8 @@ function createProgramCard(program) {
     const jusstudyClass = program.name === "Jus'STUDY" ? 'jusstudy-card' : '';
     const rebootClass = program.name === 'Reboot' ? 'reboot-card' : '';
     const kitlabClass = program.name === 'Kit Lab' ? 'kitlab-card' : '';
+    const sleepoverClass = program.name === 'Sleepover' ? 'sleepover-card' : '';
+    const stasisClass = program.name === 'Stasis' ? 'stasis-card' : '';
     const encodedProgram = encodeURIComponent(JSON.stringify(program));
     
     const isCompletedByUser = completedPrograms.has(program.name);
@@ -369,13 +371,23 @@ function createProgramCard(program) {
          class="kitlab-gif">
     ` : '';
 
+    const sleepoverLogo = program.name === 'Sleepover' ? `
+        <img src="https://cdn.hackclub.com/019cb51b-3772-71e5-ab48-da8f5c8d2ffa/image.png" alt="Sleepover Logo" class="sleepover-logo">
+    ` : '';
+
+    const stasisLogo = program.name === 'Stasis' ? `
+        <img src="https://user-cdn.hackclub-assets.com/019cb521-985f-7b28-815c-1512b12b9a63/stasis-logo.png" alt="Stasis Logo" class="stasis-logo">
+    ` : '';
+
     
     return `
-        <div class="card program-card ${opensClass} ${slushiesClass} ${blueprintClass} ${accelerateClass} ${baubleClass} ${meowClass} ${woofClass} ${pxlClass} ${wackyFilesClass} ${flavortownClass} ${jusstudyClass} ${rebootClass} ${kitlabClass}" data-program="${encodedProgram}" data-name="${program.name}">
+        <div class="card program-card ${opensClass} ${slushiesClass} ${blueprintClass} ${accelerateClass} ${baubleClass} ${meowClass} ${woofClass} ${pxlClass} ${wackyFilesClass} ${flavortownClass} ${jusstudyClass} ${rebootClass} ${kitlabClass} ${sleepoverClass} ${stasisClass}" data-program="${encodedProgram}" data-name="${program.name}">
             ${kitlabLogo}
             ${kitlabGif}
             ${baubleSnowflakes}
             ${pxlLogo}
+            ${sleepoverLogo}
+            ${stasisLogo}
             <div class="program-header">
                 <h3>${program.name}</h3>
                 <div class="status-container">

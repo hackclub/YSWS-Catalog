@@ -1,6 +1,33 @@
 {
   "limitedTime": [
     {
+      "name": "Flavortown",
+      "deadline": "2026-03-31T00:00:00.000Z",
+      "description": "Cook personal projects. Win free prizes.",
+      "website": "https://flavortown.hackclub.com/?ref=ysws-catalog",
+      "slack": "https://hackclub.enterprise.slack.com/archives/C09MPB8NE8H",
+      "slackChannel": "#flavortown",
+      "status": "active"
+    },
+    {
+      "name": "Sleepover",
+      "deadline": "2026-05-01T00:00:00.000Z",
+      "description": "Learn to code and fly to an all girls slumber party hackathon!",
+      "website": "https://sleepover.hackclub.com/?ref=ysws-catalog",
+      "slack": "https://hackclub.enterprise.slack.com/archives/C0A9UNRF96V",
+      "slackChannel": "#athena-sleepover",
+      "status": "active"
+    },
+    {
+      "name": "Stasis",
+      "deadline": "2026-05-18T00:00:00.000Z",
+      "description": "Build hardware projects and fly to a hardware hackathon in Austin, Texas",
+      "website": "https://stasis.hackclub.com/?ref=ysws-catalog",
+      "slack": "https://hackclub.enterprise.slack.com/archives/C09HSQM550A",
+      "slackChannel": "#stasis",
+      "status": "active"
+    },
+    {
       "name": "Slushies",
       "deadline": "2026-04-07T23:59:59",
       "description": "Earn $5 for deploying your Flask app",
@@ -25,15 +52,6 @@
       "website": "https://reboot.hackclub.com/",
       "slack": "https://hackclub.enterprise.slack.com/archives/C0404BSAS0J",
       "slackChannel": "#reboot",
-      "status": "active"
-    },
-    {
-      "name": "Flavortown",
-      "deadline": "2026-03-31T00:00:00.000Z",
-      "description": "Cook personal projects. Win free prizes.",
-      "website": "https://flavortown.hackclub.com/?ref=ysws-catalog",
-      "slack": "https://hackclub.enterprise.slack.com/archives/C09MPB8NE8H",
-      "slackChannel": "#flavortown",
       "status": "active"
     },
     {
