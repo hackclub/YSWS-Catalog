@@ -3367,104 +3367,6 @@ html {
   box-shadow: 0 0 20px rgba(255, 231, 0, 0.3);
 }
 
-/* Campfire Flagship Banner - spans 3 cards wide */
-.flagship-section {
-  margin-bottom: 2rem;
-}
-
-.flagship-section .programs-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
-}
-
-.program-card--flagship-campfire {
-  grid-column: 1 / -1;
-  position: relative;
-  overflow: hidden;
-  min-height: 280px;
-  border: 2px solid rgba(255, 140, 55, 0.4) !important;
-  background: transparent !important;
-}
-
-/* Background image layer */
-.program-card--flagship-campfire::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-image: url("https://hc-cdn.hel1.your-objectstorage.com/s/v3/a8a42a1647d352fa_card-bg.png");
-  background-size: cover;
-  background-position: bottom center;
-  transition: filter 0.4s ease, transform 0.4s ease;
-  z-index: 0;
-  opacity: 1 !important;
-}
-
-/* Dark overlay */
-.program-card--flagship-campfire::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.35);
-  z-index: 1;
-  pointer-events: none;
-}
-
-/* Hover: blur background */
-.program-card--flagship-campfire:hover::before {
-  filter: blur(4px);
-  transform: scale(1.05);
-}
-
-/* All content above the overlay */
-.program-card--flagship-campfire .program-header,
-.program-card--flagship-campfire p,
-.program-card--flagship-campfire .program-deadline,
-.program-card--flagship-campfire .program-footer {
-  position: relative;
-  z-index: 2;
-}
-
-/* Text colors for dark background */
-.program-card--flagship-campfire h3,
-.program-card--flagship-campfire p,
-.program-card--flagship-campfire .program-deadline {
-  color: white !important;
-}
-
-.program-card--flagship-campfire a {
-  color: var(--cyan) !important;
-}
-
-.program-card--flagship-campfire .program-status {
-  color: white !important;
-}
-
-.program-card--flagship-campfire:hover {
-  border-color: rgba(255, 140, 55, 0.7) !important;
-  box-shadow: 0 20px 40px rgba(255, 140, 55, 0.2);
-}
-
-.flagship-logo {
-  position: relative;
-  z-index: 2;
-  max-width: 200px;
-  height: auto;
-  margin-bottom: 1rem;
-}
-
-@media (max-width: 64em) {
-  .flagship-section .programs-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 48em) {
-  .flagship-section .programs-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
 /* Flavortown-specific card styling */
 .program-card.flavortown-card {
   background: #E7D5B3 !important;
@@ -3653,6 +3555,108 @@ html {
   color: #FF6F61;
   position: relative;
   z-index: 2;
+}
+
+/* Sleepover card styling */
+.program-card.sleepover-card {
+  background-image: url('https://cdn.hackclub.com/019cb51b-3a1a-742e-b765-6d80a1f8ecd9/image.png') !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  position: relative;
+  overflow: hidden;
+  color: #4b0082 !important;
+}
+
+.program-card.sleepover-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.25);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.program-card.sleepover-card .program-header,
+.program-card.sleepover-card p,
+.program-card.sleepover-card .program-deadline,
+.program-card.sleepover-card .program-footer {
+  position: relative;
+  z-index: 2;
+}
+
+.program-card.sleepover-card h3,
+.program-card.sleepover-card p,
+.program-card.sleepover-card .program-deadline {
+  color: #4b0082 !important;
+}
+
+.program-card.sleepover-card a {
+  color: #7b2db5 !important;
+}
+
+.program-card.sleepover-card .program-completion-toggle {
+  position: relative;
+  z-index: 4;
+}
+
+.sleepover-logo {
+  position: relative;
+  z-index: 2;
+  max-width: 140px;
+  height: auto;
+  margin-bottom: 0.5rem;
+}
+
+/* Stasis card styling */
+.program-card.stasis-card {
+  background-image: url('https://cdn.hackclub.com/019cb521-9b7a-7faf-b26c-e81d66e42fbb/stasis-banner.png') !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  position: relative;
+  overflow: hidden;
+  color: #3e2723 !important;
+}
+
+.program-card.stasis-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.25);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.program-card.stasis-card .program-header,
+.program-card.stasis-card p,
+.program-card.stasis-card .program-deadline,
+.program-card.stasis-card .program-footer {
+  position: relative;
+  z-index: 2;
+}
+
+.program-card.stasis-card h3,
+.program-card.stasis-card p,
+.program-card.stasis-card .program-deadline {
+  color: #3e2723 !important;
+}
+
+.program-card.stasis-card a {
+  color: #5d4037 !important;
+}
+
+.program-card.stasis-card .program-completion-toggle {
+  position: relative;
+  z-index: 4;
+}
+
+.stasis-logo {
+  position: relative;
+  z-index: 2;
+  max-width: 140px;
+  height: auto;
+  margin-bottom: 0.5rem;
 }
 
 .program-card.slushies-card {
