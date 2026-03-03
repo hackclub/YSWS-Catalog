@@ -1217,13 +1217,6 @@ drafts:
     slack: https://hackclub.slack.com/archives/C079G5MKC93
     slackChannel: "#onward"
     status: draft
-  - name: Fishin Chips
-    description: Build TTL logic circuits without microcontrollers, get components to make them real!
-    detailedDescription: This is a TTL (transistor-transistor logic) YSWS, which means no microcontrollers will be given! Build fundamental digital electronics like adders, clocks, or even a 4-bit computer. Dream big, but focus on the electronic fundamentals.
-    website:
-    slack: https://hackclub.slack.com/archives/C089UMGEL82
-    slackChannel: "#fishin-chips"
-    status: draft
   - name: PicoJam
     description: Create a PICO-8 game, get a PICO-8 license for free!
     detailedDescription: Use PICO-8 Education Edition to build a game with your own assets (art, sound effects, etc). Your game should have a basic goal and at least 2 minutes of gameplay. The top winner will receive a Physical PICO-8 Emulator Device!
