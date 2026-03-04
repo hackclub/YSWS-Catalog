@@ -1280,7 +1280,6 @@ drafts:
     website:
     slack: https://slack.com/archives/C08C8PC40BA
     slackChannel: "#lightsaber"
-    status: draft
   - name: Turquoise
     description: You ship a linux distro, we ship a custom Hack Club skirt
     website:
@@ -1490,3 +1489,9 @@ drafts:
     website: https://rework.hackclub.com
     deadline: 2026-3-06
     detailedDescription: Hack Club Rework gives you $75 + exclusive free filament to physically modify your 3D printer. Got an old Ender 3? Make it print faster. Got a Bambu? Hack it and add custom features. Have a unique idea? Make it happen. Rework is made for all hardware based 3d printer mods. Design submissions for Rework end on March 6th, 2026. Get started early and post your progress in the Hack Club Slack!
+  - name: Shipyard
+    description: Ship 7 weeks of computing and coding challenges. Earn prizes from the shop!
+    website: https://shipyard-red.vercel.app/
+    slack: https://hackclub.enterprise.slack.com/archives/C0A7AJRN97X
+    slackChannel: "#shipyard"
+    status: draft
