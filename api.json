@@ -1,15 +1,6 @@
 {
   "limitedTime": [
     {
-      "name": "Reboot",
-      "deadline": "2026-02-11T23:59:59",
-      "description": "Restore old projects, upgrade your desktop setup!",
-      "website": "https://reboot.hackclub.com/",
-      "slack": "https://hackclub.enterprise.slack.com/archives/C0404BSAS0J",
-      "slackChannel": "#reboot",
-      "status": "active"
-    },
-    {
       "name": "Flavortown",
       "deadline": "2026-03-31T00:00:00.000Z",
       "description": "Cook personal projects. Win free prizes.",
@@ -18,7 +9,7 @@
       "slackChannel": "#flavortown",
       "status": "active"
     },
-        {
+    {
       "name": "Sleepover",
       "deadline": "2026-05-01T00:00:00.000Z",
       "description": "Learn to code and fly to an all girls slumber party hackathon!",
@@ -29,11 +20,38 @@
     },
     {
       "name": "Stasis",
-      "deadline": "2026-05-01T00:00:00.000Z",
+      "deadline": "2026-05-18T00:00:00.000Z",
       "description": "Build hardware projects and fly to a hardware hackathon in Austin, Texas",
       "website": "https://stasis.hackclub.com/?ref=ysws-catalog",
       "slack": "https://hackclub.enterprise.slack.com/archives/C09HSQM550A",
       "slackChannel": "#stasis",
+      "status": "active"
+    },
+    {
+      "name": "Slushies",
+      "deadline": "2026-04-07T23:59:59",
+      "description": "Earn $5 for deploying your Flask app",
+      "website": "https://slushies.hackclub.com/",
+      "slack": "https://hackclub.slack.com/archives/C097GP305G8",
+      "slackChannel": "#slushies",
+      "status": "active"
+    },
+    {
+      "name": "Scraps",
+      "deadline": "2026-03-04T23:59:59",
+      "description": "Create projects, earn scraps, try your luck, get prizes, repeat",
+      "website": "https://scraps.hackclub.com",
+      "slack": "https://hackclub.enterprise.slack.com/archives/C0ADMQFFU56",
+      "slackChannel": "#scraps",
+      "status": "active"
+    },
+    {
+      "name": "Reboot",
+      "deadline": "2026-02-11T23:59:59",
+      "description": "Restore old projects, upgrade your desktop setup!",
+      "website": "https://reboot.hackclub.com/",
+      "slack": "https://hackclub.enterprise.slack.com/archives/C0404BSAS0J",
+      "slackChannel": "#reboot",
       "status": "active"
     },
     {
@@ -330,6 +348,16 @@
       "detailedDescription": "The Zoo is a Svelte YSWS where participants build an animal themed Svelte site and earn Mynts (currency) which can be turned into an HCB grant at the end to buy Ikea plushies. Get one giant Djungleskog, or multiple mini Blahaj, it's all up to you. Here's the best part: the better your submission is, the more Mynts you earn!\n"
     },
     {
+      "name": "Cœur",
+      "description": "Make an e-card, earn heart themed prizes (including a sweatshirt!!!)",
+      "website": "https://coeur.hackclub.com",
+      "slack": "https://hackclub.slack.com/archives/C0A6MCHFFEU",
+      "slackChannel": "#coeur",
+      "status": "active",
+      "deadline": "2026-03-15T23:59:59",
+      "detailedDescription": "E-cards are a really cool and engaging way to send someone a card, and there's so many different things you can do with them! Cœur is a new YSWS where participants build e-cards about something or someone that they like and earn Hearts (currency) which can used to buy different heart themed prizes (including special stickers and a sweatshirt)! Participants can make multiple submissions and save up for bigger prizes!\n"
+    },
+    {
       "name": "Shiba Arcade",
       "description": "Make a game with Godot, earn SSS, and get invited to build an arcade in Tokyo (flight stipends available!)",
       "website": "https://shiba.hackclub.com",
@@ -346,7 +374,7 @@
       "slack": "https://hackclub.slack.com/archives/C09EZSEMB16",
       "slackChannel": "#milkyway",
       "status": "active",
-      "deadline": "2026-02-27T23:59:59.000Z"
+      "deadline": "2026-03-20T23:59:59.000Z"
     },
     {
       "name": "Haunted Halloween",
@@ -1291,6 +1319,14 @@
   ],
   "drafts": [
     {
+      "name": "Track it",
+      "description": "Build a map app, GeoGuessr-style game, or GPS tracker. Explore the world. Win prizes.",
+      "slack": "https://hackclub.enterprise.slack.com/archives/C0ADWJB6QT0",
+      "slackChannel": "#track-it",
+      "website": "https://trackit-ysws.vercel.app/",
+      "status": "draft"
+    },
+    {
       "name": "Kit Lab",
       "description": "Build software according to themes and gets kits to build projects and ship projects made using only the kit electronics and get prizes!",
       "slack": "https://hackclub.enterprise.slack.com/archives/C0AAM3UH8KC",
@@ -1343,6 +1379,14 @@
       "status": "draft"
     },
     {
+      "name": "Shipyard",
+      "description": "Ship 7 weeks of computing and coding challenges. Earn prizes from the shop!",
+      "website": "https://shipyard-red.vercel.app/",
+      "slack": "https://hackclub.enterprise.slack.com/archives/C0A7AJRN97X",
+      "slackChannel": "#shipyard",
+      "status": "draft"
+    },
+    {
       "name": "Rube Goldburg YSWS",
       "description": "Create complex chain reaction machines and contraptions",
       "website": null,
@@ -1381,14 +1425,6 @@
       "slack": "https://hackclub.slack.com/archives/C095RKGV5J4",
       "slackChannel": "#apogee",
       "status": "draft"
-    },
-    {
-      "name": "Slushies",
-      "description": "Earn $5 for deploying your Flask app",
-      "website": "https://slushies.hackclub.com/",
-      "slack": "https://hackclub.slack.com/archives/C097GP305G8",
-      "slackChannel": "#slushies",
-      "status": "active"
     },
     {
       "name": "Glossarium",
@@ -1489,15 +1525,6 @@
       "status": "draft"
     },
     {
-      "name": "Fishin Chips",
-      "description": "Build TTL logic circuits without microcontrollers, get components to make them real!",
-      "detailedDescription": "This is a TTL (transistor-transistor logic) YSWS, which means no microcontrollers will be given! Build fundamental digital electronics like adders, clocks, or even a 4-bit computer. Dream big, but focus on the electronic fundamentals.",
-      "website": null,
-      "slack": "https://hackclub.slack.com/archives/C089UMGEL82",
-      "slackChannel": "#fishin-chips",
-      "status": "draft"
-    },
-    {
       "name": "PicoJam",
       "description": "Create a PICO-8 game, get a PICO-8 license for free!",
       "detailedDescription": "Use PICO-8 Education Edition to build a game with your own assets (art, sound effects, etc). Your game should have a basic goal and at least 2 minutes of gameplay. The top winner will receive a Physical PICO-8 Emulator Device!",
@@ -1545,8 +1572,7 @@
       "description": "You ship a beat saber map, we ship a(n) <undecided>.",
       "website": null,
       "slack": "https://slack.com/archives/C08C8PC40BA",
-      "slackChannel": "#lightsaber",
-      "status": "draft"
+      "slackChannel": "#lightsaber"
     },
     {
       "name": "Turquoise",
@@ -1798,6 +1824,24 @@
       "slackChannel": "#boba",
       "status": "ended",
       "ended": "2024-12-31T23:59:59"
+    },
+    {
+      "name": "The hackbook",
+      "description": "Write segments on almost anything, get the hackbook shipped to you and win prizes!",
+      "slack": "https://hackclub.enterprise.slack.com/archives/C0AF24QR8KY",
+      "slackchannel": null,
+      "status": "draft",
+      "website": "https://hackbook.fillout.com/rsvp"
+    },
+    {
+      "name": "Rework",
+      "description": "CAD a 3d printer mod, get $75 and 1kg of Hack Club filament to build it!",
+      "slack": "https://hackclub.enterprise.slack.com/archives/C0A5Q3L91U3",
+      "slackchannel": null,
+      "status": "active",
+      "website": "https://rework.hackclub.com",
+      "deadline": "2026-3-06",
+      "detailedDescription": "Hack Club Rework gives you $75 + exclusive free filament to physically modify your 3D printer. Got an old Ender 3? Make it print faster. Got a Bambu? Hack it and add custom features. Have a unique idea? Make it happen. Rework is made for all hardware based 3d printer mods. Design submissions for Rework end on March 6th, 2026. Get started early and post your progress in the Hack Club Slack!"
     }
   ]
 }

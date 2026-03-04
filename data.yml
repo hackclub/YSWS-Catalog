@@ -50,15 +50,15 @@ limitedTime:
     status: active
     detailedDescription: Join HackCraft to build and ship your own Minecraft mod. Access exclusive resources and a supportive community.
     steps:
-    - Make a mod.
-    - Publish it on Modrinth.
-    - Submit your mod to Hack Club.
-    - Receive prizes and enjoy!
+      - Make a mod.
+      - Publish it on Modrinth.
+      - Submit your mod to Hack Club.
+      - Receive prizes and enjoy!
     requirements:
-    - Basic knowledge of Java programming.
+      - Basic knowledge of Java programming.
     details:
-    - Participants will receive a Minecraft Java Edition account, other game like hytale or server upon successful submission.
-    - Support is available through our Slack community.
+      - Participants will receive a Minecraft Java Edition account, other game like hytale or server upon successful submission.
+      - Support is available through our Slack community.
   - name: Pxl
     description: Code any project, place pixels on a r/place-like canvas!
     website: https://pxl.hackclub.com
@@ -1059,7 +1059,7 @@ indefinite:
     slackChannel: "#boba"
     status: active
   - name: Storyboard
-    description: Make a themed visual novel, earn prizes! 
+    description: Make a themed visual novel, earn prizes!
     website: https://storyboard.hackclub.com/
     slack: https://hackclub.enterprise.slack.com/archives/C095E84SE1X
     slackChannel: "#storyboard"
@@ -1077,7 +1077,7 @@ indefinite:
     slack: https://hackclub.slack.com/archives/C09DLGM81E1
     slackChannel: "#foodie"
     status: ended
-  
+
 drafts:
   - name: Track it
     description: Build a map app, GeoGuessr-style game, or GPS tracker. Explore the world. Win prizes.
@@ -1092,11 +1092,11 @@ drafts:
     status: draft
   - name: Jus'STUDY
     description: Get study stuff by shipping projects that help you and others study!
-    website: 
+    website:
     slack: https://hackclub.enterprise.slack.com/archives/C0A79Q9F5NZ
     slackChannel: "#jus-study"
     status: draft
-    deadline: 
+    deadline:
     detailedDescription: Jus'STUDY is a YSWS, where you build Study Related Things and get Cool Study Materials in return!
   - name: Rooted
     description: Spend time coding, come to BornHack 🏕️ ∣ RSVP
@@ -1124,6 +1124,12 @@ drafts:
     website:
     slack: https://hackclub.slack.com/archives/C094R49MS9Y
     slackChannel: "#swatchbox"
+    status: draft
+  - name: Shipyard
+    description: Ship 7 weeks of computing and coding challenges. Earn prizes from the shop!
+    website: https://shipyard-red.vercel.app/
+    slack: https://hackclub.enterprise.slack.com/archives/C0A7AJRN97X
+    slackChannel: "#shipyard"
     status: draft
   - name: Rube Goldburg YSWS
     description: Create complex chain reaction machines and contraptions
@@ -1482,16 +1488,10 @@ drafts:
     status: draft
     website: https://hackbook.fillout.com/rsvp
   - name: Rework
-    description: CAD a 3d printer mod, get $75 and 1kg of Hack Club filament to build it! 
+    description: CAD a 3d printer mod, get $75 and 1kg of Hack Club filament to build it!
     slack: https://hackclub.enterprise.slack.com/archives/C0A5Q3L91U3
     slackchannel: #rework
     status: active
     website: https://rework.hackclub.com
     deadline: 2026-3-06
     detailedDescription: Hack Club Rework gives you $75 + exclusive free filament to physically modify your 3D printer. Got an old Ender 3? Make it print faster. Got a Bambu? Hack it and add custom features. Have a unique idea? Make it happen. Rework is made for all hardware based 3d printer mods. Design submissions for Rework end on March 6th, 2026. Get started early and post your progress in the Hack Club Slack!
-  - name: Shipyard
-    description: Ship 7 weeks of computing and coding challenges. Earn prizes from the shop!
-    website: https://shipyard-red.vercel.app/
-    slack: https://hackclub.enterprise.slack.com/archives/C0A7AJRN97X
-    slackChannel: "#shipyard"
-    status: draft
