@@ -431,6 +431,12 @@ limitedTime:
     slackChannel: "#fusering"
     slack: https://hackclub.slack.com/archives/C098U42PD2A
     status: active
+      - name: Terminal Craft v5
+    description: Build and publish your own terminal program to earn $5/hr
+    website: https://terminalcraft.hackclub.com
+    slack: https://hackclub.slack.com/archives/C08F58MT3GV
+    slackChannel: "#terminal-craft"
+    status: active
   - name: iFrame
     description: Draw or edit images using any programming language and we will hang your custom image on HQ wall and send a copy to you
     website: https://iframe.hackclub.com/
@@ -532,14 +538,6 @@ limitedTime:
     slackChannel: "#twist-ysws"
     status: ended
     deadline: "2025-07-16T23:59:59"
-
-  - name: Terminal Craft v5
-    description: Build and publish your own terminal program to earn $5/hr
-    website: https://terminalcraft.hackclub.com
-    slack: https://hackclub.slack.com/archives/C08F58MT3GV
-    slackChannel: "#terminal-craft"
-    status: ended
-    deadline: "2025-10-20T23:59:59"
 
   - name: Infinity
     description: Build a website with an infinite realtime canvas, get awesome prizes!
