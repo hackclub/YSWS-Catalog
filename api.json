@@ -1379,6 +1379,14 @@
       "status": "draft"
     },
     {
+      "name": "Shipyard",
+      "description": "Ship 7 weeks of computing and coding challenges. Earn prizes from the shop!",
+      "website": "https://shipyard-red.vercel.app/",
+      "slack": "https://hackclub.enterprise.slack.com/archives/C0A7AJRN97X",
+      "slackChannel": "#shipyard",
+      "status": "draft"
+    },
+    {
       "name": "Rube Goldburg YSWS",
       "description": "Create complex chain reaction machines and contraptions",
       "website": null,
@@ -1564,8 +1572,7 @@
       "description": "You ship a beat saber map, we ship a(n) <undecided>.",
       "website": null,
       "slack": "https://slack.com/archives/C08C8PC40BA",
-      "slackChannel": "#lightsaber",
-      "status": "draft"
+      "slackChannel": "#lightsaber"
     },
     {
       "name": "Turquoise",
