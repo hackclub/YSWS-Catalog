@@ -236,13 +236,6 @@ limitedTime:
       - Make projects!
       - Submit!
       - Get a cool new 3d printer!
-  - name: Carnival
-    description: Build an extension, plugin, or widget get prizes
-    website: https://carnival.hackclub.com/
-    slack: https://hackclub.slack.com/archives/C091ZRTMF16
-    slackChannel: "#carnival"
-    deadline: "2026-02-26T23:59:59" # https://carnival.hackclub.com/
-    status: active
   - name: Remix
     description: Remix an existing song's beats in Strudel and get 1 month of Spotify, Apple Music, or SoundCloud Pro
     website: https://remix.hackclub.com/
@@ -1023,6 +1016,11 @@ recentlyEnded:
     deadline: "2025-06-30T23:59:59"
 
 indefinite:
+  - name: Carnival
+    description: Build an extension, plugin, or widget get prizes
+    website: https://carnival.hackclub.com/
+    slack: https://hackclub.slack.com/archives/C091ZRTMF16
+    slackChannel: "#carnival"
   - name: Terminal Craft v5
     description: Build and publish your own terminal program to earn $5/hr
     website: https://terminalcraft.hackclub.com
