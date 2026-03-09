@@ -28,6 +28,15 @@
       "status": "active"
     },
     {
+      "name": "Fallout",
+      "deadline": "2026-07-01T00:00:00.000Z",
+      "description": "Build 60h of hardware projects, visit Shenzhen, China!",
+      "website": "https://fallout.hackclub.com/?utm_source=ysws-catalog",
+      "slack": "https://hackclub.enterprise.slack.com/archives/C037157AL30",
+      "slackChannel": "#fallout",
+      "status": "active"
+    },
+    {
       "name": "Slushies",
       "deadline": "2026-04-07T23:59:59",
       "description": "Earn $5 for deploying your Flask app",
