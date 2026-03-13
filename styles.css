@@ -3678,3 +3678,15 @@ html {
     right: 8px;
   }
 }
+
+
+.program-card.coeur-card {
+  background-image: url("https://raw.githubusercontent.com/hackclub/coeur/refs/heads/main/static/images/landing/1.png");
+  color: white;
+}
+.program-card.coeur-card h1, .program-card.coeur-card .program-deadline {
+  color: rgb(141, 255, 245);
+}
+.program-card.coeur-card:hover {
+  border-color: rgb(237, 11, 87);
+}
