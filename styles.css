@@ -3412,7 +3412,7 @@ html {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(255, 255, 255, 0.2); /* Light overlay for dark text on image */
+  background: rgba(255, 255, 255, 0.2); 
   z-index: 1;
 }
 
@@ -3430,23 +3430,53 @@ html {
   color: #432818 !important;
 }
 
+.program-card.jusstudy-card .program-links {
+  margin-top: 3.5rem !important;
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: center !important;
+  gap: 0.75rem !important;
+  width: auto !important;
+}
+
 .program-card.jusstudy-card a {
-  color: #ff4d4d !important; /* Red text for links and slacks */
+  color: #ff4d4d !important;
 }
 
 .program-card.jusstudy-card .program-completion-toggle {
   position: relative;
-  z-index: 4; /* Above mascot */
-  margin-bottom: 60px; /* Make space for mascot below it */
+  z-index: 5;
+  margin-bottom: 12px; 
 }
 
-.jusstudy-mascot {
+.program-card.jusstudy-card .program-header,
+.program-card.jusstudy-card p,
+.program-card.jusstudy-card .program-deadline,
+.program-card.jusstudy-card .program-footer {
+  position: relative;
+  z-index: 3;
+}
+
+.jusstudy-center {
+  position: absolute;
+  top: 54%;
+  left: 40%;
+  transform: translate(-50%, -50%) rotate(-4deg);
+  width: 280px; 
+  max-width: 70%;
+  height: auto;
+  z-index: 2;
+  pointer-events: none;
+  opacity: 0.95;
+}
+
+.jusstudy-emi {
   position: absolute;
   bottom: 10px;
-  right: 10px;
-  width: 80px;
+  right: 40px; /* moved left */
+  width: 110px;
   height: auto;
-  z-index: 3;
+  z-index: 4;
   pointer-events: none;
 }
 
