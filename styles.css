@@ -3712,9 +3712,12 @@ html {
 
 .program-card.coeur-card {
   background-image: url("https://raw.githubusercontent.com/hackclub/coeur/refs/heads/main/static/images/landing/1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   color: white;
 }
-.program-card.coeur-card h1, .program-card.coeur-card .program-deadline {
+.program-card.coeur-card h3, .program-card.coeur-card .program-deadline {
   color: rgb(141, 255, 245);
 }
 .program-card.coeur-card:hover {
