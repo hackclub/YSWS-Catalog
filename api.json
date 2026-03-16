@@ -1252,7 +1252,8 @@
       "description": "Build an extension, plugin, or widget get prizes",
       "website": "https://carnival.hackclub.com/",
       "slack": "https://hackclub.slack.com/archives/C091ZRTMF16",
-      "slackChannel": "#carnival"
+      "slackChannel": "#carnival",
+      "status": "active"
     },
     {
       "name": "Terminal Craft v5",
