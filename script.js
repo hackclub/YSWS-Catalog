@@ -313,7 +313,7 @@ function createProgramCard(program) {
     const kitlabClass = program.name === 'Kit Lab' ? 'kitlab-card' : '';
     const sleepoverClass = program.name === 'Sleepover' ? 'sleepover-card' : '';
     const stasisClass = program.name === 'Stasis' ? 'stasis-card' : '';
-    const coeurClass = program.name === 'Cœur' ? 'coeur-class' : '';
+    const coeurClass = program.name === 'Cœur' ? 'coeur-card' : '';
     const encodedProgram = encodeURIComponent(JSON.stringify(program));
     
     const isCompletedByUser = completedPrograms.has(program.name);
