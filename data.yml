@@ -1028,6 +1028,7 @@ indefinite:
     website: https://carnival.hackclub.com/
     slack: https://hackclub.slack.com/archives/C091ZRTMF16
     slackChannel: "#carnival"
+    status: active
   - name: Terminal Craft v5
     description: Build and publish your own terminal program to earn $4/hr
     website: https://terminalcraft.hackclub.com
@@ -1095,12 +1096,18 @@ drafts:
     status: draft
   - name: Jus'STUDY
     description: Get study stuff by shipping projects that help you and others study!
-    website:
+    website: https://jusstudy.hackclub.com/
     slack: https://hackclub.enterprise.slack.com/archives/C0A79Q9F5NZ
     slackChannel: "#jus-study"
     status: draft
     deadline:
     detailedDescription: Jus'STUDY is a YSWS, where you build Study Related Things and get Cool Study Materials in return!
+    steps:
+      - Build a project that helps you or others study! It could be anything, like a website to track your study time, a flashcard app, a pomodoro timer, etc!
+      - The project will be sent to certification then voting.
+      - Submit your project and get cool study materials in return! The more complex your project is, the cooler the materials you get!
+    details: 
+      - The project with the best votes at the end will get a special prize!
   - name: Rooted
     description: Spend time coding, come to BornHack 🏕️ ∣ RSVP
     detailedDescription: Spend time on projects and get a ticket to come to Hack Clubs site at BornHack! STILL A WIP, RSVP NOW!

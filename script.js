@@ -354,7 +354,8 @@ function createProgramCard(program) {
     ` : '';
 
     const jusstudyAssets = program.name === "Jus'STUDY" ? `
-        <img src="logos/jusstudy-emi.avif" alt="" class="jusstudy-mascot">
+        <img src="logos/JusSTUDY.png" alt="Jus'STUDY" class="jusstudy-center">
+        <img src="logos/jusstudy-emi.avif" alt="" class="jusstudy-emi">
     ` : '';
 
     const rebootLogo = program.name === 'Reboot' ? `
