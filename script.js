@@ -313,6 +313,7 @@ function createProgramCard(program) {
     const kitlabClass = program.name === 'Kit Lab' ? 'kitlab-card' : '';
     const sleepoverClass = program.name === 'Sleepover' ? 'sleepover-card' : '';
     const stasisClass = program.name === 'Stasis' ? 'stasis-card' : '';
+    const coeurClass = program.name === 'Cœur' ? 'coeur-class' : '';
     const encodedProgram = encodeURIComponent(JSON.stringify(program));
     
     const isCompletedByUser = completedPrograms.has(program.name);
@@ -382,7 +383,7 @@ function createProgramCard(program) {
 
     
     return `
-        <div class="card program-card ${opensClass} ${slushiesClass} ${blueprintClass} ${accelerateClass} ${baubleClass} ${meowClass} ${woofClass} ${pxlClass} ${wackyFilesClass} ${flavortownClass} ${jusstudyClass} ${rebootClass} ${kitlabClass} ${sleepoverClass} ${stasisClass}" data-program="${encodedProgram}" data-name="${program.name}">
+        <div class="card program-card ${opensClass} ${slushiesClass} ${blueprintClass} ${accelerateClass} ${baubleClass} ${meowClass} ${woofClass} ${pxlClass} ${wackyFilesClass} ${flavortownClass} ${jusstudyClass} ${rebootClass} ${kitlabClass} ${sleepoverClass} ${stasisClass} ${coeurClass}" data-program="${encodedProgram}" data-name="${program.name}">
             ${kitlabLogo}
             ${kitlabGif}
             ${baubleSnowflakes}
