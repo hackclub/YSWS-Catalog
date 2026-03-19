@@ -237,7 +237,7 @@ limitedTime:
     slack: https://hackclub.enterprise.slack.com/archives/C09TM7XKSSY
     slackChannel: "#construct"
     status: active
-    deadline: 2026-03-09
+    deadline: 2026-03-31
     steps:
       - Log into construct.hackclub.com
       - Make projects!
