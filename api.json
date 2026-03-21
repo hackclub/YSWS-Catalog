@@ -37,6 +37,15 @@
       "status": "active"
     },
     {
+      "name": "Boot",
+      "deadline": "2026-06-01T23:59:59",
+      "description": "Make your own OS, get hardware to run it!",
+      "website": "https://boot.hackclub.com/",
+      "slack": "https://hackclub.enterprise.slack.com/archives/C09EWDU9ZQT",
+      "slackChannel": "#boot",
+      "status": "active"
+    },
+    {
       "name": "Slushies",
       "deadline": "2026-04-07T23:59:59",
       "description": "Earn $5 for deploying your Flask app",
@@ -384,15 +393,6 @@
       "slackChannel": "#haunted-halloween",
       "status": "active",
       "deadline": "2025-11-03T00:00:00.000Z"
-    },
-    {
-      "name": "Boot",
-      "deadline": "2026-06-01T23:59:59",
-      "description": "Make your own OS, get hardware to run it!",
-      "website": "https://boot.hackclub.com/",
-      "slack": "https://hackclub.enterprise.slack.com/archives/C09EWDU9ZQT",
-      "slackChannel": "#boot",
-      "status": "active"
     },
     {
       "name": "Dummies V2",
