@@ -35,6 +35,13 @@ limitedTime:
     slack: https://hackclub.enterprise.slack.com/archives/C09EWDU9ZQT
     slackChannel: "#boot"
     status: active
+    - name: Resolution
+    deadline: "2026-05-4T00:00:00.000Z"
+    description: Resolution is an 8-week challenge where you set goals, ship every week, and earn prizes for following through.
+    website: https://resolution.hackclub.com/ref/ysws-catalog
+    slack: https://hackclub.enterprise.slack.com/archives/C0A62ACLT8R
+    slackChannel: "#resolution"
+    status: active
   - name: Slushies
     deadline: "2026-04-07T23:59:59"
     description: Earn $5 for deploying your Flask app
