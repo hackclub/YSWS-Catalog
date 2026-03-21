@@ -1343,12 +1343,20 @@
     {
       "name": "Jus'STUDY",
       "description": "Get study stuff by shipping projects that help you and others study!",
-      "website": null,
+      "website": "https://jusstudy.hackclub.com/",
       "slack": "https://hackclub.enterprise.slack.com/archives/C0A79Q9F5NZ",
       "slackChannel": "#jus-study",
       "status": "draft",
       "deadline": null,
-      "detailedDescription": "Jus'STUDY is a YSWS, where you build Study Related Things and get Cool Study Materials in return!"
+      "detailedDescription": "Jus'STUDY is a YSWS, where you build Study Related Things and get Cool Study Materials in return!",
+      "steps": [
+        "Build a project that helps you or others study! It could be anything, like a website to track your study time, a flashcard app, a pomodoro timer, etc!",
+        "The project will be sent to certification then voting.",
+        "Submit your project and get cool study materials in return! The more complex your project is, the cooler the materials you get!"
+      ],
+      "details": [
+        "The project with the best votes at the end will get a special prize!"
+      ]
     },
     {
       "name": "Rooted",
@@ -1849,6 +1857,15 @@
       "website": "https://rework.hackclub.com",
       "deadline": "2026-3-06",
       "detailedDescription": "Hack Club Rework gives you $75 + exclusive free filament to physically modify your 3D printer. Got an old Ender 3? Make it print faster. Got a Bambu? Hack it and add custom features. Have a unique idea? Make it happen. Rework is made for all hardware based 3d printer mods. Design submissions for Rework end on March 6th, 2026. Get started early and post your progress in the Hack Club Slack!"
+    },
+    {
+      "name": "Boot",
+      "deadline": "2026-06-01T23:59:59",
+      "description": "Make your own OS, get hardware to run it!",
+      "website": "https://boot.hackclub.com/",
+      "slack": "https://hackclub.enterprise.slack.com/archives/C09EWDU9ZQT",
+      "slackChannel": "#boot",
+      "status": "active"
     }
   ]
 }
