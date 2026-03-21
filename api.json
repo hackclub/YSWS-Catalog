@@ -1,6 +1,15 @@
 {
   "limitedTime": [
     {
+      "name": "Resolution",
+      "deadline": "2026-04-30T00:00:00.000Z",
+      "description": "Choose your challenge and ship every week. Earn prizes each week, and a giant prize if you stay til the end",
+      "website": "https://resolution.hackclub.com/ref/ysws-catalog",
+      "slack": "https://hackclub.enterprise.slack.com/archives/C0A62ACLT8R",
+      "slackChannel": "#resolution",
+      "status": "active"
+    },
+    {
       "name": "Flavortown",
       "deadline": "2026-04-30T00:00:00.000Z",
       "description": "Cook personal projects. Win free prizes.",
@@ -276,7 +285,7 @@
       "slack": "https://hackclub.enterprise.slack.com/archives/C09TM7XKSSY",
       "slackChannel": "#construct",
       "status": "active",
-      "deadline": "2026-03-09T00:00:00.000Z",
+      "deadline": "2026-03-31T00:00:00.000Z",
       "steps": [
         "Log into construct.hackclub.com",
         "Make projects!",
@@ -1343,12 +1352,20 @@
     {
       "name": "Jus'STUDY",
       "description": "Get study stuff by shipping projects that help you and others study!",
-      "website": null,
+      "website": "https://jusstudy.hackclub.com/",
       "slack": "https://hackclub.enterprise.slack.com/archives/C0A79Q9F5NZ",
       "slackChannel": "#jus-study",
       "status": "draft",
       "deadline": null,
-      "detailedDescription": "Jus'STUDY is a YSWS, where you build Study Related Things and get Cool Study Materials in return!"
+      "detailedDescription": "Jus'STUDY is a YSWS, where you build Study Related Things and get Cool Study Materials in return!",
+      "steps": [
+        "Build a project that helps you or others study! It could be anything, like a website to track your study time, a flashcard app, a pomodoro timer, etc!",
+        "The project will be sent to certification then voting.",
+        "Submit your project and get cool study materials in return! The more complex your project is, the cooler the materials you get!"
+      ],
+      "details": [
+        "The project with the best votes at the end will get a special prize!"
+      ]
     },
     {
       "name": "Rooted",

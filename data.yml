@@ -1,5 +1,12 @@
 ---
 limitedTime:
+  - name: Resolution
+    deadline: 2026-04-30
+    description: Choose your challenge and ship every week. Earn prizes each week, and a giant prize if you stay til the end
+    website: https://resolution.hackclub.com/ref/ysws-catalog
+    slack: https://hackclub.enterprise.slack.com/archives/C0A62ACLT8R
+    slackChannel: "#resolution"
+    status: active
   - name: Flavortown
     deadline: 2026-04-30
     description: Cook personal projects. Win free prizes.
