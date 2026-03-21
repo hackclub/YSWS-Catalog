@@ -157,10 +157,9 @@
       "deadline": "2026-06-01T23:59:59",
       "description": "Make your own OS, get hardware to run it!",
       "website": "https://boot.hackclub.com/",
-      "slack": "https://hackclub.enterprise.slack.com/archives/C09EWDU9ZQT",
-      "slackChannel": "#boot",
-      "status": "active",
-      ]
+      "slack": "https://hackclub.enterprise.slack.com/archives/C09EWDVJZQT",
+      "slackChannel": "boot",
+      "status": "active"
     },
     {
       "name": "Woof",
