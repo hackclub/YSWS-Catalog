@@ -161,20 +161,12 @@ limitedTime:
       - Submit it to review!
       - Get your rewards!!
   - name: Hack Club The Game
-    deadline: 2026-04-10
+    deadline: 2026-06-10
     description: Code for 40 hours & fly out to Manhattan to compete in a IRL adventure game!
     website: https://game.hackclub.com/?ref=ysws-catalog
-<<<<<<< HEAD
-    deadline: 2026-04-10
     slack: https://hackclub.enterprise.slack.com/archives/C088DT8P7B8
     slackChannel: "#hack-club-the-game"
     status: active
-    description: Code for 40 hours & fly to Manhattan to compete in an IRL adventure game across Manhattan
-=======
-    slack: https://hackclub.enterprise.slack.com/archives/C088DT8P7B8
-    slackChannel: "#hack-club-the-game"
-    status: active
->>>>>>> c9496dd49273fb6455b182d72d2f91da480d113a
   - name: Wacky Files
     website: https://wacky.hackclub.com/
     deadline: 2026-03-1
