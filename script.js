@@ -1,5 +1,6 @@
-let programs = {};
 const apiUrl = "https://api2.hackclub.com/v0.1/Unified%20YSWS%20Projects%20DB/YSWS%20Programs?cache=true";
+
+let programs = {};
 let participants = [];
 let initialParticipants = new Map();
 let completedPrograms = new Set();
@@ -298,6 +299,7 @@ function createProgramCard(program) {
     const deadlineClass = getDeadlineClass(program.deadline);
     
     const opensClass = program.opens && new Date() < new Date(program.opens) ? 'opens-soon' : '';
+    const slushiesClass = program.name === 'Slushies' ? 'slushies-card' : '';
     const blueprintClass = program.name === 'Blueprint' ? 'blueprint-card' : '';
     const accelerateClass = program.name === 'Accelerate' ? 'accelerate-card' : '';
     const baubleClass = program.name === 'Bauble' ? 'bauble-card' : '';
@@ -305,6 +307,13 @@ function createProgramCard(program) {
     const woofClass = program.name === 'Woof' ? 'woof-card' : '';
     const pxlClass = program.name === 'Pxl' ? 'pxl-card' : '';
     const wackyFilesClass = program.name === 'Wacky Files' ? 'wacky-files-card' : '';
+    const flavortownClass = program.name === 'Flavortown' ? 'flavortown-card' : '';
+    const jusstudyClass = program.name === "Jus'STUDY" ? 'jusstudy-card' : '';
+    const rebootClass = program.name === 'Reboot' ? 'reboot-card' : '';
+    const kitlabClass = program.name === 'Kit Lab' ? 'kitlab-card' : '';
+    const sleepoverClass = program.name === 'Sleepover' ? 'sleepover-card' : '';
+    const stasisClass = program.name === 'Stasis' ? 'stasis-card' : '';
+    const coeurClass = program.name === 'Cœur' ? 'coeur-card' : '';
     const encodedProgram = encodeURIComponent(JSON.stringify(program));
     
     const isCompletedByUser = completedPrograms.has(program.name);
@@ -339,11 +348,48 @@ function createProgramCard(program) {
     const pxlLogo = program.name === 'Pxl' ? `
         <div class="pxl-logo"></div>
     ` : '';
+
+    const flavortownFooter = program.name === 'Flavortown' ? `
+        <img src="logos/flavorfooter.avif" alt="" class="flavortown-footer">
+    ` : '';
+
+    const jusstudyAssets = program.name === "Jus'STUDY" ? `
+        <img src="logos/JusSTUDY.png" alt="Jus'STUDY" class="jusstudy-center">
+        <img src="logos/jusstudy-emi.avif" alt="" class="jusstudy-emi">
+    ` : '';
+
+    const rebootLogo = program.name === 'Reboot' ? `
+        <img src="logos/img_2185-3.png" alt="" class="reboot-logo">
+    ` : '';
+    const kitlabLogo = program.name === 'Kit Lab' ? `
+        <img src="https://user-cdn.hackclub-assets.com/019c6d52-9b38-7999-bc31-5af022597486/logo.png"
+         alt="Kit Lab Logo"
+         class="kitlab-logo">
+    ` : '';
+
+    const kitlabGif = program.name === 'Kit Lab' ? `
+        <img src="https://user-cdn.hackclub-assets.com/019c6d52-b2a7-748c-a911-13ceb7095aaf/bg.gif"
+         alt=""
+         class="kitlab-gif">
+    ` : '';
+
+    const sleepoverLogo = program.name === 'Sleepover' ? `
+        <img src="https://cdn.hackclub.com/019cb51b-3772-71e5-ab48-da8f5c8d2ffa/image.png" alt="Sleepover Logo" class="sleepover-logo">
+    ` : '';
+
+    const stasisLogo = program.name === 'Stasis' ? `
+        <img src="https://user-cdn.hackclub-assets.com/019cb521-985f-7b28-815c-1512b12b9a63/stasis-logo.png" alt="Stasis Logo" class="stasis-logo">
+    ` : '';
+
     
     return `
-        <div class="card program-card ${opensClass} ${blueprintClass} ${accelerateClass} ${baubleClass} ${meowClass} ${woofClass} ${pxlClass} ${wackyFilesClass}" data-program="${encodedProgram}" data-name="${program.name}">
+        <div class="card program-card ${opensClass} ${slushiesClass} ${blueprintClass} ${accelerateClass} ${baubleClass} ${meowClass} ${woofClass} ${pxlClass} ${wackyFilesClass} ${flavortownClass} ${jusstudyClass} ${rebootClass} ${kitlabClass} ${sleepoverClass} ${stasisClass} ${coeurClass}" data-program="${encodedProgram}" data-name="${program.name}">
+            ${kitlabLogo}
+            ${kitlabGif}
             ${baubleSnowflakes}
             ${pxlLogo}
+            ${sleepoverLogo}
+            ${stasisLogo}
             <div class="program-header">
                 <h3>${program.name}</h3>
                 <div class="status-container">
@@ -366,6 +412,9 @@ function createProgramCard(program) {
                     ${completionIcon}
                 </button>
             </div>
+            ${flavortownFooter}
+            ${jusstudyAssets}
+            ${rebootLogo}
         </div>
     `;
 }
@@ -637,7 +686,7 @@ function searchPrograms(searchTerm) {
     searchTerm = searchTerm.toLowerCase().trim();
 
     programCards.forEach(card => {
-        const name = card.querySelector('h3').textContent.toLowerCase();
+        const name = card.dataset.name.toLowerCase();
         const description = card.querySelector('p').textContent.toLowerCase();
         const slackChannel = card.querySelector('.program-links')?.textContent.toLowerCase() || '';
         
@@ -733,13 +782,14 @@ function resolveTimelineLabels(){
         const inside = row.querySelector('.timeline-label.inside');
         const outside = row.querySelector(".timeline-label.outside");
 
-        if(!block||!inside||!outside) return;
+        if(!block || !inside || !outside) return;
 
-        if(inside.scrollWidth > block.clientWidth){
+        // for measure width (width is 0 when display:none)
+        outside.classList.remove("hidden");
+        inside.classList.remove("hidden");
+        if (inside.scrollWidth > block.clientWidth) {
             inside.classList.add("hidden");
-            outside.classList.remove("hidden");
-        }else{
-            inside.classList.remove("hidden");
+        } else {
             outside.classList.add("hidden");
         }
     })
