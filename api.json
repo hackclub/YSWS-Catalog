@@ -37,6 +37,15 @@
       "status": "active"
     },
     {
+      "name": "Boot",
+      "deadline": "2026-06-01T23:59:59",
+      "description": "Make your own OS, get hardware to run it!",
+      "website": "https://boot.hackclub.com/",
+      "slack": "https://hackclub.enterprise.slack.com/archives/C09EWDU9ZQT",
+      "slackChannel": "#boot",
+      "status": "active"
+    },
+    {
       "name": "Slushies",
       "deadline": "2026-04-07T23:59:59",
       "description": "Earn $5 for deploying your Flask app",
@@ -55,7 +64,7 @@
       "status": "active"
     },
     {
-      "name": "Re",
+      "name": "Reboot",
       "deadline": "2026-02-11T23:59:59",
       "description": "Restore old projects, upgrade your desktop setup!",
       "website": "https://reboot.hackclub.com/",
@@ -153,15 +162,6 @@
       ]
     },
     {
-      "name": "Boot",
-      "deadline": "2026-06-01T23:59:59",
-      "description": "Make your own OS, get hardware to run it!",
-      "website": "https://boot.hackclub.com/",
-      "slack": "https://hackclub.enterprise.slack.com/archives/C09EWDVJZQT",
-      "slackChannel": "boot",
-      "status": "active"
-    },
-    {
       "name": "Woof",
       "description": "Spend 5 or more hours making a dog-themed project and get a dog plushie!",
       "website": "https://woof.hackclub.com",
@@ -202,14 +202,12 @@
     },
     {
       "name": "Hack Club The Game",
-      "deadline": "2026-04-10T00:00:00.000Z",
+      "deadline": "2026-06-10T00:00:00.000Z",
       "description": "Code for 40 hours & fly out to Manhattan to compete in a IRL adventure game!",
       "website": "https://game.hackclub.com/?ref=ysws-catalog",
-      "deadline": "2026-06-10T00:00:00.000Z",
       "slack": "https://hackclub.enterprise.slack.com/archives/C088DT8P7B8",
       "slackChannel": "#hack-club-the-game",
-      "status": "active",
-      "description": "Code for 40 hours & fly to Manhattan to compete in an IRL adventure game across Manhattan"
+      "status": "active"
     },
     {
       "name": "Wacky Files",
@@ -287,7 +285,7 @@
       "slack": "https://hackclub.enterprise.slack.com/archives/C09TM7XKSSY",
       "slackChannel": "#construct",
       "status": "active",
-      "deadline": "2026-03-09T00:00:00.000Z",
+      "deadline": "2026-03-31T00:00:00.000Z",
       "steps": [
         "Log into construct.hackclub.com",
         "Make projects!",
