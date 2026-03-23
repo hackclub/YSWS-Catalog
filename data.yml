@@ -35,6 +35,25 @@ limitedTime:
     slack: https://hackclub.enterprise.slack.com/archives/C037157AL30
     slackChannel: "#fallout"
     status: active
+  - name: Jackpot
+    deadline: "2026-05-12T23:59:59"
+    description: Code open-source projects, earn poker chips, and spend them on prizes you choose!
+    website: https://jackpot.hackclub.com/
+    slack: https://hackclub.enterprise.slack.com/archives/C0ADEGZL5HD
+    slackChannel: "#jackpot"
+    status: active
+    detailedDescription: |
+      Jackpot is a Hack Club YSWS where you build and ship open-source projects to earn poker chips (points). Track your time with Hackatime or the journaling system, then redeem your chips in the shop for awesome prizes!
+    steps:
+      - Join the Slack channel and sign up on the Jackpot website
+      - Code your open-source project and track hours with Hackatime
+      - Ship your project on GitHub and submit it on the Jackpot website
+      - Get reviewed by the team and earn poker chips
+      - Spend your chips on prizes you choose!
+    details:
+      - Your project must be open-source on GitHub
+      - Open to anyone aged 13–18
+      - Track your time with Hackatime or the journaling system
   - name: Boot
     deadline: "2026-06-01T23:59:59"
     description: Make your own OS, get hardware to run it!
