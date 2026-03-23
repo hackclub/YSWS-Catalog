@@ -3689,6 +3689,32 @@ html {
   margin-bottom: 0.5rem;
 }
 
+/* Jackpot card styling */
+.program-card.jackpot-card {
+  background-color: #5F1212;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.program-card.jackpot-card h3,
+.program-card.jackpot-card p,
+.program-card.jackpot-card .program-deadline {
+  color: white;
+}
+
+.program-card.jackpot-card a {
+  color: #FAD10B;
+}
+
+.jackpot-logo {
+  position: relative;
+  z-index: 2;
+  max-width: 120px;
+  height: auto;
+  margin-bottom: 0.5rem;
+}
+
 .program-card.slushies-card {
   background-color: #4e9cdb;
 }
