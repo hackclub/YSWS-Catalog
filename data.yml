@@ -1103,6 +1103,12 @@ drafts:
     slackChannel: "#track-it"
     website: https://trackit-ysws.vercel.app/
     status: draft
+  - name: Hackanomous
+    description: Build AI/ML related hardware or software, get funding to build it or get prizes!
+    slackChannel: "#hackanomous"
+    detailedDescription: Hackanomous is an amazing YSWS where you can build any AI or ML related Hardware or Software! In return, we will send you funding or even prizes! Whatever AI project is useful, you can build it! Just ask in our help channel if you have any questions! Happy hacking!
+    slack: https://hackclub.enterprise.slack.com/archives/C0AHPG4LPUM
+    status: draft
   - name: Kit Lab
     description: Build software according to themes and gets kits to build projects and ship projects made using only the kit electronics and get prizes!
     slack: https://hackclub.enterprise.slack.com/archives/C0AAM3UH8KC
