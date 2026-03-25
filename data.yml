@@ -21,7 +21,7 @@ limitedTime:
     slackChannel: "#athena-sleepover"
     status: active
   - name: Enclosure
-    description: Design a custom enclosure for your project, get a 3D print of it shipped to you!
+    description: Design a custom enclosure for your project, get a 3D print of it shipped to you and tier based prizes!
     website: https://enclosure.hackclub.com/
     slack: https://hackclub.enterprise.slack.com/archives/C092D99G1RU
     slackChannel: "#enclosure"
