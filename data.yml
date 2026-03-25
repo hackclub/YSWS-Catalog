@@ -180,8 +180,8 @@ limitedTime:
       - Spend 30 or more hours (tracked with hackatime)
       - Submit it to review!
       - Get your rewards!!
-  - name: Hack Club The Game
-    deadline: 2026-06-10
+  - name: "Hack Club: The Game"
+    deadline: 2026-05-22
     description: Code for 40 hours & fly out to Manhattan to compete in a IRL adventure game!
     website: https://game.hackclub.com/?ref=ysws-catalog
     slack: https://hackclub.enterprise.slack.com/archives/C088DT8P7B8
