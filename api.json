@@ -121,6 +121,14 @@
       ]
     },
     {
+      "name": "Lumen",
+      "description": "Make a Minecraft shaderpack, get Minecraft and GPUs!",
+      "website": "https://lumen.hackcraft.hackclub.com/",
+      "slack": "https://hackclub.enterprise.slack.com/archives/C07NQ5QAYNQ",
+      "slackChannel": "#mc-modding",
+      "status": "active"
+    },
+    {
       "name": "Pxl",
       "description": "Code any project, place pixels on a r/place-like canvas!",
       "website": "https://pxl.hackclub.com",
