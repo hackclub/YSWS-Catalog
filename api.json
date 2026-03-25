@@ -1,6 +1,14 @@
 {
   "limitedTime": [
     {
+      "name": "Resolution",
+      "description": "Resolution is an 8-week challenge where you set goals, ship every week, and earn prizes for following through.",
+      "website": "https://resolution.hackclub.com/ref/ysws-catalog",
+      "slack": "https://hackclub.enterprise.slack.com/archives/C0A62ACLT8R",
+      "slackChannel": "#resolution",
+      "status": "active"
+    },
+    {
       "name": "Flavortown",
       "deadline": "2026-04-30T00:00:00.000Z",
       "description": "Cook personal projects. Win free prizes.",
@@ -16,6 +24,24 @@
       "website": "https://sleepover.hackclub.com/?utm_source=ysws-catalog",
       "slack": "https://hackclub.enterprise.slack.com/archives/C0A9UNRF96V",
       "slackChannel": "#athena-sleepover",
+      "status": "active"
+    },
+    {
+      "name": "Remixed",
+      "deadline": "2026-04-30T00:00:00.000Z",
+      "description": "Ship something music related, get stuff to help you make music!",
+      "website": "https://remixed.hackclub.com/?ref=ysws-catalog",
+      "slack": "https://hackclub.enterprise.slack.com/archives/C0AK823BZM0",
+      "slackChannel": "#remixed-bulletin",
+      "status": "active"
+    },
+    {
+      "name": "Enclosure",
+      "deadline": "2026-05-04T00:00:00.000Z",
+      "description": "Design a custom enclosure for your project, get a 3D print of it shipped to you and tier based prizes!",
+      "website": "https://enclosure.hackclub.com/",
+      "slack": "https://hackclub.enterprise.slack.com/archives/C092D99G1RU",
+      "slackChannel": "#enclosure",
       "status": "active"
     },
     {
@@ -383,7 +409,7 @@
       "slack": "https://hackclub.slack.com/archives/C09EZSEMB16",
       "slackChannel": "#milkyway",
       "status": "active",
-      "deadline": "2026-03-20T23:59:59.000Z"
+      "deadline": "2026-04-03T23:59:59.000Z"
     },
     {
       "name": "Haunted Halloween",
@@ -1340,6 +1366,14 @@
       "slack": "https://hackclub.enterprise.slack.com/archives/C0ADWJB6QT0",
       "slackChannel": "#track-it",
       "website": "https://trackit-ysws.vercel.app/",
+      "status": "draft"
+    },
+    {
+      "name": "Hackanomous",
+      "description": "Build AI/ML related hardware or software, get funding to build it or get prizes!",
+      "slackChannel": "#hackanomous",
+      "detailedDescription": "Hackanomous is an amazing YSWS where you can build any AI or ML related Hardware or Software! In return, we will send you funding or even prizes! Whatever AI project is useful, you can build it! Just ask in our help channel if you have any questions! Happy hacking!",
+      "slack": "https://hackclub.enterprise.slack.com/archives/C0AHPG4LPUM",
       "status": "draft"
     },
     {
