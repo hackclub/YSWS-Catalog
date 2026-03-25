@@ -20,6 +20,13 @@ limitedTime:
     slack: https://hackclub.enterprise.slack.com/archives/C0A9UNRF96V
     slackChannel: "#athena-sleepover"
     status: active
+  - name: TrailIt
+    deadline: "2026-05-15T00:00:00.000Z"
+    description: Produce A web-app, and get equipment to produce a Video!
+    website: https://trailit.hackclub.com
+    slack: https://hackclub.enterprise.slack.com/archives/C0AGG8J6PLL
+    slackChannel: "#trailit-ysws"
+    status: active
   - name: Remixed
     deadline: 2026-04-30
     description: Ship something music related, get stuff to help you make music!
