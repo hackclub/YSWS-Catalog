@@ -3723,3 +3723,28 @@ html {
 .program-card.coeur-card:hover {
   border-color: rgb(237, 11, 87);
 }
+
+/* Remixed (https://remixed.hackclub.com) */
+.program-card.remixed-card {
+  background-image: url("https://cdn.hackclub.com/019d260a-cc4d-7668-8e65-de53531832fe/remixed-ysws-page-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  & .program-header {
+    display: none;
+  }
+
+  & .program-deadline {
+    color: #1B2A42;
+  }
+
+  & .program-links a {
+    color: #7dddf0;
+  }
+
+  & .remixed-logo {
+    width: 75%;
+    transform: translate(-4px, 8px);
+  }
+}

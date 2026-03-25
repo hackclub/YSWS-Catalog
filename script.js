@@ -314,6 +314,7 @@ function createProgramCard(program) {
     const sleepoverClass = program.name === 'Sleepover' ? 'sleepover-card' : '';
     const stasisClass = program.name === 'Stasis' ? 'stasis-card' : '';
     const coeurClass = program.name === 'Cœur' ? 'coeur-card' : '';
+    const remixedClass = program.name == "Remixed" ? 'remixed-card' : '';
     const encodedProgram = encodeURIComponent(JSON.stringify(program));
     
     const isCompletedByUser = completedPrograms.has(program.name);
@@ -381,15 +382,19 @@ function createProgramCard(program) {
         <img src="https://user-cdn.hackclub-assets.com/019cb521-985f-7b28-815c-1512b12b9a63/stasis-logo.png" alt="Stasis Logo" class="stasis-logo">
     ` : '';
 
+    const remixedLogo = program.name == 'Remixed' ? `
+        <img src="https://cdn.hackclub.com/019d2613-4fb8-79d6-bc1b-305c41455a73/remixed-logo.png" alt="Remixed Logo" class="remixed-logo">
+    ` : '';
     
     return `
-        <div class="card program-card ${opensClass} ${slushiesClass} ${blueprintClass} ${accelerateClass} ${baubleClass} ${meowClass} ${woofClass} ${pxlClass} ${wackyFilesClass} ${flavortownClass} ${jusstudyClass} ${rebootClass} ${kitlabClass} ${sleepoverClass} ${stasisClass} ${coeurClass}" data-program="${encodedProgram}" data-name="${program.name}">
+        <div class="card program-card ${opensClass} ${slushiesClass} ${blueprintClass} ${accelerateClass} ${baubleClass} ${meowClass} ${woofClass} ${pxlClass} ${wackyFilesClass} ${flavortownClass} ${jusstudyClass} ${rebootClass} ${kitlabClass} ${sleepoverClass} ${stasisClass} ${coeurClass} ${remixedClass}" data-program="${encodedProgram}" data-name="${program.name}">
             ${kitlabLogo}
             ${kitlabGif}
             ${baubleSnowflakes}
             ${pxlLogo}
             ${sleepoverLogo}
             ${stasisLogo}
+            ${remixedLogo}
             <div class="program-header">
                 <h3>${program.name}</h3>
                 <div class="status-container">
