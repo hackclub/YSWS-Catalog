@@ -21,7 +21,6 @@ limitedTime:
     slackChannel: "#athena-sleepover"
     status: active
   - name: Enclosure
-    deadline: "2026-05-04T00:00:00.000Z"
     description: Design a custom enclosure for your project, get a 3D print of it shipped to you!
     website: https://enclosure.hackclub.com/
     slack: https://hackclub.enterprise.slack.com/archives/C092D99G1RU
