@@ -315,6 +315,7 @@ function createProgramCard(program) {
     const stasisClass = program.name === 'Stasis' ? 'stasis-card' : '';
     const coeurClass = program.name === 'Cœur' ? 'coeur-card' : '';
     const remixedClass = program.name == "Remixed" ? 'remixed-card' : '';
+    const hctgClass = program.name == "Hack Club: The Game" ? 'hctg-card' : '';
     const encodedProgram = encodeURIComponent(JSON.stringify(program));
     
     const isCompletedByUser = completedPrograms.has(program.name);
@@ -386,8 +387,12 @@ function createProgramCard(program) {
         <img src="https://cdn.hackclub.com/019d2613-4fb8-79d6-bc1b-305c41455a73/remixed-logo.png" alt="Remixed Logo" class="remixed-logo">
     ` : '';
     
+    const hctgLogo = program.name == 'Hack Club: The Game' ? `
+        <img src="https://cdn.hackclub.com/019d0899-f270-7530-b145-19d1e53f113f/hctg-text-logo.png" alt="Hack Club: The Game" class="hctg-logo">
+    ` : '';
+
     return `
-        <div class="card program-card ${opensClass} ${slushiesClass} ${blueprintClass} ${accelerateClass} ${baubleClass} ${meowClass} ${woofClass} ${pxlClass} ${wackyFilesClass} ${flavortownClass} ${jusstudyClass} ${rebootClass} ${kitlabClass} ${sleepoverClass} ${stasisClass} ${coeurClass} ${remixedClass}" data-program="${encodedProgram}" data-name="${program.name}">
+        <div class="card program-card ${opensClass} ${slushiesClass} ${blueprintClass} ${accelerateClass} ${baubleClass} ${meowClass} ${woofClass} ${pxlClass} ${wackyFilesClass} ${flavortownClass} ${jusstudyClass} ${rebootClass} ${kitlabClass} ${sleepoverClass} ${stasisClass} ${coeurClass} ${remixedClass} ${hctgClass}" data-program="${encodedProgram}" data-name="${program.name}">
             ${kitlabLogo}
             ${kitlabGif}
             ${baubleSnowflakes}
@@ -395,6 +400,7 @@ function createProgramCard(program) {
             ${sleepoverLogo}
             ${stasisLogo}
             ${remixedLogo}
+            ${hctgLogo}
             <div class="program-header">
                 <h3>${program.name}</h3>
                 <div class="status-container">
