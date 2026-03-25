@@ -93,6 +93,12 @@ limitedTime:
     details:
       - Participants will receive a Minecraft Java Edition account, other game like hytale or server upon successful submission.
       - Support is available through our Slack community.
+  - name: Lumen
+    description: Make a Minecraft shaderpack, get Minecraft and GPUs!
+    website: https://lumen.hackcraft.hackclub.com/
+    slack: https://hackclub.enterprise.slack.com/archives/C07NQ5QAYNQ
+    slackChannel: "#mc-modding"
+    status: active
   - name: Pxl
     description: Code any project, place pixels on a r/place-like canvas!
     website: https://pxl.hackclub.com
