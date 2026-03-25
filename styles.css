@@ -3748,3 +3748,24 @@ html {
     transform: translate(-4px, 8px);
   }
 }
+
+/* Hack Club: The Game (https://game.hackclub.com) */
+.program-card.hctg-card {
+  background-color: #FCCC0E;
+
+  & p {
+    color: #000;
+  }
+
+  & .program-deadline {
+    color: #3e3e3e;
+  }
+
+  & .program-header {
+    display: none;
+  }
+  
+  & .hctg-logo {
+    width: 75%;
+  }
+}
