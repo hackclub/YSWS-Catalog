@@ -338,7 +338,7 @@ limitedTime:
     slack: https://hackclub.slack.com/archives/C0A6MCHFFEU
     slackChannel: "#coeur"
     status: active
-    deadline: "2026-03-15T23:59:59"
+    deadline: "2026-05-24T23:59:59"
     detailedDescription: |
       E-cards are a really cool and engaging way to send someone a card, and there's so many different things you can do with them! Cœur is a new YSWS where participants build e-cards about something or someone that they like and earn Hearts (currency) which can used to buy different heart themed prizes (including special stickers and a sweatshirt)! Participants can make multiple submissions and save up for bigger prizes!
   - name: Shiba Arcade
