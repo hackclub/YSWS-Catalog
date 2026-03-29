@@ -1550,3 +1550,17 @@ drafts:
     website: https://rework.hackclub.com
     deadline: 2026-3-06
     detailedDescription: Hack Club Rework gives you $75 + exclusive free filament to physically modify your 3D printer. Got an old Ender 3? Make it print faster. Got a Bambu? Hack it and add custom features. Have a unique idea? Make it happen. Rework is made for all hardware based 3d printer mods. Design submissions for Rework end on March 6th, 2026. Get started early and post your progress in the Hack Club Slack!
+  - name: Hack a Home
+    description: Mod, tweak, and upgrade your devices — earn grants to buy IoT hardware.
+    website: https://hackahome.nullbyte.rip/
+    slack: https://hackclub.enterprise.slack.com/archives/C0APEJDF7RU
+    slackChannel: "#hackahome"
+    status: active
+    detailedDescription: Mod, tweak, and upgrade your devices — earn grants to buy IoT hardware. No experience required. Just curiosity, a screwdriver, and something at home worth hacking.
+    steps:
+      - Find something to hack.
+      - Mod, tweak, or upgrade it.
+      - Ship your project.
+      - Receive your IoT grant!
+    details:
+      - Support is available through our Slack community.
