@@ -27,6 +27,15 @@
       "status": "active"
     },
     {
+      "name": "TrailIt",
+      "deadline": "2026-05-15T00:00:00.000Z",
+      "description": "Produce A web-app, and get equipment to produce a Video!",
+      "website": "https://trailit.hackclub.com",
+      "slack": "https://hackclub.enterprise.slack.com/archives/C0AGG8J6PLL",
+      "slackChannel": "#trailit-ysws",
+      "status": "active"
+    },
+    {
       "name": "Remixed",
       "deadline": "2026-04-30T00:00:00.000Z",
       "description": "Ship something music related, get stuff to help you make music!",
@@ -37,7 +46,6 @@
     },
     {
       "name": "Enclosure",
-      "deadline": "2026-05-04T00:00:00.000Z",
       "description": "Design a custom enclosure for your project, get a 3D print of it shipped to you and tier based prizes!",
       "website": "https://enclosure.hackclub.com/",
       "slack": "https://hackclub.enterprise.slack.com/archives/C092D99G1RU",
@@ -1908,6 +1916,24 @@
       "website": "https://rework.hackclub.com",
       "deadline": "2026-3-06",
       "detailedDescription": "Hack Club Rework gives you $75 + exclusive free filament to physically modify your 3D printer. Got an old Ender 3? Make it print faster. Got a Bambu? Hack it and add custom features. Have a unique idea? Make it happen. Rework is made for all hardware based 3d printer mods. Design submissions for Rework end on March 6th, 2026. Get started early and post your progress in the Hack Club Slack!"
+    },
+    {
+      "name": "Hack a Home",
+      "description": "Mod, tweak, and upgrade your devices — earn grants to buy IoT hardware.",
+      "website": "https://hackahome.nullbyte.rip/",
+      "slack": "https://hackclub.enterprise.slack.com/archives/C0APEJDF7RU",
+      "slackChannel": "#hackahome",
+      "status": "active",
+      "detailedDescription": "Mod, tweak, and upgrade your devices — earn grants to buy IoT hardware. No experience required. Just curiosity, a screwdriver, and something at home worth hacking.",
+      "steps": [
+        "Find something to hack.",
+        "Mod, tweak, or upgrade it.",
+        "Ship your project.",
+        "Receive your IoT grant!"
+      ],
+      "details": [
+        "Support is available through our Slack community."
+      ]
     }
   ]
 }
