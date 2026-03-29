@@ -1923,7 +1923,7 @@
       "website": "https://hackahome.nullbyte.rip/",
       "slack": "https://hackclub.enterprise.slack.com/archives/C0APEJDF7RU",
       "slackChannel": "#hackahome",
-      "status": "active",
+      "status": "draft",
       "detailedDescription": "Mod, tweak, and upgrade your devices — earn grants to buy IoT hardware. No experience required. Just curiosity, a screwdriver, and something at home worth hacking.",
       "steps": [
         "Find something to hack.",
