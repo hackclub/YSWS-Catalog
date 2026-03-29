@@ -814,13 +814,13 @@ limitedTime:
     status: ended
     deadline: "2025-02-17T23:59:59"
   - name: RaspAPI
-    description: Make an API get a Raspberry Pi
-    detailedDescription: Create an original API using any programming language or framework that you prefer and get a Raspberry Pi Zero 2 W to host it on! The API can be anything you want. The possibilities are endless!
+    description: Build an API, get your own Raspberry Pi
+    detailedDescription: Create an original API using any language or framework of your choice, and get a Raspberry Pi Zero 2W to host it on!
     website: https://raspapi.hackclub.com/
     slack: https://hackclub.slack.com/archives/C07UZSKJQRX
-    slackChannel: "#raspapi-ysws"
-    status: ended
-    deadline: "2025-03-10T23:59:59"
+    slackChannel: "#raspapi"
+    status: active
+    deadline: "2026-06-30T23:59:59"
   - name: Black Box
     description: Create a constrained, interactive C program and get a portable device to run it on!
     website: https://blackbox.hackclub.com
