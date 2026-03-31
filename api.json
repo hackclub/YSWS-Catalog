@@ -1299,6 +1299,14 @@
   ],
   "indefinite": [
     {
+      "name": "Hacklet v2",
+      "description": "Build a bookmarklet, get food for your club!",
+      "website": "https://hacklet.hackclub.com",
+      "slack": "https://hackclub.slack.com/archives/C091ZRTMF16",
+      "slackChannel": "#hacklet",
+      "status": "active"
+    },
+    {
       "name": "Carnival",
       "description": "Build an extension, plugin, or widget get prizes",
       "website": "https://carnival.hackclub.com/",
