@@ -1385,6 +1385,20 @@
   ],
   "drafts": [
     {
+      "name": "Rootship",
+      "description": "Learn system penetration, earn hacking themed prizes!",
+      "website": "https://rootship.pages.dev",
+      "slack": "https://hackclub.enterprise.slack.com/archives/C0AQ17U5GJ2",
+      "slackChannel": "#rootship",
+      "status": "draft",
+      "steps": [
+        "Take the Rootship path, a hand-picked selection of TryHackMe rooms, to earn your root status.",
+        "Improve your skills as you navigate through increasingly difficult rooms.",
+        "Complete your path and receive TryHackMe Premium plus access to the Shop.",
+        "Conquer difficult rooms, collect coins, and redeem them for cool prizes in the Shop."
+      ]
+    },
+    {
       "name": "Track it",
       "description": "Build a map app, GeoGuessr-style game, or GPS tracker. Explore the world. Win prizes.",
       "slack": "https://hackclub.enterprise.slack.com/archives/C0ADWJB6QT0",
