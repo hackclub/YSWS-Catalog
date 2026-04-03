@@ -1273,12 +1273,6 @@ drafts:
     slack: https://hackclub.slack.com/archives/C089WSLC59V
     slackChannel: "#hack-a-band"
     status: draft
-  - name: Forge
-    description: Design a 3D model that solves a problem and receive a custom 3D printer.
-    website: https://forge.hackclub.com/
-    slack: https://hackclub.slack.com/archives/C078GBDKC03
-    slackChannel: "#forge-updates"
-    status: draft
   - name: Vine
     description: Create a song using open-source music software and receive a vinyl with your song.
     website: https://vineysws.vercel.app/
