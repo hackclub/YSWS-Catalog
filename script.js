@@ -317,6 +317,7 @@ function createProgramCard(program) {
     const remixedClass = program.name == "Remixed" ? 'remixed-card' : '';
     const hctgClass = program.name == "Hack Club: The Game" ? 'hctg-card' : '';
     const hackahomeClass = program.name == "Hack a Home" ? 'hackahome-card' : '';
+    const rootshipClass = program.name == "Rootship" ? 'rootship-card' : '';
     const encodedProgram = encodeURIComponent(JSON.stringify(program));
 
     const isCompletedByUser = completedPrograms.has(program.name);
@@ -393,7 +394,7 @@ function createProgramCard(program) {
     ` : '';
 
     return `
-        <div class="card program-card ${opensClass} ${slushiesClass} ${blueprintClass} ${accelerateClass} ${baubleClass} ${meowClass} ${woofClass} ${pxlClass} ${wackyFilesClass} ${flavortownClass} ${jusstudyClass} ${rebootClass} ${kitlabClass} ${sleepoverClass} ${stasisClass} ${coeurClass} ${remixedClass} ${hctgClass} ${hackahomeClass}" data-program="${encodedProgram}" data-name="${program.name}">
+        <div class="card program-card ${opensClass} ${slushiesClass} ${blueprintClass} ${accelerateClass} ${baubleClass} ${meowClass} ${woofClass} ${pxlClass} ${wackyFilesClass} ${flavortownClass} ${jusstudyClass} ${rebootClass} ${kitlabClass} ${sleepoverClass} ${stasisClass} ${coeurClass} ${remixedClass} ${hctgClass} ${hackahomeClass} ${rootshipClass}" data-program="${encodedProgram}" data-name="${program.name}">
             ${kitlabLogo}
             ${kitlabGif}
             ${baubleSnowflakes}
