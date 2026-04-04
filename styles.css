@@ -3985,3 +3985,120 @@ html {
 .program-card.hackahome-card .program-links a:hover {
   color: #FF5C1A !important;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap');
+
+/* Rootship card styling */
+.program-card.rootship-card {
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  position: relative;
+  overflow: hidden;
+  color: #00ff41 !important;
+  border: 3px solid #00ff41 !important;
+  box-shadow: 6px 6px 0px #004d14 !important;
+  border-radius: 20px !important;
+  transition: transform 0.2s, box-shadow 0.2s !important;
+}
+
+.program-card.rootship-card:hover {
+  transform: translate(-2px, -2px) !important;
+  box-shadow: 10px 10px 0px #00ff41 !important;
+}
+
+/* CRT scanline overlay */
+.program-card.rootship-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    repeating-linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.15) 0px,
+      rgba(0, 0, 0, 0.15) 1px,
+      transparent 1px,
+      transparent 3px
+    ),
+    rgba(0, 8, 2, 0.5);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.program-card.rootship-card .program-header,
+.program-card.rootship-card p,
+.program-card.rootship-card .program-deadline,
+.program-card.rootship-card .program-footer {
+  position: relative;
+  z-index: 2;
+}
+
+.program-card.rootship-card h3 {
+  font-family: 'Fira Code', monospace !important;
+  font-weight: 800 !important;
+  color: #00ff41 !important;
+  letter-spacing: 2px !important;
+  text-transform: uppercase !important;
+}
+
+.program-card.rootship-card p,
+.program-card.rootship-card .program-participants {
+  font-family: 'Fira Code', monospace !important;
+  color: #00cc33 !important;
+}
+
+.program-card.rootship-card .program-deadline {
+  color: #00cc33 !important;
+  font-family: 'Fira Code', monospace !important;
+}
+
+.program-card.rootship-card .program-status {
+  color: #00ff41 !important;
+  border: 2px solid #00ff41 !important;
+  border-radius: 10px !important;
+  font-weight: 800 !important;
+  font-family: 'Fira Code', monospace !important;
+  box-shadow: 2px 2px 0px #004d14 !important;
+}
+
+.program-card.rootship-card .status-active {
+  background: #003d0f !important;
+  color: #00ff41 !important;
+}
+
+.program-card.rootship-card .status-draft {
+  background: #001a06 !important;
+  color: #00993d !important;
+}
+
+.program-card.rootship-card .status-ended {
+  background: #0a0f0b !important;
+  color: #006622 !important;
+}
+
+.program-card.rootship-card .program-completion-toggle {
+  position: relative;
+  z-index: 4;
+  background: #001a06 !important;
+  border: 2px solid #00ff41 !important;
+  border-radius: 12px !important;
+  box-shadow: 3px 3px 0px #004d14 !important;
+  color: #00ff41 !important;
+  font-family: 'Fira Code', monospace !important;
+}
+
+.program-card.rootship-card .program-completion-toggle.completed {
+  background: #003d0f !important;
+}
+
+.program-card.rootship-card .program-links a {
+  color: #00ff41 !important;
+  font-weight: 700 !important;
+  text-decoration: underline !important;
+  text-underline-offset: 3px !important;
+  font-family: 'Fira Code', monospace !important;
+}
+
+.program-card.rootship-card .program-links a:hover {
+  color: #7fff7f !important;
+}
