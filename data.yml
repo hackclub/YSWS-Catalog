@@ -378,13 +378,6 @@ limitedTime:
     slackChannel: "#siege"
     status: ended
     deadline: 2025-12-08
-  - name: iplace
-    description: A collaborative canvas of websites, made by Hack Clubbers! Get hosting and domain credits!
-    website: https://iplace.hackclub.com/
-    slack: https://hackclub.slack.com/archives/C09NB7UDSDD
-    slackChannel: "#iplace"
-    status: active
-    deadline: 2025-11-10
   - name: Emerge
     description: create an emergent behaviour, place pixels on the group canvas, get the canvas shipped to you!
     website: https://emerge.hackclub.com/?utm_source=ysws
@@ -1062,6 +1055,12 @@ recentlyEnded:
     deadline: "2025-06-30T23:59:59"
 
 indefinite:
+  - name: iplace
+    description: A collaborative canvas of websites, made by Hack Clubbers! Get hosting and domain credits!
+    website: https://iplace.hackclub.com/
+    slack: https://hackclub.slack.com/archives/C09NB7UDSDD
+    slackChannel: "#iplace"
+    status: active
   - name: Hacklet v2
     description: Build a bookmarklet, get food for your club!
     website: https://hacklet.hackclub.com
