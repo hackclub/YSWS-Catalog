@@ -1057,7 +1057,7 @@ recentlyEnded:
 indefinite:
   - name: iplace
     description: A collaborative canvas of websites, made by Hack Clubbers! Get hosting and domain credits!
-    website: https://iplace.hackclub.com/?utm_source=ysws
+    website: https://iplace.hackclub.com/?utm_source=ysws-catalog
     slack: https://hackclub.slack.com/archives/C09NB7UDSDD
     slackChannel: "#iplace"
     status: active
