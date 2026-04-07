@@ -1564,6 +1564,14 @@
       "status": "draft"
     },
     {
+      "name": "Servo",
+      "description": "Design upgrades for your robot, get parts & prizes!",
+      "website": "https://servo-ysws.netlify.app/",
+      "slack": "https://app.slack.com/client/E09V59WQY1E/C0ARBM1GSRX",
+      "slackChannel": "#servo",
+      "status": "draft"
+    },
+    {
       "name": "HackABand",
       "description": "ship a wristband design and we ship you fabric woven wristband with NFC chip",
       "website": "https://hackaband.vercel.app/",
