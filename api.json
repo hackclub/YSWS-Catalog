@@ -1411,6 +1411,7 @@
       "slackChannel": "#hackanomous",
       "detailedDescription": "Hackanomous is an amazing YSWS where you can build any AI or ML related Hardware or Software! In return, we will send you funding or even prizes! Whatever AI project is useful, you can build it! Just ask in our help channel if you have any questions! Happy hacking!",
       "slack": "https://hackclub.enterprise.slack.com/archives/C0AHPG4LPUM",
+      "website": "https://hackanomous.vercel.app/",
       "status": "draft"
     },
     {
