@@ -79,17 +79,17 @@
   --radii-ultra: 16px;
   --radii-circle: 99999px;
   --shadow-text: 0 1px 2px rgba(0, 0, 0, 0.25), 0 2px 4px rgba(0, 0, 0, 0.125);
-  --shadow-small: 0 1px 2px rgba(0, 0, 0, 0.0625),
-    0 2px 4px rgba(0, 0, 0, 0.0625);
+  --shadow-small:
+    0 1px 2px rgba(0, 0, 0, 0.0625), 0 2px 4px rgba(0, 0, 0, 0.0625);
   --shadow-card: 0 4px 8px rgba(0, 0, 0, 0.125);
-  --shadow-elevated: 0 1px 2px rgba(0, 0, 0, 0.0625),
-    0 8px 12px rgba(0, 0, 0, 0.125);
+  --shadow-elevated:
+    0 1px 2px rgba(0, 0, 0, 0.0625), 0 8px 12px rgba(0, 0, 0, 0.125);
   --dark-background: var(--darker);
   --dark-text: var(--snow);
   --dark-elevated: var(--dark);
   --dark-border: var(--darkless);
   --dark-sunken: var(--darkless);
-  --font-family: 'Outfit', system-ui, -apple-system, sans-serif;
+  --font-family: "Outfit", system-ui, -apple-system, sans-serif;
   --gradient-1: rgba(236, 55, 80, 0.3);
   --gradient-2: rgba(51, 142, 218, 0.3);
   --gradient-3: rgba(51, 214, 166, 0.3);
@@ -141,7 +141,9 @@ body {
   color: var(--text);
   box-sizing: border-box;
   background: var(--background);
-  transition: background-color 0.5s ease, color 0.5s ease;
+  transition:
+    background-color 0.5s ease,
+    color 0.5s ease;
   overflow-x: hidden;
 }
 
@@ -172,7 +174,7 @@ body {
 }
 
 .ultratitle::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 50%;
   bottom: 0;
@@ -190,7 +192,6 @@ body {
 }
 
 @keyframes title-gradient {
-
   0%,
   100% {
     background-position: 0% 50%;
@@ -202,7 +203,6 @@ body {
 }
 
 @keyframes gradient-text {
-
   0%,
   100% {
     background-position: 0% 50%;
@@ -299,7 +299,9 @@ button {
   box-shadow: var(--shadow-card);
   letter-spacing: var(--letter-spacing-headline);
   -webkit-tap-highlight-color: transparent;
-  transition: transform 0.125s ease-in-out, box-shadow 0.125s ease-in-out;
+  transition:
+    transform 0.125s ease-in-out,
+    box-shadow 0.125s ease-in-out;
   box-sizing: border-box;
   margin: 0;
   min-width: 0;
@@ -343,14 +345,18 @@ button.outline {
 
 button.cta {
   font-size: var(--font-2);
-  background-image: radial-gradient(ellipse farthest-corner at top left,
-      var(--orange),
-      var(--red));
+  background-image: radial-gradient(
+    ellipse farthest-corner at top left,
+    var(--orange),
+    var(--red)
+  );
   background-size: 200% 200%;
-  background-image: linear-gradient(45deg,
-      var(--orange) 0%,
-      var(--red) 50%,
-      var(--orange) 100%);
+  background-image: linear-gradient(
+    45deg,
+    var(--orange) 0%,
+    var(--red) 50%,
+    var(--orange) 100%
+  );
   animation: gradient-shift 3s ease infinite;
 }
 
@@ -384,7 +390,9 @@ button.cta {
 .card.interactive {
   text-decoration: none;
   -webkit-tap-highlight-color: transparent;
-  transition: transform 0.125s ease-in-out, box-shadow 0.125s ease-in-out;
+  transition:
+    transform 0.125s ease-in-out,
+    box-shadow 0.125s ease-in-out;
 }
 
 .card.interactive:hover,
@@ -557,7 +565,7 @@ pre {
   white-space: inherit;
 }
 
-pre>code {
+pre > code {
   color: inherit;
   margin-left: 0;
   margin-right: 0;
@@ -578,14 +586,14 @@ code {
   padding-right: var(--spacing-1);
 }
 
-p>code,
-li>code {
+p > code,
+li > code {
   color: var(--blue);
   font-size: 0.875em;
 }
 
-p>a>code,
-li>a>code {
+p > a > code,
+li > a > code {
   color: var(--blue);
   font-size: 0.875em;
 }
@@ -603,8 +611,8 @@ table {
   border-spacing: 0;
 }
 
-table>th,
-table>td {
+table > th,
+table > td {
   text-align: left;
   padding: 4px;
   padding-left: 0px;
@@ -643,7 +651,10 @@ td {
 
 .program-card.opens-soon {
   border: 2px dashed var(--blue);
-  background: linear-gradient(rgba(51, 142, 218, 0.05), rgba(51, 142, 218, 0.05));
+  background: linear-gradient(
+    rgba(51, 142, 218, 0.05),
+    rgba(51, 142, 218, 0.05)
+  );
 }
 
 .program-card.opens-soon .program-deadline {
@@ -682,7 +693,6 @@ td {
 }
 
 @keyframes status-glow {
-
   0%,
   100% {
     box-shadow: 0 0 5px var(--green);
@@ -710,11 +720,13 @@ td {
   font-weight: var(--font-weight-bold);
   background-size: 28.28px 28.28px;
   animation: dash-animation 1s linear infinite;
-  background-image: repeating-linear-gradient(45deg,
-      var(--yellow) 0,
-      var(--yellow) 10px,
-      var(--orange) 10px,
-      var(--orange) 20px);
+  background-image: repeating-linear-gradient(
+    45deg,
+    var(--yellow) 0,
+    var(--yellow) 10px,
+    var(--orange) 10px,
+    var(--orange) 20px
+  );
 }
 
 @keyframes dash-animation {
@@ -1200,7 +1212,6 @@ body.modal-open {
 }
 
 @media screen and (max-width: 48em) {
-
   .filter-container,
   .sort-container {
     justify-content: center;
@@ -1251,7 +1262,7 @@ body.modal-open {
 }
 
 .noise::before {
-  content: '';
+  content: "";
   position: fixed;
   top: 0;
   left: 0;
@@ -1402,7 +1413,7 @@ body.modal-open {
 }
 
 .nav-link:after {
-  content: '';
+  content: "";
   position: absolute;
   width: 0%;
   height: 2px;
@@ -1513,7 +1524,8 @@ body.modal-open {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+  background-image:
+    linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
     linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
   background-size: 50px 50px;
   z-index: -6;
@@ -1521,7 +1533,8 @@ body.modal-open {
 }
 
 .dark-theme .grid-overlay {
-  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+  background-image:
+    linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
     linear-gradient(to bottom, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
 }
 
@@ -1599,7 +1612,6 @@ body.modal-open {
   letter-spacing: -0.01em;
 }
 
-
 .hero-title .accent {
   background: linear-gradient(90deg, var(--red) 0%, var(--orange) 100%);
   background-clip: text;
@@ -1609,9 +1621,8 @@ body.modal-open {
   display: inline-block;
 }
 
-
 .hero-title::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -0.75rem;
   left: 50%;
@@ -1937,13 +1948,17 @@ body.modal-open {
 }
 
 .program-card::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.1) 100%);
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.1) 100%
+  );
   opacity: 0;
   transition: opacity 0.3s ease;
   z-index: 1;
@@ -2080,13 +2095,18 @@ html {
 }
 
 .user-completed-badge::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.2) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
   transform: translateX(-100%);
   animation: shimmer 2s infinite;
   z-index: -1;
@@ -2726,8 +2746,7 @@ html {
   }
 }
 
-@media (-webkit-min-device-pixel-ratio: 2),
-(min-resolution: 192dpi) {
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   .hero-title {
     text-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
   }
@@ -2790,7 +2809,9 @@ html {
   position: relative;
   max-height: 25rem;
 
-  transition: background-color 0.5s ease, color 0.5s ease;
+  transition:
+    background-color 0.5s ease,
+    color 0.5s ease;
 }
 
 #timeline-container::-webkit-scrollbar {
@@ -2845,7 +2866,7 @@ html {
   transition:
     translate 0.25s ease,
     box-shadow 0.25s ease,
-    transform 0.25s ease
+    transform 0.25s ease;
 }
 
 .timeline-block {
@@ -2977,7 +2998,9 @@ html {
     linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
     linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px) !important;
   background-size: 50px 50px !important;
-  background-position: 0 0, 0 0 !important;
+  background-position:
+    0 0,
+    0 0 !important;
   backdrop-filter: none !important;
   position: relative;
   color: white !important;
@@ -3001,7 +3024,7 @@ html {
   border-color: white !important;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
 
 /* ts is for the Accelerate Card - whiteboard theme */
 .program-card.accelerate-card {
@@ -3023,13 +3046,17 @@ html {
 }
 
 .program-card.accelerate-card::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.4), transparent 70%);
+  background: radial-gradient(
+    circle at 50% 50%,
+    rgba(255, 255, 255, 0.4),
+    transparent 70%
+  );
   pointer-events: none;
   border-radius: inherit;
 }
@@ -3323,7 +3350,11 @@ html {
   --color-meow-text: #c94a6d;
   --color-meow-accent: #e85a7e;
   background-color: var(--color-meow-bg) !important;
-  background-image: radial-gradient(circle, var(--color-meow-dot) 10px, transparent 15px) !important;
+  background-image: radial-gradient(
+    circle,
+    var(--color-meow-dot) 10px,
+    transparent 15px
+  ) !important;
   background-size: 20px 20px !important;
   position: relative;
   color: var(--color-meow-text) !important;
@@ -3360,7 +3391,11 @@ html {
   --color-woof-text: #010101;
   --color-woof-accent: #2f1213;
   background-color: var(--color-woof-bg) !important;
-  background-image: radial-gradient(circle, var(--color-woof-dot) 10px, transparent 15px) !important;
+  background-image: radial-gradient(
+    circle,
+    var(--color-woof-dot) 10px,
+    transparent 15px
+  ) !important;
   background-size: 20px 20px !important;
   position: relative;
   color: var(--color-woof-text) !important;
@@ -3394,7 +3429,7 @@ html {
 .program-card.pxl-card {
   --color-pxl-bg: #1a1a1a;
   --color-pxl-text: #ffffff;
-  --color-pxl-accent: #00FF00;
+  --color-pxl-accent: #00ff00;
   background-color: var(--color-pxl-bg) !important;
   background-image:
     linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
@@ -3456,7 +3491,7 @@ html {
   --color-wacky-text: #ffffff;
   --color-wacky-accent: #ffe700;
   background-color: var(--color-wacky-bg) !important;
-  background-image: url('https://hc-cdn.hel1.your-objectstorage.com/s/v3/4e7edf44ddc8f3b1_image.png') !important;
+  background-image: url("https://hc-cdn.hel1.your-objectstorage.com/s/v3/4e7edf44ddc8f3b1_image.png") !important;
   background-size: cover !important;
   background-position: center !important;
   position: relative;
@@ -3465,13 +3500,17 @@ html {
 }
 
 .program-card.wacky-files-card::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(135deg, rgba(42, 26, 78, 0.85) 0%, rgba(42, 26, 78, 0.7) 100%);
+  background: linear-gradient(
+    135deg,
+    rgba(42, 26, 78, 0.85) 0%,
+    rgba(42, 26, 78, 0.7) 100%
+  );
   z-index: 1;
 }
 
@@ -3508,14 +3547,14 @@ html {
 
 /* Flavortown-specific card styling */
 .program-card.flavortown-card {
-  background: #E7D5B3 !important;
-  color: #4D2B32 !important;
+  background: #e7d5b3 !important;
+  color: #4d2b32 !important;
 }
 
 .program-card.flavortown-card h3,
 .program-card.flavortown-card p,
 .program-card.flavortown-card .program-deadline {
-  color: #4D2B32 !important;
+  color: #4d2b32 !important;
 }
 
 .program-card.flavortown-card .program-completion-toggle {
@@ -3535,8 +3574,8 @@ html {
 
 /* Jusstudy-specific card styling */
 .program-card.jusstudy-card {
-  background-color: #D6CBC0 !important;
-  background-image: url('logos/jusstudy-background.avif') !important;
+  background-color: #d6cbc0 !important;
+  background-image: url("logos/jusstudy-background.avif") !important;
   background-size: cover !important;
   background-position: center !important;
   position: relative;
@@ -3545,7 +3584,7 @@ html {
 }
 
 .program-card.jusstudy-card::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -3621,7 +3660,7 @@ html {
 }
 
 .program-card.reboot-card {
-  background-image: url('logos/background.PNG') !important;
+  background-image: url("logos/background.PNG") !important;
   background-size: cover !important;
   background-position: center !important;
   position: relative;
@@ -3661,7 +3700,10 @@ html {
   border: 2px solid rgba(0, 0, 0, 0.1);
   border-radius: 16px;
   color: white;
-  transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+  transition:
+    border-color 0.3s ease,
+    box-shadow 0.3s ease,
+    transform 0.3s ease;
 }
 
 .kitlab-gif {
@@ -3675,7 +3717,7 @@ html {
 }
 
 .kitlab-card::before {
-  content: '';
+  content: "";
   position: absolute;
   inset: 0;
   background: rgba(0, 0, 0, 0.25);
@@ -3704,7 +3746,7 @@ html {
 }
 
 .program-card.kitlab-card:hover {
-  border-color: #FF6F61;
+  border-color: #ff6f61;
   box-shadow: 0 0 20px rgba(255, 111, 97, 0.4);
   cursor: pointer;
   transform: scale(1.05);
@@ -3722,14 +3764,14 @@ html {
 }
 
 .program-card.kitlab-card a {
-  color: #FF6F61;
+  color: #ff6f61;
   position: relative;
   z-index: 2;
 }
 
 /* Sleepover card styling */
 .program-card.sleepover-card {
-  background-image: url('https://cdn.hackclub.com/019cb51b-3a1a-742e-b765-6d80a1f8ecd9/image.png') !important;
+  background-image: url("https://cdn.hackclub.com/019cb51b-3a1a-742e-b765-6d80a1f8ecd9/image.png") !important;
   background-size: cover !important;
   background-repeat: no-repeat !important;
   background-position: center !important;
@@ -3739,7 +3781,7 @@ html {
 }
 
 .program-card.sleepover-card::before {
-  content: '';
+  content: "";
   position: absolute;
   inset: 0;
   background: rgba(255, 255, 255, 0.25);
@@ -3780,7 +3822,7 @@ html {
 
 /* Stasis card styling */
 .program-card.stasis-card {
-  background-image: url('https://cdn.hackclub.com/019cb521-9b7a-7faf-b26c-e81d66e42fbb/stasis-banner.png') !important;
+  background-image: url("https://cdn.hackclub.com/019cb521-9b7a-7faf-b26c-e81d66e42fbb/stasis-banner.png") !important;
   background-size: cover !important;
   background-repeat: no-repeat !important;
   background-position: center !important;
@@ -3790,7 +3832,7 @@ html {
 }
 
 .program-card.stasis-card::before {
-  content: '';
+  content: "";
   position: absolute;
   inset: 0;
   background: rgba(255, 255, 255, 0.25);
@@ -3849,7 +3891,6 @@ html {
   }
 }
 
-
 .program-card.coeur-card {
   background-image: url("https://raw.githubusercontent.com/hackclub/coeur/refs/heads/main/static/images/landing/1.png");
   background-size: cover;
@@ -3879,7 +3920,7 @@ html {
   }
 
   & .program-deadline {
-    color: #1B2A42;
+    color: #1b2a42;
   }
 
   & .program-links a {
@@ -3894,7 +3935,7 @@ html {
 
 /* Hack Club: The Game (https://game.hackclub.com) */
 .program-card.hctg-card {
-  background-color: #FCCC0E;
+  background-color: #fccc0e;
 
   & p {
     color: #000;
@@ -3915,78 +3956,80 @@ html {
 
 /* Hack a Home (https://hackahome.nullbyte.rip) */
 .program-card.hackahome-card {
-  background-color: #F5F0E8 !important;
-  border: 3px solid #1A1410 !important;
-  box-shadow: 6px 6px 0px #1A1410 !important;
+  background-color: #f5f0e8 !important;
+  border: 3px solid #1a1410 !important;
+  box-shadow: 6px 6px 0px #1a1410 !important;
   border-radius: 20px !important;
-  color: #1A1410 !important;
-  transition: transform 0.2s, box-shadow 0.2s !important;
+  color: #1a1410 !important;
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s !important;
 }
 
 .program-card.hackahome-card:hover {
   transform: translate(-2px, -2px) !important;
-  box-shadow: 10px 10px 0px #FF5C1A !important;
+  box-shadow: 10px 10px 0px #ff5c1a !important;
 }
 
 .program-card.hackahome-card h3 {
-  font-family: 'Syne', sans-serif !important;
+  font-family: "Syne", sans-serif !important;
   font-weight: 800 !important;
   text-transform: uppercase !important;
-  color: #1A1410 !important;
+  color: #1a1410 !important;
   letter-spacing: -0.5px;
 }
 
 .program-card.hackahome-card p,
 .program-card.hackahome-card .program-participants {
-  font-family: 'DM Mono', monospace !important;
+  font-family: "DM Mono", monospace !important;
   font-weight: 500 !important;
-  color: #1A1410 !important;
+  color: #1a1410 !important;
 }
 
 .program-card.hackahome-card .program-status {
-  color: #1A1410 !important;
-  border: 2px solid #1A1410 !important;
+  color: #1a1410 !important;
+  border: 2px solid #1a1410 !important;
   border-radius: 10px !important;
   font-weight: 800 !important;
-  box-shadow: 2px 2px 0px #1A1410 !important;
+  box-shadow: 2px 2px 0px #1a1410 !important;
 }
 
 .program-card.hackahome-card .status-active {
-  background: #C8F135 !important;
+  background: #c8f135 !important;
 }
 
 .program-card.hackahome-card .status-draft {
-  background: #FFFFFF !important;
+  background: #ffffff !important;
 }
 
 .program-card.hackahome-card .status-ended {
-  background: #D1CDC7 !important;
+  background: #d1cdc7 !important;
 }
 
 .program-card.hackahome-card .program-completion-toggle {
   background: #fff !important;
-  border: 2px solid #1A1410 !important;
+  border: 2px solid #1a1410 !important;
   border-radius: 12px !important;
-  box-shadow: 3px 3px 0px #1A1410 !important;
-  color: #1A1410 !important;
+  box-shadow: 3px 3px 0px #1a1410 !important;
+  color: #1a1410 !important;
 }
 
 .program-card.hackahome-card .program-completion-toggle.completed {
-  background: #C8F135 !important;
+  background: #c8f135 !important;
 }
 
 .program-card.hackahome-card .program-links a {
-  color: #1A1410 !important;
+  color: #1a1410 !important;
   font-weight: 700 !important;
   text-decoration: underline !important;
   text-underline-offset: 3px !important;
 }
 
 .program-card.hackahome-card .program-links a:hover {
-  color: #FF5C1A !important;
+  color: #ff5c1a !important;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap");
 
 /* Rootship card styling */
 .program-card.rootship-card {
@@ -3999,7 +4042,9 @@ html {
   border: 3px solid #00ff41 !important;
   box-shadow: 6px 6px 0px #004d14 !important;
   border-radius: 20px !important;
-  transition: transform 0.2s, box-shadow 0.2s !important;
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s !important;
 }
 
 .program-card.rootship-card:hover {
@@ -4009,7 +4054,7 @@ html {
 
 /* CRT scanline overlay */
 .program-card.rootship-card::before {
-  content: '';
+  content: "";
   position: absolute;
   inset: 0;
   background:
@@ -4034,7 +4079,7 @@ html {
 }
 
 .program-card.rootship-card h3 {
-  font-family: 'Fira Code', monospace !important;
+  font-family: "Fira Code", monospace !important;
   font-weight: 800 !important;
   color: #00ff41 !important;
   letter-spacing: 2px !important;
@@ -4043,13 +4088,13 @@ html {
 
 .program-card.rootship-card p,
 .program-card.rootship-card .program-participants {
-  font-family: 'Fira Code', monospace !important;
+  font-family: "Fira Code", monospace !important;
   color: #00cc33 !important;
 }
 
 .program-card.rootship-card .program-deadline {
   color: #00cc33 !important;
-  font-family: 'Fira Code', monospace !important;
+  font-family: "Fira Code", monospace !important;
 }
 
 .program-card.rootship-card .program-status {
@@ -4057,7 +4102,7 @@ html {
   border: 2px solid #00ff41 !important;
   border-radius: 10px !important;
   font-weight: 800 !important;
-  font-family: 'Fira Code', monospace !important;
+  font-family: "Fira Code", monospace !important;
   box-shadow: 2px 2px 0px #004d14 !important;
 }
 
@@ -4084,7 +4129,7 @@ html {
   border-radius: 12px !important;
   box-shadow: 3px 3px 0px #004d14 !important;
   color: #00ff41 !important;
-  font-family: 'Fira Code', monospace !important;
+  font-family: "Fira Code", monospace !important;
 }
 
 .program-card.rootship-card .program-completion-toggle.completed {
@@ -4096,9 +4141,94 @@ html {
   font-weight: 700 !important;
   text-decoration: underline !important;
   text-underline-offset: 3px !important;
-  font-family: 'Fira Code', monospace !important;
+  font-family: "Fira Code", monospace !important;
 }
 
 .program-card.rootship-card .program-links a:hover {
   color: #7fff7f !important;
+}
+
+/* RaspAPI (https://raspapi.hackclub.com) */
+@import url("https://fonts.googleapis.com/css2?family=Syne:wght@700;800&display=swap");
+
+.program-card.raspapi-card {
+  background-color: #0a0a0a !important;
+  border-color: #1f1f1f !important;
+  color: #f5f5f5 !important;
+  overflow: hidden;
+}
+
+.program-card.raspapi-card h3 {
+  font-family: "Syne", sans-serif !important;
+  font-weight: 800 !important;
+  color: #ffffff !important;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.program-card.raspapi-card p,
+.program-card.raspapi-card .program-participants {
+  color: #a3a3a3 !important;
+}
+
+.program-card.raspapi-card .program-deadline {
+  color: #737373 !important;
+}
+
+.program-card.raspapi-card .program-links a {
+  color: #c41e3a !important;
+}
+
+.program-card.raspapi-card .program-links a:hover {
+  color: #e8304a !important;
+}
+
+.program-card.raspapi-card:hover {
+  border-color: #c41e3a !important;
+}
+
+.program-card.raspapi-card .status-active {
+  background-color: #c41e3a !important;
+  color: #ffffff !important;
+  animation: raspapi-status-glow 2s ease-in-out infinite !important;
+}
+
+@keyframes raspapi-status-glow {
+  0%,
+  100% {
+    box-shadow: 0 0 5px #c41e3a;
+  }
+  50% {
+    box-shadow: 0 0 15px #c41e3a;
+  }
+}
+
+.program-card.raspapi-card .program-header,
+.program-card.raspapi-card p,
+.program-card.raspapi-card .program-deadline,
+.program-card.raspapi-card .program-footer,
+.program-card.raspapi-card .program-participants {
+  position: relative;
+  z-index: 1;
+}
+
+.raspapi-pi {
+  position: absolute;
+  bottom: -18px;
+  right: -22px;
+  width: 150px;
+  height: auto;
+  transform: rotate(22deg);
+  opacity: 0.55;
+  pointer-events: none;
+  z-index: 0;
+  filter: drop-shadow(0 4px 12px rgba(196, 30, 58, 0.35));
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
+}
+
+.program-card.raspapi-card:hover .raspapi-pi {
+  opacity: 0.8;
+  transform: rotate(18deg) scale(1.05);
 }
