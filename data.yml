@@ -1138,6 +1138,17 @@ indefinite:
     status: ended
 
 drafts:
+  - name: Alchemize
+    description: Make general projects, or one of the 3 theme-based projects and earn Potion Mix to get the prizes you choose
+    website: https://alchemize-ysws.vercel.app
+    slack: https://hackclub.enterprise.slack.com/archives/C0ASY6R552R
+    slackChannel: "#alchemize"
+    status: draft
+    steps:
+      - Make Projects and Track Hours with Hackatime
+      - Earn Currency for the specific theme, or earn Potion Mix directly from shipping a general project
+      - Convert the Theme Currency to Potion Mix(with a fun little bonus if you convert them together)
+      - Get items from the Dynamic Shop, so you get to add your own item to the shop.
   - name: Rootship
     description: Learn system penetration, earn hacking themed prizes!
     website: https://rootship.pages.dev
