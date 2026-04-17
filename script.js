@@ -318,6 +318,7 @@ function createProgramCard(program) {
     const hctgClass = program.name == "Hack Club: The Game" ? 'hctg-card' : '';
     const hackahomeClass = program.name == "Hack a Home" ? 'hackahome-card' : '';
     const rootshipClass = program.name == "Rootship" ? 'rootship-card' : '';
+    const raspapiClass = program.name == "RaspAPI" ? 'raspapi-card' : '';
     const encodedProgram = encodeURIComponent(JSON.stringify(program));
 
     const isCompletedByUser = completedPrograms.has(program.name);
@@ -393,8 +394,10 @@ function createProgramCard(program) {
         <img src="https://cdn.hackclub.com/019d0899-f270-7530-b145-19d1e53f113f/hctg-text-logo.png" alt="Hack Club: The Game" class="hctg-logo">
     ` : '';
 
+    const raspapiPi = program.name == 'RaspAPI' ? `<img src="https://raspapi.hackclub.com/rpizero-topdown.png" alt="" class="raspapi-pi" aria-hidden="true">` : '';
+
     return `
-        <div class="card program-card ${opensClass} ${slushiesClass} ${blueprintClass} ${accelerateClass} ${baubleClass} ${meowClass} ${woofClass} ${pxlClass} ${wackyFilesClass} ${flavortownClass} ${jusstudyClass} ${rebootClass} ${kitlabClass} ${sleepoverClass} ${stasisClass} ${coeurClass} ${remixedClass} ${hctgClass} ${hackahomeClass} ${rootshipClass}" data-program="${encodedProgram}" data-name="${program.name}">
+        <div class="card program-card ${opensClass} ${slushiesClass} ${blueprintClass} ${accelerateClass} ${baubleClass} ${meowClass} ${woofClass} ${pxlClass} ${wackyFilesClass} ${flavortownClass} ${jusstudyClass} ${rebootClass} ${kitlabClass} ${sleepoverClass} ${stasisClass} ${coeurClass} ${remixedClass} ${hctgClass} ${hackahomeClass} ${rootshipClass} ${raspapiClass}" data-program="${encodedProgram}" data-name="${program.name}">
             ${kitlabLogo}
             ${kitlabGif}
             ${baubleSnowflakes}
@@ -428,6 +431,7 @@ function createProgramCard(program) {
             ${flavortownFooter}
             ${jusstudyAssets}
             ${rebootLogo}
+            ${raspapiPi}
         </div>
     `;
 }

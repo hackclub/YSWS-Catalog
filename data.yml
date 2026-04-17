@@ -1,5 +1,18 @@
 ---
 limitedTime:
+  - name: RaspAPI
+    description: Build an API, get a Raspberry Pi Zero 2W to host it on!
+    detailedDescription: RaspAPI is a Hack Club YSWS where you build an original, publicly accessible API using any language or framework, log your hours with Hackatime, and earn a Raspberry Pi Zero 2W to host it on. Your API needs at least 3 GET and 1 POST endpoint, docs at /docs, and a public git repo with a README. Reviewers award multipliers based on what your API implements, so the more creative and complex, the better!
+    website: https://raspapi.hackclub.com/
+    slack: https://hackclub.slack.com/archives/C07UZSKJQRX
+    slackChannel: "#raspapi"
+    status: active
+    steps:
+      - Build an original API in any language or framework with at least 3 GET endpoints and 1 POST endpoint
+      - Host it at a stable, publicly accessible URL
+      - Add docs at /docs and a hand-written README in a public git repo
+      - Log your hours with Hackatime
+      - Submit at raspapi.hackclub.com and get a Raspberry Pi Zero 2W!
   - name: Jus'STUDY
     description: Get study stuff by shipping projects that help you and others study!
     website: https://jusstudy.hackclub.com/
@@ -575,7 +588,7 @@ limitedTime:
     slackChannel: "#twist-ysws"
     status: ended
     deadline: "2025-07-16T23:59:59"
-    
+
   - name: Infinity
     description: Build a website with an infinite realtime canvas, get awesome prizes!
     website: https://infinity.hackclub.com
@@ -817,14 +830,6 @@ limitedTime:
     slackChannel: "#cafe"
     status: ended
     deadline: "2025-02-17T23:59:59"
-  - name: RaspAPI
-    description: Build an API, get your own Raspberry Pi
-    detailedDescription: Create an original API using any language or framework of your choice, and get a Raspberry Pi Zero 2W to host it on!
-    website: https://raspapi.hackclub.com/
-    slack: https://hackclub.slack.com/archives/C07UZSKJQRX
-    slackChannel: "#raspapi"
-    status: active
-    deadline: "2026-06-30T23:59:59"
   - name: Black Box
     description: Create a constrained, interactive C program and get a portable device to run it on!
     website: https://blackbox.hackclub.com
