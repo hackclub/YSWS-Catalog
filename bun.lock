@@ -1,10 +1,11 @@
 {
   "lockfileVersion": 1,
+  "configVersion": 0,
   "workspaces": {
     "": {
       "name": "ysws-catalog",
       "dependencies": {
-        "js-yaml": "^4.1.0",
+        "js-yaml": "^4.1.1",
       },
     },
   },

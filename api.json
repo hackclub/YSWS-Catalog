@@ -1,6 +1,36 @@
 {
   "limitedTime": [
     {
+      "name": "RaspAPI",
+      "description": "Build an API, get a Raspberry Pi Zero 2W to host it on!",
+      "detailedDescription": "RaspAPI is a Hack Club YSWS where you build an original, publicly accessible API using any language or framework, log your hours with Hackatime, and earn a Raspberry Pi Zero 2W to host it on. Your API needs at least 3 GET and 1 POST endpoint, docs at /docs, and a public git repo with a README. Reviewers award multipliers based on what your API implements, so the more creative and complex, the better!",
+      "website": "https://raspapi.hackclub.com/",
+      "slack": "https://hackclub.slack.com/archives/C07UZSKJQRX",
+      "slackChannel": "#raspapi",
+      "status": "active",
+      "steps": [
+        "Build an original API in any language or framework with at least 3 GET endpoints and 1 POST endpoint",
+        "Host it at a stable, publicly accessible URL",
+        "Add docs at /docs and a hand-written README in a public git repo",
+        "Log your hours with Hackatime",
+        "Submit at raspapi.hackclub.com and get a Raspberry Pi Zero 2W!"
+      ]
+    },
+    {
+      "name": "Jus'STUDY",
+      "description": "Get study stuff by shipping projects that help you and others study!",
+      "website": "https://jusstudy.hackclub.com/",
+      "slack": "https://hackclub.enterprise.slack.com/archives/C0A79Q9F5NZ",
+      "slackChannel": "#jus-study",
+      "status": "active",
+      "detailedDescription": "Jus'STUDY is a YSWS, where you build Study Related Things and get Cool Study Materials in return!",
+      "steps": [
+        "Build a project that helps you or others study!",
+        "The project will be sent to certification, then voting.",
+        "Submit your project and get cool study materials or rewards in return!"
+      ]
+    },
+    {
       "name": "Resolution",
       "description": "Resolution is an 8-week challenge where you set goals, ship every week, and earn prizes for following through.",
       "website": "https://resolution.hackclub.com/ref/ysws-catalog",
@@ -25,6 +55,21 @@
       "slack": "https://hackclub.enterprise.slack.com/archives/C0A9UNRF96V",
       "slackChannel": "#athena-sleepover",
       "status": "active"
+    },
+    {
+      "name": "Construct",
+      "description": "Design projects using CAD, Get a 3d printer to print them!",
+      "website": "https://construct.hackclub.com",
+      "slack": "https://hackclub.enterprise.slack.com/archives/C09TM7XKSSY",
+      "slackChannel": "#construct",
+      "status": "active",
+      "deadline": "2026-04-19T00:00:00.000Z",
+      "steps": [
+        "Log into construct.hackclub.com",
+        "Make projects!",
+        "Submit!",
+        "Get a cool new 3d printer!"
+      ]
     },
     {
       "name": "TrailIt",
@@ -321,21 +366,6 @@
       ]
     },
     {
-      "name": "Construct",
-      "description": "Design projects using CAD, Get a 3d printer to print them!",
-      "website": "https://construct.hackclub.com",
-      "slack": "https://hackclub.enterprise.slack.com/archives/C09TM7XKSSY",
-      "slackChannel": "#construct",
-      "status": "active",
-      "deadline": "2026-03-31T00:00:00.000Z",
-      "steps": [
-        "Log into construct.hackclub.com",
-        "Make projects!",
-        "Submit!",
-        "Get a cool new 3d printer!"
-      ]
-    },
-    {
       "name": "Remix",
       "description": "Remix an existing song's beats in Strudel and get 1 month of Spotify, Apple Music, or SoundCloud Pro",
       "website": "https://remix.hackclub.com/",
@@ -453,15 +483,6 @@
       "slackChannel": "#siege",
       "status": "ended",
       "deadline": "2025-12-08T00:00:00.000Z"
-    },
-    {
-      "name": "iplace",
-      "description": "A collaborative canvas of websites, made by Hack Clubbers! Get hosting and domain credits!",
-      "website": "https://iplace.hackclub.com/",
-      "slack": "https://hackclub.slack.com/archives/C09NB7UDSDD",
-      "slackChannel": "#iplace",
-      "status": "active",
-      "deadline": "2025-11-10T00:00:00.000Z"
     },
     {
       "name": "Emerge",
@@ -987,16 +1008,6 @@
       "deadline": "2025-02-17T23:59:59"
     },
     {
-      "name": "RaspAPI",
-      "description": "Make an API get a Raspberry Pi",
-      "detailedDescription": "Create an original API using any programming language or framework that you prefer and get a Raspberry Pi Zero 2 W to host it on! The API can be anything you want. The possibilities are endless!",
-      "website": "https://raspapi.hackclub.com/",
-      "slack": "https://hackclub.slack.com/archives/C07UZSKJQRX",
-      "slackChannel": "#raspapi-ysws",
-      "status": "ended",
-      "deadline": "2025-03-10T23:59:59"
-    },
-    {
       "name": "Black Box",
       "description": "Create a constrained, interactive C program and get a portable device to run it on!",
       "website": "https://blackbox.hackclub.com",
@@ -1299,6 +1310,22 @@
   ],
   "indefinite": [
     {
+      "name": "iplace",
+      "description": "A collaborative canvas of websites, made by Hack Clubbers! Get hosting and domain credits!",
+      "website": "https://iplace.hackclub.com/?utm_source=ysws-catalog",
+      "slack": "https://hackclub.slack.com/archives/C09NB7UDSDD",
+      "slackChannel": "#iplace",
+      "status": "active"
+    },
+    {
+      "name": "Hacklet v2",
+      "description": "Build a bookmarklet, get food for your club!",
+      "website": "https://hacklet.hackclub.com",
+      "slack": "https://hackclub.slack.com/archives/C091ZRTMF16",
+      "slackChannel": "#hacklet",
+      "status": "active"
+    },
+    {
       "name": "Carnival",
       "description": "Build an extension, plugin, or widget get prizes",
       "website": "https://carnival.hackclub.com/",
@@ -1377,6 +1404,43 @@
   ],
   "drafts": [
     {
+      "name": "Hackanomous",
+      "description": "Build into AI. Get funding<br> and win prizes!",
+      "slackChannel": "#hackanomous",
+      "detailedDescription": "hack club's dedicated AI/ML YSWS!\n\nthe AI bubble just might be about to pop. too much AI hype yet slop exists in this world. build projects incorporating AI that solve real-world problems. we might even send you an RTX 5090!\n",
+      "slack": "https://hackclub.enterprise.slack.com/archives/C0AHPG4LPUM",
+      "website": "https://hackanomous.vercel.app/",
+      "status": "draft"
+    },
+    {
+      "name": "Alchemize",
+      "description": "Make general projects, or one of the 3 theme-based projects and earn Potion Mix to get the prizes you choose",
+      "website": "https://alchemize-ysws.vercel.app",
+      "slack": "https://hackclub.enterprise.slack.com/archives/C0ASY6R552R",
+      "slackChannel": "#alchemize",
+      "status": "draft",
+      "steps": [
+        "Make Projects and Track Hours with Hackatime",
+        "Earn Currency for the specific theme, or earn Potion Mix directly from shipping a general project",
+        "Convert the Theme Currency to Potion Mix(with a fun little bonus if you convert them together)",
+        "Get items from the Dynamic Shop, so you get to add your own item to the shop."
+      ]
+    },
+    {
+      "name": "Rootship",
+      "description": "Learn system penetration, earn hacking themed prizes!",
+      "website": "https://rootship.pages.dev",
+      "slack": "https://hackclub.enterprise.slack.com/archives/C0AQ17U5GJ2",
+      "slackChannel": "#rootship",
+      "status": "draft",
+      "steps": [
+        "Take the Rootship path, a hand-picked selection of TryHackMe rooms, to earn your root status.",
+        "Improve your skills as you navigate through increasingly difficult rooms.",
+        "Complete your path and receive TryHackMe Premium plus access to the Shop.",
+        "Conquer difficult rooms, collect coins, and redeem them for cool prizes in the Shop."
+      ]
+    },
+    {
       "name": "Track it",
       "description": "Build a map app, GeoGuessr-style game, or GPS tracker. Explore the world. Win prizes.",
       "slack": "https://hackclub.enterprise.slack.com/archives/C0ADWJB6QT0",
@@ -1385,37 +1449,11 @@
       "status": "draft"
     },
     {
-      "name": "Hackanomous",
-      "description": "Build AI/ML related hardware or software, get funding to build it or get prizes!",
-      "slackChannel": "#hackanomous",
-      "detailedDescription": "Hackanomous is an amazing YSWS where you can build any AI or ML related Hardware or Software! In return, we will send you funding or even prizes! Whatever AI project is useful, you can build it! Just ask in our help channel if you have any questions! Happy hacking!",
-      "slack": "https://hackclub.enterprise.slack.com/archives/C0AHPG4LPUM",
-      "status": "draft"
-    },
-    {
       "name": "Kit Lab",
       "description": "Build software according to themes and gets kits to build projects and ship projects made using only the kit electronics and get prizes!",
       "slack": "https://hackclub.enterprise.slack.com/archives/C0AAM3UH8KC",
       "slackChannel": "#kit-lab",
       "status": "draft"
-    },
-    {
-      "name": "Jus'STUDY",
-      "description": "Get study stuff by shipping projects that help you and others study!",
-      "website": "https://jusstudy.hackclub.com/",
-      "slack": "https://hackclub.enterprise.slack.com/archives/C0A79Q9F5NZ",
-      "slackChannel": "#jus-study",
-      "status": "draft",
-      "deadline": null,
-      "detailedDescription": "Jus'STUDY is a YSWS, where you build Study Related Things and get Cool Study Materials in return!",
-      "steps": [
-        "Build a project that helps you or others study! It could be anything, like a website to track your study time, a flashcard app, a pomodoro timer, etc!",
-        "The project will be sent to certification then voting.",
-        "Submit your project and get cool study materials in return! The more complex your project is, the cooler the materials you get!"
-      ],
-      "details": [
-        "The project with the best votes at the end will get a special prize!"
-      ]
     },
     {
       "name": "Rooted",
@@ -1543,19 +1581,19 @@
       "status": "draft"
     },
     {
+      "name": "Servo",
+      "description": "Design upgrades for your robot, get parts & prizes!",
+      "website": "https://servo-ysws.netlify.app/",
+      "slack": "https://app.slack.com/client/E09V59WQY1E/C0ARBM1GSRX",
+      "slackChannel": "#servo",
+      "status": "draft"
+    },
+    {
       "name": "HackABand",
       "description": "ship a wristband design and we ship you fabric woven wristband with NFC chip",
       "website": "https://hackaband.vercel.app/",
       "slack": "https://hackclub.slack.com/archives/C089WSLC59V",
       "slackChannel": "#hack-a-band",
-      "status": "draft"
-    },
-    {
-      "name": "Forge",
-      "description": "Design a 3D model that solves a problem and receive a custom 3D printer.",
-      "website": "https://forge.hackclub.com/",
-      "slack": "https://hackclub.slack.com/archives/C078GBDKC03",
-      "slackChannel": "#forge-updates",
       "status": "draft"
     },
     {
