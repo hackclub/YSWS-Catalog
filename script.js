@@ -319,6 +319,7 @@ function createProgramCard(program) {
     const hackahomeClass = program.name == "Hack a Home" ? 'hackahome-card' : '';
     const rootshipClass = program.name == "Rootship" ? 'rootship-card' : '';
     const raspapiClass = program.name == "RaspAPI" ? 'raspapi-card' : '';
+    const alchemizeClass = program.name === "Alchemize" ? 'alchemize-card' : '';
     const encodedProgram = encodeURIComponent(JSON.stringify(program));
 
     const isCompletedByUser = completedPrograms.has(program.name);
@@ -396,8 +397,11 @@ function createProgramCard(program) {
 
     const raspapiPi = program.name == 'RaspAPI' ? `<img src="https://raspapi.hackclub.com/rpizero-topdown.png" alt="" class="raspapi-pi" aria-hidden="true">` : '';
 
+    const alchemize = program.name === 'Alchemize' ? `<img src="https://alchemize-ysws.vercel.app/Alchemist.webp" alt="Alchemize Logo" class="alchemize-logo">` : '';
+    const alchemizeBg = program.name === 'Alchemize' ? `<img src="./logos/alchemize.png" alt="Alchemize Background" class="alchemize-bg">` : '';
+
     return `
-        <div class="card program-card ${opensClass} ${slushiesClass} ${blueprintClass} ${accelerateClass} ${baubleClass} ${meowClass} ${woofClass} ${pxlClass} ${wackyFilesClass} ${flavortownClass} ${jusstudyClass} ${rebootClass} ${kitlabClass} ${sleepoverClass} ${stasisClass} ${coeurClass} ${remixedClass} ${hctgClass} ${hackahomeClass} ${rootshipClass} ${raspapiClass}" data-program="${encodedProgram}" data-name="${program.name}">
+        <div class="card program-card ${opensClass} ${slushiesClass} ${blueprintClass} ${accelerateClass} ${baubleClass} ${meowClass} ${woofClass} ${pxlClass} ${wackyFilesClass} ${flavortownClass} ${jusstudyClass} ${rebootClass} ${kitlabClass} ${sleepoverClass} ${stasisClass} ${coeurClass} ${remixedClass} ${hctgClass} ${hackahomeClass} ${rootshipClass} ${raspapiClass} ${alchemizeClass}" data-program="${encodedProgram}" data-name="${program.name}">
             ${kitlabLogo}
             ${kitlabGif}
             ${baubleSnowflakes}
@@ -406,6 +410,7 @@ function createProgramCard(program) {
             ${stasisLogo}
             ${remixedLogo}
             ${hctgLogo}
+            ${alchemize}
             <div class="program-header">
                 <h3>${program.name}</h3>
                 <div class="status-container">

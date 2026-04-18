@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Saira+Stencil:ital,wght@0,100..900;1,100..900&display=swap');
+
 :root {
   --darker: #121217;
   --dark: #17171d;
@@ -3819,7 +3822,39 @@ html {
   height: auto;
   margin-bottom: 0.5rem;
 }
+/* Alchemize Card Styling */
+.program-card.alchemize-card {
+  background-image: url("./logos/alchemize.png") !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-position: 80% 90% !important;
 
+  position: relative;
+  overflow: hidden;
+  
+}
+.program-card.alchemize-card h3 {
+  color: #ffffff !important;
+  position: relative;
+  z-index: 2;
+  font-size: 28px;
+font-family: "Saira Stencil", sans-serif;
+  text-shadow: 0px 0px 10px rgb(0, 0, 0),0px 0px 20px rgb(0, 0, 0);
+
+}
+.program-card.alchemize-card a{
+  text-shadow: 0px 0px 10px rgb(0, 0, 0),0px 0px 20px rgb(0, 0, 0);
+  color: hsl(0, 0%, 100%) !important;
+}
+.alchemize-logo {
+  position: absolute;
+  top: 8px;
+  left: 12px;
+  width: 50px;
+  height: auto;
+  z-index: -2;
+
+}
 /* Stasis card styling */
 .program-card.stasis-card {
   background-image: url("https://cdn.hackclub.com/019cb521-9b7a-7faf-b26c-e81d66e42fbb/stasis-banner.png") !important;
