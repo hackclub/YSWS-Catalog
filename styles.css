@@ -1,5 +1,14 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Saira+Stencil:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Syne:wght@700;800&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
 
 :root {
   --darker: #121217;
@@ -3027,7 +3036,6 @@ html {
   border-color: white !important;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
 
 /* ts is for the Accelerate Card - whiteboard theme */
 .program-card.accelerate-card {
@@ -4064,8 +4072,6 @@ font-family: "Saira Stencil", sans-serif;
   color: #ff5c1a !important;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap");
-
 /* Rootship card styling */
 .program-card.rootship-card {
   background-size: cover !important;
@@ -4184,7 +4190,6 @@ font-family: "Saira Stencil", sans-serif;
 }
 
 /* RaspAPI (https://raspapi.hackclub.com) */
-@import url("https://fonts.googleapis.com/css2?family=Syne:wght@700;800&display=swap");
 
 .program-card.raspapi-card {
   background-color: #0a0a0a !important;
@@ -4267,3 +4272,126 @@ font-family: "Saira Stencil", sans-serif;
   opacity: 0.8;
   transform: rotate(18deg) scale(1.05);
 }
+
+/* Hackanomous YSWS styling */
+
+.program-card.hackanomous-card {
+    /* constants copied directly from upstream css */
+    --text: #ffffff;
+    --text-h: #b0e4cc;
+    --text-l: #c4eeda;
+    --bg: #0b1618;
+    --border: #34745f;
+    --code-bg: #255a4d;
+    --accent: #10b981;
+    --accent-hover: #24e1a0;
+    --accent-bg: rgba(16, 185, 129, 0.1);
+    --accent-border: #67887c;
+
+    background: linear-gradient(135deg, var(--bg) 40%, #122421 100%) !important;
+    border: 3px solid var(--border) !important;
+    box-shadow: 6px 6px 0px var(--border) !important;
+    border-radius: 20px !important;
+    color: var(--text) !important;
+    transition:
+      transform 0.2s,
+      box-shadow 0.2s !important;
+  }
+  
+  .program-card.hackanomous-card:hover {
+    transform: translate(-2px, -2px) !important;
+    box-shadow: 10px 10px 0px var(--accent) !important;
+  }
+  
+  .program-card.hackanomous-card h3 {
+    font-family: "Unbounded", "Segoe UI", Roboto, system-ui, sans-serif;
+    font-weight: 800 !important;
+    text-transform: uppercase !important;
+    color: var(--text-h) !important;
+    letter-spacing: -0.5px;
+  }
+  
+  .program-card.hackanomous-card p,
+  .program-card.hackanomous-card .program-participants {
+    font-family: "IBM Plex Mono", Consolas, ui-monospace, monospace;
+    font-weight: 500 !important;
+    color: var(--text-l) !important;
+  }
+  
+  .program-card.hackanomous-card .program-status {
+    color: var(--text) !important;
+    border: 2px solid var(--border) !important;
+    border-radius: 10px !important;
+    font-weight: 800 !important;
+    box-shadow: 2px 2px 0px var(--border) !important;
+  }
+  
+  .program-card.hackanomous-card .status-active {
+    background: var(--accent) !important;
+  }
+  
+  .program-card.hackanomous-card .status-draft {
+    background: var(--code-bg) !important;
+  }
+  
+  .program-card.hackanomous-card .status-ended {
+    background: var(--accent-border) !important;
+  }
+
+  /* user completed badge was causing serious flow problems, too sleepy to properly fix */
+  .program-card.hackanomous-card .user-completed-badge {
+    display: none;
+  }
+  
+  /* completion toggle interferes with mascot display */
+  .program-card.hackanomous-card .program-completion-toggle {
+    display: none;
+    /* background: var(--bg) !important;
+    border: 2px solid var(--border) !important;
+    border-radius: 12px !important;
+    box-shadow: 3px 3px 0px var(--border) !important;
+    color: var(--text) !important; */
+  }
+  
+  .program-card.hackanomous-card .program-completion-toggle.completed {
+    background: var(--accent) !important;
+    color: var(--bg) !important;
+  }
+  
+  .program-card.hackanomous-card .program-links a {
+    color: var(--text) !important;
+    font-family: "Lexend", "Segoe UI", Roboto, system-ui, sans-serif;
+    font-weight: 700 !important;
+    text-decoration: underline !important;
+    text-underline-offset: 3px !important;
+  }
+  
+  .program-card.hackanomous-card .program-links a:hover {
+    color: var(--accent-hover) !important;
+  }
+
+  .program-card.hackanomous-card .program-header,
+  .program-card.hackanomous-card p,
+  .program-card.hackanomous-card .program-deadline,
+  .program-card.hackanomous-card .program-participants,
+  .program-card.hackanomous-card .program-links {
+    position: relative;
+    z-index: 1;
+  }
+
+  .program-card.hackanomous-card .hackanomous-mascot {
+    position: absolute;
+    bottom: -40px;
+    right: -40px;
+    width: 200px;
+    height: auto;
+    pointer-events: none;
+    z-index: 0;
+    transform: rotate(-30deg);
+    transition: transform 0.3s ease;
+  }
+
+  .program-card.hackanomous-card:hover .hackanomous-mascot {
+    transform: translate(-10px, -10px) rotate(-36deg) scale(1.10);
+    filter: brightness(1.1);
+  }

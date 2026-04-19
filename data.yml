@@ -1143,6 +1143,16 @@ indefinite:
     status: ended
 
 drafts:
+  - name: Hackanomous
+    description: Build into AI. Get funding<br> and win prizes!
+    slackChannel: "#hackanomous"
+    detailedDescription: |
+      hack club's dedicated AI/ML YSWS!
+
+      the AI bubble just might be about to pop. too much AI hype yet slop exists in this world. build projects incorporating AI that solve real-world problems. we might even send you an RTX 5090!
+    slack: https://hackclub.enterprise.slack.com/archives/C0AHPG4LPUM
+    website: https://hackanomous.vercel.app/
+    status: draft
   - name: Alchemize
     description: Make general projects, or one of the 3 theme-based projects and earn Potion Mix to get the prizes you choose
     website: https://alchemize-ysws.vercel.app
@@ -1170,13 +1180,6 @@ drafts:
     slack: https://hackclub.enterprise.slack.com/archives/C0ADWJB6QT0
     slackChannel: "#track-it"
     website: https://trackit-ysws.vercel.app/
-    status: draft
-  - name: Hackanomous
-    description: Build AI/ML related hardware or software, get funding to build it or get prizes!
-    slackChannel: "#hackanomous"
-    detailedDescription: Hackanomous is an amazing YSWS where you can build any AI or ML related Hardware or Software! In return, we will send you funding or even prizes! Whatever AI project is useful, you can build it! Just ask in our help channel if you have any questions! Happy hacking!
-    slack: https://hackclub.enterprise.slack.com/archives/C0AHPG4LPUM
-    website: https://hackanomous.vercel.app/
     status: draft
   - name: Kit Lab
     description: Build software according to themes and gets kits to build projects and ship projects made using only the kit electronics and get prizes!
