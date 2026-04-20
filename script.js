@@ -319,6 +319,7 @@ function createProgramCard(program) {
     const hackahomeClass = program.name == "Hack a Home" ? 'hackahome-card' : '';
     const rootshipClass = program.name == "Rootship" ? 'rootship-card' : '';
     const raspapiClass = program.name == "RaspAPI" ? 'raspapi-card' : '';
+    const alchemizeClass = program.name === "Alchemize" ? 'alchemize-card' : '';
     const hackanomousClass = program.name === "Hackanomous" ? 'hackanomous-card' : '';
     const encodedProgram = encodeURIComponent(JSON.stringify(program));
 
@@ -397,6 +398,11 @@ function createProgramCard(program) {
 
     const raspapiPi = program.name == 'RaspAPI' ? `<img src="https://raspapi.hackclub.com/rpizero-topdown.png" alt="" class="raspapi-pi" aria-hidden="true">` : '';
 
+    const alchemize = program.name === 'Alchemize' ? `<img src="https://alchemize-ysws.vercel.app/Alchemist.webp" alt="Alchemize Logo" class="alchemize-logo">` : '';
+    const alchemizeBg = program.name === 'Alchemize' ? `<img src="./logos/alchemize.png" alt="Alchemize Background" class="alchemize-bg">` : '';
+
+    return `
+        <div class="card program-card ${opensClass} ${slushiesClass} ${blueprintClass} ${accelerateClass} ${baubleClass} ${meowClass} ${woofClass} ${pxlClass} ${wackyFilesClass} ${flavortownClass} ${jusstudyClass} ${rebootClass} ${kitlabClass} ${sleepoverClass} ${stasisClass} ${coeurClass} ${remixedClass} ${hctgClass} ${hackahomeClass} ${rootshipClass} ${raspapiClass} ${alchemizeClass}" data-program="${encodedProgram}" data-name="${program.name}">
     const hackanomousLogo = program.name == 'Hackanomous' ? `<img src="https://cdn.hackclub.com/019d9ecf-46ed-734c-b351-f9c2438d15bf/hackanomous_banner_360p.png" alt="Hackanomous Logo" class="hackanomous-logo">` : '';
     const hackanomousMascot = program.name == 'Hackanomous' ? `<img src="https://cdn.hackclub.com/019d9ef5-f609-7d16-971f-3865d2092604/backanomous_mascot_320p.png" alt="Hackanomous Mascot" class="hackanomous-mascot">` : '';
 
@@ -410,6 +416,7 @@ function createProgramCard(program) {
             ${stasisLogo}
             ${remixedLogo}
             ${hctgLogo}
+            ${alchemize}
             <div class="program-header">
                 <h3>${program.name}</h3>
                 <div class="status-container">
