@@ -299,6 +299,7 @@ function createProgramCard(program) {
     const deadlineClass = getDeadlineClass(program.deadline);
 
     const opensClass = program.opens && new Date() < new Date(program.opens) ? 'opens-soon' : '';
+    const macondoClass = program.name === 'Macondo' ? 'macondo-card' : '';
     const slushiesClass = program.name === 'Slushies' ? 'slushies-card' : '';
     const blueprintClass = program.name === 'Blueprint' ? 'blueprint-card' : '';
     const accelerateClass = program.name === 'Accelerate' ? 'accelerate-card' : '';
@@ -365,6 +366,11 @@ function createProgramCard(program) {
         <img src="logos/jusstudy-emi.avif" alt="" class="jusstudy-emi">
     ` : '';
 
+    const macondoAssets = program.name === 'Macondo' ? `
+        <img src="logos/macondo-background.png" alt="" class="macondo-background" aria-hidden="true">
+        <img src="logos/Macondo.png" alt="Macondo" class="macondo-center">
+    ` : '';
+
     const rebootLogo = program.name === 'Reboot' ? `
         <img src="logos/img_2185-3.png" alt="" class="reboot-logo">
     ` : '';
@@ -405,7 +411,8 @@ function createProgramCard(program) {
     const hackanomousMascot = program.name == 'Hackanomous' ? `<img src="https://cdn.hackclub.com/019d9ef5-f609-7d16-971f-3865d2092604/backanomous_mascot_320p.png" alt="Hackanomous Mascot" class="hackanomous-mascot">` : '';
 
     return `
-        <div class="card program-card ${opensClass} ${slushiesClass} ${blueprintClass} ${accelerateClass} ${baubleClass} ${meowClass} ${woofClass} ${pxlClass} ${wackyFilesClass} ${flavortownClass} ${jusstudyClass} ${rebootClass} ${kitlabClass} ${sleepoverClass} ${stasisClass} ${coeurClass} ${remixedClass} ${hctgClass} ${hackahomeClass} ${rootshipClass} ${raspapiClass} ${alchemizeClass} ${hackanomousClass}" data-program="${encodedProgram}" data-name="${program.name}">
+        <div class="card program-card ${opensClass} ${macondoClass} ${slushiesClass} ${blueprintClass} ${accelerateClass} ${baubleClass} ${meowClass} ${woofClass} ${pxlClass} ${wackyFilesClass} ${flavortownClass} ${jusstudyClass} ${rebootClass} ${kitlabClass} ${sleepoverClass} ${stasisClass} ${coeurClass} ${remixedClass} ${hctgClass} ${hackahomeClass} ${rootshipClass} ${raspapiClass} ${alchemizeClass} ${hackanomousClass}" data-program="${encodedProgram}" data-name="${program.name}">
+            ${macondoAssets}
             ${kitlabLogo}
             ${kitlabGif}
             ${baubleSnowflakes}
@@ -416,7 +423,9 @@ function createProgramCard(program) {
             ${hctgLogo}
             ${alchemize}
             <div class="program-header">
-                <h3>${program.name}</h3>
+                ${program.name === 'Macondo'
+                    ? '<img src="logos/macondo-wordmark.png" alt="Macondo" class="macondo-wordmark">'
+                    : `<h3>${program.name}</h3>`}
                 <div class="status-container">
                     <span class="user-completed-badge ${isCompletedByUser ? 'visible' : ''}">
                         <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
