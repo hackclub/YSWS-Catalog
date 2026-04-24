@@ -1,6 +1,14 @@
 {
   "limitedTime": [
     {
+      "name": "Macondo",
+      "description": "Make projects. Win free prizes. Fly to Bogotá, Colombia for a 3-day scrappy hackathon",
+      "website": "https://macondo.hackclub.com/?utm_source=ysws-catalog",
+      "slack": "https://hackclub.enterprise.slack.com/archives/C0AUZ1LAMH6",
+      "slackChannel": "#macondo",
+      "status": "active"
+    },
+    {
       "name": "RaspAPI",
       "description": "Build an API, get a Raspberry Pi Zero 2W to host it on!",
       "detailedDescription": "RaspAPI is a Hack Club YSWS where you build an original, publicly accessible API using any language or framework, log your hours with Hackatime, and earn a Raspberry Pi Zero 2W to host it on. Your API needs at least 3 GET and 1 POST endpoint, docs at /docs, and a public git repo with a README. Reviewers award multipliers based on what your API implements, so the more creative and complex, the better!",
