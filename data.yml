@@ -6,6 +6,12 @@ limitedTime:
     slack: https://hackclub.enterprise.slack.com/archives/C0AUZ1LAMH6
     slackChannel: "#macondo"
     status: active
+  - name: Beest
+    description: Build a real project, qualify to fly to the Netherlands, and build a mechanical animal at a week-long hackathon.
+    website: https://beest.hackclub.com/?utm_source=ysws-catalog
+    slack: https://hackclub.enterprise.slack.com/archives/C0ALJ3NT1D0
+    slackChannel: "#beest"
+    status: active
   - name: RaspAPI
     description: Build an API, get a Raspberry Pi Zero 2W to host it on!
     detailedDescription: RaspAPI is a Hack Club YSWS where you build an original, publicly accessible API using any language or framework, log your hours with Hackatime, and earn a Raspberry Pi Zero 2W to host it on. Your API needs at least 3 GET and 1 POST endpoint, docs at /docs, and a public git repo with a README. Reviewers award multipliers based on what your API implements, so the more creative and complex, the better!

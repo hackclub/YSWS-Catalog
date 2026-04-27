@@ -320,6 +320,7 @@ function createProgramCard(program) {
     const hackahomeClass = program.name == "Hack a Home" ? 'hackahome-card' : '';
     const rootshipClass = program.name == "Rootship" ? 'rootship-card' : '';
     const raspapiClass = program.name == "RaspAPI" ? 'raspapi-card' : '';
+    const beestClass = program.name == 'Beest' ? 'beest-card' : '';
     const alchemizeClass = program.name === "Alchemize" ? 'alchemize-card' : '';
     const hackanomousClass = program.name === "Hackanomous" ? 'hackanomous-card' : '';
     const encodedProgram = encodeURIComponent(JSON.stringify(program));
@@ -403,6 +404,7 @@ function createProgramCard(program) {
     ` : '';
 
     const raspapiPi = program.name == 'RaspAPI' ? `<img src="https://raspapi.hackclub.com/rpizero-topdown.png" alt="" class="raspapi-pi" aria-hidden="true">` : '';
+    const beestSticker = program.name == 'Beest' ? `<img src="logos/beest-sticker.webp" alt="Beest sticker" class="beest-sticker" loading="lazy">` : '';
 
     const alchemize = program.name === 'Alchemize' ? `<img src="https://alchemize-ysws.vercel.app/Alchemist.webp" alt="Alchemize Logo" class="alchemize-logo">` : '';
     const alchemizeBg = program.name === 'Alchemize' ? `<img src="./logos/alchemize.png" alt="Alchemize Background" class="alchemize-bg">` : '';
@@ -411,7 +413,7 @@ function createProgramCard(program) {
     const hackanomousMascot = program.name == 'Hackanomous' ? `<img src="https://cdn.hackclub.com/019d9ef5-f609-7d16-971f-3865d2092604/backanomous_mascot_320p.png" alt="Hackanomous Mascot" class="hackanomous-mascot">` : '';
 
     return `
-        <div class="card program-card ${opensClass} ${macondoClass} ${slushiesClass} ${blueprintClass} ${accelerateClass} ${baubleClass} ${meowClass} ${woofClass} ${pxlClass} ${wackyFilesClass} ${flavortownClass} ${jusstudyClass} ${rebootClass} ${kitlabClass} ${sleepoverClass} ${stasisClass} ${coeurClass} ${remixedClass} ${hctgClass} ${hackahomeClass} ${rootshipClass} ${raspapiClass} ${alchemizeClass} ${hackanomousClass}" data-program="${encodedProgram}" data-name="${program.name}">
+        <div class="card program-card ${opensClass} ${macondoClass} ${slushiesClass} ${blueprintClass} ${accelerateClass} ${baubleClass} ${meowClass} ${woofClass} ${pxlClass} ${wackyFilesClass} ${flavortownClass} ${jusstudyClass} ${rebootClass} ${kitlabClass} ${sleepoverClass} ${stasisClass} ${coeurClass} ${remixedClass} ${hctgClass} ${hackahomeClass} ${rootshipClass} ${raspapiClass} ${beestClass} ${alchemizeClass} ${hackanomousClass}" data-program="${encodedProgram}" data-name="${program.name}">
             ${macondoAssets}
             ${kitlabLogo}
             ${kitlabGif}
@@ -450,6 +452,7 @@ function createProgramCard(program) {
             ${jusstudyAssets}
             ${rebootLogo}
             ${raspapiPi}
+            ${beestSticker}
             ${hackanomousMascot}
         </div>
     `;

@@ -4459,3 +4459,93 @@ font-family: "Saira Stencil", sans-serif;
     transform: translate(-10px, -10px) rotate(-36deg) scale(1.10);
     filter: brightness(1.1);
   }
+
+/* Beest (https://beest.hackclub.com) */
+.program-card.beest-card {
+  background:
+    linear-gradient(165deg, rgba(14, 48, 91, 0.58) 0%, rgba(22, 86, 155, 0.44) 100%),
+    url("logos/beest-background.png") center/cover no-repeat;
+  background-blend-mode: multiply;
+  border: 2px solid #0e305b !important;
+  color: #f3f8ff !important;
+  overflow: hidden;
+}
+
+.program-card.beest-card .program-header,
+.program-card.beest-card p,
+.program-card.beest-card .program-deadline,
+.program-card.beest-card .program-footer,
+.program-card.beest-card .program-participants {
+  position: relative;
+  z-index: 1;
+}
+
+.program-card.beest-card .program-header h3 {
+  color: #f3f8ff !important;
+  letter-spacing: 0.02em;
+}
+
+.program-card.beest-card p,
+.program-card.beest-card .program-participants {
+  color: #e6eef9 !important;
+}
+
+.program-card.beest-card .program-deadline {
+  color: #c6d7ee !important;
+}
+
+.program-card.beest-card .program-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+  margin-top: auto;
+  padding-top: 0.75rem;
+}
+
+.program-card.beest-card .program-completion-toggle {
+  position: static;
+  margin-left: 0;
+  order: 1;
+}
+
+.program-card.beest-card .program-links {
+  order: 2;
+}
+
+.program-card.beest-card .program-links a {
+  color: #ffffff !important;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.85), 0 0 8px rgba(0, 0, 0, 0.35);
+}
+
+.program-card.beest-card .program-links a:hover {
+  color: #ffffff !important;
+}
+
+.program-card.beest-card .status-active {
+  background: #93b4cd !important;
+  color: #0e305b !important;
+}
+
+.program-card.beest-card .beest-sticker {
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+  width: 64px;
+  height: auto;
+  border-radius: 8px;
+  z-index: 0;
+  opacity: 0.85;
+}
+
+.program-card.beest-card:hover {
+  border-color: #93b4cd !important;
+}
+
+@media (max-width: 640px) {
+  .program-card.beest-card .beest-sticker {
+    width: 50px;
+    right: 8px;
+    bottom: 8px;
+  }
+}
