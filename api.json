@@ -9,6 +9,14 @@
       "status": "active"
     },
     {
+      "name": "Fix Hack Club",
+      "description": "Contribute to Hack Club repositories, get a grant of your choice!",
+      "website": "https://fix.hackclub.com/",
+      "slack": "https://hackclub.enterprise.slack.com/archives/C0ALHGAASLV",
+      "slackChannel": "#pullquests",
+      "status": "active"
+    },
+    {
       "name": "Beest",
       "description": "Build a real project, qualify to fly to the Netherlands, and build a mechanical animal at a week-long hackathon.",
       "website": "https://beest.hackclub.com/?utm_source=ysws-catalog",
@@ -1279,6 +1287,15 @@
   ],
   "recentlyEnded": [
     {
+      "name": "Carnival",
+      "description": "Build an extension, plugin, or widget get prizes",
+      "website": "https://carnival.hackclub.com/",
+      "slack": "https://hackclub.slack.com/archives/C091ZRTMF16",
+      "slackChannel": "#carnival",
+      "status": "ended",
+      "deadline": "2026-04-30T23:59:59"
+    },
+    {
       "name": "Armed",
       "description": "Develop an arm assembly program, get lego.",
       "website": "https://armed.hackclub.com",
@@ -1339,14 +1356,6 @@
       "website": "https://hacklet.hackclub.com",
       "slack": "https://hackclub.slack.com/archives/C091ZRTMF16",
       "slackChannel": "#hacklet",
-      "status": "active"
-    },
-    {
-      "name": "Carnival",
-      "description": "Build an extension, plugin, or widget get prizes",
-      "website": "https://carnival.hackclub.com/",
-      "slack": "https://hackclub.slack.com/archives/C091ZRTMF16",
-      "slackChannel": "#carnival",
       "status": "active"
     },
     {

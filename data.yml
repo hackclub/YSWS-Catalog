@@ -1052,6 +1052,13 @@ limitedTime:
     # deadline: '2025-08-31T23:59:59' # Neighborhood was ended early
 
 recentlyEnded:
+  - name: Carnival
+    description: Build an extension, plugin, or widget get prizes
+    website: https://carnival.hackclub.com/
+    slack: https://hackclub.slack.com/archives/C091ZRTMF16
+    slackChannel: "#carnival"
+    status: ended
+    deadline: "2026-04-30T23:59:59"
   - name: Armed
     description: Develop an arm assembly program, get lego.
     website: https://armed.hackclub.com
@@ -1100,12 +1107,6 @@ indefinite:
     website: https://hacklet.hackclub.com
     slack: https://hackclub.slack.com/archives/C091ZRTMF16
     slackChannel: "#hacklet"
-    status: active
-  - name: Carnival
-    description: Build an extension, plugin, or widget get prizes
-    website: https://carnival.hackclub.com/
-    slack: https://hackclub.slack.com/archives/C091ZRTMF16
-    slackChannel: "#carnival"
     status: active
   - name: Terminal Craft v5
     description: Build and publish your own terminal program to earn $4/hr
