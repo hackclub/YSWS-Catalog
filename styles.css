@@ -3074,6 +3074,15 @@ html {
   margin-right: 8px;
 }
 
+.horizons-wordmark {
+  width: min(240px, calc(100% - 88px));
+  height: auto;
+  display: block;
+  position: relative;
+  z-index: 2;
+  margin-right: 8px;
+}
+
 .program-card.macondo-card:hover {
   border-color: #9c7a3a;
   box-shadow: 0 22px 38px rgba(65, 53, 34, 0.24);
@@ -3098,6 +3107,31 @@ html {
   z-index: 2;
   pointer-events: none;
   filter: drop-shadow(0 6px 12px rgba(73, 55, 28, 0.18));
+}
+
+/* Horizons (https://horizons.hackclub.com) */
+.program-card.horizons-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.horizons-background {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.38;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.program-card.horizons-card .program-header,
+.program-card.horizons-card p,
+.program-card.horizons-card .program-deadline,
+.program-card.horizons-card .program-footer {
+  position: relative;
+  z-index: 2;
 }
 
 
