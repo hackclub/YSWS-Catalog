@@ -1,6 +1,24 @@
 {
   "limitedTime": [
     {
+      "name": "Forge",
+      "deadline": "2026-08-01T00:00:00.000Z",
+      "description": "Forge is a Hack Club YSWS (You ship, we ship) program where teens like yourself can design and build hardware projects, and get them funded! Forge your project now",
+      "website": "https://forge.hackclub.com/",
+      "slack": "https://hackclub.enterprise.slack.com/archives/C0ALJ6P00B1",
+      "slackChannel": "#forge",
+      "status": "active"
+    },
+    {
+      "name": "Shipyard",
+      "deadline": "2026-07-04T03:59:59.000Z",
+      "description": "Ship 7 weeks of computing and coding challenges. Earn prizes from the shop!",
+      "website": "https://shipyard.hackclub.com/",
+      "slack": "https://hackclub.enterprise.slack.com/archives/C0A7AJRN97X",
+      "slackChannel": "#shipyard",
+      "status": "active"
+    },
+    {
       "name": "Macondo",
       "description": "Make projects. Win free prizes. Fly to Bogotá, Colombia for a 3-day scrappy hackathon",
       "website": "https://macondo.hackclub.com/?utm_source=ysws-catalog",
@@ -9,11 +27,28 @@
       "status": "active"
     },
     {
+      "name": "Horizons",
+      "description": "7 hackathons. Run by teenagers across the globe. For teenagers everywhere.",
+      "website": "https://horizons.hackclub.com/",
+      "slack": "https://hackclub.enterprise.slack.com/archives/C0AGKQ6K476",
+      "slackChannel": "#horizons",
+      "status": "active"
+    },
+    {
       "name": "Fix Hack Club",
       "description": "Contribute to Hack Club repositories, get a grant of your choice!",
       "website": "https://fix.hackclub.com/",
       "slack": "https://hackclub.enterprise.slack.com/archives/C0ALHGAASLV",
       "slackChannel": "#pullquests",
+      "status": "active"
+    },
+    {
+      "name": "Polygon",
+      "deadline": "2026-07-31T23:59:59Z",
+      "description": "Build a 3d website using three.js and get a grant to go watch your favourite movies!",
+      "website": "https://polygon.hackclub.com/",
+      "slack": "https://hackclub.enterprise.slack.com/archives/C08H7R7T40N",
+      "slackChannel": "#polygon",
       "status": "active"
     },
     {
@@ -533,7 +568,7 @@
       "website": "https://hacksaber.vercel.app/",
       "slack": "https://hackclub.slack.com/archives/C096K1ZEXDL",
       "slackChannel": "#hacksaber",
-      "status": "active"
+      "status": "ended"
     },
     {
       "name": "Fanpage",
@@ -1513,14 +1548,6 @@
       "website": null,
       "slack": "https://hackclub.slack.com/archives/C094R49MS9Y",
       "slackChannel": "#swatchbox",
-      "status": "draft"
-    },
-    {
-      "name": "Shipyard",
-      "description": "Ship 7 weeks of computing and coding challenges. Earn prizes from the shop!",
-      "website": "https://shipyard-red.vercel.app/",
-      "slack": "https://hackclub.enterprise.slack.com/archives/C0A7AJRN97X",
-      "slackChannel": "#shipyard",
       "status": "draft"
     },
     {
