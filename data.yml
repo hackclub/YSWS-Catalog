@@ -63,7 +63,7 @@ limitedTime:
     website: https://jus-study.hackclub.com/
     slack: https://hackclub.enterprise.slack.com/archives/C0A79Q9F5NZ
     slackChannel: "#jus-study"
-    status: active
+    status: draft
     detailedDescription: Jus'STUDY is a YSWS, where you build Study Related Things and get Cool Study Materials in return!
     steps:
       - Build a project that helps you or others study!
