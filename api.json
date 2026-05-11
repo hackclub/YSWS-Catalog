@@ -10,6 +10,15 @@
       "status": "active"
     },
     {
+      "name": "Shipyard",
+      "deadline": "2026-07-04T03:59:59.000Z",
+      "description": "Ship 7 weeks of computing and coding challenges. Earn prizes from the shop!",
+      "website": "https://shipyard.hackclub.com/",
+      "slack": "https://hackclub.enterprise.slack.com/archives/C0A7AJRN97X",
+      "slackChannel": "#shipyard",
+      "status": "active"
+    },
+    {
       "name": "Macondo",
       "description": "Make projects. Win free prizes. Fly to Bogotá, Colombia for a 3-day scrappy hackathon",
       "website": "https://macondo.hackclub.com/?utm_source=ysws-catalog",
@@ -1539,14 +1548,6 @@
       "website": null,
       "slack": "https://hackclub.slack.com/archives/C094R49MS9Y",
       "slackChannel": "#swatchbox",
-      "status": "draft"
-    },
-    {
-      "name": "Shipyard",
-      "description": "Ship 7 weeks of computing and coding challenges. Earn prizes from the shop!",
-      "website": "https://shipyard-red.vercel.app/",
-      "slack": "https://hackclub.enterprise.slack.com/archives/C0A7AJRN97X",
-      "slackChannel": "#shipyard",
       "status": "draft"
     },
     {

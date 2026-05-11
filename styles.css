@@ -3134,6 +3134,114 @@ html {
   z-index: 2;
 }
 
+/* Shipyard */
+.program-card.shipyard-card {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, #071d2a 0%, #0d3143 52%, #173d52 100%);
+  border: 2px solid #3bb1ff !important;
+  color: #f4fbff;
+}
+
+.program-card.shipyard-card .program-header,
+.program-card.shipyard-card p,
+.program-card.shipyard-card .program-deadline,
+.program-card.shipyard-card .program-footer {
+  position: relative;
+  z-index: 2;
+}
+
+.program-card.shipyard-card .program-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+  margin-top: auto;
+  padding-top: 0.75rem;
+  padding-right: 48px;
+  position: relative;
+}
+
+.program-card.shipyard-card .program-completion-toggle {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin-left: 0;
+  order: 2;
+}
+
+.program-card.shipyard-card .program-links {
+  order: 1;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  gap: 0.75rem;
+  margin-top: 0;
+  padding-top: 0;
+  white-space: nowrap;
+}
+
+.program-card.shipyard-card .program-links a,
+.program-card.shipyard-card .program-status {
+  color: #dbf5ff;
+}
+
+.program-card.shipyard-card .program-links a {
+  color: #ffffff !important;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.85), 0 0 8px rgba(0, 0, 0, 0.35);
+}
+
+.program-card.shipyard-card .program-links a:hover {
+  color: #ffffff !important;
+}
+
+.program-card.shipyard-card .status-active {
+  background: #3bb1ff !important;
+  color: #ffffff !important;
+}
+
+.program-card.shipyard-card .user-completed-badge {
+  background: linear-gradient(135deg, #3bb1ff 0%, #2f8bc4 100%);
+  color: #ffffff;
+}
+
+.program-card.shipyard-card .program-completion-toggle.completed {
+  background: #3bb1ff;
+  color: #ffffff;
+}
+
+.program-card.shipyard-card .program-completion-toggle.completed:hover {
+  background: #2f8bc4;
+}
+
+.shipyard-background {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.36;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.shipyard-logo {
+  position: absolute;
+  top: 16px;
+  right: 18px;
+  width: min(160px, 42%);
+  height: auto;
+  z-index: 2;
+  pointer-events: none;
+  filter: drop-shadow(0 6px 12px rgba(2, 11, 19, 0.25));
+}
+
+.program-card.shipyard-card:hover {
+  border-color: #339ad0 !important;
+  box-shadow: 0 22px 38px rgba(51, 177, 255, 0.18);
+}
+
 
 /* ts is for the Accelerate Card - whiteboard theme */
 .program-card.accelerate-card {
