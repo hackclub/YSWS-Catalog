@@ -796,6 +796,14 @@ limitedTime:
     status: ended
     deadline: "2025-08-03T23:59:59"
 
+  - name: Waffles
+    description: You ship a website using HTML CSS and JavaScript, and get Waffles!!!
+    website: https://waffles.hackclub.com/
+    slack: https://hackclub.slack.com/archives/C08QBKX5WCD
+    slackChannel: "#waffles"
+    status: ended
+    deadline: "2025-08-03T23:59:59"
+
   - name: Hackmate
     description: Build a collaborative app, get upto $50 for cloud credits or a raspberry pi
     website: https://hackmate.hackclub.dev
@@ -1173,20 +1181,13 @@ indefinite:
     slack: https://hackclub.slack.com/archives/C09DLGM81E1
     slackChannel: "#foodie"
     status: ended
+
   - name: Toppings
     description: You ship an interactive website using framework-less JavaScript, we ship you a grant to an ice cream parlor.
     website: https://toppings.hackclub.com/
     slack: https://hackclub.slack.com/archives/C08R8V2E3LY
     slackChannel: "#toppings"
-    status: ended
-    deadline: "2025-08-03T23:59:59"
-  - name: Waffles
-    description: You ship a website using HTML CSS and JavaScript, and get Waffles!!!
-    website: https://waffles.hackclub.com/
-    slack: https://hackclub.slack.com/archives/C08QBKX5WCD
-    slackChannel: "#waffles"
-    status: ended
-    deadline: "2025-08-03T23:59:59"
+    status: active
 
 drafts:
   - name: Hackanomous
