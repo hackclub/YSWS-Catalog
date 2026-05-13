@@ -1449,6 +1449,13 @@
   ],
   "drafts": [
     {
+      "name": "Bestsellr",
+      "description": "Write a short story and build a webpage for it like a real published book.",
+      "slackChannel": "#bestsellr",
+      "detailedDescription": "Bestsellr is a creative Hack Club YSWS where participants write a short 1–2 page fictional story and turn it into a real web experience. Along with the story, participants will design and code a custom webpage that showcases their book with things like a downloadable e-book, fake author branding, creative visuals, doodles, reviews, and more. The goal of Bestsellr is to combine storytelling with beginner-friendly web development and let people experience what it feels like to launch their own “bestselling” book online.",
+      "status": "draft"
+    },
+    {
       "name": "Hackanomous",
       "description": "Build into AI. Get funding<br> and win prizes!",
       "slackChannel": "#hackanomous",
