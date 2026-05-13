@@ -1525,6 +1525,20 @@
       "status": "draft"
     },
     {
+      "name": "MakerCreate",
+      "description": "Spawn into a world of hardware and CAD modelling with MakerCreate",
+      "detailedDescription": "MakerCreate is a YSWS (You Ship, We Ship) program @ HackClub. You spend time designing hardware or CAD projects on an editor of your choice, and we ship you a 3D printer of your choice! You can alternatively choose to buy parts or upgrades via our very own shop (pretty cool huh 🎃?)",
+      "website": "https://makercreate.vercel.app/",
+      "slack": "https://hackclub.enterprise.slack.com/archives/C0AGB5HP066",
+      "slackChannel": "#makercreate",
+      "steps": [
+        "Take the SerialBus, and explore the world of hardware and software with our tutorials/ or be a freebird and explore your own path",
+        "Improve your skills with new Hardware/CAD projects on MakerCreate",
+        "Trade your hard-earned spools on the *secret* MakerShop™ for goodies or hardware grants."
+      ],
+      "status": "draft"
+    },
+    {
       "name": "Shrine",
       "description": "Make and code a project about your favorite fictional character, get a grant to buy merch of your character!",
       "detailedDescription": "Shrine is a YSWS where you build a project (Must be tracked with Hackatime) about your favorite fictional character! It could be anything! Like, a website about your character, a Visual Novel with RenPy, anything related to that character! After you submit and we check your project, you'll receive a grant to go buy merch of your favorite character!",
@@ -1562,8 +1576,8 @@
       "name": "Poetry",
       "description": "You ship: poetry (details to be decided soon) We ship: Maybe a poster or smth?",
       "website": null,
-      "slack": "#poetry-ysws",
-      "slackChannel": "https://hackclub.slack.com/archives/C095DDUVCJX",
+      "slack": "https://hackclub.slack.com/archives/C095DDUVCJX",
+      "slackChannel": "#poetry-ysws",
       "status": "draft"
     },
     {
