@@ -1182,7 +1182,9 @@ drafts:
   - name: Bestsellr
     description: Write a short story and build a webpage for it like a real published book.
     slackChannel: "#bestsellr"
-    detailedDescription: Bestsellr is a creative Hack Club YSWS where participants write a short 1–2 page fictional story and turn it into a real web experience. Along with the story, participants will design and code a custom webpage that showcases their book with things like a downloadable e-book, fake author branding, creative visuals, doodles, reviews, and more. The goal of Bestsellr is to combine storytelling with beginner-friendly web development and let people experience what it feels like to launch their own “bestselling” book online.
+    slack: https://hackclub.enterprise.slack.com/archives/C0B0A14PVEE
+    detailedDescription: Bestsellr is a YSWS where you ship a website about a 2-3 page storybook which you have written by your own, and we ship book-themed ships such as stickers and bookmarks.
+    website: https://srinidhipakalapati.github.io/Bestsellr/
     status: draft
     
   - name: Hackanomous
