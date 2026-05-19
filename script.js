@@ -765,22 +765,27 @@ function searchPrograms(searchTerm) {
 
 function toggleTheme() {
     const body = document.body;
-    const toggleBtn = document.getElementById('theme-toggle');
+
     const isDark = body.classList.toggle('dark-theme');
 
-    toggleBtn.textContent = isDark ? '☀️' : '🌙';
-
-    localStorage.setItem('theme', isDark ? 'dark' : 'light');
+    localStorage.setItem(
+        'theme',
+        isDark ? 'dark' : 'light'
+    );
 }
 
 function initializeTheme() {
     const savedTheme = localStorage.getItem('theme');
-    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    const toggleBtn = document.getElementById('theme-toggle');
 
-    if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
+    const prefersDark = window.matchMedia(
+        '(prefers-color-scheme: dark)'
+    ).matches;
+
+    if (
+        savedTheme === 'dark' ||
+        (!savedTheme && prefersDark)
+    ) {
         document.body.classList.add('dark-theme');
-        toggleBtn.textContent = '☀️';
     }
 }
 
@@ -1048,4 +1053,106 @@ document.addEventListener('DOMContentLoaded', () => {
 
     document.querySelector('.modal-prev').addEventListener('click', () => navigateModal(-1));
     document.querySelector('.modal-next').addEventListener('click', () => navigateModal(1));
+});
+
+
+const themeToggle = document.getElementById("theme-toggle");
+
+themeToggle.addEventListener("click", () => {
+
+  document.body.classList.toggle("light-mode");
+
+  if (document.body.classList.contains("light-mode")) {
+    themeToggle.innerHTML = "☀";
+  } else {
+    themeToggle.innerHTML = "☾";
+  }
+
+});
+
+
+
+async function loadGlobalStats() {
+
+  try {
+
+    const response = await fetch(
+      "https://corsproxy.io/?https://ships.hackclub.com/api/v1/stats"
+    );
+
+    const data = await response.json();
+
+    animateValue(
+      "projects-count",
+      data.total_projects
+    );
+
+    animateValue(
+      "hours-count",
+      data.total_hours
+    );
+
+    animateValue(
+      "stars-count",
+      data.total_stars
+    );
+
+    animateValue(
+      "viral-count",
+      data.viral_projects
+    );
+
+  } catch (error) {
+
+    console.error(
+      "Failed to load stats:",
+      error
+    );
+
+  }
+}
+
+function formatNumber(num) {
+
+  return new Intl.NumberFormat().format(
+    Math.round(num)
+  );
+
+}
+
+function animateValue(id, endValue) {
+
+  const element =
+    document.getElementById(id);
+
+  let start = 0;
+
+  const duration = 1400;
+
+  const increment =
+    endValue / (duration / 16);
+
+  const counter = setInterval(() => {
+
+    start += increment;
+
+    if (start >= endValue) {
+
+      element.textContent =
+        formatNumber(endValue);
+
+      clearInterval(counter);
+
+    } else {
+
+      element.textContent =
+        formatNumber(Math.floor(start));
+    }
+
+  }, 16);
+}
+
+
+window.addEventListener("DOMContentLoaded", () => {
+  loadGlobalStats();
 });
