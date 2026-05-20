@@ -785,14 +785,6 @@ limitedTime:
     status: ended
     deadline: "2025-08-03T23:59:59"
 
-  - name: Waffles
-    description: You ship a website using HTML CSS and JavaScript, and get Waffles!!!
-    website: https://waffles.hackclub.com/
-    slack: https://hackclub.slack.com/archives/C08QBKX5WCD
-    slackChannel: "#waffles"
-    status: ended
-    deadline: "2025-08-03T23:59:59"
-
   - name: Hackmate
     description: Build a collaborative app, get upto $50 for cloud credits or a raspberry pi
     website: https://hackmate.hackclub.dev
@@ -1111,6 +1103,12 @@ indefinite:
     slack: https://hackclub.slack.com/archives/C091ZRTMF16
     slackChannel: "#hacklet"
     status: active
+  - name: Waffles
+    description: You ship a website using HTML CSS and JavaScript, and get Waffles!!!
+    website: https://waffles.hackclub.com/
+    slack: https://hackclub.slack.com/archives/C08QBKX5WCD
+    slackChannel: "#waffles"
+    status: active
   - name: Terminal Craft v5
     description: Build and publish your own terminal program to earn $4/hr
     website: https://terminalcraft.hackclub.com
@@ -1122,7 +1120,7 @@ indefinite:
     website: https://carnival.hackclub.com/
     slack: https://hackclub.slack.com/archives/C091ZRTMF16
     slackChannel: "#carnival"
-    status: active 
+    status: active
   - name: Sprig
     description: Build a JS game and play it on your own console.
     website: https://sprig.hackclub.com/
@@ -1169,7 +1167,7 @@ indefinite:
     slack: https://hackclub.slack.com/archives/C09DLGM81E1
     slackChannel: "#foodie"
     status: ended
-
+    
   - name: Toppings
     description: You ship an interactive website using framework-less JavaScript, we ship you a grant to an ice cream parlor.
     website: https://toppings.hackclub.com/
