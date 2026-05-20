@@ -1299,15 +1299,6 @@
   ],
   "recentlyEnded": [
     {
-      "name": "Carnival",
-      "description": "Build an extension, plugin, or widget get prizes",
-      "website": "https://carnival.hackclub.com/",
-      "slack": "https://hackclub.slack.com/archives/C091ZRTMF16",
-      "slackChannel": "#carnival",
-      "status": "ended",
-      "deadline": "2026-04-30T23:59:59"
-    },
-    {
       "name": "Armed",
       "description": "Develop an arm assembly program, get lego.",
       "website": "https://armed.hackclub.com",
@@ -1376,6 +1367,14 @@
       "website": "https://terminalcraft.hackclub.com",
       "slack": "https://hackclub.slack.com/archives/C08F58MT3GV",
       "slackChannel": "#terminal-craft",
+      "status": "active"
+    },
+    {
+      "name": "Carnival",
+      "description": "Build an extension, plugin, or widget get prizes",
+      "website": "https://carnival.hackclub.com/",
+      "slack": "https://hackclub.slack.com/archives/C091ZRTMF16",
+      "slackChannel": "#carnival",
       "status": "active"
     },
     {
