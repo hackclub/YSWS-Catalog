@@ -1,133 +1,136 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="alternate" type="application/rss+xml" title="Hack Club YSWS Programs" href="/feed.xml" />
     <script>
-      const favicons = [
-        "logos/(ch)airtable.png",
-        "logos/3d print finished ig change it if you have a feedback.png",
-        "logos/Ad Astra.png",
-        "logos/Anchor.png",
-        "logos/arcade 2.png",
-        "logos/ascend (DoS).png",
-        "logos/assemble.png",
-        "logos/athena.png",
-        "logos/Bakebuild.png",
-        "logos/balatro.png",
-        "logos/black box.png",
-        "logos/blot.png",
-        "logos/blueprint.png",
-        "logos/boba.png",
-        "logos/cadence.png",
-        "logos/cartoon.png",
-        "logos/cascade.png",
-        "logos/cat club.png",
-        "logos/caution!-3.png",
-        "logos/Cider.png",
-        "logos/coolify.png",
-        "logos/Counterspell.png",
-        "logos/Create Mod-1.png",
-        "logos/deno-1.png",
-        "logos/Department of Hacker Culture.png",
-        "logos/epoch.png",
-        "logos/figma.png",
-        "logos/FIRST.png",
-        "logos/fun artsy.png",
-        "logos/fun doodle.png",
-        "logos/Furry Tail + blåhaj + socks (feel free to remove if controversy happens again _3).png",
-        "logos/glow.png",
-        "logos/google.png",
-        "logos/h.com, the everything app.png",
-        "logos/h++.png",
-        "logos/hackapet.png",
-        "logos/Hackbrew.png",
-        "logos/hackclub_.png",
-        "logos/hackcraft.png",
-        "logos/hack-life 2.png",
-        "logos/HackMii.png",
-        "logos/hackpad (alt).png",
-        "logos/hackpad.png",
-        "logos/harc.png",
-        "logos/HCB.png",
-        "logos/high seas.png",
-        "logos/image 1.png",
-        "logos/Incident.io.png",
-        "logos/intellij.png",
-        "logos/js.png",
-        "logos/lighting.png",
-        "logos/m_a_s_h.png",
-        "logos/mask-1.png",
-        "logos/microsoft teams.png",
-        "logos/microsoft word.png",
-        "logos/miiverse.png",
-        "logos/minus twelve.png",
-        "logos/Modrinth.png",
-        "logos/neon sign.png",
-        "logos/neon.png",
-        "logos/new reimbursements.png",
-        "logos/NixOS.png",
-        "logos/offical logo progress.png",
-        "logos/onboard.png",
-        "logos/Outernet.png",
-        "logos/pedropedropedro.png",
-        "logos/Pokemon.png",
-        "logos/Portal.png",
-        "logos/puppy club - without spots.png",
-        "logos/raspberry_pi.png",
-        "logos/raycast.png",
-        "logos/Retrospect-1.png",
-        "logos/ruby.png",
-        "logos/rust 2.png",
-        "logos/rust.png",
-        "logos/say cheese-1.png",
-        "logos/scrapyard.png",
-        "logos/Scratch.png",
-        "logos/Shopify.png",
-        "logos/Splitflap.png",
-        "logos/sprig.png",
-        "logos/template.png",
-        "logos/Terminal-1.png",
-        "logos/Testflight.png",
-        "logos/the bin.png",
-        "logos/tiktok.png",
-        "logos/ts.png",
-        "logos/tv.png",
-        "logos/Ubiquiti.png",
-        "logos/Ubuntu - Hack Club.png",
-        "logos/uiua.png",
-        "logos/unixclub.png",
-        "logos/unreal_engine.png",
-        "logos/yubico.png",
-        "logos/zach latta .png"
-      ];
-      
-      const randomFavicon = favicons[Math.floor(Math.random() * favicons.length)];
-      
-      const link = document.createElement('link');
-      link.rel = 'icon';
-      link.href = randomFavicon;
-      
-      document.head.appendChild(link);
+        const favicons = [
+            "logos/(ch)airtable.png",
+            "logos/3d print finished ig change it if you have a feedback.png",
+            "logos/Ad Astra.png",
+            "logos/Anchor.png",
+            "logos/arcade 2.png",
+            "logos/ascend (DoS).png",
+            "logos/assemble.png",
+            "logos/athena.png",
+            "logos/Bakebuild.png",
+            "logos/balatro.png",
+            "logos/black box.png",
+            "logos/blot.png",
+            "logos/blueprint.png",
+            "logos/boba.png",
+            "logos/cadence.png",
+            "logos/cartoon.png",
+            "logos/cascade.png",
+            "logos/cat club.png",
+            "logos/caution!-3.png",
+            "logos/Cider.png",
+            "logos/coolify.png",
+            "logos/Counterspell.png",
+            "logos/Create Mod-1.png",
+            "logos/deno-1.png",
+            "logos/Department of Hacker Culture.png",
+            "logos/epoch.png",
+            "logos/figma.png",
+            "logos/FIRST.png",
+            "logos/fun artsy.png",
+            "logos/fun doodle.png",
+            "logos/Furry Tail + blåhaj + socks (feel free to remove if controversy happens again _3).png",
+            "logos/glow.png",
+            "logos/google.png",
+            "logos/h.com, the everything app.png",
+            "logos/h++.png",
+            "logos/hackapet.png",
+            "logos/Hackbrew.png",
+            "logos/hackclub_.png",
+            "logos/hackcraft.png",
+            "logos/hack-life 2.png",
+            "logos/HackMii.png",
+            "logos/hackpad (alt).png",
+            "logos/hackpad.png",
+            "logos/harc.png",
+            "logos/HCB.png",
+            "logos/high seas.png",
+            "logos/image 1.png",
+            "logos/Incident.io.png",
+            "logos/intellij.png",
+            "logos/js.png",
+            "logos/lighting.png",
+            "logos/m_a_s_h.png",
+            "logos/mask-1.png",
+            "logos/microsoft teams.png",
+            "logos/microsoft word.png",
+            "logos/miiverse.png",
+            "logos/minus twelve.png",
+            "logos/Modrinth.png",
+            "logos/neon sign.png",
+            "logos/neon.png",
+            "logos/new reimbursements.png",
+            "logos/NixOS.png",
+            "logos/offical logo progress.png",
+            "logos/onboard.png",
+            "logos/Outernet.png",
+            "logos/pedropedropedro.png",
+            "logos/Pokemon.png",
+            "logos/Portal.png",
+            "logos/puppy club - without spots.png",
+            "logos/raspberry_pi.png",
+            "logos/raycast.png",
+            "logos/Retrospect-1.png",
+            "logos/ruby.png",
+            "logos/rust 2.png",
+            "logos/rust.png",
+            "logos/say cheese-1.png",
+            "logos/scrapyard.png",
+            "logos/Scratch.png",
+            "logos/Shopify.png",
+            "logos/Splitflap.png",
+            "logos/sprig.png",
+            "logos/template.png",
+            "logos/Terminal-1.png",
+            "logos/Testflight.png",
+            "logos/the bin.png",
+            "logos/tiktok.png",
+            "logos/ts.png",
+            "logos/tv.png",
+            "logos/Ubiquiti.png",
+            "logos/Ubuntu - Hack Club.png",
+            "logos/uiua.png",
+            "logos/unixclub.png",
+            "logos/unreal_engine.png",
+            "logos/yubico.png",
+            "logos/zach latta .png"
+        ];
+
+        const randomFavicon = favicons[Math.floor(Math.random() * favicons.length)];
+
+        const link = document.createElement('link');
+        link.rel = 'icon';
+        link.href = randomFavicon;
+
+        document.head.appendChild(link);
     </script>
     <title>Hack Club YSWS Programs</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.js"></script>
 </head>
+
 <body class="noise parallax-wrapper">
     <div class="gradient-bg">
         <div class="gradient-blob gradient-1"></div>
         <div class="gradient-blob gradient-2"></div>
         <div class="gradient-blob gradient-3"></div>
     </div>
-    
+
     <div class="circuit-bg"></div>
     <div class="grid-overlay"></div>
-    
+
     <header class="site-header">
         <div class="logo-container">
             <a href="https://hackclub.com" target="_blank" rel="noopener noreferrer">
@@ -135,13 +138,20 @@
             </a>
         </div>
         <nav class="main-nav">
-            <a href="https://hackclub.com/slack" target="_blank" rel="noopener noreferrer" class="nav-link">Join Slack</a>
+            <a href="https://hackclub.com/slack" target="_blank" rel="noopener noreferrer" class="nav-link">Join
+                Slack</a>
             <a href="/feed.xml" target="_blank" rel="noopener noreferrer" class="nav-link rss-link">
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 11a9 9 0 0 1 9 9"></path>
+                    <path d="M4 4a16 16 0 0 1 16 16"></path>
+                    <circle cx="5" cy="19" r="1"></circle>
+                </svg>
                 RSS Feed
             </a>
-            <a href="https://github.com/hackclub/YSWS-Catalog" target="_blank" rel="noopener noreferrer" class="nav-link">GitHub</a>
-          <button class="theme-toggle" id="theme-toggle">☾</button>
+            <a href="https://github.com/hackclub/YSWS-Catalog" target="_blank" rel="noopener noreferrer"
+                class="nav-link">GitHub</a>
+            <button class="theme-toggle" id="theme-toggle">☾</button>
         </nav>
     </header>
 
@@ -152,16 +162,19 @@
                 <span class="animated-element">We Ship.</span>
             </div>
             <h1 class="hero-title">YSWS <span class="accent">Programs</span></h1>
-            <p class="hero-description">Build something amazing, and Hack Club will ship you something epic in return.</p>
+            <p class="hero-description">Build something amazing, and Hack Club will ship you something epic in return.
+            </p>
             <div class="hero-cards">
                 <div class="hero-card">
                     <div class="hero-card-inner">
                         <div class="hero-card-front">
                             <div class="hero-card-icon">
-  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon">
-    <path stroke-linecap="round" stroke-linejoin="round" d="M15.59 14.37a6 6 0 0 1-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 0 0 6.16-12.12A14.98 14.98 0 0 0 9.631 8.41m5.96 5.96a14.926 14.926 0 0 1-5.841 2.58m-.119-8.54a6 6 0 0 0-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 0 0-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 0 1-2.448-2.448 14.9 14.9 0 0 1 .06-.312m-2.24 2.39a4.493 4.493 0 0 0-1.757 4.306 4.493 4.493 0 0 0 4.306-1.758M16.5 9a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z" />
-  </svg>
-</div>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="icon">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M15.59 14.37a6 6 0 0 1-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 0 0 6.16-12.12A14.98 14.98 0 0 0 9.631 8.41m5.96 5.96a14.926 14.926 0 0 1-5.841 2.58m-.119-8.54a6 6 0 0 0-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 0 0-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 0 1-2.448-2.448 14.9 14.9 0 0 1 .06-.312m-2.24 2.39a4.493 4.493 0 0 0-1.757 4.306 4.493 4.493 0 0 0 4.306-1.758M16.5 9a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z" />
+                                </svg>
+                            </div>
                             <h3>Ship Your Project</h3>
                             <p>Create something awesome</p>
                         </div>
@@ -174,18 +187,16 @@
                     <div class="hero-card-inner">
                         <div class="hero-card-front">
                             <div class="hero-card-icon">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-    viewBox="0 0 24 24" fill="none" stroke="currentColor"
-    stroke-width="2" stroke-linecap="round"
-    stroke-linejoin="round"
-    class="icon">
-    
-    <path d="M12 7v14"/>
-    <path d="M20 11v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-8"/>
-    <path d="M7.5 7a1 1 0 0 1 0-5A4.8 8 0 0 1 12 7a4.8 8 0 0 1 4.5-5 1 1 0 0 1 0 5"/>
-    <rect x="3" y="7" width="18" height="4" rx="1"/>
-  </svg>
-</div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="icon">
+
+                                    <path d="M12 7v14" />
+                                    <path d="M20 11v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-8" />
+                                    <path d="M7.5 7a1 1 0 0 1 0-5A4.8 8 0 0 1 12 7a4.8 8 0 0 1 4.5-5 1 1 0 0 1 0 5" />
+                                    <rect x="3" y="7" width="18" height="4" rx="1" />
+                                </svg>
+                            </div>
                             <h3>Get Rewarded</h3>
                             <p>Receive awesome gear</p>
                         </div>
@@ -199,56 +210,51 @@
         </div>
     </section>
 
-<section class="global-stats-section">
+    <section class="global-stats-section">
 
-<h2 class="impact-heading">
-  <span class="impact-solid">YSWS</span>
-  <span class="impact-outline">Impact</span>
-</h2>
+        <h2 class="impact-heading">
+            <span class="impact-solid">YSWS</span>
+            <span class="impact-outline">Impact</span>
+        </h2>
 
-  <div class="stats-grid">
+        <div class="stats-grid">
 
-    <div class="stat-card">
-      <div class="stat-number" id="projects-count">0</div>
-      <div class="stat-label">Projects Built</div>
-    </div>
+            <div class="stat-card">
+                <div class="stat-number" id="projects-count">0</div>
+                <div class="stat-label">Projects Built</div>
+            </div>
 
-    <div class="stat-card">
-      <div class="stat-number" id="hours-count">0</div>
-      <div class="stat-label">Hours Shipped</div>
-    </div>
+            <div class="stat-card">
+                <div class="stat-number" id="hours-count">0</div>
+                <div class="stat-label">Hours Shipped</div>
+            </div>
 
-    <div class="stat-card">
-      <div class="stat-number" id="stars-count">0</div>
-      <div class="stat-label">GitHub Stars</div>
-    </div>
+            <div class="stat-card">
+                <div class="stat-number" id="stars-count">0</div>
+                <div class="stat-label">GitHub Stars</div>
+            </div>
 
-    <div class="stat-card">
-      <div class="stat-number" id="viral-count">0</div>
-      <div class="stat-label">Viral Projects</div>
-    </div>
+            <div class="stat-card">
+                <div class="stat-number" id="viral-count">0</div>
+                <div class="stat-label">Viral Projects</div>
+            </div>
 
-  </div>
-<div class="stats-footer">
+        </div>
+        <div class="stats-footer">
 
-  <span class="live-dot"></span>
+            <span class="live-dot"></span>
 
-  <span>
-    Live data 
-  </span>
+            <span>
+                Live data
+            </span>
 
-  <a
-    href="https://ships.hackclub.com/stats"
-    target="_blank"
-    rel="noopener noreferrer"
-    class="stats-source"
-  >
-    by Ships API
-  </a>
+            <a href="https://ships.hackclub.com/stats" target="_blank" rel="noopener noreferrer" class="stats-source">
+                by Ships API
+            </a>
 
-</div>
+        </div>
 
-</section>
+    </section>
 
 
 
@@ -277,13 +283,26 @@
             <div id="timeline-overlay"></div>
         </div>
         <div id="timeline-expand-btn-container">
-            <div id="timeline-expand-btn" onclick="expandTimeline()"><svg fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414" xmlns="http://www.w3.org/2000/svg" aria-label="down-caret" viewBox="0 0 32 32" preserveAspectRatio="xMidYMid meet" fill="currentColor" width="48" height="48" title="down-caret"><g><path d="M 0.359841 9.01822C 0.784113 9.37178 1.41467 9.31446 1.76823 8.8902C 3.14518 7.2451 6.52975 3.42464 8.25002 2.11557C 9.99919 3.44663 13.335 7.21555 14.7318 8.8902C 15.0854 9.31446 15.7159 9.37178 16.1402 9.01822C 16.5645 8.66466 16.6215 8.03371 16.2679 7.60943C 14.7363 5.76983 11.2749 1.80977 9.30351 0.408618C 8.99227 0.190441 8.64018 0 8.25002 0C 7.85987 0 7.50778 0.190441 7.19654 0.408618C 5.26486 1.78153 1.73514 5.80788 0.232849 7.60856L 0.231804 7.60982C -0.12176 8.03409 -0.0644362 8.66466 0.359841 9.01822Z" transform="translate(7.12506 20.6251) scale(1 -1)"></path></g></svg></div>
+            <div id="timeline-expand-btn" onclick="expandTimeline()"><svg fill-rule="evenodd" clip-rule="evenodd"
+                    stroke-linejoin="round" stroke-miterlimit="1.414" xmlns="http://www.w3.org/2000/svg"
+                    aria-label="down-caret" viewBox="0 0 32 32" preserveAspectRatio="xMidYMid meet" fill="currentColor"
+                    width="48" height="48" title="down-caret">
+                    <g>
+                        <path
+                            d="M 0.359841 9.01822C 0.784113 9.37178 1.41467 9.31446 1.76823 8.8902C 3.14518 7.2451 6.52975 3.42464 8.25002 2.11557C 9.99919 3.44663 13.335 7.21555 14.7318 8.8902C 15.0854 9.31446 15.7159 9.37178 16.1402 9.01822C 16.5645 8.66466 16.6215 8.03371 16.2679 7.60943C 14.7363 5.76983 11.2749 1.80977 9.30351 0.408618C 8.99227 0.190441 8.64018 0 8.25002 0C 7.85987 0 7.50778 0.190441 7.19654 0.408618C 5.26486 1.78153 1.73514 5.80788 0.232849 7.60856L 0.231804 7.60982C -0.12176 8.03409 -0.0644362 8.66466 0.359841 9.01822Z"
+                            transform="translate(7.12506 20.6251) scale(1 -1)"></path>
+                    </g>
+                </svg></div>
 
         </div>
         <br>
         <div class="search-container">
             <div class="search-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
             </div>
             <input type="search" id="program-search" placeholder="Search for programs..." class="search-input">
         </div>
@@ -308,13 +327,13 @@
         </div>
 
         <div id="programs-container" class="fade-in"></div>
-        
+
         <div class="no-results-message" id="user-completed-empty">
             <h3>You haven't completed any programs yet</h3>
             <p>Click the circle button on a program card when you've completed it to track your progress.</p>
             <button class="filter-btn" data-category="all">View all programs</button>
         </div>
-        
+
         <div class="no-results-message" id="user-not-completed-empty">
             <div class="no-results-icon">🎉</div>
             <h3>Congratulations!</h3>
@@ -323,56 +342,102 @@
         </div>
     </div>
 
-<section class="faq-section">
+    <section class="faq-section">
 
- <h3>Frequently Asked Questions</h3>
+        <h3 class="faq-title">Frequently Asked Questions</h3>
 
- 
- 
- <details class="faq-item">
-  <summary>Is it free to participate?</summary>
-  <p>Yes, completely free. No fees, no subscriptions, no catch. You build, we ship.</p>
-</details>
 
-<details class="faq-item">
-  <summary>What counts as a valid project?</summary>
-  <p>
-    Anything you genuinely built — a game, a website, a hardware project, an API.
-    It just needs to be functional and submitted before the program deadline.
-  </p>
-</details>
 
-<details class="faq-item">
-  <summary>How long does shipping take after approval?</summary>
-  <p>
-    Every YSWS program has a different reward and shipping timeline, which is outlined in the "How to Participate" section of each program. Some rewards are digital and delivered, while physical rewards typically ship after project approval.
-  </p>
-</details>
+        <details class="faq-item">
+            <summary>Is it free to participate?</summary>
+            <p>Yes, completely free. No fees, no subscriptions, no catch. You build, we ship.</p>
+        </details>
 
-<details class="faq-item">
-  <summary>Can I join more than one program at a time?</summary>
-  <p>
-    Yes! Just make sure to submit a project for each program you're participating in before their respective deadlines. Each program is independent, so you can participate in as many as you'd like!
-  </p>
-</details>
+        <details class="faq-item">
+            <summary>What counts as a valid project?</summary>
+            <p>
+                Anything you genuinely built — a game, a website, a hardware project, an API.
+                It just needs to be functional and submitted before the program deadline.
+            </p>
+        </details>
 
-<details class="faq-item">
-  <summary>What happens if my project gets rejected?</summary>
-  <p>
-    You'll receive feedback on why it wasn't approved. Depending on the reason, you may be able to make adjustments and resubmit before the deadline  </p>
-</details>
-  </div>
+        <details class="faq-item">
+            <summary>How long does shipping take after approval?</summary>
+            <p>
+                Every YSWS program has a different reward and shipping timeline, which is outlined in the "How to
+                Participate" section of each program. Some rewards are digital and delivered, while physical rewards
+                typically ship after project approval.
+            </p>
+        </details>
 
-<div class="faq-footer">
+        <details class="faq-item">
+            <summary>Can I join more than one program at a time?</summary>
+            <p>
+                Yes! Just make sure to submit a project for each program you're participating in before their respective
+                deadlines. Each program is independent, so you can participate in as many as you'd like!
+            </p>
+        </details>
 
-  Still stuck?
+        <details class="faq-item">
+            <summary>What happens if my project gets rejected?</summary>
+            <p>
+                You'll receive feedback on why it wasn't approved. Depending on the reason, you may be able to make
+                adjustments and resubmit before the deadline </p>
+        </details>
+        </div>
 
-  <a href="https://hackclub.slack.com">
-    Join the Hack Club Slack →
-  </a>
-</div>
-  </div>
+        <div class="faq-footer">
 
+            Still stuck?
+
+            <a href="https://hackclub.slack.com">
+                Join the Hack Club Slack →
+            </a>
+        </div>
+        </div>
+
+
+        <div id="program-modal" class="modal">
+            <div class="program-position"><span class="current-position"></span></div>
+            <button class="modal-nav modal-prev" aria-label="Previous program">←</button>
+            <button class="modal-nav modal-next" aria-label="Next program">→</button>
+            <div class="modal-content card">
+                <button class="modal-close" aria-label="Close modal">&times;</button>
+                <div class="modal-header">
+                    <h2 class="title" id="modal-title"></h2>
+                    <span class="program-status"></span>
+                </div>
+                <div class="modal-body">
+                    <span class="modal-completion-badge">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                            <polyline points="22 4 12 14.01 9 11.01" />
+                        </svg>
+                        You've completed this program
+                    </span>
+                    <p class="program-description"></p>
+                    <div class="program-deadline"></div>
+                    <div class="program-details">
+                        <h3>How to Participate</h3>
+                        <div class="participation-steps"></div>
+                        <div class="more-details"></div>
+                        <div class="program-links"></div>
+                    </div>
+                    <div class="modal-completion-container">
+                        <button class="modal-completion-toggle">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10" />
+                            </svg>
+                            Mark as completed
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <footer class="site-footer">
         <div class="footer-content">
             <div class="footer-column">
@@ -382,43 +447,11 @@
                 <p>Built with ❤️ by the Hack Club community</p>
             </div>
             <div class="footer-column">
-                <p class="caption">Want to update or add something? Submit a PR on <a href="https://github.com/hackclub/YSWS-Catalog" target="_blank">GitHub</a>!</p>
+                <p class="caption">Want to update or add something? Submit a PR on <a
+                        href="https://github.com/hackclub/YSWS-Catalog" target="_blank">GitHub</a>!</p>
             </div>
         </div>
     </footer>
-
-    <div id="program-modal" class="modal">
-        <div class="program-position"><span class="current-position"></span></div>
-        <button class="modal-nav modal-prev" aria-label="Previous program">←</button>
-        <button class="modal-nav modal-next" aria-label="Next program">→</button>
-        <div class="modal-content card">
-            <button class="modal-close" aria-label="Close modal">&times;</button>
-            <div class="modal-header">
-                <h2 class="title" id="modal-title"></h2>
-                <span class="program-status"></span>
-            </div>
-            <div class="modal-body">
-                <span class="modal-completion-badge">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-                    You've completed this program
-                </span>
-                <p class="program-description"></p>
-                <div class="program-deadline"></div>
-                <div class="program-details">
-                    <h3>How to Participate</h3>
-                    <div class="participation-steps"></div>
-                    <div class="more-details"></div>
-                    <div class="program-links"></div>
-                </div>
-                <div class="modal-completion-container">
-                    <button class="modal-completion-toggle">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/></svg>
-                        Mark as completed
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
 
 
 
@@ -427,4 +460,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>

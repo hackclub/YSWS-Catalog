@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Saira+Stencil:ital,wght@0,100..900;1,100..900&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
 
@@ -204,6 +203,7 @@ body {
 }
 
 @keyframes title-gradient {
+
   0%,
   100% {
     background-position: 0% 50%;
@@ -215,6 +215,7 @@ body {
 }
 
 @keyframes gradient-text {
+
   0%,
   100% {
     background-position: 0% 50%;
@@ -357,18 +358,14 @@ button.outline {
 
 button.cta {
   font-size: var(--font-2);
-  background-image: radial-gradient(
-    ellipse farthest-corner at top left,
-    var(--orange),
-    var(--red)
-  );
+  background-image: radial-gradient(ellipse farthest-corner at top left,
+      var(--orange),
+      var(--red));
   background-size: 200% 200%;
-  background-image: linear-gradient(
-    45deg,
-    var(--orange) 0%,
-    var(--red) 50%,
-    var(--orange) 100%
-  );
+  background-image: linear-gradient(45deg,
+      var(--orange) 0%,
+      var(--red) 50%,
+      var(--orange) 100%);
   animation: gradient-shift 3s ease infinite;
 }
 
@@ -577,7 +574,7 @@ pre {
   white-space: inherit;
 }
 
-pre > code {
+pre>code {
   color: inherit;
   margin-left: 0;
   margin-right: 0;
@@ -598,14 +595,14 @@ code {
   padding-right: var(--spacing-1);
 }
 
-p > code,
-li > code {
+p>code,
+li>code {
   color: var(--blue);
   font-size: 0.875em;
 }
 
-p > a > code,
-li > a > code {
+p>a>code,
+li>a>code {
   color: var(--blue);
   font-size: 0.875em;
 }
@@ -623,8 +620,8 @@ table {
   border-spacing: 0;
 }
 
-table > th,
-table > td {
+table>th,
+table>td {
   text-align: left;
   padding: 4px;
   padding-left: 0px;
@@ -663,10 +660,8 @@ td {
 
 .program-card.opens-soon {
   border: 2px dashed var(--blue);
-  background: linear-gradient(
-    rgba(51, 142, 218, 0.05),
-    rgba(51, 142, 218, 0.05)
-  );
+  background: linear-gradient(rgba(51, 142, 218, 0.05),
+      rgba(51, 142, 218, 0.05));
 }
 
 .program-card.opens-soon .program-deadline {
@@ -705,6 +700,7 @@ td {
 }
 
 @keyframes status-glow {
+
   0%,
   100% {
     box-shadow: 0 0 5px var(--green);
@@ -732,13 +728,11 @@ td {
   font-weight: var(--font-weight-bold);
   background-size: 28.28px 28.28px;
   animation: dash-animation 1s linear infinite;
-  background-image: repeating-linear-gradient(
-    45deg,
-    var(--yellow) 0,
-    var(--yellow) 10px,
-    var(--orange) 10px,
-    var(--orange) 20px
-  );
+  background-image: repeating-linear-gradient(45deg,
+      var(--yellow) 0,
+      var(--yellow) 10px,
+      var(--orange) 10px,
+      var(--orange) 20px);
 }
 
 @keyframes dash-animation {
@@ -1224,6 +1218,7 @@ body.modal-open {
 }
 
 @media screen and (max-width: 48em) {
+
   .filter-container,
   .sort-container {
     justify-content: center;
@@ -1966,11 +1961,9 @@ body.modal-open {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(
-    135deg,
-    rgba(255, 255, 255, 0) 0%,
-    rgba(255, 255, 255, 0.1) 100%
-  );
+  background: linear-gradient(135deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.1) 100%);
   opacity: 0;
   transition: opacity 0.3s ease;
   z-index: 1;
@@ -2113,12 +2106,10 @@ html {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(
-    90deg,
-    rgba(255, 255, 255, 0) 0%,
-    rgba(255, 255, 255, 0.2) 50%,
-    rgba(255, 255, 255, 0) 100%
-  );
+  background: linear-gradient(90deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.2) 50%,
+      rgba(255, 255, 255, 0) 100%);
   transform: translateX(-100%);
   animation: shimmer 2s infinite;
   z-index: -1;
@@ -2758,7 +2749,8 @@ html {
   }
 }
 
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+@media (-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
   .hero-title {
     text-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
   }
@@ -3269,11 +3261,9 @@ html {
   left: 0;
   right: 0;
   bottom: 0;
-  background: radial-gradient(
-    circle at 50% 50%,
-    rgba(255, 255, 255, 0.4),
-    transparent 70%
-  );
+  background: radial-gradient(circle at 50% 50%,
+      rgba(255, 255, 255, 0.4),
+      transparent 70%);
   pointer-events: none;
   border-radius: inherit;
 }
@@ -3567,11 +3557,9 @@ html {
   --color-meow-text: #c94a6d;
   --color-meow-accent: #e85a7e;
   background-color: var(--color-meow-bg) !important;
-  background-image: radial-gradient(
-    circle,
-    var(--color-meow-dot) 10px,
-    transparent 15px
-  ) !important;
+  background-image: radial-gradient(circle,
+      var(--color-meow-dot) 10px,
+      transparent 15px) !important;
   background-size: 20px 20px !important;
   position: relative;
   color: var(--color-meow-text) !important;
@@ -3608,11 +3596,9 @@ html {
   --color-woof-text: #010101;
   --color-woof-accent: #2f1213;
   background-color: var(--color-woof-bg) !important;
-  background-image: radial-gradient(
-    circle,
-    var(--color-woof-dot) 10px,
-    transparent 15px
-  ) !important;
+  background-image: radial-gradient(circle,
+      var(--color-woof-dot) 10px,
+      transparent 15px) !important;
   background-size: 20px 20px !important;
   position: relative;
   color: var(--color-woof-text) !important;
@@ -3723,11 +3709,9 @@ html {
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(
-    135deg,
-    rgba(42, 26, 78, 0.85) 0%,
-    rgba(42, 26, 78, 0.7) 100%
-  );
+  background: linear-gradient(135deg,
+      rgba(42, 26, 78, 0.85) 0%,
+      rgba(42, 26, 78, 0.7) 100%);
   z-index: 1;
 }
 
@@ -4036,6 +4020,7 @@ html {
   height: auto;
   margin-bottom: 0.5rem;
 }
+
 /* Alchemize Card Styling */
 .program-card.alchemize-card {
   background-image: url("./logos/alchemize.png") !important;
@@ -4045,21 +4030,24 @@ html {
 
   position: relative;
   overflow: hidden;
-  
+
 }
+
 .program-card.alchemize-card h3 {
   color: #ffffff !important;
   position: relative;
   z-index: 2;
   font-size: 28px;
-font-family: "Saira Stencil", sans-serif;
-  text-shadow: 0px 0px 10px rgb(0, 0, 0),0px 0px 20px rgb(0, 0, 0);
+  font-family: "Saira Stencil", sans-serif;
+  text-shadow: 0px 0px 10px rgb(0, 0, 0), 0px 0px 20px rgb(0, 0, 0);
 
 }
-.program-card.alchemize-card a{
-  text-shadow: 0px 0px 10px rgb(0, 0, 0),0px 0px 20px rgb(0, 0, 0);
+
+.program-card.alchemize-card a {
+  text-shadow: 0px 0px 10px rgb(0, 0, 0), 0px 0px 20px rgb(0, 0, 0);
   color: hsl(0, 0%, 100%) !important;
 }
+
 .alchemize-logo {
   position: absolute;
   top: 8px;
@@ -4069,6 +4057,7 @@ font-family: "Saira Stencil", sans-serif;
   z-index: -2;
 
 }
+
 /* Stasis card styling */
 .program-card.stasis-card {
   background-image: url("https://cdn.hackclub.com/019cb521-9b7a-7faf-b26c-e81d66e42fbb/stasis-banner.png") !important;
@@ -4305,13 +4294,11 @@ font-family: "Saira Stencil", sans-serif;
   position: absolute;
   inset: 0;
   background:
-    repeating-linear-gradient(
-      0deg,
+    repeating-linear-gradient(0deg,
       rgba(0, 0, 0, 0.15) 0px,
       rgba(0, 0, 0, 0.15) 1px,
       transparent 1px,
-      transparent 3px
-    ),
+      transparent 3px),
     rgba(0, 8, 2, 0.5);
   z-index: 1;
   pointer-events: none;
@@ -4440,10 +4427,12 @@ font-family: "Saira Stencil", sans-serif;
 }
 
 @keyframes raspapi-status-glow {
+
   0%,
   100% {
     box-shadow: 0 0 5px #c41e3a;
   }
+
   50% {
     box-shadow: 0 0 15px #c41e3a;
   }
@@ -4482,125 +4471,125 @@ font-family: "Saira Stencil", sans-serif;
 /* Hackanomous YSWS styling */
 
 .program-card.hackanomous-card {
-    /* constants copied directly from upstream css */
-    --text: #ffffff;
-    --text-h: #b0e4cc;
-    --text-l: #c4eeda;
-    --bg: #0b1618;
-    --border: #34745f;
-    --code-bg: #255a4d;
-    --accent: #10b981;
-    --accent-hover: #24e1a0;
-    --accent-bg: rgba(16, 185, 129, 0.1);
-    --accent-border: #67887c;
+  /* constants copied directly from upstream css */
+  --text: #ffffff;
+  --text-h: #b0e4cc;
+  --text-l: #c4eeda;
+  --bg: #0b1618;
+  --border: #34745f;
+  --code-bg: #255a4d;
+  --accent: #10b981;
+  --accent-hover: #24e1a0;
+  --accent-bg: rgba(16, 185, 129, 0.1);
+  --accent-border: #67887c;
 
-    background: linear-gradient(135deg, var(--bg) 40%, #122421 100%) !important;
-    border: 3px solid var(--border) !important;
-    box-shadow: 6px 6px 0px var(--border) !important;
-    border-radius: 20px !important;
-    color: var(--text) !important;
-    transition:
-      transform 0.2s,
-      box-shadow 0.2s !important;
-  }
-  
-  .program-card.hackanomous-card:hover {
-    transform: translate(-2px, -2px) !important;
-    box-shadow: 10px 10px 0px var(--accent) !important;
-  }
-  
-  .program-card.hackanomous-card h3 {
-    font-family: "Unbounded", "Segoe UI", Roboto, system-ui, sans-serif;
-    font-weight: 800 !important;
-    text-transform: uppercase !important;
-    color: var(--text-h) !important;
-    letter-spacing: -0.5px;
-  }
-  
-  .program-card.hackanomous-card p,
-  .program-card.hackanomous-card .program-participants {
-    font-family: "IBM Plex Mono", Consolas, ui-monospace, monospace;
-    font-weight: 500 !important;
-    color: var(--text-l) !important;
-  }
-  
-  .program-card.hackanomous-card .program-status {
-    color: var(--text) !important;
-    border: 2px solid var(--border) !important;
-    border-radius: 10px !important;
-    font-weight: 800 !important;
-    box-shadow: 2px 2px 0px var(--border) !important;
-  }
-  
-  .program-card.hackanomous-card .status-active {
-    background: var(--accent) !important;
-  }
-  
-  .program-card.hackanomous-card .status-draft {
-    background: var(--code-bg) !important;
-  }
-  
-  .program-card.hackanomous-card .status-ended {
-    background: var(--accent-border) !important;
-  }
+  background: linear-gradient(135deg, var(--bg) 40%, #122421 100%) !important;
+  border: 3px solid var(--border) !important;
+  box-shadow: 6px 6px 0px var(--border) !important;
+  border-radius: 20px !important;
+  color: var(--text) !important;
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s !important;
+}
 
-  /* user completed badge was causing serious flow problems, too sleepy to properly fix */
-  .program-card.hackanomous-card .user-completed-badge {
-    display: none;
-  }
-  
-  /* completion toggle interferes with mascot display */
-  .program-card.hackanomous-card .program-completion-toggle {
-    display: none;
-    /* background: var(--bg) !important;
+.program-card.hackanomous-card:hover {
+  transform: translate(-2px, -2px) !important;
+  box-shadow: 10px 10px 0px var(--accent) !important;
+}
+
+.program-card.hackanomous-card h3 {
+  font-family: "Unbounded", "Segoe UI", Roboto, system-ui, sans-serif;
+  font-weight: 800 !important;
+  text-transform: uppercase !important;
+  color: var(--text-h) !important;
+  letter-spacing: -0.5px;
+}
+
+.program-card.hackanomous-card p,
+.program-card.hackanomous-card .program-participants {
+  font-family: "IBM Plex Mono", Consolas, ui-monospace, monospace;
+  font-weight: 500 !important;
+  color: var(--text-l) !important;
+}
+
+.program-card.hackanomous-card .program-status {
+  color: var(--text) !important;
+  border: 2px solid var(--border) !important;
+  border-radius: 10px !important;
+  font-weight: 800 !important;
+  box-shadow: 2px 2px 0px var(--border) !important;
+}
+
+.program-card.hackanomous-card .status-active {
+  background: var(--accent) !important;
+}
+
+.program-card.hackanomous-card .status-draft {
+  background: var(--code-bg) !important;
+}
+
+.program-card.hackanomous-card .status-ended {
+  background: var(--accent-border) !important;
+}
+
+/* user completed badge was causing serious flow problems, too sleepy to properly fix */
+.program-card.hackanomous-card .user-completed-badge {
+  display: none;
+}
+
+/* completion toggle interferes with mascot display */
+.program-card.hackanomous-card .program-completion-toggle {
+  display: none;
+  /* background: var(--bg) !important;
     border: 2px solid var(--border) !important;
     border-radius: 12px !important;
     box-shadow: 3px 3px 0px var(--border) !important;
     color: var(--text) !important; */
-  }
-  
-  .program-card.hackanomous-card .program-completion-toggle.completed {
-    background: var(--accent) !important;
-    color: var(--bg) !important;
-  }
-  
-  .program-card.hackanomous-card .program-links a {
-    color: var(--text) !important;
-    font-family: "Lexend", "Segoe UI", Roboto, system-ui, sans-serif;
-    font-weight: 700 !important;
-    text-decoration: underline !important;
-    text-underline-offset: 3px !important;
-  }
-  
-  .program-card.hackanomous-card .program-links a:hover {
-    color: var(--accent-hover) !important;
-  }
+}
 
-  .program-card.hackanomous-card .program-header,
-  .program-card.hackanomous-card p,
-  .program-card.hackanomous-card .program-deadline,
-  .program-card.hackanomous-card .program-participants,
-  .program-card.hackanomous-card .program-links {
-    position: relative;
-    z-index: 1;
-  }
+.program-card.hackanomous-card .program-completion-toggle.completed {
+  background: var(--accent) !important;
+  color: var(--bg) !important;
+}
 
-  .program-card.hackanomous-card .hackanomous-mascot {
-    position: absolute;
-    bottom: -40px;
-    right: -40px;
-    width: 200px;
-    height: auto;
-    pointer-events: none;
-    z-index: 0;
-    transform: rotate(-30deg);
-    transition: transform 0.3s ease;
-  }
+.program-card.hackanomous-card .program-links a {
+  color: var(--text) !important;
+  font-family: "Lexend", "Segoe UI", Roboto, system-ui, sans-serif;
+  font-weight: 700 !important;
+  text-decoration: underline !important;
+  text-underline-offset: 3px !important;
+}
 
-  .program-card.hackanomous-card:hover .hackanomous-mascot {
-    transform: translate(-10px, -10px) rotate(-36deg) scale(1.10);
-    filter: brightness(1.1);
-  }
+.program-card.hackanomous-card .program-links a:hover {
+  color: var(--accent-hover) !important;
+}
+
+.program-card.hackanomous-card .program-header,
+.program-card.hackanomous-card p,
+.program-card.hackanomous-card .program-deadline,
+.program-card.hackanomous-card .program-participants,
+.program-card.hackanomous-card .program-links {
+  position: relative;
+  z-index: 1;
+}
+
+.program-card.hackanomous-card .hackanomous-mascot {
+  position: absolute;
+  bottom: -40px;
+  right: -40px;
+  width: 200px;
+  height: auto;
+  pointer-events: none;
+  z-index: 0;
+  transform: rotate(-30deg);
+  transition: transform 0.3s ease;
+}
+
+.program-card.hackanomous-card:hover .hackanomous-mascot {
+  transform: translate(-10px, -10px) rotate(-36deg) scale(1.10);
+  filter: brightness(1.1);
+}
 
 /* Beest (https://beest.hackclub.com) */
 .program-card.beest-card {
@@ -4691,21 +4680,21 @@ font-family: "Saira Stencil", sans-serif;
     bottom: 8px;
   }
 }
+
 /*Forge (https://forge.hackclub.com/)*/
 .program-card.forge-card {
-background:
-  linear-gradient(
-    165deg,
-    rgba(255, 113, 31, 0.58) 0%,
-    rgba(255, 113, 31, 0.44) 100%
-  ),
-  url("logos/forge_bg.png") center/cover no-repeat;
+  background:
+    linear-gradient(165deg,
+      rgba(255, 113, 31, 0.58) 0%,
+      rgba(255, 113, 31, 0.44) 100%),
+    url("logos/forge_bg.png") center/cover no-repeat;
 
-background-blend-mode: multiply;
-border: 2px solid #ff711f !important;
-color: #ff711f !important;
-overflow: hidden;
+  background-blend-mode: multiply;
+  border: 2px solid #ff711f !important;
+  color: #ff711f !important;
+  overflow: hidden;
 }
+
 .program-card.forge-card .program-header,
 .program-card.forge-card p,
 .program-card.forge-card .program-deadline,
@@ -4768,16 +4757,19 @@ overflow: hidden;
   color: white !important;
   animation: forge-status-glow 2s ease-in-out infinite !important;
 }
+
 .program-card.forge-card p,
 .program-card.forge-card .program-participants {
   color: #e6eef9 !important;
 }
 
 @keyframes forge-status-glow {
+
   0%,
   100% {
     box-shadow: 0 0 5px orangered;
   }
+
   50% {
     box-shadow: 0 0 15px orangered;
   }
@@ -4797,6 +4789,7 @@ overflow: hidden;
 .program-card.forge-card:hover {
   border-color: #ff711f !important;
 }
+
 @media (max-width: 640px) {
   .program-card.forge-card .forge-sticker {
     width: 50px;
@@ -4850,7 +4843,7 @@ overflow: hidden;
 /* DEFAULT = DARK MODE */
 
 .hero-card-icon svg {
-  color: rgba(255,255,255,0.92);
+  color: rgba(255, 255, 255, 0.92);
   stroke: currentColor;
 }
 
@@ -4859,7 +4852,7 @@ overflow: hidden;
 }
 
 .hero-card p {
-  color: rgba(255,255,255,0.7);
+  color: rgba(255, 255, 255, 0.7);
 }
 
 /* LIGHT MODE */
@@ -4929,7 +4922,7 @@ body.dark-theme .moon-icon {
 
 .stats-header p {
 
-  color: rgba(255,255,255,0.65);
+  color: rgba(255, 255, 255, 0.65);
 
   font-size: 1.1rem;
 }
@@ -4946,10 +4939,10 @@ body.dark-theme .moon-icon {
 
 .stat-card {
 
-  background: rgba(255,255,255,0.04);
+  background: rgba(255, 255, 255, 0.04);
 
   border:
-    1px solid rgba(255,255,255,0.08);
+    1px solid rgba(255, 255, 255, 0.08);
 
   backdrop-filter: blur(12px);
 
@@ -4970,10 +4963,10 @@ body.dark-theme .moon-icon {
   transform: translateY(-4px);
 
   border-color:
-    rgba(255,255,255,0.16);
+    rgba(255, 255, 255, 0.16);
 
   background:
-    rgba(255,255,255,0.06);
+    rgba(255, 255, 255, 0.06);
 }
 
 .stat-number {
@@ -4989,7 +4982,7 @@ body.dark-theme .moon-icon {
 
 .stat-label {
 
-  color: rgba(255,255,255,0.72);
+  color: rgba(255, 255, 255, 0.72);
 
   font-size: 1rem;
 }
@@ -5000,7 +4993,7 @@ body.dark-theme .moon-icon {
 
   text-align: center;
 
-  color: rgba(255,255,255,0.45);
+  color: rgba(255, 255, 255, 0.45);
 
   font-size: 0.9rem;
 }
@@ -5041,7 +5034,7 @@ body.dark-theme .moon-icon {
 .stat-number {
 
   text-shadow:
-    0 0 20px rgba(236,55,80,0.18);
+    0 0 20px rgba(236, 55, 80, 0.18);
 }
 
 .impact-heading {
@@ -5076,12 +5069,10 @@ body.dark-theme .moon-icon {
 .impact-outline {
 
   filter:
-    drop-shadow(
-      0 0 10px rgba(236,55,80,0.25)
-    );
+    drop-shadow(0 0 10px rgba(236, 55, 80, 0.25));
 }
 
-  .join-btn {
+.join-btn {
 
   padding:
     0.9rem 1.4rem;
@@ -5108,7 +5099,7 @@ body.dark-theme .moon-icon {
     translateY(-2px);
 
   box-shadow:
-    0 10px 30px rgba(236,55,80,0.28);
+    0 10px 30px rgba(236, 55, 80, 0.28);
 }
 
 
@@ -5124,11 +5115,9 @@ body.dark-theme .moon-icon {
   overflow: hidden;
 
   background:
-    linear-gradient(
-      180deg,
+    linear-gradient(180deg,
       transparent,
-      rgba(236,55,80,0.12)
-    );
+      rgba(236, 55, 80, 0.12));
 }
 
 .showcase-content {
@@ -5167,7 +5156,7 @@ body.dark-theme .moon-icon {
   line-height: 1.6;
 
   color:
-    rgba(255,255,255,0.75);
+    rgba(255, 255, 255, 0.75);
 
   max-width: 760px;
 
@@ -5207,7 +5196,7 @@ body.dark-theme .moon-icon {
     translateY(-3px);
 
   box-shadow:
-    0 12px 30px rgba(0,0,0,0.2);
+    0 12px 30px rgba(0, 0, 0, 0.2);
 }
 
 .showcase-gallery {
@@ -5228,7 +5217,7 @@ body.dark-theme .moon-icon {
   border-radius: 22px;
 
   box-shadow:
-    0 20px 40px rgba(0,0,0,0.28);
+    0 20px 40px rgba(0, 0, 0, 0.28);
 
   transition:
     transform 0.35s ease;
@@ -5237,8 +5226,7 @@ body.dark-theme .moon-icon {
 .showcase-image:hover {
 
   transform:
-    translateY(-8px)
-    scale(1.03);
+    translateY(-8px) scale(1.03);
 }
 
 .img-1 {
@@ -5304,11 +5292,9 @@ body.dark-theme .moon-icon {
   inset: 0;
 
   background:
-    radial-gradient(
-      circle at center,
-      rgba(236,55,80,0.18),
-      transparent 70%
-    );
+    radial-gradient(circle at center,
+      rgba(236, 55, 80, 0.18),
+      transparent 70%);
 
   pointer-events: none;
 }
@@ -5318,8 +5304,10 @@ body.dark-theme .moon-icon {
 
 
   margin: 0 auto;
+  padding: 3rem;
+  user-select: none;
 
-  
+
 }
 
 .faq-header {
@@ -5342,13 +5330,13 @@ body.dark-theme .moon-icon {
 
   color: white;
 
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
 }
 
 .faq-subtitle {
 
   color:
-    rgba(255,255,255,0.7);
+    rgba(255, 255, 255, 0.7);
 
   font-size: 1.2rem;
 }
@@ -5356,10 +5344,10 @@ body.dark-theme .moon-icon {
 .faq-item {
 
   background:
-    rgba(255,255,255,0.04);
+    rgba(255, 255, 255, 0.04);
 
   border:
-    1px solid rgba(255,255,255,0.08);
+    1px solid rgba(255, 255, 255, 0.08);
 
   border-radius: 24px;
 
@@ -5369,8 +5357,7 @@ body.dark-theme .moon-icon {
   margin-bottom: 1rem;
 
   backdrop-filter:
-    blur(12px)
-    saturate(140%);
+    blur(12px) saturate(140%);
 
   transition:
     transform 0.25s ease,
@@ -5384,10 +5371,10 @@ body.dark-theme .moon-icon {
     translateY(-2px);
 
   background:
-    rgba(255,255,255,0.06);
+    rgba(255, 255, 255, 0.06);
 
   border-color:
-    rgba(255,255,255,0.14);
+    rgba(255, 255, 255, 0.14);
 }
 
 .faq-item summary {
@@ -5420,7 +5407,7 @@ body.dark-theme .moon-icon {
   font-size: 1.5rem;
 
   color:
-    rgba(255,255,255,0.5);
+    rgba(255, 255, 255, 0.5);
 
   transition:
     transform 0.25s ease;
@@ -5437,7 +5424,7 @@ body.dark-theme .moon-icon {
   margin-top: 1rem;
 
   color:
-    rgba(255,255,255,0.72);
+    rgba(255, 255, 255, 0.72);
 
   line-height: 1.7;
 
@@ -5449,18 +5436,17 @@ footer {
   border-radius: 32px 32px 0 0;
 
   backdrop-filter:
-    blur(14px)
-    saturate(140%);
+    blur(14px) saturate(140%);
 
   background:
-    rgba(10,10,15,0.72);
+    rgba(10, 10, 15, 0.72);
 
   border:
-    1px solid rgba(255,255,255,0.06);
+    1px solid rgba(255, 255, 255, 0.06);
 
   box-shadow:
-    0 -10px 40px rgba(0,0,0,0.2);
-    
+    0 -10px 40px rgba(0, 0, 0, 0.2);
+
 }
 
 
@@ -5486,7 +5472,7 @@ footer {
   font-size: 1.15rem;
 
   color:
-    rgba(255,255,255,0.72);
+    rgba(255, 255, 255, 0.72);
 
   text-align: center;
 
