@@ -1075,9 +1075,9 @@ themeToggle.addEventListener("click", () => {
 async function loadGlobalStats() {
 
   try {
-
+// Endpoint maintained by @natdrone101 on Slack (@zibuyin on Github), source code at https://github.com/zibuyin/YSWS-Catalog-Backend
     const response = await fetch(
-      "https://corsproxy.io/?https://ships.hackclub.com/api/v1/stats"
+      "https://hackclub8080.nathanyin.com"
     );
 
     const data = await response.json();
