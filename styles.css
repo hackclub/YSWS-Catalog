@@ -696,9 +696,10 @@ td {
 }
 
 .program-status {
-  font-size: var(--font-1);
-  padding: var(--spacing-1) var(--spacing-2);
-  border-radius: var(--radii-small);
+  font-size: var(--font-2) !important;
+  /* font-family: var(--font-sans); */
+  padding: var(--spacing-2) var(--spacing-3);
+  border-radius: var(--radii-circle);
   position: relative;
   overflow: hidden;
   display: inline-flex;
@@ -706,7 +707,7 @@ td {
   justify-content: center;
   min-width: 70px;
   text-align: center;
-  height: 24px;
+  /* height: 24px; */
   line-height: 1;
 }
 
@@ -2097,6 +2098,10 @@ html {
 }
 
 .user-completed-badge {
+
+  /* REDUNDENT DESIGN */
+  display: none !important;
+
   display: inline-flex;
   align-items: center;
   gap: 5px;
@@ -2105,7 +2110,7 @@ html {
   color: var(--white);
   background: linear-gradient(135deg, var(--green) 0%, #25a080 100%);
   border: none;
-  padding: var(--spacing-1) var(--spacing-2);
+  padding: var(--spacing-2) var(--spacing-2) !important;
   border-radius: var(--radii-circle);
   margin-right: var(--spacing-2);
   opacity: 0;
@@ -2491,9 +2496,9 @@ html {
 
   .program-status {
     align-self: flex-start;
-    font-size: 0.75rem;
+    /* font-size: 0.75rem; */
     min-width: 60px;
-    height: 20px;
+    /* height: 20px; */
   }
 
   .status-active {
@@ -5517,3 +5522,14 @@ footer {
 
   opacity: 0.6;
 }
+
+
+/* .user-completed-badge {
+  height: 0px !important;
+  padding: 0px !important;
+} */
+
+/* .user-completed-badge.visible {
+  height: auto !important;
+  padding: auto !important;
+} */
