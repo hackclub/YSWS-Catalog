@@ -107,12 +107,13 @@
   --dark-elevated: var(--dark);
   --dark-border: var(--darkless);
   --dark-sunken: var(--darkless);
-  /* --font-family: "Outfit", system-ui, -a
-  pple-system, sans-serif; */
+  --font-sans: "Outfit", system-ui, -a pple-system, sans-serif;
   --font-family: "zarathustra", "zarathustra Fallback", Georgia, serif;
   --gradient-1: rgba(236, 55, 80, 0.3);
   --gradient-2: rgba(51, 142, 218, 0.3);
   --gradient-3: rgba(51, 214, 166, 0.3);
+
+  --header-border: rgba(70, 70, 70, 0.2);
 }
 
 .dark-theme {
@@ -126,6 +127,8 @@
   --faq-item-border: rgba(0, 0, 0, 0.08);
 
   --theme-toggle-bg: rgba(70, 70, 70, 0.5);
+
+  --header-border: rgba(255, 255, 255, 0.1);
 }
 
 .theme-toggle {
@@ -145,6 +148,7 @@
   transform-origin: center;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: none;
+  font-family: var(--font-sans) !important;
 
   color: var(--text);
 }
@@ -1380,7 +1384,8 @@ body.modal-open {
   z-index: 100;
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(8px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  /* border-bottom: 1px solid rgba(255, 255, 255, 0.1); */
+  border-bottom: 1px solid var(--header-border);
   transition: all 0.3s ease;
   box-sizing: border-box;
 }
@@ -4858,22 +4863,23 @@ html {
 
 /* DEFAULT = DARK MODE */
 
+/* Changed to using dynamic CSS variables */
 .hero-card-icon svg {
-  color: rgba(255, 255, 255, 0.92);
+  color: var(--text) !important;
   stroke: currentColor;
 }
 
 .hero-card h3 {
-  color: white;
+  color: var(--text) !important;
 }
 
 .hero-card p {
-  color: rgba(255, 255, 255, 0.7);
+  color: var(--text) !important;
 }
 
 /* LIGHT MODE */
 
-body.light-mode .hero-card-icon svg {
+/* body.light-mode .hero-card-icon svg {
   color: #1f2937 !important;
 }
 
@@ -4883,7 +4889,7 @@ body.light-mode .hero-card h3 {
 
 body.light-mode .hero-card p {
   color: #4b5563;
-}
+} */
 
 /* DEFAULT = LIGHT MODE */
 
@@ -5016,7 +5022,7 @@ body.dark-theme .moon-icon {
 }
 
 .live-data-attribute {
-  columns: var(--text);
+  color: var(--text);
 }
 
 .stat-card {

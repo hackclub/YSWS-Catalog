@@ -5,6 +5,8 @@ let participants = [];
 let initialParticipants = new Map();
 let completedPrograms = new Set();
 
+
+
 function loadCompletedPrograms() {
     const saved = localStorage.getItem('completedPrograms');
     if (saved) {
@@ -83,11 +85,15 @@ async function startRender() {
     });
 
     renderPrograms();
+    // Clicks the active filter btn
+    document.getElementById('filter-btn-active').click()
     await loadParticipants();
     updateParticipantCounts();
     //console.table(getTimelineEvents()); //DEBUG - PLEASE REMOVE LATER
     loadTimelineBlocks();
 }
+
+
 
 function loadParticipants() {
     return fetch(apiUrl)
@@ -676,6 +682,7 @@ function updateSort(sortType) {
     }
 }
 
+
 function filterPrograms(category) {
     const sections = document.querySelectorAll('.category-section');
     const buttons = document.querySelectorAll('.filter-btn');
@@ -737,6 +744,7 @@ function filterPrograms(category) {
         }
     }
 }
+
 
 function searchPrograms(searchTerm) {
     const programCards = document.querySelectorAll('.program-card');
@@ -986,6 +994,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const searchInput = document.getElementById('program-search');
     searchInput.addEventListener('input', (e) => searchPrograms(e.target.value));
 
+
+
     document.querySelectorAll('.filter-btn').forEach(button => {
         button.addEventListener('click', () => {
             filterPrograms(button.dataset.category);
@@ -1156,3 +1166,4 @@ function animateValue(id, endValue) {
 window.addEventListener("DOMContentLoaded", () => {
   loadGlobalStats();
 });
+
