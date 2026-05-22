@@ -39,6 +39,13 @@
   --twitter: #1da1f2;
   --facebook: #3b5998;
   --instagram: #e1306c;
+
+  --faq-item-bg: rgba(70, 70, 70, 0.15);
+  --faq-item-border: rgba(255, 255, 255, 0.08);
+
+  --theme-toggle-bg: rgba(20, 20, 20, 0.1);
+
+
   --breakpoint-xs: 32em;
   --breakpoint-s: 48em;
   --breakpoint-m: 64em;
@@ -100,7 +107,9 @@
   --dark-elevated: var(--dark);
   --dark-border: var(--darkless);
   --dark-sunken: var(--darkless);
-  --font-family: "Outfit", system-ui, -apple-system, sans-serif;
+  /* --font-family: "Outfit", system-ui, -a
+  pple-system, sans-serif; */
+  --font-family: "zarathustra", "zarathustra Fallback", Georgia, serif;
   --gradient-1: rgba(236, 55, 80, 0.3);
   --gradient-2: rgba(51, 142, 218, 0.3);
   --gradient-3: rgba(51, 214, 166, 0.3);
@@ -112,6 +121,11 @@
   --elevated: var(--dark-elevated);
   --border: var(--dark-border);
   --sunken: var(--dark-sunken);
+
+  --faq-item-bg: rgba(0, 0, 0, 0.06);
+  --faq-item-border: rgba(0, 0, 0, 0.08);
+
+  --theme-toggle-bg: rgba(70, 70, 70, 0.5);
 }
 
 .theme-toggle {
@@ -125,18 +139,19 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(255, 255, 255, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.2);
   cursor: pointer;
   z-index: 10;
   transform-origin: center;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: none;
+
+  color: var(--text);
 }
 
 .theme-toggle:hover {
   transform: rotate(45deg) scale(1.1);
-  background: rgba(236, 55, 80, 0.1);
+  /* background: rgba(236, 55, 80, 0.1); */
 }
 
 body {
@@ -2361,6 +2376,7 @@ html {
 
   .hero-card h3 {
     font-size: 1.1rem;
+    color: var(--text);
   }
 
   .hero-card p {
@@ -4828,7 +4844,7 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-
+  background-color: var(--theme-toggle-bg);
   transition:
     background 0.3s ease,
     transform 0.25s ease,
@@ -4939,10 +4955,10 @@ body.dark-theme .moon-icon {
 
 .stat-card {
 
-  background: rgba(255, 255, 255, 0.04);
+  background: var(--faq-item-bg);
 
   border:
-    1px solid rgba(255, 255, 255, 0.08);
+    1px solid var(--faq-item-border);
 
   backdrop-filter: blur(12px);
 
@@ -4958,6 +4974,7 @@ body.dark-theme .moon-icon {
     background 0.3s ease;
 }
 
+/* TODO: ADD HOVER COLOR */
 .stat-card:hover {
 
   transform: translateY(-4px);
@@ -4975,14 +4992,14 @@ body.dark-theme .moon-icon {
 
   font-weight: 800;
 
-  color: white;
+  color: var(--text);
 
   margin-bottom: 0.75rem;
 }
 
 .stat-label {
 
-  color: rgba(255, 255, 255, 0.72);
+  color: var(--text);
 
   font-size: 1rem;
 }
@@ -4998,6 +5015,9 @@ body.dark-theme .moon-icon {
   font-size: 0.9rem;
 }
 
+.live-data-attribute {
+  columns: var(--text);
+}
 
 .stat-card {
   opacity: 0;
@@ -5054,7 +5074,7 @@ body.dark-theme .moon-icon {
 
 .impact-solid {
 
-  color: white;
+  color: var(--text);
 }
 
 .impact-outline {
@@ -5328,15 +5348,12 @@ body.dark-theme .moon-icon {
 
   letter-spacing: -0.04em;
 
-  color: white;
+  color: var(--text);
 
-  margin-bottom: 3rem;
+  padding-bottom: 1rem;
 }
 
 .faq-subtitle {
-
-  color:
-    rgba(255, 255, 255, 0.7);
 
   font-size: 1.2rem;
 }
@@ -5344,10 +5361,10 @@ body.dark-theme .moon-icon {
 .faq-item {
 
   background:
-    rgba(255, 255, 255, 0.04);
+    var(--faq-item-bg);
 
   border:
-    1px solid rgba(255, 255, 255, 0.08);
+    1px solid var(--faq-item-border);
 
   border-radius: 24px;
 
@@ -5371,10 +5388,10 @@ body.dark-theme .moon-icon {
     translateY(-2px);
 
   background:
-    rgba(255, 255, 255, 0.06);
+    var(--faq-item-bg);
 
   border-color:
-    rgba(255, 255, 255, 0.14);
+    var(--faq-item-border);
 }
 
 .faq-item summary {
@@ -5387,7 +5404,7 @@ body.dark-theme .moon-icon {
 
   font-weight: 700;
 
-  color: white;
+  color: var(--text);
 
   display: flex;
 
@@ -5407,7 +5424,7 @@ body.dark-theme .moon-icon {
   font-size: 1.5rem;
 
   color:
-    rgba(255, 255, 255, 0.5);
+    var(--text);
 
   transition:
     transform 0.25s ease;
@@ -5424,7 +5441,7 @@ body.dark-theme .moon-icon {
   margin-top: 1rem;
 
   color:
-    rgba(255, 255, 255, 0.72);
+    var(--text);
 
   line-height: 1.7;
 
