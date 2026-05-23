@@ -327,6 +327,7 @@ function createProgramCard(program) {
     const hackanomousClass = program.name === "Hackanomous" ? 'hackanomous-card' : '';
     const shipyardClass = program.name === 'Shipyard' ? 'shipyard-card' : '';
     const encodedProgram = encodeURIComponent(JSON.stringify(program));
+    const polygonClass =program.name === 'Polygon' ? 'polygon-card' : '';
 
     const isCompletedByUser = completedPrograms.has(program.name);
     const completionButtonClass = isCompletedByUser ? 'completed' : '';
@@ -422,11 +423,13 @@ function createProgramCard(program) {
         <img src="logos/ShipyardLogo.svg" alt="Shipyard" class="shipyard-logo">
     ` : '';
 
+    const polygonBg = program.name === 'Polygon' ? `<img src="./logos/Polygon.png" alt="Polygon Background" class="polygon-bg">` : '';
+
     const hackanomousLogo = program.name == 'Hackanomous' ? `<img src="https://cdn.hackclub.com/019d9ecf-46ed-734c-b351-f9c2438d15bf/hackanomous_banner_360p.png" alt="Hackanomous Logo" class="hackanomous-logo">` : '';
     const hackanomousMascot = program.name == 'Hackanomous' ? `<img src="https://cdn.hackclub.com/019d9ef5-f609-7d16-971f-3865d2092604/backanomous_mascot_320p.png" alt="Hackanomous Mascot" class="hackanomous-mascot">` : '';
 
     return `
-        <div class="card program-card ${opensClass} ${forgeClass} ${macondoClass} ${horizonsClass} ${slushiesClass} ${blueprintClass} ${accelerateClass} ${baubleClass} ${meowClass} ${woofClass} ${pxlClass} ${wackyFilesClass} ${flavortownClass} ${jusstudyClass} ${rebootClass} ${kitlabClass} ${sleepoverClass} ${stasisClass} ${coeurClass} ${remixedClass} ${hctgClass} ${hackahomeClass} ${rootshipClass} ${raspapiClass} ${beestClass} ${alchemizeClass} ${hackanomousClass} ${shipyardClass}" data-program="${encodedProgram}" data-name="${program.name}">
+        <div class="card program-card ${opensClass} ${forgeClass} ${macondoClass} ${horizonsClass} ${slushiesClass} ${blueprintClass} ${accelerateClass} ${baubleClass} ${meowClass} ${woofClass} ${pxlClass} ${wackyFilesClass} ${flavortownClass} ${jusstudyClass} ${rebootClass} ${kitlabClass} ${sleepoverClass} ${stasisClass} ${coeurClass} ${remixedClass} ${hctgClass} ${hackahomeClass} ${rootshipClass} ${raspapiClass} ${beestClass} ${alchemizeClass} ${hackanomousClass} ${shipyardClass} ${polygonClass}" data-program="${encodedProgram}" data-name="${program.name}">
             ${macondoAssets}
             ${horizonsAssets}
             ${shipyardAssets}
@@ -439,12 +442,15 @@ function createProgramCard(program) {
             ${remixedLogo}
             ${hctgLogo}
             ${alchemize}
+            ${polygonBg}
             <div class="program-header">
                 ${program.name === 'Macondo'
                     ? '<img src="logos/macondo-wordmark.png" alt="Macondo" class="macondo-wordmark">'
                     : program.name === 'Horizons'
                         ? '<img src="logos/horizons-sticker.png" alt="Horizons" class="horizons-wordmark">'
-                        : `<h3>${program.name}</h3>`}
+                    : program.name === 'Polygon'
+                      ? '<img src ="./logos/polygon_logo.png" alt="polygon" class= "polygon-wordmark">'
+                    : `<h3>${program.name}</h3>`}  
                 <div class="status-container">
                     <span class="user-completed-badge ${isCompletedByUser ? 'visible' : ''}">
                         <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
