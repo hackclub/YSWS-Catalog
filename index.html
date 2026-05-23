@@ -5,6 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="alternate" type="application/rss+xml" title="Hack Club YSWS Programs" href="/feed.xml" />
+
+    <!-- Confetti: https://confetti.js.org/ -->
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@4.0.5/tsparticles.confetti.bundle.min.js"></script>
+    <script src="confetti.js"></script>
+
     <script>
         const favicons = [
             "logos/(ch)airtable.png",
@@ -152,6 +157,8 @@
             <a href="https://github.com/hackclub/YSWS-Catalog" target="_blank" rel="noopener noreferrer"
                 class="nav-link">GitHub</a>
             <button class="theme-toggle" id="theme-toggle">☾</button>
+            <!-- DEBUG -->
+            <!-- <button onclick="doConfettiAtCursor(event)">TEST</button> -->
         </nav>
     </header>
 
