@@ -5,6 +5,8 @@ let participants = [];
 let initialParticipants = new Map();
 let completedPrograms = new Set();
 
+
+
 function loadCompletedPrograms() {
     const saved = localStorage.getItem('completedPrograms');
     if (saved) {
@@ -44,6 +46,7 @@ function updateCompletionUI(programName) {
                 '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/></svg>';
 
             completionBtn.setAttribute('aria-label', isCompleted ? 'Mark as not completed' : 'Mark as completed');
+            completionBtn.setAttribute('onClick', isCompleted ? null : "doConfetti()")
             completionBtn.classList.toggle('completed', isCompleted);
         }
 
@@ -63,6 +66,11 @@ function updateCompletionUI(programName) {
                     '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/></svg> Mark as completed';
 
                 modalCompletionBtn.classList.toggle('completed', isCompleted);
+
+                if (modalCompletionBtn.classList.contains('completed')){
+                    doConfetti()
+                }
+                
             }
 
             const modalCompletionBadge = modal.querySelector('.modal-completion-badge');
@@ -83,11 +91,15 @@ async function startRender() {
     });
 
     renderPrograms();
+    // Clicks the active filter btn
+    document.getElementById('filter-btn-active').click()
     await loadParticipants();
     updateParticipantCounts();
     //console.table(getTimelineEvents()); //DEBUG - PLEASE REMOVE LATER
     loadTimelineBlocks();
 }
+
+
 
 function loadParticipants() {
     return fetch(apiUrl)
@@ -447,8 +459,7 @@ function createProgramCard(program) {
                         : `<h3>${program.name}</h3>`}
                 <div class="status-container">
                     <span class="user-completed-badge ${isCompletedByUser ? 'visible' : ''}">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-                        Completed
+                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
                     </span>
                     <span class="program-status status-${program.status}">${program.status}</span>
                 </div>
@@ -461,8 +472,8 @@ function createProgramCard(program) {
                     ${program.website ? `<a href="${program.website}" target="_blank">Website</a>` : ''}
                     ${program.slack ? `<a href="${program.slack}" target="_blank">${program.slackChannel}</a>` : ''}
                 </div>
-                <button class="program-completion-toggle ${completionButtonClass}" aria-label="${isCompletedByUser ? 'Mark as not completed' : 'Mark as completed'}" data-program-name="${program.name}">
-                    ${completionIcon}
+                <button class="program-completion-toggle ${completionButtonClass}" aria-label="${isCompletedByUser ? 'Mark as not completed' : 'Mark as completed'}" data-program-name="${program.name}" onClick=${isCompletedByUser ? null : "doConfetti()"}>
+                    ${completionIcon} 
                 </button>
             </div>
             ${flavortownFooter}
@@ -676,6 +687,7 @@ function updateSort(sortType) {
     }
 }
 
+
 function filterPrograms(category) {
     const sections = document.querySelectorAll('.category-section');
     const buttons = document.querySelectorAll('.filter-btn');
@@ -737,6 +749,7 @@ function filterPrograms(category) {
         }
     }
 }
+
 
 function searchPrograms(searchTerm) {
     const programCards = document.querySelectorAll('.program-card');
@@ -929,7 +942,7 @@ function loadTimelineBlocks() {
 
             timeline.innerHTML += `
             <div class="timeline-row" data-index="${i}">
-                <div class="timeline-block  ${event.deadline ? '' : "no-deadline-timeline"}" style="width:${width}rem; ${event.deadline ? `background-color: ${brandingColors[(i % 8)]}` : `background: linear-gradient(90deg, ${brandingColors[(i % 8)]} 40%, var(--background) 95%);`}">
+                <div class="timeline-block  ${event.deadline ? '' : "no-deadline-timeline"}" style="width:${width}rem; ${event.deadline ? `background-color: ${brandingColors[(i % 8)]}` : `background: linear-gradient(90deg, ${brandingColors[(i % 8)]} 40%, var(--background) 100%);`}">
                     <span class="timeline-label inside">${labelText}</span>
                 </div>
                 <span class="timeline-label outside hidden">${labelText}</span>
@@ -985,6 +998,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const searchInput = document.getElementById('program-search');
     searchInput.addEventListener('input', (e) => searchPrograms(e.target.value));
+
+
 
     document.querySelectorAll('.filter-btn').forEach(button => {
         button.addEventListener('click', () => {
@@ -1077,7 +1092,7 @@ async function loadGlobalStats() {
   try {
 // Endpoint maintained by @natdrone101 on Slack (@zibuyin on Github), source code at https://github.com/zibuyin/YSWS-Catalog-Backend
     const response = await fetch(
-      "https://hackclub8080.nathanyin.com"
+      "https://hackclub8080.nathanyin.com/api/v1/ysws_stats"
     );
 
     const data = await response.json();
@@ -1155,4 +1170,14 @@ function animateValue(id, endValue) {
 
 window.addEventListener("DOMContentLoaded", () => {
   loadGlobalStats();
-});
+})
+
+// const timelineContainer = document.getElementById("timeline-container");
+// const dateContainer = document.getElementById("date-container");
+
+// if (timelineContainer && dateContainer)
+// {
+//     timelineContainer.addEventListener('scroll', () => {
+//         dateContainer.style.transform = `translateX(${timelineContainer.scrollLeft}px)`
+//     });
+// }
