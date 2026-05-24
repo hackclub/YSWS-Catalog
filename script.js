@@ -1087,7 +1087,7 @@ async function loadGlobalStats() {
   try {
 // Endpoint maintained by @natdrone101 on Slack (@zibuyin on Github), source code at https://github.com/zibuyin/YSWS-Catalog-Backend
     const response = await fetch(
-      "https://hackclub8080.nathanyin.com"
+      "https://hackclub8080.nathanyin.com/api/v1/ysws_stats"
     );
 
     const data = await response.json();
