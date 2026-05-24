@@ -3182,6 +3182,11 @@ html {
   z-index: 2;
 }
 
+.program-card.shipyard-card p,
+.program-card.shipyard-card .program-deadline {
+  color: #f4fbff;
+}
+
 .program-card.shipyard-card .program-footer {
   display: flex;
   flex-direction: column;
@@ -4174,6 +4179,10 @@ html {
   background-repeat: no-repeat;
   background-position: center;
   color: white;
+}
+
+.program-card.coeur-card>p {
+  color: white !important;
 }
 
 .program-card.coeur-card h3,
