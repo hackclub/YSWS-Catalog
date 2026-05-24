@@ -3347,6 +3347,23 @@ html {
   box-shadow: 0 22px 38px rgba(51, 177, 255, 0.18);
 }
 
+.program-card.shipyard-card .status-active {
+  background: #339ad0 !important;
+  color: white !important;
+  animation: shipyard-status-glow 2s ease-in-out infinite !important;
+}
+
+@keyframes shipyard-status-glow {
+
+  0%,
+  100% {
+    box-shadow: 0 0 5px #339ad0;
+  }
+
+  50% {
+    box-shadow: 0 0 15px #339ad0;
+  }
+}
 
 /* ts is for the Accelerate Card - whiteboard theme */
 .program-card.accelerate-card {
@@ -4795,6 +4812,24 @@ html {
     width: 50px;
     right: 8px;
     bottom: 8px;
+  }
+}
+
+.program-card.beest-card .status-active {
+  background: #93b4cd !important;
+  color: white !important;
+  animation: beest-status-glow 2s ease-in-out infinite !important;
+}
+
+@keyframes beest-status-glow {
+
+  0%,
+  100% {
+    box-shadow: 0 0 5px #93b4cd;
+  }
+
+  50% {
+    box-shadow: 0 0 15px #93b4cd;
   }
 }
 
