@@ -580,7 +580,7 @@ function openModal(program) {
     const links = [];
     if (program.website) links.push(`<a href="${program.website}" target="_blank">Website</a>`);
     if (program.slack) links.push(`<a href="${program.slack}" target="_blank">${program.slackChannel}</a>`);
-    modal.querySelector('.program-links').innerHTML = links.join(' | ');
+    modal.querySelector('.program-links').innerHTML = links.join('<span class="link-separator"> | </span>');
 
     const isCompletedByUser = completedPrograms.has(program.name);
     const modalCompletionBtn = modal.querySelector('.modal-completion-toggle');

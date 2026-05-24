@@ -120,6 +120,7 @@
 html {
   scroll-behavior: smooth;
   overscroll-behavior-y: none;
+  overflow-x: hidden;
 }
 
 .dark-theme {
@@ -956,8 +957,8 @@ td {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
+  right: 0;
+  bottom: 0;
   background: rgba(0, 0, 0, 0.75);
   /* backdrop-filter: blur(8px); */
   z-index: 9999;
@@ -1080,6 +1081,10 @@ body.modal-open {
 
   .modal-next {
     right: var(--spacing-2);
+  }
+
+  .link-separator {
+    display: none;
   }
 }
 
@@ -2425,7 +2430,7 @@ html {
     margin-bottom: 3rem;
     padding: 1.5rem;
     border-radius: 16px;
-    width: 100%;
+    width: auto !important;
     box-sizing: border-box;
   }
 
@@ -2685,7 +2690,7 @@ html {
 
   .programs-container {
     padding: 1rem;
-    margin: 2rem 0.5rem;
+    margin: 1rem;
   }
 
   .search-container {
