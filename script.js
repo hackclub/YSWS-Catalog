@@ -580,7 +580,7 @@ function openModal(program) {
     const links = [];
     if (program.website) links.push(`<a href="${program.website}" target="_blank">Website</a>`);
     if (program.slack) links.push(`<a href="${program.slack}" target="_blank">${program.slackChannel}</a>`);
-    modal.querySelector('.program-links').innerHTML = links.join(' | ');
+    modal.querySelector('.program-links').innerHTML = links.join('<span class="link-separator"> | </span>');
 
     const isCompletedByUser = completedPrograms.has(program.name);
     const modalCompletionBtn = modal.querySelector('.modal-completion-toggle');
@@ -910,6 +910,7 @@ function loadTimelineBlocks() {
 
     document.getElementById("timeline-overlay").style.width = `${Math.ceil((furthestEvent.getTime() - now.getTime()) / 1000 / 60 / 60 / 24)}rem`;
 
+    let maxWidth = 0;
     for (let i = 0; i < events.length; i++) {
         const event = events[i];
 
@@ -930,6 +931,7 @@ function loadTimelineBlocks() {
                 remainingDays -= months * 30;
 
                 width = days;
+                maxWidth = Math.max(width, maxWidth);
 
                 const parts = [];
 
@@ -942,7 +944,7 @@ function loadTimelineBlocks() {
 
             timeline.innerHTML += `
             <div class="timeline-row" data-index="${i}">
-                <div class="timeline-block  ${event.deadline ? '' : "no-deadline-timeline"}" style="width:${width}rem; ${event.deadline ? `background-color: ${brandingColors[(i % 8)]}` : `background: linear-gradient(90deg, ${brandingColors[(i % 8)]} 40%, var(--background) 100%);`}">
+                <div class="timeline-block  ${event.deadline ? '' : "no-deadline-timeline"}" style="width:${maxWidth}rem; ${event.deadline ? `background-color: ${brandingColors[(i % 8)]}` : `background: linear-gradient(90deg, ${brandingColors[(i % 8)]} 60%, var(--background) 100%);`}">
                     <span class="timeline-label inside">${labelText}</span>
                 </div>
                 <span class="timeline-label outside hidden">${labelText}</span>
