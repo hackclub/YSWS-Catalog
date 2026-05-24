@@ -723,7 +723,7 @@ td {
   gap: 8px;
   color: var(--white);
   background: #33d6a6aa;
-  backdrop-filter: blur(10px);
+  /* backdrop-filter: blur(2px); */
   animation: status-glow 2s ease-in-out infinite;
   border: 2px solid var(--header-border);
   min-width: 55px;
@@ -3232,6 +3232,14 @@ html {
 .program-card.horizons-card .program-footer {
   position: relative;
   z-index: 2;
+}
+
+.horizons-card>div:nth-child(5)>div:nth-child(1)>a:nth-child(2) {
+  color: var(--white);
+}
+
+.horizons-card>div:nth-child(5)>div:nth-child(1)>a:nth-child(1) {
+  color: var(--white);
 }
 
 /* Shipyard */
