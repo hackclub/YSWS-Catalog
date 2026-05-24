@@ -942,7 +942,7 @@ function loadTimelineBlocks() {
 
             timeline.innerHTML += `
             <div class="timeline-row" data-index="${i}">
-                <div class="timeline-block  ${event.deadline ? '' : "no-deadline-timeline"}" style="width:${width}rem; ${event.deadline ? `background-color: ${brandingColors[(i % 8)]}` : `background: linear-gradient(90deg, ${brandingColors[(i % 8)]} 40%, var(--background) 95%);`}">
+                <div class="timeline-block  ${event.deadline ? '' : "no-deadline-timeline"}" style="width:${width}rem; ${event.deadline ? `background-color: ${brandingColors[(i % 8)]}` : `background: linear-gradient(90deg, ${brandingColors[(i % 8)]} 40%, var(--background) 100%);`}">
                     <span class="timeline-label inside">${labelText}</span>
                 </div>
                 <span class="timeline-label outside hidden">${labelText}</span>
@@ -1170,5 +1170,14 @@ function animateValue(id, endValue) {
 
 window.addEventListener("DOMContentLoaded", () => {
   loadGlobalStats();
-});
+})
 
+// const timelineContainer = document.getElementById("timeline-container");
+// const dateContainer = document.getElementById("date-container");
+
+// if (timelineContainer && dateContainer)
+// {
+//     timelineContainer.addEventListener('scroll', () => {
+//         dateContainer.style.transform = `translateX(${timelineContainer.scrollLeft}px)`
+//     });
+// }

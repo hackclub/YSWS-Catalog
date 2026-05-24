@@ -116,6 +116,12 @@
   --header-border: rgba(70, 70, 70, 0.2);
 }
 
+/* fix overscroll */
+html {
+  scroll-behavior: smooth;
+  overscroll-behavior-y: none;
+}
+
 .dark-theme {
   --text: var(--dark-text);
   --background: var(--dark-background);
@@ -2855,6 +2861,8 @@ html {
   transition:
     background-color 0.5s ease,
     color 0.5s ease;
+
+  border-bottom: 1px solid var(--header-border);
 }
 
 #timeline-container::-webkit-scrollbar {
@@ -2919,23 +2927,35 @@ html {
   border-radius: 0 0.4rem 0.4rem 0;
   background: red;
   flex-shrink: 0;
-  overflow: hidden;
+  overflow: visible;
   display: flex;
   flex-direction: row;
   align-items: center;
+  transform-origin: left center;
+  transition: transform 0.25s ease;
 }
 
 .timeline-row:hover,
 .timeline-row:focus {
   box-shadow: var(--text);
-  transform: scale(1.3);
   cursor: pointer;
 }
 
+.timeline-row:hover .timeline-block,
+.timeline-row:focus .timeline-block {
+  transform: scale(1.3);
+}
+
 .timeline-label {
+  position: sticky;
+  left: 0;
+  z-index: 1;
+  display: inline-block;
   white-space: nowrap;
   pointer-events: none;
   text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 #date-container {
