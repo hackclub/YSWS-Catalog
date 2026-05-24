@@ -467,8 +467,8 @@ function createProgramCard(program) {
                     ${program.website ? `<a href="${program.website}" target="_blank">Website</a>` : ''}
                     ${program.slack ? `<a href="${program.slack}" target="_blank">${program.slackChannel}</a>` : ''}
                 </div>
-                <button class="program-completion-toggle ${completionButtonClass}" aria-label="${isCompletedByUser ? 'Mark as not completed' : 'Mark as completed'}" data-program-name="${program.name}">
-                    ${completionIcon}
+                <button class="program-completion-toggle ${completionButtonClass}" aria-label="${isCompletedByUser ? 'Mark as not completed' : 'Mark as completed'}" data-program-name="${program.name}" onClick=${isCompletedByUser ? null : "doConfetti()"}>
+                    ${completionIcon} 
                 </button>
             </div>
             ${flavortownFooter}
