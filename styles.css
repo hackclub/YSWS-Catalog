@@ -3234,6 +3234,14 @@ html {
   z-index: 2;
 }
 
+.horizons-card>div:nth-child(5)>div:nth-child(1)>a:nth-child(2) {
+  color: var(--white);
+}
+
+.horizons-card>div:nth-child(5)>div:nth-child(1)>a:nth-child(1) {
+  color: var(--white);
+}
+
 /* Shipyard */
 .program-card.shipyard-card {
   position: relative;
