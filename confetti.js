@@ -7,11 +7,13 @@ const defaults = {
     decay: 0.94,
     startVelocity: 60,
     scalar: 2.6,
+    zIndex: 99999,
 }
 
 const hcIconDefault = {
     particleCount: 40,
     scalar: 3,
+    zIndex: 99999,
     // startVelocity: 50,
 }
 
