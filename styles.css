@@ -1749,7 +1749,7 @@ body.modal-open {
 }
 
 .hero-card-front {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.5);
   /* backdrop-filter: blur(15px); */
 }
 
