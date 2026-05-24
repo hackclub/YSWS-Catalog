@@ -1054,6 +1054,7 @@ body.modal-open {
   font-size: var(--font-4);
   z-index: 1001;
   opacity: 0.8;
+  font-family: var(--font-sans);
 }
 
 .modal-nav:hover {
@@ -1062,6 +1063,7 @@ body.modal-open {
   transform: translateY(-50%) scale(1.1);
   opacity: 1;
 }
+
 
 .modal-prev {
   left: var(--spacing-4);
@@ -2245,6 +2247,8 @@ html {
   transform: translateY(10px);
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   pointer-events: none;
+
+  display: none !important;
 }
 
 .modal-completion-badge.visible {
@@ -2599,6 +2603,13 @@ html {
     padding: 0.25rem 0.5rem;
   }
 
+  /* .modal-nav:hover {
+    background: var(--primary);
+    color: var(--white);
+    transform: translateY(-50%) scale(1.1);
+    opacity: 1;
+  } */
+
   .modal-nav {
     width: 40px;
     height: 40px;
@@ -2614,16 +2625,34 @@ html {
   }
 
   .program-links {
-    flex-direction: column;
-    gap: var(--spacing-1);
+    /* flex-direction: column; */
+    justify-content: space-around;
+    gap: var(--spacing-4);
     width: 100%;
   }
 
   .program-links a {
-    width: 100%;
+    /* width: 1%; */
     text-align: center;
-    padding: 0.5rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
     box-sizing: border-box;
+    border-radius: var(--radii-circle);
+    background-color: var(--primary);
+    color: var(--text);
+    transition: ease-in-out 0.3s all;
+    text-decoration: none;
+  }
+
+  .mnavodal- {
+    top: 90%;
+    width: 120px;
+    font-size: 30px !important;
+    height: 50px;
+    border-radius: var(--radii-circle);
+  }
+
+  .program-links a:active {
+    translate: 0px -3px;
   }
 
   .gradient-1 {

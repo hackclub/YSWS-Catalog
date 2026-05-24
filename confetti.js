@@ -129,6 +129,16 @@ const logoImages = logoSources.map((src) => ({
     height: 32,
 }));
 
+// Preload logo images on page load to avoid lag spike when confetti triggers
+function preloadLogoImages() {
+    logoSources.forEach(src => {
+        const img = new Image();
+        img.src = encodeURI(src);
+    });
+}
+
+window.addEventListener('load', preloadLogoImages);
+
 function doConfetti(){
     // Is the user from the Southern atm? e.g. AU?
 
