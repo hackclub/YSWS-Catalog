@@ -719,8 +719,11 @@ td {
 }
 
 .status-active {
-  background-color: var(--green);
-  color: var(--white);
+  align-items: center;
+  gap: 8px;
+  color: var(--bg);
+  background: var(--green);
+  /* backdrop-filter: blur(10px); */
   animation: status-glow 2s ease-in-out infinite;
   min-width: 55px;
   font-size: 11px;
@@ -2223,6 +2226,7 @@ html {
 
 .modal-completion-toggle.completed:hover {
   background: var(--red);
+  box-shadow: 0 4px 12px #ec374f90;
 }
 
 .modal-completion-badge {
