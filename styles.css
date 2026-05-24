@@ -721,10 +721,10 @@ td {
 .status-active {
   align-items: center;
   gap: 8px;
-  color: var(--green);
-  background: var(--black);
-  /* backdrop-filter: blur(10px); */
-  /* animation: status-glow 2s ease-in-out infinite; */
+  color: var(--white);
+  background: #33d6a6aa;
+  backdrop-filter: blur(10px);
+  animation: status-glow 2s ease-in-out infinite;
   border: 2px solid var(--header-border);
   min-width: 55px;
   font-size: 11px;
