@@ -4969,6 +4969,7 @@ body.dark-theme .moon-icon {
 
 .stats-grid {
 
+  margin-top: 60px;
   display: grid;
 
   grid-template-columns:
@@ -4981,8 +4982,7 @@ body.dark-theme .moon-icon {
 
   background: var(--faq-item-bg);
 
-  border:
-    1px solid var(--faq-item-border);
+  border: 1px solid var(--header-border);
 
   backdrop-filter: blur(12px);
 
@@ -5003,12 +5003,17 @@ body.dark-theme .moon-icon {
 
   transform: translateY(-4px);
 
-  border-color:
-    rgba(255, 255, 255, 0.16);
+  /* border-color: */
+  /* rgba(255, 255, 255, 0.16); */
 
   background:
     rgba(255, 255, 255, 0.06);
 }
+
+/* .dark-theme .stat-card:hover {
+  border-color: rgba(0, 0, 0, 1);
+  background: rgba(255, 255, 255, 0.5);
+} */
 
 .stat-number {
 
