@@ -742,6 +742,24 @@ footer {
   display: block;
 }
 
+/* Fill the wave with the page background so it "scoops" the
+   coloured hero into the section below. Setting fill via CSS
+   instead of an SVG attribute — `fill="var(--…)"` does NOT
+   resolve CSS variables in any browser. */
+.wave-divider svg path {
+  fill: var(--background);
+}
+
+/* Wave anchored at the bottom of the hero section. */
+.hero-wave {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -1px;
+  height: 40px;
+  z-index: 3;
+}
+
 /* ── Global stats section ───────────────────────────────── */
 .global-stats-section {
   padding: 96px 24px;
