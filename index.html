@@ -120,21 +120,14 @@
     <title>Hack Club YSWS Programs</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
+    <link rel="preconnect" href="https://hackclub.com" crossorigin>
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.js"></script>
 </head>
 
 <body class="noise parallax-wrapper">
-    <div class="gradient-bg">
-        <div class="gradient-blob gradient-1"></div>
-        <div class="gradient-blob gradient-2"></div>
-        <div class="gradient-blob gradient-3"></div>
-    </div>
-
-    <div class="circuit-bg"></div>
-    <div class="grid-overlay"></div>
+    <!-- Subtle gradient wash behind the hero — replaces the old gradient blobs / circuit grid -->
+    <div class="gradient-bg" aria-hidden="true"></div>
 
     <header class="site-header">
         <div class="logo-container">
@@ -156,9 +149,7 @@
             </a>
             <a href="https://github.com/hackclub/YSWS-Catalog" target="_blank" rel="noopener noreferrer"
                 class="nav-link">GitHub</a>
-            <button class="theme-toggle" id="theme-toggle">☾</button>
-            <!-- DEBUG -->
-            <!-- <button onclick="doConfettiAtCursor(event)">TEST</button> -->
+            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">☾</button>
         </nav>
     </header>
 
@@ -213,6 +204,16 @@
                 </div>
             </div>
             <a href="#programs-list" class="cta-button">Explore Programs<span class="button-arrow">→</span></a>
+        </div>
+
+        <!-- Mountain-bump wave divider — echoes the new hackclub.com landing page.
+             CSS variables don't resolve in raw SVG attribute values, so the path
+             fill is set via the `.wave-divider svg path` rule in styles.css. -->
+        <div class="wave-divider hero-wave" aria-hidden="true">
+            <svg viewBox="0 0 1920 40" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M0,40 L0,27 C40,27 40,8 80,8 C120,8 120,27 160,27 C200,27 200,8 240,8 C280,8 280,27 320,27 C360,27 360,8 400,8 C440,8 440,27 480,27 C520,27 520,8 560,8 C600,8 600,27 640,27 C680,27 680,8 720,8 C760,8 760,27 800,27 C840,27 840,8 880,8 C920,8 920,27 960,27 C1000,27 1000,8 1040,8 C1080,8 1080,27 1120,27 C1160,27 1160,8 1200,8 C1240,8 1240,27 1280,27 C1320,27 1320,8 1360,8 C1400,8 1400,27 1440,27 C1480,27 1480,8 1520,8 C1560,8 1560,27 1600,27 C1640,27 1640,8 1680,8 C1720,8 1720,27 1760,27 C1800,27 1800,8 1840,8 C1880,8 1880,27 1920,27 L1920,40 Z" />
+            </svg>
         </div>
     </section>
 
@@ -390,7 +391,6 @@
                 You'll receive feedback on why it wasn't approved. Depending on the reason, you may be able to make
                 adjustments and resubmit before the deadline </p>
         </details>
-        </div>
 
         <div class="faq-footer">
 
@@ -399,7 +399,6 @@
             <a href="https://hackclub.slack.com">
                 Join the Hack Club Slack →
             </a>
-        </div>
         </div>
 
 
