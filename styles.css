@@ -1057,20 +1057,84 @@ footer {
   opacity: 0;
 }
 
+/* Per-program rows on the timeline — one bar per program, with breathing
+   room between them so the bars don't run together. */
+.timeline-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 10rem 8px 0;
+  cursor: pointer;
+  transform-origin: left;
+  transition:
+    transform 0.2s ease,
+    opacity 0.2s ease;
+}
+
+.timeline-row:first-child {
+  margin-top: 2px;
+}
+
+.timeline-row:last-child {
+  margin-bottom: 4px;
+}
+
+.timeline-row:hover,
+.timeline-row:focus {
+  transform: translateX(2px);
+}
+
+.timeline-block {
+  position: relative;
+  height: 26px;
+  padding: 0 12px;
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
+  background: var(--red);
+  border-radius: 0 999px 999px 0;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease;
+}
+
+.timeline-row:hover .timeline-block,
+.timeline-row:focus .timeline-block {
+  opacity: 0.85;
+}
+
+.timeline-block.no-deadline-timeline {
+  box-shadow: none;
+}
+
+.timeline-label {
+  position: sticky;
+  left: 0;
+  z-index: 1;
+  padding: 0 4px;
+}
+
 .timeline-label.inside,
 .timeline-label.outside {
   white-space: nowrap;
   font-family: var(--font-sans);
   font-weight: 600;
   font-size: 11px;
+  letter-spacing: 0.01em;
 }
 
 .timeline-label.inside {
   color: #ffffff;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
 }
 
 .timeline-label.outside {
   color: var(--foreground);
+}
+
+.timeline-label.hidden {
+  display: none;
 }
 
 #timeline-expand-btn-container {
