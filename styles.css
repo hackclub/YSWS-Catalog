@@ -103,6 +103,11 @@
   --shadow-dd: 0 8px 32px rgba(0, 0, 0, 0.13);
   --shadow-pill: 0 6px 20px rgba(236, 55, 80, 0.28);
 
+  /* Inverted pill (CTA + active filter) — flips between light & dark themes
+     so the pill always pops against its parent surface. */
+  --invert-bg: #17171d;
+  --invert-fg: #fff6eb;
+
   /* Fonts */
   --font-sans: 'Phantom Sans', 'Outfit', system-ui, -apple-system, sans-serif;
   --font-display: 'Zarathustra', 'Instrument Serif', Georgia, serif;
@@ -157,8 +162,14 @@
   --surface-hover: #2a2a33;
   --paper: #1f1f27;
   --cream: #fff6eb;
-  --ink: #fff6eb;
-  --ink-2: #fff6eb;
+  /* Keep --ink as the brand dark — it must NOT flip with the theme,
+     otherwise pills using ink/cream resolve to the same color. */
+  --ink: #17171d;
+  --ink-2: #2e1719;
+
+  /* Inverted pill flips in dark mode so the pill is the LIGHT colour. */
+  --invert-bg: #fff6eb;
+  --invert-fg: #17171d;
 
   --border: rgba(255, 255, 255, 0.08);
   --border-strong: rgba(255, 255, 255, 0.18);
@@ -632,9 +643,9 @@ footer {
 
 .hero-card-back {
   transform: rotateY(180deg);
-  background: var(--ink);
-  color: var(--cream);
-  border-color: var(--ink);
+  background: var(--invert-bg);
+  color: var(--invert-fg);
+  border-color: var(--invert-bg);
 }
 
 .hero-card-icon {
@@ -673,22 +684,22 @@ footer {
   font-family: var(--font-sans);
   font-size: 15px;
   line-height: 1.4;
-  color: var(--cream);
+  color: var(--invert-fg);
 }
 
-/* CTA pill button — black with arrow that slides on hover */
+/* CTA pill button — inverts with the theme so it always pops */
 .cta-button {
   display: inline-flex;
   align-items: center;
   gap: 10px;
   padding: 14px 24px;
-  background: var(--ink);
-  color: var(--cream);
+  background: var(--invert-bg);
+  color: var(--invert-fg);
   font-family: var(--font-sans);
   font-weight: 600;
   font-size: 16px;
   border-radius: 9999px;
-  border: 1px solid var(--ink);
+  border: 1px solid var(--invert-bg);
   text-decoration: none;
   transition:
     background-color 0.35s ease,
@@ -1203,16 +1214,9 @@ footer {
 
 .filter-btn.active,
 .sort-btn.active {
-  background: var(--ink);
-  color: var(--cream);
-  border-color: var(--ink);
-}
-
-.dark-theme .filter-btn.active,
-.dark-theme .sort-btn.active {
-  background: var(--cream);
-  color: var(--ink);
-  border-color: var(--cream);
+  background: var(--invert-bg);
+  color: var(--invert-fg);
+  border-color: var(--invert-bg);
 }
 
 .filter-btn.user-filter {
@@ -1831,9 +1835,9 @@ footer {
 }
 
 .modal-nav:hover {
-  background: var(--ink);
-  border-color: var(--ink);
-  color: var(--cream);
+  background: var(--invert-bg);
+  border-color: var(--invert-bg);
+  color: var(--invert-fg);
   transform: translateY(-50%) scale(1.06);
 }
 
