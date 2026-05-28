@@ -1089,6 +1089,11 @@ themeToggle.addEventListener("click", () => {
 
 
 
+// Hold the fetched stats so the count-up animation can wait until the
+// stats section actually enters the viewport.
+let globalStatsData = null;
+let globalStatsAnimated = false;
+
 async function loadGlobalStats() {
 
   try {
@@ -1097,27 +1102,12 @@ async function loadGlobalStats() {
       "https://hackclub8080.nathanyin.com/api/v1/ysws_stats"
     );
 
-    const data = await response.json();
+    globalStatsData = await response.json();
 
-    animateValue(
-      "projects-count",
-      data.total_projects
-    );
-
-    animateValue(
-      "hours-count",
-      data.total_hours
-    );
-
-    animateValue(
-      "stars-count",
-      data.total_stars
-    );
-
-    animateValue(
-      "viral-count",
-      data.viral_projects
-    );
+    // If the section is already on screen when data arrives
+    // (short page, hash anchor, etc.), animate immediately.
+    // Otherwise the IntersectionObserver triggers it on scroll-into-view.
+    maybeRunGlobalStatsAnimation();
 
   } catch (error) {
 
@@ -1127,6 +1117,51 @@ async function loadGlobalStats() {
     );
 
   }
+}
+
+function runGlobalStatsAnimation() {
+  if (globalStatsAnimated || !globalStatsData) return;
+  globalStatsAnimated = true;
+
+  animateValue("projects-count", globalStatsData.total_projects);
+  animateValue("hours-count", globalStatsData.total_hours);
+  animateValue("stars-count", globalStatsData.total_stars);
+  animateValue("viral-count", globalStatsData.viral_projects);
+}
+
+function maybeRunGlobalStatsAnimation() {
+  if (globalStatsAnimated || !globalStatsData) return;
+
+  const section = document.querySelector('.global-stats-section');
+  if (!section) return;
+
+  const rect = section.getBoundingClientRect();
+  const isOnScreen = rect.top < window.innerHeight && rect.bottom > 0;
+  if (isOnScreen) runGlobalStatsAnimation();
+}
+
+function setupGlobalStatsObserver() {
+  const section = document.querySelector('.global-stats-section');
+  if (!section) return;
+
+  // Older browsers without IntersectionObserver: just run it so the
+  // numbers still show up.
+  if (!('IntersectionObserver' in window)) {
+    runGlobalStatsAnimation();
+    return;
+  }
+
+  const observer = new IntersectionObserver((entries) => {
+    for (const entry of entries) {
+      if (entry.isIntersecting) {
+        runGlobalStatsAnimation();
+        observer.disconnect();
+        break;
+      }
+    }
+  }, { threshold: 0.15 });
+
+  observer.observe(section);
 }
 
 function formatNumber(num) {
@@ -1171,6 +1206,7 @@ function animateValue(id, endValue) {
 
 
 window.addEventListener("DOMContentLoaded", () => {
+  setupGlobalStatsObserver();
   loadGlobalStats();
 })
 
