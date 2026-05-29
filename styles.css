@@ -2512,6 +2512,60 @@ footer {
   }
 }
 
+/* Stardance Card */
+.program-card.stardance-card {
+  position: relative;
+  overflow: hidden;
+  color: #FEFDFB;
+  cursor: pointer;
+  border: 2px solid #EBB7FF !important;
+}
+
+.program-card.stardance-card .program-header,
+.program-card.stardance-card p,
+.program-card.stardance-card .program-deadline,
+.program-card.stardance-card .program-footer {
+  position: relative;
+  z-index: 2;
+}
+
+.program-card.stardance-card p,
+.program-card.stardance-card .program-deadline,
+.program-card.stardance-card .program-header .title {
+  color: #FEFDFB;
+}
+
+.program-card.stardance-card .program-links a {
+  color: #EDE7B9 !important;
+}
+
+.program-card.stardance-card .program-links a:hover {
+  color: #FEFDFB !important;
+}
+
+.program-card.stardance-card:hover {
+  border-color: #F4EBB9 !important;
+  box-shadow: 0 22px 38px rgba(244, 235, 185, 0.18);
+}
+
+.stardance-wordmark {
+  width: min(240px, calc(100% - 88px));
+  height: auto;
+  display: block;
+  position: relative;
+  z-index: 2;
+}
+
+.stardance-background {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 1;
+  z-index: 1;
+}
+
 /* ts is for the Accelerate Card - whiteboard theme */
 .program-card.accelerate-card {
   font-family: "Permanent Marker", cursive !important;
