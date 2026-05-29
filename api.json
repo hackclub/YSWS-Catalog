@@ -1,6 +1,15 @@
 {
   "limitedTime": [
     {
+      "name": "Stardance",
+      "deadline": "2026-09-30T00:00:00.000Z",
+      "description": "The largest STEM event of the summer:<br>make anything you want and earn free prizes.",
+      "website": "https://stardance.hackclub.com/ysws-catalog",
+      "slack": "https://hackclub.enterprise.slack.com/archives/C0APH2MMHH7",
+      "slackChannel": "#stardance",
+      "status": "active"
+    },
+    {
       "name": "Forge",
       "deadline": "2026-08-01T00:00:00.000Z",
       "description": "Forge is a Hack Club YSWS (You ship, we ship) program where teens like yourself can design and build hardware projects, and get them funded! Forge your project now",
