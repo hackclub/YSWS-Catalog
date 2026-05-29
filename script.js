@@ -338,6 +338,7 @@ function createProgramCard(program) {
     const alchemizeClass = program.name === "Alchemize" ? 'alchemize-card' : '';
     const hackanomousClass = program.name === "Hackanomous" ? 'hackanomous-card' : '';
     const shipyardClass = program.name === 'Shipyard' ? 'shipyard-card' : '';
+    const stardanceClass = program.name === 'Stardance' ? 'stardance-card' : '';
     const encodedProgram = encodeURIComponent(JSON.stringify(program));
 
     const isCompletedByUser = completedPrograms.has(program.name);
@@ -434,14 +435,19 @@ function createProgramCard(program) {
         <img src="logos/ShipyardLogo.svg" alt="Shipyard" class="shipyard-logo">
     ` : '';
 
+    const stardanceAssets = program.name === 'Stardance' ? `
+        <img src="logos/stardance-bg.png" alt="" class="stardance-background" aria-hidden="true">
+    ` : '';
+
     const hackanomousLogo = program.name == 'Hackanomous' ? `<img src="https://cdn.hackclub.com/019d9ecf-46ed-734c-b351-f9c2438d15bf/hackanomous_banner_360p.png" alt="Hackanomous Logo" class="hackanomous-logo">` : '';
     const hackanomousMascot = program.name == 'Hackanomous' ? `<img src="https://cdn.hackclub.com/019d9ef5-f609-7d16-971f-3865d2092604/backanomous_mascot_320p.png" alt="Hackanomous Mascot" class="hackanomous-mascot">` : '';
 
     return `
-        <div class="card program-card ${opensClass} ${forgeClass} ${macondoClass} ${horizonsClass} ${slushiesClass} ${blueprintClass} ${accelerateClass} ${baubleClass} ${meowClass} ${woofClass} ${pxlClass} ${wackyFilesClass} ${flavortownClass} ${jusstudyClass} ${rebootClass} ${kitlabClass} ${sleepoverClass} ${stasisClass} ${coeurClass} ${remixedClass} ${hctgClass} ${hackahomeClass} ${rootshipClass} ${raspapiClass} ${beestClass} ${alchemizeClass} ${hackanomousClass} ${shipyardClass}" data-program="${encodedProgram}" data-name="${program.name}">
+        <div class="card program-card ${opensClass} ${forgeClass} ${macondoClass} ${horizonsClass} ${slushiesClass} ${blueprintClass} ${accelerateClass} ${baubleClass} ${meowClass} ${woofClass} ${pxlClass} ${wackyFilesClass} ${flavortownClass} ${jusstudyClass} ${rebootClass} ${kitlabClass} ${sleepoverClass} ${stasisClass} ${coeurClass} ${remixedClass} ${hctgClass} ${hackahomeClass} ${rootshipClass} ${raspapiClass} ${beestClass} ${alchemizeClass} ${hackanomousClass} ${shipyardClass} ${stardanceClass}" data-program="${encodedProgram}" data-name="${program.name}">
             ${macondoAssets}
             ${horizonsAssets}
             ${shipyardAssets}
+            ${stardanceAssets}
             ${kitlabLogo}
             ${kitlabGif}
             ${baubleSnowflakes}
@@ -456,7 +462,9 @@ function createProgramCard(program) {
                     ? '<img src="logos/macondo-wordmark.png" alt="Macondo" class="macondo-wordmark">'
                     : program.name === 'Horizons'
                         ? '<img src="logos/horizons-sticker.png" alt="Horizons" class="horizons-wordmark">'
-                        : `<h3>${program.name}</h3>`}
+                        : program.name === 'Stardance'
+                            ? '<img src="logos/stardance-log.png" alt="Stardance" class="stardance-wordmark">'
+                            : `<h3>${program.name}</h3>`}
                 <div class="status-container">
                     <span class="user-completed-badge ${isCompletedByUser ? 'visible' : ''}">
                         <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
@@ -1043,6 +1051,13 @@ document.addEventListener('DOMContentLoaded', () => {
         if (e.target.closest('.program-card')) {
             const encodedProgram = e.target.closest('.program-card').dataset.program;
             const program = JSON.parse(decodeURIComponent(encodedProgram));
+
+            // Special handling for Stardance card - redirect instead of opening modal
+            if (program.name === 'Stardance') {
+                window.location.href = 'https://stardance.hackclub.com/ysws-catalog';
+                return;
+            }
+
             openModal(program);
         }
 
