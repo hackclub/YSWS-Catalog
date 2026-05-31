@@ -1283,3 +1283,113 @@ function loadLeaderboard() {
 }
 
 window.addEventListener('DOMContentLoaded', loadLeaderboard);
+
+let wheelPrograms = [];
+let wheelAngle = 0;
+let spinning = false;
+
+function getWheelPrograms() {
+  const colors = ['#ec3750', '#ff8c37', '#f1c40f', '#33d6a6', '#5bc0de', '#338eda', '#a633d6', '#8492a6', '#ec3750', '#33d6a6'];
+  const active = Object.values(programs).flat().filter(p => p.status === 'active');
+  const shuffled = active.sort(() => Math.random() - 0.5).slice(0, 10);
+  return shuffled.map((p, i) => ({ name: p.name, color: colors[i % colors.length] }));
+}
+
+function drawWheel() {
+  const canvas = document.getElementById('wheel-canvas');
+  if (!canvas) return;
+  const ctx = canvas.getContext('2d');
+  const cx = canvas.width / 2;
+  const cy = canvas.height / 2;
+  const r = 220;
+  const slice = (2 * Math.PI) / wheelPrograms.length;
+
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+  wheelPrograms.forEach((prog, i) => {
+    const start = wheelAngle + i * slice;
+    const end = start + slice;
+
+    ctx.beginPath();
+    ctx.moveTo(cx, cy);
+    ctx.arc(cx, cy, r, start, end);
+    ctx.closePath();
+    ctx.fillStyle = prog.color;
+    ctx.fill();
+    ctx.strokeStyle = '#fff';
+    ctx.lineWidth = 2;
+    ctx.stroke();
+
+    ctx.save();
+    ctx.translate(cx, cy);
+    ctx.rotate(start + slice / 2);
+    ctx.textAlign = 'right';
+    ctx.fillStyle = '#fff';
+    ctx.font = 'bold 16px Phantom Sans, sans-serif';
+    ctx.fillText(prog.name, r - 10, 5);
+    ctx.restore();
+  });
+
+  ctx.beginPath();
+  ctx.arc(cx, cy, 20, 0, 2 * Math.PI);
+  ctx.fillStyle = '#1a1a1a';
+  ctx.fill();
+  ctx.strokeStyle = '#ec3750';
+  ctx.lineWidth = 3;
+  ctx.stroke();
+}
+
+function spinWheel() {
+  if (spinning) return;
+  spinning = true;
+
+  document.getElementById('wheel-result').classList.add('hidden');
+  const btn = document.querySelector('.wheel-spin-btn');
+  btn.disabled = true;
+
+  const extraSpins = (5 + Math.random() * 5) * 2 * Math.PI;
+  const duration = 4000;
+  const start = performance.now();
+  const startAngle = wheelAngle;
+
+  function animate(now) {
+    const elapsed = now - start;
+    const progress = Math.min(elapsed / duration, 1);
+    const ease = 1 - Math.pow(1 - progress, 4);
+
+    wheelAngle = startAngle + extraSpins * ease;
+    drawWheel();
+
+    if (progress < 1) {
+      requestAnimationFrame(animate);
+    } else {
+      spinning = false;
+      btn.disabled = false;
+      showWheelResult();
+    }
+  }
+
+  requestAnimationFrame(animate);
+}
+function showWheelResult() {
+  const slice = (2 * Math.PI) / wheelPrograms.length;
+  // Arrow is on the right (3 o'clock = 0 radians)
+  // We need to find which slice is at the 3 o'clock position
+  const angle = ((-wheelAngle) % (2 * Math.PI) + 2 * Math.PI) % (2 * Math.PI);
+  const index = Math.floor(angle / slice) % wheelPrograms.length;
+  const winner = wheelPrograms[index];
+
+  const result = document.getElementById('wheel-result');
+  result.innerHTML = `
+    <p>You should try...</p>
+    <h3 style="color: ${winner.color}">${winner.name}!</h3>
+    <button onclick="document.querySelector('[data-name=\\'${winner.name}\\']')?.click()" class="wheel-open-btn">View Program →</button>
+  `;
+  result.classList.remove('hidden');
+  doConfetti();
+}
+
+setTimeout(() => {
+  wheelPrograms = getWheelPrograms();
+  drawWheel();
+}, 2000);
