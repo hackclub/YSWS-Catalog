@@ -400,7 +400,23 @@
   </div>
 </section>
 
-
+<section class="wheel-section">
+  <h2 class="wheel-title">
+    <span class="impact-solid">Spin the</span>
+    <span class="impact-outline">Wheel</span>
+  </h2>
+  <p class="wheel-subtitle">Can't decide? Let fate choose your next YSWS!</p>
+  <div class="wheel-container">
+    <div class="wheel-pointer">
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="#ec3750">
+    <polygon points="24,0 0,12 24,24"/>
+  </svg>
+</div>
+    <canvas id="wheel-canvas" width="500" height="500"></canvas>
+    <button class="wheel-spin-btn" onclick="spinWheel()">SPIN!</button>
+  </div>
+  <div id="wheel-result" class="wheel-result hidden"></div>
+</section>
 
     <section class="faq-section">
 
