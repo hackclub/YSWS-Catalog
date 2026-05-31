@@ -138,59 +138,18 @@ function preloadLogoImages() {
 }
 
 window.addEventListener('load', preloadLogoImages);
-
 function doConfetti(){
-    // Is the user from the Southern atm? e.g. AU?
-
-    // isUserSouthern()
-
-
-
-
     // Left
     confetti({
-    ...defaults,
-
-    angle: 45,
-    origin: { y: 1, x:0}
-    });
-
-    // Left HC
-    confetti({
-    ...hcIconDefault,
-    origin: { y: 1, x:0},
-    angle: 45,
-
-
-    shapes: ["image"],
-    shapeOptions: {
-        image: logoImages,
-    },
-
+        ...defaults,
+        angle: 45,
+        origin: { y: 1, x: 0}
     });
 
     // Right
     confetti({
-    ...defaults,
-
-    angle: 135,
-    origin: { y: 1, x:1}
-    });
-
-    // Right HC
-    confetti({
-    ...hcIconDefault,
-    origin: { y: 1, x:1},
-    angle: 135,
-
-
-    shapes: ["image"],
-    shapeOptions: {
-        image: logoImages,
-    },
-
-
+        ...defaults,
+        angle: 135,
+        origin: { y: 1, x: 1}
     });
 }
-
-// onmousemove = function(e){doConfettiAtCursor(e.x, e.y)}
