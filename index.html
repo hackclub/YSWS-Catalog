@@ -132,12 +132,12 @@
     <header class="site-header">
         <div class="logo-container">
             <a href="https://hackclub.com" target="_blank" rel="noopener noreferrer">
-                <img src="https://assets.hackclub.com/flag-orpheus-top.svg" alt="Hack Club" class="logo">
+                <img src="https://assets.hackclub.com/flag-standalone.svg
+" alt="Hack Club" class="logo">
             </a>
         </div>
         <nav class="main-nav">
-            <a href="https://hackclub.com/slack" target="_blank" rel="noopener noreferrer" class="nav-link">Join
-                Slack</a>
+            <a href="https://hackclub.com/slack" target="_blank" rel="noopener noreferrer" class="nav-link" onclick="doConfetti()">Join Slack</a>
             <a href="/feed.xml" target="_blank" rel="noopener noreferrer" class="nav-link rss-link">
                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -154,6 +154,25 @@
     </header>
 
     <section class="hero-section">
+
+        <div class="hero-photos">
+  <img src="https://v5.airtableusercontent.com/v3/u/53/53/1779933600000/OWvPoyGHBzDdJCp5MfdNcQ/viko2uWP52N3UZwxku9UZnRHECod2O1qNJAfROT1tl-XVuB24XZ1t8NBHLooz3HvdveoZpc0uZF5QEK6uKGKtGIfX2b9cT5UWl4AD6JFX6HuHRaegiO_-WA3xSWgrBuHj_c73yCGXYRPDTxstUKQtw/CkY-hNqU7EimsqgUcLMFKDmlY5dy_vDhSglReYZ9ATQ" class="hero-photo p1" alt="Specter"/>
+  <img src="https://v5.airtableusercontent.com/v3/u/53/53/1779933600000/3RdSGWt3luNiWO-a5KE65A/qtI4GgYQlb-owHkRuHUjsgL_s-cEWBW522fFfXo-vPM0d2JSJdyBXK4i0OMmbodZ75-CrTERKXF6eJOnCs1odpWJh0kBkhnxuGddkyT4m9zcC-1-ZeK0HFJ8FGvQfJDrTIZqRZPI-PJRj1e2bsv0tQ/f24mwewqJ2wZ8S1x4CoBbrkTBVvjLlGKJmAO7ZVW1X4" class="hero-photo p2" alt="Starbird"/>
+  <img src="https://v5.airtableusercontent.com/v3/u/53/53/1779933600000/_UspriDyLA7W26zJpviYKA/BF3srcVkkbkAJ2voOe9ALPpfn0MTKAxw5O39Im0u4vgSIGsfOEx6mFne4xjTJlYah4WjXVY-hEqf2A6l5RwYTEMTKVi2s3e8UyYznqBTwXhtPXrB8QQJMsqdKvzIXVsHZXifb64q0zHXfr9Vajy1FA/X0FlwGtljGDvNFIcgqW_Tk-6P-eMGYkC8XsfAqU_TcM" class="hero-photo p3" alt="Brew75"/>
+  <img src="https://v5.airtableusercontent.com/v3/u/53/53/1779933600000/m6Bba3R7BPaYr_j-zbN-cg/zooIQKDufXBjQ7035s40vZYPsKYJRh9J5S48uuFIQPSU1g4dP5UB7_JfMe6_6WmEHa5Z8tUIY0Do9SHm88TJ1Z4v4O2aXP0Ccb0b2Yc8MHawrjhlaLLxL03XxEj-x0wAHtn7HUMDzAemI9iS3pFsRQ/cPMgCONe8BmnMCiqSuWfr299780BoHHzLWHOXDNbkDo" class="hero-photo p4" alt="Kamikamace"/>
+  <img src="https://hackclub.com/assets/backImg3.webp" class="hero-photo p5" alt="Hack Club"/>
+  <img src="https://hackclub.com/assets/backImg7.webp" class="hero-photo p6" alt="Hack Club"/>
+</div>
+
+<div class="hero-photos">
+  <img src="https://cdn.hackclub.com/019e7d8a-28d4-7c5e-94c4-50774f592c30/screenshot_2026-05-31_153845.png" class="hero-photo p1" alt="YSWS Project"/>
+  <img src="https://cdn.hackclub.com/019e7d8a-2ac5-7d21-9ae5-c413cf2ac72c/screenshot_2026-05-31_153859.png" class="hero-photo p2" alt="YSWS Project"/>
+  <img src="https://cdn.hackclub.com/019e7d8a-2cc6-7165-8323-65ca6288b931/screenshot_2026-05-31_153951.png" class="hero-photo p3" alt="YSWS Project"/>
+  <img src="https://cdn.hackclub.com/019e7d8a-2e82-74ea-bc9e-480ad0f71adf/screenshot_2026-05-31_154001.png" class="hero-photo p4" alt="YSWS Project"/>
+  <img src="https://cdn.hackclub.com/019e7d8a-306c-750e-b392-9fc553a4e8e1/screenshot_2026-05-31_154031.png" class="hero-photo p5" alt="YSWS Project"/>
+  <img src="https://cdn.hackclub.com/019e7d8a-324d-7adc-a68a-0bc4e1a094cd/screenshot_2026-05-31_154048.png" class="hero-photo p6" alt="YSWS Project"/>
+  
+</div>
         <div class="hero-content">
             <div class="hero-animated-text">
                 <span class="hero-text-shadow">You Ship,</span>
@@ -216,7 +235,6 @@
             </svg>
         </div>
     </section>
-
     <section class="global-stats-section">
 
         <h2 class="impact-heading">
@@ -260,6 +278,28 @@
             </a>
 
         </div>
+<div class="marquee-outer">
+  <div class="marquee-track">
+    <div class="marquee-card"><img src="https://hackclub.com/assets/backImg1.webp" alt="Hack Club"/></div>
+    <div class="marquee-card"><img src="https://hackclub.com/assets/backImg2.webp" alt="Hack Club"/></div>
+    <div class="marquee-card"><img src="https://hackclub.com/assets/backImg3.webp" alt="Hack Club"/></div>
+    <div class="marquee-card"><img src="https://hackclub.com/assets/backImg4.webp" alt="Hack Club"/></div>
+    <div class="marquee-card"><img src="https://hackclub.com/assets/backImg5.webp" alt="Hack Club"/></div>
+    <div class="marquee-card"><img src="https://hackclub.com/assets/backImg6.webp" alt="Hack Club"/></div>
+    <div class="marquee-card"><img src="https://hackclub.com/assets/backImg7.webp" alt="Hack Club"/></div>
+    <div class="marquee-card"><img src="https://hackclub.com/assets/backImg8.webp" alt="Hack Club"/></div>
+    <div class="marquee-card"><img src="https://hackclub.com/assets/backImg9.webp" alt="Hack Club"/></div>
+    <div class="marquee-card"><img src="https://hackclub.com/assets/backImg1.webp" alt="Hack Club"/></div>
+    <div class="marquee-card"><img src="https://hackclub.com/assets/backImg2.webp" alt="Hack Club"/></div>
+    <div class="marquee-card"><img src="https://hackclub.com/assets/backImg3.webp" alt="Hack Club"/></div>
+    <div class="marquee-card"><img src="https://hackclub.com/assets/backImg4.webp" alt="Hack Club"/></div>
+    <div class="marquee-card"><img src="https://hackclub.com/assets/backImg5.webp" alt="Hack Club"/></div>
+    <div class="marquee-card"><img src="https://hackclub.com/assets/backImg6.webp" alt="Hack Club"/></div>
+    <div class="marquee-card"><img src="https://hackclub.com/assets/backImg7.webp" alt="Hack Club"/></div>
+    <div class="marquee-card"><img src="https://hackclub.com/assets/backImg8.webp" alt="Hack Club"/></div>
+    <div class="marquee-card"><img src="https://hackclub.com/assets/backImg9.webp" alt="Hack Club"/></div>
+  </div>
+</div>
 
     </section>
 
@@ -349,6 +389,19 @@
         </div>
     </div>
 
+    <section class="leaderboard-section">
+  <h2 class="leaderboard-title">
+    <span class="impact-solid">YSWS</span>
+    <span class="impact-outline">Leaderboard</span>
+  </h2>
+  <p class="leaderboard-subtitle">Top programs by shipped projects</p>
+  <div id="leaderboard-container" class="leaderboard-container">
+    <div class="leaderboard-loading">Loading...</div>
+  </div>
+</section>
+
+
+
     <section class="faq-section">
 
         <h3 class="faq-title">Frequently Asked Questions</h3>
@@ -363,7 +416,7 @@
         <details class="faq-item">
             <summary>What counts as a valid project?</summary>
             <p>
-                Anything you genuinely built — a game, a website, a hardware project, an API.
+                Anything you genuinely built  a game, a website, a hardware project, an API.
                 It just needs to be functional and submitted before the program deadline.
             </p>
         </details>
@@ -456,6 +509,12 @@
                         href="https://github.com/hackclub/YSWS-Catalog" target="_blank">GitHub</a>!</p>
             </div>
         </div>
+<div class="footer-orpheus">
+  
+    <img src="https://hackclub.com/_next/image?url=%2Fassets%2Fcreature1.webp&w=1200&q=75" alt="Orpheus" class="orpheus-img"/>
+</div>
+
+
     </footer>
 
 
@@ -464,6 +523,7 @@
 
 
     <script src="script.js"></script>
+
 </body>
 
 </html>
