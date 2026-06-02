@@ -643,9 +643,9 @@ footer {
 
 .hero-card-back {
   transform: rotateY(180deg);
-  background: var(--invert-bg);
-  color: var(--invert-fg);
-  border-color: var(--invert-bg);
+  background: #ffffff;        
+  color: #17171d;           
+  border-color: #ffffff;    
 }
 
 .hero-card-icon {
@@ -684,7 +684,7 @@ footer {
   font-family: var(--font-sans);
   font-size: 15px;
   line-height: 1.4;
-  color: var(--invert-fg);
+  color: #17171d; 
 }
 
 /* CTA pill button — inverts with the theme so it always pops */
