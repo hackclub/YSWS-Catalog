@@ -1,5 +1,12 @@
 ---
 limitedTime:
+      - name: Keeb
+    description: Make a keyboard, add an optional twist, and build it yourself!
+    website: https://keeb.hackclub.com/
+    slack: https://hackclub.enterprise.slack.com/archives/C0ATP7MTNPJ
+    slackChannel: "#keeb"
+    deadline: 2026-09
+    status: active
   - name: Stardance
     deadline: 2026-09-30
     description: "The largest STEM event of the summer:<br>make anything you want and earn free prizes."
@@ -27,7 +34,6 @@ limitedTime:
     slack: https://hackclub.enterprise.slack.com/archives/C0AUZ1LAMH6
     slackChannel: "#macondo"
     deadline: 2026-09
-
     status: active
   - name: Horizons
     description: 7 hackathons. Run by teenagers across the globe. For teenagers everywhere.
