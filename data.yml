@@ -1,11 +1,11 @@
 ---
 limitedTime:
-      - name: Keeb
-    description: Make a keyboard, add an optional twist, and build it yourself!
+  - name: Keeb
+    deadline: 2026-09-30
+    description: Keeb is a YSWS where you can make a keyboard from scratch. Start with nothing, design everything, add an optional twist, and build it yourself!
     website: https://keeb.hackclub.com/
     slack: https://hackclub.enterprise.slack.com/archives/C0ATP7MTNPJ
     slackChannel: "#keeb"
-    deadline: 2026-09
     status: active
   - name: Stardance
     deadline: 2026-09-30
