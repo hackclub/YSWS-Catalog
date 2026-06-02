@@ -333,7 +333,7 @@ function createProgramCard(program) {
     const remixedClass = program.name == "Remixed" ? 'remixed-card' : '';
     const hctgClass = program.name == "Hack Club: The Game" ? 'hctg-card' : '';
     const hackahomeClass = program.name == "Hack a Home" ? 'hackahome-card' : '';
-    const rootshipClass = program.name == "Rootship" ? 'rootship-card' : '';
+    const flaggedClass = program.name == "flagged" ? 'flagged-card' : '';
     const raspapiClass = program.name == "RaspAPI" ? 'raspapi-card' : '';
     const beestClass = program.name == 'Beest' ? 'beest-card' : '';
     const alchemizeClass = program.name === "Alchemize" ? 'alchemize-card' : '';
@@ -445,7 +445,7 @@ function createProgramCard(program) {
     const hackanomousMascot = program.name == 'Hackanomous' ? `<img src="https://cdn.hackclub.com/019d9ef5-f609-7d16-971f-3865d2092604/backanomous_mascot_320p.png" alt="Hackanomous Mascot" class="hackanomous-mascot">` : '';
 
     return `
-        <div class="card program-card ${opensClass} ${forgeClass} ${macondoClass} ${horizonsClass} ${slushiesClass} ${blueprintClass} ${accelerateClass} ${baubleClass} ${meowClass} ${woofClass} ${pxlClass} ${wackyFilesClass} ${flavortownClass} ${jusstudyClass} ${rebootClass} ${kitlabClass} ${sleepoverClass} ${stasisClass} ${coeurClass} ${remixedClass} ${hctgClass} ${hackahomeClass} ${rootshipClass} ${raspapiClass} ${beestClass} ${alchemizeClass} ${hackanomousClass} ${shipyardClass} ${stardanceClass}" data-program="${encodedProgram}" data-name="${program.name}">
+        <div class="card program-card ${opensClass} ${forgeClass} ${macondoClass} ${horizonsClass} ${slushiesClass} ${blueprintClass} ${accelerateClass} ${baubleClass} ${meowClass} ${woofClass} ${pxlClass} ${wackyFilesClass} ${flavortownClass} ${jusstudyClass} ${rebootClass} ${kitlabClass} ${sleepoverClass} ${stasisClass} ${coeurClass} ${remixedClass} ${hctgClass} ${hackahomeClass} ${flaggedClass} ${raspapiClass} ${beestClass} ${alchemizeClass} ${hackanomousClass} ${shipyardClass} ${stardanceClass}" data-program="${encodedProgram}" data-name="${program.name}">
             ${macondoAssets}
             ${horizonsAssets}
             ${shipyardAssets}

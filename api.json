@@ -1469,6 +1469,20 @@
   ],
   "drafts": [
     {
+      "name": "flagged",
+      "description": "Learn how to actually hack, earn hacking themed prizes!",
+      "website": "https://flagged-ysws.ingo.au",
+      "slack": "https://hackclub.enterprise.slack.com/archives/C0AK24ATWUW",
+      "slackChannel": "#flagged",
+      "status": "draft",
+      "steps": [
+        "Build your own vulnerable application and ship it for Bits",
+        "Hack into other people's vulnerable applications and earn more Bits",
+        "Convert all the Bits you earned into Tokens",
+        "Redeem your Tokens for cool prizes in the Shop"
+      ]
+    },
+    {
       "name": "Bestsellr",
       "description": "Write a short story and build a webpage for it like a real published book.",
       "slackChannel": "#bestsellr",
@@ -1512,20 +1526,6 @@
         "Build a project that helps you or others study!",
         "The project will be sent to certification, then voting.",
         "Submit your project and get cool study materials or rewards in return!"
-      ]
-    },
-    {
-      "name": "Rootship",
-      "description": "Learn system penetration, earn hacking themed prizes!",
-      "website": "https://rootship.pages.dev",
-      "slack": "https://hackclub.enterprise.slack.com/archives/C0AQ17U5GJ2",
-      "slackChannel": "#rootship",
-      "status": "draft",
-      "steps": [
-        "Take the Rootship path, a hand-picked selection of TryHackMe rooms, to earn your root status.",
-        "Improve your skills as you navigate through increasingly difficult rooms.",
-        "Complete your path and receive TryHackMe Premium plus access to the Shop.",
-        "Conquer difficult rooms, collect coins, and redeem them for cool prizes in the Shop."
       ]
     },
     {
