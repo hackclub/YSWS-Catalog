@@ -1,6 +1,15 @@
 {
   "limitedTime": [
     {
+      "name": "Keeb",
+      "deadline": "2026-09-30T00:00:00.000Z",
+      "description": "Keeb is a YSWS where you can make a keyboard from scratch. Start with nothing, design everything, add an optional twist, and build it yourself!",
+      "website": "https://keeb.hackclub.com/",
+      "slack": "https://hackclub.enterprise.slack.com/archives/C0ATP7MTNPJ",
+      "slackChannel": "#keeb",
+      "status": "active"
+    },
+    {
       "name": "Stardance",
       "deadline": "2026-09-30T00:00:00.000Z",
       "description": "The largest STEM event of the summer:<br>make anything you want and earn free prizes.",
