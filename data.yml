@@ -1517,3 +1517,18 @@ drafts:
       - Receive your IoT grant!
     details:
       - Support is available through our Slack community.
+  - name: Buy The World
+    description: Make software/hardware projects, buy countries and get free prizes!
+    website: https://rsvp.soon.it/buytheworld
+    slack: https://hackclub.enterprise.slack.com/archives/C0B67CS55S6
+    slackChannel: "#buy-the-world"
+    status: draft
+    detailedDescription: Make something cool, ship it, and buy a country to earn you XP!
+    steps:
+      - Build a project
+      - Ship a project
+      - Buy a country from the map
+      - Get daily XP from the countries you bought
+      - Form a clan with your friends
+      - Go to war with your clan or alone
+      - Buy something from the shop
