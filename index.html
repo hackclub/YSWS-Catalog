@@ -120,31 +120,24 @@
     <title>Hack Club YSWS Programs</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
+    <link rel="preconnect" href="https://hackclub.com" crossorigin>
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.js"></script>
 </head>
 
 <body class="noise parallax-wrapper">
-    <div class="gradient-bg">
-        <div class="gradient-blob gradient-1"></div>
-        <div class="gradient-blob gradient-2"></div>
-        <div class="gradient-blob gradient-3"></div>
-    </div>
-
-    <div class="circuit-bg"></div>
-    <div class="grid-overlay"></div>
+    <!-- Subtle gradient wash behind the hero — replaces the old gradient blobs / circuit grid -->
+    <div class="gradient-bg" aria-hidden="true"></div>
 
     <header class="site-header">
         <div class="logo-container">
             <a href="https://hackclub.com" target="_blank" rel="noopener noreferrer">
-                <img src="https://assets.hackclub.com/flag-orpheus-top.svg" alt="Hack Club" class="logo">
+                <img src="https://assets.hackclub.com/flag-standalone.svg
+" alt="Hack Club" class="logo">
             </a>
         </div>
         <nav class="main-nav">
-            <a href="https://hackclub.com/slack" target="_blank" rel="noopener noreferrer" class="nav-link">Join
-                Slack</a>
+            <a href="https://hackclub.com/slack" target="_blank" rel="noopener noreferrer" class="nav-link" onclick="doConfetti()">Join Slack</a>
             <a href="/feed.xml" target="_blank" rel="noopener noreferrer" class="nav-link rss-link">
                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -156,13 +149,30 @@
             </a>
             <a href="https://github.com/hackclub/YSWS-Catalog" target="_blank" rel="noopener noreferrer"
                 class="nav-link">GitHub</a>
-            <button class="theme-toggle" id="theme-toggle">☾</button>
-            <!-- DEBUG -->
-            <!-- <button onclick="doConfettiAtCursor(event)">TEST</button> -->
+            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">☾</button>
         </nav>
     </header>
 
     <section class="hero-section">
+
+        <div class="hero-photos">
+  <img src="https://v5.airtableusercontent.com/v3/u/53/53/1779933600000/OWvPoyGHBzDdJCp5MfdNcQ/viko2uWP52N3UZwxku9UZnRHECod2O1qNJAfROT1tl-XVuB24XZ1t8NBHLooz3HvdveoZpc0uZF5QEK6uKGKtGIfX2b9cT5UWl4AD6JFX6HuHRaegiO_-WA3xSWgrBuHj_c73yCGXYRPDTxstUKQtw/CkY-hNqU7EimsqgUcLMFKDmlY5dy_vDhSglReYZ9ATQ" class="hero-photo p1" alt="Specter"/>
+  <img src="https://v5.airtableusercontent.com/v3/u/53/53/1779933600000/3RdSGWt3luNiWO-a5KE65A/qtI4GgYQlb-owHkRuHUjsgL_s-cEWBW522fFfXo-vPM0d2JSJdyBXK4i0OMmbodZ75-CrTERKXF6eJOnCs1odpWJh0kBkhnxuGddkyT4m9zcC-1-ZeK0HFJ8FGvQfJDrTIZqRZPI-PJRj1e2bsv0tQ/f24mwewqJ2wZ8S1x4CoBbrkTBVvjLlGKJmAO7ZVW1X4" class="hero-photo p2" alt="Starbird"/>
+  <img src="https://v5.airtableusercontent.com/v3/u/53/53/1779933600000/_UspriDyLA7W26zJpviYKA/BF3srcVkkbkAJ2voOe9ALPpfn0MTKAxw5O39Im0u4vgSIGsfOEx6mFne4xjTJlYah4WjXVY-hEqf2A6l5RwYTEMTKVi2s3e8UyYznqBTwXhtPXrB8QQJMsqdKvzIXVsHZXifb64q0zHXfr9Vajy1FA/X0FlwGtljGDvNFIcgqW_Tk-6P-eMGYkC8XsfAqU_TcM" class="hero-photo p3" alt="Brew75"/>
+  <img src="https://v5.airtableusercontent.com/v3/u/53/53/1779933600000/m6Bba3R7BPaYr_j-zbN-cg/zooIQKDufXBjQ7035s40vZYPsKYJRh9J5S48uuFIQPSU1g4dP5UB7_JfMe6_6WmEHa5Z8tUIY0Do9SHm88TJ1Z4v4O2aXP0Ccb0b2Yc8MHawrjhlaLLxL03XxEj-x0wAHtn7HUMDzAemI9iS3pFsRQ/cPMgCONe8BmnMCiqSuWfr299780BoHHzLWHOXDNbkDo" class="hero-photo p4" alt="Kamikamace"/>
+  <img src="https://hackclub.com/assets/backImg3.webp" class="hero-photo p5" alt="Hack Club"/>
+  <img src="https://hackclub.com/assets/backImg7.webp" class="hero-photo p6" alt="Hack Club"/>
+</div>
+
+<div class="hero-photos">
+  <img src="https://cdn.hackclub.com/019e7d8a-28d4-7c5e-94c4-50774f592c30/screenshot_2026-05-31_153845.png" class="hero-photo p1" alt="YSWS Project"/>
+  <img src="https://cdn.hackclub.com/019e7d8a-2ac5-7d21-9ae5-c413cf2ac72c/screenshot_2026-05-31_153859.png" class="hero-photo p2" alt="YSWS Project"/>
+  <img src="https://cdn.hackclub.com/019e7d8a-2cc6-7165-8323-65ca6288b931/screenshot_2026-05-31_153951.png" class="hero-photo p3" alt="YSWS Project"/>
+  <img src="https://cdn.hackclub.com/019e7d8a-2e82-74ea-bc9e-480ad0f71adf/screenshot_2026-05-31_154001.png" class="hero-photo p4" alt="YSWS Project"/>
+  <img src="https://cdn.hackclub.com/019e7d8a-306c-750e-b392-9fc553a4e8e1/screenshot_2026-05-31_154031.png" class="hero-photo p5" alt="YSWS Project"/>
+  <img src="https://cdn.hackclub.com/019e7d8a-324d-7adc-a68a-0bc4e1a094cd/screenshot_2026-05-31_154048.png" class="hero-photo p6" alt="YSWS Project"/>
+  
+</div>
         <div class="hero-content">
             <div class="hero-animated-text">
                 <span class="hero-text-shadow">You Ship,</span>
@@ -214,8 +224,17 @@
             </div>
             <a href="#programs-list" class="cta-button">Explore Programs<span class="button-arrow">→</span></a>
         </div>
-    </section>
 
+        <!-- Mountain-bump wave divider — echoes the new hackclub.com landing page.
+             CSS variables don't resolve in raw SVG attribute values, so the path
+             fill is set via the `.wave-divider svg path` rule in styles.css. -->
+        <div class="wave-divider hero-wave" aria-hidden="true">
+            <svg viewBox="0 0 1920 40" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M0,40 L0,27 C40,27 40,8 80,8 C120,8 120,27 160,27 C200,27 200,8 240,8 C280,8 280,27 320,27 C360,27 360,8 400,8 C440,8 440,27 480,27 C520,27 520,8 560,8 C600,8 600,27 640,27 C680,27 680,8 720,8 C760,8 760,27 800,27 C840,27 840,8 880,8 C920,8 920,27 960,27 C1000,27 1000,8 1040,8 C1080,8 1080,27 1120,27 C1160,27 1160,8 1200,8 C1240,8 1240,27 1280,27 C1320,27 1320,8 1360,8 C1400,8 1400,27 1440,27 C1480,27 1480,8 1520,8 C1560,8 1560,27 1600,27 C1640,27 1640,8 1680,8 C1720,8 1720,27 1760,27 C1800,27 1800,8 1840,8 C1880,8 1880,27 1920,27 L1920,40 Z" />
+            </svg>
+        </div>
+    </section>
     <section class="global-stats-section">
 
         <h2 class="impact-heading">
@@ -259,6 +278,28 @@
             </a>
 
         </div>
+<div class="marquee-outer">
+  <div class="marquee-track">
+    <div class="marquee-card"><img src="https://hackclub.com/assets/backImg1.webp" alt="Hack Club"/></div>
+    <div class="marquee-card"><img src="https://hackclub.com/assets/backImg2.webp" alt="Hack Club"/></div>
+    <div class="marquee-card"><img src="https://hackclub.com/assets/backImg3.webp" alt="Hack Club"/></div>
+    <div class="marquee-card"><img src="https://hackclub.com/assets/backImg4.webp" alt="Hack Club"/></div>
+    <div class="marquee-card"><img src="https://hackclub.com/assets/backImg5.webp" alt="Hack Club"/></div>
+    <div class="marquee-card"><img src="https://hackclub.com/assets/backImg6.webp" alt="Hack Club"/></div>
+    <div class="marquee-card"><img src="https://hackclub.com/assets/backImg7.webp" alt="Hack Club"/></div>
+    <div class="marquee-card"><img src="https://hackclub.com/assets/backImg8.webp" alt="Hack Club"/></div>
+    <div class="marquee-card"><img src="https://hackclub.com/assets/backImg9.webp" alt="Hack Club"/></div>
+    <div class="marquee-card"><img src="https://hackclub.com/assets/backImg1.webp" alt="Hack Club"/></div>
+    <div class="marquee-card"><img src="https://hackclub.com/assets/backImg2.webp" alt="Hack Club"/></div>
+    <div class="marquee-card"><img src="https://hackclub.com/assets/backImg3.webp" alt="Hack Club"/></div>
+    <div class="marquee-card"><img src="https://hackclub.com/assets/backImg4.webp" alt="Hack Club"/></div>
+    <div class="marquee-card"><img src="https://hackclub.com/assets/backImg5.webp" alt="Hack Club"/></div>
+    <div class="marquee-card"><img src="https://hackclub.com/assets/backImg6.webp" alt="Hack Club"/></div>
+    <div class="marquee-card"><img src="https://hackclub.com/assets/backImg7.webp" alt="Hack Club"/></div>
+    <div class="marquee-card"><img src="https://hackclub.com/assets/backImg8.webp" alt="Hack Club"/></div>
+    <div class="marquee-card"><img src="https://hackclub.com/assets/backImg9.webp" alt="Hack Club"/></div>
+  </div>
+</div>
 
     </section>
 
@@ -348,6 +389,35 @@
         </div>
     </div>
 
+    <section class="leaderboard-section">
+  <h2 class="leaderboard-title">
+    <span class="impact-solid">YSWS</span>
+    <span class="impact-outline">Leaderboard</span>
+  </h2>
+  <p class="leaderboard-subtitle">Top programs by shipped projects</p>
+  <div id="leaderboard-container" class="leaderboard-container">
+    <div class="leaderboard-loading">Loading...</div>
+  </div>
+</section>
+
+<section class="wheel-section">
+  <h2 class="wheel-title">
+    <span class="impact-solid">Spin the</span>
+    <span class="impact-outline">Wheel</span>
+  </h2>
+  <p class="wheel-subtitle">Can't decide? Let fate choose your next YSWS!</p>
+  <div class="wheel-container">
+    <div class="wheel-pointer">
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="#ec3750">
+    <polygon points="24,0 0,12 24,24"/>
+  </svg>
+</div>
+    <canvas id="wheel-canvas" width="500" height="500"></canvas>
+    <button class="wheel-spin-btn" onclick="spinWheel()">SPIN!</button>
+  </div>
+  <div id="wheel-result" class="wheel-result hidden"></div>
+</section>
+
     <section class="faq-section">
 
         <h3 class="faq-title">Frequently Asked Questions</h3>
@@ -362,7 +432,7 @@
         <details class="faq-item">
             <summary>What counts as a valid project?</summary>
             <p>
-                Anything you genuinely built — a game, a website, a hardware project, an API.
+                Anything you genuinely built  a game, a website, a hardware project, an API.
                 It just needs to be functional and submitted before the program deadline.
             </p>
         </details>
@@ -390,7 +460,6 @@
                 You'll receive feedback on why it wasn't approved. Depending on the reason, you may be able to make
                 adjustments and resubmit before the deadline </p>
         </details>
-        </div>
 
         <div class="faq-footer">
 
@@ -399,7 +468,6 @@
             <a href="https://hackclub.slack.com">
                 Join the Hack Club Slack →
             </a>
-        </div>
         </div>
 
 
@@ -457,6 +525,12 @@
                         href="https://github.com/hackclub/YSWS-Catalog" target="_blank">GitHub</a>!</p>
             </div>
         </div>
+<div class="footer-orpheus">
+  
+    <img src="https://hackclub.com/_next/image?url=%2Fassets%2Fcreature1.webp&w=1200&q=75" alt="Orpheus" class="orpheus-img"/>
+</div>
+
+
     </footer>
 
 
@@ -465,6 +539,7 @@
 
 
     <script src="script.js"></script>
+
 </body>
 
 </html>

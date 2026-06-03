@@ -27,6 +27,7 @@ function toggleProgramCompletion(programName, event) {
         completedPrograms.delete(programName);
     } else {
         completedPrograms.add(programName);
+        doConfetti();
     }
 
     saveCompletedPrograms();
@@ -332,12 +333,14 @@ function createProgramCard(program) {
     const remixedClass = program.name == "Remixed" ? 'remixed-card' : '';
     const hctgClass = program.name == "Hack Club: The Game" ? 'hctg-card' : '';
     const hackahomeClass = program.name == "Hack a Home" ? 'hackahome-card' : '';
-    const rootshipClass = program.name == "Rootship" ? 'rootship-card' : '';
+    const flaggedClass = program.name == "flagged" ? 'flagged-card' : '';
     const raspapiClass = program.name == "RaspAPI" ? 'raspapi-card' : '';
     const beestClass = program.name == 'Beest' ? 'beest-card' : '';
     const alchemizeClass = program.name === "Alchemize" ? 'alchemize-card' : '';
     const hackanomousClass = program.name === "Hackanomous" ? 'hackanomous-card' : '';
     const shipyardClass = program.name === 'Shipyard' ? 'shipyard-card' : '';
+    const stardanceClass = program.name === 'Stardance' ? 'stardance-card' : '';
+    const isNew = program.opens && (new Date() - new Date(program.opens)) < 7 * 24 * 60 * 60 * 1000;
     const encodedProgram = encodeURIComponent(JSON.stringify(program));
     const polygonClass =program.name === 'Polygon' ? 'polygon-card' : '';
 
@@ -435,16 +438,19 @@ function createProgramCard(program) {
         <img src="logos/ShipyardLogo.svg" alt="Shipyard" class="shipyard-logo">
     ` : '';
 
-    const polygonBg = program.name === 'Polygon' ? `<img src="./logos/Polygon.png" alt="Polygon Background" class="polygon-bg">` : '';
+    const stardanceAssets = program.name === 'Stardance' ? `
+        <img src="logos/stardance-bg.png" alt="" class="stardance-background" aria-hidden="true">
+    ` : '';
 
     const hackanomousLogo = program.name == 'Hackanomous' ? `<img src="https://cdn.hackclub.com/019d9ecf-46ed-734c-b351-f9c2438d15bf/hackanomous_banner_360p.png" alt="Hackanomous Logo" class="hackanomous-logo">` : '';
     const hackanomousMascot = program.name == 'Hackanomous' ? `<img src="https://cdn.hackclub.com/019d9ef5-f609-7d16-971f-3865d2092604/backanomous_mascot_320p.png" alt="Hackanomous Mascot" class="hackanomous-mascot">` : '';
 
     return `
-        <div class="card program-card ${opensClass} ${forgeClass} ${macondoClass} ${horizonsClass} ${slushiesClass} ${blueprintClass} ${accelerateClass} ${baubleClass} ${meowClass} ${woofClass} ${pxlClass} ${wackyFilesClass} ${flavortownClass} ${jusstudyClass} ${rebootClass} ${kitlabClass} ${sleepoverClass} ${stasisClass} ${coeurClass} ${remixedClass} ${hctgClass} ${hackahomeClass} ${rootshipClass} ${raspapiClass} ${beestClass} ${alchemizeClass} ${hackanomousClass} ${shipyardClass} ${polygonClass}" data-program="${encodedProgram}" data-name="${program.name}">
+        <div class="card program-card ${opensClass} ${forgeClass} ${macondoClass} ${horizonsClass} ${slushiesClass} ${blueprintClass} ${accelerateClass} ${baubleClass} ${meowClass} ${woofClass} ${pxlClass} ${wackyFilesClass} ${flavortownClass} ${jusstudyClass} ${rebootClass} ${kitlabClass} ${sleepoverClass} ${stasisClass} ${coeurClass} ${remixedClass} ${hctgClass} ${hackahomeClass} ${flaggedClass} ${raspapiClass} ${beestClass} ${alchemizeClass} ${hackanomousClass} ${shipyardClass} ${stardanceClass}" data-program="${encodedProgram}" data-name="${program.name}">
             ${macondoAssets}
             ${horizonsAssets}
             ${shipyardAssets}
+            ${stardanceAssets}
             ${kitlabLogo}
             ${kitlabGif}
             ${baubleSnowflakes}
@@ -460,15 +466,17 @@ function createProgramCard(program) {
                     ? '<img src="logos/macondo-wordmark.png" alt="Macondo" class="macondo-wordmark">'
                     : program.name === 'Horizons'
                         ? '<img src="logos/horizons-sticker.png" alt="Horizons" class="horizons-wordmark">'
-                    : program.name === 'Polygon'
-                      ? '<img src ="./logos/polygon_logo.png" alt="polygon" class= "polygon-wordmark">'
-                    : `<h3>${program.name}</h3>`}  
+                        : program.name === 'Stardance'
+                            ? '<img src="logos/stardance-log.png" alt="Stardance" class="stardance-wordmark">'
+                            : `<h3>${program.name}</h3>`}
                 <div class="status-container">
                     <span class="user-completed-badge ${isCompletedByUser ? 'visible' : ''}">
                         <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
                     </span>
-                    <span class="program-status status-${program.status}">${program.status}</span>
-                </div>
+                   <span class="program-status status-${program.status}">${program.status}</span>
+${isNew ? '<span class="new-badge">NEW</span>' : ''}
+                   
+                    </div>
             </div>
             <p>${program.description}</p>
             <div class="program-deadline ${deadlineClass}">${deadlineText}</div>
@@ -478,8 +486,7 @@ function createProgramCard(program) {
                     ${program.website ? `<a href="${program.website}" target="_blank">Website</a>` : ''}
                     ${program.slack ? `<a href="${program.slack}" target="_blank">${program.slackChannel}</a>` : ''}
                 </div>
-                <button class="program-completion-toggle ${completionButtonClass}" aria-label="${isCompletedByUser ? 'Mark as not completed' : 'Mark as completed'}" data-program-name="${program.name}" onClick=${isCompletedByUser ? null : "doConfetti()"}>
-                    ${completionIcon} 
+<button class="program-completion-toggle ${completionButtonClass}" aria-label="${isCompletedByUser ? 'Mark as not completed' : 'Mark as completed'}" data-program-name="${program.name}" onclick="${isCompletedByUser ? '' : 'doConfetti()'}">                    ${completionIcon} 
                 </button>
             </div>
             ${flavortownFooter}
@@ -979,6 +986,7 @@ function updateDeadlines() {
 
     deadlineElements.forEach(element => {
         const card = element.closest('.program-card');
+        if (!card) return;
         const programData = JSON.parse(decodeURIComponent(card.dataset.program));
 
         if (programData?.deadline) {
@@ -1049,6 +1057,13 @@ document.addEventListener('DOMContentLoaded', () => {
         if (e.target.closest('.program-card')) {
             const encodedProgram = e.target.closest('.program-card').dataset.program;
             const program = JSON.parse(decodeURIComponent(encodedProgram));
+
+            // Special handling for Stardance card - redirect instead of opening modal
+            if (program.name === 'Stardance') {
+                window.location.href = 'https://stardance.hackclub.com/ysws-catalog';
+                return;
+            }
+
             openModal(program);
         }
 
@@ -1095,6 +1110,11 @@ themeToggle.addEventListener("click", () => {
 
 
 
+// Hold the fetched stats so the count-up animation can wait until the
+// stats section actually enters the viewport.
+let globalStatsData = null;
+let globalStatsAnimated = false;
+
 async function loadGlobalStats() {
 
   try {
@@ -1103,27 +1123,12 @@ async function loadGlobalStats() {
       "https://hackclub8080.nathanyin.com/api/v1/ysws_stats"
     );
 
-    const data = await response.json();
+    globalStatsData = await response.json();
 
-    animateValue(
-      "projects-count",
-      data.total_projects
-    );
-
-    animateValue(
-      "hours-count",
-      data.total_hours
-    );
-
-    animateValue(
-      "stars-count",
-      data.total_stars
-    );
-
-    animateValue(
-      "viral-count",
-      data.viral_projects
-    );
+    // If the section is already on screen when data arrives
+    // (short page, hash anchor, etc.), animate immediately.
+    // Otherwise the IntersectionObserver triggers it on scroll-into-view.
+    maybeRunGlobalStatsAnimation();
 
   } catch (error) {
 
@@ -1133,6 +1138,51 @@ async function loadGlobalStats() {
     );
 
   }
+}
+
+function runGlobalStatsAnimation() {
+  if (globalStatsAnimated || !globalStatsData) return;
+  globalStatsAnimated = true;
+
+  animateValue("projects-count", globalStatsData.total_projects);
+  animateValue("hours-count", globalStatsData.total_hours);
+  animateValue("stars-count", globalStatsData.total_stars);
+  animateValue("viral-count", globalStatsData.viral_projects);
+}
+
+function maybeRunGlobalStatsAnimation() {
+  if (globalStatsAnimated || !globalStatsData) return;
+
+  const section = document.querySelector('.global-stats-section');
+  if (!section) return;
+
+  const rect = section.getBoundingClientRect();
+  const isOnScreen = rect.top < window.innerHeight && rect.bottom > 0;
+  if (isOnScreen) runGlobalStatsAnimation();
+}
+
+function setupGlobalStatsObserver() {
+  const section = document.querySelector('.global-stats-section');
+  if (!section) return;
+
+  // Older browsers without IntersectionObserver: just run it so the
+  // numbers still show up.
+  if (!('IntersectionObserver' in window)) {
+    runGlobalStatsAnimation();
+    return;
+  }
+
+  const observer = new IntersectionObserver((entries) => {
+    for (const entry of entries) {
+      if (entry.isIntersecting) {
+        runGlobalStatsAnimation();
+        observer.disconnect();
+        break;
+      }
+    }
+  }, { threshold: 0.15 });
+
+  observer.observe(section);
 }
 
 function formatNumber(num) {
@@ -1177,6 +1227,7 @@ function animateValue(id, endValue) {
 
 
 window.addEventListener("DOMContentLoaded", () => {
+  setupGlobalStatsObserver();
   loadGlobalStats();
 })
 
@@ -1189,3 +1240,158 @@ window.addEventListener("DOMContentLoaded", () => {
 //         dateContainer.style.transform = `translateX(${timelineContainer.scrollLeft}px)`
 //     });
 // }
+
+
+
+const track = document.querySelector('.marquee-track');
+let x = 0;
+function tick() {
+  x -= 0.5;
+  if (x <= -(track.scrollWidth / 2)) x = 0;
+  track.style.transform = `translateX(${x}px)`;
+  requestAnimationFrame(tick);
+}
+tick();
+
+function loadLeaderboard() {
+  const container = document.getElementById('leaderboard-container');
+  
+  const data = [
+    ['Boba Drops', 5150],
+    ['High Seas', 3341],
+    ['Summer of Making', 2817],
+    ['Daydream', 2747],
+    ['Campfire Satellites', 2561],
+  ];
+
+  const medals = [
+    '<svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><circle cx="12" cy="12" r="10"/><text x="12" y="16" text-anchor="middle" font-size="10" fill="#000">1</text></svg>',
+    '<svg width="20" height="20" viewBox="0 0 24 24" fill="#C0C0C0"><circle cx="12" cy="12" r="10"/><text x="12" y="16" text-anchor="middle" font-size="10" fill="#000">2</text></svg>',
+    '<svg width="20" height="20" viewBox="0 0 24 24" fill="#CD7F32"><circle cx="12" cy="12" r="10"/><text x="12" y="16" text-anchor="middle" font-size="10" fill="#000">3</text></svg>',
+    '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--text-color)" stroke-width="2"><circle cx="12" cy="12" r="10"/><text x="12" y="16" text-anchor="middle" font-size="10" fill="var(--text-color)">4</text></svg>',
+    '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--text-color)" stroke-width="2"><circle cx="12" cy="12" r="10"/><text x="12" y="16" text-anchor="middle" font-size="10" fill="var(--text-color)">5</text></svg>',
+  ];
+
+  container.innerHTML = data.map(([name, count], i) => `
+    <div class="leaderboard-row">
+      <span class="leaderboard-rank">${medals[i]}</span>
+      <span class="leaderboard-name">${name}</span>
+      <div class="leaderboard-bar-wrap">
+        <div class="leaderboard-bar" style="width: ${Math.round((count / data[0][1]) * 100)}%"></div>
+      </div>
+      <span class="leaderboard-count">${count.toLocaleString()} ships</span>
+    </div>
+  `).join('');
+}
+
+window.addEventListener('DOMContentLoaded', loadLeaderboard);
+
+let wheelPrograms = [];
+let wheelAngle = 0;
+let spinning = false;
+
+function getWheelPrograms() {
+  const colors = ['#ec3750', '#ff8c37', '#f1c40f', '#33d6a6', '#5bc0de', '#338eda', '#a633d6', '#8492a6', '#ec3750', '#33d6a6'];
+  const active = Object.values(programs).flat().filter(p => p.status === 'active');
+  const shuffled = active.sort(() => Math.random() - 0.5).slice(0, 10);
+  return shuffled.map((p, i) => ({ name: p.name, color: colors[i % colors.length] }));
+}
+
+function drawWheel() {
+  const canvas = document.getElementById('wheel-canvas');
+  if (!canvas) return;
+  const ctx = canvas.getContext('2d');
+  const cx = canvas.width / 2;
+  const cy = canvas.height / 2;
+  const r = 220;
+  const slice = (2 * Math.PI) / wheelPrograms.length;
+
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+  wheelPrograms.forEach((prog, i) => {
+    const start = wheelAngle + i * slice;
+    const end = start + slice;
+
+    ctx.beginPath();
+    ctx.moveTo(cx, cy);
+    ctx.arc(cx, cy, r, start, end);
+    ctx.closePath();
+    ctx.fillStyle = prog.color;
+    ctx.fill();
+    ctx.strokeStyle = '#fff';
+    ctx.lineWidth = 2;
+    ctx.stroke();
+
+    ctx.save();
+    ctx.translate(cx, cy);
+    ctx.rotate(start + slice / 2);
+    ctx.textAlign = 'right';
+    ctx.fillStyle = '#fff';
+    ctx.font = 'bold 16px Phantom Sans, sans-serif';
+    ctx.fillText(prog.name, r - 10, 5);
+    ctx.restore();
+  });
+
+  ctx.beginPath();
+  ctx.arc(cx, cy, 20, 0, 2 * Math.PI);
+  ctx.fillStyle = '#1a1a1a';
+  ctx.fill();
+  ctx.strokeStyle = '#ec3750';
+  ctx.lineWidth = 3;
+  ctx.stroke();
+}
+
+function spinWheel() {
+  if (spinning) return;
+  spinning = true;
+
+  document.getElementById('wheel-result').classList.add('hidden');
+  const btn = document.querySelector('.wheel-spin-btn');
+  btn.disabled = true;
+
+  const extraSpins = (5 + Math.random() * 5) * 2 * Math.PI;
+  const duration = 4000;
+  const start = performance.now();
+  const startAngle = wheelAngle;
+
+  function animate(now) {
+    const elapsed = now - start;
+    const progress = Math.min(elapsed / duration, 1);
+    const ease = 1 - Math.pow(1 - progress, 4);
+
+    wheelAngle = startAngle + extraSpins * ease;
+    drawWheel();
+
+    if (progress < 1) {
+      requestAnimationFrame(animate);
+    } else {
+      spinning = false;
+      btn.disabled = false;
+      showWheelResult();
+    }
+  }
+
+  requestAnimationFrame(animate);
+}
+function showWheelResult() {
+  const slice = (2 * Math.PI) / wheelPrograms.length;
+  // Arrow is on the right (3 o'clock = 0 radians)
+  // We need to find which slice is at the 3 o'clock position
+  const angle = ((-wheelAngle) % (2 * Math.PI) + 2 * Math.PI) % (2 * Math.PI);
+  const index = Math.floor(angle / slice) % wheelPrograms.length;
+  const winner = wheelPrograms[index];
+
+  const result = document.getElementById('wheel-result');
+  result.innerHTML = `
+    <p>You should try...</p>
+    <h3 style="color: ${winner.color}">${winner.name}!</h3>
+    <button onclick="document.querySelector('[data-name=\\'${winner.name}\\']')?.click()" class="wheel-open-btn">View Program →</button>
+  `;
+  result.classList.remove('hidden');
+  doConfetti();
+}
+
+setTimeout(() => {
+  wheelPrograms = getWheelPrograms();
+  drawWheel();
+}, 2000);

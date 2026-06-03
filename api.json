@@ -952,24 +952,6 @@
       "deadline": "2025-08-03T23:59:59"
     },
     {
-      "name": "Toppings",
-      "description": "You ship an interactive website using framework-less JavaScript, we ship you a grant to an ice cream parlor.",
-      "website": "https://toppings.hackclub.com/",
-      "slack": "https://hackclub.slack.com/archives/C08R8V2E3LY",
-      "slackChannel": "#toppings",
-      "status": "ended",
-      "deadline": "2025-08-03T23:59:59"
-    },
-    {
-      "name": "Waffles",
-      "description": "You ship a website using HTML CSS and JavaScript, and get Waffles!!!",
-      "website": "https://waffles.hackclub.com/",
-      "slack": "https://hackclub.slack.com/archives/C08QBKX5WCD",
-      "slackChannel": "#waffles",
-      "status": "ended",
-      "deadline": "2025-08-03T23:59:59"
-    },
-    {
       "name": "Hackmate",
       "description": "Build a collaborative app, get upto $50 for cloud credits or a raspberry pi",
       "website": "https://hackmate.hackclub.dev",
@@ -1308,15 +1290,6 @@
   ],
   "recentlyEnded": [
     {
-      "name": "Carnival",
-      "description": "Build an extension, plugin, or widget get prizes",
-      "website": "https://carnival.hackclub.com/",
-      "slack": "https://hackclub.slack.com/archives/C091ZRTMF16",
-      "slackChannel": "#carnival",
-      "status": "ended",
-      "deadline": "2026-04-30T23:59:59"
-    },
-    {
       "name": "Armed",
       "description": "Develop an arm assembly program, get lego.",
       "website": "https://armed.hackclub.com",
@@ -1380,11 +1353,27 @@
       "status": "active"
     },
     {
+      "name": "Waffles",
+      "description": "You ship a website using HTML CSS and JavaScript, and get Waffles!!!",
+      "website": "https://waffles.hackclub.com/",
+      "slack": "https://hackclub.slack.com/archives/C08QBKX5WCD",
+      "slackChannel": "#waffles",
+      "status": "active"
+    },
+    {
       "name": "Terminal Craft v5",
       "description": "Build and publish your own terminal program to earn $4/hr",
       "website": "https://terminalcraft.hackclub.com",
       "slack": "https://hackclub.slack.com/archives/C08F58MT3GV",
       "slackChannel": "#terminal-craft",
+      "status": "active"
+    },
+    {
+      "name": "Carnival",
+      "description": "Build an extension, plugin, or widget get prizes",
+      "website": "https://carnival.hackclub.com/",
+      "slack": "https://hackclub.slack.com/archives/C091ZRTMF16",
+      "slackChannel": "#carnival",
       "status": "active"
     },
     {
@@ -1446,9 +1435,26 @@
       "slack": "https://hackclub.slack.com/archives/C09DLGM81E1",
       "slackChannel": "#foodie",
       "status": "ended"
+    },
+    {
+      "name": "Toppings",
+      "description": "You ship an interactive website using framework-less JavaScript, we ship you a grant to an ice cream parlor.",
+      "website": "https://toppings.hackclub.com/",
+      "slack": "https://hackclub.slack.com/archives/C08R8V2E3LY",
+      "slackChannel": "#toppings",
+      "status": "active"
     }
   ],
   "drafts": [
+    {
+      "name": "Bestsellr",
+      "description": "Write a short story and build a webpage for it like a real published book.",
+      "slackChannel": "#bestsellr",
+      "slack": "https://hackclub.enterprise.slack.com/archives/C0B0A14PVEE",
+      "detailedDescription": "Bestsellr is a YSWS where you ship a website about a 2-3 page storybook which you have written by your own, and we ship book-themed ships such as stickers and bookmarks.",
+      "website": "https://srinidhipakalapati.github.io/Bestsellr/",
+      "status": "draft"
+    },
     {
       "name": "Hackanomous",
       "description": "Build into AI. Get funding<br> and win prizes!",
@@ -1525,6 +1531,20 @@
       "status": "draft"
     },
     {
+      "name": "MakerCreate",
+      "description": "Spawn into a world of hardware and CAD modelling with MakerCreate",
+      "detailedDescription": "MakerCreate is a YSWS (You Ship, We Ship) program @ HackClub. You spend time designing hardware or CAD projects on an editor of your choice, and we ship you a 3D printer of your choice! You can alternatively choose to buy parts or upgrades via our very own shop (pretty cool huh 🎃?)",
+      "website": "https://makercreate.vercel.app/",
+      "slack": "https://hackclub.enterprise.slack.com/archives/C0AGB5HP066",
+      "slackChannel": "#makercreate",
+      "steps": [
+        "Take the SerialBus, and explore the world of hardware and software with our tutorials/ or be a freebird and explore your own path",
+        "Improve your skills with new Hardware/CAD projects on MakerCreate",
+        "Trade your hard-earned spools on the *secret* MakerShop™ for goodies or hardware grants."
+      ],
+      "status": "draft"
+    },
+    {
       "name": "Shrine",
       "description": "Make and code a project about your favorite fictional character, get a grant to buy merch of your character!",
       "detailedDescription": "Shrine is a YSWS where you build a project (Must be tracked with Hackatime) about your favorite fictional character! It could be anything! Like, a website about your character, a Visual Novel with RenPy, anything related to that character! After you submit and we check your project, you'll receive a grant to go buy merch of your favorite character!",
@@ -1562,8 +1582,8 @@
       "name": "Poetry",
       "description": "You ship: poetry (details to be decided soon) We ship: Maybe a poster or smth?",
       "website": null,
-      "slack": "#poetry-ysws",
-      "slackChannel": "https://hackclub.slack.com/archives/C095DDUVCJX",
+      "slack": "https://hackclub.slack.com/archives/C095DDUVCJX",
+      "slackChannel": "#poetry-ysws",
       "status": "draft"
     },
     {

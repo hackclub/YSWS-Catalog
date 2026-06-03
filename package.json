@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "A catalog of Hack Club's You Ship, We Ship programs",
   "scripts": {
+    "dev": "npx serve",
     "generate": "node generate-json.js && node generate-rss.js",
     "validate": "node validateDates.js"
   },
