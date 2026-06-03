@@ -93,7 +93,7 @@ async function startRender() {
 
     renderPrograms();
     // Clicks the active filter btn
-    document.getElementById('filter-btn-active').click()
+    document.getElementById('filter-btn-all').click()
     await loadParticipants();
     updateParticipantCounts();
     //console.table(getTimelineEvents()); //DEBUG - PLEASE REMOVE LATER
