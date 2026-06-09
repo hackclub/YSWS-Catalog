@@ -5556,4 +5556,47 @@ footer {
   display: block;
 }
 
+.program-card.insert-coin-card {
+  background:
+    linear-gradient(165deg,
+      rgba(222, 184, 135, 0.85) 0%,
+      rgba(160, 120, 70, 0.9) 100%);
+  border: 2px solid #c8a064 !important;
+  color: #3b2a14 !important;
+  overflow: hidden;
+  position: relative;
+}
+
+.program-card.insert-coin-card .program-header,
+.program-card.insert-coin-card p,
+.program-card.insert-coin-card .program-deadline,
+.program-card.insert-coin-card .program-footer {
+  position: relative;
+  z-index: 2;
+}
+
+.program-card.insert-coin-card p,
+.program-card.insert-coin-card .program-deadline {
+  color: #3b2a14;
+}
+
+.program-card.insert-coin-card .program-links a {
+  color: #6b4a1f !important;
+}
+
+.program-card.insert-coin-card .program-links a:hover {
+  color: #3b2a14 !important;
+}
+
+.program-card.insert-coin-card:hover {
+  border-color: #e0c089 !important;
+  box-shadow: 0 22px 38px rgba(200, 160, 100, 0.3);
+}
+
+.insert-coin-wordmark {
+  width: min(200px, calc(100% - 88px));
+  height: auto;
+  display: block;
+}
+
 
