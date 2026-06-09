@@ -1,6 +1,16 @@
 {
   "limitedTime": [
     {
+      "name": "MetroShip",
+      "deadline": "2026-06-17T00:00:00.000Z",
+      "description": "MetroShip is a transportation and mapping based YSWS where you build a map website to show something fun, useful, or interesting. <br> Build a map website, ship it, and get tickets to buy prizes based on your hours spent building.",
+      "website": "https://metroship.hackclub.com",
+      "slack": "https://hackclub.enterprise.slack.com/archives/C0BA8RLV9RN",
+      "slackChannel": "#metroship",
+      "status": "upcoming",
+      "opens": "2026-6-10"
+    },
+    {
       "name": "Stardance",
       "deadline": "2026-09-30T00:00:00.000Z",
       "description": "The largest STEM event of the summer:<br>make anything you want and earn free prizes.",
