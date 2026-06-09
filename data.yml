@@ -14,6 +14,13 @@ limitedTime:
     slack: https://hackclub.enterprise.slack.com/archives/C0ATP7MTNPJ
     slackChannel: "#keeb"
     status: active
+  - name: Insert Coin
+    deadline: 2026-06-20
+    description: "An Arcade themed game dev where teens make games, post them, and earn reward tiers through plays."
+    website: https://insertcoin.hackclub.com/
+    slack: https://hackclub.enterprise.slack.com/archives/C0B9833PULV
+    slackChannel: "#insert-coin"
+    status: active
   - name: Forge
     deadline: 2026-08-01
     description: Forge is a Hack Club YSWS (You ship, we ship) program where teens like yourself can design and build hardware projects, and get them funded! Forge your project now

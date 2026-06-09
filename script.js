@@ -341,6 +341,7 @@ function createProgramCard(program) {
     const shipyardClass = program.name === 'Shipyard' ? 'shipyard-card' : '';
     const stardanceClass = program.name === 'Stardance' ? 'stardance-card' : '';
     const keebClass = program.name === 'Keeb' ? 'keeb-card' : '';
+    const insertCoinClass = program.name === 'Insert Coin' ? 'insert-coin-card' : '';
     const isNew = program.opens && (new Date() - new Date(program.opens)) < 7 * 24 * 60 * 60 * 1000;
     const encodedProgram = encodeURIComponent(JSON.stringify(program));
 
@@ -447,7 +448,7 @@ function createProgramCard(program) {
     const hackanomousMascot = program.name == 'Hackanomous' ? `<img src="https://cdn.hackclub.com/019d9ef5-f609-7d16-971f-3865d2092604/backanomous_mascot_320p.png" alt="Hackanomous Mascot" class="hackanomous-mascot">` : '';
 
     return `
-        <div class="card program-card ${opensClass} ${forgeClass} ${macondoClass} ${horizonsClass} ${slushiesClass} ${blueprintClass} ${accelerateClass} ${baubleClass} ${meowClass} ${woofClass} ${pxlClass} ${wackyFilesClass} ${flavortownClass} ${jusstudyClass} ${rebootClass} ${kitlabClass} ${sleepoverClass} ${stasisClass} ${coeurClass} ${remixedClass} ${hctgClass} ${hackahomeClass} ${flaggedClass} ${raspapiClass} ${beestClass} ${alchemizeClass} ${hackanomousClass} ${shipyardClass} ${stardanceClass} ${keebClass}" data-program="${encodedProgram}" data-name="${program.name}">
+        <div class="card program-card ${opensClass} ${forgeClass} ${macondoClass} ${horizonsClass} ${slushiesClass} ${blueprintClass} ${accelerateClass} ${baubleClass} ${meowClass} ${woofClass} ${pxlClass} ${wackyFilesClass} ${flavortownClass} ${jusstudyClass} ${rebootClass} ${kitlabClass} ${sleepoverClass} ${stasisClass} ${coeurClass} ${remixedClass} ${hctgClass} ${hackahomeClass} ${flaggedClass} ${raspapiClass} ${beestClass} ${alchemizeClass} ${hackanomousClass} ${shipyardClass} ${stardanceClass} ${keebClass} ${insertCoinClass}" data-program="${encodedProgram}" data-name="${program.name}">
             ${macondoAssets}
             ${horizonsAssets}
             ${shipyardAssets}
@@ -470,7 +471,9 @@ function createProgramCard(program) {
                             ? '<img src="logos/stardance-log.png" alt="Stardance" class="stardance-wordmark">'
                             : program.name === 'Keeb'
                                 ? '<img src="logos/keeb_logo.png" alt="Keeb" class="keeb-wordmark">'
-                                : `<h3>${program.name}</h3>`}
+                                : program.name === 'Insert Coin'
+                                    ? '<img src="logos/InsertCoinLogo.png" alt="Insert Coin" class="insert-coin-wordmark">'
+                                    : `<h3>${program.name}</h3>`}
                 <div class="status-container">
                     <span class="user-completed-badge ${isCompletedByUser ? 'visible' : ''}">
                         <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
