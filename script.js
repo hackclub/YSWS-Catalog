@@ -344,6 +344,7 @@ function createProgramCard(program) {
     const insertCoinClass = program.name === 'Insert Coin' ? 'insert-coin-card' : '';
     const isNew = program.opens && (new Date() - new Date(program.opens)) < 7 * 24 * 60 * 60 * 1000;
     const encodedProgram = encodeURIComponent(JSON.stringify(program));
+    const polygonClass =program.name === 'Polygon' ? 'polygon-card' : '';
 
     const isCompletedByUser = completedPrograms.has(program.name);
     const completionButtonClass = isCompletedByUser ? 'completed' : '';
@@ -462,6 +463,7 @@ function createProgramCard(program) {
             ${remixedLogo}
             ${hctgLogo}
             ${alchemize}
+            ${polygonBg}
             <div class="program-header">
                 ${program.name === 'Macondo'
                     ? '<img src="logos/macondo-wordmark.png" alt="Macondo" class="macondo-wordmark">'
