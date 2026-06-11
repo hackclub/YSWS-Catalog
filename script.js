@@ -113,13 +113,21 @@ function loadParticipants() {
         .then(data => {
             participants = data.map(item => ({
                 name: item.fields.Name,
-                total: item.fields["Unweighted–Total"],
+                total: getParticipantTotal(item.fields),
                 id: item.id
             }));
         })
         .catch(error => {
             console.error("Error fetching data:", error);
         });
+}
+
+function getParticipantTotal(fields) {
+    const totalKey = Object.keys(fields || {}).find(key =>
+        key.startsWith("Unweighted") && key.endsWith("Total")
+    );
+
+    return totalKey ? fields[totalKey] : 0;
 }
 
 const unifiedDbOverrides = {
@@ -345,6 +353,7 @@ function createProgramCard(program) {
     const isNew = program.opens && (new Date() - new Date(program.opens)) < 7 * 24 * 60 * 60 * 1000;
     const encodedProgram = encodeURIComponent(JSON.stringify(program));
     const polygonClass =program.name === 'Polygon' ? 'polygon-card' : '';
+    const polygonBg = program.name === 'Polygon' ? '<div class="polygon-bg" aria-hidden="true"></div>' : '';
 
     const isCompletedByUser = completedPrograms.has(program.name);
     const completionButtonClass = isCompletedByUser ? 'completed' : '';
@@ -900,6 +909,8 @@ function loadTimelineBlocks() {
     const monthContainer = document.getElementById("month-container");
 
     timeline.innerHTML = '';
+    dayContainer.innerHTML = '';
+    monthContainer.innerHTML = '';
 
     let cursor = new Date(now);
     cursor.setHours(0, 0, 0, 0);
@@ -1130,6 +1141,10 @@ async function loadGlobalStats() {
       "https://hackclub8080.nathanyin.com/api/v1/ysws_stats"
     );
 
+    if (!response.ok) {
+      throw new Error(`Stats request failed with status ${response.status}`);
+    }
+
     globalStatsData = await response.json();
 
     // If the section is already on screen when data arrives
@@ -1143,6 +1158,23 @@ async function loadGlobalStats() {
       "Failed to load stats:",
       error
     );
+
+    globalStatsData = {
+      total_projects: 0,
+      total_hours: 0,
+      total_stars: 0,
+      viral_projects: 0
+    };
+
+    const localParticipantTotal = Object.values(programs)
+      .flat()
+      .reduce((total, program) => total + (Number(program.participants) || 0), 0);
+
+    if (localParticipantTotal > 0) {
+      globalStatsData.total_projects = localParticipantTotal;
+    }
+
+    maybeRunGlobalStatsAnimation();
 
   }
 }
