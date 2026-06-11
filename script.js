@@ -1020,10 +1020,6 @@ function updateDeadlines() {
             element.className = `program-deadline ${deadlineClass}`;
         }
     });
-
-    if (needsReload) {
-        window.location.reload();
-    }
 }
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -1303,12 +1299,12 @@ function loadLeaderboard() {
     ['Campfire Satellites', 2561],
   ];
 
-  const medals = [
+const medals = [
     '<svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><circle cx="12" cy="12" r="10"/><text x="12" y="16" text-anchor="middle" font-size="10" fill="#000">1</text></svg>',
     '<svg width="20" height="20" viewBox="0 0 24 24" fill="#C0C0C0"><circle cx="12" cy="12" r="10"/><text x="12" y="16" text-anchor="middle" font-size="10" fill="#000">2</text></svg>',
     '<svg width="20" height="20" viewBox="0 0 24 24" fill="#CD7F32"><circle cx="12" cy="12" r="10"/><text x="12" y="16" text-anchor="middle" font-size="10" fill="#000">3</text></svg>',
-    '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--text-color)" stroke-width="2"><circle cx="12" cy="12" r="10"/><text x="12" y="16" text-anchor="middle" font-size="10" fill="var(--text-color)">4</text></svg>',
-    '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--text-color)" stroke-width="2"><circle cx="12" cy="12" r="10"/><text x="12" y="16" text-anchor="middle" font-size="10" fill="var(--text-color)">5</text></svg>',
+    '<svg width="20" height="20" viewBox="0 0 24 24" fill="#172B66"><circle cx="12" cy="12" r="10"/><text x="12" y="16" text-anchor="middle" font-size="10" fill="#fff">4</text></svg>',
+    '<svg width="20" height="20" viewBox="0 0 24 24" fill="#4B5563"><circle cx="12" cy="12" r="10"/><text x="12" y="16" text-anchor="middle" font-size="10" fill="#fff">5</text></svg>',
   ];
 
   container.innerHTML = data.map(([name, count], i) => `
