@@ -2381,6 +2381,32 @@ footer {
   color: var(--white);
 }
 
+/* Polygon */
+.program-card.polygon-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.polygon-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit:cover;
+  opacity: 0.4;
+  pointer-events:none;
+  z-index:0;
+}
+.program-card.polygon-card .program-header,
+.program-card.polygon-card p,
+.program-card.polygon-card .program-deadline,
+.program-card.polygon-card .program-footer {
+  position: relative;
+  z-index: 2;
+}
+
+
+
 /* Shipyard */
 .program-card.shipyard-card {
   position: relative;
