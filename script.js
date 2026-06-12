@@ -353,8 +353,7 @@ function createProgramCard(program) {
     const isNew = program.opens && (new Date() - new Date(program.opens)) < 7 * 24 * 60 * 60 * 1000;
     const encodedProgram = encodeURIComponent(JSON.stringify(program));
     const polygonClass =program.name === 'Polygon' ? 'polygon-card' : '';
-    const polygonBg = program.name === 'Polygon' ? '<div class="polygon-bg" aria-hidden="true"></div>' : '';
-
+    
     const isCompletedByUser = completedPrograms.has(program.name);
     const completionButtonClass = isCompletedByUser ? 'completed' : '';
     const completionIcon = isCompletedByUser ?
@@ -436,6 +435,8 @@ function createProgramCard(program) {
     const hctgLogo = program.name == 'Hack Club: The Game' ? `
         <img src="https://cdn.hackclub.com/019d0899-f270-7530-b145-19d1e53f113f/hctg-text-logo.png" alt="Hack Club: The Game" class="hctg-logo">
     ` : '';
+     
+    const polygonBg = program.name === 'Polygon' ? `<img src="./logos/Polygon.png" alt="Polygon Background" class="polygon-bg">` : '';
 
     const raspapiPi = program.name == 'RaspAPI' ? `<img src="https://raspapi.hackclub.com/rpizero-topdown.png" alt="" class="raspapi-pi" aria-hidden="true">` : '';
     const beestSticker = program.name == 'Beest' ? `<img src="logos/beest-sticker.webp" alt="Beest sticker" class="beest-sticker" loading="lazy">` : '';
@@ -458,7 +459,7 @@ function createProgramCard(program) {
     const hackanomousMascot = program.name == 'Hackanomous' ? `<img src="https://cdn.hackclub.com/019d9ef5-f609-7d16-971f-3865d2092604/backanomous_mascot_320p.png" alt="Hackanomous Mascot" class="hackanomous-mascot">` : '';
 
     return `
-        <div class="card program-card ${opensClass} ${forgeClass} ${macondoClass} ${horizonsClass} ${slushiesClass} ${blueprintClass} ${accelerateClass} ${baubleClass} ${meowClass} ${woofClass} ${pxlClass} ${wackyFilesClass} ${flavortownClass} ${jusstudyClass} ${rebootClass} ${kitlabClass} ${sleepoverClass} ${stasisClass} ${coeurClass} ${remixedClass} ${hctgClass} ${hackahomeClass} ${flaggedClass} ${raspapiClass} ${beestClass} ${alchemizeClass} ${hackanomousClass} ${shipyardClass} ${stardanceClass} ${keebClass} ${insertCoinClass}" data-program="${encodedProgram}" data-name="${program.name}">
+        <div class="card program-card ${opensClass} ${forgeClass} ${macondoClass} ${horizonsClass} ${slushiesClass} ${blueprintClass} ${accelerateClass} ${baubleClass} ${meowClass} ${woofClass} ${pxlClass} ${wackyFilesClass} ${flavortownClass} ${jusstudyClass} ${rebootClass} ${kitlabClass} ${sleepoverClass} ${stasisClass} ${coeurClass} ${remixedClass} ${hctgClass} ${hackahomeClass} ${flaggedClass} ${raspapiClass} ${beestClass} ${alchemizeClass} ${hackanomousClass} ${shipyardClass} ${stardanceClass} ${keebClass} ${insertCoinClass} ${polygonClass}" data-program="${encodedProgram}" data-name="${program.name}">
             ${macondoAssets}
             ${horizonsAssets}
             ${shipyardAssets}
@@ -484,6 +485,8 @@ function createProgramCard(program) {
                                 ? '<img src="logos/keeb_logo.png" alt="Keeb" class="keeb-wordmark">'
                                 : program.name === 'Insert Coin'
                                     ? '<img src="logos/InsertCoinLogo.png" alt="Insert Coin" class="insert-coin-wordmark">'
+                                    : program.name === 'Polygon'
+                                       ? '<img src ="./logos/polygon_logo.png" alt="polygon" class= "polygon-wordmark">'
                                     : `<h3>${program.name}</h3>`}
                 <div class="status-container">
                     <span class="user-completed-badge ${isCompletedByUser ? 'visible' : ''}">
