@@ -1,6 +1,16 @@
 {
   "limitedTime": [
     {
+      "name": "You Snake We Snake",
+      "deadline": "2026-06-15T00:00:00.000Z",
+      "description": "Make a game inspired by the classic Snake game and get a 45-inch snake plush!",
+      "website": "https://yousnakewesnake.pages.dev",
+      "slack": "https://hackclub.enterprise.slack.com/archives/C0AFDMUEPRS",
+      "slackChannel": "#you-snake-we-snake",
+      "status": "upcoming",
+      "opens": "2026-6-1"
+    },
+    {
       "name": "MetroShip",
       "deadline": "2026-06-17T00:00:00.000Z",
       "description": "MetroShip is a transportation and mapping based YSWS where you build a map website to show something fun, useful, or interesting. <br> Build a map website, ship it, and get tickets to buy prizes based on your hours spent building.",
