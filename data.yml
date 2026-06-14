@@ -1231,6 +1231,17 @@ indefinite:
     status: active
 
 drafts:
+  - name: Kintsugi
+    description: Build a project that solves a real-world problem, get Reward based on the kintsugi and Japanese theme!
+    website: https://kintsugi-ysws.vercel.app/
+    slack: https://hackclub.enterprise.slack.com/archives/C08KCUK3NF5
+    slackChannel: "#kintsugi"
+    status: draft
+    steps:
+      - Build a project which solves a real life prblem or any bug you face
+      - Ship your project with respect to its category
+      - Get Golden and silver Pots  By shipping them 
+      - Redeem the pots for prizes in the shop Like Stickers ,plushies,Kintsugi repair kit club workshops and even a flight to Japan!.
   - name: flagged
     description: Learn how to actually hack, earn hacking themed prizes!
     website: https://flagged-ysws.ingo.au
