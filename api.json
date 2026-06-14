@@ -1,6 +1,16 @@
 {
   "limitedTime": [
     {
+      "name": "You Snake We Snake",
+      "deadline": "2026-06-15T00:00:00.000Z",
+      "description": "Make a game inspired by the classic Snake game and get a 45-inch snake plush!",
+      "website": "https://yousnakewesnake.pages.dev",
+      "slack": "https://hackclub.enterprise.slack.com/archives/C0AFDMUEPRS",
+      "slackChannel": "#you-snake-we-snake",
+      "status": "upcoming",
+      "opens": "2026-6-1"
+    },
+    {
       "name": "MetroShip",
       "deadline": "2026-06-17T00:00:00.000Z",
       "description": "MetroShip is a transportation and mapping based YSWS where you build a map website to show something fun, useful, or interesting. <br> Build a map website, ship it, and get tickets to buy prizes based on your hours spent building.",
@@ -1503,6 +1513,20 @@
     }
   ],
   "drafts": [
+    {
+      "name": "Kintsugi",
+      "description": "Build a project that solves a real-world problem, get Reward based on the kintsugi and Japanese theme!",
+      "website": "https://kintsugi.hackclub.com/",
+      "slack": "https://hackclub.enterprise.slack.com/archives/C08KCUK3NF5",
+      "slackChannel": "#kintsugi",
+      "status": "draft",
+      "steps": [
+        "Build a project which solves a real life prblem or any bug you face",
+        "Ship your project with respect to its category",
+        "Get Golden and silver Pots  By shipping them",
+        "Redeem the pots for prizes in the shop Like Stickers ,plushies,Kintsugi repair kit club workshops and even a flight to Japan!."
+      ]
+    },
     {
       "name": "flagged",
       "description": "Learn how to actually hack, earn hacking themed prizes!",
