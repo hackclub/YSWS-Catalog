@@ -341,6 +341,7 @@ function createProgramCard(program) {
     const remixedClass = program.name == "Remixed" ? 'remixed-card' : '';
     const hctgClass = program.name == "Hack Club: The Game" ? 'hctg-card' : '';
     const hackahomeClass = program.name == "Hack a Home" ? 'hackahome-card' : '';
+    const KintsugiClass = program.name == "Kintsugi" ? 'kintsugi-card' : '';
     const flaggedClass = program.name == "flagged" ? 'flagged-card' : '';
     const raspapiClass = program.name == "RaspAPI" ? 'raspapi-card' : '';
     const beestClass = program.name == 'Beest' ? 'beest-card' : '';
@@ -458,8 +459,12 @@ function createProgramCard(program) {
     const hackanomousLogo = program.name == 'Hackanomous' ? `<img src="https://cdn.hackclub.com/019d9ecf-46ed-734c-b351-f9c2438d15bf/hackanomous_banner_360p.png" alt="Hackanomous Logo" class="hackanomous-logo">` : '';
     const hackanomousMascot = program.name == 'Hackanomous' ? `<img src="https://cdn.hackclub.com/019d9ef5-f609-7d16-971f-3865d2092604/backanomous_mascot_320p.png" alt="Hackanomous Mascot" class="hackanomous-mascot">` : '';
 
+    const kintsugiBg = program.name == 'Kintsugi' ? `<img src="logos/Kintsugi-bg.jpg" alt="Kintsugi Background" class="kintsugi-bg">` : '';
+    const kintsugiMascot = program.name == 'Kintsugi' ? `<img src="logos/Kintsugi-mascot.jpg" alt="Kintsugi Mascot" class="kintsugi-mascot">` : '';
+
+
     return `
-        <div class="card program-card ${opensClass} ${forgeClass} ${macondoClass} ${horizonsClass} ${slushiesClass} ${blueprintClass} ${accelerateClass} ${baubleClass} ${meowClass} ${woofClass} ${pxlClass} ${wackyFilesClass} ${flavortownClass} ${jusstudyClass} ${rebootClass} ${kitlabClass} ${sleepoverClass} ${stasisClass} ${coeurClass} ${remixedClass} ${hctgClass} ${hackahomeClass} ${flaggedClass} ${raspapiClass} ${beestClass} ${alchemizeClass} ${hackanomousClass} ${shipyardClass} ${stardanceClass} ${keebClass} ${insertCoinClass} ${polygonClass}" data-program="${encodedProgram}" data-name="${program.name}">
+        <div class="card program-card ${opensClass} ${KintsugiClass} ${forgeClass} ${macondoClass} ${horizonsClass} ${slushiesClass} ${blueprintClass} ${accelerateClass} ${baubleClass} ${meowClass} ${woofClass} ${pxlClass} ${wackyFilesClass} ${flavortownClass} ${jusstudyClass} ${rebootClass} ${kitlabClass} ${sleepoverClass} ${stasisClass} ${coeurClass} ${remixedClass} ${hctgClass} ${hackahomeClass} ${flaggedClass} ${raspapiClass} ${beestClass} ${alchemizeClass} ${hackanomousClass} ${shipyardClass} ${stardanceClass} ${keebClass} ${insertCoinClass} ${polygonClass}" data-program="${encodedProgram}" data-name="${program.name}">
             ${macondoAssets}
             ${horizonsAssets}
             ${shipyardAssets}
@@ -474,6 +479,8 @@ function createProgramCard(program) {
             ${hctgLogo}
             ${alchemize}
             ${polygonBg}
+            ${kintsugiBg}
+            ${kintsugiMascot}
             <div class="program-header">
                 ${program.name === 'Macondo'
                     ? '<img src="logos/macondo-wordmark.png" alt="Macondo" class="macondo-wordmark">'
@@ -515,6 +522,8 @@ ${isNew ? '<span class="new-badge">NEW</span>' : ''}
             ${forgeSticker}
             ${beestSticker}
             ${hackanomousMascot}
+           
+          
         </div>
     `;
 }
