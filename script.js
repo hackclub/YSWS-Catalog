@@ -92,8 +92,7 @@ async function startRender() {
     });
 
     renderPrograms();
-    // Clicks the active filter btn
-    document.getElementById('filter-btn-all').click()
+    document.querySelector('.filter-btn[data-category="all"]')?.click();
     await loadParticipants();
     updateParticipantCounts();
     //console.table(getTimelineEvents()); //DEBUG - PLEASE REMOVE LATER
@@ -670,8 +669,205 @@ function sortPrograms(programs, sortType) {
     }
 }
 
+const COLLAPSIBLE_CATEGORIES = new Set(['drafts', 'Ended', 'recentlyEnded']);
+const COLLAPSED_VISIBLE_ROWS = 4;
+const COLLAPSE_ANIMATION_MS = 480;
+
+function formatCategoryLabel(category) {
+    return category.replace(/([A-Z])/g, ' $1').replace(/^./, str => str.toUpperCase());
+}
+
+function isCollapsibleCategory(category) {
+    return COLLAPSIBLE_CATEGORIES.has(category);
+}
+
+function getVisibleProgramCards(section) {
+    return [...section.querySelectorAll('.program-card')].filter(
+        card => !card.classList.contains('hidden-by-filter') && !card.classList.contains('hidden-by-search')
+    );
+}
+
+function getGridColumnCount(grid) {
+    const columns = window.getComputedStyle(grid).gridTemplateColumns;
+    if (!columns || columns === 'none') return 1;
+    return columns.split(' ').filter(Boolean).length;
+}
+
+function getCollapsedVisibleCount(section) {
+    const grid = section.querySelector('.programs-grid');
+    const cards = getVisibleProgramCards(section);
+    if (!grid || cards.length === 0) return 0;
+
+    const columns = Math.max(1, getGridColumnCount(grid));
+    return Math.min(cards.length, columns * COLLAPSED_VISIBLE_ROWS);
+}
+
+function getCollapsedHeight(section) {
+    const wrap = section.querySelector('.programs-grid-wrap');
+    const grid = wrap?.querySelector('.programs-grid');
+    if (!wrap || !grid) return null;
+
+    const cards = getVisibleProgramCards(section);
+    const visibleCount = getCollapsedVisibleCount(section);
+    if (cards.length <= visibleCount) return null;
+
+    const gridTop = grid.getBoundingClientRect().top;
+    const targetCard = cards[visibleCount - 1];
+    return Math.ceil(targetCard.getBoundingClientRect().bottom - gridTop + 9);
+}
+
+function updateShowMoreButton(section, expanded) {
+    const btn = section.querySelector('.show-more-programs-btn');
+    if (!btn) return;
+
+    const label = btn.querySelector('.show-more-label');
+    const count = btn.querySelector('.show-more-count');
+    const cards = getVisibleProgramCards(section);
+    const hiddenCount = Math.max(0, cards.length - getCollapsedVisibleCount(section));
+    const categoryLabel = formatCategoryLabel(section.dataset.category).toLowerCase();
+
+    btn.setAttribute('aria-expanded', expanded ? 'true' : 'false');
+
+    if (label) {
+        label.textContent = expanded ? 'Show less' : `Show all ${categoryLabel}`;
+    }
+    if (count) {
+        count.textContent = hiddenCount > 0 ? `+${hiddenCount} more` : '';
+        count.hidden = expanded || hiddenCount <= 0;
+    }
+}
+
+function updateCollapsibleSection(section) {
+    if (section.dataset.animating === 'true') return;
+
+    const wrap = section.querySelector('.programs-grid-wrap');
+    const btn = section.querySelector('.show-more-programs-btn');
+    const fade = section.querySelector('.programs-grid-fade');
+    if (!wrap || !btn) return;
+
+    const cards = getVisibleProgramCards(section);
+    const visibleCount = getCollapsedVisibleCount(section);
+    if (cards.length <= visibleCount) {
+        section.classList.add('collapsible-disabled');
+        section.classList.remove('expanded');
+        wrap.classList.remove('collapsed');
+        wrap.style.maxHeight = '';
+        btn.hidden = true;
+        return;
+    }
+
+    section.classList.remove('collapsible-disabled');
+    btn.hidden = section.classList.contains('hidden');
+
+    const expanded = section.classList.contains('expanded');
+    updateShowMoreButton(section, expanded);
+
+    if (expanded) {
+        wrap.classList.remove('collapsed');
+        fade?.classList.add('is-hidden');
+        wrap.style.maxHeight = 'none';
+        return;
+    }
+
+    wrap.classList.add('collapsed');
+    fade?.classList.remove('is-hidden');
+    const collapsedHeight = getCollapsedHeight(section);
+    if (collapsedHeight !== null) {
+        wrap.style.maxHeight = `${collapsedHeight}px`;
+    }
+}
+
+function toggleCollapsibleSection(section) {
+    if (section.classList.contains('collapsible-disabled') || section.dataset.animating === 'true') return;
+
+    const wrap = section.querySelector('.programs-grid-wrap');
+    const fade = section.querySelector('.programs-grid-fade');
+    if (!wrap) return;
+
+    const expanding = !section.classList.contains('expanded');
+    const collapsedHeight = getCollapsedHeight(section);
+    if (collapsedHeight === null) return;
+
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        section.classList.toggle('expanded');
+        updateCollapsibleSection(section);
+        return;
+    }
+
+    section.dataset.animating = 'true';
+    wrap.style.overflow = 'hidden';
+
+    const finishAnimation = (expanded) => {
+        section.dataset.animating = 'false';
+        if (expanded) {
+            wrap.style.maxHeight = 'none';
+        } else {
+            wrap.style.maxHeight = `${collapsedHeight}px`;
+        }
+    };
+
+    if (expanding) {
+        const startHeight = wrap.getBoundingClientRect().height;
+        section.classList.add('expanded');
+        wrap.classList.remove('collapsed');
+        fade?.classList.add('is-hidden');
+        updateShowMoreButton(section, true);
+
+        wrap.style.maxHeight = `${startHeight}px`;
+        requestAnimationFrame(() => {
+            wrap.style.maxHeight = `${wrap.scrollHeight}px`;
+        });
+
+        const onExpandEnd = (event) => {
+            if (event.propertyName !== 'max-height') return;
+            clearTimeout(fallbackTimer);
+            wrap.removeEventListener('transitionend', onExpandEnd);
+            finishAnimation(true);
+        };
+        const fallbackTimer = setTimeout(() => {
+            wrap.removeEventListener('transitionend', onExpandEnd);
+            finishAnimation(true);
+        }, COLLAPSE_ANIMATION_MS + 80);
+        wrap.addEventListener('transitionend', onExpandEnd);
+        return;
+    }
+
+    const startHeight = wrap.getBoundingClientRect().height;
+    section.classList.remove('expanded');
+    wrap.classList.add('collapsed');
+    fade?.classList.remove('is-hidden');
+    updateShowMoreButton(section, false);
+
+    wrap.style.maxHeight = `${startHeight}px`;
+    requestAnimationFrame(() => {
+        wrap.style.maxHeight = `${collapsedHeight}px`;
+    });
+
+    const onCollapseEnd = (event) => {
+        if (event.propertyName !== 'max-height') return;
+        clearTimeout(fallbackTimer);
+        wrap.removeEventListener('transitionend', onCollapseEnd);
+        finishAnimation(false);
+    };
+    const fallbackTimer = setTimeout(() => {
+        wrap.removeEventListener('transitionend', onCollapseEnd);
+        finishAnimation(false);
+    }, COLLAPSE_ANIMATION_MS + 80);
+    wrap.addEventListener('transitionend', onCollapseEnd);
+}
+
+function refreshCollapsibleSections() {
+    requestAnimationFrame(() => {
+        document.querySelectorAll('.category-section[data-collapsible="true"]').forEach(updateCollapsibleSection);
+    });
+}
+
 function renderPrograms() {
     const container = document.getElementById('programs-container');
+    const expandedCategories = new Set(
+        [...container.querySelectorAll('.category-section.expanded[data-category]')]
+            .map(section => section.dataset.category)
+    );
     container.innerHTML = '';
     const activeCount = countActivePrograms();
     document.getElementById('active-count').textContent = activeCount;
@@ -679,12 +875,40 @@ function renderPrograms() {
     if (currentSort === 'default') {
         for (const [category, programsList] of Object.entries(programs)) {
             const section = document.createElement('section');
-            section.className = 'category-section';
-            section.innerHTML = `
-                <h2 class="headline">${category.replace(/([A-Z])/g, ' $1').replace(/^./, str => str.toUpperCase())}</h2>
-                <div class="programs-grid">
-                    ${programsList.map(program => createProgramCard(program)).join('')}
+            const collapsible = isCollapsibleCategory(category);
+            section.className = collapsible ? 'category-section collapsible-category' : 'category-section';
+            if (collapsible) {
+                section.dataset.category = category;
+                section.dataset.collapsible = 'true';
+                if (expandedCategories.has(category)) {
+                    section.classList.add('expanded');
+                }
+            }
+
+            const categoryLabel = formatCategoryLabel(category);
+            const cardsHtml = programsList.map(program => createProgramCard(program)).join('');
+
+            const hiddenCount = Math.max(0, programsList.length - (COLLAPSED_VISIBLE_ROWS * 3));
+            const countLabel = hiddenCount > 0 ? `+${hiddenCount} more` : '';
+
+            section.innerHTML = collapsible ? `
+                <h2 class="headline">${categoryLabel}</h2>
+                <div class="programs-grid-wrap collapsed">
+                    <div class="programs-grid">${cardsHtml}</div>
+                    <div class="programs-grid-fade" aria-hidden="true"></div>
                 </div>
+                <div class="show-more-container">
+                    <button type="button" class="show-more-programs-btn" aria-expanded="false">
+                        <span class="show-more-label">Show all ${categoryLabel.toLowerCase()}</span>
+                        <span class="show-more-count"${hiddenCount > 0 ? '' : ' hidden'}>${countLabel}</span>
+                        <svg class="show-more-chevron" viewBox="0 0 32 32" aria-hidden="true">
+                            <path d="M 0.359841 9.01822C 0.784113 9.37178 1.41467 9.31446 1.76823 8.8902C 3.14518 7.2451 6.52975 3.42464 8.25002 2.11557C 9.99919 3.44663 13.335 7.21555 14.7318 8.8902C 15.0854 9.31446 15.7159 9.37178 16.1402 9.01822C 16.5645 8.66466 16.6215 8.03371 16.2679 7.60943C 14.7363 5.76983 11.2749 1.80977 9.30351 0.408618C 8.99227 0.190441 8.64018 0 8.25002 0C 7.85987 0 7.50778 0.190441 7.19654 0.408618C 5.26486 1.78153 1.73514 5.80788 0.232849 7.60856L 0.231804 7.60982C -0.12176 8.03409 -0.0644362 8.66466 0.359841 9.01822Z" transform="translate(7.12506 20.6251) scale(1 -1)"></path>
+                        </svg>
+                    </button>
+                </div>
+            ` : `
+                <h2 class="headline">${categoryLabel}</h2>
+                <div class="programs-grid">${cardsHtml}</div>
             `;
             container.appendChild(section);
         }
@@ -699,6 +923,8 @@ function renderPrograms() {
         `;
         container.appendChild(section);
     }
+
+    refreshCollapsibleSections();
 }
 
 function updateSort(sortType) {
@@ -765,6 +991,8 @@ function filterPrograms(category) {
         section.classList.toggle('hidden', !hasVisibleCards);
     });
 
+    refreshCollapsibleSections();
+
     if (category === 'user-completed' || category === 'user-not-completed') {
         const allProgramCards = document.querySelectorAll('.program-card');
         const hasVisibleCards = Array.from(allProgramCards).some(card =>
@@ -806,6 +1034,8 @@ function searchPrograms(searchTerm) {
                 !card.classList.contains('hidden-by-search'));
         section.classList.toggle('hidden', !hasVisibleCards);
     });
+
+    refreshCollapsibleSections();
 }
 
 function toggleTheme() {
@@ -942,16 +1172,16 @@ function loadTimelineBlocks() {
         dayContainer.innerHTML += `<div id="timeline-day-${i}" class="timeline-day"></div>`
     }
 
-    document.getElementById("timeline-overlay").style.width = `${Math.ceil((furthestEvent.getTime() - now.getTime()) / 1000 / 60 / 60 / 24)}rem`;
+    const timelineDays = Math.ceil((furthestEvent.getTime() - now.getTime()) / 1000 / 60 / 60 / 24);
+    document.getElementById("timeline-overlay").style.width = `${timelineDays}rem`;
 
-    let maxWidth = 0;
     for (let i = 0; i < events.length; i++) {
         const event = events[i];
 
         if (event.status !== "ended" && event.status !== "draft") {
             let labelText = event.name;
             let days;
-            let width;
+            let width = timelineDays;
 
             if (event.deadline) {
                 days = Math.max(Math.ceil((event.deadline - now) / 1000 / 60 / 60 / 24), 1);
@@ -965,7 +1195,6 @@ function loadTimelineBlocks() {
                 remainingDays -= months * 30;
 
                 width = days;
-                maxWidth = Math.max(width, maxWidth);
 
                 const parts = [];
 
@@ -978,7 +1207,7 @@ function loadTimelineBlocks() {
 
             timeline.innerHTML += `
             <div class="timeline-row" data-index="${i}">
-                <div class="timeline-block  ${event.deadline ? '' : "no-deadline-timeline"}" style="width:${maxWidth}rem; ${event.deadline ? `background-color: ${brandingColors[(i % 8)]}` : `background: linear-gradient(90deg, ${brandingColors[(i % 8)]} 60%, var(--background) 100%);`}">
+                <div class="timeline-block  ${event.deadline ? '' : "no-deadline-timeline"}" style="width:${width}rem; ${event.deadline ? `background-color: ${brandingColors[(i % 8)]}` : `background: linear-gradient(90deg, ${brandingColors[(i % 8)]} 60%, var(--background) 100%);`}">
                     <span class="timeline-label inside">${labelText}</span>
                 </div>
                 <span class="timeline-label outside hidden">${labelText}</span>
@@ -1027,7 +1256,17 @@ function updateDeadlines() {
 
 document.addEventListener('DOMContentLoaded', () => {
     startRender();
-    window.addEventListener('resize', resolveTimelineLabels);
+    window.addEventListener('resize', () => {
+        resolveTimelineLabels();
+        refreshCollapsibleSections();
+    });
+
+    document.getElementById('programs-container').addEventListener('click', (e) => {
+        const btn = e.target.closest('.show-more-programs-btn');
+        if (btn) {
+            toggleCollapsibleSection(btn.closest('.category-section'));
+        }
+    });
 
     const searchInput = document.getElementById('program-search');
     searchInput.addEventListener('input', (e) => searchPrograms(e.target.value));
