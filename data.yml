@@ -1,7 +1,7 @@
 ---
 limitedTime:
   - name: You Snake We Snake
-    deadline: 2026-06-15
+    deadline: 2026-06-22
     description: "Make a game inspired by the classic Snake game and get a 45-inch snake plush!"
     website: https://yousnakewesnake.pages.dev
     slack: https://hackclub.enterprise.slack.com/archives/C0AFDMUEPRS
