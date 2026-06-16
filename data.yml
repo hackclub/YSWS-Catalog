@@ -105,6 +105,13 @@ limitedTime:
     slack: https://hackclub.enterprise.slack.com/archives/C0A62ACLT8R
     slackChannel: "#resolution"
     status: active
+  - name: Swirl
+    description: Create a quality website with Scoops, get ice cream!
+    detailedDescription: Ship a static website (html + css) that has a Scoop, and get a grant for ice cream to enjoy! Scoops are made up of groups of three html / css features that add something of value to the website.
+    website: https://swirl.hackclub.com
+    slack: https://hackclub.enterprise.slack.com/archives/C08FR0LMVHD
+    slackChannel: "#swirl"
+    status: active
   - name: Flavortown
     deadline: 2026-04-30
     description: Cook personal projects. Win free prizes.
