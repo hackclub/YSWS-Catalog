@@ -5961,4 +5961,289 @@ footer {
   display: block;
 }
 
+.hero-image {
+  border-radiu: 20px;
+  overflow: hidden;
 
+  box-shadow:
+  0 20px 30px rgba(0,0,0,.25),
+  0 0 30px rgba(255, 255, 255,.08);
+
+
+  backdrop-filter: blur(12px);
+
+  transition:
+    transform .3s ease,
+    box-shadow .3s ease;
+
+}
+
+
+.hero-image:hover {
+  transform: translateY(-8px) scale(1.03);
+
+}
+
+
+
+.floating-card {
+  position: relative;
+  border-radius: 24px;
+  overflow: hidden;
+
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(16px);
+
+  border: 1px solid rgba(255,255,255,0.15);
+
+  box-shadow:
+    0 10px 30px rgba(0,0,0,0.25),
+    0 1px 0 rgba(255,255,255,0.15) inset,
+    0 0 0 1px rgba(255,255,255,0.05);
+
+  transition: all 0.3s ease;
+}
+
+.floating-card:hover {
+  transform: translateY(-8px) scale(1.03);
+
+  box-shadow:
+    0 20px 50px rgba(0,0,0,0.35),
+    0 0 40px rgba(255,255,255,0.08);
+}
+
+.arcadai-card {
+  border: 1px solid rgba(0,255,255,0.4);
+
+  box-shadow:
+    0 0 15px rgba(0,255,255,0.25),
+    0 10px 30px rgba(0,0,0,0.3);
+}
+
+.hero-section {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.hero-photos-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Premium Balanced Polaroid Base Design */
+.premium-polaroid {
+  position: absolute;
+  background: #fdfdfd;
+  padding: 12px 12px 34px 12px; /* Perfect bottom polaroid lip margin */
+  border-radius: 4px;
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.45), 0 4px 10px rgba(0, 0, 0, 0.2);
+  width: 195px;
+  pointer-events: auto;
+  opacity: 0;
+  /* Apply the dynamic rotation directly from JS variable */
+  transform: rotate(var(--init-tilt, 0deg));
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1), box-shadow 0.3s ease, opacity 0.4s ease;
+  animation: elegantFloat 6s ease-in-out infinite alternate;
+}
+
+.premium-polaroid.visible {
+  opacity: 1;
+}
+
+/* Forces standard polaroid image aspect ratios regardless of source dimensions */
+.premium-polaroid .img-wrapper {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  background: #181717;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.premium-polaroid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Hover Lift Interaction */
+.premium-polaroid:hover {
+  transform: scale(1.15) rotate(0deg) !important;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.6);
+  z-index: 99;
+  animation-play-state: paused;
+}
+
+/* Fluid float animation that remembers its unique tilt parameter */
+@keyframes elegantFloat {
+  0% { transform: translateY(0px) rotate(var(--init-tilt, 0deg)); }
+  100% { transform: translateY(-12px) rotate(var(--init-tilt, 0deg)); }
+}
+
+/* --- THE 6 PERIMETER SLOTS (Perfect Framing) --- */
+/* Left Side Stack */
+.premium-polaroid.p1 { top: 6%; left: 3%; animation-delay: 0s; }
+.premium-polaroid.p2 { top: 40%; left: 2%; animation-delay: 0.4s; }
+.premium-polaroid.p3 { bottom: 8%; left: 4%; animation-delay: 0.8s; }
+
+/* Right Side Stack */
+.premium-polaroid.p4 { top: 6%; right: 3%; animation-delay: 0.2s; }
+.premium-polaroid.p5 { top: 40%; right: 4%; animation-delay: 0.6s; }
+.premium-polaroid.p6 { bottom: 8%; right: 3%; animation-delay: 1s; }
+
+/* Mobile and Tablet optimizations */
+@media (max-width: 1200px) {
+  .premium-polaroid { width: 155px; padding: 10px 10px 24px 10px; }
+}
+@media (max-width: 880px) {
+  .hero-photos-container { display: none; } /* Kept safe and clean on phones */
+}
+
+/* Enable 3D arena context for the workspace container */
+.hero-photos-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+  perspective: 1200px; /* Crucial for the 3D hover physics */
+}
+
+/* Elite Polaroid Base with Dealing Physics */
+.premium-polaroid {
+  position: absolute;
+  background: #fdfdfd;
+  padding: 12px 12px 34px 12px;
+  border-radius: 4px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+  width: 195px;
+  pointer-events: auto;
+  
+  /* Initial State before deal: Hidden and slightly thrown down off-center */
+  opacity: 0;
+  transform: translate3d(0, 40px, -100px) rotate(0deg);
+  
+  /* Smooth transitions for interactive mouse tracking */
+  transition: 
+    transform 0.5s cubic-bezier(0.2, 0.8, 0.2, 1.1), 
+    box-shadow 0.3s ease, 
+    opacity 0.6s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+/* Injected by JS once loaded: triggers the dramatic toss onto the desk */
+.premium-polaroid.visible {
+  opacity: 1;
+  transform: translate3d(0, 0, 0) rotate(var(--init-tilt, 0deg));
+}
+
+/* Custom individual drift floats so they move independently on the desk */
+.premium-polaroid.p1.visible { animation: slowFloatY 7s ease-in-out infinite alternate; }
+.premium-polaroid.p2.visible { animation: slowFloatX 6s ease-in-out infinite alternate 0.5s; }
+.premium-polaroid.p3.visible { animation: slowFloatY 8s ease-in-out infinite alternate 1s; }
+.premium-polaroid.p4.visible { animation: slowFloatX 7.5s ease-in-out infinite alternate 0.2s; }
+.premium-polaroid.p5.visible { animation: slowFloatY 6.5s ease-in-out infinite alternate 0.7s; }
+.premium-polaroid.p6.visible { animation: slowFloatX 8.5s ease-in-out infinite alternate 1.2s; }
+
+.premium-polaroid .img-wrapper {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  background: #181717;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.premium-polaroid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  user-select: none;
+}
+
+/* Premium Dynamic Interactive State */
+.premium-polaroid:hover {
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.65);
+  z-index: 999 !important; /* Always lift completely above surrounding UI */
+  animation-play-state: paused !important; /* Stop independent drifting while interacting */
+}
+
+/* Ambient organic drifting vectors */
+@keyframes slowFloatY {
+  0% { transform: translate3d(0, 0px, 0) rotate(var(--init-tilt, 0deg)); }
+  100% { transform: translate3d(0, -10px, 0) rotate(var(--init-tilt, 0deg)); }
+}
+@keyframes slowFloatX {
+  0% { transform: translate3d(0px, 0, 0) rotate(var(--init-tilt, 0deg)); }
+  100% { transform: translate3d(-8px, 0, 0) rotate(var(--init-tilt, 0deg)); }
+}
+
+/* Layout Slots staying far clear of your central workspace text */
+.premium-polaroid.p1 { top: 6%; left: 3%; }
+.premium-polaroid.p2 { top: 40%; left: 2%; }
+.premium-polaroid.p3 { bottom: 8%; left: 4%; }
+.premium-polaroid.p4 { top: 6%; right: 3%; }
+.premium-polaroid.p5 { top: 40%; right: 4%; }
+.premium-polaroid.p6 { bottom: 8%; right: 3%; }
+
+@media (max-width: 1200px) {
+  .premium-polaroid { width: 155px; padding: 10px 10px 24px 10px; }
+}
+@media (max-width: 880px) {
+  .hero-photos-container { display: none; }
+}
+
+/* Premium Master Section Headings (Limited Time, Draft, Indefinite) */
+.program-section-title, 
+h2.section-heading, /* Adjust if you use a different class/tag */
+.hero-section + div h2 { 
+  font-family: 'Phantom Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 2rem;            /* Prominent desktop sizing */
+  font-weight: 880;            /* Heavy, aggressive bold profile */
+  color: #ffffff;             /* Piercing high-contrast white */
+  letter-spacing: -0.03em;    /* Tight, professional display tracking */
+  line-height: 1.1;
+  margin-top: 2.5rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-transform: none;       /* Retains elegant natural capitalization casing */
+}
+
+/* Tactical Left Accent Indicator Bar */
+.program-section-title::before,
+h2.section-heading::before {
+  content: '';
+  display: inline-block;
+  width: 5px;
+  height: 1.5rem;
+  background: #ff4757;        /* Flagship vibrant Hack Club red */
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(255, 71, 87, 0.4);
+}
+
+/* Subtle underlying separator anchor to organize dashboard density */
+.program-section-divider {
+  border: 0;
+  height: 1px;
+  background: linear-gradient(90deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.02) 100%);
+  margin-bottom: 2rem;
+}
+
+/* Responsive Scaling for Small Displays */
+@media (max-width: 768px) {
+  .program-section-title, h2.section-heading {
+    font-size: 1.6rem;
+  }
+  .program-section-title::before, h2.section-heading::before {
+    height: 1.2rem;
+    width: 4px;
+  }
+}

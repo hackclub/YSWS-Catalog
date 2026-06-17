@@ -1295,6 +1295,12 @@ indefinite:
     status: active
 
 drafts:
+  - name: ArcadAi 
+    description: Build a Retro Arcade Game with AI and Get Rewarded for Shipping It
+    website: https://arcade-ysws.vercel.app/
+    slack: https://hackclub.slack.com/archives/C0B72VAHXHB
+    slackChannel: "#arcadAi"
+    status: Draft
   - name: Kintsugi
     description: Build a project that solves a real-world problem, get Reward based on the kintsugi and Japanese theme!
     website: https://kintsugi-ysws.vercel.app/
