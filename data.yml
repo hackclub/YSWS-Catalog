@@ -112,6 +112,63 @@ limitedTime:
     slack: https://hackclub.enterprise.slack.com/archives/C08FR0LMVHD
     slackChannel: "#swirl"
     status: active
+  - name: TAPE TO TAPE
+    deadline: 2026-06-18
+    description: Make a song in Sonic Pi. Get your track on a real Bandcamp album.
+    website: https://tapetotape.hackclub.com/
+    slack: https://hackclub.enterprise.slack.com/archives/C0BAPE8AZ53
+    slackChannel: "#tape-to-tape"
+    status: active
+  - name: moving day!
+    deadline: 2026-06-18
+    description: Pack up old projects and bring them to the future, get cool stuff!
+    detailedDescription: A program about Docker containers! The premise is simple- spend 1 to 2 hours turning your old projects into Docker container images, publish them to our container registry (up soon!) and earn hosting credits!! If you spend 5 hours dockerizing your projects, you can earn a super secret special prize made by yours truly :P 
+    website: https://movingday.hackclub.com/
+    slack: https://hackclub.enterprise.slack.com/archives/C0BBV0AMF24
+    slackChannel: "#movingday"
+    status: active
+  - name: Scribble
+    deadline: 2026-06-18
+    description: Work on an art-related site for 3 hours and get a sketchbook, or work for 1 and get a sticker!
+    website: https://scribble.hackclub.com/
+    slack: https://hackclub.enterprise.slack.com/archives/C0BAXHKTETY
+    slackChannel: "#scribble"
+    status: active
+  - name: Noodles
+    deadline: 2026-06-18
+    description: Make a scroll-based website or game, we'll ship you + your friends noodles!
+    website: https://noodles.hackclub.com/
+    slack: https://hackclub.enterprise.slack.com/archives/C0BAUMWHAA0
+    slackChannel: "#noodles"
+    status: active
+  - name: Chipless
+    deadline: 2026-06-18
+    description: Design a fun pcb gadget without using a microcontroller, get the parts to make it.
+    website: https://chipless.hackclub.com/
+    slack: https://hackclub.enterprise.slack.com/archives/C0BAZNHMTKQ
+    slackChannel: "#chipless"
+    status: active
+  - name: Pendant
+    deadline: 2026-06-18
+    description: Make a hardware keychain, get a custom lanyard and funding for your project!
+    website: https://pendant.hackclub.com/
+    slack: https://hackclub.enterprise.slack.com/archives/C0BB11MPG10
+    slackChannel: "#pendant"
+    status: active
+  - name: Helvetica
+    deadline: 2026-06-18
+    description: Make a text only game, get a book, Audible membership, or an e-reader!
+    website: https://helvetica.hackclub.com/
+    slack: https://hackclub.enterprise.slack.com/archives/C0BB07QGR6E
+    slackChannel: "#helvetica"
+    status: active
+  - name: Prologue
+    deadline: 2026-06-18
+    description: Ship what you've been afraid of starting, and we'll ship the key to a new story.
+    website: https://prologue.hackclub.com/
+    slack: https://hackclub.enterprise.slack.com/archives/C0BAM60LQ4E
+    slackChannel: "#prologue"
+    status: active
   - name: Flavortown
     deadline: 2026-04-30
     description: Cook personal projects. Win free prizes.
