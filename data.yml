@@ -1,5 +1,12 @@
 ---
 limitedTime:
+  - name: Chipless
+    deadline: 2026-06-18
+    description: Design a fun pcb gadget without using a microcontroller, get the parts to make it!
+    website: https://chipless.hackclub.com
+    slack: https://hackclub.enterprise.slack.com/archives/C0BAZNHMTKQ
+    slackChannel: "#chipless"
+    status: active
   - name: You Snake We Snake
     deadline: 2026-06-22
     description: "Make a game inspired by the classic Snake game and get a 45-inch snake plush!"
