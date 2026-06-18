@@ -68,10 +68,10 @@ function updateCompletionUI(programName) {
 
                 modalCompletionBtn.classList.toggle('completed', isCompleted);
 
-                if (modalCompletionBtn.classList.contains('completed')){
+                if (modalCompletionBtn.classList.contains('completed')) {
                     doConfetti()
                 }
-                
+
             }
 
             const modalCompletionBadge = modal.querySelector('.modal-completion-badge');
@@ -92,10 +92,13 @@ async function startRender() {
     });
 
     renderPrograms();
-    document.querySelector('.filter-btn[data-category="all"]')?.click();
+    const allFilterBtn = document.querySelector('.filter-btn[data-category="all"]');
+    if (allFilterBtn) {
+        allFilterBtn.click();
+    }
+
     await loadParticipants();
     updateParticipantCounts();
-    //console.table(getTimelineEvents()); //DEBUG - PLEASE REMOVE LATER
     loadTimelineBlocks();
 }
 
@@ -169,9 +172,9 @@ function updateParticipantCounts() {
         const programName = programData.name;
 
         const overrideId = unifiedDbOverrides[programName];
-        const apiData = overrideId
-            ? participants.find(p => p.id === overrideId)
-            : participants.find(p => p.name === programName);
+        const apiData = overrideId ?
+            participants.find(p => p.id === overrideId) :
+            participants.find(p => p.name === programName);
         if (apiData) {
             const initialCount = initialParticipants.get(programName) || 0;
             animateNumber(element, initialCount, apiData.total);
@@ -213,13 +216,13 @@ async function loadPrograms() {
             Object.entries(rawPrograms).map(([category, programsList]) => [
                 category,
                 (programsList && Array.isArray(programsList)) ?
-                    programsList.filter(program => {
-                        if (program.status === 'ended' || isEventEnded(program.deadline)) {
-                            ended.push({ ...program, status: 'ended' });
-                            return false;
-                        }
-                        return true;
-                    }) : []
+                programsList.filter(program => {
+                    if (program.status === 'ended' || isEventEnded(program.deadline)) {
+                        ended.push({...program, status: 'ended' });
+                        return false;
+                    }
+                    return true;
+                }) : []
             ])
         );
 
@@ -352,8 +355,8 @@ function createProgramCard(program) {
     const insertCoinClass = program.name === 'Insert Coin' ? 'insert-coin-card' : '';
     const isNew = program.opens && (new Date() - new Date(program.opens)) < 7 * 24 * 60 * 60 * 1000;
     const encodedProgram = encodeURIComponent(JSON.stringify(program));
-    const polygonClass =program.name === 'Polygon' ? 'polygon-card' : '';
-    
+    const polygonClass = program.name === 'Polygon' ? 'polygon-card' : '';
+
     const isCompletedByUser = completedPrograms.has(program.name);
     const completionButtonClass = isCompletedByUser ? 'completed' : '';
     const completionIcon = isCompletedByUser ?
@@ -395,7 +398,7 @@ function createProgramCard(program) {
         <img src="logos/JusSTUDY.png" alt="Jus'STUDY" class="jusstudy-center">
         <img src="logos/jusstudy-emi.avif" alt="" class="jusstudy-emi">
     ` : '';
-    
+
     const macondoAssets = program.name === 'Macondo' ? `
         <img src="logos/macondo-background.png" alt="" class="macondo-background" aria-hidden="true">
         <img src="logos/Macondo.png" alt="Macondo" class="macondo-center">
@@ -435,13 +438,13 @@ function createProgramCard(program) {
     const hctgLogo = program.name == 'Hack Club: The Game' ? `
         <img src="https://cdn.hackclub.com/019d0899-f270-7530-b145-19d1e53f113f/hctg-text-logo.png" alt="Hack Club: The Game" class="hctg-logo">
     ` : '';
-     
+
     const polygonBg = program.name === 'Polygon' ? `<img src="./logos/Polygon.png" alt="Polygon Background" class="polygon-bg">` : '';
 
     const raspapiPi = program.name == 'RaspAPI' ? `<img src="https://raspapi.hackclub.com/rpizero-topdown.png" alt="" class="raspapi-pi" aria-hidden="true">` : '';
     const beestSticker = program.name == 'Beest' ? `<img src="logos/beest-sticker.webp" alt="Beest sticker" class="beest-sticker" loading="lazy">` : '';
     const forgeSticker = program.name == 'Forge' ? `<img src="logos/sticker_forge.svg" alt="Forge sticker" class="forge-sticker" loading="lazy">` : '';
-    
+
     const alchemize = program.name === 'Alchemize' ? `<img src="https://alchemize-ysws.vercel.app/Alchemist.webp" alt="Alchemize Logo" class="alchemize-logo">` : '';
     const alchemizeBg = program.name === 'Alchemize' ? `<img src="./logos/alchemize.png" alt="Alchemize Background" class="alchemize-bg">` : '';
 
@@ -1092,20 +1095,37 @@ function expandTimeline() {
     const overlay = document.getElementById('timeline-overlay');
     const container = document.getElementById('timeline-container');
     const timelineBtn = document.getElementById('timeline-expand-btn');
+    
+    container.style.overflow = "hidden";
+
     if (!timelineExpanded) {
-        overlay.style.display = "none";
-        container.style.maxHeight = "none";
-        container.style.overflowY = "auto";
+        overlay.style.opacity = "0";
+        setTimeout(() => {
+            if (timelineExpanded) overlay.style.display = "none";
+        }, 400);
+
+        const startHeight = container.getBoundingClientRect().height;
+        container.style.maxHeight = `${startHeight}px`;
+        requestAnimationFrame(() => {
+            container.style.maxHeight = `${container.scrollHeight}px`;
+        });
+        
         timelineBtn.innerHTML = "<svg fill-rule=\"evenodd\" clip-rule=\"evenodd\" stroke-linejoin=\"round\" stroke-miterlimit=\"1.414\" xmlns=\"http://www.w3.org/2000/svg\" aria-label=\"up-caret\" viewBox=\"0 0 32 32\" preserveAspectRatio=\"xMidYMid meet\" fill=\"currentColor\" width=\"48\" height=\"48\" title=\"up-caret\"><g><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M7.4849 20.3931C7.90917 20.7467 8.53973 20.6894 8.8933 20.2651C10.2702 18.62 13.6548 14.7995 15.3751 13.4905C17.1243 14.8215 20.46 18.5905 21.8569 20.2651C22.2104 20.6894 22.841 20.7467 23.2653 20.3931C23.6895 20.0396 23.7465 19.4086 23.393 18.9843C21.8613 17.1447 18.4 13.1847 16.4286 11.7835C16.1173 11.5653 15.7652 11.3749 15.3751 11.3749C14.9849 11.3749 14.6328 11.5653 14.3216 11.7835C12.3899 13.1564 8.8602 17.1828 7.35791 18.9835L7.35686 18.9847C7.0033 19.409 7.06062 20.0396 7.4849 20.3931Z\"></path></g></svg>";
     } else {
         overlay.style.display = "block";
-        container.style.maxHeight = "25rem";
-        container.style.overflowY = "hidden";
+        setTimeout(() => {
+            if (!timelineExpanded) overlay.style.opacity = "1";
+        }, 10);
+        const startHeight = container.getBoundingClientRect().height;
+        container.style.maxHeight = `${startHeight}px`;
+        requestAnimationFrame(() => {
+            container.style.maxHeight = "25rem";
+        });
+        
         timelineBtn.innerHTML = "<svg fill-rule=\"evenodd\" clip-rule=\"evenodd\" stroke-linejoin=\"round\" stroke-miterlimit=\"1.414\" xmlns=\"http://www.w3.org/2000/svg\" aria-label=\"down-caret\" viewBox=\"0 0 32 32\" preserveAspectRatio=\"xMidYMid meet\" fill=\"currentColor\" width=\"48\" height=\"48\" title=\"down-caret\"><g><path d=\"M 0.359841 9.01822C 0.784113 9.37178 1.41467 9.31446 1.76823 8.8902C 3.14518 7.2451 6.52975 3.42464 8.25002 2.11557C 9.99919 3.44663 13.335 7.21555 14.7318 8.8902C 15.0854 9.31446 15.7159 9.37178 16.1402 9.01822C 16.5645 8.66466 16.6215 8.03371 16.2679 7.60943C 14.7363 5.76983 11.2749 1.80977 9.30351 0.408618C 8.99227 0.190441 8.64018 0 8.25002 0C 7.85987 0 7.50778 0.190441 7.19654 0.408618C 5.26486 1.78153 1.73514 5.80788 0.232849 7.60856L 0.231804 7.60982C -0.12176 8.03409 -0.0644362 8.66466 0.359841 9.01822Z\" transform=\"translate(7.12506 20.6251) scale(1 -1)\"></path></g></svg>";
     }
     timelineExpanded = !timelineExpanded;
 }
-
 function getTimelineEvents() {
     return Object.values(programs).flat().map(program => ({
         ...program,
@@ -1234,7 +1254,16 @@ function loadTimelineBlocks() {
         })
     })
 
-    requestAnimationFrame(resolveTimelineLabels);
+const container = document.getElementById('timeline-container');
+    const overlay = document.getElementById('timeline-overlay');
+    
+    if (container && overlay) {
+        container.style.maxHeight = "25rem";
+        container.style.overflowY = "hidden";
+        overlay.style.display = "block";
+    }
+    
+    setTimeout(resolveTimelineLabels, 100);
 }
 
 // ----
@@ -1681,6 +1710,7 @@ setTimeout(() => {
   wheelPrograms = getWheelPrograms();
   drawWheel();
 }, 2000);
+
 document.addEventListener("DOMContentLoaded", () => {
     const pool = [
       "https://cdn.hackclub.com/019ed762-ea08-7eb2-b8b4-0bc1c26c10d1/screenshot_2026-06-18_015147.png",
@@ -1715,7 +1745,6 @@ document.addEventListener("DOMContentLoaded", () => {
       "https://cdn.hackclub.com/019ed789-5b83-7c6f-a96e-fe28076696f4/image.png"
     ];
 
-    // Fisher-Yates Shuffle 
     for (let i = pool.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
       [pool[i], pool[j]] = [pool[j], pool[i]];
@@ -1728,32 +1757,26 @@ document.addEventListener("DOMContentLoaded", () => {
       if (img && pool[idx]) {
         img.src = pool[idx];
         
-        // Pick an authentic looking tilt (-7deg to +7deg)
         const randomRotate = Math.floor(Math.random() * 14) - 7;
         frame.style.setProperty('--init-tilt', `${randomRotate}deg`);
         
         img.onload = () => {
-          // Staggered dealing delays: 150ms step increments between card drops
           setTimeout(() => {
             frame.classList.add("visible");
           }, idx * 150);
         };
 
-        // --- NEW FEATURE: INTERACTIVE 3D MOUSE HULL MOTION ---
         frame.addEventListener("mousemove", (e) => {
           const rect = frame.getBoundingClientRect();
-          // Find localized offset coordinate percentages (-0.5 to +0.5)
           const x = (e.clientX - rect.left) / rect.width - 0.5;
           const y = (e.clientY - rect.top) / rect.height - 0.5;
           
-          // Calculate active 3D Matrix deformations
-          const tiltX = (y * -25).toFixed(2); // Maximum X pitch bounding
-          const tiltY = (x * 25).toFixed(2);  // Maximum Y yaw bounding
+          const tiltX = (y * -25).toFixed(2); 
+          const tiltY = (x * 25).toFixed(2);  
           
           frame.style.transform = `scale(1.15) rotateX(${tiltX}deg) rotateY(${tiltY}deg) rotateZ(0deg)`;
         });
 
-        // Softly clear metrics when cursor leaves bounding box area
         frame.addEventListener("mouseleave", () => {
           frame.style.transform = `scale(1) rotateX(0deg) rotateY(0deg) rotateZ(var(--init-tilt, 0deg))`;
         });
@@ -1765,7 +1788,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const slider = document.getElementById("timeSlider");
   const eraBadge = document.getElementById("eraBadge");
   
-  // Official Hack Club Era Lore Configurations
   const eras = {
     2019: { name: "Ancient Era", color: "#6f42c1" }, 
     2020: { name: "Ancient Era", color: "#6f42c1" },
@@ -1780,21 +1802,18 @@ document.addEventListener("DOMContentLoaded", () => {
   function updateTimeline(selectedYear) {
     const currentEra = eras[selectedYear] || eras[2026];
     
-    // Update Badge styling context
     if (eraBadge) {
       eraBadge.innerText = currentEra.name;
       eraBadge.style.backgroundColor = currentEra.color;
       eraBadge.style.boxShadow = `0 0 14px ${currentEra.color}aa`;
     }
 
-    // Filter through generated card items (Ensure your generation scripts append data-year)
     const cards = document.querySelectorAll(".program-card");
     cards.forEach(card => {
       const cardYear = parseInt(card.getAttribute("data-year")) || 2026;
       
       if (cardYear <= selectedYear) {
         card.style.display = "block";
-        // Small timeout to allow the display property to process before animating scale
         setTimeout(() => { 
           card.style.opacity = "1"; 
           card.style.transform = "scale(1)"; 
@@ -1815,7 +1834,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // Window helper for the clickable text ticks below the track line
   window.setSliderYear = function(year) {
     if (slider) {
       slider.value = year;
@@ -1823,7 +1841,5 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   };
   
-  // Set default timeline state
   updateTimeline(2026);
 });
-
