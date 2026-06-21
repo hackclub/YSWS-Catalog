@@ -542,7 +542,7 @@ function updateVisiblePrograms() {
 
 function updatePositionIndicator() {
     const positionElement = document.querySelector('.current-position');
-    if (visiblePrograms.length > 0) {
+    if (visiblePrograms.length > 0 && currentProgramIndex >= 0) {
         positionElement.textContent = `${currentProgramIndex + 1} of ${visiblePrograms.length}`;
     } else {
         positionElement.textContent = '';
@@ -557,6 +557,46 @@ function navigateModal(direction) {
     currentProgramIndex = (currentProgramIndex + direction + visiblePrograms.length) % visiblePrograms.length;
     openModal(visiblePrograms[currentProgramIndex]);
     updatePositionIndicator();
+}
+
+function playModalEntranceAnimation(modal) {
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        modal.classList.remove('is-animating');
+        return;
+    }
+
+    const modalContent = modal.querySelector('.modal-content');
+    const modalStack = modal.querySelector('.modal-stack');
+    if (!modalContent || !modalStack) return;
+
+    const direction = Math.random() < 0.5 ? -1 : 1;
+    const enterX = direction * (38 + Math.round(Math.random() * 26));
+    const enterY = 18 + Math.round(Math.random() * 16);
+    const enterRotate = direction * (3.5 + Math.random() * 4.5);
+    const overshootRotate = -direction * (0.8 + Math.random() * 1.2);
+    const backOneDirection = Math.random() < 0.5 ? -1 : 1;
+    const backTwoDirection = -backOneDirection;
+    const backOneX = backOneDirection * (14 + Math.round(Math.random() * 10));
+    const backTwoX = backTwoDirection * (18 + Math.round(Math.random() * 14));
+    const backOneY = 10 + Math.round(Math.random() * 8);
+    const backTwoY = 20 + Math.round(Math.random() * 10);
+    const backOneRotate = backOneDirection * (2.2 + Math.random() * 2.4);
+    const backTwoRotate = backTwoDirection * (3.2 + Math.random() * 2.8);
+
+    modalContent.style.setProperty('--modal-enter-x', `${enterX}px`);
+    modalContent.style.setProperty('--modal-enter-y', `${enterY}px`);
+    modalContent.style.setProperty('--modal-enter-rotate', `${enterRotate}deg`);
+    modalContent.style.setProperty('--modal-overshoot-rotate', `${overshootRotate}deg`);
+    modalStack.style.setProperty('--stack-back-1-x', `${backOneX}px`);
+    modalStack.style.setProperty('--stack-back-1-y', `${backOneY}px`);
+    modalStack.style.setProperty('--stack-back-1-rotate', `${backOneRotate}deg`);
+    modalStack.style.setProperty('--stack-back-2-x', `${backTwoX}px`);
+    modalStack.style.setProperty('--stack-back-2-y', `${backTwoY}px`);
+    modalStack.style.setProperty('--stack-back-2-rotate', `${backTwoRotate}deg`);
+
+    modal.classList.remove('is-animating');
+    void modal.offsetWidth;
+    modal.classList.add('is-animating');
 }
 
 function openModal(program) {
@@ -639,6 +679,7 @@ function openModal(program) {
     updatePositionIndicator();
     modal.classList.add('active');
     body.classList.add('modal-open');
+    playModalEntranceAnimation(modal);
 }
 
 function closeModal() {
@@ -646,7 +687,40 @@ function closeModal() {
     const body = document.body;
 
     modal.classList.remove('active');
+    modal.classList.remove('is-animating');
     body.classList.remove('modal-open');
+}
+
+function findProgramByName(programName) {
+    return Object.values(programs)
+        .flat()
+        .find(program => program.name === programName);
+}
+
+function getLeaderboardProgram(programName, shipCount) {
+    const program = findProgramByName(programName);
+    if (program) return program;
+
+    const fallbackDescriptions = {
+        Daydream: 'Daydream is featured in the YSWS ship rankings, but its full catalog details are not available in the current local dataset.',
+        'Campfire Satellites': 'Campfire Satellites is featured in the YSWS ship rankings, but its full catalog details are not available in the current local dataset.',
+    };
+
+    const description = fallbackDescriptions[programName] || 'This leaderboard entry is featured in the ship rankings.';
+
+    return {
+        name: programName,
+        status: 'ended',
+        description,
+        detailedDescription: `${description} It currently shows ${shipCount.toLocaleString()} shipped projects.`,
+        ended: 'Featured on leaderboard',
+        steps: [
+            'This program appears in the leaderboard, but its detailed catalog card data is not included in this local copy yet.'
+        ],
+        details: [
+            `${shipCount.toLocaleString()} shipped projects are currently shown for this entry.`
+        ]
+    };
 }
 
 function countActivePrograms() {
@@ -1292,8 +1366,90 @@ function updateDeadlines() {
     });
 }
 
+function initializeFaqAnimations() {
+    const faqItems = document.querySelectorAll('.faq-item');
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+
+    const toggleFaqItem = (item, summary) => {
+        if (item.dataset.animating === 'true') return;
+
+        if (reduceMotion.matches) {
+            item.open = !item.open;
+            return;
+        }
+
+        const isOpen = item.open;
+        const startHeight = item.offsetHeight;
+
+        item.dataset.animating = 'true';
+        item.style.height = `${startHeight}px`;
+
+        if (isOpen) {
+            item.classList.add('is-closing');
+            const styles = getComputedStyle(item);
+            const closedHeight =
+                summary.offsetHeight +
+                parseFloat(styles.paddingTop) +
+                parseFloat(styles.paddingBottom);
+
+            requestAnimationFrame(() => {
+                item.style.height = `${closedHeight}px`;
+            });
+
+            const finishClose = event => {
+                if (event.propertyName !== 'height') return;
+                item.removeEventListener('transitionend', finishClose);
+                item.open = false;
+                item.classList.remove('is-closing');
+                item.style.height = '';
+                item.dataset.animating = 'false';
+            };
+
+            item.addEventListener('transitionend', finishClose);
+            return;
+        }
+
+        item.open = true;
+        item.style.height = `${startHeight}px`;
+
+        requestAnimationFrame(() => {
+            item.style.height = `${item.scrollHeight}px`;
+        });
+
+        const finishOpen = event => {
+            if (event.propertyName !== 'height') return;
+            item.removeEventListener('transitionend', finishOpen);
+            item.style.height = '';
+            item.dataset.animating = 'false';
+        };
+
+        item.addEventListener('transitionend', finishOpen);
+    };
+
+    faqItems.forEach(item => {
+        const summary = item.querySelector('summary');
+        if (!summary) return;
+
+        item.addEventListener('click', event => {
+            if (event.target.closest('a, button, input, textarea, select, label')) return;
+            if (window.getSelection()?.toString()) return;
+
+            event.preventDefault();
+            toggleFaqItem(item, summary);
+        });
+
+        summary.addEventListener('keydown', event => {
+            if (event.key !== 'Enter' && event.key !== ' ') return;
+
+            event.preventDefault();
+            toggleFaqItem(item, summary);
+        });
+    });
+}
+
 document.addEventListener('DOMContentLoaded', () => {
     startRender();
+    initializeFaqAnimations();
     window.addEventListener('resize', () => {
         resolveTimelineLabels();
         refreshCollapsibleSections();
@@ -1304,6 +1460,15 @@ document.addEventListener('DOMContentLoaded', () => {
         if (btn) {
             toggleCollapsibleSection(btn.closest('.category-section'));
         }
+    });
+
+    document.getElementById('leaderboard-container')?.addEventListener('click', (e) => {
+        const row = e.target.closest('.leaderboard-row');
+        if (!row) return;
+
+        const programName = row.dataset.programName;
+        const shipCount = Number(row.dataset.shipCount || 0);
+        openModal(getLeaderboardProgram(programName, shipCount));
     });
 
     const searchInput = document.getElementById('program-search');
@@ -1588,9 +1753,13 @@ const medals = [
   ];
 
   container.innerHTML = data.map(([name, count], i) => `
-    <div class="leaderboard-row">
+    <div class="leaderboard-row" data-program-name="${name}" data-ship-count="${count}">
       <span class="leaderboard-rank">${medals[i]}</span>
-      <span class="leaderboard-name">${name}</span>
+      <button
+        class="leaderboard-name leaderboard-name-btn"
+        type="button"
+        aria-label="Open ${name} details"
+      >${name}</button>
       <div class="leaderboard-bar-wrap">
         <div class="leaderboard-bar" style="width: ${Math.round((count / data[0][1]) * 100)}%"></div>
       </div>

@@ -132,8 +132,7 @@
     <header class="site-header">
         <div class="logo-container">
             <a href="https://hackclub.com" target="_blank" rel="noopener noreferrer">
-                <img src="https://assets.hackclub.com/flag-standalone.svg
-" alt="Hack Club" class="logo">
+                <img src="https://assets.hackclub.com/flag-standalone.svg" alt="Hack Club" class="logo">
             </a>
         </div>
         <nav class="main-nav">
@@ -465,38 +464,42 @@
             <div class="program-position"><span class="current-position"></span></div>
             <button class="modal-nav modal-prev" aria-label="Previous program">←</button>
             <button class="modal-nav modal-next" aria-label="Next program">→</button>
-            <div class="modal-content card">
-                <button class="modal-close" aria-label="Close modal">&times;</button>
-                <div class="modal-header">
-                    <h2 class="title" id="modal-title"></h2>
-                    <span class="program-status"></span>
-                </div>
-                <div class="modal-body">
-                    <span class="modal-completion-badge">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
-                            <polyline points="22 4 12 14.01 9 11.01" />
-                        </svg>
-                        You've completed this program
-                    </span>
-                    <p class="program-description"></p>
-                    <div class="program-deadline"></div>
-                    <div class="program-details">
-                        <h3>How to Participate</h3>
-                        <div class="participation-steps"></div>
-                        <div class="more-details"></div>
-                        <div class="program-links"></div>
+            <div class="modal-stack">
+                <div class="modal-stack-card modal-stack-card-back-2" aria-hidden="true"></div>
+                <div class="modal-stack-card modal-stack-card-back-1" aria-hidden="true"></div>
+                <div class="modal-content card">
+                    <button class="modal-close" aria-label="Close modal">&times;</button>
+                    <div class="modal-header">
+                        <h2 class="title" id="modal-title"></h2>
+                        <span class="program-status"></span>
                     </div>
-                    <div class="modal-completion-container">
-                        <button class="modal-completion-toggle">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round">
-                                <circle cx="12" cy="12" r="10" />
+                    <div class="modal-body">
+                        <span class="modal-completion-badge">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                                <polyline points="22 4 12 14.01 9 11.01" />
                             </svg>
-                            Mark as completed
-                        </button>
+                            You've completed this program
+                        </span>
+                        <p class="program-description"></p>
+                        <div class="program-deadline"></div>
+                        <div class="program-details">
+                            <h3>How to Participate</h3>
+                            <div class="participation-steps"></div>
+                            <div class="more-details"></div>
+                            <div class="program-links"></div>
+                        </div>
+                        <div class="modal-completion-container">
+                            <button class="modal-completion-toggle">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="10" />
+                                </svg>
+                                Mark as completed
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
