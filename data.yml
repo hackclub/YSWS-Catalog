@@ -16,6 +16,13 @@ limitedTime:
     slackChannel: "#metroship"
     status: upcoming
     opens: 2026-6-10
+  - name: Outpost
+    deadline: 2026-07-13
+    description: "4-day hackathon followed by a 2-day showcase at Open Sauce! Make hardware projects in Stardance Challenge to qualify."
+    website: https://outpost.hackclub.com/
+    slack: https://hackclub.enterprise.slack.com/archives/C0B04RP43TQ
+    slackChannel: "#outpost"
+    status: active
   - name: Stardance
     deadline: 2026-09-30
     description: "The largest STEM event of the summer:<br>make anything you want and earn free prizes."
