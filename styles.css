@@ -6605,3 +6605,41 @@ h2.section-heading::before {
     width: 4px;
   }
 }
+
+
+/* Bestsellr card styling */
+.program-card.bestsellr-card {
+  background: #082b4d !important;
+  border: 2px solid #f7c14d !important;
+  color: #ffffff !important;
+  overflow: hidden;
+  position: relative;
+}
+
+.program-card.bestsellr-card .program-header,
+.program-card.bestsellr-card p,
+.program-card.bestsellr-card .program-deadline,
+.program-card.bestsellr-card .program-footer {
+  position: relative;
+  z-index: 2;
+}
+
+.program-card.bestsellr-card h3,
+.program-card.bestsellr-card p,
+.program-card.bestsellr-card .program-deadline {
+  color: #ffffff !important;
+}
+
+.program-card.bestsellr-card .program-links a {
+  color: #f7c14d !important;
+  font-weight: 600;
+}
+
+.program-card.bestsellr-card .program-links a:hover {
+  color: #fff9e6 !important;
+}
+
+.program-card.bestsellr-card:hover {
+  border-color: #f7c14d !important;
+  box-shadow: 0 22px 38px rgba(247, 193, 77, 0.35);
+}
