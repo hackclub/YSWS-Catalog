@@ -4765,6 +4765,16 @@ footer {
   }
 }
 
+.calculate-wordmark {
+  image-rendering: pixelated;
+  width: min(240px, calc(90% - 88px));
+  height: auto;
+  display: block;
+  position: relative;
+  z-index: 2;
+  margin-right: 8px;
+}
+
 .hero-card-icon {
   display: flex;
   align-items: center;

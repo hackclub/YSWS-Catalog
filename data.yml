@@ -1,5 +1,13 @@
 ---
 limitedTime:
+  - name: Calculate
+    deadline: 2026-07-18
+    description: "Make a project involving numbers, get a calculator + stickersheet!"
+    website: https://calculate.hackclub.com
+    slack: https://hackclub.enterprise.slack.com/archives/C0ARJHZPU9H
+    slackChannel: "#calculate"
+    status: active
+    opens: 2026-06-24
   - name: You Snake We Snake
     deadline: 2026-06-22
     description: "Make a game inspired by the classic Snake game and get a 45-inch snake plush!"
