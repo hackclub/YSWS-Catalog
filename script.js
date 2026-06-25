@@ -356,6 +356,7 @@ function createProgramCard(program) {
     const isNew = program.opens && (new Date() - new Date(program.opens)) < 7 * 24 * 60 * 60 * 1000;
     const encodedProgram = encodeURIComponent(JSON.stringify(program));
     const polygonClass = program.name === 'Polygon' ? 'polygon-card' : '';
+    const pixlClass = program.name === 'Pixl' ? 'pixl-card' : '';
 
     const isCompletedByUser = completedPrograms.has(program.name);
     const completionButtonClass = isCompletedByUser ? 'completed' : '';
@@ -464,9 +465,23 @@ function createProgramCard(program) {
     const kintsugiBg = program.name == 'Kintsugi' ? `<img src="logos/Kintsugi-bg.jpg" alt="Kintsugi Background" class="kintsugi-bg">` : '';
     const kintsugiMascot = program.name == 'Kintsugi' ? `<img src="logos/Kintsugi-mascot.jpg" alt="Kintsugi Mascot" class="kintsugi-mascot">` : '';
 
+    const pixlVideo = program.name === 'Pixl' ? `
+        <video class="pixl-video-bg" autoplay muted loop playsinline aria-hidden="true">
+            <source src="https://cdn.hackclub.com/019eee3a-c90e-79da-a7cc-9251883cfb5a/hero-bg.mp4" type="video/mp4">
+        </video>
+    ` : '';
+
+    const displayDescription = program.name === 'Pixl'
+        ? program.description
+            .replace('open world', '<span class="pixl-highlight">open world</span>')
+            .replace('sidequests', '<span class="pixl-highlight">sidequests</span>')
+            .replace('niche prizes', '<span class="pixl-highlight">niche prizes</span>')
+        : program.description;
+
 
     return `
-        <div class="card program-card ${opensClass} ${KintsugiClass} ${forgeClass} ${macondoClass} ${horizonsClass} ${slushiesClass} ${blueprintClass} ${accelerateClass} ${baubleClass} ${meowClass} ${woofClass} ${pxlClass} ${wackyFilesClass} ${flavortownClass} ${jusstudyClass} ${rebootClass} ${kitlabClass} ${sleepoverClass} ${stasisClass} ${coeurClass} ${remixedClass} ${hctgClass} ${hackahomeClass} ${flaggedClass} ${raspapiClass} ${beestClass} ${alchemizeClass} ${hackanomousClass} ${shipyardClass} ${stardanceClass} ${keebClass} ${insertCoinClass} ${polygonClass}" data-program="${encodedProgram}" data-name="${program.name}">
+        <div class="card program-card ${opensClass} ${KintsugiClass} ${forgeClass} ${macondoClass} ${horizonsClass} ${slushiesClass} ${blueprintClass} ${accelerateClass} ${baubleClass} ${meowClass} ${woofClass} ${pxlClass} ${wackyFilesClass} ${flavortownClass} ${jusstudyClass} ${rebootClass} ${kitlabClass} ${sleepoverClass} ${stasisClass} ${coeurClass} ${remixedClass} ${hctgClass} ${hackahomeClass} ${flaggedClass} ${raspapiClass} ${beestClass} ${alchemizeClass} ${hackanomousClass} ${shipyardClass} ${stardanceClass} ${keebClass} ${insertCoinClass} ${polygonClass} ${pixlClass}" data-program="${encodedProgram}" data-name="${program.name}">
+            ${pixlVideo}
             ${macondoAssets}
             ${horizonsAssets}
             ${shipyardAssets}
@@ -508,7 +523,7 @@ ${isNew ? '<span class="new-badge">NEW</span>' : ''}
                    
                     </div>
             </div>
-            <p>${program.description}</p>
+            <p>${displayDescription}</p>
             <div class="program-deadline ${deadlineClass}">${deadlineText}</div>
             ${participantsText}
             <div class="program-footer">

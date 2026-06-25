@@ -7,9 +7,9 @@
     "generate": "node generate-json.js && node generate-rss.js",
     "validate": "node validateDates.js"
   },
-  "dependencies": {
-    "js-yaml": "^4.1.1"
-  },
   "author": "Hack Club",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "js-yaml": "^5.1.0"
+  }
 }

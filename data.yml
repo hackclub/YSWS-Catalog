@@ -1669,3 +1669,9 @@ drafts:
       - Form a clan with your friends
       - Go to war with your clan or alone
       - Buy something from the shop
+  - name: Pixl
+    description: Explore the open world, meet characters, make hardware and software sidequests for them! Get niche prizes and stuff according to the sidequests!
+    website: https://pixl.rsvp
+    slack: https://hackclub.enterprise.slack.com/archives/C0B5P4N0WHH
+    slackChannel: "#pixl"
+    status: draft
