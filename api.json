@@ -1,6 +1,16 @@
 {
   "limitedTime": [
     {
+      "name": "BLARE",
+      "deadline": "2026-07-09T00:00:00.000Z",
+      "description": "Build your own special alarm clock, get the parts to make it and a custom Hack Club pillowcase!",
+      "website": "https://blare.hackclub.com",
+      "slack": "https://hackclub.enterprise.slack.com/archives/C0BC47NPFT9",
+      "slackChannel": "#blare",
+      "status": "active",
+      "opens": "2026-06-25T00:00:00.000Z"
+    },
+    {
       "name": "Calculate",
       "deadline": "2026-07-18T00:00:00.000Z",
       "description": "Make a project involving numbers, get a calculator + stickersheet!",
