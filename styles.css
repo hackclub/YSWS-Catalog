@@ -6383,6 +6383,52 @@ footer {
 
 } */
 
+.program-card.blare-card {
+  background: #151616;
+  border: 2px solid #ff4444 !important;
+  color: #ffffff !important;
+  overflow: hidden;
+  position: relative;
+}
+
+.program-card.blare-card .program-header,
+.program-card.blare-card p,
+.program-card.blare-card .program-deadline,
+.program-card.blare-card .program-footer {
+  position: relative;
+  z-index: 2;
+}
+
+.program-card.blare-card p,
+.program-card.blare-card .program-deadline {
+  color: #ffffff;
+}
+
+.program-card.blare-card .program-links a {
+  color: #ffaaaa !important;
+}
+
+.program-card.blare-card .program-links a:hover {
+  color: #ffffff !important;
+}
+
+.program-card.blare-card:hover {
+  border-color: #ff8888 !important;
+  box-shadow: 0 22px 38px rgba(255, 68, 68, 0.3);
+}
+
+.blare-wordmark {
+  width: min(200px, calc(100% - 88px));
+  height: auto;
+  display: block;
+}
+
+
+
+
+
+
+
 .program-card.keeb-card {
   background:
     linear-gradient(165deg,

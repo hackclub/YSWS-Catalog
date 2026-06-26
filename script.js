@@ -356,6 +356,7 @@ function createProgramCard(program) {
     const isNew = program.opens && (new Date() - new Date(program.opens)) < 7 * 24 * 60 * 60 * 1000;
     const encodedProgram = encodeURIComponent(JSON.stringify(program));
     const polygonClass = program.name === 'Polygon' ? 'polygon-card' : '';
+    const blareClass = program.name === 'BLARE' ? 'blare-card' : '';
     const pixlClass = program.name === 'Pixl' ? 'pixl-card' : '';
 
     const isCompletedByUser = completedPrograms.has(program.name);
@@ -480,7 +481,7 @@ function createProgramCard(program) {
 
 
     return `
-        <div class="card program-card ${opensClass} ${KintsugiClass} ${forgeClass} ${macondoClass} ${horizonsClass} ${slushiesClass} ${blueprintClass} ${accelerateClass} ${baubleClass} ${meowClass} ${woofClass} ${pxlClass} ${wackyFilesClass} ${flavortownClass} ${jusstudyClass} ${rebootClass} ${kitlabClass} ${sleepoverClass} ${stasisClass} ${coeurClass} ${remixedClass} ${hctgClass} ${hackahomeClass} ${flaggedClass} ${raspapiClass} ${beestClass} ${alchemizeClass} ${hackanomousClass} ${shipyardClass} ${stardanceClass} ${keebClass} ${insertCoinClass} ${polygonClass} ${pixlClass}" data-program="${encodedProgram}" data-name="${program.name}">
+        <div class="card program-card ${opensClass} ${KintsugiClass} ${forgeClass} ${macondoClass} ${horizonsClass} ${slushiesClass} ${blueprintClass} ${accelerateClass} ${baubleClass} ${meowClass} ${woofClass} ${pxlClass} ${wackyFilesClass} ${flavortownClass} ${jusstudyClass} ${rebootClass} ${kitlabClass} ${sleepoverClass} ${stasisClass} ${coeurClass} ${remixedClass} ${hctgClass} ${hackahomeClass} ${flaggedClass} ${raspapiClass} ${beestClass} ${alchemizeClass} ${hackanomousClass} ${shipyardClass} ${stardanceClass} ${keebClass} ${insertCoinClass} ${polygonClass} ${pixlClass} ${blareClass}" data-program="${encodedProgram}" data-name="${program.name}">
             ${pixlVideo}
             ${macondoAssets}
             ${horizonsAssets}
@@ -513,7 +514,10 @@ function createProgramCard(program) {
                                        ? '<img src ="./logos/polygon_logo.png" alt="polygon" class= "polygon-wordmark">'
                                        : program.name === 'Calculate'
                                        ? '<img src="logos/calculate.PNG" alt="calculate" class="calculate-wordmark">'
+                                        : program.name === 'BLARE'
+                                            ? '<img src="logos/Blare-logo.png" alt="Blare" class="blare-wordmark">'
                                         : `<h3>${program.name}</h3>`}
+                                            
                 <div class="status-container">
                     <span class="user-completed-badge ${isCompletedByUser ? 'visible' : ''}">
                         <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
