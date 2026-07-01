@@ -1,5 +1,11 @@
 ---
 limitedTime:
+  - name: Alchemize
+    description: Make one of the 3 theme-based projects and earn Potion Mix to get the prizes you choose
+    website: https://alchemize.hackclub.com
+    slack: https://hackclub.enterprise.slack.com/archives/C0ASY6R552R
+    slackChannel: "#alchemize"
+    status: active
   - name: BLARE
     deadline: 2026-07-09
     description: "Build your own special alarm clock, get the parts to make it and a custom Hack Club pillowcase!"
@@ -1364,17 +1370,6 @@ drafts:
     slack: https://hackclub.enterprise.slack.com/archives/C0AHPG4LPUM
     website: https://hackanomous.vercel.app/
     status: draft
-  - name: Alchemize
-    description: Make general projects, or one of the 3 theme-based projects and earn Potion Mix to get the prizes you choose
-    website: https://alchemize-ysws.vercel.app
-    slack: https://hackclub.enterprise.slack.com/archives/C0ASY6R552R
-    slackChannel: "#alchemize"
-    status: draft
-    steps:
-      - Make Projects and Track Hours with Hackatime
-      - Earn Currency for the specific theme, or earn Potion Mix directly from shipping a general project
-      - Convert the Theme Currency to Potion Mix(with a fun little bonus if you convert them together)
-      - Get items from the Dynamic Shop, so you get to add your own item to the shop.
   - name: Jus'STUDY
     description: Get study stuff by shipping projects that help you and others study!
     website: https://jus-study.hackclub.com/
