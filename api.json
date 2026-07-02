@@ -28,6 +28,15 @@
       "opens": "2026-06-25"
     },
     {
+      "name": "ArcadAi",
+      "description": "Learn to make a Retro Arcade Game with AI and Get a Reward for Shipping It",
+      "website": "https://arcadai.hackclub.com/",
+      "slack": "https://hackclub.slack.com/archives/C0B72VAHXHB",
+      "slackChannel": "#arcadai",
+      "status": "active",
+      "opens": "2026-6-2"
+    },
+    {
       "name": "Calculate",
       "deadline": "2026-07-18",
       "description": "Make a project involving numbers, get a calculator + stickersheet!",
@@ -1641,14 +1650,6 @@
     }
   ],
   "drafts": [
-    {
-      "name": "ArcadAi",
-      "description": "Build a Retro Arcade Game with AI and Get Rewarded for Shipping It",
-      "website": "https://arcade-ysws.vercel.app/",
-      "slack": "https://hackclub.slack.com/archives/C0B72VAHXHB",
-      "slackChannel": "#arcadAi",
-      "status": "Draft"
-    },
     {
       "name": "Kintsugi",
       "description": "Build a project that solves a real-world problem, get Reward based on the kintsugi and Japanese theme!",
