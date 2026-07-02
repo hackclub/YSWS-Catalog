@@ -4770,6 +4770,16 @@ footer {
   margin-right: 8px;
 }
 
+.treasure-hunt-wordmark {
+  image-rendering: pixelated;
+  width: min(240px, calc(90% - 88px));
+  height: auto;
+  display: block;
+  position: relative;
+  z-index: 2;
+  margin-right: 8px;
+}
+
 .hero-card-icon {
   display: flex;
   align-items: center;
@@ -6415,6 +6425,17 @@ footer {
 .program-card.blare-card:hover {
   border-color: #ff8888 !important;
   box-shadow: 0 22px 38px rgba(255, 68, 68, 0.3);
+}
+
+.program-card.treasure-hunt-card {
+  border: 2px solid #d6a437 !important;
+  position: relative;
+  overflow: hidden;
+}
+
+.program-card.treasure-hunt-card:hover {
+  border-color: #f0c65f !important;
+  box-shadow: 0 22px 38px rgba(214, 164, 55, 0.25);
 }
 
 .blare-wordmark {

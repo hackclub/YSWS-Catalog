@@ -1,5 +1,12 @@
 ---
 limitedTime:
+  - name: Treasure Hunt
+    deadline: 2026-08-31
+    description: Complete 7 journeys to earn Gadgets & Merch!
+    website: https://treasure.hackclub.com
+    slack: https://hackclub.enterprise.slack.com/archives/C0APFPMDETD
+    slackChannel: "#treasure-hunt-ysws"
+    status: active
   - name: Alchemize
     description: Make one of the 3 theme-based projects and earn Potion Mix to get the prizes you choose
     website: https://alchemize.hackclub.com
