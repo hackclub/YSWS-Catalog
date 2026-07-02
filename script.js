@@ -356,6 +356,7 @@ function createProgramCard(program) {
     const isNew = program.opens && (new Date() - new Date(program.opens)) < 7 * 24 * 60 * 60 * 1000;
     const encodedProgram = encodeURIComponent(JSON.stringify(program));
     const polygonClass = program.name === 'Polygon' ? 'polygon-card' : '';
+    const treasureHuntClass = program.name === 'Treasure Hunt' ? 'treasure-hunt-card' : '';
     const blareClass = program.name === 'BLARE' ? 'blare-card' : '';
     const pixlClass = program.name === 'Pixl' ? 'pixl-card' : '';
 
@@ -481,7 +482,7 @@ function createProgramCard(program) {
 
 
     return `
-        <div class="card program-card ${opensClass} ${KintsugiClass} ${forgeClass} ${macondoClass} ${horizonsClass} ${slushiesClass} ${blueprintClass} ${accelerateClass} ${baubleClass} ${meowClass} ${woofClass} ${pxlClass} ${wackyFilesClass} ${flavortownClass} ${jusstudyClass} ${rebootClass} ${kitlabClass} ${sleepoverClass} ${stasisClass} ${coeurClass} ${remixedClass} ${hctgClass} ${hackahomeClass} ${flaggedClass} ${raspapiClass} ${beestClass} ${alchemizeClass} ${hackanomousClass} ${shipyardClass} ${stardanceClass} ${keebClass} ${insertCoinClass} ${polygonClass} ${pixlClass} ${blareClass}" data-program="${encodedProgram}" data-name="${program.name}">
+        <div class="card program-card ${opensClass} ${KintsugiClass} ${forgeClass} ${macondoClass} ${horizonsClass} ${slushiesClass} ${blueprintClass} ${accelerateClass} ${baubleClass} ${meowClass} ${woofClass} ${pxlClass} ${wackyFilesClass} ${flavortownClass} ${jusstudyClass} ${rebootClass} ${kitlabClass} ${sleepoverClass} ${stasisClass} ${coeurClass} ${remixedClass} ${hctgClass} ${hackahomeClass} ${flaggedClass} ${raspapiClass} ${beestClass} ${alchemizeClass} ${hackanomousClass} ${shipyardClass} ${stardanceClass} ${keebClass} ${insertCoinClass} ${polygonClass} ${treasureHuntClass} ${pixlClass} ${blareClass}" data-program="${encodedProgram}" data-name="${program.name}">
             ${pixlVideo}
             ${macondoAssets}
             ${horizonsAssets}
@@ -512,6 +513,8 @@ function createProgramCard(program) {
                                     ? '<img src="logos/InsertCoinLogo.png" alt="Insert Coin" class="insert-coin-wordmark">'
                                     : program.name === 'Polygon'
                                        ? '<img src ="./logos/polygon_logo.png" alt="polygon" class= "polygon-wordmark">'
+                                       : program.name === 'Treasure Hunt'
+                                       ? '<img src="logos/treasure%20hunt%20logo.webp" alt="Treasure Hunt" class="treasure-hunt-wordmark">'
                                        : program.name === 'Calculate'
                                        ? '<img src="logos/calculate.PNG" alt="calculate" class="calculate-wordmark">'
                                         : program.name === 'BLARE'

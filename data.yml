@@ -1,5 +1,12 @@
 ---
 limitedTime:
+  - name: Treasure Hunt
+    deadline: 2026-08-31
+    description: Complete 7 journeys to earn Gadgets & Merch!
+    website: https://treasure.hackclub.com
+    slack: https://hackclub.enterprise.slack.com/archives/C0APFPMDETD
+    slackChannel: "#treasure-hunt-ysws"
+    status: active
   - name: Alchemize
     description: Make one of the 3 theme-based projects and earn Potion Mix to get the prizes you choose
     website: https://alchemize.hackclub.com
@@ -14,6 +21,13 @@ limitedTime:
     slackChannel: "#blare"
     status: active
     opens: 2026-06-25
+  - name: ArcadAi 
+    description: Learn to make a Retro Arcade Game with AI and Get a Reward for Shipping It
+    website: https://arcadai.hackclub.com/
+    slack: https://hackclub.slack.com/archives/C0B72VAHXHB
+    slackChannel: "#arcadai"
+    status: active
+    opens: 2026-6-2
   - name: Calculate
     deadline: 2026-07-18
     description: "Make a project involving numbers, get a calculator + stickersheet!"
