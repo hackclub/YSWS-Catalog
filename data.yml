@@ -21,6 +21,16 @@ limitedTime:
     slackChannel: "#blare"
     status: active
     opens: 2026-06-25
+  - name: Thing on Desk
+    deadline: 2026-07-17T21:00:00Z
+    description: Create a thing for your desk and win some cool treats for your desk. Beginners welcome!
+    website: https://thingondesk.hackclub.com/
+    slack: https://hackclub.slack.com/channels/ysws-thingondesk
+    slackChannel: "#ysws-thingondesk"
+    status: active
+    details:
+      - Online-only
+      - "Project types: Electronics, Websites, Other"
   - name: ArcadAi 
     description: Learn to make a Retro Arcade Game with AI and Get a Reward for Shipping It
     website: https://arcadai.hackclub.com/
