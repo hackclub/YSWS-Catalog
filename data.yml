@@ -1,5 +1,12 @@
 ---
 limitedTime:
+  - name: Premiere
+    deadline: 2026-07-17
+    description: Make a trailer to your game and get prizes for doing it.
+    website: https://premiere.hackclub.com
+    slack: https://hackclub.enterprise.slack.com/archives/C0APJFR4M4L
+    slackChannel: "#premiere"
+    status: active
   - name: Treasure Hunt
     deadline: 2026-08-31
     description: Complete 7 journeys to earn Gadgets & Merch!
