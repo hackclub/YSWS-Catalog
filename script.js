@@ -359,6 +359,7 @@ function createProgramCard(program) {
     const treasureHuntClass = program.name === 'Treasure Hunt' ? 'treasure-hunt-card' : '';
     const blareClass = program.name === 'BLARE' ? 'blare-card' : '';
     const pixlClass = program.name === 'Pixl' ? 'pixl-card' : '';
+    const anvilClass = program.name === 'Anvil' ? 'anvil-card' : '';
 
     const isCompletedByUser = completedPrograms.has(program.name);
     const completionButtonClass = isCompletedByUser ? 'completed' : '';
@@ -482,7 +483,7 @@ function createProgramCard(program) {
 
 
     return `
-        <div class="card program-card ${opensClass} ${KintsugiClass} ${forgeClass} ${macondoClass} ${horizonsClass} ${slushiesClass} ${blueprintClass} ${accelerateClass} ${baubleClass} ${meowClass} ${woofClass} ${pxlClass} ${wackyFilesClass} ${flavortownClass} ${jusstudyClass} ${rebootClass} ${kitlabClass} ${sleepoverClass} ${stasisClass} ${coeurClass} ${remixedClass} ${hctgClass} ${hackahomeClass} ${flaggedClass} ${raspapiClass} ${beestClass} ${alchemizeClass} ${hackanomousClass} ${shipyardClass} ${stardanceClass} ${keebClass} ${insertCoinClass} ${polygonClass} ${treasureHuntClass} ${pixlClass} ${blareClass}" data-program="${encodedProgram}" data-name="${program.name}">
+        <div class="card program-card ${opensClass} ${KintsugiClass} ${forgeClass} ${macondoClass} ${horizonsClass} ${slushiesClass} ${blueprintClass} ${accelerateClass} ${baubleClass} ${meowClass} ${woofClass} ${pxlClass} ${wackyFilesClass} ${flavortownClass} ${jusstudyClass} ${rebootClass} ${kitlabClass} ${sleepoverClass} ${stasisClass} ${coeurClass} ${remixedClass} ${hctgClass} ${hackahomeClass} ${flaggedClass} ${raspapiClass} ${beestClass} ${alchemizeClass} ${hackanomousClass} ${shipyardClass} ${stardanceClass} ${keebClass} ${insertCoinClass} ${polygonClass} ${treasureHuntClass} ${pixlClass} ${blareClass} ${anvilClass}" data-program="${encodedProgram}" data-name="${program.name}">
             ${pixlVideo}
             ${macondoAssets}
             ${horizonsAssets}
@@ -519,6 +520,8 @@ function createProgramCard(program) {
                                        ? '<img src="logos/calculate.PNG" alt="calculate" class="calculate-wordmark">'
                                         : program.name === 'BLARE'
                                             ? '<img src="logos/Blare-logo.png" alt="Blare" class="blare-wordmark">'
+                                        : program.name === 'Anvil'
+                                            ? '<img src="logos/anvil-logo.png" alt="Anvil" class="anvil-wordmark">'
                                         : `<h3>${program.name}</h3>`}
                                             
                 <div class="status-container">
@@ -1544,6 +1547,12 @@ document.addEventListener('DOMContentLoaded', () => {
             // Special handling for Stardance card - redirect instead of opening modal
             if (program.name === 'Stardance') {
                 window.location.href = 'https://stardance.hackclub.com/ysws-catalog';
+                return;
+            }
+
+            // Anvil - open the program website directly instead of the modal
+            if (program.name === 'Anvil' && program.website) {
+                window.location.href = program.website;
                 return;
             }
 

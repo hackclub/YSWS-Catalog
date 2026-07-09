@@ -6494,6 +6494,62 @@ footer {
   display: block;
 }
 
+.program-card.anvil-card {
+  background:
+    linear-gradient(165deg,
+      rgba(16, 11, 13, 0.02) 0%,
+      rgba(30, 15, 20, 0.1) 100%),
+    url("logos/anvil-bg.gif") center/cover no-repeat;
+  border: 2px solid #ec3750 !important;
+  color: #ec3750 !important;
+  overflow: hidden;
+  position: relative;
+}
+
+.program-card.anvil-card .program-header,
+.program-card.anvil-card p,
+.program-card.anvil-card .program-deadline,
+.program-card.anvil-card .program-footer {
+  position: relative;
+  z-index: 2;
+}
+
+.program-card.anvil-card p,
+.program-card.anvil-card .program-deadline {
+  color: #f5d0d6;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.9);
+}
+
+.program-card.anvil-card .program-links a,
+.program-card.anvil-card .program-status {
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.9);
+}
+
+.program-card.anvil-card .anvil-wordmark {
+  filter: drop-shadow(0 1px 5px rgba(0, 0, 0, 0.85));
+}
+
+.program-card.anvil-card .program-links a {
+  color: #ff8095 !important;
+}
+
+.program-card.anvil-card .program-links a:hover {
+  color: #ffffff !important;
+}
+
+.program-card.anvil-card:hover {
+  border-color: #ff5d75 !important;
+  box-shadow: 0 22px 38px rgba(236, 55, 80, 0.3);
+}
+
+.anvil-wordmark {
+  width: min(140px, calc(100% - 88px));
+  height: auto;
+  display: block;
+  position: relative;
+  z-index: 2;
+}
+
 .program-card.insert-coin-card {
   background:
     linear-gradient(165deg,
