@@ -355,6 +355,46 @@ function formatUpdatedParticipants(name) {
   return `<span>${count}</span> participant${count !== 1 ? "s" : ""}`;
 }
 
+function setCountdownTimer(deadlineStr, yswsStatus, countDownId) {
+  let days = 0,
+    hours = 0,
+    minutes = 0,
+    seconds = 0,
+    isExpired = false;
+
+  if (yswsStatus === "draft" || !deadlineStr) return;
+
+  const end = new Date(deadlineStr);
+  setInterval(() => {
+    const now = new Date();
+    const timeRemaining = end - now;
+    if (timeRemaining <= 0 || yswsStatus === "ended") {
+      days = 0;
+      hours = 0;
+      minutes = 0;
+      seconds = 0;
+      isExpired = true;
+    } else {
+      days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
+      hours = Math.floor(
+        (timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60),
+      );
+      minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
+      seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+      isExpired = false;
+    }
+
+    const counterHtml = `
+  <p>${days}:${hours}:${minutes}:${seconds}</p>
+  `;
+
+    const countDownTimerEl = document.getElementById(countDownId);
+    if (countDownTimerEl) {
+      countDownTimerEl.innerHTML = counterHtml;
+    }
+  }, 1000);
+}
+
 function createProgramCard(program) {
   const deadlineText = formatDeadline(
     program.deadline,
@@ -604,6 +644,10 @@ function createProgramCard(program) {
     `
       : "";
 
+  const countDownId = `${program.name.toLowerCase().replace(" ", "")}-countdown`;
+
+  setCountdownTimer(program.deadline, program.status, countDownId);
+
   const displayDescription =
     program.name === "Pixl"
       ? program.description
@@ -675,7 +719,7 @@ ${isNew ? '<span class="new-badge">NEW</span>' : ""}
                     </div>
             </div>
             <p>${displayDescription}</p>
-            <p>Add countdown timer here</p>
+            <div id="${countDownId}"></div>
             <div class="program-deadline ${deadlineClass}">${deadlineText}</div>
             ${participantsText}
             <div class="program-footer">
