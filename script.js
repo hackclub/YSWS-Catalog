@@ -362,13 +362,13 @@ function setCountdownTimer(deadlineStr, yswsStatus, countDownId) {
     seconds = 0,
     isExpired = false;
 
-  if (yswsStatus === "draft" || !deadlineStr) return;
+  if (yswsStatus === "draft" || yswsStatus === "ended" || !deadlineStr) return;
 
   const end = new Date(deadlineStr);
-  setInterval(() => {
+  const interval = setInterval(() => {
     const now = new Date();
     const timeRemaining = end - now;
-    if (timeRemaining <= 0 || yswsStatus === "ended") {
+    if (timeRemaining <= 0) {
       days = 0;
       hours = 0;
       minutes = 0;
@@ -385,13 +385,32 @@ function setCountdownTimer(deadlineStr, yswsStatus, countDownId) {
     }
 
     const counterHtml = `
-  <p>${days}:${hours}:${minutes}:${seconds}</p>
+    <div class="countdown-container">
+        ${[
+          { value: days, label: "days" },
+          { value: hours, label: "hours" },
+          { value: minutes, label: "minutes" },
+          { value: seconds, label: "seconds" },
+        ]
+          .map(
+            (count) => `
+            <div class="countdown-segment programs-container glassmorphic">
+            <h1 style="font-weight: bold;">${count.value}</h1>
+            <p style="color: #ec3750;">${count.label.toUpperCase()}</p>
+            </div>
+            `,
+          )
+          .map((html) => html.trim())
+          .join("")}
+    </div>
   `;
 
     const countDownTimerEl = document.getElementById(countDownId);
     if (countDownTimerEl) {
       countDownTimerEl.innerHTML = counterHtml;
     }
+
+    if (isExpired) clearInterval(interval);
   }, 1000);
 }
 
@@ -644,7 +663,7 @@ function createProgramCard(program) {
     `
       : "";
 
-  const countDownId = `${program.name.toLowerCase().replace(" ", "")}-countdown`;
+  const countDownId = `${program.name.toLowerCase().trim().replace(" ", "")}-countdown`;
 
   setCountdownTimer(program.deadline, program.status, countDownId);
 
@@ -719,8 +738,8 @@ ${isNew ? '<span class="new-badge">NEW</span>' : ""}
                     </div>
             </div>
             <p>${displayDescription}</p>
-            <div id="${countDownId}"></div>
             <div class="program-deadline ${deadlineClass}">${deadlineText}</div>
+            <div id="${countDownId}"></div>
             ${participantsText}
             <div class="program-footer">
                 <div class="program-links">
