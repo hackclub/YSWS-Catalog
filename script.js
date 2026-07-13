@@ -6,6 +6,8 @@ let participants = [];
 let initialParticipants = new Map();
 let completedPrograms = new Set();
 
+let modalCountdownTimer;
+
 function loadCompletedPrograms() {
   const saved = localStorage.getItem("completedPrograms");
   if (saved) {
@@ -355,12 +357,31 @@ function formatUpdatedParticipants(name) {
   return `<span>${count}</span> participant${count !== 1 ? "s" : ""}`;
 }
 
-function setCountdownTimer(deadlineStr, yswsStatus, countDownId) {
+function clearCountdownTimer(
+  countDownId,
+) {
+  if (modalCountdownTimer) clearInterval(modalCountdownTimer);
+
+  const countDownTimerEl = document.getElementById(countDownId);
+  if (countDownTimerEl) {
+    countDownTimerEl.innerHTML = "";
+  }
+
+}
+function setCountdownTimer(
+  deadlineStr,
+  yswsStatus,
+  countDownId,
+  isModal = false,
+) {
   let days = 0,
     hours = 0,
     minutes = 0,
     seconds = 0,
     isExpired = false;
+  if (modalCountdownTimer) {
+    clearCountdownTimer(countDownId);
+};
 
   if (yswsStatus === "draft" || yswsStatus === "ended" || !deadlineStr) return;
 
@@ -412,6 +433,8 @@ function setCountdownTimer(deadlineStr, yswsStatus, countDownId) {
 
     if (isExpired) clearInterval(interval);
   }, 1000);
+
+  if (isModal) modalCountdownTimer = interval;
 }
 
 function createProgramCard(program) {
@@ -792,6 +815,7 @@ function navigateModal(direction) {
   currentProgramIndex =
     (currentProgramIndex + direction + visiblePrograms.length) %
     visiblePrograms.length;
+
   openModal(visiblePrograms[currentProgramIndex]);
   updatePositionIndicator();
 }
@@ -865,6 +889,8 @@ function openModal(program) {
   const deadlineClass = getDeadlineClass(program.deadline);
   deadlineElement.className = `program-deadline ${deadlineClass}`;
   deadlineElement.textContent = deadlineText;
+
+  setCountdownTimer(program.deadline, program.status, "modal-countdown", true);
 
   const defaultSteps = [
     program.website
