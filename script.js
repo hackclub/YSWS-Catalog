@@ -491,6 +491,7 @@ function createProgramCard(program) {
   const pixlClass = program.name === "Pixl" ? "pixl-card" : "";
   const anvilClass = program.name === "Anvil" ? "anvil-card" : "";
   const braizeClass = program.name === "Braize" ? "braize-card" : "";
+  const surviveClass = program.name === "Survive" ? "survive-card" : "";
 
   const isCompletedByUser = completedPrograms.has(program.name);
   const completionButtonClass = isCompletedByUser ? "completed" : "";
@@ -560,6 +561,13 @@ function createProgramCard(program) {
     program.name === "Horizons"
       ? `
         <img src="logos/horizons-bg.webp" alt="" class="horizons-background" aria-hidden="true">
+    `
+      : "";
+
+  const surviveAssets =
+    program.name === "Survive"
+      ? `
+        <img src="logos/survive-bg.png" alt="" class="survive-background" aria-hidden="true">
     `
       : "";
 
@@ -706,10 +714,11 @@ function createProgramCard(program) {
       : program.description;
 
   return `
-        <div class="card program-card ${opensClass} ${KintsugiClass} ${forgeClass} ${macondoClass} ${horizonsClass} ${slushiesClass} ${blueprintClass} ${accelerateClass} ${baubleClass} ${meowClass} ${woofClass} ${pxlClass} ${wackyFilesClass} ${flavortownClass} ${jusstudyClass} ${rebootClass} ${kitlabClass} ${sleepoverClass} ${stasisClass} ${coeurClass} ${remixedClass} ${hctgClass} ${hackahomeClass} ${flaggedClass} ${raspapiClass} ${beestClass} ${alchemizeClass} ${hackanomousClass} ${shipyardClass} ${stardanceClass} ${keebClass} ${insertCoinClass} ${polygonClass} ${treasureHuntClass} ${pixlClass} ${blareClass} ${anvilClass} ${braizeClass}" data-program="${encodedProgram}" data-name="${program.name}">
+        <div class="card program-card ${opensClass} ${KintsugiClass} ${forgeClass} ${macondoClass} ${horizonsClass} ${slushiesClass} ${blueprintClass} ${accelerateClass} ${baubleClass} ${meowClass} ${woofClass} ${pxlClass} ${wackyFilesClass} ${flavortownClass} ${jusstudyClass} ${rebootClass} ${kitlabClass} ${sleepoverClass} ${stasisClass} ${coeurClass} ${remixedClass} ${hctgClass} ${hackahomeClass} ${flaggedClass} ${raspapiClass} ${beestClass} ${alchemizeClass} ${hackanomousClass} ${shipyardClass} ${stardanceClass} ${keebClass} ${insertCoinClass} ${polygonClass} ${treasureHuntClass} ${pixlClass} ${blareClass} ${anvilClass} ${braizeClass} ${surviveClass}" data-program="${encodedProgram}" data-name="${program.name}">
             ${pixlVideo}
             ${macondoAssets}
             ${horizonsAssets}
+            ${surviveAssets}
             ${shipyardAssets}
             ${stardanceAssets}
             ${kitlabLogo}
@@ -2064,16 +2073,6 @@ window.addEventListener("DOMContentLoaded", () => {
   setupGlobalStatsObserver();
   loadGlobalStats();
 });
-
-// const timelineContainer = document.getElementById("timeline-container");
-// const dateContainer = document.getElementById("date-container");
-
-// if (timelineContainer && dateContainer)
-// {
-//     timelineContainer.addEventListener('scroll', () => {
-//         dateContainer.style.transform = `translateX(${timelineContainer.scrollLeft}px)`
-//     });
-// }
 
 const track = document.querySelector(".marquee-track");
 let x = 0;
