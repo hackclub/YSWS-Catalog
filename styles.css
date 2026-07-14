@@ -6853,3 +6853,74 @@ h2.section-heading::before {
   border-color: #f7c14d !important;
   box-shadow: 0 22px 38px rgba(247, 193, 77, 0.35);
 }
+
+/* Survive card styling */
+.program-card.survive-card {
+  background: linear-gradient(165deg, #2b2018 0%, #1a140f 100%) !important;
+  background-image:
+    linear-gradient(165deg, rgba(43, 32, 24, 0.75) 0%, rgba(26, 20, 15, 0.85) 100%),
+    url("logos/survive-campfire.png") !important;
+  background-size: cover !important;
+  background-position: center !important;
+  border: 2px solid #c9793a !important;
+  box-shadow: 6px 6px 0px #4a3320 !important;
+  border-radius: 20px !important;
+  color: #f5e6d0 !important;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s !important;
+}
+
+.program-card.survive-card:hover {
+  transform: translate(-2px, -2px) !important;
+  box-shadow: 10px 10px 0px #c9793a !important;
+  border-color: #e0954f !important;
+}
+
+.program-card.survive-card h3 {
+  color: #f5e6d0 !important;
+  font-weight: 800 !important;
+  letter-spacing: -0.3px;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+.program-card.survive-card p,
+.program-card.survive-card .program-participants {
+  color: #d9c4a3 !important;
+}
+
+.program-card.survive-card .program-deadline {
+  color: #c9793a !important;
+}
+
+.program-card.survive-card .program-status {
+  color: #1a140f !important;
+  border: 2px solid #c9793a !important;
+  border-radius: 10px !important;
+  font-weight: 800 !important;
+}
+
+.program-card.survive-card .status-active {
+  background: #6b8f4e !important;
+  color: #f5e6d0 !important;
+}
+
+.program-card.survive-card .program-links a {
+  color: #e0954f !important;
+  font-weight: 700 !important;
+  text-decoration: underline !important;
+  text-underline-offset: 3px !important;
+}
+
+.program-card.survive-card .program-links a:hover {
+  color: #f5e6d0 !important;
+}
+
+.program-card.survive-card .program-completion-toggle {
+  position: relative;
+  z-index: 4;
+  background: #1a140f !important;
+  border: 2px solid #c9793a !important;
+  color: #f5e6d0 !important;
+}
+
