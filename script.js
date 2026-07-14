@@ -357,16 +357,13 @@ function formatUpdatedParticipants(name) {
   return `<span>${count}</span> participant${count !== 1 ? "s" : ""}`;
 }
 
-function clearCountdownTimer(
-  countDownId,
-) {
+function clearCountdownTimer(countDownId) {
   if (modalCountdownTimer) clearInterval(modalCountdownTimer);
 
   const countDownTimerEl = document.getElementById(countDownId);
   if (countDownTimerEl) {
     countDownTimerEl.innerHTML = "";
   }
-
 }
 function setCountdownTimer(
   deadlineStr,
@@ -381,7 +378,7 @@ function setCountdownTimer(
     isExpired = false;
   if (modalCountdownTimer) {
     clearCountdownTimer(countDownId);
-};
+  }
 
   if (yswsStatus === "draft" || yswsStatus === "ended" || !deadlineStr) return;
 
@@ -493,6 +490,7 @@ function createProgramCard(program) {
   const blareClass = program.name === "BLARE" ? "blare-card" : "";
   const pixlClass = program.name === "Pixl" ? "pixl-card" : "";
   const anvilClass = program.name === "Anvil" ? "anvil-card" : "";
+  const braizeClass = program.name === "Braize" ? "braize-card" : "";
 
   const isCompletedByUser = completedPrograms.has(program.name);
   const completionButtonClass = isCompletedByUser ? "completed" : "";
@@ -708,7 +706,7 @@ function createProgramCard(program) {
       : program.description;
 
   return `
-        <div class="card program-card ${opensClass} ${KintsugiClass} ${forgeClass} ${macondoClass} ${horizonsClass} ${slushiesClass} ${blueprintClass} ${accelerateClass} ${baubleClass} ${meowClass} ${woofClass} ${pxlClass} ${wackyFilesClass} ${flavortownClass} ${jusstudyClass} ${rebootClass} ${kitlabClass} ${sleepoverClass} ${stasisClass} ${coeurClass} ${remixedClass} ${hctgClass} ${hackahomeClass} ${flaggedClass} ${raspapiClass} ${beestClass} ${alchemizeClass} ${hackanomousClass} ${shipyardClass} ${stardanceClass} ${keebClass} ${insertCoinClass} ${polygonClass} ${treasureHuntClass} ${pixlClass} ${blareClass} ${anvilClass}" data-program="${encodedProgram}" data-name="${program.name}">
+        <div class="card program-card ${opensClass} ${KintsugiClass} ${forgeClass} ${macondoClass} ${horizonsClass} ${slushiesClass} ${blueprintClass} ${accelerateClass} ${baubleClass} ${meowClass} ${woofClass} ${pxlClass} ${wackyFilesClass} ${flavortownClass} ${jusstudyClass} ${rebootClass} ${kitlabClass} ${sleepoverClass} ${stasisClass} ${coeurClass} ${remixedClass} ${hctgClass} ${hackahomeClass} ${flaggedClass} ${raspapiClass} ${beestClass} ${alchemizeClass} ${hackanomousClass} ${shipyardClass} ${stardanceClass} ${keebClass} ${insertCoinClass} ${polygonClass} ${treasureHuntClass} ${pixlClass} ${blareClass} ${anvilClass} ${braizeClass}" data-program="${encodedProgram}" data-name="${program.name}">
             ${pixlVideo}
             ${macondoAssets}
             ${horizonsAssets}

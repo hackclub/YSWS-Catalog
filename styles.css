@@ -4471,6 +4471,120 @@ footer {
   filter: brightness(1.1);
 }
 
+/* Braize (https://hackclubium.github.io/Braize/) */
+.program-card.braize-card {
+  --braize-face: #c0c0c0;
+  --braize-shadow: #808080;
+  --braize-dark: #000000;
+  --braize-highlight: #ffffff;
+  --braize-desktop: #008080;
+  --braize-red: #ec3750;
+  --braize-orange: #ff8c37;
+  --braize-yellow: #f1c40f;
+  --braize-cyan: #5bc0de;
+
+  background:
+    radial-gradient(circle at 18% 12%, rgba(241, 196, 15, 0.28), transparent 28%),
+    radial-gradient(circle at 84% 20%, rgba(236, 55, 80, 0.24), transparent 30%),
+    linear-gradient(135deg, var(--braize-desktop), #006060) !important;
+  border: 3px solid var(--braize-face) !important;
+  border-color: var(--braize-highlight) var(--braize-dark) var(--braize-dark) var(--braize-highlight) !important;
+  border-radius: 0 !important;
+  box-shadow: 6px 6px 0 var(--braize-dark) !important;
+  color: var(--braize-dark) !important;
+  font-family: Tahoma, Verdana, Geneva, sans-serif !important;
+  overflow: hidden;
+}
+
+.program-card.braize-card::before {
+  content: "";
+  position: absolute;
+  inset: 12px;
+  background: var(--braize-face);
+  border: 2px solid var(--braize-face);
+  border-color: var(--braize-dark) var(--braize-highlight) var(--braize-highlight) var(--braize-dark);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.program-card.braize-card::after {
+  content: "BRAIZE.EXE";
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  right: 14px;
+  padding: 3px 8px;
+  background: linear-gradient(90deg, var(--braize-red), var(--braize-orange), var(--braize-cyan));
+  color: #ffffff;
+  font-family: "VT323", "Courier New", monospace;
+  font-size: 1.1rem;
+  letter-spacing: 0.08em;
+  text-shadow: 1px 1px 0 var(--braize-dark);
+  z-index: 1;
+}
+
+.program-card.braize-card:hover {
+  transform: translate(-2px, -2px) !important;
+  box-shadow: 10px 10px 0 var(--braize-dark) !important;
+}
+
+.program-card.braize-card .program-header,
+.program-card.braize-card p,
+.program-card.braize-card .program-deadline,
+.program-card.braize-card .program-footer,
+.program-card.braize-card .program-participants {
+  position: relative;
+  z-index: 2;
+}
+
+.program-card.braize-card .program-header {
+  margin-top: 1.85rem;
+}
+
+.program-card.braize-card h3 {
+  color: var(--braize-dark) !important;
+  font-family: "VT323", "Courier New", monospace !important;
+  font-size: 2rem !important;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 0 var(--braize-highlight);
+}
+
+.program-card.braize-card p,
+.program-card.braize-card .program-participants,
+.program-card.braize-card .program-deadline {
+  color: var(--braize-dark) !important;
+}
+
+.program-card.braize-card .program-status,
+.program-card.braize-card .program-completion-toggle {
+  background: var(--braize-face) !important;
+  border: 2px solid var(--braize-face) !important;
+  border-color: var(--braize-highlight) var(--braize-dark) var(--braize-dark) var(--braize-highlight) !important;
+  border-radius: 0 !important;
+  color: var(--braize-dark) !important;
+  box-shadow: none !important;
+}
+
+.program-card.braize-card .status-draft,
+.program-card.braize-card .status-active {
+  background: var(--braize-yellow) !important;
+}
+
+.program-card.braize-card .program-completion-toggle.completed {
+  background: var(--braize-cyan) !important;
+}
+
+.program-card.braize-card .program-links a {
+  color: #000080 !important;
+  font-weight: 700 !important;
+  text-decoration: underline !important;
+}
+
+.program-card.braize-card .program-links a:hover {
+  color: var(--braize-red) !important;
+}
+
 /*Kintsugi Styling*/
 .program-card.kintsugi-card {
   --my-bg: #f8f4ea;
@@ -6863,6 +6977,77 @@ h2.section-heading::before {
   border-color: #f7c14d !important;
   box-shadow: 0 22px 38px rgba(247, 193, 77, 0.35);
 }
+
+/* Survive card styling */
+.program-card.survive-card {
+  background: linear-gradient(165deg, #2b2018 0%, #1a140f 100%) !important;
+  background-image:
+    linear-gradient(165deg, rgba(43, 32, 24, 0.75) 0%, rgba(26, 20, 15, 0.85) 100%),
+    url("logos/survive-campfire.png") !important;
+  background-size: cover !important;
+  background-position: center !important;
+  border: 2px solid #c9793a !important;
+  box-shadow: 6px 6px 0px #4a3320 !important;
+  border-radius: 20px !important;
+  color: #f5e6d0 !important;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s !important;
+}
+
+.program-card.survive-card:hover {
+  transform: translate(-2px, -2px) !important;
+  box-shadow: 10px 10px 0px #c9793a !important;
+  border-color: #e0954f !important;
+}
+
+.program-card.survive-card h3 {
+  color: #f5e6d0 !important;
+  font-weight: 800 !important;
+  letter-spacing: -0.3px;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+.program-card.survive-card p,
+.program-card.survive-card .program-participants {
+  color: #d9c4a3 !important;
+}
+
+.program-card.survive-card .program-deadline {
+  color: #c9793a !important;
+}
+
+.program-card.survive-card .program-status {
+  color: #1a140f !important;
+  border: 2px solid #c9793a !important;
+  border-radius: 10px !important;
+  font-weight: 800 !important;
+}
+
+.program-card.survive-card .status-active {
+  background: #6b8f4e !important;
+  color: #f5e6d0 !important;
+}
+
+.program-card.survive-card .program-links a {
+  color: #e0954f !important;
+  font-weight: 700 !important;
+  text-decoration: underline !important;
+  text-underline-offset: 3px !important;
+}
+
+.program-card.survive-card .program-links a:hover {
+  color: #f5e6d0 !important;
+}
+
+.program-card.survive-card .program-completion-toggle {
+  position: relative;
+  z-index: 4;
+  background: #1a140f !important;
+  border: 2px solid #c9793a !important;
+  color: #f5e6d0 !important;
+}
+
 
 .countdown-container {
   display: flex;
