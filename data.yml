@@ -70,6 +70,14 @@ limitedTime:
     slackChannel: "#metroship"
     status: upcoming
     opens: 2026-6-10
+  - name: Portputer
+    deadline: 2026-07-28T23:59:59Z
+    description: "Build a desktop/ESP32-based app and get a cute card-sized computer to port it to!"
+    website: https://portputer.hackclub.com
+    slack: https://hackclub.slack.com/archives/C0AV4TR1K5K
+    slackChannel: "#portputer"
+    status: active
+    opens: 2026-07-14
   - name: Outpost
     deadline: 2026-07-13
     description: "4-day hackathon followed by a 2-day showcase at Open Sauce! Make hardware projects in Stardance Challenge to qualify."
