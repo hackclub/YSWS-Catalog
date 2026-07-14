@@ -90,6 +90,16 @@
       "opens": "2026-6-10"
     },
     {
+      "name": "Portputer",
+      "deadline": "2026-07-28T23:59:59Z",
+      "description": "Build a desktop/ESP32-based app and get a cute card-sized computer to port it to!",
+      "website": "https://portputer.hackclub.com",
+      "slack": "https://hackclub.slack.com/archives/C0AV4TR1K5K",
+      "slackChannel": "#portputer",
+      "status": "active",
+      "opens": "2026-07-14"
+    },
+    {
       "name": "Outpost",
       "deadline": "2026-07-13",
       "description": "4-day hackathon followed by a 2-day showcase at Open Sauce! Make hardware projects in Stardance Challenge to qualify.",
@@ -2077,6 +2087,22 @@
         "Form a clan with your friends",
         "Go to war with your clan or alone",
         "Buy something from the shop"
+      ]
+    },
+    {
+      "name": "Survive",
+      "description": "Make offline and outdoors themed projects, win outdoors gear!",
+      "website": "https://survive-website.vercel.app/",
+      "slack": "https://hackclub.enterprise.slack.com/archives/C0B4BDVTN84",
+      "slackChannel": "#survive",
+      "status": "draft",
+      "detailedDescription": "Make a themed project, ship it and earn wood to spend in the survive shop or buy a event ticket to an outdoors hackathon!",
+      "steps": [
+        "Build an outdoor or survival themed project",
+        "Ship it",
+        "Earn wood to spend in the shop",
+        "Spend that wood on prizes OR The hackathon tickets and travel stipends",
+        "Come to the hackathon!"
       ]
     }
   ]
