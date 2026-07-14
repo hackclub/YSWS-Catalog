@@ -19,11 +19,12 @@ Maintained by @mntrushmore
 
 ## TO ADD A YSWS - PLEASE MAKE A PR TO DATA.YML
 
-The `api.json` and `feed.xml` files are automatically generated from `data.yml` using the generation scripts. 
+The `api.json` and `feed.xml` files are automatically generated from `data.yml` using the generation scripts.
 
 ## Getting Started
 
 1. **Clone the repository:**
+
    ```bash
    git clone https://github.com/hackclub/YSWS-Catalog.git
    cd YSWS-Catalog
@@ -63,6 +64,7 @@ This feed is automatically updated whenever new programs are added or existing p
   - Handling theme toggling
   - Managing program detail modals
   - Updating deadlines in real-time
+  - Handling Countdowns in real-time
 - **data.yml:** The main data source containing all YSWS programs organized by status
 - **generate-json.js:** Generates a JSON file equivalent of the data.yml (for API use)
 - **generate-rss.js:** Generates an RSS feed.xml file
@@ -104,16 +106,16 @@ status: active
 deadline: 2025-01-31T23:59:59
 detailedDescription: Join HackCraft to build and ship your own Minecraft mod. Access exclusive resources and a supportive community.
 steps:
-   - Make a mod.
-   - Publish it on Modrinth or Hangar.
-   - Submit your mod to Hack Club.
-   - Receive Minecraft Java Edition and enjoy!
+  - Make a mod.
+  - Publish it on Modrinth or Hangar.
+  - Submit your mod to Hack Club.
+  - Receive Minecraft Java Edition and enjoy!
 requirements:
-   - Basic knowledge of Java programming.
-   - A passion for Minecraft modding.
+  - Basic knowledge of Java programming.
+  - A passion for Minecraft modding.
 details:
-   - Participants will receive a Minecraft Java Edition account upon successful submission.
-   - Support is available through our Slack community.
+  - Participants will receive a Minecraft Java Edition account upon successful submission.
+  - Support is available through our Slack community.
 ```
 
 ## Contributing
