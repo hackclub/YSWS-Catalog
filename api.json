@@ -2078,6 +2078,22 @@
         "Go to war with your clan or alone",
         "Buy something from the shop"
       ]
+    },
+    {
+      "name": "Survive",
+      "description": "Make offline and outdoors themed projects, win outdoors gear!",
+      "website": "https://survive-website.vercel.app/",
+      "slack": "https://hackclub.enterprise.slack.com/archives/C0B4BDVTN84",
+      "slackChannel": "#survive",
+      "status": "draft",
+      "detailedDescription": "Make a themed project, ship it and earn wood to spend in the survive shop or buy a event ticket to an outdoors hackathon!",
+      "steps": [
+        "Build an outdoor or survival themed project",
+        "Ship it",
+        "Earn wood to spend in the shop",
+        "Spend that wood on prizes OR The hackathon tickets and travel stipends",
+        "Come to the hackathon!"
+      ]
     }
   ]
 }
