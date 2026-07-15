@@ -1,14 +1,63 @@
 {
   "limitedTime": [
     {
+      "name": "Anvil",
+      "deadline": "2026-07-28T04:59:59Z",
+      "description": "Build something to help hackers, get something for yourself in return.",
+      "website": "https://anvil.hackclub.com/?utm_source=ysws-catalog",
+      "slack": "https://hackclub.slack.com/archives/C0BFHPCH9D1",
+      "slackChannel": "#anvil-bulletin",
+      "status": "active",
+      "opens": "2026-07-01"
+    },
+    {
+      "name": "Treasure Hunt",
+      "deadline": "2026-08-31",
+      "description": "Complete 7 journeys to earn Gadgets & Merch!",
+      "website": "https://treasure.hackclub.com",
+      "slack": "https://hackclub.enterprise.slack.com/archives/C0APFPMDETD",
+      "slackChannel": "#treasure-hunt-ysws",
+      "status": "active"
+    },
+    {
+      "name": "Alchemize",
+      "description": "Make one of the 3 theme-based projects and earn Potion Mix to get the prizes you choose",
+      "website": "https://alchemize.hackclub.com",
+      "slack": "https://hackclub.enterprise.slack.com/archives/C0ASY6R552R",
+      "slackChannel": "#alchemize",
+      "status": "active"
+    },
+    {
       "name": "BLARE",
-      "deadline": "2026-07-09T00:00:00.000Z",
+      "deadline": "2026-07-09",
       "description": "Build your own special alarm clock, get the parts to make it and a custom Hack Club pillowcase!",
       "website": "https://blare.hackclub.com",
       "slack": "https://hackclub.enterprise.slack.com/archives/C0BC47NPFT9",
       "slackChannel": "#blare",
       "status": "active",
-      "opens": "2026-06-25T00:00:00.000Z"
+      "opens": "2026-06-25"
+    },
+    {
+      "name": "Thing on Desk",
+      "deadline": "2026-07-17T21:00:00Z",
+      "description": "Create a thing for your desk and win some cool treats for your desk. Beginners welcome!",
+      "website": "https://thingondesk.hackclub.com/",
+      "slack": "https://hackclub.slack.com/channels/ysws-thingondesk",
+      "slackChannel": "#ysws-thingondesk",
+      "status": "active",
+      "details": [
+        "Online-only",
+        "Project types: Electronics, Websites, Other"
+      ]
+    },
+    {
+      "name": "ArcadAi",
+      "description": "Learn to make a Retro Arcade Game with AI and Get a Reward for Shipping It",
+      "website": "https://arcadai.hackclub.com/",
+      "slack": "https://hackclub.slack.com/archives/C0B72VAHXHB",
+      "slackChannel": "#arcadai",
+      "status": "active",
+      "opens": "2026-6-2"
     },
     {
       "name": "Calculate",
@@ -39,6 +88,16 @@
       "slackChannel": "#metroship",
       "status": "upcoming",
       "opens": "2026-6-10"
+    },
+    {
+      "name": "Portputer",
+      "deadline": "2026-07-28T23:59:59Z",
+      "description": "Build a desktop/ESP32-based app and get a cute card-sized computer to port it to!",
+      "website": "https://portputer.hackclub.com",
+      "slack": "https://hackclub.slack.com/archives/C0AV4TR1K5K",
+      "slackChannel": "#portputer",
+      "status": "active",
+      "opens": "2026-07-14"
     },
     {
       "name": "Outpost",
@@ -1625,6 +1684,23 @@
   ],
   "drafts": [
     {
+      "name": "Braize",
+      "description": "Build something that lives in, works with, or reimagines the browser, like an extension, browser buddy, or custom shell, and earn browser-related prizes.",
+      "detailedDescription": "Braize is a Hack Club YSWS for browser-related projects. Build an extension, browser buddy, custom shell, or anything that reimagines browsing, then ship it publicly to earn browser-related prizes.",
+      "website": "https://hackclubium.github.io/Braize/",
+      "slack": "https://hackclub.enterprise.slack.com/archives/C0BF9UFNEDS",
+      "slackChannel": "#braize",
+      "status": "draft"
+    },
+    {
+      "name": "Pixl",
+      "description": "Explore the open world, meet characters, make hardware and software sidequests for them! Get niche prizes and stuff according to the sidequests!",
+      "website": "https://pixl.rsvp",
+      "slack": "https://hackclub.enterprise.slack.com/archives/C0B5P4N0WHH",
+      "slackChannel": "#pixl",
+      "status": "draft"
+    },
+    {
       "name": "ArcadAi",
       "description": "Build a Retro Arcade Game with AI and Get Rewarded for Shipping It",
       "website": "https://arcade-ysws.vercel.app/",
@@ -1677,20 +1753,6 @@
       "slack": "https://hackclub.enterprise.slack.com/archives/C0AHPG4LPUM",
       "website": "https://hackanomous.vercel.app/",
       "status": "draft"
-    },
-    {
-      "name": "Alchemize",
-      "description": "Make general projects, or one of the 3 theme-based projects and earn Potion Mix to get the prizes you choose",
-      "website": "https://alchemize-ysws.vercel.app",
-      "slack": "https://hackclub.enterprise.slack.com/archives/C0ASY6R552R",
-      "slackChannel": "#alchemize",
-      "status": "draft",
-      "steps": [
-        "Make Projects and Track Hours with Hackatime",
-        "Earn Currency for the specific theme, or earn Potion Mix directly from shipping a general project",
-        "Convert the Theme Currency to Potion Mix(with a fun little bonus if you convert them together)",
-        "Get items from the Dynamic Shop, so you get to add your own item to the shop."
-      ]
     },
     {
       "name": "Jus'STUDY",
@@ -2028,12 +2090,20 @@
       ]
     },
     {
-      "name": "Pixl",
-      "description": "Explore the open world, meet characters, make hardware and software sidequests for them! Get niche prizes and stuff according to the sidequests!",
-      "website": "https://pixl.rsvp",
-      "slack": "https://hackclub.enterprise.slack.com/archives/C0B5P4N0WHH",
-      "slackChannel": "#pixl",
-      "status": "draft"
+      "name": "Survive",
+      "description": "Make offline and outdoors themed projects, win outdoors gear!",
+      "website": "https://survive-website.vercel.app/",
+      "slack": "https://hackclub.enterprise.slack.com/archives/C0B4BDVTN84",
+      "slackChannel": "#survive",
+      "status": "draft",
+      "detailedDescription": "Make a themed project, ship it and earn wood to spend in the survive shop or buy a event ticket to an outdoors hackathon!",
+      "steps": [
+        "Build an outdoor or survival themed project",
+        "Ship it",
+        "Earn wood to spend in the shop",
+        "Spend that wood on prizes OR The hackathon tickets and travel stipends",
+        "Come to the hackathon!"
+      ]
     }
   ]
 }
