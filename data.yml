@@ -1280,6 +1280,19 @@ recentlyEnded:
     deadline: "2025-06-30T23:59:59"
 
 indefinite:
+  - name: Breadboard
+    description: Design a real breadboard project, get a free component kit shipped to you to build it!
+    website: https://breadboard.hackclub.com
+    slack: https://hackclub.slack.com/archives/C09EB0AE68M
+    slackChannel: "#breadboard"
+    status: active
+    detailedDescription: Breadboard is a YSWS run by high schoolers where you design a real breadboard electronics project on an online editor, then get a component kit shipped to you for free so you can build it. Open to teens 13-18 worldwide of all skill levels, no prior electronics experience required.
+    steps:
+      - Join the Slack channel
+      - Design your breadboard project on the online editor
+      - Submit your design
+      - Get a free component kit shipped to you
+      - Build your project!
   - name: Enclosure
     description: Design a custom enclosure for your project, get a 3D print of it shipped to you and tier based prizes!
     website: https://enclosure.hackclub.com/
