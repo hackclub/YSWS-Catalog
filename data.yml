@@ -2,7 +2,7 @@
 limitedTime:
   - name: Breadboard
     deadline: 2026-07-18T23:59:59-04:00
-    description: Design a real breadboard project, get a free component kit shipped to you to build it!
+    description: Design a breadboard project, get a free component kit shipped to you and other cool prizes!
     website: https://breadboard.hackclub.com
     slack: https://hackclub.slack.com/archives/C09EB0AE68M
     slackChannel: "#breadboard"
