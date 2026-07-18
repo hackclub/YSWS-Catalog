@@ -164,12 +164,6 @@ limitedTime:
     status: active
     deadline: "2026-08-14"
 
-  - name: Fix Hack Club
-    description: Contribute to Hack Club repositories, get a grant of your choice!
-    website: https://fix.hackclub.com/
-    slack: https://hackclub.enterprise.slack.com/archives/C0ALHGAASLV
-    slackChannel: "#pullquests"
-    status: active
   - name: Polygon
     deadline: "2026-07-31T23:59:59Z"
     description: Build a 3d website using three.js and get a grant to go watch your favourite movies!
@@ -267,6 +261,12 @@ limitedTime:
     slack: https://hackclub.enterprise.slack.com/archives/C0BAM60LQ4E
     slackChannel: "#prologue"
     status: active
+  - name: Fix Hack Club
+    description: Contribute to Hack Club repositories, get a grant of your choice!
+    website: https://fix.hackclub.com/
+    slack: https://hackclub.enterprise.slack.com/archives/C0ALHGAASLV
+    slackChannel: "#pullquests"
+    status: ended
   - name: Flavortown
     deadline: 2026-04-30
     description: Cook personal projects. Win free prizes.
