@@ -99,8 +99,6 @@ limitedTime:
     slackChannel: "#metroship"
     status: active
     opens: 2026-7-20
-    status: upcoming
-    opens: 2026-6-10
   - name: Portputer
     deadline: 2026-07-28T23:59:59Z
     description: "Build a desktop/ESP32-based app and get a cute card-sized computer to port it to!"
