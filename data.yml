@@ -92,13 +92,13 @@ limitedTime:
     status: upcoming
     opens: 2026-6-1
   - name: MetroShip
-    deadline: 2026-06-17
+    deadline: 2026-07-28
     description: "MetroShip is a transportation and mapping based YSWS where you build a map website to show something fun, useful, or interesting. <br> Build a map website, ship it, and get tickets to buy prizes based on your hours spent building."
     website: https://metroship.hackclub.com
     slack: https://hackclub.enterprise.slack.com/archives/C0BA8RLV9RN
     slackChannel: "#metroship"
-    status: upcoming
-    opens: 2026-6-10
+    status: active
+    opens: 2026-7-20
   - name: Portputer
     deadline: 2026-07-28T23:59:59Z
     description: "Build a desktop/ESP32-based app and get a cute card-sized computer to port it to!"
