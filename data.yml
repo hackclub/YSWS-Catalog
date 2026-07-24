@@ -136,7 +136,7 @@ limitedTime:
     slackChannel: "#insert-coin"
     status: active
   - name: Forge
-    deadline: 2026-08-01
+    deadline: 2026-09-30
     description: Forge is a Hack Club YSWS (You ship, we ship) program where teens like yourself can design and build hardware projects, and get them funded! Forge your project now
     website: https://forge.hackclub.com/
     slack: https://hackclub.enterprise.slack.com/archives/C0ALJ6P00B1
