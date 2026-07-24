@@ -22,13 +22,12 @@ limitedTime:
     slackChannel: "#premiere"
     status: active
   - name: Circazine
-    deadline: 2026-06-31T23:59:59Z
+    deadline: 2026-08-17T23:59:59Z
     description: "Design a simple circuit and a zine page, get the magazine in hand."
     website: https://circazine.hackclub.com
     slack: https://hackclub.slack.com/archives/C0BJ4EF228G
     slackChannel: "#circazine"
     status: active
-    opens: 2026-08-17
   - name: Anvil
     deadline: 2026-07-28T04:59:59Z
     description: "Build something to help hackers, get something for yourself in return."
