@@ -72,8 +72,8 @@ limitedTime:
     website: https://arcadai.hackclub.com/
     slack: https://hackclub.slack.com/archives/C0B72VAHXHB
     slackChannel: "#arcadai"
-    status: active
-    opens: 2026-6-2
+    status: ended
+    deadline: 2026-7-25 
   - name: Calculate
     deadline: 2026-07-18
     description: "Make a project involving numbers, get a calculator + stickersheet!"
