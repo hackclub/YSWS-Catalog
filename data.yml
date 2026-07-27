@@ -371,7 +371,7 @@ limitedTime:
     website: https://lumen.hackcraft.hackclub.com/
     slack: https://hackclub.enterprise.slack.com/archives/C07NQ5QAYNQ
     slackChannel: "#mc-modding"
-    status: active
+    status: ended
   - name: Pxl
     description: Code any project, place pixels on a r/place-like canvas!
     website: https://pxl.hackclub.com
