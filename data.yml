@@ -1314,7 +1314,7 @@ indefinite:
     slackChannel: "#iplace"
     status: active
   - name: Hacklet v2
-    description: Build a bookmarklet, get food for your club!f
+    description: Build a bookmarklet, get food for your club!
     website: https://hacklet.hackclub.com
     slack: https://hackclub.slack.com/archives/C091ZRTMF16
     slackChannel: "#hacklet"
