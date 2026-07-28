@@ -1314,7 +1314,7 @@ indefinite:
     slackChannel: "#iplace"
     status: active
   - name: Hacklet v2
-    description: Build a bookmarklet, get food for your club!
+    description: Build a bookmarklet, get food for your club!f
     website: https://hacklet.hackclub.com
     slack: https://hackclub.slack.com/archives/C091ZRTMF16
     slackChannel: "#hacklet"
@@ -1748,17 +1748,18 @@ drafts:
   - name: Survive
     description: Make offline and outdoors themed projects, win outdoors gear!
     website: https://survive-website.vercel.app/
+    logo: logos/heidi_survive.png
     slack: https://hackclub.enterprise.slack.com/archives/C0B4BDVTN84
     slackChannel: "#survive"
     status: draft
     detailedDescription: Make a themed project, ship it and earn wood to spend in the survive shop or buy a event ticket to an outdoors hackathon!
     steps:
       - Build an outdoor or survival themed project
-      - Ship it
+      - Track your time using Hackatime
+      - Ship it, and get it reviewed
       - Earn wood to spend in the shop
       - Spend that wood on prizes OR The hackathon tickets and travel stipends
-      - Come to the hackathon!
-
+      - Come to the hackathon in New Zeland!
 
 
   
