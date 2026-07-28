@@ -6992,13 +6992,36 @@ h2.section-heading::before {
   color: #f5e6d0 !important;
   position: relative;
   overflow: hidden;
-  transition: transform 0.2s, box-shadow 0.2s !important;
+  transition: transform 0.25s cubic-bezier(.34,1.56,.64,1), box-shadow 0.25s cubic-bezier(.34,1.56,.64,1) !important;
+}
+
+/* Mascot */
+.program-card.survive-card::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  right: -10px;
+  width: 130px;
+  height: 130px;
+  background-image: url("logos/heidi_survive.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  z-index: 3;
+  pointer-events: none;
+  transition: transform 0.35s cubic-bezier(.34,1.56,.64,1), filter 0.35s ease;
+  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.5));
 }
 
 .program-card.survive-card:hover {
-  transform: translate(-2px, -2px) !important;
-  box-shadow: 10px 10px 0px #c9793a !important;
+  transform: translate(-4px, -6px) scale(1.02) rotate(-1deg) !important;
+  box-shadow: 14px 14px 0px #c9793a, 0 0 30px rgba(201, 121, 58, 0.5) !important;
   border-color: #e0954f !important;
+}
+
+.program-card.survive-card:hover::after {
+  transform: scale(1.15) rotate(6deg) translateY(-6px);
+  filter: drop-shadow(0 8px 14px rgba(0, 0, 0, 0.6)) brightness(1.1);
 }
 
 .program-card.survive-card h3 {
@@ -7006,40 +7029,43 @@ h2.section-heading::before {
   font-weight: 800 !important;
   letter-spacing: -0.3px;
   text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+  position: relative;
+  z-index: 4;
 }
-
 .program-card.survive-card p,
 .program-card.survive-card .program-participants {
   color: #d9c4a3 !important;
+  position: relative;
+  z-index: 4;
 }
-
 .program-card.survive-card .program-deadline {
   color: #c9793a !important;
+  position: relative;
+  z-index: 4;
 }
-
 .program-card.survive-card .program-status {
   color: #1a140f !important;
   border: 2px solid #c9793a !important;
   border-radius: 10px !important;
   font-weight: 800 !important;
+  position: relative;
+  z-index: 4;
 }
-
 .program-card.survive-card .status-active {
   background: #6b8f4e !important;
   color: #f5e6d0 !important;
 }
-
 .program-card.survive-card .program-links a {
   color: #e0954f !important;
   font-weight: 700 !important;
   text-decoration: underline !important;
   text-underline-offset: 3px !important;
+  position: relative;
+  z-index: 4;
 }
-
 .program-card.survive-card .program-links a:hover {
   color: #f5e6d0 !important;
 }
-
 .program-card.survive-card .program-completion-toggle {
   position: relative;
   z-index: 4;
@@ -7047,7 +7073,6 @@ h2.section-heading::before {
   border: 2px solid #c9793a !important;
   color: #f5e6d0 !important;
 }
-
 
 .countdown-container {
   display: flex;
