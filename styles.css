@@ -2063,6 +2063,7 @@ footer {
 .modal-header,
 .modal-body,
 .modal-close,
+.modal-share,
 .modal-nav,
 .program-position {
   opacity: 1;
@@ -2072,6 +2073,7 @@ footer {
 .modal.active.is-animating .modal-header,
 .modal.active.is-animating .modal-body,
 .modal.active.is-animating .modal-close,
+.modal.active.is-animating .modal-share,
 .modal.active.is-animating .modal-nav,
 .modal.active.is-animating .program-position {
   animation: modal-content-in 0.38s cubic-bezier(0.22, 1, 0.36, 1) both;
@@ -2086,6 +2088,7 @@ footer {
 }
 
 .modal.active.is-animating .modal-close,
+.modal.active.is-animating .modal-share,
 .modal.active.is-animating .program-position {
   animation-delay: 0.1s;
 }
@@ -2131,10 +2134,40 @@ footer {
 .modal-header {
   display: flex;
   align-items: flex-start;
-  justify-content: space-between;
   gap: 16px;
   padding-right: 56px;
   margin-bottom: 16px;
+}
+
+.modal-share {
+  flex-shrink: 0;
+  margin-left: auto;
+  width: 38px;
+  height: 38px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 9999px;
+  color: var(--foreground);
+  cursor: pointer;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.dark-theme .modal-share {
+  background: var(--surface-hover);
+}
+
+.modal-share:hover {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+  transform: scale(1.1);
 }
 
 .modal-header .title {
