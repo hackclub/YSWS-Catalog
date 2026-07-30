@@ -492,6 +492,7 @@ function createProgramCard(program) {
   const anvilClass = program.name === "Anvil" ? "anvil-card" : "";
   const braizeClass = program.name === "Braize" ? "braize-card" : "";
   const surviveClass = program.name === "Survive" ? "survive-card" : "";
+  const platformerClass = program.name === "Platformer" ? "platformer-card" : "";
 
   const isCompletedByUser = completedPrograms.has(program.name);
   const completionButtonClass = isCompletedByUser ? "completed" : "";
@@ -692,6 +693,35 @@ function createProgramCard(program) {
     `
       : "";
 
+  const controllerIconSvg = `<svg class="platformer-controller-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="6" x2="10" y1="11" y2="11"/><line x1="8" x2="8" y1="9" y2="13"/><line x1="15" x2="15.01" y1="12" y2="12"/><line x1="18" x2="18.01" y1="10" y2="10"/><path d="M17.32 5H6.68a4 4 0 0 0-3.978 3.59c-.006.052-.01.101-.017.152C2.604 9.416 2 14.456 2 16a3 3 0 0 0 3 3c1 0 1.5-.5 2-1l1.414-1.414A2 2 0 0 1 9.828 16h4.344a2 2 0 0 1 1.414.586L17 18c.5.5 1 1 2 1a3 3 0 0 0 3-3c0-1.545-.604-6.584-.685-7.258-.007-.05-.011-.1-.017-.151A4 4 0 0 0 17.32 5z"/></svg>`;
+
+  const platformerControllers =
+    program.name === "Platformer"
+      ? `
+        <div class="platformer-controllers platformer-controllers-left" aria-hidden="true">
+            ${controllerIconSvg}
+            ${controllerIconSvg}
+        </div>
+        <div class="platformer-controllers platformer-controllers-right" aria-hidden="true">
+            ${controllerIconSvg}
+        </div>
+    `
+      : "";
+
+  const platformerScene =
+    program.name === "Platformer"
+      ? `
+        <div class="platformer-scene" aria-hidden="true">
+            <div class="platformer-platform platformer-platform-1"></div>
+            <div class="platformer-platform platformer-platform-2"></div>
+            <div class="platformer-platform platformer-platform-3"></div>
+            <div class="platformer-coin"></div>
+            <div class="platformer-player"><div class="platformer-player-body"></div></div>
+            <div class="platformer-ground"></div>
+        </div>
+    `
+      : "";
+
   const countDownId = `${program.name.toLowerCase().trim().replace(" ", "")}-countdown`;
 
   setCountdownTimer(program.deadline, program.status, countDownId);
@@ -714,8 +744,9 @@ function createProgramCard(program) {
       : program.description;
 
   return `
-        <div class="card program-card ${opensClass} ${KintsugiClass} ${forgeClass} ${macondoClass} ${horizonsClass} ${slushiesClass} ${blueprintClass} ${accelerateClass} ${baubleClass} ${meowClass} ${woofClass} ${pxlClass} ${wackyFilesClass} ${flavortownClass} ${jusstudyClass} ${rebootClass} ${kitlabClass} ${sleepoverClass} ${stasisClass} ${coeurClass} ${remixedClass} ${hctgClass} ${hackahomeClass} ${flaggedClass} ${raspapiClass} ${beestClass} ${alchemizeClass} ${hackanomousClass} ${shipyardClass} ${stardanceClass} ${keebClass} ${insertCoinClass} ${polygonClass} ${treasureHuntClass} ${pixlClass} ${blareClass} ${anvilClass} ${braizeClass} ${surviveClass}" data-program="${encodedProgram}" data-name="${program.name}">
+        <div class="card program-card ${opensClass} ${KintsugiClass} ${forgeClass} ${macondoClass} ${horizonsClass} ${slushiesClass} ${blueprintClass} ${accelerateClass} ${baubleClass} ${meowClass} ${woofClass} ${pxlClass} ${wackyFilesClass} ${flavortownClass} ${jusstudyClass} ${rebootClass} ${kitlabClass} ${sleepoverClass} ${stasisClass} ${coeurClass} ${remixedClass} ${hctgClass} ${hackahomeClass} ${flaggedClass} ${raspapiClass} ${beestClass} ${alchemizeClass} ${hackanomousClass} ${shipyardClass} ${stardanceClass} ${keebClass} ${insertCoinClass} ${polygonClass} ${treasureHuntClass} ${pixlClass} ${blareClass} ${anvilClass} ${braizeClass} ${surviveClass} ${platformerClass}" data-program="${encodedProgram}" data-name="${program.name}">
             ${pixlVideo}
+            ${platformerControllers}
             ${macondoAssets}
             ${horizonsAssets}
             ${surviveAssets}
@@ -786,8 +817,9 @@ ${isNew ? '<span class="new-badge">NEW</span>' : ""}
             ${forgeSticker}
             ${beestSticker}
             ${hackanomousMascot}
-           
-          
+            ${platformerScene}
+
+
         </div>
     `;
 }
@@ -1868,6 +1900,16 @@ document.addEventListener("DOMContentLoaded", () => {
     if (e.target.closest(".program-completion-toggle")) {
       const button = e.target.closest(".program-completion-toggle");
       const programName = button.dataset.programName;
+      if (programName === "Platformer") {
+        e.stopPropagation();
+        const newWindow = window.open(
+          "https://forms.fillout.com/t/gsURcQEaLSus",
+          "_blank",
+          "noopener,noreferrer",
+        );
+        if (newWindow) newWindow.opener = null;
+        return;
+      }
       toggleProgramCompletion(programName, e);
       return;
     }
@@ -1875,6 +1917,11 @@ document.addEventListener("DOMContentLoaded", () => {
     if (e.target.closest(".modal-completion-toggle")) {
       const button = e.target.closest(".modal-completion-toggle");
       const programName = button.dataset.programName;
+      if (programName === "Platformer") {
+        e.stopPropagation();
+        window.open("https://forms.fillout.com/t/gsURcQEaLSus", "_blank", "noopener,noreferrer");
+        return;
+      }
       toggleProgramCompletion(programName, e);
       return;
     }

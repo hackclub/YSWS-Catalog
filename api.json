@@ -1,6 +1,41 @@
 {
   "limitedTime": [
     {
+      "name": "Breadboard",
+      "deadline": "2026-07-18T23:59:59-04:00",
+      "description": "Design a breadboard project, get a free component kit shipped to you and other cool prizes!",
+      "website": "https://breadboard.hackclub.com",
+      "slack": "https://hackclub.slack.com/archives/C09EB0AE68M",
+      "slackChannel": "#breadboard",
+      "status": "active",
+      "detailedDescription": "Breadboard is a YSWS run by high schoolers where you design a real breadboard electronics project on an online editor, then get a component kit shipped to you for free so you can build it. Open to teens 13-18 worldwide of all skill levels, no prior electronics experience required.",
+      "steps": [
+        "Join the Slack channel",
+        "Design your breadboard project on the online editor",
+        "Submit your design",
+        "Get a free component kit shipped to you",
+        "Build your project!"
+      ]
+    },
+    {
+      "name": "Premiere",
+      "deadline": "2026-07-17",
+      "description": "Make a trailer to your game and get prizes for doing it.",
+      "website": "https://premiere.hackclub.com",
+      "slack": "https://hackclub.enterprise.slack.com/archives/C0APJFR4M4L",
+      "slackChannel": "#premiere",
+      "status": "active"
+    },
+    {
+      "name": "Circazine",
+      "deadline": "2026-08-17T23:59:59Z",
+      "description": "Design a simple circuit and a zine page, get the magazine in hand.",
+      "website": "https://circazine.hackclub.com",
+      "slack": "https://hackclub.slack.com/archives/C0BJ4EF228G",
+      "slackChannel": "#circazine",
+      "status": "active"
+    },
+    {
       "name": "Anvil",
       "deadline": "2026-07-28T04:59:59Z",
       "description": "Build something to help hackers, get something for yourself in return.",
@@ -56,8 +91,8 @@
       "website": "https://arcadai.hackclub.com/",
       "slack": "https://hackclub.slack.com/archives/C0B72VAHXHB",
       "slackChannel": "#arcadai",
-      "status": "active",
-      "opens": "2026-6-2"
+      "status": "ended",
+      "deadline": "2026-7-25"
     },
     {
       "name": "Calculate",
@@ -81,13 +116,13 @@
     },
     {
       "name": "MetroShip",
-      "deadline": "2026-06-17",
+      "deadline": "2026-07-28",
       "description": "MetroShip is a transportation and mapping based YSWS where you build a map website to show something fun, useful, or interesting. <br> Build a map website, ship it, and get tickets to buy prizes based on your hours spent building.",
       "website": "https://metroship.hackclub.com",
       "slack": "https://hackclub.enterprise.slack.com/archives/C0BA8RLV9RN",
       "slackChannel": "#metroship",
-      "status": "upcoming",
-      "opens": "2026-6-10"
+      "status": "active",
+      "opens": "2026-7-20"
     },
     {
       "name": "Portputer",
@@ -137,7 +172,7 @@
     },
     {
       "name": "Forge",
-      "deadline": "2026-08-01",
+      "deadline": "2026-09-30",
       "description": "Forge is a Hack Club YSWS (You ship, we ship) program where teens like yourself can design and build hardware projects, and get them funded! Forge your project now",
       "website": "https://forge.hackclub.com/",
       "slack": "https://hackclub.enterprise.slack.com/archives/C0ALJ6P00B1",
@@ -170,14 +205,6 @@
       "slackChannel": "#horizons",
       "status": "active",
       "deadline": "2026-08-14"
-    },
-    {
-      "name": "Fix Hack Club",
-      "description": "Contribute to Hack Club repositories, get a grant of your choice!",
-      "website": "https://fix.hackclub.com/",
-      "slack": "https://hackclub.enterprise.slack.com/archives/C0ALHGAASLV",
-      "slackChannel": "#pullquests",
-      "status": "active"
     },
     {
       "name": "Polygon",
@@ -302,6 +329,14 @@
       "slack": "https://hackclub.enterprise.slack.com/archives/C0BAM60LQ4E",
       "slackChannel": "#prologue",
       "status": "active"
+    },
+    {
+      "name": "Fix Hack Club",
+      "description": "Contribute to Hack Club repositories, get a grant of your choice!",
+      "website": "https://fix.hackclub.com/",
+      "slack": "https://hackclub.enterprise.slack.com/archives/C0ALHGAASLV",
+      "slackChannel": "#pullquests",
+      "status": "ended"
     },
     {
       "name": "Flavortown",
@@ -436,7 +471,7 @@
       "website": "https://lumen.hackcraft.hackclub.com/",
       "slack": "https://hackclub.enterprise.slack.com/archives/C07NQ5QAYNQ",
       "slackChannel": "#mc-modding",
-      "status": "active"
+      "status": "ended"
     },
     {
       "name": "Pxl",
@@ -1683,6 +1718,14 @@
     }
   ],
   "drafts": [
+    {
+      "name": "Platformer",
+      "description": "Make games, record trailers and get prizes in return!",
+      "website": "https://platformer.hackclub.com/",
+      "slack": "https://hackclub.enterprise.slack.com/archives/C0BLMCDLG2X",
+      "slackChannel": "#platformer",
+      "status": "draft"
+    },
     {
       "name": "Braize",
       "description": "Build something that lives in, works with, or reimagines the browser, like an extension, browser buddy, or custom shell, and earn browser-related prizes.",
