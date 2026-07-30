@@ -1919,7 +1919,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const programName = button.dataset.programName;
       if (programName === "Platformer") {
         e.stopPropagation();
-        window.open("https://forms.fillout.com/t/gsURcQEaLSus", "_blank");
+        window.open("https://forms.fillout.com/t/gsURcQEaLSus", "_blank", "noopener,noreferrer");
         return;
       }
       toggleProgramCompletion(programName, e);
