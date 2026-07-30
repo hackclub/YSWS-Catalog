@@ -1392,6 +1392,12 @@ indefinite:
     status: active
 
 drafts:
+  - name: Platformer
+    description: Make games, record trailers and get prizes in return!
+    website: https://platformer.hackclub.com/
+    slack: https://hackclub.enterprise.slack.com/archives/C0BLMCDLG2X
+    slackChannel: "#platformer"
+    status: draft
   - name: Braize
     description: Build something that lives in, works with, or reimagines the browser, like an extension, browser buddy, or custom shell, and earn browser-related prizes.
     detailedDescription: Braize is a Hack Club YSWS for browser-related projects. Build an extension, browser buddy, custom shell, or anything that reimagines browsing, then ship it publicly to earn browser-related prizes.
