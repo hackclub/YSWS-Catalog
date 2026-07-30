@@ -1,5 +1,10 @@
 ---
 limitedTime:
+  - name: 3AM
+    description: Build a dark-themed project like a website, game .etc late at night and earn rewards based on your Hackatime hours.
+    website: https://3am.hackclub.com
+    slackChannel: "#3am"
+    status: active
   - name: Breadboard
     deadline: 2026-07-18T23:59:59-04:00
     description: Design a breadboard project, get a free component kit shipped to you and other cool prizes!
