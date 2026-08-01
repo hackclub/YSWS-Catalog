@@ -1,6 +1,6 @@
 ---
 limitedTime:
-- name: You Spud, We Spud
+  - name: You Spud, We Spud
     description: Build a fast, lightweight website or game using pure vanilla HTML, CSS, and JS under strict size constraints (<15KB, <5KB, <2KB)!
     detailedDescription: |
       Challenge yourself to build fast, lightweight, dependency free web applications using only vanilla HTML, CSS, and JavaScript! Earn custom Aussie loot and potato themed rewards based on how compact your project's total bundle size is across three difficulty tiers.
