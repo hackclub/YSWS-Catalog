@@ -231,7 +231,7 @@
       "website": "https://raspapi.hackclub.com/",
       "slack": "https://hackclub.slack.com/archives/C07UZSKJQRX",
       "slackChannel": "#raspapi",
-      "status": "active",
+      "status": "ended",
       "steps": [
         "Build an original API in any language or framework with at least 3 GET endpoints and 1 POST endpoint",
         "Host it at a stable, publicly accessible URL",
