@@ -372,11 +372,6 @@ function setCountdownTimer(
   countDownId,
   isModal = false,
 ) {
-  let days = 0,
-    hours = 0,
-    minutes = 0,
-    seconds = 0,
-    isExpired = false;
   if (modalCountdownTimer) {
     clearCountdownTimer(countDownId);
   }
@@ -384,24 +379,14 @@ function setCountdownTimer(
   if (yswsStatus === "draft" || yswsStatus === "ended" || !deadlineStr) return;
 
   const end = new Date(deadlineStr);
-  const interval = setInterval(() => {
+  const render = () => {
     const now = new Date();
     const timeRemaining = end - now;
-    if (timeRemaining <= 0) {
-      days = 0;
-      hours = 0;
-      minutes = 0;
-      seconds = 0;
-      isExpired = true;
-    } else {
-      days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
-      hours = Math.floor(
-        (timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60),
-      );
-      minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
-      seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
-      isExpired = false;
-    }
+    const isExpired = timeRemaining <= 0;
+    const days = isExpired ? 0 : Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
+    const hours = isExpired ? 0 : Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = isExpired ? 0 : Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = isExpired ? 0 : Math.floor((timeRemaining % (1000 * 60)) / 1000);
 
     const counterHtml = `
     <div class="countdown-container">
@@ -430,7 +415,10 @@ function setCountdownTimer(
     }
 
     if (isExpired) clearInterval(interval);
-  }, 1000);
+  };
+
+  render();
+  const interval = setInterval(render, 1000);
 
   if (isModal) modalCountdownTimer = interval;
 }
@@ -693,9 +681,7 @@ function createProgramCard(program) {
     `
       : "";
 
-  const countDownId = `${program.name.toLowerCase().trim().replace(" ", "")}-countdown`;
-
-  setCountdownTimer(program.deadline, program.status, countDownId);
+  const countDownId = `${program.name.toLowerCase().trim().replace(/\s+/g, "")}-countdown`;
 
   const displayDescription =
     program.name === "Pixl"
@@ -1284,6 +1270,14 @@ function refreshCollapsibleSections() {
   });
 }
 
+function startCardCountdowns() {
+  document.querySelectorAll(".program-card").forEach((card) => {
+    const program = JSON.parse(decodeURIComponent(card.dataset.program));
+    const countDownId = `${program.name.toLowerCase().trim().replace(/\s+/g, "")}-countdown`;
+    setCountdownTimer(program.deadline, program.status, countDownId);
+  });
+}
+
 function renderPrograms() {
   const container = document.getElementById("programs-container");
   const expandedCategories = new Set(
@@ -1359,6 +1353,7 @@ function renderPrograms() {
   }
 
   refreshCollapsibleSections();
+  startCardCountdowns();
 }
 
 function updateSort(sortType) {
