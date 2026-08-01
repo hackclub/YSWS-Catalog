@@ -1,6 +1,15 @@
 ---
 limitedTime:
-- name: You Spud, We Spud
+  - name: Braize
+    deadline: 2026-08-22
+    description: Build something that lives in, works with, or reimagines the browser, like an extension, browser buddy, or custom shell, and earn browser-related prizes.
+    detailedDescription: Braize is a Hack Club YSWS for browser-related projects. Build an extension, browser buddy, custom shell, or anything that reimagines browsing, then ship it publicly to earn browser-related prizes.
+    website: https://braize.hackclub.com/
+    slack: https://hackclub.enterprise.slack.com/archives/C0BF9UFNEDS
+    slackChannel: "#braize"
+    status: active
+    opens: 2026-08-01
+  - name: You Spud, We Spud
     description: Build a fast, lightweight website or game using pure vanilla HTML, CSS, and JS under strict size constraints (<15KB, <5KB, <2KB)!
     detailedDescription: |
       Challenge yourself to build fast, lightweight, dependency free web applications using only vanilla HTML, CSS, and JavaScript! Earn custom Aussie loot and potato themed rewards based on how compact your project's total bundle size is across three difficulty tiers.
@@ -1428,13 +1437,6 @@ indefinite:
     status: active
 
 drafts:
-  - name: Braize
-    description: Build something that lives in, works with, or reimagines the browser, like an extension, browser buddy, or custom shell, and earn browser-related prizes.
-    detailedDescription: Braize is a Hack Club YSWS for browser-related projects. Build an extension, browser buddy, custom shell, or anything that reimagines browsing, then ship it publicly to earn browser-related prizes.
-    website: https://hackclubium.github.io/Braize/
-    slack: https://hackclub.enterprise.slack.com/archives/C0BF9UFNEDS
-    slackChannel: "#braize"
-    status: draft
   - name: Pixl
     description: Explore the open world, meet characters, make hardware and software sidequests for them! Get niche prizes and stuff according to the sidequests!
     website: https://pixl.rsvp
