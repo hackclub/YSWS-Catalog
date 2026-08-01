@@ -1,6 +1,25 @@
 {
   "limitedTime": [
     {
+      "name": "You Spud, We Spud",
+      "description": "Build a fast, lightweight website or game using pure vanilla HTML, CSS, and JS under strict size constraints (<15KB, <5KB, <2KB)!",
+      "detailedDescription": "Challenge yourself to build fast, lightweight, dependency free web applications using only vanilla HTML, CSS, and JavaScript! Earn custom Aussie loot and potato themed rewards based on how compact your project's total bundle size is across three difficulty tiers.\n\n**STANDARD MODE (<15KB):**\n- Custom Orpheus-as-a-spud sticker\n- Handwritten airmail postcard from Sami\n- Random Aussie trading card (whatever's in the drawer)\n- Temporary potato tattoo\n- Your link featured in the ship channel forever\n\n**HARD MODE (<5KB):**\n- Everything from Standard Mode\n- Sealed packet of Australian chicken salt\n- Surprise Aussie snack pack\n- A \"Coding Down Under\" playlist made for you\n\n**ULTRA HARD MODE (<2KB):**\n- Everything from Hard Mode\n- Flat packet of instant mashed potatoes\n- A badly hand-drawn potato portrait of you\n- Featured on sami-s.dev's Hall of Fame\n- Sami's genuine respect\n",
+      "website": "https://youspudwespud.sami-s.dev",
+      "slack": "https://hackclub.slack.com/archives/C0BMCT6U3H6",
+      "slackChannel": "#youspudwespud",
+      "status": "active",
+      "steps": [
+        "Build a site or game using pure HTML, CSS, and JS with zero frameworks or bundlers.",
+        "Ensure your total bundle size fits inside one of the size tiers (<15KB, <5KB, or <2KB).",
+        "Submit your project to earn your Aussie potato loot!"
+      ],
+      "requirements": [
+        "Vanilla HTML, CSS, and JavaScript only (no external frameworks, CDNs, or libraries).",
+        "Must fit within specified size thresholds (<15KB, <5KB, <2KB).",
+        "Must be a fully functional web project or game."
+      ]
+    },
+    {
       "name": "Breadboard",
       "deadline": "2026-07-18T23:59:59-04:00",
       "description": "Design a breadboard project, get a free component kit shipped to you and other cool prizes!",
