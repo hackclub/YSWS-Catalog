@@ -119,6 +119,7 @@ async function startRender() {
   await loadParticipants();
   updateParticipantCounts();
   loadTimelineBlocks();
+  handleDeepLink();
 }
 
 function loadParticipants() {
@@ -970,6 +971,8 @@ function openModal(program) {
   modal.classList.add("active");
   body.classList.add("modal-open");
   playModalEntranceAnimation(modal);
+
+  history.replaceState(null, "", `#${nameToSlug(program.name)}`);
 }
 
 function closeModal() {
@@ -979,12 +982,34 @@ function closeModal() {
   modal.classList.remove("active");
   modal.classList.remove("is-animating");
   body.classList.remove("modal-open");
+
+  if (location.hash) {
+    history.replaceState(null, "", window.location.pathname + window.location.search);
+  }
 }
 
 function findProgramByName(programName) {
   return Object.values(programs)
     .flat()
     .find((program) => program.name === programName);
+}
+
+function nameToSlug(name) {
+  return name.replace(/\s+/g, "-");
+}
+
+function handleDeepLink() {
+  const hash = location.hash.slice(1);
+  if (!hash) {
+    const modal = document.getElementById("program-modal");
+    if (modal?.classList.contains("active")) {
+      closeModal();
+    }
+    return;
+  }
+  const programName = hash.replace(/-/g, " ");
+  const program = findProgramByName(programName);
+  if (program) openModal(program);
 }
 
 function getLeaderboardProgram(programName, shipCount) {
@@ -1856,6 +1881,8 @@ document.addEventListener("DOMContentLoaded", () => {
     .getElementById("theme-toggle")
     .addEventListener("click", toggleTheme);
 
+  window.addEventListener("hashchange", handleDeepLink);
+
   setInterval(updateDeadlines, 60000);
 
   document.querySelectorAll(".sort-btn").forEach((button) => {
@@ -1900,6 +1927,26 @@ document.addEventListener("DOMContentLoaded", () => {
       }
 
       openModal(program);
+      return;
+    }
+
+    if (e.target.closest("#modal-share")) {
+      try {
+        const programName = document.getElementById("modal-title").textContent;
+        const url = `${window.location.origin}${window.location.pathname}#${nameToSlug(programName)}`;
+        if (navigator.share) {
+          navigator.share({ title: programName, url });
+        } else {
+          navigator.clipboard?.writeText(url);
+          const btn = document.getElementById("modal-share");
+          const original = btn.innerHTML;
+          btn.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>';
+          setTimeout(() => (btn.innerHTML = original), 2000);
+        }
+      } catch (e) {
+        console.error("Share failed:", e);
+      }
+      return;
     }
 
     if (
