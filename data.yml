@@ -1524,7 +1524,7 @@ drafts:
     slack: https://hackclub.enterprise.slack.com/archives/C09A37XECJV
     slackChannel: "#shrine"
     status: draft
-  - name: Issued
+  - name: issued
     description: Design with Code, Wear Apparel with those designs
     detailedDescription: Design hack-themed apparel with code, we ship your designs as real clothes!
     website: https://issued.bing-bong.uk
