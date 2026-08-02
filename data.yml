@@ -1527,9 +1527,9 @@ drafts:
     slackChannel: "#shrine"
     status: draft
   - name: issued
-    description: code to design hack-themed apparel
-    detailedDescription: you code to design hack-themed apparel, we ship popular designs as real clothes!
-    website: https://issued-ysws.vercel.app
+    description: Design with Code, Wear Apparel with those designs
+    detailedDescription: Design hack-themed apparel with code, we ship your designs as real clothes!
+    website: https://issued.bing-bong.uk
     slack: https://hackclub.slack.com/archives/C09C9M0N2UC
     slackChannel: "#issued"
     status: draft
