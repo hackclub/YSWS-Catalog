@@ -223,6 +223,8 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 72px;
+  scroll-snap-type: y proximity;
   overscroll-behavior-y: none;
   overflow-x: hidden;
   -webkit-text-size-adjust: 100%;
@@ -243,6 +245,20 @@ body {
   transition:
     background-color 0.3s ease,
     color 0.3s ease;
+}
+
+section,
+[data-anchor] {
+  scroll-margin-top: 72px;
+}
+
+.hero-section,
+.global-stats-section,
+.programs-container,
+.leaderboard-section,
+.wheel-section,
+.faq-section {
+  scroll-snap-align: start;
 }
 
 img {
@@ -1627,10 +1643,12 @@ footer {
   box-shadow: var(--shadow-card);
   cursor: pointer;
   overflow: hidden;
+  transform-style: preserve-3d;
   transition:
-    transform 0.2s ease,
-    box-shadow 0.25s ease,
-    border-color 0.25s ease;
+    transform 0.35s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.35s cubic-bezier(0.22, 1, 0.36, 1),
+    border-color 0.3s ease;
+  will-change: transform;
 }
 
 .dark-theme .card,
@@ -1645,13 +1663,47 @@ footer {
 }
 
 .program-card:hover {
-  transform: translateY(-4px);
+  transform: translateY(-6px);
   box-shadow: var(--shadow-card-hover);
   border-color: rgba(236, 55, 80, 0.4);
 }
 
 .program-card:hover::before {
   opacity: 0;
+}
+
+.program-card.tilt-active {
+  transition:
+    transform 0.12s ease-out,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+  transform: perspective(900px) rotateX(var(--tilt-x, 0deg))
+    rotateY(var(--tilt-y, 0deg)) translateY(-6px);
+}
+
+.program-card::after {
+  content: none;
+}
+
+.program-card .program-card-glow {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.35s ease;
+  background: radial-gradient(
+    600px circle at var(--glow-x, 50%) var(--glow-y, 50%),
+    rgba(236, 55, 80, 0.14),
+    rgba(236, 55, 80, 0.06) 40%,
+    transparent 65%
+  );
+  z-index: 0;
+}
+
+.program-card:hover .program-card-glow {
+  opacity: 1;
 }
 
 .program-header {
@@ -1915,7 +1967,72 @@ footer {
   }
 }
 
+.programs-grid .program-card {
+  opacity: 0;
+  translate: 0 24px;
+  transition:
+    opacity 0.55s cubic-bezier(0.22, 1, 0.36, 1),
+    translate 0.55s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.programs-grid .program-card:nth-child(2) {
+  transition-delay: 0.04s;
+}
+
+.programs-grid .program-card:nth-child(3) {
+  transition-delay: 0.08s;
+}
+
+.programs-grid .program-card:nth-child(4) {
+  transition-delay: 0.12s;
+}
+
+.programs-grid .program-card:nth-child(5) {
+  transition-delay: 0.16s;
+}
+
+.programs-grid .program-card:nth-child(6) {
+  transition-delay: 0.2s;
+}
+
+.programs-grid .program-card:nth-child(n + 7) {
+  transition-delay: 0.24s;
+}
+
+.programs-grid .program-card.card-revealed {
+  opacity: 1;
+  translate: 0 0;
+}
+
+.programs-grid .program-card.card-revealed:nth-child(2) {
+  transition-delay: 0.04s;
+}
+
+.programs-grid .program-card.card-revealed:nth-child(3) {
+  transition-delay: 0.08s;
+}
+
+.programs-grid .program-card.card-revealed:nth-child(4) {
+  transition-delay: 0.12s;
+}
+
+.programs-grid .program-card.card-revealed:nth-child(5) {
+  transition-delay: 0.16s;
+}
+
+.programs-grid .program-card.card-revealed:nth-child(6) {
+  transition-delay: 0.2s;
+}
+
+.programs-grid .program-card.card-revealed:nth-child(n + 7) {
+  transition-delay: 0.24s;
+}
+
 /* ── Modal ──────────────────────────────────────────────── */
+body.modal-open {
+  overflow: hidden;
+}
+
 .modal {
   position: fixed;
   inset: 0;
@@ -1925,6 +2042,7 @@ footer {
   justify-content: center;
   padding: 24px;
   overflow-y: auto;
+  overscroll-behavior: contain;
   background: rgba(23, 23, 29, 0.55);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
@@ -1939,6 +2057,17 @@ footer {
 
 .modal.active.is-animating {
   animation: modal-overlay-in 0.32s ease both;
+}
+
+.modal.closing {
+  display: flex;
+  animation: modal-overlay-out 0.24s ease both;
+}
+
+.modal.closing .modal-stack-card-back-1,
+.modal.closing .modal-stack-card-back-2,
+.modal.closing .modal-content {
+  animation: modal-card-stack-out 0.24s cubic-bezier(0.4, 0, 0.2, 1) both;
 }
 
 .modal-stack {
@@ -1998,6 +2127,7 @@ footer {
   min-height: 0;
   max-height: calc(100vh - 64px);
   overflow-y: auto;
+  overscroll-behavior: contain;
   background: var(--paper);
   border: 1px solid var(--border);
   border-radius: 24px;
@@ -2058,6 +2188,10 @@ footer {
 
 .modal.active.is-animating .modal-content {
   animation: modal-card-stack-in 0.58s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.modal.active.is-animating.card-origin .modal-content {
+  animation: modal-card-flip-in 0.5s cubic-bezier(0.22, 1, 0.36, 1) both;
 }
 
 .modal-header,
@@ -2453,6 +2587,28 @@ footer {
   }
 }
 
+@keyframes modal-overlay-out {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes modal-card-stack-out {
+  from {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) rotate(0deg) scale(1);
+  }
+
+  to {
+    opacity: 0;
+    transform: translate3d(0, 14px, 0) rotate(0deg) scale(0.96);
+  }
+}
+
 @keyframes modal-card-stack-in {
   0% {
     opacity: 0;
@@ -2473,6 +2629,23 @@ footer {
   100% {
     opacity: 1;
     transform: translate3d(0, 0, 0) rotate(0deg) scale(1);
+  }
+}
+
+@keyframes modal-card-flip-in {
+  0% {
+    opacity: 0;
+    transform: translate3d(var(--modal-flip-x, 0px), var(--modal-flip-y, 0px), 0)
+      scale(var(--modal-flip-scale, 0.5));
+  }
+
+  70% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) scale(1);
   }
 }
 
@@ -2762,6 +2935,19 @@ footer {
     animation-iteration-count: 1 !important;
     transition-duration: 0.001ms !important;
     scroll-behavior: auto !important;
+  }
+
+  html {
+    scroll-snap-type: none;
+  }
+
+  .programs-grid .program-card {
+    opacity: 1;
+    translate: 0 0;
+  }
+
+  .program-card.tilt-active {
+    transform: none;
   }
 }
 

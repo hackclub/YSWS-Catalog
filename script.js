@@ -702,6 +702,7 @@ function createProgramCard(program) {
 
   return `
         <div class="card program-card ${opensClass} ${KintsugiClass} ${forgeClass} ${macondoClass} ${horizonsClass} ${slushiesClass} ${blueprintClass} ${accelerateClass} ${baubleClass} ${meowClass} ${woofClass} ${pxlClass} ${wackyFilesClass} ${flavortownClass} ${jusstudyClass} ${rebootClass} ${kitlabClass} ${sleepoverClass} ${stasisClass} ${coeurClass} ${remixedClass} ${hctgClass} ${hackahomeClass} ${flaggedClass} ${raspapiClass} ${beestClass} ${alchemizeClass} ${hackanomousClass} ${shipyardClass} ${stardanceClass} ${keebClass} ${insertCoinClass} ${polygonClass} ${treasureHuntClass} ${pixlClass} ${blareClass} ${anvilClass} ${braizeClass} ${surviveClass}" data-program="${encodedProgram}" data-name="${program.name}">
+            <span class="program-card-glow" aria-hidden="true"></span>
             ${pixlVideo}
             ${macondoAssets}
             ${horizonsAssets}
@@ -814,7 +815,7 @@ function navigateModal(direction) {
   updatePositionIndicator();
 }
 
-function playModalEntranceAnimation(modal) {
+function playModalEntranceAnimation(modal, originCard) {
   if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
     modal.classList.remove("is-animating");
     return;
@@ -852,12 +853,27 @@ function playModalEntranceAnimation(modal) {
   modalStack.style.setProperty("--stack-back-2-y", `${backTwoY}px`);
   modalStack.style.setProperty("--stack-back-2-rotate", `${backTwoRotate}deg`);
 
+  if (originCard) {
+    const cardRect = originCard.getBoundingClientRect();
+    const modalRect = modalContent.getBoundingClientRect();
+    const originX = cardRect.left + cardRect.width / 2 - (modalRect.left + modalRect.width / 2);
+    const originY = cardRect.top + cardRect.height / 2 - (modalRect.top + modalRect.height / 2);
+    const originScale = Math.max(cardRect.width / modalRect.width, 0.08);
+
+    modalContent.style.setProperty("--modal-flip-x", `${originX}px`);
+    modalContent.style.setProperty("--modal-flip-y", `${originY}px`);
+    modalContent.style.setProperty("--modal-flip-scale", `${originScale}`);
+    modal.classList.add("card-origin");
+  } else {
+    modal.classList.remove("card-origin");
+  }
+
   modal.classList.remove("is-animating");
   void modal.offsetWidth;
   modal.classList.add("is-animating");
 }
 
-function openModal(program) {
+function openModal(program, originCard) {
   updateVisiblePrograms();
   currentProgramIndex = visiblePrograms.findIndex(
     (p) => p.name === program.name,
@@ -954,23 +970,66 @@ function openModal(program) {
   modalCompletionBadge.classList.toggle("visible", isCompletedByUser);
 
   updatePositionIndicator();
+  clearTimeout(modalCloseTimer);
+  modalCloseTimer = null;
+  modal.classList.remove("closing");
   modal.classList.add("active");
   body.classList.add("modal-open");
-  playModalEntranceAnimation(modal);
+  playModalEntranceAnimation(modal, originCard);
 
   history.replaceState(null, "", `#${nameToSlug(program.name)}`);
 }
+
+let modalCloseTimer = null;
 
 function closeModal() {
   const modal = document.getElementById("program-modal");
   const body = document.body;
 
-  modal.classList.remove("active");
+  if (!modal.classList.contains("active")) return;
+
+  const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
   modal.classList.remove("is-animating");
+
+  if (reduceMotion) {
+    modal.classList.remove("active");
+    body.classList.remove("modal-open");
+    cleanupAfterClose();
+    return;
+  }
+
+  modal.classList.add("closing");
   body.classList.remove("modal-open");
 
+  const finishClose = () => {
+    if (!modal.classList.contains("closing")) {
+      modal.removeEventListener("animationend", finishClose);
+      clearTimeout(modalCloseTimer);
+      modalCloseTimer = null;
+      return;
+    }
+    clearTimeout(modalCloseTimer);
+    modalCloseTimer = null;
+    modal.classList.remove("closing");
+    modal.classList.remove("active");
+    modal.removeEventListener("animationend", finishClose);
+    cleanupAfterClose();
+  };
+  modalCloseTimer = setTimeout(finishClose, 300);
+  modal.addEventListener("animationend", finishClose);
+}
+
+function cleanupAfterClose() {
+  const modal = document.getElementById("program-modal");
+  if (modal.classList.contains("active")) return;
+
   if (location.hash) {
-    history.replaceState(null, "", window.location.pathname + window.location.search);
+    history.replaceState(
+      null,
+      "",
+      window.location.pathname + window.location.search,
+    );
   }
 }
 
@@ -1354,6 +1413,103 @@ function renderPrograms() {
 
   refreshCollapsibleSections();
   startCardCountdowns();
+  initCardReveal();
+}
+
+let cardRevealObserver = null;
+
+function initCardReveal() {
+  if (!("IntersectionObserver" in window)) {
+    document
+      .querySelectorAll(".programs-grid .program-card")
+      .forEach((card) => card.classList.add("card-revealed"));
+    return;
+  }
+
+  if (cardRevealObserver) cardRevealObserver.disconnect();
+
+  cardRevealObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("card-revealed");
+          cardRevealObserver.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.08, rootMargin: "0px 0px -40px 0px" },
+  );
+
+  document
+    .querySelectorAll(".programs-grid .program-card")
+    .forEach((card) => cardRevealObserver.observe(card));
+}
+
+function initParallax() {
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
+  const showcase = document.getElementById("dynamicShowcase");
+  if (!showcase) return;
+
+  let ticking = false;
+
+  const update = () => {
+    ticking = false;
+    const y = window.scrollY;
+    if (showcase) {
+      showcase.style.transform = `translateY(${y * 0.06}px)`;
+    }
+  };
+
+  window.addEventListener(
+    "scroll",
+    () => {
+      if (!ticking) {
+        window.requestAnimationFrame(update);
+        ticking = true;
+      }
+    },
+    { passive: true },
+  );
+}
+
+function initCardTilt() {
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
+  const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+
+  document.addEventListener(
+    "pointermove",
+    (e) => {
+      if (reduceMotion.matches) return;
+      const card = e.target.closest?.(".program-card");
+      if (!card) return;
+
+      const rect = card.getBoundingClientRect();
+      const px = (e.clientX - rect.left) / rect.width;
+      const py = (e.clientY - rect.top) / rect.height;
+
+      card.style.setProperty("--glow-x", `${px * 100}%`);
+      card.style.setProperty("--glow-y", `${py * 100}%`);
+
+      const tiltX = (py - 0.5) * -8;
+      const tiltY = (px - 0.5) * 8;
+      card.style.setProperty("--tilt-x", `${tiltX.toFixed(2)}deg`);
+      card.style.setProperty("--tilt-y", `${tiltY.toFixed(2)}deg`);
+      card.classList.add("tilt-active");
+    },
+    { passive: true },
+  );
+
+  document.addEventListener(
+    "pointerout",
+    (e) => {
+      const card = e.target.closest?.(".program-card");
+      if (!card) return;
+      card.classList.remove("tilt-active");
+    },
+    { passive: true },
+  );
 }
 
 function updateSort(sortType) {
@@ -1836,6 +1992,8 @@ function initializeFaqAnimations() {
 document.addEventListener("DOMContentLoaded", () => {
   startRender();
   initializeFaqAnimations();
+  initCardTilt();
+  initParallax();
   window.addEventListener("resize", () => {
     resolveTimelineLabels();
     refreshCollapsibleSections();
@@ -1906,7 +2064,8 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     if (e.target.closest(".program-card")) {
-      const encodedProgram = e.target.closest(".program-card").dataset.program;
+      const card = e.target.closest(".program-card");
+      const encodedProgram = card.dataset.program;
       const program = JSON.parse(decodeURIComponent(encodedProgram));
 
       // Special handling for Stardance card - redirect instead of opening modal
@@ -1921,7 +2080,7 @@ document.addEventListener("DOMContentLoaded", () => {
         return;
       }
 
-      openModal(program);
+      openModal(program, card);
       return;
     }
 
