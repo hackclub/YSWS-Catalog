@@ -4804,6 +4804,122 @@ footer {
   color: var(--braize-red) !important;
 }
 
+/* You Spud, We Spud (https://youspudwespud.sami-s.dev) */
+.program-card.you-spud-we-spud-card {
+  --spud-paper: #e4d4ae;
+  --spud-brown: #3b1f0c;
+  --spud-ink: #2a1c10;
+  --spud-gold: #b8791a;
+  --spud-green: #365c25;
+  --spud-red: #a13324;
+  --spud-stamp: #8a6d3f;
+
+  background:
+    radial-gradient(circle at 1px 1px, rgba(58, 31, 12, 0.08) 1px, transparent 0) 0 0 / 18px 18px,
+    linear-gradient(160deg, var(--spud-paper), #d9c496) !important;
+  border: 3px dashed var(--spud-brown) !important;
+  border-radius: 2px !important;
+  box-shadow: 6px 6px 0 var(--spud-brown) !important;
+  color: var(--spud-ink) !important;
+  font-family: "Courier New", monospace !important;
+  overflow: hidden;
+}
+
+.program-card.you-spud-we-spud-card::before {
+  content: "";
+  position: absolute;
+  top: 16px;
+  right: 14px;
+  width: 42px;
+  height: 42px;
+  border: 2px solid var(--spud-stamp);
+  border-radius: 50%;
+  opacity: 0.5;
+  transform: rotate(9deg);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.program-card.you-spud-we-spud-card::after {
+  content: "🔒 youspudwespud.sami-s.dev";
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  right: 14px;
+  padding: 4px 10px;
+  background: #f6ecd4;
+  border: 1px solid var(--spud-stamp);
+  border-bottom: 3px solid var(--spud-gold);
+  border-radius: 3px;
+  color: var(--spud-brown);
+  font-family: "Courier New", monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.02em;
+  z-index: 1;
+}
+
+.program-card.you-spud-we-spud-card:hover {
+  transform: translate(-2px, -2px) !important;
+  box-shadow: 10px 10px 0 var(--spud-brown) !important;
+}
+
+.program-card.you-spud-we-spud-card .program-header,
+.program-card.you-spud-we-spud-card p,
+.program-card.you-spud-we-spud-card .program-deadline,
+.program-card.you-spud-we-spud-card .program-footer,
+.program-card.you-spud-we-spud-card .program-participants {
+  position: relative;
+  z-index: 2;
+}
+
+.program-card.you-spud-we-spud-card .program-header {
+  margin-top: 2.1rem;
+}
+
+.program-card.you-spud-we-spud-card h3 {
+  color: var(--spud-brown) !important;
+  font-family: "Courier New", monospace !important;
+  font-weight: 700 !important;
+  font-size: 1.5rem !important;
+  letter-spacing: 0.02em;
+}
+
+.program-card.you-spud-we-spud-card p,
+.program-card.you-spud-we-spud-card .program-participants,
+.program-card.you-spud-we-spud-card .program-deadline {
+  color: var(--spud-ink) !important;
+}
+
+.program-card.you-spud-we-spud-card .program-status,
+.program-card.you-spud-we-spud-card .program-completion-toggle {
+  background: var(--spud-paper) !important;
+  border: 2px dashed var(--spud-stamp) !important;
+  border-radius: 2px !important;
+  color: var(--spud-brown) !important;
+  box-shadow: none !important;
+}
+
+.program-card.you-spud-we-spud-card .status-draft,
+.program-card.you-spud-we-spud-card .status-active {
+  background: var(--spud-gold) !important;
+  color: var(--spud-brown) !important;
+}
+
+.program-card.you-spud-we-spud-card .program-completion-toggle.completed {
+  background: var(--spud-green) !important;
+  color: #ffffff !important;
+}
+
+.program-card.you-spud-we-spud-card .program-links a {
+  color: var(--spud-brown) !important;
+  font-weight: 700 !important;
+  text-decoration: underline dashed !important;
+}
+
+.program-card.you-spud-we-spud-card .program-links a:hover {
+  color: var(--spud-red) !important;
+}
+
 /*Kintsugi Styling*/
 .program-card.kintsugi-card {
   --my-bg: #f8f4ea;
