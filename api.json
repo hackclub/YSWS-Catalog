@@ -1,14 +1,128 @@
 {
   "limitedTime": [
     {
+      "name": "Braize",
+      "deadline": "2026-08-22",
+      "description": "Build something that lives in, works with, or reimagines the browser, like an extension, browser buddy, or custom shell, and earn browser-related prizes.",
+      "detailedDescription": "Braize is a Hack Club YSWS for browser-related projects. Build an extension, browser buddy, custom shell, or anything that reimagines browsing, then ship it publicly to earn browser-related prizes.",
+      "website": "https://braize.hackclub.com/",
+      "slack": "https://hackclub.enterprise.slack.com/archives/C0BF9UFNEDS",
+      "slackChannel": "#braize",
+      "status": "active",
+      "opens": "2026-08-01"
+    },
+    {
+      "name": "You Spud, We Spud",
+      "description": "Build a fast, lightweight website or game using pure vanilla HTML, CSS, and JS under strict size constraints (<15KB, <5KB, <2KB)!",
+      "detailedDescription": "Challenge yourself to build fast, lightweight, dependency free web applications using only vanilla HTML, CSS, and JavaScript! Earn custom Aussie loot and potato themed rewards based on how compact your project's total bundle size is across three difficulty tiers.\n\n**STANDARD MODE (<15KB):**\n- Custom Orpheus-as-a-spud sticker\n- Handwritten airmail postcard from Sami\n- Random Aussie trading card (whatever's in the drawer)\n- Temporary potato tattoo\n- Your link featured in the ship channel forever\n\n**HARD MODE (<5KB):**\n- Everything from Standard Mode\n- Sealed packet of Australian chicken salt\n- Surprise Aussie snack pack\n- A \"Coding Down Under\" playlist made for you\n\n**ULTRA HARD MODE (<2KB):**\n- Everything from Hard Mode\n- Flat packet of instant mashed potatoes\n- A badly hand-drawn potato portrait of you\n- Featured on sami-s.dev's Hall of Fame\n- Sami's genuine respect\n",
+      "website": "https://youspudwespud.sami-s.dev",
+      "slack": "https://hackclub.slack.com/archives/C0BMCT6U3H6",
+      "slackChannel": "#youspudwespud",
+      "status": "active",
+      "steps": [
+        "Build a site or game using pure HTML, CSS, and JS with zero frameworks or bundlers.",
+        "Ensure your total bundle size fits inside one of the size tiers (<15KB, <5KB, or <2KB).",
+        "Submit your project to earn your Aussie potato loot!"
+      ],
+      "requirements": [
+        "Vanilla HTML, CSS, and JavaScript only (no external frameworks, CDNs, or libraries).",
+        "Must fit within specified size thresholds (<15KB, <5KB, <2KB).",
+        "Must be a fully functional web project or game."
+      ]
+    },
+    {
+      "name": "Breadboard",
+      "deadline": "2026-07-18T23:59:59-04:00",
+      "description": "Design a breadboard project, get a free component kit shipped to you and other cool prizes!",
+      "website": "https://breadboard.hackclub.com",
+      "slack": "https://hackclub.slack.com/archives/C09EB0AE68M",
+      "slackChannel": "#breadboard",
+      "status": "active",
+      "detailedDescription": "Breadboard is a YSWS run by high schoolers where you design a real breadboard electronics project on an online editor, then get a component kit shipped to you for free so you can build it. Open to teens 13-18 worldwide of all skill levels, no prior electronics experience required.",
+      "steps": [
+        "Join the Slack channel",
+        "Design your breadboard project on the online editor",
+        "Submit your design",
+        "Get a free component kit shipped to you",
+        "Build your project!"
+      ]
+    },
+    {
+      "name": "Premiere",
+      "deadline": "2026-07-17",
+      "description": "Make a trailer to your game and get prizes for doing it.",
+      "website": "https://premiere.hackclub.com",
+      "slack": "https://hackclub.enterprise.slack.com/archives/C0APJFR4M4L",
+      "slackChannel": "#premiere",
+      "status": "active"
+    },
+    {
+      "name": "Circazine",
+      "deadline": "2026-08-17T23:59:59Z",
+      "description": "Design a simple circuit and a zine page, get the magazine in hand.",
+      "website": "https://circazine.hackclub.com",
+      "slack": "https://hackclub.slack.com/archives/C0BJ4EF228G",
+      "slackChannel": "#circazine",
+      "status": "active"
+    },
+    {
+      "name": "Anvil",
+      "deadline": "2026-07-28T04:59:59Z",
+      "description": "Build something to help hackers, get something for yourself in return.",
+      "website": "https://anvil.hackclub.com/?utm_source=ysws-catalog",
+      "slack": "https://hackclub.slack.com/archives/C0BFHPCH9D1",
+      "slackChannel": "#anvil-bulletin",
+      "status": "active",
+      "opens": "2026-07-01"
+    },
+    {
+      "name": "Treasure Hunt",
+      "deadline": "2026-08-31",
+      "description": "Complete 7 journeys to earn Gadgets & Merch!",
+      "website": "https://treasure.hackclub.com",
+      "slack": "https://hackclub.enterprise.slack.com/archives/C0APFPMDETD",
+      "slackChannel": "#treasure-hunt-ysws",
+      "status": "active"
+    },
+    {
+      "name": "Alchemize",
+      "description": "Make one of the 3 theme-based projects and earn Potion Mix to get the prizes you choose",
+      "website": "https://alchemize.hackclub.com",
+      "slack": "https://hackclub.enterprise.slack.com/archives/C0ASY6R552R",
+      "slackChannel": "#alchemize",
+      "status": "active"
+    },
+    {
       "name": "BLARE",
-      "deadline": "2026-07-09T00:00:00.000Z",
+      "deadline": "2026-07-09",
       "description": "Build your own special alarm clock, get the parts to make it and a custom Hack Club pillowcase!",
       "website": "https://blare.hackclub.com",
       "slack": "https://hackclub.enterprise.slack.com/archives/C0BC47NPFT9",
       "slackChannel": "#blare",
       "status": "active",
-      "opens": "2026-06-25T00:00:00.000Z"
+      "opens": "2026-06-25"
+    },
+    {
+      "name": "Thing on Desk",
+      "deadline": "2026-07-17T21:00:00Z",
+      "description": "Create a thing for your desk and win some cool treats for your desk. Beginners welcome!",
+      "website": "https://thingondesk.hackclub.com/",
+      "slack": "https://hackclub.slack.com/channels/ysws-thingondesk",
+      "slackChannel": "#ysws-thingondesk",
+      "status": "active",
+      "details": [
+        "Online-only",
+        "Project types: Electronics, Websites, Other"
+      ]
+    },
+    {
+      "name": "ArcadAi",
+      "description": "Learn to make a Retro Arcade Game with AI and Get a Reward for Shipping It",
+      "website": "https://arcadai.hackclub.com/",
+      "slack": "https://hackclub.slack.com/archives/C0B72VAHXHB",
+      "slackChannel": "#arcadai",
+      "status": "ended",
+      "deadline": "2026-7-25"
     },
     {
       "name": "Calculate",
@@ -32,13 +146,23 @@
     },
     {
       "name": "MetroShip",
-      "deadline": "2026-06-17",
+      "deadline": "2026-07-28",
       "description": "MetroShip is a transportation and mapping based YSWS where you build a map website to show something fun, useful, or interesting. <br> Build a map website, ship it, and get tickets to buy prizes based on your hours spent building.",
       "website": "https://metroship.hackclub.com",
       "slack": "https://hackclub.enterprise.slack.com/archives/C0BA8RLV9RN",
       "slackChannel": "#metroship",
-      "status": "upcoming",
-      "opens": "2026-6-10"
+      "status": "active",
+      "opens": "2026-7-20"
+    },
+    {
+      "name": "Portputer",
+      "deadline": "2026-07-28T23:59:59Z",
+      "description": "Build a desktop/ESP32-based app and get a cute card-sized computer to port it to!",
+      "website": "https://portputer.hackclub.com",
+      "slack": "https://hackclub.slack.com/archives/C0AV4TR1K5K",
+      "slackChannel": "#portputer",
+      "status": "active",
+      "opens": "2026-07-14"
     },
     {
       "name": "Outpost",
@@ -78,7 +202,7 @@
     },
     {
       "name": "Forge",
-      "deadline": "2026-08-01",
+      "deadline": "2026-09-30",
       "description": "Forge is a Hack Club YSWS (You ship, we ship) program where teens like yourself can design and build hardware projects, and get them funded! Forge your project now",
       "website": "https://forge.hackclub.com/",
       "slack": "https://hackclub.enterprise.slack.com/archives/C0ALJ6P00B1",
@@ -113,14 +237,6 @@
       "deadline": "2026-08-14"
     },
     {
-      "name": "Fix Hack Club",
-      "description": "Contribute to Hack Club repositories, get a grant of your choice!",
-      "website": "https://fix.hackclub.com/",
-      "slack": "https://hackclub.enterprise.slack.com/archives/C0ALHGAASLV",
-      "slackChannel": "#pullquests",
-      "status": "active"
-    },
-    {
       "name": "Polygon",
       "deadline": "2026-07-31T23:59:59Z",
       "description": "Build a 3d website using three.js and get a grant to go watch your favourite movies!",
@@ -145,7 +261,7 @@
       "website": "https://raspapi.hackclub.com/",
       "slack": "https://hackclub.slack.com/archives/C07UZSKJQRX",
       "slackChannel": "#raspapi",
-      "status": "active",
+      "status": "ended",
       "steps": [
         "Build an original API in any language or framework with at least 3 GET endpoints and 1 POST endpoint",
         "Host it at a stable, publicly accessible URL",
@@ -243,6 +359,14 @@
       "slack": "https://hackclub.enterprise.slack.com/archives/C0BAM60LQ4E",
       "slackChannel": "#prologue",
       "status": "active"
+    },
+    {
+      "name": "Fix Hack Club",
+      "description": "Contribute to Hack Club repositories, get a grant of your choice!",
+      "website": "https://fix.hackclub.com/",
+      "slack": "https://hackclub.enterprise.slack.com/archives/C0ALHGAASLV",
+      "slackChannel": "#pullquests",
+      "status": "ended"
     },
     {
       "name": "Flavortown",
@@ -377,7 +501,7 @@
       "website": "https://lumen.hackcraft.hackclub.com/",
       "slack": "https://hackclub.enterprise.slack.com/archives/C07NQ5QAYNQ",
       "slackChannel": "#mc-modding",
-      "status": "active"
+      "status": "ended"
     },
     {
       "name": "Pxl",
@@ -1625,6 +1749,14 @@
   ],
   "drafts": [
     {
+      "name": "Pixl",
+      "description": "Explore the open world, meet characters, make hardware and software sidequests for them! Get niche prizes and stuff according to the sidequests!",
+      "website": "https://pixl.rsvp",
+      "slack": "https://hackclub.enterprise.slack.com/archives/C0B5P4N0WHH",
+      "slackChannel": "#pixl",
+      "status": "draft"
+    },
+    {
       "name": "ArcadAi",
       "description": "Build a Retro Arcade Game with AI and Get Rewarded for Shipping It",
       "website": "https://arcade-ysws.vercel.app/",
@@ -1677,20 +1809,6 @@
       "slack": "https://hackclub.enterprise.slack.com/archives/C0AHPG4LPUM",
       "website": "https://hackanomous.vercel.app/",
       "status": "draft"
-    },
-    {
-      "name": "Alchemize",
-      "description": "Make general projects, or one of the 3 theme-based projects and earn Potion Mix to get the prizes you choose",
-      "website": "https://alchemize-ysws.vercel.app",
-      "slack": "https://hackclub.enterprise.slack.com/archives/C0ASY6R552R",
-      "slackChannel": "#alchemize",
-      "status": "draft",
-      "steps": [
-        "Make Projects and Track Hours with Hackatime",
-        "Earn Currency for the specific theme, or earn Potion Mix directly from shipping a general project",
-        "Convert the Theme Currency to Potion Mix(with a fun little bonus if you convert them together)",
-        "Get items from the Dynamic Shop, so you get to add your own item to the shop."
-      ]
     },
     {
       "name": "Jus'STUDY",
@@ -2028,12 +2146,22 @@
       ]
     },
     {
-      "name": "Pixl",
-      "description": "Explore the open world, meet characters, make hardware and software sidequests for them! Get niche prizes and stuff according to the sidequests!",
-      "website": "https://pixl.rsvp",
-      "slack": "https://hackclub.enterprise.slack.com/archives/C0B5P4N0WHH",
-      "slackChannel": "#pixl",
-      "status": "draft"
+      "name": "Survive",
+      "description": "Make offline and outdoors themed projects, win outdoors gear!",
+      "website": "https://survive-website.vercel.app/",
+      "logo": "logos/heidi_survive.png",
+      "slack": "https://hackclub.enterprise.slack.com/archives/C0B4BDVTN84",
+      "slackChannel": "#survive",
+      "status": "draft",
+      "detailedDescription": "Make a themed project, ship it and earn wood to spend in the survive shop or buy a event ticket to an outdoors hackathon!",
+      "steps": [
+        "Build an outdoor or survival themed project",
+        "Track your time using Hackatime",
+        "Ship it, and get it reviewed",
+        "Earn wood to spend in the shop",
+        "Spend that wood on prizes OR The hackathon tickets and travel stipends",
+        "Come to the hackathon in New Zealand!"
+      ]
     }
   ]
 }
