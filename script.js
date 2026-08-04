@@ -480,6 +480,7 @@ function createProgramCard(program) {
   const pixlClass = program.name === "Pixl" ? "pixl-card" : "";
   const anvilClass = program.name === "Anvil" ? "anvil-card" : "";
   const braizeClass = program.name === "Braize" ? "braize-card" : "";
+  const futureClass = program.name === "Future" ? "future-card" : "";
   const spudClass =
     program.name === "You Spud, We Spud" ? "you-spud-we-spud-card" : "";
   const surviveClass = program.name === "Survive" ? "survive-card" : "";
@@ -614,6 +615,11 @@ function createProgramCard(program) {
     `
       : "";
 
+  const futureLogo =
+    program.name === "Future"
+      ? `<img src="https://user-cdn.hackclub-assets.com/019fcc91-58b9-76ff-ad94-f47c9950645b/Future%20(1).jpg" alt="Future" class="future-wordmark">`
+      : "";
+
   const polygonBg =
     program.name === "Polygon"
       ? `<img src="./logos/Polygon.png" alt="Polygon Background" class="polygon-bg">`
@@ -703,7 +709,7 @@ function createProgramCard(program) {
       : program.description;
 
   return `
-        <div class="card program-card ${opensClass} ${KintsugiClass} ${forgeClass} ${macondoClass} ${horizonsClass} ${slushiesClass} ${blueprintClass} ${accelerateClass} ${baubleClass} ${meowClass} ${woofClass} ${pxlClass} ${wackyFilesClass} ${flavortownClass} ${jusstudyClass} ${rebootClass} ${kitlabClass} ${sleepoverClass} ${stasisClass} ${coeurClass} ${remixedClass} ${hctgClass} ${hackahomeClass} ${flaggedClass} ${raspapiClass} ${beestClass} ${alchemizeClass} ${hackanomousClass} ${shipyardClass} ${stardanceClass} ${keebClass} ${insertCoinClass} ${polygonClass} ${treasureHuntClass} ${pixlClass} ${blareClass} ${anvilClass} ${braizeClass} ${spudClass} ${surviveClass}" data-program="${encodedProgram}" data-name="${program.name}">
+        <div class="card program-card ${opensClass} ${KintsugiClass} ${forgeClass} ${macondoClass} ${horizonsClass} ${slushiesClass} ${blueprintClass} ${accelerateClass} ${baubleClass} ${meowClass} ${woofClass} ${pxlClass} ${wackyFilesClass} ${flavortownClass} ${jusstudyClass} ${rebootClass} ${kitlabClass} ${sleepoverClass} ${stasisClass} ${coeurClass} ${remixedClass} ${hctgClass} ${hackahomeClass} ${flaggedClass} ${raspapiClass} ${beestClass} ${alchemizeClass} ${hackanomousClass} ${shipyardClass} ${stardanceClass} ${keebClass} ${insertCoinClass} ${polygonClass} ${treasureHuntClass} ${pixlClass} ${blareClass} ${anvilClass} ${braizeClass} ${futureClass} ${spudClass} ${surviveClass}" data-program="${encodedProgram}" data-name="${program.name}">
             <span class="program-card-glow" aria-hidden="true"></span>
             ${pixlVideo}
             ${macondoAssets}
@@ -745,7 +751,9 @@ function createProgramCard(program) {
                                     ? '<img src="logos/Blare-logo.png" alt="Blare" class="blare-wordmark">'
                                     : program.name === "Anvil"
                                       ? '<img src="logos/anvil-logo.png" alt="Anvil" class="anvil-wordmark">'
-                                      : `<h3>${program.name}</h3>`
+                                      : program.name === "Future"
+                                        ? futureLogo
+                                        : `<h3>${program.name}</h3>`
                 }
                                             
                 <div class="status-container">
