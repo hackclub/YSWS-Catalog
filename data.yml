@@ -31,6 +31,17 @@ limitedTime:
     details:
       - Online-only
       - "Project types: Electronics, Websites, Other"
+  - name: Future
+    deadline: 2026-09-15T21:00:00Z
+    description: Build the future with electronics, websites, or CAD projects.
+    website: https://future.hackclub.com
+    slack: https://hackclub.enterprise.slack.com/archives/C0BMMC7486R
+    slackChannel: "#future-ysws"
+    status: active
+    opens: 2026-08-03
+    details:
+      - Online-only
+      - "Project types: Electronics, Websites, CAD"
   - name: ArcadAi 
     description: Learn to make a Retro Arcade Game with AI and Get a Reward for Shipping It
     website: https://arcadai.hackclub.com/
