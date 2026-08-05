@@ -1,5 +1,10 @@
 ---
 limitedTime:
+  - name: 3AM
+    description: Build a dark-themed project like a website, game .etc late at night and earn rewards based on your Hackatime hours.
+    website: https://3am.hackclub.com
+    slackChannel: "#3am"
+    status: active
   - name: Braize
     deadline: 2026-08-22
     description: Build something that lives in, works with, or reimagines the browser, like an extension, browser buddy, or custom shell, and earn browser-related prizes.
