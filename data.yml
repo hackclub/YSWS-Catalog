@@ -1,7 +1,7 @@
 ---
 limitedTime:
   - name: CloudFall
-    deadline: 2026-11-05T00:00:00Z
+    deadline: 2026-11-05T23:59:59Z
     description: Create an open source solution to subscriptions like the gym, Netflix, Spotify and receive a server for yourself.
     detailedDescription: CloudFall challenges you to replace a subscription you pay for, like the gym, Netflix, or Spotify, with an open source solution of your own. Log your coding time with Hackatime, post devlogs as you build, then ship your project for review and spend your approved hours on prizes in the shop, including a server for yourself.
     website: https://cloudfall.hackclub.com
