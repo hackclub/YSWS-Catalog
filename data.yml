@@ -10,9 +10,9 @@ limitedTime:
     status: active
     opens: 2026-08-01
   - name: CQ
-    description: Build a project about amateur radio, like a custom transciever, or a logger for your computer, and earn radio-related prizes.
+    description: Build a project about amateur radio, like a custom transceiver, or a logger for your computer, and earn radio-related prizes.
     deadline: 2026-12-31
-    detailedDescription: Ever wanted to talk to the ISS from your backyard? Introducing Contact, an amateur radio YSWS where you learn, get licensed, and get a free radio! You don't need to know anything about radio to begin. 
+    detailedDescription: Ever wanted to talk to the ISS from your backyard? Introducing CQ, an amateur radio YSWS where you learn, get licensed, and get a free radio! You don't need to know anything about radio to begin. 
     website: https://cq.hackclub.com
     slack: https://hackclub.enterprise.slack.com/archives/C0B2256L7PF
     slackChannel: "#cq"
