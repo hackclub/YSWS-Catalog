@@ -6882,6 +6882,24 @@ footer {
   box-shadow: 0 22px 38px rgba(214, 164, 55, 0.25);
 }
 
+.program-card.future-card {
+  border: 2px solid #71d1ff !important;
+  overflow: hidden;
+  position: relative;
+}
+
+.program-card.future-card:hover {
+  border-color: #f4d35e !important;
+  box-shadow: 0 22px 38px rgba(113, 209, 255, 0.25);
+}
+
+.future-wordmark {
+  width: min(180px, calc(100% - 88px));
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
 .blare-wordmark {
   width: min(200px, calc(100% - 88px));
   height: auto;

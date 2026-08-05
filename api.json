@@ -20,9 +20,9 @@
     },
     {
       "name": "CQ",
-      "description": "Build a project about amateur radio, like a custom transciever, or a logger for your computer, and earn radio-related prizes.",
+      "description": "Build a project about amateur radio, like a custom transceiver, or a logger for your computer, and earn radio-related prizes.",
       "deadline": "2026-12-31",
-      "detailedDescription": "Ever wanted to talk to the ISS from your backyard? Introducing Contact, an amateur radio YSWS where you learn, get licensed, and get a free radio! You don't need to know anything about radio to begin.",
+      "detailedDescription": "Ever wanted to talk to the ISS from your backyard? Introducing CQ, an amateur radio YSWS where you learn, get licensed, and get a free radio! You don't need to know anything about radio to begin.",
       "website": "https://cq.hackclub.com",
       "slack": "https://hackclub.enterprise.slack.com/archives/C0B2256L7PF",
       "slackChannel": "#cq",
@@ -131,6 +131,20 @@
       "details": [
         "Online-only",
         "Project types: Electronics, Websites, Other"
+      ]
+    },
+    {
+      "name": "Future",
+      "deadline": "2026-09-15T21:00:00Z",
+      "description": "Build the future with electronics, websites, or CAD projects.",
+      "website": "https://future.hackclub.com",
+      "slack": "https://hackclub.enterprise.slack.com/archives/C0BMMC7486R",
+      "slackChannel": "#future-ysws",
+      "status": "active",
+      "opens": "2026-08-03",
+      "details": [
+        "Online-only",
+        "Project types: Electronics, Websites, CAD"
       ]
     },
     {
@@ -1766,6 +1780,14 @@
     }
   ],
   "drafts": [
+    {
+      "name": "Improv",
+      "description": "Find something that interests or deeply annoys you, whether that's overpriced PaaS, missing features or something else. build a tool to fix it, ship your project and get Uptime + discounts. profit!",
+      "website": "https://improv-silk.vercel.app/",
+      "slack": "https://hackclub.enterprise.slack.com/archives/C0BEVTSE0BD",
+      "slackChannel": "#improv",
+      "status": "draft"
+    },
     {
       "name": "Pixl",
       "description": "Explore the open world, meet characters, make hardware and software sidequests for them! Get niche prizes and stuff according to the sidequests!",
