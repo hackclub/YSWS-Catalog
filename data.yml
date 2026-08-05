@@ -1355,6 +1355,21 @@ recentlyEnded:
     deadline: "2025-06-30T23:59:59"
 
 indefinite:
+  - name: CloudFall
+    description: Create an open source solution to subscriptions like the gym, Netflix, Spotify and receive a server for yourself.
+    website: https://cloudfall.hackclub.com
+    slack: https://hackclub.enterprise.slack.com/archives/C0BHZLZF8BX
+    slackChannel: "#ysws-cloudfall"
+    status: active
+    detailedDescription: CloudFall challenges you to replace a subscription you pay for, like the gym, Netflix, or Spotify, with an open source solution of your own. Log your coding time with Hackatime, post devlogs as you build, then ship your project for review and spend your approved hours on prizes in the shop, including a server for yourself.
+    steps:
+      - "Join #ysws-cloudfall and sign in with your Hack Club account on Stern."
+      - Link Hackatime so your coding hours count themselves, and post devlogs as you build.
+      - Ship your project for review with a repo, demo, and a couple of screenshots.
+      - Spend your approved hours on prizes in the shop.
+    details:
+      - Online-only
+      - "Project types: Software, Websites"
   - name: Enclosure
     description: Design a custom enclosure for your project, get a 3D print of it shipped to you and tier based prizes!
     website: https://enclosure.hackclub.com/

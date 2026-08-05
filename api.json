@@ -12,6 +12,17 @@
       "opens": "2026-08-01"
     },
     {
+      "name": "CQ",
+      "description": "Build a project about amateur radio, like a custom transciever, or a logger for your computer, and earn radio-related prizes.",
+      "deadline": "2026-12-31",
+      "detailedDescription": "Ever wanted to talk to the ISS from your backyard? Introducing Contact, an amateur radio YSWS where you learn, get licensed, and get a free radio! You don't need to know anything about radio to begin.",
+      "website": "https://cq.hackclub.com",
+      "slack": "https://hackclub.enterprise.slack.com/archives/C0B2256L7PF",
+      "slackChannel": "#cq",
+      "status": "upcoming",
+      "opens": "2026-09-01"
+    },
+    {
       "name": "You Spud, We Spud",
       "description": "Build a fast, lightweight website or game using pure vanilla HTML, CSS, and JS under strict size constraints (<15KB, <5KB, <2KB)!",
       "detailedDescription": "Challenge yourself to build fast, lightweight, dependency free web applications using only vanilla HTML, CSS, and JavaScript! Earn custom Aussie loot and potato themed rewards based on how compact your project's total bundle size is across three difficulty tiers.\n\n**STANDARD MODE (<15KB):**\n- Custom Orpheus-as-a-spud sticker\n- Handwritten airmail postcard from Sami\n- Random Aussie trading card (whatever's in the drawer)\n- Temporary potato tattoo\n- Your link featured in the ship channel forever\n\n**HARD MODE (<5KB):**\n- Everything from Standard Mode\n- Sealed packet of Australian chicken salt\n- Surprise Aussie snack pack\n- A \"Coding Down Under\" playlist made for you\n\n**ULTRA HARD MODE (<2KB):**\n- Everything from Hard Mode\n- Flat packet of instant mashed potatoes\n- A badly hand-drawn potato portrait of you\n- Featured on sami-s.dev's Hall of Fame\n- Sami's genuine respect\n",
@@ -1631,6 +1642,25 @@
   ],
   "indefinite": [
     {
+      "name": "CloudFall",
+      "description": "Create an open source solution to subscriptions like the gym, Netflix, Spotify and receive a server for yourself.",
+      "website": "https://cloudfall.hackclub.com",
+      "slack": "https://hackclub.enterprise.slack.com/archives/C0BHZLZF8BX",
+      "slackChannel": "#ysws-cloudfall",
+      "status": "active",
+      "detailedDescription": "CloudFall challenges you to replace a subscription you pay for, like the gym, Netflix, or Spotify, with an open source solution of your own. Log your coding time with Hackatime, post devlogs as you build, then ship your project for review and spend your approved hours on prizes in the shop, including a server for yourself.",
+      "steps": [
+        "Join #ysws-cloudfall and sign in with your Hack Club account on Stern.",
+        "Link Hackatime so your coding hours count themselves, and post devlogs as you build.",
+        "Ship your project for review with a repo, demo, and a couple of screenshots.",
+        "Spend your approved hours on prizes in the shop."
+      ],
+      "details": [
+        "Online-only",
+        "Project types: Software, Websites"
+      ]
+    },
+    {
       "name": "Enclosure",
       "description": "Design a custom enclosure for your project, get a 3D print of it shipped to you and tier based prizes!",
       "website": "https://enclosure.hackclub.com/",
@@ -1856,9 +1886,9 @@
     },
     {
       "name": "issued",
-      "description": "code to design hack-themed apparel",
-      "detailedDescription": "you code to design hack-themed apparel, we ship popular designs as real clothes!",
-      "website": "https://issued-ysws.vercel.app",
+      "description": "Design with Code, Wear Apparel with those designs",
+      "detailedDescription": "Design hack-themed apparel with code, we ship your designs as real clothes!",
+      "website": "https://issued.bing-bong.uk",
       "slack": "https://hackclub.slack.com/archives/C09C9M0N2UC",
       "slackChannel": "#issued",
       "status": "draft"
