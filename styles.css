@@ -6906,6 +6906,50 @@ footer {
   display: block;
 }
 
+.program-card.greeble-card {
+  background-color: #264a4c;
+  background-image: url("logos/greeble_bg.png");
+  border: 2px solid #60a1a0 !important;
+}
+
+.program-card.greeble-card > div {
+  background-color: #264a4caa;
+  padding: 4px;
+  border-radius: 8px;
+  border-color: #60a1a0;
+  border-width: 1px;
+  border-style: solid;
+}
+
+#greeble-countdown {
+  background-color: transparent;
+  border: unset;
+}
+
+.program-card.greeble-card > p
+{
+  color: #a1d8d8;
+  background-color: #264a4caa;
+  padding: 4px;
+  border-radius: 8px;
+  border-color: #60a1a0;
+  border-width: 1px;
+  border-style: solid;
+}
+
+.program-card.greeble-card > .program-footer > .program-links > a {
+  color: #e4f3f3;
+}
+
+.program-card.greeble-card > .program-header > h3 {
+  color: #e4f3f3;
+  font-family: sans-serif;
+}
+
+.program-card.greeble-card > .program-deadline {
+  color: #a1d8d8;
+}
+
 .program-card.keeb-card {
   background:
     linear-gradient(
