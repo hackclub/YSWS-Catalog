@@ -467,6 +467,7 @@ function createProgramCard(program) {
   const shipyardClass = program.name === "Shipyard" ? "shipyard-card" : "";
   const stardanceClass = program.name === "Stardance" ? "stardance-card" : "";
   const keebClass = program.name === "Keeb" ? "keeb-card" : "";
+  const greebleClass = program.name === "Greeble" ? "greeble-card" : "";
   const insertCoinClass =
     program.name === "Insert Coin" ? "insert-coin-card" : "";
   const isNew =
@@ -709,7 +710,7 @@ function createProgramCard(program) {
       : program.description;
 
   return `
-        <div class="card program-card ${opensClass} ${KintsugiClass} ${forgeClass} ${macondoClass} ${horizonsClass} ${slushiesClass} ${blueprintClass} ${accelerateClass} ${baubleClass} ${meowClass} ${woofClass} ${pxlClass} ${wackyFilesClass} ${flavortownClass} ${jusstudyClass} ${rebootClass} ${kitlabClass} ${sleepoverClass} ${stasisClass} ${coeurClass} ${remixedClass} ${hctgClass} ${hackahomeClass} ${flaggedClass} ${raspapiClass} ${beestClass} ${alchemizeClass} ${hackanomousClass} ${shipyardClass} ${stardanceClass} ${keebClass} ${insertCoinClass} ${polygonClass} ${treasureHuntClass} ${pixlClass} ${blareClass} ${anvilClass} ${braizeClass} ${futureClass} ${spudClass} ${surviveClass}" data-program="${encodedProgram}" data-name="${program.name}">
+        <div class="card program-card ${opensClass} ${KintsugiClass} ${forgeClass} ${macondoClass} ${horizonsClass} ${slushiesClass} ${blueprintClass} ${accelerateClass} ${baubleClass} ${meowClass} ${woofClass} ${pxlClass} ${wackyFilesClass} ${flavortownClass} ${jusstudyClass} ${rebootClass} ${kitlabClass} ${sleepoverClass} ${stasisClass} ${coeurClass} ${remixedClass} ${hctgClass} ${hackahomeClass} ${flaggedClass} ${raspapiClass} ${beestClass} ${alchemizeClass} ${hackanomousClass} ${shipyardClass} ${stardanceClass} ${greebleClass} ${keebClass} ${insertCoinClass} ${polygonClass} ${treasureHuntClass} ${pixlClass} ${blareClass} ${anvilClass} ${braizeClass} ${futureClass} ${spudClass} ${surviveClass}" data-program="${encodedProgram}" data-name="${program.name}">
             <span class="program-card-glow" aria-hidden="true"></span>
             ${pixlVideo}
             ${macondoAssets}
