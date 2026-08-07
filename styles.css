@@ -6,7 +6,7 @@
    ============================================================ */
 
 /* ── Fonts (Hack Club CDN with Google Fonts fallback) ─────── */
-@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Instrument+Serif:ital@0;1&family=Geist:wght@400;500;600;700&family=Pixelify+Sans:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Instrument+Serif:ital@0;1&family=Geist:wght@400;500;600;700&family=Pixelify+Sans:wght@400;700&family=Share+Tech+Mono&display=swap");
 
 @font-face {
   font-family: "Phantom Sans";
@@ -7448,4 +7448,69 @@ h2.section-heading::before {
 .countdown-container .countdown-segment p {
   font-size: 12px;
   /* color:  !important; */
+}
+
+.program-card.hackxpansion-card {
+  background: url("logos/hackxpansion_bg.png") center/cover no-repeat #c3cbd4;
+  border: 4px solid oklch(37.2% 0.044 257.287) !important;
+  color: #ffffff !important;
+  overflow: hidden;
+  position: relative;
+}
+
+.program-card.hackxpansion-card .program-header,
+.program-card.hackxpansion-card p,
+.program-card.hackxpansion-card .program-deadline,
+.program-card.hackxpansion-card .program-footer {
+  position: relative;
+  z-index: 2;
+}
+
+.program-card.hackxpansion-card p,
+.program-card.hackxpansion-card .program-deadline,
+.program-card.hackxpansion-card .program-header h3 {
+  color: oklch(37.2% 0.044 257.287);
+  font-family: "Share Tech Mono", monospace !important;
+}
+
+.program-card.hackxpansion-card .program-links a {
+  color: oklch(37.2% 0.044 257.287) !important;
+}
+
+.program-card.hackxpansion-card .program-links a:hover {
+  color: oklch(55.4% 0.046 257.417) !important;
+}
+
+.program-card.hackxpansion-card:hover {
+  border-color: oklch(55.4% 0.046 257.417) !important;
+  box-shadow: 0 22px 38px oklch(37.2% 0.044 257.287);
+}
+
+.hackxpansion-wordmark {
+  width: min(80px, calc(100% - 88px));
+  height: auto;
+  display: block;
+}
+
+.program-card.hackxpansion-card .program-status {
+  color: oklch(37.2% 0.044 257.287) !important;
+  border: 2px solid oklch(37.2% 0.044 257.287) !important;
+  border-radius: 10px !important;
+  font-weight: 800 !important;
+  box-shadow: 2px 2px 0px oklch(37.2% 0.044 257.287) !important;
+}
+
+.program-card.hackxpansion-card .status-active {
+  background: #ff4444 !important;
+  color: #ffffff !important;
+  border-color: #ff4444 !important;
+  box-shadow: 2px 2px 0px oklch(37.2% 0.044 257.287) !important;
+}
+
+.program-card.hackxpansion-card .status-draft {
+  background: #c3cbd4 !important;
+}
+
+.program-card.hackxpansion-card .status-ended {
+  background: rgba(132, 146, 166, 0.15) !important;
 }
