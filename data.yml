@@ -1462,6 +1462,13 @@ indefinite:
     status: active
 
 drafts:
+  - name: Trek
+    description: Build your escape from a stranded island by engineering something that flies, floats, drives, or defies sanity, and win prizes! RSVP at https://rsvp.soon.it/trek
+    website: https://ysws-sigma.vercel.app/
+    slack: https://hackclub.enterprise.slack.com/archives/C0BKX7PP6KB
+    slackChannel: "#trek-ysws"
+    status: draft
+    
   - name: Improv
     description: Find something that interests or deeply annoys you, whether that's overpriced PaaS, missing features or something else. build a tool to fix it, ship your project and get Uptime + discounts. profit!
     website: https://improv-silk.vercel.app/
