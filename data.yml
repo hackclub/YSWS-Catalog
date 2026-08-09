@@ -1388,6 +1388,13 @@ recentlyEnded:
     deadline: "2025-06-30T23:59:59"
 
 indefinite:
+  - name: Tagless
+    description: Ship a website without the use of HTML tags, get a luggage tag or other prizes!
+    detailedDescription: "For this YSWS, you are allowed to use these literal tags: <html>, <head>, <body>, <meta>, <script>, <style>, and <canvas>. Everything else should be created without writing HTML tags directly."
+    website: https://tagless.hackclub.com
+    slack: https://hackclub.enterprise.slack.com/archives/C0B620CBDDW
+    slackChannel: "#tagless"
+    status: upcoming
   - name: Enclosure
     description: Design a custom enclosure for your project, get a 3D print of it shipped to you and tier based prizes!
     website: https://enclosure.hackclub.com/
