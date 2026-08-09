@@ -1,6 +1,27 @@
 {
   "limitedTime": [
     {
+      "name": "CloudFall",
+      "deadline": "2026-11-05T23:59:59Z",
+      "description": "Create an open source solution to subscriptions like the gym, Netflix, Spotify and receive a server for yourself.",
+      "detailedDescription": "CloudFall challenges you to replace a subscription you pay for, like the gym, Netflix, or Spotify, with an open source solution of your own. Log your coding time with Hackatime, post devlogs as you build, then ship your project for review and spend your approved hours on prizes in the shop, including a server for yourself.",
+      "website": "https://cloudfall.hackclub.com",
+      "slack": "https://hackclub.enterprise.slack.com/archives/C0BHZLZF8BX",
+      "slackChannel": "#ysws-cloudfall",
+      "status": "active",
+      "opens": "2026-08-05",
+      "steps": [
+        "Join #ysws-cloudfall and sign in with your Hack Club account on Stern.",
+        "Link Hackatime so your coding hours count themselves, and post devlogs as you build.",
+        "Ship your project for review with a repo, demo, and a couple of screenshots.",
+        "Spend your approved hours on prizes in the shop."
+      ],
+      "details": [
+        "Online-only",
+        "Project types: Software, Websites"
+      ]
+    },
+    {
       "name": "3AM",
       "description": "Build a dark-themed project like a website, game .etc late at night and earn rewards based on your Hackatime hours.",
       "website": "https://3am.hackclub.com",
