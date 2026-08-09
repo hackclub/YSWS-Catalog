@@ -1811,6 +1811,21 @@
   ],
   "drafts": [
     {
+      "name": "Hackxpansion",
+      "description": "Design 4 expansion cards, build them for free, get a custom console to use them in!",
+      "website": "https://hackxpansion.koeg.dev/",
+      "detailedDescription": "Braize is a Hack Club YSWS for browser-related projects. Build an extension, browser buddy, custom shell, or anything that reimagines browsing, then ship it publicly to earn browser-related prizes.",
+      "slack": "https://hackclub.enterprise.slack.com/archives/C0A9B4152BY",
+      "slackChannel": "#hackxpansion",
+      "status": "draft",
+      "steps": [
+        "Design 4 expansion cards",
+        "Get funding to build them",
+        "Write app that use these card",
+        "Get a custom handheld console to use the cards in"
+      ]
+    },
+    {
       "name": "Improv",
       "description": "Find something that interests or deeply annoys you, whether that's overpriced PaaS, missing features or something else. build a tool to fix it, ship your project and get Uptime + discounts. profit!",
       "website": "https://improv-silk.vercel.app/",
