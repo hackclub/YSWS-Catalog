@@ -1,6 +1,13 @@
 {
   "limitedTime": [
     {
+      "name": "Gadget Market",
+      "description": "Make a hardware gadget, then trade it on the Gadget Market! Get up to 210 USD to build your hardware project, and 30+ USD to mail it to other teens around the world!",
+      "website": "https://gadget.hackclub.com",
+      "slackChannel": "#gadget-market",
+      "status": "active"
+    },
+    {
       "name": "CloudFall",
       "deadline": "2026-11-05T23:59:59Z",
       "description": "Create an open source solution to subscriptions like the gym, Netflix, Spotify and receive a server for yourself.",
