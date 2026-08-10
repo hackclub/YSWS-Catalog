@@ -1691,6 +1691,20 @@
   ],
   "indefinite": [
     {
+      "name": "Jame Gam",
+      "description": "Join a game jam every month with us, earn an awesome prize!",
+      "website": "https://jamegam.hackclub.com/",
+      "slack": "https://hackclub.enterprise.slack.com/archives/C0BBFQASBV2",
+      "slackChannel": "#jame-gam",
+      "status": "active",
+      "steps": [
+        "Find a team or work by yourself and join the dedicated Jame Gam Game Jam for that month.",
+        "Over the short timespan of the Game Jam make a game!",
+        "Submit the game to both the Game Jam on itch.io and to Jame Gam.",
+        "As long as you put in significant effort, you earn a prize!"
+      ]
+    },
+    {
       "name": "Tagless",
       "description": "Ship a website without the use of HTML tags, get a luggage tag or other prizes!",
       "detailedDescription": "For this YSWS, you are allowed to use these literal tags: <html>, <head>, <body>, <meta>, <script>, <style>, and <canvas>. Everything else should be created without writing HTML tags directly.",
