@@ -467,6 +467,7 @@ function createProgramCard(program) {
   const shipyardClass = program.name === "Shipyard" ? "shipyard-card" : "";
   const stardanceClass = program.name === "Stardance" ? "stardance-card" : "";
   const keebClass = program.name === "Keeb" ? "keeb-card" : "";
+  const greebleClass = program.name === "Greeble" ? "greeble-card" : "";
   const insertCoinClass =
     program.name === "Insert Coin" ? "insert-coin-card" : "";
   const isNew =
