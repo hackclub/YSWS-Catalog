@@ -1534,7 +1534,7 @@ drafts:
     slackChannel: "#arcadAi"
     status: Draft
   - name: Kintsugi
-    description: Build a project that solves a real-world problem, get Reward based on the kintsugi and Japanese theme!
+    description: Build Any general or problem solving project for 50 hours. Come to an IRL hackathon in Tokyo,Japan for free
     website: https://kintsugi-ysws.vercel.app/
     slack: https://hackclub.enterprise.slack.com/archives/C08KCUK3NF5
     slackChannel: "#kintsugi"
