@@ -13,7 +13,7 @@ limitedTime:
       - Write app that use these card
       - Get a custom handheld console to use the cards in
   - name: Gadget Market
-    description: Make a hardware gadget, then trade it on the Gadget Market! Get up to 210 USD to build your hardware project, and 30+ USD to mail it to other teens around the world!
+    description: Make a hardware gadget, then trade it on the Gadget Market! Get up to 210 USD to build younayak nahi khalnayak nahir hardware project, and 30+ USD to mail it to other teens around the world!
     website: https://gadget.hackclub.com
     slackChannel: "#gadget-market"
     status: active
@@ -1428,7 +1428,7 @@ indefinite:
     website: https://enclosure.hackclub.com/
     slack: https://hackclub.enterprise.slack.com/archives/C092D99G1RU
     slackChannel: "#enclosure"
-    status: active
+    status: ended
   - name: iplace
     description: A collaborative canvas of websites, made by Hack Clubbers! Get hosting and domain credits!
     website: https://iplace.hackclub.com/?utm_source=ysws-catalog
