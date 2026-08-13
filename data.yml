@@ -1,5 +1,17 @@
 ---
 limitedTime:
+  - name: Hackxpansion
+    description: Design 4 expansion cards, build them for free, get a custom console to use them in!
+    website: https://hackxpansion.hackclub.com/
+    slack: https://hackclub.enterprise.slack.com/archives/C0A9B4152BY
+    slackChannel: "#hackxpansion"
+    status: active
+    deadline: 2026-09-07
+    steps:
+      - Design 4 expansion cards
+      - Get funding to build them
+      - Write app that use these card
+      - Get a custom handheld console to use the cards in
   - name: Gadget Market
     description: Make a hardware gadget, then trade it on the Gadget Market! Get up to 210 USD to build your hardware project, and 30+ USD to mail it to other teens around the world!
     website: https://gadget.hackclub.com
