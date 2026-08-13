@@ -12,6 +12,28 @@ limitedTime:
       - Get funding to build them
       - Write app that use these card
       - Get a custom handheld console to use the cards in
+  - name: Gadget Market
+    description: Make a hardware gadget, then trade it on the Gadget Market! Get up to 210 USD to build your hardware project, and 30+ USD to mail it to other teens around the world!
+    website: https://gadget.hackclub.com
+    slackChannel: "#gadget-market"
+    status: active
+  - name: CloudFall
+    deadline: 2026-11-05T23:59:59Z
+    description: Create an open source solution to subscriptions like the gym, Netflix, Spotify and receive a server for yourself.
+    detailedDescription: CloudFall challenges you to replace a subscription you pay for, like the gym, Netflix, or Spotify, with an open source solution of your own. Log your coding time with Hackatime, post devlogs as you build, then ship your project for review and spend your approved hours on prizes in the shop, including a server for yourself.
+    website: https://cloudfall.hackclub.com
+    slack: https://hackclub.enterprise.slack.com/archives/C0BHZLZF8BX
+    slackChannel: "#ysws-cloudfall"
+    status: active
+    opens: 2026-08-05
+    steps:
+      - "Join #ysws-cloudfall and sign in with your Hack Club account on Stern."
+      - Link Hackatime so your coding hours count themselves, and post devlogs as you build.
+      - Ship your project for review with a repo, demo, and a couple of screenshots.
+      - Spend your approved hours on prizes in the shop.
+    details:
+      - Online-only
+      - "Project types: Software, Websites"
   - name: 3AM
     description: Build a dark-themed project like a website, game .etc late at night and earn rewards based on your Hackatime hours.
     website: https://3am.hackclub.com
@@ -1383,6 +1405,24 @@ recentlyEnded:
     deadline: "2025-06-30T23:59:59"
 
 indefinite:
+  - name: Jame Gam
+    description: Join a game jam every month with us, earn an awesome prize!
+    website: https://jamegam.hackclub.com/
+    slack: https://hackclub.enterprise.slack.com/archives/C0BBFQASBV2
+    slackChannel: "#jame-gam"
+    status: active
+    steps:
+      - Find a team or work by yourself and join the dedicated Jame Gam Game Jam for that month.
+      - Over the short timespan of the Game Jam make a game!
+      - Submit the game to both the Game Jam on itch.io and to Jame Gam.
+      - As long as you put in significant effort, you earn a prize!
+  - name: Tagless
+    description: Ship a website without the use of HTML tags, get a luggage tag or other prizes!
+    detailedDescription: "For this YSWS, you are allowed to use these literal tags: <html>, <head>, <body>, <meta>, <script>, <style>, and <canvas>. Everything else should be created without writing HTML tags directly."
+    website: https://tagless.hackclub.com
+    slack: https://hackclub.enterprise.slack.com/archives/C0B620CBDDW
+    slackChannel: "#tagless"
+    status: upcoming
   - name: Enclosure
     description: Design a custom enclosure for your project, get a 3D print of it shipped to you and tier based prizes!
     website: https://enclosure.hackclub.com/
@@ -1474,6 +1514,18 @@ indefinite:
     status: active
 
 drafts:
+  - name: Hackxpansion
+    description: Design 4 expansion cards, build them for free, get a custom console to use them in!
+    website: https://hackxpansion.koeg.dev/
+    detailedDescription: Braize is a Hack Club YSWS for browser-related projects. Build an extension, browser buddy, custom shell, or anything that reimagines browsing, then ship it publicly to earn browser-related prizes.
+    slack: https://hackclub.enterprise.slack.com/archives/C0A9B4152BY
+    slackChannel: "#hackxpansion"
+    status: draft
+    steps:
+      - Design 4 expansion cards
+      - Get funding to build them
+      - Write app that use these card
+      - Get a custom handheld console to use the cards in
   - name: Improv
     description: Find something that interests or deeply annoys you, whether that's overpriced PaaS, missing features or something else. build a tool to fix it, ship your project and get Uptime + discounts. profit!
     website: https://improv-silk.vercel.app/
@@ -1494,7 +1546,7 @@ drafts:
     slackChannel: "#arcadAi"
     status: Draft
   - name: Kintsugi
-    description: Build a project that solves a real-world problem, get Reward based on the kintsugi and Japanese theme!
+    description: Build Any general or problem solving project for 50 hours. Come to an IRL hackathon in Tokyo,Japan for free
     website: https://kintsugi-ysws.vercel.app/
     slack: https://hackclub.enterprise.slack.com/archives/C08KCUK3NF5
     slackChannel: "#kintsugi"
@@ -1520,7 +1572,7 @@ drafts:
     slackChannel: "#bestsellr"
     slack: https://hackclub.enterprise.slack.com/archives/C0B0A14PVEE
     detailedDescription: Bestsellr is a YSWS where you ship a website about a 2-3 page storybook which you have written by your own, and we ship book-themed ships such as stickers and bookmarks.
-    website: https://srinidhipakalapati.github.io/Bestsellr/
+    website: https://incredible-chaja-b44bb7.netlify.app/
     status: draft
 
   - name: Hackanomous
@@ -1563,13 +1615,7 @@ drafts:
       - Improve your skills with new Hardware/CAD projects on MakerCreate
       - Trade your hard-earned spools on the *secret* MakerShop™ for goodies or hardware grants.
     status: draft
-  - name: Shrine
-    description: Make and code a project about your favorite fictional character, get a grant to buy merch of your character!
-    detailedDescription: Shrine is a YSWS where you build a project (Must be tracked with Hackatime) about your favorite fictional character! It could be anything! Like, a website about your character, a Visual Novel with RenPy, anything related to that character! After you submit and we check your project, you'll receive a grant to go buy merch of your favorite character!
-    website: https://shrine-site-swart.vercel.app/
-    slack: https://hackclub.enterprise.slack.com/archives/C09A37XECJV
-    slackChannel: "#shrine"
-    status: draft
+
   - name: issued
     description: Design with Code, Wear Apparel with those designs
     detailedDescription: Design hack-themed apparel with code, we ship your designs as real clothes!
