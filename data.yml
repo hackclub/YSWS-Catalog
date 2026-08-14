@@ -1514,6 +1514,13 @@ indefinite:
     status: active
 
 drafts:
+  - name: Trek
+    description: Build your escape from a stranded island by engineering something that flies, floats, drives, or defies sanity, and win prizes! RSVP at https://rsvp.soon.it/trek
+    website: https://ysws-sigma.vercel.app/
+    slack: https://hackclub.enterprise.slack.com/archives/C0BKX7PP6KB
+    slackChannel: "#trek-ysws"
+    status: draft
+    
   - name: Hackxpansion
     description: Design 4 expansion cards, build them for free, get a custom console to use them in!
     website: https://hackxpansion.koeg.dev/
