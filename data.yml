@@ -1558,7 +1558,7 @@ drafts:
     website: https://arcade-ysws.vercel.app/
     slack: https://hackclub.slack.com/archives/C0B72VAHXHB
     slackChannel: "#arcadAi"
-    status: Draft
+    status: active
   - name: Kintsugi
     description: Build Any general or problem solving project for 50 hours. Come to an IRL hackathon in Tokyo,Japan for free
     website: https://kintsugi-ysws.vercel.app/
