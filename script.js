@@ -484,6 +484,7 @@ function createProgramCard(program) {
   const spudClass =
     program.name === "You Spud, We Spud" ? "you-spud-we-spud-card" : "";
   const surviveClass = program.name === "Survive" ? "survive-card" : "";
+  const outToCClass = program.name === "Out to C" ? "out-to-c-card" : "";
   const hackxpansionClass =
     program.name === "Hackxpansion" ? "hackxpansion-card" : "";
 
@@ -711,7 +712,7 @@ function createProgramCard(program) {
       : program.description;
 
   return `
-        <div class="card program-card ${opensClass} ${KintsugiClass} ${forgeClass} ${macondoClass} ${horizonsClass} ${slushiesClass} ${blueprintClass} ${accelerateClass} ${baubleClass} ${meowClass} ${woofClass} ${pxlClass} ${wackyFilesClass} ${flavortownClass} ${jusstudyClass} ${rebootClass} ${kitlabClass} ${sleepoverClass} ${stasisClass} ${coeurClass} ${remixedClass} ${hctgClass} ${hackahomeClass} ${flaggedClass} ${raspapiClass} ${beestClass} ${alchemizeClass} ${hackanomousClass} ${shipyardClass} ${stardanceClass} ${keebClass} ${insertCoinClass} ${polygonClass} ${treasureHuntClass} ${pixlClass} ${blareClass} ${anvilClass} ${braizeClass} ${futureClass} ${spudClass} ${surviveClass} ${hackxpansionClass}" data-program="${encodedProgram}" data-name="${program.name}">
+        <div class="card program-card ${opensClass} ${KintsugiClass} ${forgeClass} ${macondoClass} ${horizonsClass} ${slushiesClass} ${blueprintClass} ${accelerateClass} ${baubleClass} ${meowClass} ${woofClass} ${pxlClass} ${wackyFilesClass} ${flavortownClass} ${jusstudyClass} ${rebootClass} ${kitlabClass} ${sleepoverClass} ${stasisClass} ${coeurClass} ${remixedClass} ${hctgClass} ${hackahomeClass} ${flaggedClass} ${raspapiClass} ${beestClass} ${alchemizeClass} ${hackanomousClass} ${shipyardClass} ${stardanceClass} ${keebClass} ${insertCoinClass} ${polygonClass} ${treasureHuntClass} ${pixlClass} ${blareClass} ${anvilClass} ${braizeClass} ${futureClass} ${spudClass} ${surviveClass} ${hackxpansionClass} ${outToCClass}" data-program="${encodedProgram}" data-name="${program.name}">
             <span class="program-card-glow" aria-hidden="true"></span>
             ${pixlVideo}
             ${macondoAssets}
@@ -757,7 +758,9 @@ function createProgramCard(program) {
                                         ? futureLogo
                                         : program.name === "Hackxpansion"
                                           ? '<img src="logos/hackxpansion_logo.png" alt="Hackxpansion" class="hackxpansion-wordmark">'
-                                          : `<h3>${program.name}</h3>`
+                                          : program.name === "Out to C"
+                                            ? '<img src="logos/out-to-c.png" alt="Out to C" class="out-to-c-wordmark">'
+                                            : `<h3>${program.name}</h3>`
                 }
                                             
                 <div class="status-container">

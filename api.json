@@ -1,6 +1,15 @@
 {
   "limitedTime": [
     {
+      "name": "Out to C",
+      "description": "Code in C, C++ or C# and get treasure!!",
+      "website": "https://out-to-c.hackclub.com/",
+      "slack": "https://hackclub.enterprise.slack.com/archives/C0ANHQPT1S4",
+      "slackChannel": "#out-to-c",
+      "deadline": "2026-09-07",
+      "status": "active"
+    },
+    {
       "name": "Hackxpansion",
       "description": "Design 4 expansion cards, build them for free, get a custom console to use them in!",
       "website": "https://hackxpansion.hackclub.com/",
