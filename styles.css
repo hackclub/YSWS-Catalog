@@ -7514,3 +7514,15 @@ h2.section-heading::before {
 .program-card.hackxpansion-card .status-ended {
   background: rgba(132, 146, 166, 0.15) !important;
 }
+
+.program-card.out-to-c-card {
+  background: #0091F8 !important;
+  background: linear-gradient(180deg,rgba(0, 145, 248, 1) 0%, rgba(228, 247, 255, 1) 100%) !important;
+  color: #ffffff !important;
+}
+.program-card.out-to-c-card > p {
+  font-size: 26px;
+}
+.out-to-c-wordmark {
+  width: 100%;
+}
