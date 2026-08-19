@@ -1441,7 +1441,7 @@ indefinite:
     website: https://enclosure.hackclub.com/
     slack: https://hackclub.enterprise.slack.com/archives/C092D99G1RU
     slackChannel: "#enclosure"
-    status: active
+    status: ended
   - name: iplace
     description: A collaborative canvas of websites, made by Hack Clubbers! Get hosting and domain credits!
     website: https://iplace.hackclub.com/?utm_source=ysws-catalog
