@@ -1715,6 +1715,14 @@
   ],
   "indefinite": [
     {
+      "name": "Pixl",
+      "description": "Explore the open world, meet characters, make hardware and software sidequests for them! Get niche prizes and stuff according to the sidequests!",
+      "website": "https://pixl.hackclub.com",
+      "slack": "https://hackclub.enterprise.slack.com/archives/C0B5P4N0WHH",
+      "slackChannel": "#pixl",
+      "status": "active"
+    },
+    {
       "name": "Jame Gam",
       "description": "Join a game jam every month with us, earn an awesome prize!",
       "website": "https://jamegam.hackclub.com/",
@@ -1884,14 +1892,6 @@
       "website": "https://improv-silk.vercel.app/",
       "slack": "https://hackclub.enterprise.slack.com/archives/C0BEVTSE0BD",
       "slackChannel": "#improv",
-      "status": "draft"
-    },
-    {
-      "name": "Pixl",
-      "description": "Explore the open world, meet characters, make hardware and software sidequests for them! Get niche prizes and stuff according to the sidequests!",
-      "website": "https://pixl.rsvp",
-      "slack": "https://hackclub.enterprise.slack.com/archives/C0B5P4N0WHH",
-      "slackChannel": "#pixl",
       "status": "draft"
     },
     {
