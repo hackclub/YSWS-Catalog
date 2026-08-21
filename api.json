@@ -1,6 +1,46 @@
 {
   "limitedTime": [
     {
+      "name": "Back to the Future",
+      "description": "Make an app for an old device, get an old device or media to use them with!",
+      "website": "https://backtothefuture.hackclub.com/",
+      "slack": "https://hackclub.enterprise.slack.com/archives/C0BPWDJ44CA",
+      "slackChannel": "#backtothefuture",
+      "deadline": "2026-09-07",
+      "status": "active"
+    },
+    {
+      "name": "Out to C",
+      "description": "Code in C, C++ or C# and get treasure!!",
+      "website": "https://out-to-c.hackclub.com/",
+      "slack": "https://hackclub.enterprise.slack.com/archives/C0ANHQPT1S4",
+      "slackChannel": "#out-to-c",
+      "deadline": "2026-09-07",
+      "status": "active"
+    },
+    {
+      "name": "Hackxpansion",
+      "description": "Design 4 expansion cards, build them for free, get a custom console to use them in!",
+      "website": "https://hackxpansion.hackclub.com/",
+      "slack": "https://hackclub.enterprise.slack.com/archives/C0A9B4152BY",
+      "slackChannel": "#hackxpansion",
+      "status": "active",
+      "deadline": "2026-09-07",
+      "steps": [
+        "Design 4 expansion cards",
+        "Get funding to build them",
+        "Write app that use these card",
+        "Get a custom handheld console to use the cards in"
+      ]
+    },
+    {
+      "name": "Gadget Market",
+      "description": "Make a hardware gadget, then trade it on the Gadget Market! Get up to 210 USD to build your hardware project, and 30+ USD to mail it to other teens around the world!",
+      "website": "https://gadget.hackclub.com",
+      "slackChannel": "#gadget-market",
+      "status": "active"
+    },
+    {
       "name": "CloudFall",
       "deadline": "2026-11-05T23:59:59Z",
       "description": "Create an open source solution to subscriptions like the gym, Netflix, Spotify and receive a server for yourself.",
@@ -255,7 +295,7 @@
     },
     {
       "name": "Forge",
-      "deadline": "2026-09-30",
+      "deadline": "2026-11-30",
       "description": "Forge is a Hack Club YSWS (You ship, we ship) program where teens like yourself can design and build hardware projects, and get them funded! Forge your project now",
       "website": "https://forge.hackclub.com/",
       "slack": "https://hackclub.enterprise.slack.com/archives/C0ALJ6P00B1",
@@ -1684,6 +1724,14 @@
   ],
   "indefinite": [
     {
+      "name": "Pixl",
+      "description": "Explore the open world, meet characters, make hardware and software sidequests for them! Get niche prizes and stuff according to the sidequests!",
+      "website": "https://pixl.hackclub.com",
+      "slack": "https://hackclub.enterprise.slack.com/archives/C0B5P4N0WHH",
+      "slackChannel": "#pixl",
+      "status": "active"
+    },
+    {
       "name": "Jame Gam",
       "description": "Join a game jam every month with us, earn an awesome prize!",
       "website": "https://jamegam.hackclub.com/",
@@ -1712,7 +1760,7 @@
       "website": "https://enclosure.hackclub.com/",
       "slack": "https://hackclub.enterprise.slack.com/archives/C092D99G1RU",
       "slackChannel": "#enclosure",
-      "status": "active"
+      "status": "ended"
     },
     {
       "name": "iplace",
@@ -1825,6 +1873,14 @@
   ],
   "drafts": [
     {
+      "name": "Trek",
+      "description": "Build your escape from a stranded island by engineering something that flies, floats, drives, or defies sanity, and win prizes! RSVP at https://rsvp.soon.it/trek",
+      "website": "https://ysws-sigma.vercel.app/",
+      "slack": "https://hackclub.enterprise.slack.com/archives/C0BKX7PP6KB",
+      "slackChannel": "#trek-ysws",
+      "status": "draft"
+    },
+    {
       "name": "Hackxpansion",
       "description": "Design 4 expansion cards, build them for free, get a custom console to use them in!",
       "website": "https://hackxpansion.koeg.dev/",
@@ -1848,14 +1904,6 @@
       "status": "draft"
     },
     {
-      "name": "Pixl",
-      "description": "Explore the open world, meet characters, make hardware and software sidequests for them! Get niche prizes and stuff according to the sidequests!",
-      "website": "https://pixl.rsvp",
-      "slack": "https://hackclub.enterprise.slack.com/archives/C0B5P4N0WHH",
-      "slackChannel": "#pixl",
-      "status": "draft"
-    },
-    {
       "name": "ArcadAi",
       "description": "Build a Retro Arcade Game with AI and Get Rewarded for Shipping It",
       "website": "https://arcade-ysws.vercel.app/",
@@ -1865,7 +1913,7 @@
     },
     {
       "name": "Kintsugi",
-      "description": "Build a project that solves a real-world problem, get Reward based on the kintsugi and Japanese theme!",
+      "description": "Build Any general or problem solving project for 50 hours. Come to an IRL hackathon in Tokyo,Japan for free",
       "website": "https://kintsugi-ysws.vercel.app/",
       "slack": "https://hackclub.enterprise.slack.com/archives/C08KCUK3NF5",
       "slackChannel": "#kintsugi",
@@ -1897,7 +1945,7 @@
       "slackChannel": "#bestsellr",
       "slack": "https://hackclub.enterprise.slack.com/archives/C0B0A14PVEE",
       "detailedDescription": "Bestsellr is a YSWS where you ship a website about a 2-3 page storybook which you have written by your own, and we ship book-themed ships such as stickers and bookmarks.",
-      "website": "https://srinidhipakalapati.github.io/Bestsellr/",
+      "website": "https://incredible-chaja-b44bb7.netlify.app/",
       "status": "draft"
     },
     {

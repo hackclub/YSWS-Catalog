@@ -1,5 +1,12 @@
 ---
 limitedTime:
+  - name: Back to the Future
+    description: Make an app for an old device, get an old device or media to use them with!
+    website: https://backtothefuture.hackclub.com/
+    slack: https://hackclub.enterprise.slack.com/archives/C0BPWDJ44CA
+    slackChannel: "#backtothefuture"
+    deadline: 2026-09-07
+    status: active
   - name: Out to C
     description: Code in C, C++ or C# and get treasure!!
     website: https://out-to-c.hackclub.com/
