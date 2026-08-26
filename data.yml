@@ -107,6 +107,24 @@ limitedTime:
       - Vanilla HTML, CSS, and JavaScript only (no external frameworks, CDNs, or libraries).
       - Must fit within specified size thresholds (<15KB, <5KB, <2KB).
       - Must be a fully functional web project or game.
+  - name: Snowglobe
+    deadline: 2026-11-20T23:59:59-04:00
+    description: Code for 40 hours and fly to all-girls hackathon in San Francisco this November!
+    website: https://snowglobe.hackclub.com
+    slack: https://hackclub.enterprise.slack.com/archives/C0BPM9KRW8L
+    slackChannel: "#snowglobe"
+    status: active
+    detailedDescription: Code for 40 hours, build awesome Projects. Win prizes. Earn an invite to fly to San Francisco, California! This fall for the BIGGEST all-girls high school hackathon. Complete guides, Attend workshops, Receive a certificates Open internationally! For every hour you code, you'll earn Snowflakes use them to get cool prizes like Laptops, iPads, Digi Cams and much much more.
+    steps:
+      - Join the Slack channel
+      - Complete the onboarding on the website
+      - Submit your projects
+      - Get a free prizes
+      - Fly to San Francisco!
+    requirements:
+      - Anyone who self-identifies as a girl.
+      - 13-18yo inclusively
+
   - name: Breadboard
     deadline: 2026-07-18T23:59:59-04:00
     description: Design a breadboard project, get a free component kit shipped to you and other cool prizes!
