@@ -1534,6 +1534,13 @@ indefinite:
     status: active
 
 drafts:
+- name: Utopia
+  description: Build portable battery-powered technology and earn grants and a ticket to a 4 day hackathon.
+  website: https://utopia-hc.vercel.app/
+  slack: https://hackclub.enterprise.slack.com/archives/C096GEV9TUJ
+  slackChannel: "#utopia"
+  status: draft
+  
   - name: Trek
     description: Build your escape from a stranded island by engineering something that flies, floats, drives, or defies sanity, and win prizes! RSVP at https://rsvp.soon.it/trek
     website: https://ysws-sigma.vercel.app/
