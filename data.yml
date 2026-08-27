@@ -27,7 +27,7 @@ limitedTime:
     website: https://youspudwespud.sami-s.dev
     slack: https://hackclub.slack.com/archives/C0BMCT6U3H6
     slackChannel: "#youspudwespud"
-    status: active
+    status: draft
     steps:
       - Build a site or game using pure HTML, CSS, and JS with zero frameworks or bundlers.
       - Ensure your total bundle size fits inside one of the size tiers (<15KB, <5KB, or <2KB).
