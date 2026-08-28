@@ -119,6 +119,7 @@ async function startRender() {
   await loadParticipants();
   updateParticipantCounts();
   loadTimelineBlocks();
+  handleDeepLink();
 }
 
 function loadParticipants() {
@@ -371,11 +372,6 @@ function setCountdownTimer(
   countDownId,
   isModal = false,
 ) {
-  let days = 0,
-    hours = 0,
-    minutes = 0,
-    seconds = 0,
-    isExpired = false;
   if (modalCountdownTimer) {
     clearCountdownTimer(countDownId);
   }
@@ -383,24 +379,14 @@ function setCountdownTimer(
   if (yswsStatus === "draft" || yswsStatus === "ended" || !deadlineStr) return;
 
   const end = new Date(deadlineStr);
-  const interval = setInterval(() => {
+  const render = () => {
     const now = new Date();
     const timeRemaining = end - now;
-    if (timeRemaining <= 0) {
-      days = 0;
-      hours = 0;
-      minutes = 0;
-      seconds = 0;
-      isExpired = true;
-    } else {
-      days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
-      hours = Math.floor(
-        (timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60),
-      );
-      minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
-      seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
-      isExpired = false;
-    }
+    const isExpired = timeRemaining <= 0;
+    const days = isExpired ? 0 : Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
+    const hours = isExpired ? 0 : Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = isExpired ? 0 : Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = isExpired ? 0 : Math.floor((timeRemaining % (1000 * 60)) / 1000);
 
     const counterHtml = `
     <div class="countdown-container">
@@ -429,7 +415,10 @@ function setCountdownTimer(
     }
 
     if (isExpired) clearInterval(interval);
-  }, 1000);
+  };
+
+  render();
+  const interval = setInterval(render, 1000);
 
   if (isModal) modalCountdownTimer = interval;
 }
@@ -491,7 +480,13 @@ function createProgramCard(program) {
   const pixlClass = program.name === "Pixl" ? "pixl-card" : "";
   const anvilClass = program.name === "Anvil" ? "anvil-card" : "";
   const braizeClass = program.name === "Braize" ? "braize-card" : "";
+  const futureClass = program.name === "Future" ? "future-card" : "";
+  const spudClass =
+    program.name === "You Spud, We Spud" ? "you-spud-we-spud-card" : "";
   const surviveClass = program.name === "Survive" ? "survive-card" : "";
+  const outToCClass = program.name === "Out to C" ? "out-to-c-card" : "";
+  const hackxpansionClass =
+    program.name === "Hackxpansion" ? "hackxpansion-card" : "";
 
   const isCompletedByUser = completedPrograms.has(program.name);
   const completionButtonClass = isCompletedByUser ? "completed" : "";
@@ -623,6 +618,11 @@ function createProgramCard(program) {
     `
       : "";
 
+  const futureLogo =
+    program.name === "Future"
+      ? `<img src="https://user-cdn.hackclub-assets.com/019fcc91-58b9-76ff-ad94-f47c9950645b/Future%20(1).jpg" alt="Future" class="future-wordmark">`
+      : "";
+
   const polygonBg =
     program.name === "Polygon"
       ? `<img src="./logos/Polygon.png" alt="Polygon Background" class="polygon-bg">`
@@ -692,9 +692,7 @@ function createProgramCard(program) {
     `
       : "";
 
-  const countDownId = `${program.name.toLowerCase().trim().replace(" ", "")}-countdown`;
-
-  setCountdownTimer(program.deadline, program.status, countDownId);
+  const countDownId = `${program.name.toLowerCase().trim().replace(/\s+/g, "")}-countdown`;
 
   const displayDescription =
     program.name === "Pixl"
@@ -714,7 +712,8 @@ function createProgramCard(program) {
       : program.description;
 
   return `
-        <div class="card program-card ${opensClass} ${KintsugiClass} ${forgeClass} ${macondoClass} ${horizonsClass} ${slushiesClass} ${blueprintClass} ${accelerateClass} ${baubleClass} ${meowClass} ${woofClass} ${pxlClass} ${wackyFilesClass} ${flavortownClass} ${jusstudyClass} ${rebootClass} ${kitlabClass} ${sleepoverClass} ${stasisClass} ${coeurClass} ${remixedClass} ${hctgClass} ${hackahomeClass} ${flaggedClass} ${raspapiClass} ${beestClass} ${alchemizeClass} ${hackanomousClass} ${shipyardClass} ${stardanceClass} ${keebClass} ${insertCoinClass} ${polygonClass} ${treasureHuntClass} ${pixlClass} ${blareClass} ${anvilClass} ${braizeClass} ${surviveClass}" data-program="${encodedProgram}" data-name="${program.name}">
+        <div class="card program-card ${opensClass} ${KintsugiClass} ${forgeClass} ${macondoClass} ${horizonsClass} ${slushiesClass} ${blueprintClass} ${accelerateClass} ${baubleClass} ${meowClass} ${woofClass} ${pxlClass} ${wackyFilesClass} ${flavortownClass} ${jusstudyClass} ${rebootClass} ${kitlabClass} ${sleepoverClass} ${stasisClass} ${coeurClass} ${remixedClass} ${hctgClass} ${hackahomeClass} ${flaggedClass} ${raspapiClass} ${beestClass} ${alchemizeClass} ${hackanomousClass} ${shipyardClass} ${stardanceClass} ${keebClass} ${insertCoinClass} ${polygonClass} ${treasureHuntClass} ${pixlClass} ${blareClass} ${anvilClass} ${braizeClass} ${futureClass} ${spudClass} ${surviveClass} ${hackxpansionClass} ${outToCClass}" data-program="${encodedProgram}" data-name="${program.name}">
+            <span class="program-card-glow" aria-hidden="true"></span>
             ${pixlVideo}
             ${macondoAssets}
             ${horizonsAssets}
@@ -755,7 +754,13 @@ function createProgramCard(program) {
                                     ? '<img src="logos/Blare-logo.png" alt="Blare" class="blare-wordmark">'
                                     : program.name === "Anvil"
                                       ? '<img src="logos/anvil-logo.png" alt="Anvil" class="anvil-wordmark">'
-                                      : `<h3>${program.name}</h3>`
+                                      : program.name === "Future"
+                                        ? futureLogo
+                                        : program.name === "Hackxpansion"
+                                          ? '<img src="logos/hackxpansion_logo.png" alt="Hackxpansion" class="hackxpansion-wordmark">'
+                                          : program.name === "Out to C"
+                                            ? '<img src="logos/out-to-c.png" alt="Out to C" class="out-to-c-wordmark">'
+                                            : `<h3>${program.name}</h3>`
                 }
                                             
                 <div class="status-container">
@@ -827,7 +832,7 @@ function navigateModal(direction) {
   updatePositionIndicator();
 }
 
-function playModalEntranceAnimation(modal) {
+function playModalEntranceAnimation(modal, originCard) {
   if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
     modal.classList.remove("is-animating");
     return;
@@ -865,12 +870,27 @@ function playModalEntranceAnimation(modal) {
   modalStack.style.setProperty("--stack-back-2-y", `${backTwoY}px`);
   modalStack.style.setProperty("--stack-back-2-rotate", `${backTwoRotate}deg`);
 
+  if (originCard) {
+    const cardRect = originCard.getBoundingClientRect();
+    const modalRect = modalContent.getBoundingClientRect();
+    const originX = cardRect.left + cardRect.width / 2 - (modalRect.left + modalRect.width / 2);
+    const originY = cardRect.top + cardRect.height / 2 - (modalRect.top + modalRect.height / 2);
+    const originScale = Math.max(cardRect.width / modalRect.width, 0.08);
+
+    modalContent.style.setProperty("--modal-flip-x", `${originX}px`);
+    modalContent.style.setProperty("--modal-flip-y", `${originY}px`);
+    modalContent.style.setProperty("--modal-flip-scale", `${originScale}`);
+    modal.classList.add("card-origin");
+  } else {
+    modal.classList.remove("card-origin");
+  }
+
   modal.classList.remove("is-animating");
   void modal.offsetWidth;
   modal.classList.add("is-animating");
 }
 
-function openModal(program) {
+function openModal(program, originCard) {
   updateVisiblePrograms();
   currentProgramIndex = visiblePrograms.findIndex(
     (p) => p.name === program.name,
@@ -967,24 +987,91 @@ function openModal(program) {
   modalCompletionBadge.classList.toggle("visible", isCompletedByUser);
 
   updatePositionIndicator();
+  clearTimeout(modalCloseTimer);
+  modalCloseTimer = null;
+  modal.classList.remove("closing");
   modal.classList.add("active");
   body.classList.add("modal-open");
-  playModalEntranceAnimation(modal);
+  playModalEntranceAnimation(modal, originCard);
+
+  history.replaceState(null, "", `#${nameToSlug(program.name)}`);
 }
+
+let modalCloseTimer = null;
 
 function closeModal() {
   const modal = document.getElementById("program-modal");
   const body = document.body;
 
-  modal.classList.remove("active");
+  if (!modal.classList.contains("active")) return;
+
+  const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
   modal.classList.remove("is-animating");
+
+  if (reduceMotion) {
+    modal.classList.remove("active");
+    body.classList.remove("modal-open");
+    cleanupAfterClose();
+    return;
+  }
+
+  modal.classList.add("closing");
   body.classList.remove("modal-open");
+
+  const finishClose = () => {
+    if (!modal.classList.contains("closing")) {
+      modal.removeEventListener("animationend", finishClose);
+      clearTimeout(modalCloseTimer);
+      modalCloseTimer = null;
+      return;
+    }
+    clearTimeout(modalCloseTimer);
+    modalCloseTimer = null;
+    modal.classList.remove("closing");
+    modal.classList.remove("active");
+    modal.removeEventListener("animationend", finishClose);
+    cleanupAfterClose();
+  };
+  modalCloseTimer = setTimeout(finishClose, 300);
+  modal.addEventListener("animationend", finishClose);
+}
+
+function cleanupAfterClose() {
+  const modal = document.getElementById("program-modal");
+  if (modal.classList.contains("active")) return;
+
+  if (location.hash) {
+    history.replaceState(
+      null,
+      "",
+      window.location.pathname + window.location.search,
+    );
+  }
 }
 
 function findProgramByName(programName) {
   return Object.values(programs)
     .flat()
     .find((program) => program.name === programName);
+}
+
+function nameToSlug(name) {
+  return name.replace(/\s+/g, "-");
+}
+
+function handleDeepLink() {
+  const hash = location.hash.slice(1);
+  if (!hash) {
+    const modal = document.getElementById("program-modal");
+    if (modal?.classList.contains("active")) {
+      closeModal();
+    }
+    return;
+  }
+  const programName = hash.replace(/-/g, " ");
+  const program = findProgramByName(programName);
+  if (program) openModal(program);
 }
 
 function getLeaderboardProgram(programName, shipCount) {
@@ -1259,6 +1346,14 @@ function refreshCollapsibleSections() {
   });
 }
 
+function startCardCountdowns() {
+  document.querySelectorAll(".program-card").forEach((card) => {
+    const program = JSON.parse(decodeURIComponent(card.dataset.program));
+    const countDownId = `${program.name.toLowerCase().trim().replace(/\s+/g, "")}-countdown`;
+    setCountdownTimer(program.deadline, program.status, countDownId);
+  });
+}
+
 function renderPrograms() {
   const container = document.getElementById("programs-container");
   const expandedCategories = new Set(
@@ -1334,6 +1429,104 @@ function renderPrograms() {
   }
 
   refreshCollapsibleSections();
+  startCardCountdowns();
+  initCardReveal();
+}
+
+let cardRevealObserver = null;
+
+function initCardReveal() {
+  if (!("IntersectionObserver" in window)) {
+    document
+      .querySelectorAll(".programs-grid .program-card")
+      .forEach((card) => card.classList.add("card-revealed"));
+    return;
+  }
+
+  if (cardRevealObserver) cardRevealObserver.disconnect();
+
+  cardRevealObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("card-revealed");
+          cardRevealObserver.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.08, rootMargin: "0px 0px -40px 0px" },
+  );
+
+  document
+    .querySelectorAll(".programs-grid .program-card")
+    .forEach((card) => cardRevealObserver.observe(card));
+}
+
+function initParallax() {
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
+  const showcase = document.getElementById("dynamicShowcase");
+  if (!showcase) return;
+
+  let ticking = false;
+
+  const update = () => {
+    ticking = false;
+    const y = window.scrollY;
+    if (showcase) {
+      showcase.style.transform = `translateY(${y * 0.06}px)`;
+    }
+  };
+
+  window.addEventListener(
+    "scroll",
+    () => {
+      if (!ticking) {
+        window.requestAnimationFrame(update);
+        ticking = true;
+      }
+    },
+    { passive: true },
+  );
+}
+
+function initCardTilt() {
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
+  const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+
+  document.addEventListener(
+    "pointermove",
+    (e) => {
+      if (reduceMotion.matches) return;
+      const card = e.target.closest?.(".program-card");
+      if (!card) return;
+
+      const rect = card.getBoundingClientRect();
+      const px = (e.clientX - rect.left) / rect.width;
+      const py = (e.clientY - rect.top) / rect.height;
+
+      card.style.setProperty("--glow-x", `${px * 100}%`);
+      card.style.setProperty("--glow-y", `${py * 100}%`);
+
+      const tiltX = (py - 0.5) * -8;
+      const tiltY = (px - 0.5) * 8;
+      card.style.setProperty("--tilt-x", `${tiltX.toFixed(2)}deg`);
+      card.style.setProperty("--tilt-y", `${tiltY.toFixed(2)}deg`);
+      card.classList.add("tilt-active");
+    },
+    { passive: true },
+  );
+
+  document.addEventListener(
+    "pointerout",
+    (e) => {
+      const card = e.target.closest?.(".program-card");
+      if (!card) return;
+      card.classList.remove("tilt-active");
+    },
+    { passive: true },
+  );
 }
 
 function updateSort(sortType) {
@@ -1816,6 +2009,8 @@ function initializeFaqAnimations() {
 document.addEventListener("DOMContentLoaded", () => {
   startRender();
   initializeFaqAnimations();
+  initCardTilt();
+  initParallax();
   window.addEventListener("resize", () => {
     resolveTimelineLabels();
     refreshCollapsibleSections();
@@ -1856,6 +2051,8 @@ document.addEventListener("DOMContentLoaded", () => {
     .getElementById("theme-toggle")
     .addEventListener("click", toggleTheme);
 
+  window.addEventListener("hashchange", handleDeepLink);
+
   setInterval(updateDeadlines, 60000);
 
   document.querySelectorAll(".sort-btn").forEach((button) => {
@@ -1884,7 +2081,8 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     if (e.target.closest(".program-card")) {
-      const encodedProgram = e.target.closest(".program-card").dataset.program;
+      const card = e.target.closest(".program-card");
+      const encodedProgram = card.dataset.program;
       const program = JSON.parse(decodeURIComponent(encodedProgram));
 
       // Special handling for Stardance card - redirect instead of opening modal
@@ -1899,7 +2097,27 @@ document.addEventListener("DOMContentLoaded", () => {
         return;
       }
 
-      openModal(program);
+      openModal(program, card);
+      return;
+    }
+
+    if (e.target.closest("#modal-share")) {
+      try {
+        const programName = document.getElementById("modal-title").textContent;
+        const url = `${window.location.origin}${window.location.pathname}#${nameToSlug(programName)}`;
+        if (navigator.share) {
+          navigator.share({ title: programName, url });
+        } else {
+          navigator.clipboard?.writeText(url);
+          const btn = document.getElementById("modal-share");
+          const original = btn.innerHTML;
+          btn.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>';
+          setTimeout(() => (btn.innerHTML = original), 2000);
+        }
+      } catch (e) {
+        console.error("Share failed:", e);
+      }
+      return;
     }
 
     if (
