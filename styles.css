@@ -507,6 +507,39 @@ footer {
   background: var(--surface-hover);
 }
 
+.deprecation-banner {
+  padding: 14px 24px;
+  background: #ffdc62;
+  border-bottom: 1px solid rgba(23, 23, 29, 0.18);
+  color: #17171d;
+  text-align: center;
+}
+
+.deprecation-banner p {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.deprecation-banner a {
+  color: #17171d;
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+}
+
+.deprecation-banner a:hover {
+  text-decoration-thickness: 3px;
+}
+
+.deprecation-banner a:focus-visible {
+  outline: 3px solid #17171d;
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
 /* ── Hero ───────────────────────────────────────────────── */
 .hero-section {
   position: relative;
@@ -2887,6 +2920,14 @@ footer {
   .nav-link {
     padding: 8px 10px;
     font-size: 14px;
+  }
+
+  .deprecation-banner {
+    padding: 12px 16px;
+  }
+
+  .deprecation-banner p {
+    font-size: 15px;
   }
 
   .programs-container {
