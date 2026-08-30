@@ -1552,20 +1552,20 @@ indefinite:
     status: active
 
 drafts:
-- name: Utopia
-  description: Build portable battery-powered technology and earn grants and a ticket to a 4 day hackathon.
-  website: https://utopia-hc.vercel.app/
-  slack: https://hackclub.enterprise.slack.com/archives/C096GEV9TUJ
-  slackChannel: "#utopia"
-  status: draft
-  
+  - name: Utopia
+    description: Build portable battery-powered technology and earn grants and a ticket to a 4 day hackathon.
+    website: https://utopia-hc.vercel.app/
+    slack: https://hackclub.enterprise.slack.com/archives/C096GEV9TUJ
+    slackChannel: "#utopia"
+    status: draft
+
   - name: Trek
     description: Build your escape from a stranded island by engineering something that flies, floats, drives, or defies sanity, and win prizes! RSVP at https://rsvp.soon.it/trek
     website: https://ysws-sigma.vercel.app/
     slack: https://hackclub.enterprise.slack.com/archives/C0BKX7PP6KB
     slackChannel: "#trek-ysws"
     status: draft
-    
+
   - name: Hackxpansion
     description: Design 4 expansion cards, build them for free, get a custom console to use them in!
     website: https://hackxpansion.koeg.dev/
@@ -1631,6 +1631,7 @@ drafts:
     slack: https://hackclub.enterprise.slack.com/archives/C0AHPG4LPUM
     website: https://hackanomous.vercel.app/
     status: draft
+
   - name: Jus'STUDY
     description: Get study stuff by shipping projects that help you and others study!
     website: https://jus-study.hackclub.com/
@@ -1643,6 +1644,16 @@ drafts:
       - The project will be sent to certification, then voting.
       - Submit your project and get cool study materials or rewards in return!
 
+  - name: Bugged
+    description: Make anything with intentional bugs, get security, debugging and puzzle related goodies!
+    slackChannel: "#bugged"
+    slack: https://hackclub.enterprise.slack.com/archives/C0BT0SH8Z9D
+    status: draft
+    detailedDescription: An "intentional bug" could be anything that seems like a bug, but actually contributes to the functionality of the project, like something that could help players advance in a game!
+    steps:
+      - Build a project with "intentional bugs"
+      - Ship your project (Could be hardware, software, games), explain clearly how the bugs contribute to the functionality of your project
+      - Get Security, Debugging, Puzzle related goodies, and maybe even a bug-catching hackathon in London, home of the Big City Bug Hunt!
 
   - name: Kit Lab
     description: Build software according to themes and gets kits to build projects and ship projects made using only the kit electronics and get prizes!
@@ -1670,16 +1681,12 @@ drafts:
     slackChannel: "#issued"
     status: draft
 
-
-
   - name: Apogee
     description: a rocketry ysws - still workshopping the idea!
     website:
     slack: https://hackclub.slack.com/archives/C095RKGV5J4
     slackChannel: "#apogee"
     status: draft
-
-
 
   - name: Servo
     description: Design upgrades for your robot, get parts & prizes!
@@ -1693,8 +1700,6 @@ drafts:
     slack: https://hackclub.slack.com/archives/C089WSLC59V
     slackChannel: "#hack-a-band"
     status: draft
-
-
 
   - name: Onward
     description: Build a robot using Arduino and receive one.
@@ -1735,16 +1740,12 @@ drafts:
     slack: https://slack.com/archives/C08C8PC40BA
     slackChannel: "#lightsaber"
 
-
-
   - name: Hackmouse
     description: Design a PCB & case for a mouse and get the parts shipped to you.
     website:
     slack: https://slack.com/archives/C08JYC7RQT1
     slackChannel: "#hackmouse"
     status: draft
-
-
 
   - name: Pyramid Scheme
     description: Put up Hack Club posters to earn prizes.
