@@ -110,6 +110,27 @@
       ]
     },
     {
+      "name": "Snowglobe",
+      "deadline": "2026-11-20T23:59:59-04:00",
+      "description": "Code for 40 hours and fly to all-girls hackathon in San Francisco this November!",
+      "website": "https://snowglobe.hackclub.com",
+      "slack": "https://hackclub.enterprise.slack.com/archives/C0BPM9KRW8L",
+      "slackChannel": "#snowglobe",
+      "status": "active",
+      "detailedDescription": "Code for 40 hours, build awesome Projects. Win prizes. Earn an invite to fly to San Francisco, California! This fall for the BIGGEST all-girls high school hackathon. Complete guides, Attend workshops, Receive a certificates Open internationally! For every hour you code, you'll earn Snowflakes use them to get cool prizes like Laptops, iPads, Digi Cams and much much more.",
+      "steps": [
+        "Join the Slack channel",
+        "Complete the onboarding on the website",
+        "Submit your projects",
+        "Get a free prizes",
+        "Fly to San Francisco!"
+      ],
+      "requirements": [
+        "Anyone who self-identifies as a girl.",
+        "13-18yo inclusively"
+      ]
+    },
+    {
       "name": "Breadboard",
       "deadline": "2026-07-18T23:59:59-04:00",
       "description": "Design a breadboard project, get a free component kit shipped to you and other cool prizes!",
@@ -1873,6 +1894,14 @@
   ],
   "drafts": [
     {
+      "name": "Utopia",
+      "description": "Build portable battery-powered technology and earn grants and a ticket to a 4 day hackathon.",
+      "website": "https://utopia-hc.vercel.app/",
+      "slack": "https://hackclub.enterprise.slack.com/archives/C096GEV9TUJ",
+      "slackChannel": "#utopia",
+      "status": "draft"
+    },
+    {
       "name": "Trek",
       "description": "Build your escape from a stranded island by engineering something that flies, floats, drives, or defies sanity, and win prizes! RSVP at https://rsvp.soon.it/trek",
       "website": "https://ysws-sigma.vercel.app/",
@@ -1969,6 +1998,19 @@
         "Build a project that helps you or others study!",
         "The project will be sent to certification, then voting.",
         "Submit your project and get cool study materials or rewards in return!"
+      ]
+    },
+    {
+      "name": "Bugged",
+      "description": "Make anything with intentional bugs, get security, debugging and puzzle related goodies!",
+      "slackChannel": "#bugged",
+      "slack": "https://hackclub.enterprise.slack.com/archives/C0BT0SH8Z9D",
+      "status": "draft",
+      "detailedDescription": "An \"intentional bug\" could be anything that seems like a bug, but actually contributes to the functionality of the project, like something that could help players advance in a game!",
+      "steps": [
+        "Build a project with \"intentional bugs\"",
+        "Ship your project (Could be hardware, software, games), explain clearly how the bugs contribute to the functionality of your project",
+        "Get Security, Debugging, Puzzle related goodies, and maybe even a bug-catching hackathon in London, home of the Big City Bug Hunt!"
       ]
     },
     {
