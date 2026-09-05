@@ -7567,3 +7567,57 @@ h2.section-heading::before {
 .out-to-c-wordmark {
   width: 100%;
 }
+
+.program-card.wonders-card {
+  background:
+    url("logos/wonders_bg.png") top center / 100% auto no-repeat,
+    #6fb3b0;
+  border: 3px solid #4a8f8c !important;
+  color: #2f5a78 !important;
+  overflow: hidden;
+  position: relative;
+}
+
+.program-card.wonders-card .program-header,
+.program-card.wonders-card p,
+.program-card.wonders-card .program-participants,
+.program-card.wonders-card .program-deadline,
+.program-card.wonders-card .program-footer,
+.program-card.wonders-card .program-links {
+  position: relative;
+  z-index: 2;
+}
+
+.program-card.wonders-card .program-header h3,
+.program-card.wonders-card p,
+.program-card.wonders-card .program-participants,
+.program-card.wonders-card .program-deadline {
+  color: #2f5a78 !important;
+  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.6);
+}
+
+.program-card.wonders-card .program-header h3 {
+  display: none;
+}
+
+.program-card.wonders-card .program-header {
+  min-height: 0;
+}
+
+.program-card.wonders-card > p {
+  text-align: center;
+  transform: translateY(45px);
+}
+
+.program-card.wonders-card .program-links a {
+  color: #2f5a78 !important;
+}
+
+.program-card.wonders-card .program-links a:hover {
+  color: #17364d !important;
+}
+
+.program-card.wonders-card:hover {
+  border-color: #17364d !important;
+  box-shadow: 0 22px 38px rgba(47, 90, 120, 0.4);
+}

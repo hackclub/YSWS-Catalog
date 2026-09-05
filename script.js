@@ -487,6 +487,7 @@ function createProgramCard(program) {
   const outToCClass = program.name === "Out to C" ? "out-to-c-card" : "";
   const hackxpansionClass =
     program.name === "Hackxpansion" ? "hackxpansion-card" : "";
+  const wondersClass = program.name === "Wonders" ? "wonders-card" : "";
 
   const isCompletedByUser = completedPrograms.has(program.name);
   const completionButtonClass = isCompletedByUser ? "completed" : "";
@@ -712,7 +713,7 @@ function createProgramCard(program) {
       : program.description;
 
   return `
-        <div class="card program-card ${opensClass} ${KintsugiClass} ${forgeClass} ${macondoClass} ${horizonsClass} ${slushiesClass} ${blueprintClass} ${accelerateClass} ${baubleClass} ${meowClass} ${woofClass} ${pxlClass} ${wackyFilesClass} ${flavortownClass} ${jusstudyClass} ${rebootClass} ${kitlabClass} ${sleepoverClass} ${stasisClass} ${coeurClass} ${remixedClass} ${hctgClass} ${hackahomeClass} ${flaggedClass} ${raspapiClass} ${beestClass} ${alchemizeClass} ${hackanomousClass} ${shipyardClass} ${stardanceClass} ${keebClass} ${insertCoinClass} ${polygonClass} ${treasureHuntClass} ${pixlClass} ${blareClass} ${anvilClass} ${braizeClass} ${futureClass} ${spudClass} ${surviveClass} ${hackxpansionClass} ${outToCClass}" data-program="${encodedProgram}" data-name="${program.name}">
+        <div class="card program-card ${opensClass} ${KintsugiClass} ${forgeClass} ${macondoClass} ${horizonsClass} ${slushiesClass} ${blueprintClass} ${accelerateClass} ${baubleClass} ${meowClass} ${woofClass} ${pxlClass} ${wackyFilesClass} ${flavortownClass} ${jusstudyClass} ${rebootClass} ${kitlabClass} ${sleepoverClass} ${stasisClass} ${coeurClass} ${remixedClass} ${hctgClass} ${hackahomeClass} ${flaggedClass} ${raspapiClass} ${beestClass} ${alchemizeClass} ${hackanomousClass} ${shipyardClass} ${stardanceClass} ${keebClass} ${insertCoinClass} ${polygonClass} ${treasureHuntClass} ${pixlClass} ${blareClass} ${anvilClass} ${braizeClass} ${futureClass} ${spudClass} ${surviveClass} ${hackxpansionClass} ${outToCClass} ${wondersClass}" data-program="${encodedProgram}" data-name="${program.name}">
             <span class="program-card-glow" aria-hidden="true"></span>
             ${pixlVideo}
             ${macondoAssets}
