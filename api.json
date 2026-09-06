@@ -1894,6 +1894,14 @@
   ],
   "drafts": [
     {
+      "name": "Wonders",
+      "description": "make a wonderful and personnal project without counting hours, get a wonderful surprise!",
+      "website": "https://wonders.ridit.space",
+      "slack": "https://hackclub.enterprise.slack.com/archives/C0BS3VD47E3",
+      "slackChannel": "#wonders",
+      "status": "draft"
+    },
+    {
       "name": "Utopia",
       "description": "Build portable battery-powered technology and earn grants and a ticket to a 4 day hackathon.",
       "website": "https://utopia-hc.vercel.app/",
