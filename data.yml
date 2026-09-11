@@ -934,7 +934,7 @@ limitedTime:
     status: ended
     deadline: "2025-07-22T23:59:59"
   - name: Dummies
-    description: learn a new language, recieve a guide book!
+    description: learn a new language, receive a guide book!
     website: https://dummies.hackclub.com/
     deadline: 2025-08-21T23:59:59
     detailedDescription: Join Dummies to take on projects in new languages and earn grant cards for books!
@@ -1553,7 +1553,7 @@ indefinite:
 
 drafts:
   - name: Wonders
-    description: make a wonderful and personnal project without counting hours, get a wonderful surprise!
+    description: make a wonderful and personal project without counting hours, get a wonderful surprise!
     website: https://wonders.ridit.space
     slack: https://hackclub.enterprise.slack.com/archives/C0BS3VD47E3
     slackChannel: "#wonders"
