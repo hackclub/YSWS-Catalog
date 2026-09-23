@@ -7621,3 +7621,99 @@ h2.section-heading::before {
   border-color: #17364d !important;
   box-shadow: 0 22px 38px rgba(47, 90, 120, 0.4);
 }
+/* Crescent */
+.program-card.crescent-card {
+  position: relative;
+  overflow: hidden;
+  background: #19142c !important;
+  border: 1px solid rgba(213, 116, 209, 0.45) !important;
+  color: #ecdec3 !important;
+}
+
+.crescent-background {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.program-card.crescent-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(11, 6, 29, 0) 0%,
+    rgba(11, 6, 29, 0.12) 38%,
+    rgba(11, 6, 29, 0.55) 72%,
+    rgba(11, 6, 29, 0.78) 100%
+  );
+  pointer-events: none;
+  z-index: 1;
+}
+
+.program-card.crescent-card .countdown-container {
+  position: relative;
+  z-index: 2;
+}
+
+.program-card.crescent-card .countdown-segment {
+  background: rgba(11, 6, 29, 0.55);
+  border: 1px solid rgba(236, 222, 195, 0.14);
+}
+
+.program-card.crescent-card .countdown-segment,
+.program-card.crescent-card .countdown-segment p {
+  color: #ecdec3 !important;
+}
+
+.program-card.crescent-card .program-header,
+.program-card.crescent-card p,
+.program-card.crescent-card .program-participants,
+.program-card.crescent-card .program-deadline,
+.program-card.crescent-card .program-footer {
+  position: relative;
+  z-index: 2;
+}
+
+.program-card.crescent-card p,
+.program-card.crescent-card .program-participants,
+.program-card.crescent-card .program-deadline {
+  color: #ecdec3 !important;
+  text-shadow: 0 1px 3px rgba(11, 6, 29, 0.85);
+}
+
+.crescent-wordmark {
+  width: min(180px, calc(100% - 88px));
+  height: auto;
+  display: block;
+  position: relative;
+  z-index: 2;
+  filter: drop-shadow(0 2px 6px rgba(11, 6, 29, 0.6));
+}
+
+.program-card.crescent-card .program-links a {
+  color: #f9c1ef !important;
+}
+
+.program-card.crescent-card .program-links a:hover {
+  color: #ecdec3 !important;
+}
+
+.program-card.crescent-card .program-status {
+  color: #0b061d !important;
+  background: #ecdec3 !important;
+  border-color: #ecdec3 !important;
+}
+
+.program-card.crescent-card .program-completion-toggle {
+  color: #ecdec3 !important;
+}
+
+.program-card.crescent-card:hover {
+  border-color: rgba(249, 193, 239, 0.8) !important;
+  box-shadow: 0 22px 38px rgba(11, 6, 29, 0.55);
+}

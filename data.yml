@@ -1,5 +1,22 @@
 ---
 limitedTime:
+  - name: Crescent
+    description: Four different challenges each week - pick a card, then ship something!
+    detailedDescription: Every Monday morning Crescent deals five build prompts and a wildcard. Take a card, let Hackatime count the hours while you build, then ship a repo, a demo and a screenshot for review. Approved hours become stars at the week's rate, multiplied by the card you took, and the shop posts the prizes to your door.
+    website: https://crescent.hackclub.com/?utm_source=ysws-catalog
+    slack: https://hackclub.enterprise.slack.com/archives/C0C3EH0ACPQ
+    slackChannel: "#crescent-bulletin"
+    status: active
+    opens: 2026-09-21
+    deadline: 2026-11-22T23:59:59Z
+    steps:
+      - Take one of the week's cards on Monday morning.
+      - Build it with Hackatime running so your hours count themselves.
+      - Ship a repo, a demo, a screenshot and a paragraph for review.
+      - Spend the stars you earned in the shop.
+    details:
+      - Ship the same project again next week as it grows and the new hours count again.
+      - Every project is public and open source.
   - name: Back to the Future
     description: Make an app for an old device, get an old device or media to use them with!
     website: https://backtothefuture.hackclub.com/
