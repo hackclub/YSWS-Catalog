@@ -488,6 +488,7 @@ function createProgramCard(program) {
   const hackxpansionClass =
     program.name === "Hackxpansion" ? "hackxpansion-card" : "";
   const wondersClass = program.name === "Wonders" ? "wonders-card" : "";
+  const crescentClass = program.name === "Crescent" ? "crescent-card" : "";
 
   const isCompletedByUser = completedPrograms.has(program.name);
   const completionButtonClass = isCompletedByUser ? "completed" : "";
@@ -684,6 +685,13 @@ function createProgramCard(program) {
       ? `<img src="logos/Kintsugi-mascot.jpg" alt="Kintsugi Mascot" class="kintsugi-mascot">`
       : "";
 
+  const crescentAssets =
+    program.name === "Crescent"
+      ? `
+        <img src="logos/crescent-bg.avif" alt="" class="crescent-background" aria-hidden="true">
+    `
+      : "";
+
   const pixlVideo =
     program.name === "Pixl"
       ? `
@@ -713,9 +721,10 @@ function createProgramCard(program) {
       : program.description;
 
   return `
-        <div class="card program-card ${opensClass} ${KintsugiClass} ${forgeClass} ${macondoClass} ${horizonsClass} ${slushiesClass} ${blueprintClass} ${accelerateClass} ${baubleClass} ${meowClass} ${woofClass} ${pxlClass} ${wackyFilesClass} ${flavortownClass} ${jusstudyClass} ${rebootClass} ${kitlabClass} ${sleepoverClass} ${stasisClass} ${coeurClass} ${remixedClass} ${hctgClass} ${hackahomeClass} ${flaggedClass} ${raspapiClass} ${beestClass} ${alchemizeClass} ${hackanomousClass} ${shipyardClass} ${stardanceClass} ${keebClass} ${insertCoinClass} ${polygonClass} ${treasureHuntClass} ${pixlClass} ${blareClass} ${anvilClass} ${braizeClass} ${futureClass} ${spudClass} ${surviveClass} ${hackxpansionClass} ${outToCClass} ${wondersClass}" data-program="${encodedProgram}" data-name="${program.name}">
+        <div class="card program-card ${opensClass} ${KintsugiClass} ${forgeClass} ${macondoClass} ${horizonsClass} ${slushiesClass} ${blueprintClass} ${accelerateClass} ${baubleClass} ${meowClass} ${woofClass} ${pxlClass} ${wackyFilesClass} ${flavortownClass} ${jusstudyClass} ${rebootClass} ${kitlabClass} ${sleepoverClass} ${stasisClass} ${coeurClass} ${remixedClass} ${hctgClass} ${hackahomeClass} ${flaggedClass} ${raspapiClass} ${beestClass} ${alchemizeClass} ${hackanomousClass} ${shipyardClass} ${stardanceClass} ${keebClass} ${insertCoinClass} ${polygonClass} ${treasureHuntClass} ${pixlClass} ${blareClass} ${anvilClass} ${braizeClass} ${futureClass} ${spudClass} ${surviveClass} ${hackxpansionClass} ${outToCClass} ${wondersClass} ${crescentClass}" data-program="${encodedProgram}" data-name="${program.name}">
             <span class="program-card-glow" aria-hidden="true"></span>
             ${pixlVideo}
+            ${crescentAssets}
             ${macondoAssets}
             ${horizonsAssets}
             ${surviveAssets}
@@ -761,7 +770,9 @@ function createProgramCard(program) {
                                           ? '<img src="logos/hackxpansion_logo.png" alt="Hackxpansion" class="hackxpansion-wordmark">'
                                           : program.name === "Out to C"
                                             ? '<img src="logos/out-to-c.png" alt="Out to C" class="out-to-c-wordmark">'
-                                            : `<h3>${program.name}</h3>`
+                                            : program.name === "Crescent"
+                                              ? '<img src="logos/crescent-logo.png" alt="Crescent" class="crescent-wordmark">'
+                                              : `<h3>${program.name}</h3>`
                 }
                                             
                 <div class="status-container">
@@ -2094,6 +2105,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
       // Anvil - open the program website directly instead of the modal
       if (program.name === "Anvil" && program.website) {
+        window.location.href = program.website;
+        return;
+      }
+
+      // Crescent - open the program website directly instead of the modal
+      if (program.name === "Crescent" && program.website) {
         window.location.href = program.website;
         return;
       }
