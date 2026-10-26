@@ -1718,11 +1718,11 @@ drafts:
     slack: https://app.slack.com/client/E09V59WQY1E/C0ARBM1GSRX
     slackChannel: "#servo"
     status: draft
-  - name: HackABand
-    description: ship a wristband design and we ship you fabric woven wristband with NFC chip
-    website: https://hackaband.vercel.app/
-    slack: https://hackclub.slack.com/archives/C089WSLC59V
-    slackChannel: "#hack-a-band"
+  - name: BitBand
+    description: You ship your art, we ship a wristband. Woven elastic bands with your art on both sides.
+    website: https://bitband-ysws.vercel.app/
+    slack: https://hackclub.enterprise.slack.com/archives/C0C4U460R2R
+    slackChannel: "#bitband"
     status: draft
 
   - name: Onward
